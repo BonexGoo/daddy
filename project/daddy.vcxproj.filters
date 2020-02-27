@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="core">
+      <UniqueIdentifier>{3d82a3dd-a673-414b-80c9-208e72b66e23}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\core\dd_binary.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\dd_detector.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\dd_escaper.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\dd_markup.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\dd_platform.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\dd_string.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\dd_telepath.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\dd_thread.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\dd_unique.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\dd_zoker.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\core\dd_binary.hpp">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\core\dd_detector.hpp">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\core\dd_escaper.hpp">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\core\dd_macro.hpp">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\core\dd_markup.hpp">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\core\dd_platform.hpp">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\core\dd_string.hpp">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\core\dd_telepath.hpp">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\core\dd_thread.hpp">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\core\dd_type.hpp">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\core\dd_unique.hpp">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\core\dd_zoker.hpp">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\daddy.hpp" />
+  </ItemGroup>
+</Project>
