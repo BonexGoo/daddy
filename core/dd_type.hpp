@@ -34,9 +34,10 @@ typedef void*                addr;
 } // namespace Daddy
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
-// ▶ Type utility - rvalue
+// ▶ Type utility
 namespace Daddy {
 
+// DD_rvalue
 template<class TYPE> struct RValue__         {typedef TYPE _;};
 template<class TYPE> struct RValue__<TYPE&>  {typedef TYPE _;};
 template<class TYPE> struct RValue__<TYPE&&> {typedef TYPE _;};
@@ -44,16 +45,14 @@ template<typename TYPE>
 inline typename RValue__<TYPE>::_&& DD_rvalue(TYPE&& param)
 {return static_cast<typename RValue__<TYPE>::_&&>(param);}
 
-} // namespace Daddy
-
-////////////////////////////////////////////////////////////////////////////////
-// ▶ Type utility - ptrtest
-namespace Daddy {
-
-template<typename TYPE> inline bool PtrTest__(TYPE&)  {return false;}
-template<typename TYPE> inline bool PtrTest__(TYPE*&) {return true;}
+// DD_ptrtest
+template<typename TYPE> inline bool PtrTest__(TYPE&) { return false; }
+template<typename TYPE> inline bool PtrTest__(TYPE*&) { return true; }
 template<typename TYPE>
 inline bool DD_ptrtest()
 {TYPE* _ = nullptr; TYPE& __ = *_; return PtrTest__(__);}
+
+// DD_crash
+void DD_crash();
 
 } // namespace Daddy

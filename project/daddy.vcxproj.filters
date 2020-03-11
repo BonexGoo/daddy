@@ -36,6 +36,9 @@
     <ClCompile Include="..\core\dd_zoker.cpp">
       <Filter>core</Filter>
     </ClCompile>
+    <ClCompile Include="..\core\dd_type.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\core\dd_binary.hpp">

@@ -46,10 +46,8 @@
     #if defined(__MINGW32__)
         #define DD_OS_WINDOWS_MINGW 1
         #pragma message("[daddy] compiler is mingw")
-        #define DD_crash do{__builtin_trap();} while(false)
     #else
         #define DD_OS_WINDOWS_MINGW 0
-        #define DD_crash do{__debugbreak();} while(false)
     #endif
 #else
     #define DD_OS_WINDOWS 0
@@ -61,7 +59,6 @@
 #if defined(__linux__) && !defined(ANDROID) && !defined(__EMSCRIPTEN__)
     #define DD_OS_LINUX 1
     #pragma message("[daddy] os is linux")
-    #define DD_crash do{__builtin_trap();} while(false)
 #else
     #define DD_OS_LINUX 0
 #endif
@@ -73,14 +70,12 @@
     #if TARGET_OS_MAC && !TARGET_OS_IPHONE
         #define DD_OS_OSX 1
         #pragma message("[daddy] os is macx")
-        #define DD_crash do{__builtin_trap();} while(false)
     #else
         #define DD_OS_OSX 0
     #endif
     #if TARGET_OS_MAC && TARGET_OS_IPHONE
         #define DD_OS_IOS 1
         #pragma message("[daddy] os is ios")
-        #define DD_crash do{__builtin_trap();} while(false)
     #else
         #define DD_OS_IOS 0
     #endif
@@ -94,7 +89,6 @@
 #if defined(ANDROID)
     #define DD_OS_ANDROID 1
     #pragma message("[daddy] os is android")
-    #define DD_crash do{__builtin_trap();} while(false)
 #else
     #define DD_OS_ANDROID 0
 #endif
@@ -105,7 +99,6 @@
     #include <emscripten.h>
     #define DD_OS_WASM 1
     #pragma message("[daddy] os is wasm")
-    #define DD_crash do{__builtin_trap();} while(false)
 #else
     #define DD_OS_WASM 0
 #endif
@@ -121,7 +114,7 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 // ▶ coding utility
 #ifdef DD_ENABLE_TRACE
-    #define DD_assert(QUERY, CAUSE)    do{if(!(QUERY)) DD_crash;} while(false)
+    #define DD_assert(QUERY, CAUSE)    do{if(!(QUERY)) DD_crash();} while(false)
     #pragma message("[daddy] trace-system ENABLED")
 #else
     #define DD_assert(QUERY, CAUSE)    DD_nothing

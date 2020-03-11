@@ -8,6 +8,7 @@
 #if DD_OS_WINDOWS
     #include <windows.h>
     #include <intrin.h>
+    #pragma comment(lib, "advapi32.lib")
 #elif DD_OS_LINUX
     #include <linux/if.h>
     #include <netdb.h> // IPPROTO_IP가 쓰임

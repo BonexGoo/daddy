@@ -13,8 +13,7 @@ namespace Daddy {
 #define DD_trace_info(FORMAT, ...)  Daddy::dDetector::trace(Daddy::dDetector::InfoLevel, FORMAT " [%s:%d]", ## __VA_ARGS__, __FILE__, __LINE__)
 #define DD_trace_warn(FORMAT, ...)  Daddy::dDetector::trace(Daddy::dDetector::WarnLevel, FORMAT " [%s:%d]", ## __VA_ARGS__, __FILE__, __LINE__)
 #define DD_trace_error(FORMAT, ...) Daddy::dDetector::trace(Daddy::dDetector::ErrorLevel, FORMAT " [%s:%d]", ## __VA_ARGS__, __FILE__, __LINE__)
-#define DD_valid(QUERY)             do { \
-                                    DD_global bool gIgnore = false; \
+#define DD_valid(QUERY)             do { DD_global bool gIgnore = false; \
                                     if(!(QUERY)) Daddy::dDetector::valid(gIgnore, "%s [%s:%d]", #QUERY, __FILE__, __LINE__);} while(false)
 
 /// @brief 가상파일식 로그관리
@@ -70,6 +69,7 @@ public: // 로그쓰기
     /// @param format    포맷스트링
     /// @param ...       포맷인수
     static void trace(Level level, utf8s format, ...);
+    static void trace(Level level, ucodes format, ...);
 
     /// @brief           유효성보장(Assert-Breaker)
     /// @param condition 실행조건

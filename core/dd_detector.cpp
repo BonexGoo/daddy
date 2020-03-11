@@ -11,7 +11,6 @@
 #include <fcntl.h>
 #include <stdarg.h>
 #include <stdlib.h>
-
 #if DD_OS_WINDOWS
     #include <windows.h>
     #include <memoryapi.h>
@@ -50,7 +49,9 @@ public:
     FileMapP(utf8s filename, uint32_t filesize) // 쓰기용
     {
         #if DD_OS_WINDOWS
-            mFD = CreateFileA(filename, GENERIC_READ | GENERIC_WRITE, FILE_SHARE_READ, nullptr, CREATE_ALWAYS, FILE_ATTRIBUTE_NORMAL, nullptr);
+            const dString FilePath = dString(getenv("APPDATA")) + '\\' + filename;
+            mFD = CreateFileA(dLiteral(FilePath).buildNative(),
+                GENERIC_READ | GENERIC_WRITE, FILE_SHARE_READ, nullptr, CREATE_ALWAYS, FILE_ATTRIBUTE_NORMAL, nullptr);
 
             SECURITY_ATTRIBUTES SA;
             SA.nLength = sizeof(SECURITY_ATTRIBUTES);
@@ -389,7 +390,7 @@ public:
     {DD_global DetectorWriterP _; return _;}
 
 private:
-    DetectorWriterP() : mLogFM("nabang.blog", LogPageP::LOG_FILE_SIZE)
+    DetectorWriterP() : mLogFM("detector.blog", LogPageP::LOG_FILE_SIZE)
     {
         mPageWriter.open();
     }
@@ -482,12 +483,26 @@ public:
             return (utf8s) Result;
         #else
             length = vsnprintf(nullptr, 0, format, args);
-            char* Result = (char*) std::malloc(length + 1);
+            char* Result = (char*) std::malloc(sizeof(char) * (length + 1));
             vsnprintf(Result, length + 1, format, args);
             return (utf8s) Result;
         #endif
     }
-    static void releaseString(utf8s ptr)
+    static ucodes createString(int32_t& length, ucodes format, va_list args)
+    {
+        #if DD_OS_LINUX | DD_OS_OSX | DD_OS_IOS
+            length = vswprintf(nullptr, 0, format, args);
+            wchar_t* Result = (wchar_t*) std::malloc(sizeof(wchar_t) * (length + 1));
+            vswprintf(Result, length + 1, format, args);
+            return (ucodes) Result;
+        #else
+            length = _vsnwprintf(nullptr, 0, format, args);
+            wchar_t* Result = (wchar_t*) std::malloc(sizeof(wchar_t) * (length + 1));
+            _vsnwprintf(Result, length + 1, format, args);
+            return (ucodes) Result;
+        #endif
+    }
+    static void releaseString(const void* ptr)
     {
         std::free((void*) ptr);
     }
@@ -506,7 +521,7 @@ public:
     {DD_global DetectorReaderP _; return _;}
 
 private:
-    DetectorReaderP() : mLogFM("nabang.blog")
+    DetectorReaderP() : mLogFM("detector.blog")
     {
         if(mLogFM.isValid())
             mPageReader.open(mLogFM);
@@ -728,6 +743,25 @@ void dDetector::trace(Level level, utf8s format, ...)
     DetectorWriterP::releaseString(Result);
 }
 
+void dDetector::trace(Level level, ucodes format, ...)
+{
+    va_list Args;
+    va_start(Args, format);
+    int32_t Length;
+    ucodes Result = DetectorWriterP::createString(Length, format, Args);
+    va_end(Args);
+
+    switch (level)
+    {
+    case InfoLevel: printf("<info> %S\n", Result); break;
+    case WarnLevel: printf("<warn> %S\n", Result); break;
+    case ErrorLevel: printf("<error> %S\n", Result); break;
+    }
+    //DetectorWriterP::ST().writeST(TraceST, Result, Length, (int32_t) level);
+    DetectorWriterP::ST().writeST(TraceST, "ready for WCHAR_T...", 20, (int32_t) level); ////////////////////
+    DetectorWriterP::releaseString(Result);
+}
+
 void dDetector::valid(bool& condition, utf8s format, ...)
 {
     if(!condition)
@@ -740,7 +774,7 @@ void dDetector::valid(bool& condition, utf8s format, ...)
 
         DD_global int32_t gValidKey = -1;
         char ValidSemaphore[1024];
-        sprintf(ValidSemaphore, "nabang-valid-%d", ++gValidKey);
+        sprintf(ValidSemaphore, "detector-valid-%d", ++gValidKey);
 
         printf("<valid:%d> %s\n", gValidKey, Result);
         DetectorWriterP::ST().writeST(ValidST, Result, Length, gValidKey);
@@ -763,7 +797,7 @@ void dDetector::valid(bool& condition, utf8s format, ...)
         switch(Command)
         {
         case 0: // break
-            DD_crash;
+            DD_crash();
             break;
         case 1: // continue
             break;
