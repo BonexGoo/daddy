@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Logger</title>
+    <script>
+        function AutoRun() {
+            var Text = "AAABBBCCC";
+            fetch("/fingerprint?text=" + Text).then((res) => {
+                res.text().then(result => {
+                    window.location.href = "/latest?deviceid=" + result;
+                });
+            });
+        }
+        AutoRun();
+    </script>
+</head>
+
+<body bgcolor="#000000">
+</body>
+</html>
+
