@@ -488,21 +488,22 @@ public:
             return (utf8s) Result;
         #endif
     }
-    static ucodes createString(int32_t& length, ucodes format, va_list args)
+    static utf8s createString(int32_t& length, ucodes format, va_list args)
     {
         #if DD_OS_LINUX | DD_OS_OSX | DD_OS_IOS
-            length = vswprintf(nullptr, 0, format, args);
-            wchar_t* Result = (wchar_t*) std::malloc(sizeof(wchar_t) * (length + 1));
-            vswprintf(Result, length + 1, format, args);
-            return (ucodes) Result;
+            const int32_t LengthW = vswprintf(nullptr, 0, format, args);
+            wchar_t* ResultW = (wchar_t*) std::malloc(sizeof(wchar_t) * (LengthW + 1));
+            vswprintf(Result, LengthW + 1, format, args);
         #else
-            length = _vsnwprintf(nullptr, 0, format, args);
-            wchar_t* Result = (wchar_t*) std::malloc(sizeof(wchar_t) * (length + 1));
-            _vsnwprintf(Result, length + 1, format, args);
-            return (ucodes) Result;
+            const int32_t LengthW = _vsnwprintf(nullptr, 0, format, args);
+            wchar_t* ResultW = (wchar_t*) std::malloc(sizeof(wchar_t) * (LengthW + 1));
+            _vsnwprintf(ResultW, LengthW + 1, format, args);
         #endif
+        char* Result = (char*) std::malloc(sizeof(char) * (LengthW * 6 + 1)); // utf8은 최악의 경우 6배
+        length = sprintf(Result, "%S", ResultW);
+        return (utf8s) Result;
     }
-    static void releaseString(const void* ptr)
+    static void releaseString(utf8s ptr)
     {
         std::free((void*) ptr);
     }
@@ -725,59 +726,54 @@ dDetector::Stack dDetector::scope(dLiteral name)
     return Stack(name);
 }
 
+template <typename TYPE>
+static void traceCore(dDetector::Level level, TYPE format, va_list args)
+{
+    int32_t Length;
+    utf8s Result = DetectorWriterP::createString(Length, format, args);
+    if(Length != -1)
+    {
+        switch(level)
+        {
+        case dDetector::InfoLevel: printf("<info> %s\n", Result); break;
+        case dDetector::WarnLevel: printf("<warn> %s\n", Result); break;
+        case dDetector::ErrorLevel: printf("<error> %s\n", Result); break;
+        }
+        DetectorWriterP::ST().writeST(dDetector::TraceST, Result, Length, (int32_t) level);
+        DetectorWriterP::releaseString(Result);
+    }
+    else DetectorWriterP::ST().writeST(dDetector::TraceST, DD_string_pair("-unicode conversion failed-"), (int32_t) level);
+}
+
 void dDetector::trace(Level level, utf8s format, ...)
 {
     va_list Args;
     va_start(Args, format);
-    int32_t Length;
-    utf8s Result = DetectorWriterP::createString(Length, format, Args);
+    traceCore(level, format, Args);
     va_end(Args);
-
-    switch(level)
-    {
-    case InfoLevel: printf("<info> %s\n", Result); break;
-    case WarnLevel: printf("<warn> %s\n", Result); break;
-    case ErrorLevel: printf("<error> %s\n", Result); break;
-    }
-    DetectorWriterP::ST().writeST(TraceST, Result, Length, (int32_t) level);
-    DetectorWriterP::releaseString(Result);
 }
 
 void dDetector::trace(Level level, ucodes format, ...)
 {
     va_list Args;
     va_start(Args, format);
-    int32_t Length;
-    ucodes Result = DetectorWriterP::createString(Length, format, Args);
+    traceCore(level, format, Args);
     va_end(Args);
-
-    switch (level)
-    {
-    case InfoLevel: printf("<info> %S\n", Result); break;
-    case WarnLevel: printf("<warn> %S\n", Result); break;
-    case ErrorLevel: printf("<error> %S\n", Result); break;
-    }
-    //DetectorWriterP::ST().writeST(TraceST, Result, Length, (int32_t) level);
-    DetectorWriterP::ST().writeST(TraceST, "ready for WCHAR_T...", 20, (int32_t) level); ////////////////////
-    DetectorWriterP::releaseString(Result);
 }
 
-void dDetector::valid(bool& condition, utf8s format, ...)
+template <typename TYPE>
+static void validCore(bool& condition, TYPE format, va_list args)
 {
-    if(!condition)
+    int32_t Length;
+    utf8s Result = DetectorWriterP::createString(Length, format, args);
+    if(Length != -1)
     {
-        va_list Args;
-        va_start(Args, format);
-        int32_t Length;
-        utf8s Result = DetectorWriterP::createString(Length, format, Args);
-        va_end(Args);
-
         DD_global int32_t gValidKey = -1;
         char ValidSemaphore[1024];
         sprintf(ValidSemaphore, "detector-valid-%d", ++gValidKey);
 
         printf("<valid:%d> %s\n", gValidKey, Result);
-        DetectorWriterP::ST().writeST(ValidST, Result, Length, gValidKey);
+        DetectorWriterP::ST().writeST(dDetector::ValidST, Result, Length, gValidKey);
         DetectorWriterP::releaseString(Result);
 
         dSemaphore Waiting;
@@ -805,6 +801,29 @@ void dDetector::valid(bool& condition, utf8s format, ...)
             condition = true;
             break;
         }
+    }
+    else DetectorWriterP::ST().writeST(dDetector::ValidST, DD_string_pair("-unicode conversion failed-"), 0);
+}
+
+void dDetector::valid(bool& condition, utf8s format, ...)
+{
+    if(!condition)
+    {
+        va_list Args;
+        va_start(Args, format);
+        validCore(condition, format, Args);
+        va_end(Args);
+    }
+}
+
+void dDetector::valid(bool& condition, ucodes format, ...)
+{
+    if(!condition)
+    {
+        va_list Args;
+        va_start(Args, format);
+        validCore(condition, format, Args);
+        va_end(Args);
     }
 }
 

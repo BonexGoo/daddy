@@ -9,12 +9,20 @@
 
 namespace Daddy {
 
-#define DD_scope(NAME)              if(auto _ = Daddy::dDetector::scope(NAME))
-#define DD_trace_info(FORMAT, ...)  Daddy::dDetector::trace(Daddy::dDetector::InfoLevel, FORMAT " [%s:%d]", ## __VA_ARGS__, __FILE__, __LINE__)
-#define DD_trace_warn(FORMAT, ...)  Daddy::dDetector::trace(Daddy::dDetector::WarnLevel, FORMAT " [%s:%d]", ## __VA_ARGS__, __FILE__, __LINE__)
-#define DD_trace_error(FORMAT, ...) Daddy::dDetector::trace(Daddy::dDetector::ErrorLevel, FORMAT " [%s:%d]", ## __VA_ARGS__, __FILE__, __LINE__)
-#define DD_valid(QUERY)             do { DD_global bool gIgnore = false; \
-                                    if(!(QUERY)) Daddy::dDetector::valid(gIgnore, "%s [%s:%d]", #QUERY, __FILE__, __LINE__);} while(false)
+#define DD_scope(NAME)                  if(auto _ = Daddy::dDetector::scope(NAME))
+#ifdef UNICODE
+    #define DD_trace_info(FORMAT, ...)  Daddy::dDetector::trace(Daddy::dDetector::InfoLevel, FORMAT " [%S:%d]", ## __VA_ARGS__, __FILE__, __LINE__)
+    #define DD_trace_warn(FORMAT, ...)  Daddy::dDetector::trace(Daddy::dDetector::WarnLevel, FORMAT " [%S:%d]", ## __VA_ARGS__, __FILE__, __LINE__)
+    #define DD_trace_error(FORMAT, ...) Daddy::dDetector::trace(Daddy::dDetector::ErrorLevel, FORMAT " [%S:%d]", ## __VA_ARGS__, __FILE__, __LINE__)
+    #define DD_valid(QUERY)             do { DD_global bool gIgnore = false; \
+                                        if(!(QUERY)) Daddy::dDetector::valid(gIgnore, "%s [%S:%d]", #QUERY, __FILE__, __LINE__);} while(false)
+#else
+    #define DD_trace_info(FORMAT, ...)  Daddy::dDetector::trace(Daddy::dDetector::InfoLevel, FORMAT " [%s:%d]", ## __VA_ARGS__, __FILE__, __LINE__)
+    #define DD_trace_warn(FORMAT, ...)  Daddy::dDetector::trace(Daddy::dDetector::WarnLevel, FORMAT " [%s:%d]", ## __VA_ARGS__, __FILE__, __LINE__)
+    #define DD_trace_error(FORMAT, ...) Daddy::dDetector::trace(Daddy::dDetector::ErrorLevel, FORMAT " [%s:%d]", ## __VA_ARGS__, __FILE__, __LINE__)
+    #define DD_valid(QUERY)             do { DD_global bool gIgnore = false; \
+                                        if(!(QUERY)) Daddy::dDetector::valid(gIgnore, "%s [%s:%d]", #QUERY, __FILE__, __LINE__);} while(false)
+#endif
 
 /// @brief 가상파일식 로그관리
 class dDetector
@@ -76,6 +84,7 @@ public: // 로그쓰기
     /// @param format    포맷스트링
     /// @param ...       포맷인수
     static void valid(bool& condition, utf8s format, ...);
+    static void valid(bool& condition, ucodes format, ...);
 
     /// @brief           사용자 프로퍼티 변경(스트링타입)
     /// @param name      프로퍼티명
