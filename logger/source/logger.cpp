@@ -39,7 +39,7 @@ ZAY_VIEW_API OnNotify(NotifyType type, chars topic, id_share in, id_cloned_share
         struct PacketValid
         {
             uint32_t mPacketSize; // 12
-            int32_t mPacketType; // 'VALD'
+            int32_t mPacketType; // 'VALD', 'CHCK'
             int32_t mKey;
             int32_t mCommand;
         };
@@ -48,6 +48,12 @@ ZAY_VIEW_API OnNotify(NotifyType type, chars topic, id_share in, id_cloned_share
         {
             const sint32s Values(in);
             const PacketValid NewPacket = {12, 'VALD', Values[1], Values[2]};
+            Platform::Server::SendToPeer(m->mCmdServer, Values[0], &NewPacket, sizeof(PacketValid));
+        }
+        else if(!String::Compare(topic, "SendCheck"))
+        {
+            const sint32s Values(in);
+            const PacketValid NewPacket = {12, 'CHCK', Values[1], Values[2]};
             Platform::Server::SendToPeer(m->mCmdServer, Values[0], &NewPacket, sizeof(PacketValid));
         }
     }

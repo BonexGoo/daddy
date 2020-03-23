@@ -14,6 +14,9 @@
 #if DD_OS_WINDOWS
     #include <windows.h>
     #include <memoryapi.h>
+    #define PROCESS_DATA                                HANDLE
+    #define PROCESS_INIT(ID)                            do {ID = INVALID_HANDLE_VALUE;} while(false)
+    #define PROCESS_EXITCODE(ID, CODE)                  GetExitCodeProcess(ID, CODE)
     #define LOG_VIEW_OPEN_FOR_WRITE(FM, OFFSET, LENGTH) MapViewOfFile((FM).mMap, FILE_MAP_WRITE, 0, OFFSET, LENGTH)
     #define LOG_VIEW_OPEN_FOR_READ(FM, OFFSET, LENGTH)  MapViewOfFile((FM).mMap, FILE_MAP_READ, 0, OFFSET, LENGTH)
     #define LOG_VIEW_CLOSE(BUF, LENGTH)                 UnmapViewOfFile(BUF)
@@ -25,11 +28,15 @@
     #include <signal.h>
     #include <sys/mman.h>
     #include <sys/stat.h>
+    #define PROCESS_DATA                                // Will be developed in the future!
+    #define PROCESS_INIT(ID)                            // Will be developed in the future!
+    #define PROCESS_EXITCODE(ID, CODE)                  // Will be developed in the future!
     #define LOG_VIEW_OPEN_FOR_WRITE(FM, OFFSET, LENGTH) mmap(0, LENGTH, PROT_READ | PROT_WRITE, MAP_SHARED, (FM).mFD, OFFSET)
     #define LOG_VIEW_OPEN_FOR_READ(FM, OFFSET, LENGTH)  mmap(0, LENGTH, PROT_READ, MAP_SHARED, (FM).mFD, OFFSET)
     #define LOG_VIEW_CLOSE(BUF, LENGTH)                 munmap(BUF, LENGTH)
     #define LOG_VIEW_FLUSH(BUF, LENGTH)                 msync(BUF, LENGTH, MS_ASYNC)
 #endif
+typedef PROCESS_DATA ProcessData;
 
 extern "C" {
     #if DD_OS_WINDOWS_MINGW | DD_OS_LINUX | DD_OS_OSX | DD_OS_IOS
@@ -393,10 +400,27 @@ private:
     DetectorWriterP() : mLogFM("detector.blog", LogPageP::LOG_FILE_SIZE)
     {
         mPageWriter.open();
+        PROCESS_INIT(mLastProcess);
     }
     ~DetectorWriterP()
     {
         mPageWriter.close();
+    }
+
+public:
+    void setProcess(PROCESS_DATA process)
+    {
+        mLastProcess = process;
+    }
+    bool alivedProcess()
+    {
+        DWORD ExitCode = 0;
+        if(PROCESS_EXITCODE(mLastProcess, &ExitCode))
+        {
+            if(ExitCode == STILL_ACTIVE)
+                return true;
+        }
+        return false;
     }
 
 public:
@@ -511,6 +535,7 @@ public:
 private:
     FileMapP mLogFM;
     LogPageWriterP mPageWriter;
+    PROCESS_DATA mLastProcess;
 };
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -583,10 +608,16 @@ void dDetector::runClient(dLiteral exepath, dLiteral option, dLiteral hostname, 
         ZeroMemory(&PI, sizeof(PI));
         #if DD_BUILD_DEBUG
             if(!strcmp(option.buildNative(), "run"))
+            {
                 CreateProcessA(NULL, CommandLine, NULL, NULL, FALSE, CREATE_NEW_CONSOLE, NULL, NULL, &SI, &PI);
+                DetectorWriterP::ST().setProcess(PI.hProcess);
+            }
         #else
             if(!strcmp(option.buildNative(), "run"))
+            {
                 CreateProcessA(NULL, CommandLine, NULL, NULL, FALSE, 0, NULL, NULL, &SI, &PI);
+                DetectorWriterP::ST().setProcess(PI.hProcess);
+            }
         #endif
     #elif DD_OS_LINUX
         #define PATH_MAX (1024 + 1)
@@ -776,18 +807,20 @@ static void validCore(bool& condition, TYPE format, va_list args)
         DetectorWriterP::ST().writeST(dDetector::ValidST, Result, Length, gValidKey);
         DetectorWriterP::releaseString(Result);
 
-        dSemaphore Waiting;
-        Waiting.bind(ValidSemaphore);
-        Waiting.lock();
-        Waiting.lock();
-        Waiting.unlock();
-
-        int32_t Command = 0;
-        if(FILE* NewFile = fopen(ValidSemaphore, "rb"))
+        int32_t Command = 1;
+        if(DetectorWriterP::ST().alivedProcess())
         {
-            fread(&Command, 4, 1, NewFile);
-            fclose(NewFile);
-            remove(ValidSemaphore);
+            dSemaphore Waiting;
+            Waiting.bind(ValidSemaphore);
+            Waiting.lock();
+            Waiting.lock();
+            Waiting.unlock();
+            if(FILE* NewFile = fopen(ValidSemaphore, "rb"))
+            {
+                fread(&Command, 4, 1, NewFile);
+                fclose(NewFile);
+                remove(ValidSemaphore);
+            }
         }
 
         switch(Command)
@@ -825,6 +858,72 @@ void dDetector::valid(bool& condition, ucodes format, ...)
         validCore(condition, format, Args);
         va_end(Args);
     }
+}
+
+template <typename TYPE>
+static bool checkCore(TYPE format, va_list args)
+{
+    int32_t Length;
+    utf8s Result = DetectorWriterP::createString(Length, format, args);
+    if(Length != -1)
+    {
+        DD_global int32_t gCheckKey = -1;
+        char CheckSemaphore[1024];
+        sprintf(CheckSemaphore, "detector-check-%d", ++gCheckKey);
+
+        printf("<check:%d> %s\n", gCheckKey, Result);
+        DetectorWriterP::ST().writeST(dDetector::CheckST, Result, Length, gCheckKey);
+        DetectorWriterP::releaseString(Result);
+
+        int32_t Command = 0;
+        if(DetectorWriterP::ST().alivedProcess())
+        {
+            dSemaphore Waiting;
+            Waiting.bind(CheckSemaphore);
+            Waiting.lock();
+            Waiting.lock();
+            Waiting.unlock();
+            if(FILE* NewFile = fopen(CheckSemaphore, "rb"))
+            {
+                fread(&Command, 4, 1, NewFile);
+                fclose(NewFile);
+                remove(CheckSemaphore);
+            }
+        }
+
+        switch(Command)
+        {
+        case 0: // true
+            return true;
+            break;
+        case 1: // false
+            return false;
+            break;
+        case 2: // break
+            DD_crash();
+            break;
+        }
+    }
+    else DetectorWriterP::ST().writeST(dDetector::CheckST, DD_string_pair("-unicode conversion failed-"), 0);
+    return true;
+}
+
+bool dDetector::check(utf8s format, ...)
+{
+    va_list Args;
+    va_start(Args, format);
+    bool Result = checkCore(format, Args);
+    va_end(Args);
+    return Result;
+}
+
+bool dDetector::check(ucodes format, ...)
+{
+    va_list Args;
+    va_start(Args, format);
+    bool Result = checkCore(format, Args);
+    va_end(Args);
+    return Result;
 }
 
 void dDetector::setValue(dLiteral name, dLiteral value)

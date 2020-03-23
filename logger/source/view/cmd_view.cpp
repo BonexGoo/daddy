@@ -59,53 +59,60 @@ bool CmdView::OnRender(ZayPanel& panel)
                 ZAY_COLOR(panel, CurLog.mColor)
                     panel.text(CurLog.mText, UIFA_LeftMiddle, UIFE_Right);
 
-                // Valid처리
-                if(!CurLog.mText.Left(7).Compare("<valid:"))
+                // 브레이커
+                chars TagNames[2] = {"<valid:", "<check:"};
+                chars UITexts[2][3] = {{"break", "continue", "ignore"}, {"ok", "cancel", "break"}};
+                for(sint32 b = 0, bend = _countof(TagNames); b < bend; ++b)
                 {
-                    const sint32 EndPos = CurLog.mText.Find(0, ">");
-                    if(EndPos != -1)
+                    if(!CurLog.mText.Left(7).Compare(TagNames[b]))
                     {
-                        const sint32 ValidKey = Parser::GetInt(CurLog.mText.Middle(7, EndPos - 7));
-                        sint32 UIPos = Platform::Graphics::GetStringWidth(CurLog.mText) + 5;
-                        chars UITexts[3] = {"break", "continue", "ignore"};
-                        ZAY_FONT(panel, 0.8)
-                        for(sint32 j = 0; j < 3; ++j)
+                        const sint32 EndPos = CurLog.mText.Find(0, ">");
+                        if(EndPos != -1)
                         {
-                            const String UIName = CurLog.mText.Left(EndPos + 1) + UITexts[j];
-                            const sint32 TextWidth = Platform::Graphics::GetStringWidth(UITexts[j]);
-                            ZAY_XYWH_UI(panel, UIPos, 3, TextWidth + 10, panel.h() - 3, UIName,
-                                ZAY_GESTURE_T(t, this, CurFocus, EndPos, ValidKey, j)
-                                {
-                                    if(t == GT_InReleased)
-                                    {
-                                        auto& CurLog = mLogs[CurFocus];
-                                        CurLog.mText = "<valid>" + CurLog.mText.Right(CurLog.mText.Length() - (EndPos + 1));
-                                        sint32s Values;
-                                        Values.AtAdding() = CurLog.mPeerID;
-                                        Values.AtAdding() = ValidKey;
-                                        Values.AtAdding() = j;
-                                        Platform::BroadcastNotify("SendValid", Values);
-                                    }
-                                })
+                            const sint32 UniqueKey = Parser::GetInt(CurLog.mText.Middle(7, EndPos - 7));
+                            sint32 UIPos = Platform::Graphics::GetStringWidth(CurLog.mText) + 5;
+                            ZAY_FONT(panel, 0.8)
+                            for(sint32 j = 0; j < 3; ++j)
                             {
-                                ZAY_MOVE(panel, 1, 1)
-                                ZAY_INNER(panel, -1)
-                                ZAY_RGBA(panel, 255, 255, 255, 160)
-                                    panel.fill();
-                                const bool Focused = !!(panel.state(UIName) & PS_Focused);
-                                const sint32 DraggingValue = !!(panel.state(UIName) & PS_Dragging);
-                                ZAY_COLOR(panel, CurLog.mColor)
-                                ZAY_MOVE(panel, DraggingValue, DraggingValue)
+                                const String UIName = CurLog.mText.Left(EndPos + 1) + UITexts[b][j];
+                                const sint32 TextWidth = Platform::Graphics::GetStringWidth(UITexts[b][j]);
+                                ZAY_XYWH_UI(panel, UIPos, 3, TextWidth + 10, panel.h() - 3, UIName,
+                                    ZAY_GESTURE_T(t, this, CurFocus, EndPos, UniqueKey, b, j)
+                                    {
+                                        if(t == GT_InReleased)
+                                        {
+                                            chars TagNames[2] = {"<valid>", "<check>"};
+                                            chars CallNames[2] = {"SendValid", "SendCheck"};
+                                            auto& CurLog = mLogs[CurFocus];
+                                            CurLog.mText = TagNames[b] + CurLog.mText.Right(CurLog.mText.Length() - (EndPos + 1));
+                                            sint32s Values;
+                                            Values.AtAdding() = CurLog.mPeerID;
+                                            Values.AtAdding() = UniqueKey;
+                                            Values.AtAdding() = j;
+                                            Platform::BroadcastNotify(CallNames[b], Values);
+                                        }
+                                    })
                                 {
-                                    ZAY_RGBA(panel, 128, 128, 128, (Focused)? 64 : 32)
+                                    ZAY_MOVE(panel, 1, 1)
+                                    ZAY_INNER(panel, -1)
+                                    ZAY_RGBA(panel, 255, 255, 255, 160)
                                         panel.fill();
-                                    ZAY_RGB(panel, 128, 32, 32)
-                                        panel.text(UITexts[j]);
-                                    panel.rect(1);
+                                    const bool Focused = !!(panel.state(UIName) & PS_Focused);
+                                    const sint32 DraggingValue = !!(panel.state(UIName) & PS_Dragging);
+                                    ZAY_COLOR(panel, CurLog.mColor)
+                                    ZAY_MOVE(panel, DraggingValue, DraggingValue)
+                                    {
+                                        ZAY_RGBA(panel, 128, 128, 128, (Focused)? 64 : 32)
+                                            panel.fill();
+                                        ZAY_RGB(panel, 128, 32, 32)
+                                            panel.text(UITexts[b][j]);
+                                        panel.rect(1);
+                                    }
                                 }
+                                UIPos += TextWidth + 10 + 5;
                             }
-                            UIPos += TextWidth + 10 + 5;
                         }
+                        break;
                     }
                 }
             }
@@ -215,6 +222,14 @@ void CmdView::OnPacket(packettype type, sint32 peerid, bytes buffer)
                         auto ValidKey = dDetector::parseInt32(Payload);
                         CurLog.mText = String::Format("<valid:%d> %s", ValidKey, Text);
                         CurLog.mColor = Color(0, 255, 255);
+                    }
+                    break;
+                case dDetector::CheckST:
+                    {
+                        auto Text = dDetector::parseString(Payload);
+                        auto CheckKey = dDetector::parseInt32(Payload);
+                        CurLog.mText = String::Format("<check:%d> %s", CheckKey, Text);
+                        CurLog.mColor = Color(0, 128, 255);
                     }
                     break;
                 case dDetector::SetValueSS:

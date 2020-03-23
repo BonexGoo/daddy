@@ -114,7 +114,7 @@ bool LogKit::RecvOnce()
 {
     struct PacketValid
     {
-        int32_t mPacketType; // 'VALD'
+        int32_t mPacketType; // 'VALD', 'CHCK'
         int32_t mKey;
         int32_t mCommand;
     };
@@ -130,19 +130,23 @@ bool LogKit::RecvOnce()
             switch(*((int32_t*) OneBuffer))
             {
             case 'VALD':
+            case 'CHCK':
                 {
                     auto Packet = (PacketValid*) OneBuffer;
-                    char ValidSemaphore[1024];
-                    sprintf(ValidSemaphore, "detector-valid-%d", Packet->mKey);
+                    char NewSemaphore[1024];
+                    if(Packet->mPacketType == 'VALD')
+                        sprintf(NewSemaphore, "detector-valid-%d", Packet->mKey);
+                    else if(Packet->mPacketType == 'CHCK')
+                        sprintf(NewSemaphore, "detector-check-%d", Packet->mKey);
 
-                    if(FILE* NewFile = fopen(ValidSemaphore, "wb"))
+                    if(FILE* NewFile = fopen(NewSemaphore, "wb"))
                     {
                         fwrite(&Packet->mCommand, 4, 1, NewFile);
                         fclose(NewFile);
                     }
 
                     dSemaphore Waiting;
-                    Waiting.bind(ValidSemaphore);
+                    Waiting.bind(NewSemaphore);
                     Waiting.unlock();
                 }
                 break;
