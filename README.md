@@ -1,3 +1,3 @@
 # daddy
-## Component based C++ Server Engine
+## C++ ServerEngine for ComponentDesign
 ### [Go Document](https://bonexgoo.github.io/daddy)
