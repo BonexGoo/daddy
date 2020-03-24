@@ -255,6 +255,12 @@ void CmdView::OnPacket(packettype type, sint32 peerid, bytes buffer)
                         else CurLog.mText = String::Format("[addvalue] %s, %d", Name, Addition);
                     }
                     break;
+                case dDetector::KillValueS:
+                    {
+                        auto Name = dDetector::parseString(Payload);
+                        CurLog.mText = String::Format("[killvalue] %s", Name);
+                    }
+                    break;
                 }
             }
             break;

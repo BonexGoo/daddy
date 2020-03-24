@@ -442,7 +442,7 @@ public:
     {
         const uint32_t PayloadSize1 = LogPageP::alignedSize(sizeof(uint16_t) + sn1 + 1);
         const uint32_t PayloadSize2 = LogPageP::alignedSize(sizeof(uint16_t) + sn2 + 1);
-        auto PayloadPtr = mPageWriter.writeLock(mLogFM, id, PayloadSize1);
+        auto PayloadPtr = mPageWriter.writeLock(mLogFM, id, PayloadSize1 + PayloadSize2);
 
         // 페이로드 구성1
         *((uint16_t*) PayloadPtr) = uint16_t(sn1);
@@ -939,6 +939,11 @@ void dDetector::setValue(dLiteral name, int32_t value)
 void dDetector::addValue(dLiteral name, int32_t addition)
 {
     DetectorWriterP::ST().writeST(AddValueST, name.string(), name.length(), addition);
+}
+
+void dDetector::killValue(dLiteral name)
+{
+    DetectorWriterP::ST().writeS(KillValueS, name.string(), name.length());
 }
 
 dDetector::ReadResult dDetector::readOnce(ReadCB cb)

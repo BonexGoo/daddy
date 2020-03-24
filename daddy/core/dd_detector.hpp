@@ -31,7 +31,7 @@ class dDetector
 {
 public:
     enum Level {InfoLevel, WarnLevel, ErrorLevel};
-    enum FuncID {StampST = 0, ScopeBeginST, ScopeEndST, TraceST, ValidST, CheckST, SetValueSS, SetValueST, AddValueST};
+    enum FuncID {StampST = 0, ScopeBeginST, ScopeEndST, TraceST, ValidST, CheckST, SetValueSS, SetValueST, AddValueST, KillValueS};
     enum ReadResult {Unreaded, Readed, ExitProgram, LogNotFound};
     typedef std::function<void(FuncID id, addr payload, uint32_t size)> ReadCB;
 
@@ -95,20 +95,24 @@ public: // 로그쓰기
     static bool check(utf8s format, ...);
     static bool check(ucodes format, ...);
 
-    /// @brief           사용자 프로퍼티 변경(스트링타입)
+    /// @brief           사용자 프로퍼티 입력(스트링타입)
     /// @param name      프로퍼티명
     /// @param value     변경할 값
     static void setValue(dLiteral name, dLiteral value);
 
-    /// @brief           사용자 프로퍼티 변경(정수타입)
+    /// @brief           사용자 프로퍼티 입력(정수타입)
     /// @param name      프로퍼티명
     /// @param value     변경할 값
     static void setValue(dLiteral name, int32_t value);
 
-    /// @brief           사용자 프로퍼티 증감(정수타입)
+    /// @brief           사용자 프로퍼티 증감입력(정수타입)
     /// @param name      프로퍼티명
     /// @param addition  증감할 값
     static void addValue(dLiteral name, int32_t addition);
+
+    /// @brief           사용자 프로퍼티 제거
+    /// @param name      프로퍼티명
+    static void killValue(dLiteral name);
 
 public: // 로그읽기
     /// @brief           로그 가져오기
