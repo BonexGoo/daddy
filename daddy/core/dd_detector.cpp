@@ -926,9 +926,28 @@ bool dDetector::check(ucodes format, ...)
     return Result;
 }
 
-void dDetector::setValue(dLiteral name, dLiteral value)
+template <typename TYPE>
+static void setValueCore(dLiteral name, TYPE format, va_list args)
 {
-    DetectorWriterP::ST().writeSS(SetValueSS, name.string(), name.length(), value.string(), value.length());
+    int32_t Length;
+    utf8s Result = DetectorWriterP::createString(Length, format, args);
+    DetectorWriterP::ST().writeSS(dDetector::SetValueSS, name.string(), name.length(), Result, Length);
+}
+
+void dDetector::setValue(dLiteral name, utf8s format, ...)
+{
+    va_list Args;
+    va_start(Args, format);
+    setValueCore(name, format, Args);
+    va_end(Args);
+}
+
+void dDetector::setValue(dLiteral name, ucodes format, ...)
+{
+    va_list Args;
+    va_start(Args, format);
+    setValueCore(name, format, Args);
+    va_end(Args);
 }
 
 void dDetector::setValue(dLiteral name, int32_t value)

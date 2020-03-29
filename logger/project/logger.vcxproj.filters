@@ -10,6 +10,9 @@
     <Filter Include="source\view">
       <UniqueIdentifier>{24502871-0771-4fa2-9f10-28a950ff0d1b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="source\tree">
+      <UniqueIdentifier>{332f1a24-0add-47ee-ab62-e5326419b4d7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\common\windows\main.aps">
@@ -42,6 +45,18 @@
     <ClInclude Include="..\source\view\webcmd_view.hpp">
       <Filter>source\view</Filter>
     </ClInclude>
+    <ClInclude Include="..\source\view\tree_view.hpp">
+      <Filter>source\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\tree\tree_group.hpp">
+      <Filter>source\tree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\tree\tree_value.hpp">
+      <Filter>source\tree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\tree\tree_element.hpp">
+      <Filter>source\tree</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\source\logger.cpp">
@@ -58,6 +73,18 @@
     </ClCompile>
     <ClCompile Include="..\source\view\webcmd_view.cpp">
       <Filter>source\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\view\tree_view.cpp">
+      <Filter>source\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\tree\tree_group.cpp">
+      <Filter>source\tree</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\tree\tree_value.cpp">
+      <Filter>source\tree</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\tree\tree_element.cpp">
+      <Filter>source\tree</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

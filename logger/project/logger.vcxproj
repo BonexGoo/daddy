@@ -31,14 +31,22 @@
     <ClInclude Include="..\source\boss_config.h" />
     <ClInclude Include="..\source\logger.hpp" />
     <ClInclude Include="..\source\resource.hpp" />
+    <ClInclude Include="..\source\tree\tree_element.hpp" />
+    <ClInclude Include="..\source\tree\tree_group.hpp" />
+    <ClInclude Include="..\source\tree\tree_value.hpp" />
     <ClInclude Include="..\source\view\cmd_view.hpp" />
+    <ClInclude Include="..\source\view\tree_view.hpp" />
     <ClInclude Include="..\source\view\webcmd_view.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\source\logger.cpp" />
     <ClCompile Include="..\source\main.cpp" />
     <ClCompile Include="..\source\resource.cpp" />
+    <ClCompile Include="..\source\tree\tree_element.cpp" />
+    <ClCompile Include="..\source\tree\tree_group.cpp" />
+    <ClCompile Include="..\source\tree\tree_value.cpp" />
     <ClCompile Include="..\source\view\cmd_view.cpp" />
+    <ClCompile Include="..\source\view\tree_view.cpp" />
     <ClCompile Include="..\source\view\webcmd_view.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
@@ -121,7 +129,7 @@
       </PrecompiledHeaderFile>
     </ClCompile>
     <Link>
-      <SubSystem>Console</SubSystem>
+      <SubSystem>Windows</SubSystem>
       <OutputFile>$(OutDir)$(TargetName).exe</OutputFile>
       <AdditionalLibraryDirectories>$(OutDir).;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -152,7 +160,7 @@ xcopy "$(VCInstallDir)Redist\MSVC\$(VCToolsRedistVersion)\$(PlatformTarget)\Micr
       </PrecompiledHeaderFile>
     </ClCompile>
     <Link>
-      <SubSystem>Console</SubSystem>
+      <SubSystem>Windows</SubSystem>
       <OutputFile>$(OutDir)$(TargetName).exe</OutputFile>
       <AdditionalLibraryDirectories>$(OutDir).;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>

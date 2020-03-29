@@ -140,7 +140,7 @@ bool CmdView::OnRender(ZayPanel& panel)
                     }
                 })
             {
-                ZAY_RGBA(panel, 192, 255, 255, (panel.state("scroll-off") & PS_Focused)? 255 : 192)
+                ZAY_RGBA(panel, 192, 255, 255, (panel.state("scroll-off") & PS_Focused)? 255 : 128)
                     panel.fill();
                 ZAY_RGB(panel, 0, 0, 0)
                 {
@@ -237,6 +237,10 @@ void CmdView::OnPacket(packettype type, sint32 peerid, bytes buffer)
                         auto Name = dDetector::parseString(Payload);
                         auto Value = dDetector::parseString(Payload);
                         CurLog.mText = String::Format("[setvalue] %s, \"%s\"", Name, Value);
+                        Strings Payloads;
+                        Payloads.AtAdding() = Name;
+                        Payloads.AtAdding() = Value;
+                        Platform::BroadcastNotify("SetValue", Payloads);
                     }
                     break;
                 case dDetector::SetValueST:
@@ -244,6 +248,10 @@ void CmdView::OnPacket(packettype type, sint32 peerid, bytes buffer)
                         auto Name = dDetector::parseString(Payload);
                         auto Value = dDetector::parseInt32(Payload);
                         CurLog.mText = String::Format("[setvalue] %s, %d", Name, Value);
+                        Strings Payloads;
+                        Payloads.AtAdding() = Name;
+                        Payloads.AtAdding() = String::FromInteger(Value);
+                        Platform::BroadcastNotify("SetValue", Payloads);
                     }
                     break;
                 case dDetector::AddValueST:
@@ -253,12 +261,18 @@ void CmdView::OnPacket(packettype type, sint32 peerid, bytes buffer)
                         if(0 <= Addition)
                             CurLog.mText = String::Format("[addvalue] %s, +%d", Name, Addition);
                         else CurLog.mText = String::Format("[addvalue] %s, %d", Name, Addition);
+                        Strings Payloads;
+                        Payloads.AtAdding() = Name;
+                        Payloads.AtAdding() = String::FromInteger(Addition);
+                        Platform::BroadcastNotify("AddValue", Payloads);
                     }
                     break;
                 case dDetector::KillValueS:
                     {
                         auto Name = dDetector::parseString(Payload);
                         CurLog.mText = String::Format("[killvalue] %s", Name);
+                        String Payload = Name;
+                        Platform::BroadcastNotify("KillValue", Payload);
                     }
                     break;
                 }

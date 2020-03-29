@@ -22,6 +22,8 @@ SOURCES += ../source/resource.cpp
 HEADERS += ../source/resource.hpp
 SOURCES += ../source/view/cmd_view.cpp
 HEADERS += ../source/view/cmd_view.hpp
+SOURCES += ../source/view/tree_view.cpp
+HEADERS += ../source/view/tree_view.hpp
 SOURCES += ../source/view/webcmd_view.cpp
 HEADERS += ../source/view/webcmd_view.hpp
 

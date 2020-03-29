@@ -97,8 +97,10 @@ public: // 로그쓰기
 
     /// @brief           사용자 프로퍼티 입력(스트링타입)
     /// @param name      프로퍼티명
-    /// @param value     변경할 값
-    static void setValue(dLiteral name, dLiteral value);
+    /// @param format    변경할 값(포맷스트링)
+    /// @param ...       포맷인수
+    static void setValue(dLiteral name, utf8s format, ...);
+    static void setValue(dLiteral name, ucodes format, ...);
 
     /// @brief           사용자 프로퍼티 입력(정수타입)
     /// @param name      프로퍼티명

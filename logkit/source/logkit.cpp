@@ -112,7 +112,7 @@ int32_t LogKit::SendOnce()
 
 bool LogKit::RecvOnce()
 {
-    struct PacketValid
+    struct CommandPacket
     {
         int32_t mPacketType; // 'VALD', 'CHCK'
         int32_t mKey;
@@ -132,7 +132,7 @@ bool LogKit::RecvOnce()
             case 'VALD':
             case 'CHCK':
                 {
-                    auto Packet = (PacketValid*) OneBuffer;
+                    auto Packet = (CommandPacket*) OneBuffer;
                     char NewSemaphore[1024];
                     if(Packet->mPacketType == 'VALD')
                         sprintf(NewSemaphore, "detector-valid-%d", Packet->mKey);
