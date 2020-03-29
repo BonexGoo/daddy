@@ -20,12 +20,20 @@ HEADERS += ../source/logger.hpp
 SOURCES += ../source/main.cpp
 SOURCES += ../source/resource.cpp
 HEADERS += ../source/resource.hpp
+
 SOURCES += ../source/view/cmd_view.cpp
 HEADERS += ../source/view/cmd_view.hpp
 SOURCES += ../source/view/tree_view.cpp
 HEADERS += ../source/view/tree_view.hpp
 SOURCES += ../source/view/webcmd_view.cpp
 HEADERS += ../source/view/webcmd_view.hpp
+
+SOURCES += ../source/tree/tree_element.cpp
+HEADERS += ../source/tree/tree_element.hpp
+SOURCES += ../source/tree/tree_group.cpp
+HEADERS += ../source/tree/tree_group.hpp
+SOURCES += ../source/tree/tree_value.cpp
+HEADERS += ../source/tree/tree_value.hpp
 
 ASSETS_IMAGE.files += ../assets/image
 ASSETS_IMAGE.path = /assets
