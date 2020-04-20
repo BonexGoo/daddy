@@ -18,6 +18,7 @@ public:
         sint32 mPeerID;
         String mText;
         Color mColor;
+        bool mCheck;
     };
     Log* GetLastLog(sint32 pos);
 

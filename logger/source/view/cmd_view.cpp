@@ -14,8 +14,9 @@ CmdView::CmdView()
 {
     mMutex = Mutex::Open();
     mLogs[0].mPeerID = 0;
-    mLogs[0].mText = "<<<server-on>>>";
+    mLogs[0].mText = "<<<cmd starting>>>";
     mLogs[0].mColor = Color(255, 0, 255);
+    mLogs[0].mCheck = false;
     mLogFocus = 1;
     mLogScroll = 0;
     mLogScrollSmooth = 0;
@@ -31,6 +32,7 @@ bool CmdView::OnRender(ZayPanel& panel)
     bool UpdateOnce = false;
     Mutex::Lock(mMutex);
     {
+        const sint32 IndexWidth = 50;
         ZAY_INNER_UI(panel, 0, "cmd-view-bg",
             ZAY_GESTURE_VNT(v, n, t, this)
             {
@@ -45,14 +47,51 @@ bool CmdView::OnRender(ZayPanel& panel)
                     v->invalidate();
                 }
             })
-        ZAY_RGB(panel, 0, 0, 0)
-            panel.fill();
+        {
+            ZAY_XYWH(panel, 0, 0, IndexWidth, panel.h())
+            ZAY_RGB(panel, 208, 216, 224)
+            ZAY_RGB(panel, 80, 80, 80)
+                panel.fill();
+            ZAY_XYWH(panel, IndexWidth, 0, panel.w(), panel.h())
+            ZAY_RGB(panel, 0, 0, 0)
+                panel.fill();
+        }
 
+        const sint32 IndexTextWidth = Platform::Graphics::GetStringWidth("000000");
         for(sint32 i = mLogScrollSmooth / mLogHeight; i < mLogMax; ++i)
         {
-            const sint32 CurFocus = (mLogFocus + mLogMax - 1 - i) % mLogMax;
-            const auto& CurLog = mLogs[CurFocus];
-            ZAY_XYWH(panel, 5, mLogHeight * i - mLogScrollSmooth, panel.w(), mLogHeight)
+            const sint32 CurFocus = mLogFocus + mLogMax - 1 - i;
+            const auto& CurLog = mLogs[CurFocus % mLogMax];
+            const String UIName = String::Format("log%d", CurFocus);
+
+            // 인덱스
+            if(mLogMax - 1 < CurFocus)
+            ZAY_XYWH_UI(panel, 0, mLogHeight * i - mLogScrollSmooth, IndexWidth, mLogHeight, UIName,
+                ZAY_GESTURE_T(t, this, CurFocus)
+                {
+                    if(t == GT_Pressed)
+                    {
+                        auto& CurLog = mLogs[CurFocus % mLogMax];
+                        CurLog.mCheck ^= true;
+                    }
+                })
+            {
+                sint32 IndexNumber = CurFocus - (mLogMax - 1);
+                if(IndexNumber & 1)
+                ZAY_RGBA(panel, 0, 0, 0, 32)
+                    panel.fill();
+                const sint32 Color = (CurLog.mCheck)? 0 : 255;
+                for(sint32 j = 0; j < 6; ++j)
+                {
+                    const char IndexText[2] = {'0' + (IndexNumber % 10), '\0'};
+                    ZAY_RGBA(panel, 255, Color, Color, (0 < IndexNumber)? 255 : 128)
+                        panel.text(panel.w() / 2 + IndexTextWidth * ((2 - j) * 2 + 1) / 12, panel.h() / 2, IndexText);
+                    IndexNumber /= 10;
+                }
+            }
+
+            // 로그
+            ZAY_XYWH(panel, IndexWidth + 5, mLogHeight * i - mLogScrollSmooth, panel.w(), mLogHeight)
             {
                 if(panel.visible() != VS_Visible)
                     break;
@@ -83,7 +122,7 @@ bool CmdView::OnRender(ZayPanel& panel)
                                         {
                                             chars TagNames[2] = {"<valid>", "<check>"};
                                             chars CallNames[2] = {"SendValid", "SendCheck"};
-                                            auto& CurLog = mLogs[CurFocus];
+                                            auto& CurLog = mLogs[CurFocus % mLogMax];
                                             CurLog.mText = TagNames[b] + CurLog.mText.Right(CurLog.mText.Length() - (EndPos + 1));
                                             sint32s Values;
                                             Values.AtAdding() = CurLog.mPeerID;
@@ -127,16 +166,56 @@ bool CmdView::OnRender(ZayPanel& panel)
             UpdateOnce = true;
         }
 
-        // 스크롤복원
-        if(0 < mLogScrollSmooth)
+        // 클리어
+        if(0 < mLogFocus)
         {
-            ZAY_LTRB_UI(panel, panel.w() - 100 - 10, 10, panel.w() - 10, 10 + 26, "scroll-off",
+            ZAY_XYWH_UI(panel, panel.w() - (100 + 10), panel.h() - 26 - 10, 100, 26, "clear-log",
                 ZAY_GESTURE_T(t, this)
                 {
                     if(t == GT_Pressed)
                     {
-                        mLogScroll = 0;
-                        mLogScrollSmooth = 0;
+                        Mutex::Lock(mMutex);
+                        {
+                            for(sint32 i = 0; i < mLogMax; ++i)
+                            {
+                                mLogs[i].mPeerID = 0;
+                                mLogs[i].mText.Empty();
+                                mLogs[i].mColor = Color();
+                                mLogs[i].mCheck = false;
+                            }
+                            mLogFocus = 0;
+                            mLogScroll = 0;
+                            mLogScrollSmooth = 0;
+                        }
+                        Mutex::Unlock(mMutex);
+                    }
+                })
+            {
+                ZAY_RGBA(panel, 255, 192, 192, (panel.state("clear-log") & PS_Focused)? 255 : 128)
+                    panel.fill();
+                ZAY_RGB(panel, 0, 0, 0)
+                {
+                    panel.text("Clear LOG");
+                    ZAY_INNER(panel, 3)
+                        panel.rect(1);
+                }
+            }
+        }
+
+        // 스크롤복원
+        if(0 < mLogScrollSmooth)
+        {
+            ZAY_XYWH_UI(panel, panel.w() - ((0 < mLogFocus)? 200 + 20 : 100 + 10), panel.h() - 26 - 10, 100, 26, "scroll-off",
+                ZAY_GESTURE_T(t, this)
+                {
+                    if(t == GT_Pressed)
+                    {
+                        Mutex::Lock(mMutex);
+                        {
+                            mLogScroll = 0;
+                            mLogScrollSmooth = 0;
+                        }
+                        Mutex::Unlock(mMutex);
                     }
                 })
             {
@@ -159,9 +238,10 @@ void CmdView::OnPacket(packettype type, sint32 peerid, bytes buffer)
 {
     Mutex::Lock(mMutex);
     {
-        auto& CurLog = mLogs[mLogFocus];
+        auto& CurLog = mLogs[mLogFocus % mLogMax];
         CurLog.mPeerID = peerid;
         CurLog.mColor = Color(0, 255, 0);
+        CurLog.mCheck = false;
         switch(type)
         {
         case packettype_entrance:
@@ -288,7 +368,7 @@ void CmdView::OnPacket(packettype type, sint32 peerid, bytes buffer)
             break;
         default: break;
         }
-        mLogFocus = (mLogFocus + 1) % mLogMax;
+        mLogFocus++;
         if(0 < mLogScroll)
         {
             mLogScroll += mLogHeight;
@@ -302,11 +382,12 @@ void CmdView::AddLog(chars text, const Color color)
 {
     Mutex::Lock(mMutex);
     {
-        auto& CurLog = mLogs[mLogFocus];
+        auto& CurLog = mLogs[mLogFocus % mLogMax];
         CurLog.mPeerID = 0;
         CurLog.mText = text;
         CurLog.mColor = color;
-        mLogFocus = (mLogFocus + 1) % mLogMax;
+        CurLog.mCheck = false;
+        mLogFocus++;
         if(0 < mLogScroll)
         {
             mLogScroll += mLogHeight;

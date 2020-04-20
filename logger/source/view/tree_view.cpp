@@ -59,10 +59,10 @@ bool TreeView::OnRender(ZayPanel& panel)
             }
         }
 
-        // 스크롤복원
+        // 클리어
         if(!mTree.IsEmpty())
         {
-            ZAY_LTRB_UI(panel, panel.w() - 100 - 10, 10, panel.w() - 10, 10 + 26, "clear-dom",
+            ZAY_LTRB_UI(panel, panel.w() - 100 - 10, panel.h() - 26 - 10, panel.w() - 10, panel.h() - 10, "clear-dom",
                 ZAY_GESTURE_T(t, this)
                 {
                     if(t == GT_Pressed)

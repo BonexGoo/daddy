@@ -10,31 +10,6 @@ ZAY_VIEW_API OnCommand(CommandType type, chars topic, id_share in, id_cloned_sha
 {
 }
 
-void loggerData::UpdatePeer(id_server server, packettype type, sint32 id)
-{
-    if(type == packettype_entrance)
-    {
-        ip4address IP = {};
-        uint16 Port = 0;
-        Platform::Server::GetPeerInfo(server, id, &IP, nullptr, &Port);
-        auto& NewPeer = mPeers.AtAdding();
-        NewPeer.mRefServer = server;
-        NewPeer.mID = id;
-        NewPeer.mText = String::Format("%u.%u.%u.%u:%u", IP.ip[0], IP.ip[1], IP.ip[2], IP.ip[3], Port);
-    }
-    else if(type == packettype_leaved || type == packettype_kicked)
-    {
-        for(sint32 i = 0, iend = mPeers.Count(); i < iend; ++i)
-        {
-            if(mPeers[i].mID == id)
-            {
-                mPeers.SubtractionSection(i);
-                break;
-            }
-        }
-    }
-}
-
 ZAY_VIEW_API OnNotify(NotifyType type, chars topic, id_share in, id_cloned_share* out)
 {
     if(type == NT_SocketReceive)
@@ -249,4 +224,29 @@ loggerData::~loggerData()
     mWebCmdView.SetRef(nullptr, nullptr);
     Platform::Server::Release(mCmdServer);
     Platform::Server::Release(mWebCmdServer);
+}
+
+void loggerData::UpdatePeer(id_server server, packettype type, sint32 id)
+{
+    if(type == packettype_entrance)
+    {
+        ip4address IP = {};
+        uint16 Port = 0;
+        Platform::Server::GetPeerInfo(server, id, &IP, nullptr, &Port);
+        auto& NewPeer = mPeers.AtAdding();
+        NewPeer.mRefServer = server;
+        NewPeer.mID = id;
+        NewPeer.mText = String::Format("%u.%u.%u.%u:%u", IP.ip[0], IP.ip[1], IP.ip[2], IP.ip[3], Port);
+    }
+    else if(type == packettype_leaved || type == packettype_kicked)
+    {
+        for(sint32 i = 0, iend = mPeers.Count(); i < iend; ++i)
+        {
+            if(mPeers[i].mID == id)
+            {
+                mPeers.SubtractionSection(i);
+                break;
+            }
+        }
+    }
 }
