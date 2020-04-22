@@ -133,7 +133,7 @@
       </PrecompiledHeaderFile>
     </ClCompile>
     <Link>
-      <SubSystem>Windows</SubSystem>
+      <SubSystem>Console</SubSystem>
       <OutputFile>$(OutDir)$(TargetName).exe</OutputFile>
       <AdditionalLibraryDirectories>$(OutDir).;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -164,7 +164,7 @@ xcopy "$(VCInstallDir)Redist\MSVC\$(VCToolsRedistVersion)\$(PlatformTarget)\Micr
       </PrecompiledHeaderFile>
     </ClCompile>
     <Link>
-      <SubSystem>Windows</SubSystem>
+      <SubSystem>Console</SubSystem>
       <OutputFile>$(OutDir)$(TargetName).exe</OutputFile>
       <AdditionalLibraryDirectories>$(OutDir).;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
