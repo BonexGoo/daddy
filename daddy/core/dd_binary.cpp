@@ -178,7 +178,7 @@ bool dBinary::toFile(const dLiteral& path) const
 }
 
 const dBinary& dBinary::blank()
-{DD_global const dBinary _(new dump[4]{0, 0, 0, 0}, 0); return _;}
+{DD_global_direct(dBinary, _, new dump[4]{0, 0, 0, 0}, 0); return _;}
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 // ■ dBinary::escaper

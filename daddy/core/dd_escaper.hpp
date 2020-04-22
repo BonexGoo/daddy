@@ -4,7 +4,7 @@
 #pragma once
 
 // Dependencies
-#include "dd_type.hpp"
+#include "dd_global.hpp"
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 // ▶ DD_escaper()
@@ -54,9 +54,9 @@
     /* 싱글톤관리 */ \
     protected: \
         inline static Daddy::EscapePlanP* __em_plan() { \
-            DD_global Daddy::EscapePlanP* gSingleton = Daddy::EscapeModel::__em_create( \
+            DD_global_direct_ptr(Daddy::EscapePlanP*, gSingleton, Daddy::EscapeModel::__em_build( \
                 _super_::__em_plan(), #CLASS, sizeof(_self_), \
-                __FILE__, __LINE__, __init, __quit, __move, __copy); \
+                __FILE__, __LINE__, __init, __quit, __move, __copy)); \
             return gSingleton; \
         } \
         /* __em_release무효화 */ \
@@ -153,13 +153,13 @@
     /* 싱글톤관리 */ \
     private: \
         inline static Daddy::EscapePlanP* __em_plan() { \
-            DD_global Daddy::EscapePlanP* gSingleton = Daddy::EscapeModel::__em_create( \
+            DD_global_direct_ptr(Daddy::EscapePlanP*, gSingleton, Daddy::EscapeModel::__em_build( \
                 (const Daddy::EscapePlanP*) 1, #CLASS, sizeof(_self_), \
-                __FILE__, __LINE__, __init, __quit, __move, __copy); \
+                __FILE__, __LINE__, __init, __quit, __move, __copy)); \
             return gSingleton; \
         } \
         inline static Daddy::EscapeModel* __model(Daddy::EscapePlanP* ep = nullptr) { \
-            DD_global Daddy::EscapeModel gSingleton(ep); \
+            static Daddy::EscapeModel gSingleton(ep); \
             return &gSingleton; \
         } \
     \
@@ -298,7 +298,7 @@ public:
     using CopyCB = void (*)(void* self, const void* rhs);
 
 public:
-    static EscapePlanP* __em_create(const EscapePlanP* super, Daddy::utf8s name, uint32_t size,
+    static EscapePlanP* __em_build(const EscapePlanP* super, Daddy::utf8s name, uint32_t size,
         Daddy::utf8s file, uint32_t line, InitCB icb, QuitCB qcb, MoveCB mcb, CopyCB ccb);
     static void __em_release(EscapeModel* model, void* self);
 public:

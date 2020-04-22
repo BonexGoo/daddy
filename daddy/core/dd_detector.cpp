@@ -394,7 +394,7 @@ class DetectorWriterP
 {
 public:
     static DetectorWriterP& ST()
-    {DD_global DetectorWriterP _; return _;}
+    {DD_global_direct(DetectorWriterP, _); return _;}
 
 private:
     DetectorWriterP() : mLogFM("detector.blog", LogPageP::LOG_FILE_SIZE)
@@ -544,7 +544,7 @@ class DetectorReaderP
 {
 public:
     static DetectorReaderP& ST()
-    {DD_global DetectorReaderP _; return _;}
+    {DD_global_direct(DetectorReaderP, _); return _;}
 
 private:
     DetectorReaderP() : mLogFM("detector.blog")
@@ -799,7 +799,7 @@ static void validCore(bool& condition, TYPE format, va_list args)
     utf8s Result = DetectorWriterP::createString(Length, format, args);
     if(Length != -1)
     {
-        DD_global int32_t gValidKey = -1;
+        DD_global_direct(int32_t, gValidKey, -1);
         char ValidSemaphore[1024];
         sprintf(ValidSemaphore, "detector-valid-%d", ++gValidKey);
 
@@ -867,7 +867,7 @@ static bool checkCore(TYPE format, va_list args)
     utf8s Result = DetectorWriterP::createString(Length, format, args);
     if(Length != -1)
     {
-        DD_global int32_t gCheckKey = -1;
+        DD_global_direct(int32_t, gCheckKey, -1);
         char CheckSemaphore[1024];
         sprintf(CheckSemaphore, "detector-check-%d", ++gCheckKey);
 

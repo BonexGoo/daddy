@@ -81,8 +81,8 @@ dString dUnique::fingerPrint(utf8s_nn string, int32_t length)
 
 dLiteral dUnique::deviceId(dString* fp)
 {
-    DD_global dString gDeviceID;
-    DD_global dString gFingerPrint;
+    DD_global_direct(dString, gDeviceID);
+    DD_global_direct(dString, gFingerPrint);
     if(0 < gDeviceID.length())
     {
         if(fp) *fp = gFingerPrint;
@@ -136,8 +136,8 @@ dLiteral dUnique::deviceId(dString* fp)
 
 dLiteral dUnique::instanceId(dString* fp)
 {
-    DD_global dString gInstanceID;
-    DD_global dString gFingerPrint;
+    DD_global_direct(dString, gInstanceID);
+    DD_global_direct(dString, gFingerPrint);
     if(0 < gInstanceID.length())
     {
         if(fp) *fp = gFingerPrint;
@@ -145,18 +145,19 @@ dLiteral dUnique::instanceId(dString* fp)
     }
 
     // 응용프로그램 패스
-    #if DD_OS_WINDOWS
-        HMODULE Module = GetModuleHandleA(NULL);
-        CHAR Path[MAX_PATH];
-        GetModuleFileNameA(Module, Path, MAX_PATH);
-        gFingerPrint.add(Path, (int32_t) strlen(Path));
-    #elif DD_OS_LINUX
-        char Link[50];
-        sprintf(Link, "/proc/%d/exe", getpid());
-        char Path[256] = {0};
-        readlink(Link, Path, 256);
-        gFingerPrint.add(Path, strlen(Path));
-    #endif
+    static char Path[260] = {0};
+    if(Path[0] == '\0')
+    {
+        #if DD_OS_WINDOWS
+            HMODULE Module = GetModuleHandleA(NULL);
+            GetModuleFileNameA(Module, Path, 260);
+        #elif DD_OS_LINUX
+            char Link[50];
+            sprintf(Link, "/proc/%d/exe", getpid());
+            readlink(Link, Path, 260);
+        #endif
+    }
+    gFingerPrint.add(Path, (int32_t) strlen(Path));
 
     // 빈 인스턴스ID 찾기
     class InstanceFinder
@@ -189,7 +190,8 @@ dLiteral dUnique::instanceId(dString* fp)
         dSemaphore mInstanceSem;
         int mInstanceID;
     };
-    DD_global InstanceFinder gInstanceFinder(Path);
+
+    DD_global_direct(InstanceFinder, gInstanceFinder, Path);
 
     // 빈 인스턴스ID
     gFingerPrint += "<";

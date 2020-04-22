@@ -14,14 +14,14 @@ namespace Daddy {
     #define DD_trace_info(FORMAT, ...)  Daddy::dDetector::trace(Daddy::dDetector::InfoLevel, FORMAT L" [%S:%d]", ## __VA_ARGS__, __FILE__, __LINE__)
     #define DD_trace_warn(FORMAT, ...)  Daddy::dDetector::trace(Daddy::dDetector::WarnLevel, FORMAT L" [%S:%d]", ## __VA_ARGS__, __FILE__, __LINE__)
     #define DD_trace_error(FORMAT, ...) Daddy::dDetector::trace(Daddy::dDetector::ErrorLevel, FORMAT L" [%S:%d]", ## __VA_ARGS__, __FILE__, __LINE__)
-    #define DD_valid(QUERY)             do { DD_global bool gIgnore = false; \
+    #define DD_valid(QUERY)             do {static bool gIgnore = false; \
                                         if(!(QUERY)) Daddy::dDetector::valid(gIgnore, L"%S [%S:%d]", #QUERY, __FILE__, __LINE__);} while(false)
     #define DD_check(FORMAT, ...)       Daddy::dDetector::check(FORMAT L" [%S:%d]", ## __VA_ARGS__, __FILE__, __LINE__)
 #else
     #define DD_trace_info(FORMAT, ...)  Daddy::dDetector::trace(Daddy::dDetector::InfoLevel, FORMAT " [%s:%d]", ## __VA_ARGS__, __FILE__, __LINE__)
     #define DD_trace_warn(FORMAT, ...)  Daddy::dDetector::trace(Daddy::dDetector::WarnLevel, FORMAT " [%s:%d]", ## __VA_ARGS__, __FILE__, __LINE__)
     #define DD_trace_error(FORMAT, ...) Daddy::dDetector::trace(Daddy::dDetector::ErrorLevel, FORMAT " [%s:%d]", ## __VA_ARGS__, __FILE__, __LINE__)
-    #define DD_valid(QUERY)             do { DD_global bool gIgnore = false; \
+    #define DD_valid(QUERY)             do {static bool gIgnore = false; \
                                         if(!(QUERY)) Daddy::dDetector::valid(gIgnore, "%s [%s:%d]", #QUERY, __FILE__, __LINE__);} while(false)
     #define DD_check(FORMAT, ...)       Daddy::dDetector::check(FORMAT " [%s:%d]", ## __VA_ARGS__, __FILE__, __LINE__)
 #endif

@@ -134,7 +134,7 @@ public:
 
 void SocketAgentP::checkNetwork(bool push)
 {
-    DD_global int32_t gRefCount = 0;
+    static int32_t gRefCount = 0;
     if(push)
     {
         if(gRefCount++ == 0)
@@ -578,7 +578,7 @@ void dSocket::kick(uint32_t id)
 }
 
 const dSocket& dSocket::blank()
-{DD_global const dSocket _((addr_u) new SocketAgentP()); return _;}
+{DD_global_direct(dSocket, _, (addr_u) new SocketAgentP()); return _;}
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 // ■ dSocket::escaper

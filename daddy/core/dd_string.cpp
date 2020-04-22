@@ -163,7 +163,9 @@ public:
         mLength = getLengthAndHashing<true>(NewLength);
     }
 };
-DD_global std::unordered_set<StringAgentP, StringAgentP::Hasher> gStringPool;
+
+typedef std::unordered_set<StringAgentP, StringAgentP::Hasher> StringAgentSet;
+DD_global("gStringPool", StringAgentSet, gStringPool);
 
 void StringAgentP::attach() const
 {
@@ -310,7 +312,7 @@ dString& dString::reset(utf8s_nn string, int32_t length)
 dString& dString::add(const dLiteral& string)
 {
     auto Result = gStringPool.insert(StringAgentP(operator dLiteral(), string));
-    mRefAgent->detach(); // 자기 자신을 사용하므로 gStringPool.insert이후 detach
+    mRefAgent->detach(); // 자기 자신을 사용하므로 gStringPool->insert이후 detach
     mRefAgent = (StringAgentP*) &(*Result.first);
     if(!Result.second)
         mRefAgent->attach(); // if the pool fails to expand, attach the old string.
@@ -320,7 +322,7 @@ dString& dString::add(const dLiteral& string)
 dString& dString::add(utf8s_nn string, int32_t length)
 {
     auto Result = gStringPool.insert(StringAgentP(operator dLiteral(), string, length));
-    mRefAgent->detach(); // 자기 자신을 사용하므로 gStringPool.insert이후 detach
+    mRefAgent->detach(); // 자기 자신을 사용하므로 gStringPool->insert이후 detach
     mRefAgent = (StringAgentP*) &(*Result.first);
     if(!Result.second)
         mRefAgent->attach(); // if the pool fails to expand, attach the old string.
@@ -330,7 +332,7 @@ dString& dString::add(utf8s_nn string, int32_t length)
 dString& dString::add(utf8 code)
 {
     auto Result = gStringPool.insert(StringAgentP(operator dLiteral(), &code, 1));
-    mRefAgent->detach(); // 자기 자신을 사용하므로 gStringPool.insert이후 detach
+    mRefAgent->detach(); // 자기 자신을 사용하므로 gStringPool->insert이후 detach
     mRefAgent = (StringAgentP*) &(*Result.first);
     if(!Result.second)
         mRefAgent->attach(); // if the pool fails to expand, attach the old string.
@@ -537,14 +539,14 @@ static double StringToDouble(utf8s_nn focus, const utf8s_nn end)
     {
         int64_t Level = 1;
         while(++focus < end && '0' <= *focus && *focus <= '9')
-            Decimal += (*focus - '0') / (double) (Level *= 10);
+            Decimal += (*focus - (int64_t) '0') / (double) (Level *= 10);
     }
 
     const double Result = (IsMinus)? -(Value + Decimal) : (Value + Decimal);
     if(*focus == 'E' || *focus == 'e')
     {
-        DD_global const double* gECodeEM = []()->const double* {DD_global double _[DBL_MAX_BIAS]; double EM = 10; for(int i = 0; i < DBL_MAX_BIAS; ++i) _[i] = (EM /= 10); return _;}();
-        DD_global const double* gECodeEP = []()->const double* {DD_global double _[DBL_MAX_BIAS]; double EP = 1; for(int i = 0; i < DBL_MAX_BIAS; ++i) _[i] = (EP *= 10); return _;}();
+        static const double* gECodeEM = []()->const double* {static double _[DBL_MAX_BIAS]; double EM = 10; for(int i = 0; i < DBL_MAX_BIAS; ++i) _[i] = (EM /= 10); return _;}();
+        static const double* gECodeEP = []()->const double* {static double _[DBL_MAX_BIAS]; double EP = 1; for(int i = 0; i < DBL_MAX_BIAS; ++i) _[i] = (EP *= 10); return _;}();
         const int64_t EValue = StringToNumber(++focus, end);
         if(0 < EValue)
             return Result * gECodeEP[EValue - 1];
@@ -572,7 +574,7 @@ void dString::debugPrintAll()
 }
 
 const dString& dString::blank()
-{DD_global const dString _(dLiteral("")); return _;}
+{DD_global_direct(dString, _, dLiteral("")); return _;}
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 // ■ dString::escaper

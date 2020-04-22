@@ -124,7 +124,6 @@
 #define DD_hook(VALUE)                 for(auto &h__ = (VALUE), *f__ = &h__; f__; f__ = nullptr)
 #define DD_fish                        (*f__)
 #define DD_nothing                     do{} while(false)
-#define DD_global                      static
 #define DD_string_pair(STR)            (STR), (_countof(STR) - 1)
 #define DD_num_to_ptr(NUM)             ((void*) (NUM))
 #if DD_BUILD_X64

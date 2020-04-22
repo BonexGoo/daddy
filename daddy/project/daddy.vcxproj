@@ -22,6 +22,7 @@
     <ProjectGuid>{3EA77B78-BD17-4B7A-9123-5C308666180C}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>daddy</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -170,6 +171,7 @@
     <ClCompile Include="..\core\dd_binary.cpp" />
     <ClCompile Include="..\core\dd_detector.cpp" />
     <ClCompile Include="..\core\dd_escaper.cpp" />
+    <ClCompile Include="..\core\dd_global.cpp" />
     <ClCompile Include="..\core\dd_markup.cpp" />
     <ClCompile Include="..\core\dd_platform.cpp" />
     <ClCompile Include="..\core\dd_string.cpp" />
@@ -183,6 +185,7 @@
     <ClInclude Include="..\core\dd_binary.hpp" />
     <ClInclude Include="..\core\dd_detector.hpp" />
     <ClInclude Include="..\core\dd_escaper.hpp" />
+    <ClInclude Include="..\core\dd_global.hpp" />
     <ClInclude Include="..\core\dd_macro.hpp" />
     <ClInclude Include="..\core\dd_markup.hpp" />
     <ClInclude Include="..\core\dd_platform.hpp" />

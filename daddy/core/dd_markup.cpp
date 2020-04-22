@@ -322,7 +322,7 @@ void dMarkup::debugPrint(uint32_t space) const
 }
 
 const dMarkup& dMarkup::blank()
-{DD_global const dMarkup _; return _;}
+{DD_global_direct(dMarkup, _); return _;}
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 // ■ dMarkup::escaper

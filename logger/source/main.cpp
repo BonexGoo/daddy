@@ -3,9 +3,12 @@
 #include <service/boss_zay.hpp>
 
 #include <resource.hpp>
+#include <daddy.hpp>
 
 bool PlatformInit()
 {
+    dGlobal::load();
+
     Platform::InitForGL();
     Platform::SetViewCreator(ZayView::Creator);
 
@@ -61,4 +64,6 @@ void PlatformQuit()
     Context AtlasInfo;
     R::SaveAtlas(AtlasInfo);
     AtlasInfo.SaveJson().ToAsset("atlasinfo.json");
+
+    dGlobal::release();
 }

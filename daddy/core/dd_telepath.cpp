@@ -385,7 +385,8 @@ private:
     dTelepath::SilkID mLastSilk;
     std::map<dTelepath::SilkID, Silk> mSilks;
 };
-DD_global TeleGateClientP* gLastClient = nullptr;
+
+static TeleGateClientP* gLastClient = nullptr;
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 // ■ dTelepath

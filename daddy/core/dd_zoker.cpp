@@ -463,7 +463,7 @@ dumps dZokeReader::jumpTo(dumps buffer, uint32_t index, uint32_t jumpersize)
 }
 
 const dZokeReader& dZokeReader::blank()
-{DD_global const dZokeReader _; return _;}
+{DD_global_direct(dZokeReader, _); return _;}
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 // ■ dZokeReader::escaper
