@@ -22,13 +22,13 @@ typedef const char*          utf8s_nn; // 종료문자(null)가 없을 수도 �
 typedef wchar_t              ucode;
 typedef const wchar_t*       ucodes;
 typedef const wchar_t*       ucodes_nn; // 종료문자(null)가 없을 수도 있는 네이티브 스트링
-typedef void*                addr;
+typedef void*                ptr;
 #if DD_BUILD_X64
-    typedef int64_t          addr_d;
-    typedef uint64_t         addr_u;
+    typedef int64_t          ptr_d;
+    typedef uint64_t         ptr_u;
 #else
-    typedef int32_t          addr_d;
-    typedef uint32_t         addr_u;
+    typedef int32_t          ptr_d;
+    typedef uint32_t         ptr_u;
 #endif
 
 } // namespace Daddy

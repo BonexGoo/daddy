@@ -78,7 +78,7 @@ DD_escaper_alone(dSocket): // 객체운영
     SocketAgentP* mRefAgent;
 
 private:
-    DD_passage_declare_alone(dSocket, addr_u agent); // move only
+    DD_passage_declare_alone(dSocket, ptr_u agent); // move only
 };
 
 } // namespace Daddy

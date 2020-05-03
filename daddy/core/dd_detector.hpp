@@ -33,7 +33,7 @@ public:
     enum Level {InfoLevel, WarnLevel, ErrorLevel};
     enum FuncID {StampST = 0, ScopeBeginST, ScopeEndST, TraceST, ValidST, CheckST, SetValueSS, SetValueST, AddValueST, KillValueS};
     enum ReadResult {Unreaded, Readed, ExitProgram, LogNotFound};
-    typedef std::function<void(FuncID id, addr payload, uint32_t size)> ReadCB;
+    typedef std::function<void(FuncID id, ptr payload, uint32_t size)> ReadCB;
 
 private:
     class Stack
@@ -128,17 +128,17 @@ public: // 로그읽기
     /// @brief           페이로드에서 32비트정수 반환
     /// @param payload   페이로드를 해석후 다음으로 이동
     /// @return          해석된 32비트정수
-    static int32_t parseInt32(addr& payload);
+    static int32_t parseInt32(ptr& payload);
 
     /// @brief           페이로드에서 64비트정수 반환
     /// @param payload   페이로드를 해석후 다음으로 이동
     /// @return          해석된 64비트정수
-    static int64_t parseInt64(addr& payload);
+    static int64_t parseInt64(ptr& payload);
 
     /// @brief           페이로드에서 스트링 반환
     /// @param payload   페이로드를 해석후 다음으로 이동
     /// @return          해석된 스트링
-    static utf8s parseString(addr& payload);
+    static utf8s parseString(ptr& payload);
 };
 
 } // namespace Daddy

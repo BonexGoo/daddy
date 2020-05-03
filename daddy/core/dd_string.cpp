@@ -97,7 +97,7 @@ public:
         else mLength = getLengthAndHashing<true>(length);
         mRefCount = LiteralsRefCount + 1;
     }
-    DD_passage_alone(StringAgentP, addr_u buffer, int32_t length)
+    DD_passage_alone(StringAgentP, ptr_u buffer, int32_t length)
     {
         DD_assert(-1 <= length, "the index has exceeded the array limit.");
         _init_(InitType::Create);
@@ -452,7 +452,7 @@ dString dString::print(utf8s format, ...)
     va_end(Args);
 
     if(0 < ResultSize)
-        return dString(*((addr_u*) &Result), ResultSize);
+        return dString(*((ptr_u*) &Result), ResultSize);
     else if(ResultSize < 0)
         DD_assert(false, "vsnprintf failed to parse the format.");
     return dString();
@@ -469,7 +469,7 @@ dString dString::fromFile(const dLiteral& path)
         utf8* NewString = new utf8[NewLength];
         std::fread(NewString, sizeof(utf8), NewLength, NewFile);
         std::fclose(NewFile);
-        return dString(*((addr_u*) &NewString), NewLength);
+        return dString(*((ptr_u*) &NewString), NewLength);
     }
     return dString();
 }
@@ -628,7 +628,7 @@ DD_passage_define_alone(dString, StringAgentP* agent)
     (mRefAgent = agent)->attach();
 }
 
-DD_passage_define_alone(dString, addr_u buffer, int32_t length)
+DD_passage_define_alone(dString, ptr_u buffer, int32_t length)
 {
     auto Result = gStringPool.insert(StringAgentP(buffer, length));
     mRefAgent = (StringAgentP*) &(*Result.first);

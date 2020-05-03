@@ -26,7 +26,7 @@ DD_escaper_alone(dMutex): // 객체운영
     void _quit_();
     void _move_(_self_&& rhs);
     void _copy_(const _self_& rhs);
-    addr mData;
+    ptr mData;
 };
 
 /// @brief 세마포어
@@ -55,7 +55,7 @@ DD_escaper_alone(dSemaphore): // 객체운영
     void _quit_();
     void _move_(_self_&& rhs);
     void _copy_(const _self_& rhs);
-    addr mData;
+    ptr mData;
     dString mName;
 };
 

@@ -970,21 +970,21 @@ dDetector::ReadResult dDetector::readOnce(ReadCB cb)
     return DetectorReaderP::ST().readOnce(cb);
 }
 
-int32_t dDetector::parseInt32(addr& payload)
+int32_t dDetector::parseInt32(ptr& payload)
 {
     const int32_t Result = *((int32_t*) payload);
     payload = ((uint8_t*) payload) + LogPageP::alignedSize(sizeof(int32_t));
     return Result;
 }
 
-int64_t dDetector::parseInt64(addr& payload)
+int64_t dDetector::parseInt64(ptr& payload)
 {
     const int64_t Result = *((int64_t*) payload);
     payload = ((uint8_t*) payload) + LogPageP::alignedSize(sizeof(int64_t));
     return Result;
 }
 
-utf8s dDetector::parseString(addr& payload)
+utf8s dDetector::parseString(ptr& payload)
 {
     const uint16_t StringLength = *((uint16_t*) payload);
     utf8s Result = utf8s(((uint8_t*) payload) + sizeof(uint16_t));

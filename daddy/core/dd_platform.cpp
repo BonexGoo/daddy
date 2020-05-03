@@ -578,7 +578,7 @@ void dSocket::kick(uint32_t id)
 }
 
 const dSocket& dSocket::blank()
-{DD_global_direct(dSocket, _, (addr_u) new SocketAgentP()); return _;}
+{DD_global_direct(dSocket, _, (ptr_u) new SocketAgentP()); return _;}
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 // ■ dSocket::escaper
@@ -605,7 +605,7 @@ void dSocket::_copy_(const _self_& rhs)
     (mRefAgent = rhs.mRefAgent)->attach();
 }
 
-DD_passage_define_alone(dSocket, addr_u agent)
+DD_passage_define_alone(dSocket, ptr_u agent)
 {
     mRefAgent = (SocketAgentP*) agent;
 }

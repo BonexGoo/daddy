@@ -236,7 +236,7 @@ public:
 
 private:
     DD_passage_declare_alone(dString, StringAgentP* agent); // clone only
-    DD_passage_declare_alone(dString, addr_u buffer, int32_t length); // move only, length is -1 possible.
+    DD_passage_declare_alone(dString, ptr_u buffer, int32_t length); // move only, length is -1 possible.
     DD_passage_declare_alone(dString, const dString& string, int32_t index, int32_t length); // length is -1 possible.
 };
 
