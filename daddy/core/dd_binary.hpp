@@ -68,7 +68,7 @@ public: // 입출력
 private:
     static const dBinary& blank();
 
-DD_escaper_alone(dBinary): // 객체운영
+DD_escaper_alone(dBinary): // 객체사이클
     void _init_(InitType type);
     void _quit_();
     void _move_(_self_&& rhs);

@@ -51,73 +51,98 @@ enum class ZokeType {Null,
 class dZoker
 {
 public: // 사용성
-    /// @brief       자기 데이터와 자식 비우기
+    /// @brief        자신의 타입 확인
+    /// @return       자신의 타입
+    inline ZokeType type() const {return mType;}
+
+    /// @brief        자신의 데이터 확인
+    /// @return       자신의 데이터
+    inline uint64_t value() const {return mValue.mWhole;}
+
+    /// @brief        자신의 데이터와 자식 비우기
     void clear();
 
-    /// @brief       네임방식 자식접근(보장형)
-    /// @param key   자식명
-    /// @return      자식객체(없으면 만들어서 제공)
+    /// @brief        네임방식 자식접근(보장형)
+    /// @param key    자식명
+    /// @param length 자식명의 길이(-1이면 끝까지)
+    /// @return       자식객체(없으면 만들어서 제공)
+    dZoker& operator()(utf8s_nn key, int32_t length = -1);
+
+    /// @brief        네임방식 자식접근(보장형)
+    /// @param key    자식명
+    /// @return       자식객체(없으면 만들어서 제공)
     dZoker& operator()(const dLiteral& key);
 
-    /// @brief       인덱스방식 자식접근(보장형)
-    /// @param index 자식인덱스
-    /// @return      자식객체(없으면 만들어서 제공)
+    /// @brief        네임방식 자식접근
+    /// @param key    자식명
+    /// @param length 자식명의 길이(-1이면 끝까지)
+    /// @return       자식객체(없으면 nullptr)
+    dZoker* access(utf8s_nn key, int32_t length = -1) const;
+
+    /// @brief        네임방식 자식접근
+    /// @param key    자식명
+    /// @return       자식객체(없으면 nullptr)
+    dZoker* access(const dLiteral& key) const;
+
+    /// @brief        인덱스방식 자식접근(보장형)
+    /// @param index  자식인덱스
+    /// @return       자식객체(없으면 만들어서 제공)
     dZoker& operator[](uint32_t index);
 
-    /// @brief       인덱스방식 자식추가
-    /// @return      자식객체
+    /// @brief        인덱스방식 자식추가
+    /// @return       자식객체
     dZoker& atAdding();
 
-    /// @brief       자신의 데이터 셋팅(String)
-    /// @param value 스트링
+    /// @brief        자신의 데이터 셋팅(String)
+    /// @param value  스트링
     void setString(const dLiteral& value);
 
-    /// @brief       자신의 데이터 셋팅(Binary)
-    /// @param value 바이너리
+    /// @brief        자신의 데이터 셋팅(Binary)
+    /// @param value  바이너리
     void setBinary(const dBinary& value);
 
-    /// @brief       자신의 데이터 셋팅(int8_t)
-    /// @param value 정수
+    /// @brief        자신의 데이터 셋팅(int8_t)
+    /// @param value  정수
     void setInt8(const int8_t value);
 
-    /// @brief       자신의 데이터 셋팅(int16_t)
-    /// @param value 정수
+    /// @brief        자신의 데이터 셋팅(int16_t)
+    /// @param value  정수
     void setInt16(const int16_t value);
 
-    /// @brief       자신의 데이터 셋팅(int32_t)
-    /// @param value 정수
+    /// @brief        자신의 데이터 셋팅(int32_t)
+    /// @param value  정수
     void setInt32(const int32_t value);
 
-    /// @brief       자신의 데이터 셋팅(int64_t)
-    /// @param value 정수
+    /// @brief        자신의 데이터 셋팅(int64_t)
+    /// @param value  정수
     void setInt64(const int64_t value);
 
-    /// @brief       자신의 데이터 셋팅(uint8_t)
-    /// @param value 부호없는 정수
+    /// @brief        자신의 데이터 셋팅(uint8_t)
+    /// @param value  부호없는 정수
     void setUint8(const uint8_t value);
 
-    /// @brief       자신의 데이터 셋팅(uint16_t)
-    /// @param value 부호없는 정수
+    /// @brief        자신의 데이터 셋팅(uint16_t)
+    /// @param value  부호없는 정수
     void setUint16(const uint16_t value);
 
-    /// @brief       자신의 데이터 셋팅(uint32_t)
-    /// @param value 부호없는 정수
+    /// @brief        자신의 데이터 셋팅(uint32_t)
+    /// @param value  부호없는 정수
     void setUint32(const uint32_t value);
 
-    /// @brief       자신의 데이터 셋팅(uint64_t)
-    /// @param value 부호없는 정수
+    /// @brief        자신의 데이터 셋팅(uint64_t)
+    /// @param value  부호없는 정수
     void setUint64(const uint64_t value);
 
-    /// @brief       자신의 데이터 셋팅(float)
-    /// @param value 실수
+    /// @brief        자신의 데이터 셋팅(float)
+    /// @param value  실수
     void setFloat32(const float value);
 
-    /// @brief       자신의 데이터 셋팅(double)
-    /// @param value 실수
+    /// @brief        자신의 데이터 셋팅(double)
+    /// @param value  실수
     void setFloat64(const double value);
 
-    /// @brief       조크생성
-    /// @return      생성된 조크
+    /// @brief        조크생성
+    /// @return       생성된 조크
     dBinary build() const;
 
 private:
@@ -125,7 +150,7 @@ private:
     typedef std::map<int, dZoker> IndexableMap;
     void valid(ZokeType type);
 
-DD_escaper_alone(dZoker): // 객체운영
+DD_escaper_alone(dZoker): // 객체사이클
     void _init_(InitType type);
     void _quit_();
     void _move_(_self_&& rhs);
@@ -155,84 +180,90 @@ DD_escaper_alone(dZoker): // 객체운영
 class dZokeReader
 {
 public: // 사용성
-    /// @brief       자신의 실존여부 확인
-    /// @return      true-실존함, false-허위객체
+    /// @brief        자신의 실존여부 확인
+    /// @return       true-실존함, false-허위객체
     bool isValid() const;
 
-    /// @brief       자식의 수량 확인
-    /// @return      자식수량
+    /// @brief        자식의 수량 확인
+    /// @return       자식수량
     uint32_t length() const;
 
-    /// @brief       네임방식 자식접근
-    /// @param key   자식명
-    /// @return      자식객체(없으면 허위객체 반환)
+    /// @brief        네임방식 자식접근
+    /// @param key    자식명
+    /// @param length 자식명의 길이(-1이면 끝까지)
+    /// @return       자식객체(없으면 허위객체 반환)
+    const dZokeReader operator()(utf8s_nn key, int32_t length = -1) const;
+
+    /// @brief        네임방식 자식접근
+    /// @param key    자식명
+    /// @return       자식객체(없으면 허위객체 반환)
     const dZokeReader operator()(const dLiteral& key) const;
 
-    /// @brief       인덱스방식 자식접근
-    /// @param index 자식인덱스
-    /// @return      자식객체(없으면 허위객체 반환)
+    /// @brief        인덱스방식 자식접근
+    /// @param index  자식인덱스
+    /// @return       자식객체(없으면 허위객체 반환)
     const dZokeReader operator[](uint32_t index) const;
 
-    /// @brief       자신의 String데이터 반환
-    /// @param def   디폴트 스트링
-    /// @param size  필요시 String사이즈(null포함) 반환
-    /// @return      자신의 String데이터
+    /// @brief        자신의 String데이터 반환
+    /// @param def    디폴트 스트링
+    /// @param size   필요시 String사이즈(null포함) 반환
+    /// @return       자신의 String데이터
     utf8s getString(utf8s def = "", uint32_t* size = nullptr) const;
 
-    /// @brief       자신의 Binary데이터 반환
-    /// @param def   디폴트 바이너리덤프
-    /// @param size  필요시 Binary사이즈 반환
-    /// @return      자신의 Binary데이터
+    /// @brief        자신의 Binary데이터 반환
+    /// @param def    디폴트 바이너리덤프
+    /// @param size   필요시 Binary사이즈 반환
+    /// @return       자신의 Binary데이터
     dumps getBinary(dumps def = nullptr, uint32_t* size = nullptr) const;
 
-    /// @brief       자신의 int8_t데이터 반환
-    /// @param def   디폴트 정수
-    /// @return      자신의 int8_t데이터
+    /// @brief        자신의 int8_t데이터 반환
+    /// @param def    디폴트 정수
+    /// @return       자신의 int8_t데이터
     int8_t getInt8(const int8_t def = 0) const;
 
-    /// @brief       자신의 int16_t데이터 반환
-    /// @param def   디폴트 정수
-    /// @return      자신의 int16_t데이터
+    /// @brief        자신의 int16_t데이터 반환
+    /// @param def    디폴트 정수
+    /// @return       자신의 int16_t데이터
     int16_t getInt16(const int16_t def = 0) const;
 
-    /// @brief       자신의 int32_t데이터 반환
-    /// @param def   디폴트 정수
-    /// @return      자신의 int32_t데이터
+    /// @brief        자신의 int32_t데이터 반환
+    /// @param def    디폴트 정수
+    /// @return       자신의 int32_t데이터
     int32_t getInt32(const int32_t def = 0) const;
 
-    /// @brief       자신의 int64_t데이터 반환
-    /// @param def   디폴트 정수
-    /// @return      자신의 int64_t데이터
+    /// @brief        자신의 int64_t데이터 반환
+    /// @param def    디폴트 정수
+    /// @return       자신의 int64_t데이터
     int64_t getInt64(const int64_t def = 0) const;
 
-    /// @brief       자신의 uint8_t데이터 반환
-    /// @param def   디폴트 부호없는 정수
-    /// @return      자신의 uint8_t데이터
+    /// @brief        자신의 uint8_t데이터 반환
+    /// @param def    디폴트 부호없는 정수
+    /// @return       자신의 uint8_t데이터
     uint8_t getUint8(const uint8_t def = 0) const;
 
-    /// @brief       자신의 uint16_t데이터 반환
-    /// @param def   디폴트 부호없는 정수
-    /// @return      자신의 uint16_t데이터
+    /// @brief        자신의 uint16_t데이터 반환
+    /// @param def    디폴트 부호없는 정수
+    /// @return       자신의 uint16_t데이터
     uint16_t getUint16(const uint16_t def = 0) const;
 
-    /// @brief       자신의 uint32_t데이터 반환
-    /// @param def   디폴트 부호없는 정수
-    /// @return      자신의 uint32_t데이터
+    /// @brief        자신의 uint32_t데이터 반환
+    /// @param def    디폴트 부호없는 정수
+    /// @return       자신의 uint32_t데이터
     uint32_t getUint32(const uint32_t def = 0) const;
 
-    /// @brief       자신의 uint64_t데이터 반환
-    /// @param def   디폴트 부호없는 정수
-    /// @return      자신의 uint64_t데이터
+    /// @brief        자신의 uint64_t데이터 반환
+    /// @param def    디폴트 부호없는 정수
+    /// @return       자신의 uint64_t데이터
     uint64_t getUint64(const uint64_t def = 0) const;
 
-    /// @brief       자신의 float데이터 반환
-    /// @param def   디폴트 실수
-    /// @return      자신의 float데이터
+    /// @brief        자신의 float데이터 반환
+    /// @param def    디폴트 실수
+    /// @return       자신의 float데이터
     float getFloat32(const float def = 0) const;
 
-    /// @brief       자신의 double데이터 반환
-    /// @param def   디폴트 실수
-    /// @return      자신의 double데이터
+    /// @brief        자신의 double데이터 반환
+    /// @param def    디폴트 실수
+    /// @return       자신의 double데이터
     double getFloat64(const double def = 0) const;
 
 private:
@@ -240,7 +271,7 @@ private:
     static dumps jumpTo(dumps buffer, uint32_t index, uint32_t jumpersize);
     static const dZokeReader& blank();
 
-DD_escaper_alone(dZokeReader): // 객체운영
+DD_escaper_alone(dZokeReader): // 객체사이클
     void _init_(InitType type);
     void _quit_();
     void _move_(_self_&& rhs);

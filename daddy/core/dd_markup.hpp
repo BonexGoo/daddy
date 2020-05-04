@@ -89,7 +89,7 @@ public: // 디버깅
 private:
     static const dMarkup& blank();
 
-DD_escaper_alone(dMarkup): // 객체운영
+DD_escaper_alone(dMarkup): // 객체사이클
     void _init_(InitType type);
     void _quit_();
     void _move_(_self_&& rhs);

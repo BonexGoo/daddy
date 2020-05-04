@@ -70,7 +70,7 @@ public: // 사용성
 private:
     static const dSocket& blank();
 
-DD_escaper_alone(dSocket): // 객체운영
+DD_escaper_alone(dSocket): // 객체사이클
     void _init_(InitType type);
     void _quit_();
     void _move_(_self_&& rhs);

@@ -28,7 +28,7 @@ public: // 사용성
     /// @return         네이티브스트링의 주소
     utf8s buildNative() const;
 
-public: // 객체운영
+public: // 객체사이클
     /// @brief          생성자
     /// @param string   리터럴타입 스트링("abc")
     template<size_t length>
@@ -223,7 +223,7 @@ public: // 디버깅
 private:
     static const dString& blank();
 
-DD_escaper_alone(dString): // 객체운영
+DD_escaper_alone(dString): // 객체사이클
     void _init_(InitType type);
     void _quit_();
     void _move_(_self_&& rhs);

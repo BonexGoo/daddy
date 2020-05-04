@@ -16,10 +16,31 @@ void dZoker::clear()
     _init_(InitType::Create);
 }
 
-dZoker& dZoker::operator()(const dLiteral& key)
+dZoker& dZoker::operator()(utf8s_nn key, int32_t length)
 {
     valid(ZokeType::Nameable);
-    return (*mValue.mNameablePtr)[std::string(key.string(), key.length())];
+    return (*mValue.mNameablePtr)[std::string(key, length)];
+}
+
+dZoker& dZoker::operator()(const dLiteral& key)
+{
+    return operator()(key.string(), key.length());
+}
+
+dZoker* dZoker::access(utf8s_nn key, int32_t length) const
+{
+    if(mType == ZokeType::Nameable)
+    {
+        auto it = mValue.mNameablePtr->find(std::string(key, length));
+        if(it != mValue.mNameablePtr->end())
+            return &it->second;
+    }
+    return nullptr;
+}
+
+dZoker* dZoker::access(const dLiteral& key) const
+{
+    return access(key.string(), key.length());
 }
 
 dZoker& dZoker::operator[](uint32_t index)
@@ -288,7 +309,7 @@ uint32_t dZokeReader::length() const
     return ChildCount;
 }
 
-const dZokeReader dZokeReader::operator()(const dLiteral& key) const
+const dZokeReader dZokeReader::operator()(utf8s_nn key, int32_t length) const
 {
     if(mBuffer[0] != (dump) ZokeType::Nameable)
         return blank();
@@ -304,12 +325,12 @@ const dZokeReader dZokeReader::operator()(const dLiteral& key) const
     {
         const uint32_t Middle = (Begin + End) / 2;
         dumps CurKey = jumpTo(Temp, Middle, JumperSize);
-        const int Compare = strncmp((utf8s) CurKey, key.string(), key.length());
-        const bool NullCheck = (CurKey[key.length()] == 0);
+        const int Compare = strncmp((utf8s) CurKey, key, length);
+        const bool NullCheck = (CurKey[length] == 0);
         if(Compare == 0)
         {
             if(NullCheck)
-                return dZokeReader(mBinary, CurKey + key.length() + 1);
+                return dZokeReader(mBinary, CurKey + length + 1);
             else End = Middle - 1;
         }
         else if(Compare < 0)
@@ -317,6 +338,11 @@ const dZokeReader dZokeReader::operator()(const dLiteral& key) const
         else End = Middle - 1;
     }
     return blank();
+}
+
+const dZokeReader dZokeReader::operator()(const dLiteral& key) const
+{
+    return operator()(key.string(), key.length());
 }
 
 const dZokeReader dZokeReader::operator[](uint32_t index) const

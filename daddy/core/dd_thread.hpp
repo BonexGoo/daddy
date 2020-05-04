@@ -21,7 +21,7 @@ public: // 사용성
     /// @see            lock
     void unlock();
 
-DD_escaper_alone(dMutex): // 객체운영
+DD_escaper_alone(dMutex): // 객체사이클
     void _init_(InitType type);
     void _quit_();
     void _move_(_self_&& rhs);
@@ -50,7 +50,7 @@ public: // 사용성
     /// @see            lock
     void unlock();
 
-DD_escaper_alone(dSemaphore): // 객체운영
+DD_escaper_alone(dSemaphore): // 객체사이클
     void _init_(InitType type);
     void _quit_();
     void _move_(_self_&& rhs);
