@@ -5,6 +5,7 @@
 
 // Dependencies
 #include <cstring>
+#include <locale.h>
 
 namespace Daddy {
 
@@ -152,7 +153,12 @@ dBinary dBinary::fromExternal(dumps buffer, uint32_t length)
 
 dBinary dBinary::fromFile(const dLiteral& path)
 {
-    if(FILE* NewFile = std::fopen(path.buildNative(), "rb"))
+    dString OldLocale = setlocale(LC_ALL, nullptr);
+    setlocale(LC_ALL, "en_US.UTF-8");
+    FILE* NewFile = std::fopen(path.buildNative(), "rb");
+    setlocale(LC_ALL, ((dLiteral) OldLocale).buildNative());
+
+    if(NewFile)
     {
         std::fseek(NewFile, 0, SEEK_END);
         auto NewLength = (const int32_t) std::ftell(NewFile);
@@ -168,7 +174,12 @@ dBinary dBinary::fromFile(const dLiteral& path)
 
 bool dBinary::toFile(const dLiteral& path) const
 {
-    if(FILE* NewFile = std::fopen(path.buildNative(), "wb"))
+    dString OldLocale = setlocale(LC_ALL, nullptr);
+    setlocale(LC_ALL, "en_US.UTF-8");
+    FILE* NewFile = std::fopen(path.buildNative(), "wb");
+    setlocale(LC_ALL, ((dLiteral) OldLocale).buildNative());
+
+    if(NewFile)
     {
         std::fwrite(buffer(), sizeof(dump), length(), NewFile);
         std::fclose(NewFile);

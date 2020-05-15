@@ -1,6 +1,5 @@
 TOPPATH = $$PWD/../../daddy
 INCLUDEPATH += $$TOPPATH
-DEFINES += DD_DISABLE_LIB
 
 HEADERS += $$TOPPATH/daddy.hpp
 HEADERS += $$TOPPATH/core/dd_binary.hpp

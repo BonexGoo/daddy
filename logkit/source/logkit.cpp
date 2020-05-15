@@ -18,7 +18,7 @@ private:
     dSocket mSocket;
 };
 
-DD_global bool gInterrupt = false;
+DD_global("gInterrupt", bool, gInterrupt, false);
 static void OnInterrupt(int signum)
 {
     printf("[daddy] Interrupt signal: %d\n", signum);
@@ -27,6 +27,7 @@ static void OnInterrupt(int signum)
 
 int main(int argc, char* argv[])
 {
+    dGlobal::load();
     signal(SIGINT, OnInterrupt); // Ctrl+C
 
     if(argc == 2)
@@ -64,6 +65,8 @@ int main(int argc, char* argv[])
             "C:\\>logclient_vs.exe www.logserver.com\n");
         std::this_thread::sleep_for(std::chrono::milliseconds(3000));
     }
+
+    dGlobal::release();
     return 0;
 }
 
@@ -90,7 +93,7 @@ int32_t LogKit::SendOnce()
         uint16_t mFuncID;
     };
 
-    auto ReadCB = [this](dDetector::FuncID id, addr payload, uint32_t size)->void
+    auto ReadCB = [this](dDetector::FuncID id, ptr payload, uint32_t size)->void
     {
         PacketHeader HeaderTemp;
         HeaderTemp.mSize = sizeof(uint16_t) + size;

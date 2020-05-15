@@ -34,6 +34,10 @@ public:
     }
 
 public:
+    static GlobalAgentP& ST()
+    {static GlobalAgentP _("", nullptr); return _;}
+
+public:
     utf8s const mName;
     void* const mPtr;
     dGlobal::Constructor mConstructor;
@@ -43,8 +47,6 @@ public:
     GlobalAgentP* mNext;
 };
 
-static GlobalAgentP gGlobalFirst("", nullptr);
-
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 // ■ dGlobal
 void* dGlobal::loadAttach(utf8s name, void* ptr, Constructor ccb, Destructor dcb)
@@ -53,28 +55,28 @@ void* dGlobal::loadAttach(utf8s name, void* ptr, Constructor ccb, Destructor dcb
     NewGlobal->mConstructor = ccb;
     NewGlobal->mDestructor = dcb;
 
-    NewGlobal->mNext = &gGlobalFirst;
-    NewGlobal->mPrev = gGlobalFirst.mPrev;
-    gGlobalFirst.mPrev->mNext = NewGlobal;
-    gGlobalFirst.mPrev = NewGlobal;
+    NewGlobal->mNext = &GlobalAgentP::ST();
+    NewGlobal->mPrev = GlobalAgentP::ST().mPrev;
+    GlobalAgentP::ST().mPrev->mNext = NewGlobal;
+    GlobalAgentP::ST().mPrev = NewGlobal;
     return ptr;
 }
 
 void* dGlobal::loadDirect(void* ptr, Constructor ccb, Destructor dcb)
 {
     loadAttach("", ptr, ccb, dcb);
-    gGlobalFirst.mPrev->mAlived = true;
-    gGlobalFirst.mPrev->mConstructor(gGlobalFirst.mPrev->mPtr);
+    GlobalAgentP::ST().mPrev->mAlived = true;
+    GlobalAgentP::ST().mPrev->mConstructor(GlobalAgentP::ST().mPrev->mPtr);
     return ptr;
 }
 
 void dGlobal::setDependency(utf8s nameFirst, utf8s nameLater)
 {
-    for(GlobalAgentP* iLater = gGlobalFirst.mNext; iLater != &gGlobalFirst; iLater = iLater->mNext)
+    for(GlobalAgentP* iLater = GlobalAgentP::ST().mNext; iLater != &GlobalAgentP::ST(); iLater = iLater->mNext)
     {
         if(!strcmp(iLater->mName, nameLater))
         {
-            for(GlobalAgentP* iFirst = iLater->mNext; iFirst != &gGlobalFirst; iFirst = iFirst->mNext)
+            for(GlobalAgentP* iFirst = iLater->mNext; iFirst != &GlobalAgentP::ST(); iFirst = iFirst->mNext)
             {
                 // iLater보다 후방에 있는 iFirst를 발견
                 if(!strcmp(iFirst->mName, nameFirst))
@@ -101,7 +103,7 @@ void dGlobal::setDependency(utf8s nameFirst, utf8s nameLater)
 void dGlobal::load()
 {
     setDependency("gPlanFirst", "gStringPool");
-    for(GlobalAgentP* iGlobal = gGlobalFirst.mNext; iGlobal != &gGlobalFirst; iGlobal = iGlobal->mNext)
+    for(GlobalAgentP* iGlobal = GlobalAgentP::ST().mNext; iGlobal != &GlobalAgentP::ST(); iGlobal = iGlobal->mNext)
     {
         if(!iGlobal->mAlived)
         {
@@ -113,7 +115,7 @@ void dGlobal::load()
 
 void dGlobal::release()
 {
-    for(GlobalAgentP* iGlobal = gGlobalFirst.mPrev; iGlobal != &gGlobalFirst; iGlobal = iGlobal->mPrev)
+    for(GlobalAgentP* iGlobal = GlobalAgentP::ST().mPrev; iGlobal != &GlobalAgentP::ST(); iGlobal = iGlobal->mPrev)
     {
         if(iGlobal->mAlived)
         {

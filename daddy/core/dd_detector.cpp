@@ -591,14 +591,30 @@ dDetector::Stack::~Stack()
 // ■ dDetector
 void dDetector::runClient(dLiteral exepath, dLiteral option, dLiteral hostname, dLiteral workpath)
 {
+    // 실행파일의 상위경로를 수집
+    #define PATH_MAX (1024 + 1)
+    char ExecutePath[PATH_MAX] = {0};
     #if DD_OS_WINDOWS
-        #define PATH_MAX (1024 + 1)
-        CHAR CommandLine[PATH_MAX];
-        GetCurrentDirectoryA(PATH_MAX, CommandLine);
-        strcat_s(CommandLine, "\\");
-        strcat_s(CommandLine, exepath.buildNative());
-        strcat_s(CommandLine, " ");
-        strcat_s(CommandLine, hostname.buildNative());
+        HMODULE Module = GetModuleHandleA(NULL);
+        GetModuleFileNameA(Module, ExecutePath, PATH_MAX);
+    #elif DD_OS_LINUX
+        char Link[PATH_MAX];
+        sprintf(Link, "/proc/%d/exe", getpid());
+        readlink(Link, ExecutePath, PATH_MAX);
+    #endif
+    int LastSlash = 0;
+    for(int i = 0; ExecutePath[i]; ++i)
+        if(ExecutePath[i] == '/' || ExecutePath[i] == '\\')
+        {
+            ExecutePath[i] = '/';
+            LastSlash = i;
+        }
+    ExecutePath[LastSlash + 1] = '\0';
+
+    #if DD_OS_WINDOWS
+        strcat_s(ExecutePath, exepath.buildNative());
+        strcat_s(ExecutePath, " ");
+        strcat_s(ExecutePath, hostname.buildNative());
 
         // 프로세스 실행
         STARTUPINFOA SI;
@@ -609,27 +625,17 @@ void dDetector::runClient(dLiteral exepath, dLiteral option, dLiteral hostname, 
         #if DD_BUILD_DEBUG
             if(!strcmp(option.buildNative(), "run"))
             {
-                CreateProcessA(NULL, CommandLine, NULL, NULL, FALSE, CREATE_NEW_CONSOLE, NULL, NULL, &SI, &PI);
+                CreateProcessA(NULL, ExecutePath, NULL, NULL, FALSE, CREATE_NEW_CONSOLE, NULL, NULL, &SI, &PI);
                 DetectorWriterP::ST().setProcess(PI.hProcess);
             }
         #else
             if(!strcmp(option.buildNative(), "run"))
             {
-                CreateProcessA(NULL, CommandLine, NULL, NULL, FALSE, 0, NULL, NULL, &SI, &PI);
+                CreateProcessA(NULL, ExecutePath, NULL, NULL, FALSE, 0, NULL, NULL, &SI, &PI);
                 DetectorWriterP::ST().setProcess(PI.hProcess);
             }
         #endif
     #elif DD_OS_LINUX
-        #define PATH_MAX (1024 + 1)
-        char Link[PATH_MAX];
-        sprintf(Link, "/proc/%d/exe", getpid());
-        char ExecutePath[PATH_MAX] = {0};
-        readlink(Link, ExecutePath, PATH_MAX);
-        int LastSlash = 0;
-        for(int i = 0; ExecutePath[i]; ++i)
-            if(ExecutePath[i] == '/')
-                LastSlash = i;
-        ExecutePath[LastSlash + 1] = '\0';
         strcat(ExecutePath, exepath.buildNative());
 
         if(chmod(ExecutePath, 0755) != -1)
