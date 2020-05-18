@@ -131,6 +131,15 @@ EscapePlanP* EscapeModel::__em_build(const EscapePlanP* super, utf8s name, uint3
 
 void EscapeModel::__em_release(EscapeModel* model, void* self)
 {
+    if(model->mRefEP)
+    {
+        model->mRefEP->mCB.Quit(self);
+        model->mRefEP = nullptr;
+    }
+}
+
+void EscapeModel::__em_release_alone(EscapeModel* model, void* self)
+{
     model->mRefEP->mCB.Quit(self);
 }
 

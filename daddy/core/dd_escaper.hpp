@@ -59,9 +59,6 @@
                 __FILE__, __LINE__, __init, __quit, __move, __copy)); \
             return gSingleton; \
         } \
-        /* __em_release무효화 */ \
-        inline static void __em_release(Daddy::EscapeModel*, void*) { \
-        } \
     \
     \
     /* 이스케이퍼-사이클 */ \
@@ -138,7 +135,7 @@
             __copy(this, &rhs); \
         } \
         ~CLASS() { \
-            Daddy::EscapeModel::__em_release(__model(), this); \
+            Daddy::EscapeModel::__em_release_alone(__model(), this); \
         } \
         _self_& operator=(_self_&& rhs) noexcept { \
             __model()->__em_operatorMove(this, &rhs); \
@@ -301,6 +298,7 @@ public:
     static EscapePlanP* __em_build(const EscapePlanP* super, Daddy::utf8s name, uint32_t size,
         Daddy::utf8s file, uint32_t line, InitCB icb, QuitCB qcb, MoveCB mcb, CopyCB ccb);
     static void __em_release(EscapeModel* model, void* self);
+    static void __em_release_alone(EscapeModel* model, void* self);
 public:
     int64_t __em_enter(CycleType type);
     void __em_leave(CycleType type, int64_t timeNs);
