@@ -64,6 +64,9 @@ void PlatformQuit()
     Context AtlasInfo;
     R::SaveAtlas(AtlasInfo);
     AtlasInfo.SaveJson().ToAsset("atlasinfo.json");
+}
 
+void PlatformFree()
+{
     dGlobal::release();
 }

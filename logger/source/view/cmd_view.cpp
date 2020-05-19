@@ -251,7 +251,7 @@ void CmdView::OnPacket(packettype type, sint32 peerid, bytes buffer)
         case packettype_message:
             {
                 auto Header = (const PacketHeader*) buffer;
-                auto Payload = (addr) Header->mPayload;
+                auto Payload = (ptr) Header->mPayload;
                 switch(Header->mFuncID)
                 {
                 case dDetector::StampST:

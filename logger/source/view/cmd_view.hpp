@@ -23,7 +23,7 @@ public:
     Log* GetLastLog(sint32 pos);
 
 private:
-    enum {mLogMax = 1024, mLogHeight = 20};
+    enum {mLogMax = 5000, mLogHeight = 20};
     id_mutex mMutex;
     Log mLogs[mLogMax];
     sint32 mLogFocus;
