@@ -39,7 +39,7 @@
             __copy(__toVoid(this), __toVoid(&rhs)); \
         } \
         ~CLASS() { \
-            _super_::__em_release(this, __toVoid(this)); /* _super_가 EscapeModel일때만 동작(하위의 release__는 무효화됨) */ \
+            __em_release(this, __toVoid(this)); \
         } \
         _self_& operator=(_self_&& rhs) noexcept { \
             __em_operatorMove(__toVoid(this), __toVoid(&rhs)); \

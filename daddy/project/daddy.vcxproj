@@ -172,6 +172,7 @@
     <ClCompile Include="..\core\dd_detector.cpp" />
     <ClCompile Include="..\core\dd_escaper.cpp" />
     <ClCompile Include="..\core\dd_global.cpp" />
+    <ClCompile Include="..\core\dd_handle.cpp" />
     <ClCompile Include="..\core\dd_markup.cpp" />
     <ClCompile Include="..\core\dd_platform.cpp" />
     <ClCompile Include="..\core\dd_string.cpp" />
@@ -186,6 +187,7 @@
     <ClInclude Include="..\core\dd_detector.hpp" />
     <ClInclude Include="..\core\dd_escaper.hpp" />
     <ClInclude Include="..\core\dd_global.hpp" />
+    <ClInclude Include="..\core\dd_handle.hpp" />
     <ClInclude Include="..\core\dd_macro.hpp" />
     <ClInclude Include="..\core\dd_markup.hpp" />
     <ClInclude Include="..\core\dd_platform.hpp" />
