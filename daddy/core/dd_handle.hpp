@@ -20,13 +20,13 @@ class HandleAgentP;
 class dHandle : public dEscaper
 {
 public: // 사용성
-    /// @brief          핸들의 유효성
-    /// @return         true-유효함, false-무효함
-    bool isValid() const;
-
-    /// @brief          핸들을 무효화
-    /// @param forced   데이터객체를 우선 삭제할지의 여부
+    /// @brief          핸들을 초기화
+    /// @param forced   데이터객체를 강제 삭제할지의 여부
     void clear(bool forced);
+
+    /// @brief          데이터객체의 이관
+    /// @param forced   other로부터 데이터객체를 빼앗아 옴
+    void move(dHandle& other);
 
     /// @brief          데이터객체 반환
     /// @return         데이터객체
@@ -39,7 +39,6 @@ public:
 
 private:
     ptr_u getHandle() const;
-    static const dHandle& blank();
 
 DD_escaper(dHandle, dEscaper): // 객체사이클
     void _init_(InitType type);

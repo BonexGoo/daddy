@@ -16,6 +16,7 @@ public:
     void attach() const;
     void detach() const;
     void clear();
+    void move(HandleAgentP& agent);
 
 public:
     inline ptr_u handle() const {return mHandle;}
@@ -72,19 +73,28 @@ void HandleAgentP::clear()
     mHandle = 0;
 }
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
-// ■ dHandle
-bool dHandle::isValid() const
+void HandleAgentP::move(HandleAgentP& agent)
 {
-    return (mRefAgent != blank().mRefAgent);
+    mDestroyer(mHandle);
+    mHandle = agent.mHandle;
+    mDestroyer = agent.mDestroyer;
+    agent.mHandle = 0;
+    agent.mDestroyer = dHandle::defaultDestroyer();
 }
 
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// ■ dHandle
 void dHandle::clear(bool forced)
 {
     if(forced)
         mRefAgent->clear();
     _quit_();
     _init_(InitType::Create);
+}
+
+void dHandle::move(dHandle& other)
+{
+    mRefAgent->move(*other.mRefAgent);
 }
 
 ptr_u dHandle::getHandle() const
@@ -97,15 +107,12 @@ dHandle::Destroyer dHandle::defaultDestroyer()
     return [](ptr_u handle)->void {};
 }
 
-const dHandle& dHandle::blank()
-{DD_global_direct(dHandle, _, 0, defaultDestroyer()); return _;}
-
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 // ■ dHandle::escaper
 void dHandle::_init_(InitType type)
 {
     if(type == InitType::Create)
-        (mRefAgent = blank().mRefAgent)->attach();
+        mRefAgent = new HandleAgentP();
     else mRefAgent = nullptr;
 }
 
