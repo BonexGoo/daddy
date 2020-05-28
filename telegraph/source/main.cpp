@@ -3,9 +3,11 @@
 #include <service/boss_zay.hpp>
 
 #include <resource.hpp>
+#include <daddy.hpp>
 
 bool PlatformInit()
 {
+    dGlobal::load();
     Platform::InitForMDI();
     Platform::SetViewCreator(ZayView::Creator);
 
@@ -65,4 +67,5 @@ void PlatformQuit()
 
 void PlatformFree()
 {
+    dGlobal::release();
 }

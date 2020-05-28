@@ -40,10 +40,11 @@ ZAY_VIEW_API OnNotify(NotifyType type, chars topic, id_share in, id_cloned_share
                     sint32 BufferSize = 0;
                     auto NewBuffer = (dumps) Platform::Server::GetPacketBuffer(m->mServer, &BufferSize);
                     const dZokeReader NewReader(dBinary::fromExternal(NewBuffer, (uint32_t) BufferSize));
+                    utf8s Type = NewReader("type").getString();
 
-                    if(!String::Compare(NewReader("type").getString(), "node"))
+                    if(!String::Compare(Type, "node"))
                         m->mNodes[CurPeerID].SetNodeID(NewReader("id").getString());
-                    else if(!String::Compare(NewReader("type").getString(), "connect_add"))
+                    else if(!String::Compare(Type, "connect_add"))
                     {
                         if(auto ServerConnector = m->mNodes[CurPeerID].ConnectAdd(
                             NewReader("id").getInt32(-1),
@@ -56,15 +57,15 @@ ZAY_VIEW_API OnNotify(NotifyType type, chars topic, id_share in, id_cloned_share
                                 ServerConnector->InitAddress(IP4, IP6, NewReader("port").getUint16());
                         }
                     }
-                    else if(!String::Compare(NewReader("type").getString(), "connect_sub"))
+                    else if(!String::Compare(Type, "connect_sub"))
                     {
                         m->mNodes[CurPeerID].ConnectSub(
                             NewReader("id").getInt32(-1));
                     }
                     // 개발전용
-                    else if(!String::Compare(NewReader("type").getString(), "toast"))
+                    else if(!String::Compare(Type, "toast"))
                         m->mNodes[CurPeerID].SetToast(NewReader("text").getString());
-                    else if(!String::Compare(NewReader("type").getString(), "silk_flush"))
+                    else if(!String::Compare(Type, "silk_flush"))
                         m->mNodes[CurPeerID].SetFlush(NewReader("slik").getInt32(),
                             NewReader("amount").getUint32(), NewReader("all").getUint8());
                 }
