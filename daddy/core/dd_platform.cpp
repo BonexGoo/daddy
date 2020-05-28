@@ -292,8 +292,8 @@ DD_escaper(ServerAgentP, SocketAgentP):
         SocketAgentP::_init_(type);
         mPeers = (type == InitType::Create)? new std::map<uint32_t, SocketAgentP*>() : nullptr;
         mLastAcceptID = 0;
-        mAcceptor = nullptr;
         mInterrupted = false;
+        mAcceptor = nullptr;
     }
     void _quit_()
     {
@@ -320,20 +320,21 @@ DD_escaper(ServerAgentP, SocketAgentP):
         mPeers = DD_rvalue(rhs.mPeers);
         mPeerMutex = DD_rvalue(rhs.mPeerMutex);
         mLastAcceptID = DD_rvalue(rhs.mLastAcceptID);
-        mAcceptor = DD_rvalue(rhs.mAcceptor);
         mInterrupted = DD_rvalue(rhs.mInterrupted);
+        mAcceptor = DD_rvalue(rhs.mAcceptor);
     }
     std::map<uint32_t, SocketAgentP*>* mPeers;
     dMutex mPeerMutex;
     uint32_t mLastAcceptID;
-    std::thread* mAcceptor;
     bool mInterrupted;
+    std::thread* mAcceptor;
 
 public:
     DD_passage_(ServerAgentP, SocketData socket, dSocket::AssignCB cb)_with_super(socket, cb)
     {
         mPeers = new std::map<uint32_t, SocketAgentP*>();
         mLastAcceptID = 0;
+        mInterrupted = false;
         mAcceptor = new std::thread([](ServerAgentP* self)->void
         {
             while(!self->mInterrupted)

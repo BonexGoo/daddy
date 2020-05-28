@@ -631,7 +631,7 @@ void dDetector::runClient(dLiteral exepath, dLiteral option, dLiteral hostname, 
         #else
             if(!strcmp(option.buildNative(), "run"))
             {
-                CreateProcessA(NULL, ExecutePath, NULL, NULL, FALSE, 0, NULL, NULL, &SI, &PI);
+                CreateProcessA(NULL, ExecutePath, NULL, NULL, FALSE, CREATE_NO_WINDOW, NULL, NULL, &SI, &PI);
                 DetectorWriterP::ST().setProcess(PI.hProcess);
             }
         #endif
