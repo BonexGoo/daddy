@@ -1,10 +1,5 @@
-﻿/// @brief     Investigate the build environment and utility.
-/// @license   MIT License
-/// @author    BonexGoo
-#pragma once
-
-/*!
-\mainpage daddy
+﻿/*!
+\mainpage daddy ServerEngine
 \section information 목적
     - 컴포넌트식 네트워크 서버엔진
 \section advanced 소개
@@ -16,6 +11,7 @@
     - bonexgoo@gmail.com
     - +82-10-2030-0288
 */
+#pragma once
 
 #pragma warning(disable:26495) // Always initialize member variables.
 #pragma execution_character_set("utf-8")

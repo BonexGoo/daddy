@@ -23,5 +23,5 @@ var searchData=
   ['dunique_39',['dUnique',['../class_daddy_1_1d_unique.html',1,'Daddy']]],
   ['dzoker_40',['dZoker',['../class_daddy_1_1d_zoker.html',1,'Daddy']]],
   ['dzokereader_41',['dZokeReader',['../class_daddy_1_1d_zoke_reader.html',1,'Daddy']]],
-  ['daddy_42',['daddy',['../index.html',1,'']]]
+  ['daddy_20serverengine_42',['daddy ServerEngine',['../index.html',1,'']]]
 ];
