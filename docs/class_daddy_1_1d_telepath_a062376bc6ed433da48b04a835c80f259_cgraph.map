@@ -1,0 +1,4 @@
+<map id="Daddy::dTelepath::send" name="Daddy::dTelepath::send">
+<area shape="rect" id="node1" title="실크를 통해 특정 상대에게 바이너리전송" alt="" coords="5,5,164,32"/>
+<area shape="rect" id="node2" href="$class_daddy_1_1d_binary.html#a1396ddc03ca1b1cc0606acca3f57c35f" title="바이너리 길이반환" alt="" coords="212,5,367,32"/>
+</map>

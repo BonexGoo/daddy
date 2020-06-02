@@ -1,0 +1,7 @@
+<map id="Daddy::dTelepath::gateCall" name="Daddy::dTelepath::gateCall">
+<area shape="rect" id="node1" title="게이트 연결보장 및 각종 처리" alt="" coords="5,97,184,124"/>
+<area shape="rect" id="node2" href="$class_daddy_1_1d_literal.html#a6ad682d66a37a311977681890ad377e9" title="네이티브스트링 반환(null문자있음)" alt="" coords="232,5,411,32"/>
+<area shape="rect" id="node3" href="$class_daddy_1_1d_zoke_reader.html#a75487f3ca38a5e645121fb73ea4e3104" title="자신의 int32_t데이터 반환" alt="" coords="250,57,393,98"/>
+<area shape="rect" id="node4" href="$class_daddy_1_1d_zoke_reader.html#a566abe0232cb5049989aa171e24a743b" title="자신의 String데이터 반환" alt="" coords="250,122,393,163"/>
+<area shape="rect" id="node5" href="$class_daddy_1_1d_binary.html#a1396ddc03ca1b1cc0606acca3f57c35f" title="바이너리 길이반환" alt="" coords="244,188,399,215"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="Daddy::dLiteral::buildNative" name="Daddy::dLiteral::buildNative">
+<area shape="rect" id="node1" title="네이티브스트링 반환(null문자있음)" alt="" coords="237,183,416,209"/>
+<area shape="rect" id="node2" href="$class_daddy_1_1d_binary.html#a019615bb95e4cda503e4f09ee2ec2ee1" title="파일에서 바이너리 가져오기" alt="" coords="15,5,180,32"/>
+<area shape="rect" id="node3" href="$class_daddy_1_1d_string.html#acc623f626c1ee2fe39796f3ca9030819" title="파일에서 스트링 가져오기" alt="" coords="16,56,179,83"/>
+<area shape="rect" id="node4" href="$class_daddy_1_1d_telepath.html#a544554c111dba494e5a838198bb23b5b" title="게이트 연결보장 및 각종 처리" alt="" coords="8,107,187,133"/>
+<area shape="rect" id="node5" href="$class_daddy_1_1d_detector.html#a19c375e11745cd8bfa5275d0babc5722" title="클라이언트 강제종료" alt="" coords="7,157,187,184"/>
+<area shape="rect" id="node6" href="$class_daddy_1_1d_socket.html#ac4c71ec0096ddfed7e434a22a80e56fa" title="클라이언트로 객체생성(connect)" alt="" coords="5,208,189,235"/>
+<area shape="rect" id="node7" href="$class_daddy_1_1d_detector.html#ac7b6a7dc2f4f185c3ccc36b6057217d7" title="클라이언트 실행" alt="" coords="6,259,189,285"/>
+<area shape="rect" id="node8" href="$class_daddy_1_1d_binary.html#abc82400898cd2c6c9b48bf4fa091c861" title="파일로 바이너리 내보내기" alt="" coords="22,309,173,336"/>
+<area shape="rect" id="node9" href="$class_daddy_1_1d_string.html#afcb6a82be2d1e68fd988c5329871264f" title="파일로 스트링 내보내기" alt="" coords="23,360,171,387"/>
+</map>

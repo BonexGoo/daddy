@@ -3,6 +3,20 @@
 /// @author    BonexGoo
 #pragma once
 
+/*!
+\mainpage daddy
+\section information 목적
+    - 컴포넌트식 네트워크 서버엔진
+\section advanced 소개
+    - core: 기반기술
+    - toolkit: 지원프로그램
+\section developer 개발자
+    - BonexGoo
+\section contact 연락처
+    - bonexgoo@gmail.com
+    - +82-10-2030-0288
+*/
+
 #pragma warning(disable:26495) // Always initialize member variables.
 #pragma execution_character_set("utf-8")
 #define _CRT_SECURE_NO_WARNINGS

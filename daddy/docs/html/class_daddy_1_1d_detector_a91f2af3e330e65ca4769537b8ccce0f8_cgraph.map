@@ -1,0 +1,5 @@
+<map id="Daddy::dDetector::stamp" name="Daddy::dDetector::stamp">
+<area shape="rect" id="node1" title="스탬프(기점로그) 기록" alt="" coords="5,31,172,57"/>
+<area shape="rect" id="node2" href="$class_daddy_1_1d_literal.html#a16092f724471d9dd827bc645ab759e70" title="스트링 길이반환" alt="" coords="220,5,372,32"/>
+<area shape="rect" id="node3" href="$class_daddy_1_1d_literal.html#ae5f6d26021eca41453132c6a9cf36536" title="스트링 반환(null문자없음)" alt="" coords="221,56,371,83"/>
+</map>

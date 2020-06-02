@@ -1,17 +1,4 @@
-﻿/*!
-\mainpage daddy
-\section information 목적
-    - 컴포넌트식 네트워크 서버엔진
-\section advanced 소개
-    - core: 기반기술
-    - toolkit: 지원프로그램
-\section developer 개발자
-    - BonexGoo
-\section contact 연락처
-    - bonexgoo@gmail.com
-    - +82-10-2030-0288
-*/
-#pragma once
+﻿#pragma once
 
 #include "core/dd_binary.hpp"
 #include "core/dd_detector.hpp"
