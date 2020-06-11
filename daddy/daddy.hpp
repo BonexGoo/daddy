@@ -15,8 +15,4 @@
 #include "core/dd_unique.hpp"
 #include "core/dd_zoker.hpp"
 
-#if DD_OS_WINDOWS & !defined(DD_DISABLE_LIB)
-    #pragma comment(lib, "daddy.lib")
-#endif
-
 using namespace Daddy;
