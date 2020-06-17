@@ -18,7 +18,7 @@ private:
     dSocket mSocket;
 };
 
-DD_global("gInterrupt", bool, gInterrupt, false);
+static bool gInterrupt = false;
 static void OnInterrupt(int signum)
 {
     printf("[daddy] Interrupt signal: %d\n", signum);
@@ -27,11 +27,10 @@ static void OnInterrupt(int signum)
 
 int main(int argc, char* argv[])
 {
-    dGlobal::load();
     signal(SIGINT, OnInterrupt); // Ctrl+C
-
     if(argc == 2)
     {
+        dGlobal::load();
         LogKit Client;
         const uint16_t Port = 7070;
         if(Client.Connect(argv[1], Port))
@@ -57,16 +56,15 @@ int main(int argc, char* argv[])
             printf("[daddy] could not connect to \"%s:%hu\" (waiting 3sec)", argv[1], Port);
             std::this_thread::sleep_for(std::chrono::milliseconds(3000));
         }
+        dGlobal::release();
     }
     else
     {
         printf(
             "[daddy] call the argument again like this! (waiting 3sec)\n"
-            "C:\\>logclient_vs.exe www.logserver.com\n");
+            "C:\\>logkit.exe www.logserver.com\n");
         std::this_thread::sleep_for(std::chrono::milliseconds(3000));
     }
-
-    dGlobal::release();
     return 0;
 }
 

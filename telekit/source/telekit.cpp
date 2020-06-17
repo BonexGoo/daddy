@@ -38,7 +38,7 @@ private:
     dTeleApi::V10::onCycleCB mCycleCB;
 };
 
-DD_global bool gInterrupt = false;
+static bool gInterrupt = false;
 static void OnInterrupt(int signum)
 {
     printf("[daddy] Interrupt signal: %d\n", signum);
@@ -55,15 +55,34 @@ static int ErrorToExit(utf8s message)
 int main(int argc, char* argv[])
 {
     signal(SIGINT, OnInterrupt); // Ctrl+C
-
     if(argc == 2)
     {
         // 동적라이브러리 연결
         printf("[daddy] * * * * * load library * * * * *\n");
+        dGlobal::load();
+
         LibData NewLib = LIB_LOAD(argv[1]);
-        if(!NewLib) return ErrorToExit("[daddy] library not found.\n");
+        if(!NewLib)
+        {
+            dGlobal::release();
+            return ErrorToExit("[daddy] library not found.\n");
+        }
+
         auto MarkIn = (dTelepath::onMarkInCB) LIB_PROC(NewLib, "onMarkIn");
-        if(!MarkIn) return ErrorToExit("[daddy] onMarkIn function does not exist.\n");
+        if(!MarkIn)
+        {
+            dGlobal::release();
+            return ErrorToExit("[daddy] onMarkIn function does not exist.\n");
+        }
+
+        // 클라이언트 생성
+        printf("[daddy] * * * * * create client * * * * *\n");
+        auto NewClient = (TeleGateClientP*) MarkIn((int32_t) dTeleApi::MarkInType::CreateClient);
+        if(!NewClient)
+        {
+            dGlobal::release();
+            return ErrorToExit("[daddy] client creation failed.\n");
+        }
 
         // 컴포넌트의 정보획득
         utf8s ComponentVer = MarkIn((int32_t) dTeleApi::MarkInType::ComponentVer);
@@ -75,17 +94,16 @@ int main(int argc, char* argv[])
         printf("[daddy] entityName: %s\n", EntityName);
         printf("[daddy] entityUuid: %s\n", EntityUuid);
 
-        // 클라이언트 생성
-        printf("[daddy] * * * * * create client * * * * *\n");
-        auto NewClient = (TeleGateClientP*) MarkIn((int32_t) dTeleApi::MarkInType::CreateClient);
-        if(!NewClient) return ErrorToExit("[daddy] client creation failed.\n");
-
         // 버전에 맞는 어댑터 할당
         printf("[daddy] * * * * * create adapter * * * * *\n");
         dTeleAdapter* Adapter = nullptr;
         if(!strcmp(ComponentVer, "V10"))
             Adapter = new TeleKit(NewLib);
-        else return ErrorToExit("[daddy] componentVer\'s answer could not be understood.\n");
+        else
+        {
+            dGlobal::release();
+            return ErrorToExit("[daddy] componentVer\'s answer could not be understood.\n");
+        }
 
         // 생명주기
         do
@@ -109,17 +127,22 @@ int main(int argc, char* argv[])
         // 클라이언트 소멸
         printf("[daddy] * * * * * release client * * * * *\n");
         auto ReleaseResult = (bool) MarkIn((int32_t) dTeleApi::MarkInType::ReleaseClient);
-        if(!ReleaseResult) return ErrorToExit("[daddy] client release failed.\n");
+        if(!ReleaseResult)
+        {
+            dGlobal::release();
+            return ErrorToExit("[daddy] client release failed.\n");
+        }
 
         // 동적라이브러리 해제
         printf("[daddy] * * * * * free library * * * * *\n");
         LIB_FREE(NewLib);
 
+        dGlobal::release();
         printf("[daddy] * * * * * done * * * * *\n");
         return 0;
     }
     return ErrorToExit("[daddy] call the argument again like this! (waiting 3sec)\n"
-        "C:\\>adapter.exe core.dll\n");
+        "C:\\>telekit.exe core.dll\n");
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////

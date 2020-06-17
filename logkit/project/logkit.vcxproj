@@ -23,7 +23,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
-    <ProjectGuid>{0E932B97-0689-457F-90E5-AB5E02EFF3F6}</ProjectGuid>
+    <ProjectGuid>{B3645CB5-73B4-42C1-A07A-CC6D00DB3D41}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>logkit</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>

@@ -23,7 +23,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
-    <ProjectGuid>{0E932B97-0689-457F-90E5-AB5E02EFF3F6}</ProjectGuid>
+    <ProjectGuid>{95F775F7-6C60-460D-9A7A-470C92D9F825}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>telekit</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
