@@ -18,17 +18,17 @@
 #define _CRT_SECURE_NO_WARNINGS
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
-// ■ build environment check - debug
+// ■ build environment check - debug //bx200618-check:{ debug매크로 확인!
 #if !defined(NDEBUG)
     #define DD_BUILD_DEBUG 1
     #pragma message("[daddy] build is debug")
 #else
     #define DD_BUILD_DEBUG 0
     #pragma message("[daddy] build is release")
-#endif
+#endif //}
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
-// ■ build environment check - x64
+// ■ build environment check - x64 //bx200618-check:{ x64매크로 확인!
 #if defined(__x86_64__) || defined(__x86_64) || defined(__amd64__) || defined(__amd64) || \
     defined(__ppc64__) || defined(_WIN64) || defined(__LP64__) || defined(_LP64)
     #define DD_BUILD_X64 1
@@ -36,20 +36,20 @@
 #else
     #define DD_BUILD_X64 0
     #pragma message("[daddy] build is x86")
-#endif
+#endif //}
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
-// ■ build environment check - arm
+// ■ build environment check - arm //bx200618-check:{ arm매크로 확인!
 #if defined(arm) || defined(__arm__) || defined(ARM) || defined(_ARM_)
     #define DD_BUILD_ARM 1
     #pragma message("[daddy] build is arm")
 #else
     #define DD_BUILD_ARM 0
     #pragma message("[daddy] build is intel")
-#endif
+#endif //}
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
-// ■ build environment check - windows
+// ■ build environment check - windows //bx200618-check:{ windows매크로 확인!
 #if defined(_WIN32) || defined(_WIN64)
     #define DD_OS_WINDOWS 1
     #pragma message("[daddy] os is windows")
@@ -62,19 +62,19 @@
 #else
     #define DD_OS_WINDOWS 0
     #define DD_OS_WINDOWS_MINGW 0
-#endif
+#endif //}
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
-// ■ build environment check - linux
+// ■ build environment check - linux //bx200618-check:{ linux매크로 확인!
 #if defined(__linux__) && !defined(ANDROID) && !defined(__EMSCRIPTEN__)
     #define DD_OS_LINUX 1
     #pragma message("[daddy] os is linux")
 #else
     #define DD_OS_LINUX 0
-#endif
+#endif //}
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
-// ■ build environment check - osx/ios
+// ■ build environment check - osx/ios //bx200618-check:{ osx/ios매크로 확인!
 #if defined(__APPLE__)
     #include <TargetConditionals.h>
     #if TARGET_OS_MAC && !TARGET_OS_IPHONE
@@ -92,26 +92,26 @@
 #else
     #define DD_OS_OSX 0
     #define DD_OS_IOS 0
-#endif
+#endif //}
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
-// ■ build environment check - android
+// ■ build environment check - android //bx200618-check:{ android매크로 확인!
 #if defined(ANDROID)
     #define DD_OS_ANDROID 1
     #pragma message("[daddy] os is android")
 #else
     #define DD_OS_ANDROID 0
-#endif
+#endif //}
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
-// ■ build environment check - wasm
+// ■ build environment check - wasm //bx200618-check:{ wasm매크로 확인!
 #if defined(__EMSCRIPTEN__)
     #include <emscripten.h>
     #define DD_OS_WASM 1
     #pragma message("[daddy] os is wasm")
 #else
     #define DD_OS_WASM 0
-#endif
+#endif //}
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 // ■ macro verification
@@ -122,7 +122,7 @@
 #endif
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
-// ▶ coding utility
+// ▶ coding utility //bx200618-check:{ 유틸리티매크로 확인!
 #ifdef DD_ENABLE_TRACE
     #define DD_assert(QUERY, CAUSE)    do{if(!(QUERY)) DD_crash();} while(false)
     #pragma message("[daddy] trace-system ENABLED")
@@ -162,4 +162,4 @@
     #define DD_dllexport               extern "C" __declspec(dllexport)
 #else
     #define DD_dllexport               extern "C" __attribute__((visibility("default")))
-#endif
+#endif //}
