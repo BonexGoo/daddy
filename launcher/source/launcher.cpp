@@ -35,13 +35,13 @@ ZAY_VIEW_API OnRender(ZayPanel& panel)
 
     ZAY_INNER(panel, 10)
     {
-        BOSS::String SAppsRemPath = Platform::Utility::GetProgramPath(true) + "../sapps-rem/";
+        BOSS::String DumAppsRemPath = Platform::Utility::GetProgramPath(true) + "../dumapps-rem/";
         const sint32 WidgetWidth = Math::Max(gIconSize + 300, panel.w());
-        for(sint32 i = 0, iend = m->mSApps.Count(); i < iend; ++i)
+        for(sint32 i = 0, iend = m->mDumApps.Count(); i < iend; ++i)
         {
             ZAY_XYWH(panel, 0, (gWidgetHeight + 10 + 1) * i, WidgetWidth, gWidgetHeight)
             {
-                const bool IsInstalled = Platform::File::ExistForDir(SAppsRemPath + m->mSApps[i].mFileName);
+                const bool IsInstalled = Platform::File::ExistForDir(DumAppsRemPath + m->mDumApps[i].mFileName);
                 ZAY_COLOR(panel, gWidgetColor[IsInstalled])
                 {
                     ZAY_RGBA(panel, 128, 128, 128, 64)
@@ -52,7 +52,7 @@ ZAY_VIEW_API OnRender(ZayPanel& panel)
 
                 // 아이콘
                 ZAY_XYWH(panel, 5, 5, gIconSize, gIconSize)
-                    panel.stretch(m->mSApps[i].mIcon, Image::Build::AsyncNotNull);
+                    panel.stretch(m->mDumApps[i].mIcon, Image::Build::AsyncNotNull);
 
                 // 정보란
                 ZAY_LTRB(panel, 5 + gIconSize + 5, 5, panel.w() - 5 - gButtonWidth - 5, panel.h() - 5)
@@ -67,22 +67,22 @@ ZAY_VIEW_API OnRender(ZayPanel& panel)
                     ZAY_FONT(panel, 1.2, "Arial Black")
                     ZAY_RGB(panel, 0, 0, 0)
                     {
-                        if(0 < m->mSApps[i].mWorkCount)
-                            panel.text(m->mSApps[i].mFileName + BOSS::String::Format(" (%d+)", m->mSApps[i].mWorkCount),
+                        if(0 < m->mDumApps[i].mWorkCount)
+                            panel.text(m->mDumApps[i].mFileName + BOSS::String::Format(" (%d+)", m->mDumApps[i].mWorkCount),
                                 UIFA_LeftTop, UIFE_Right);
-                        else panel.text(m->mSApps[i].mFileName, UIFA_LeftTop, UIFE_Right);
+                        else panel.text(m->mDumApps[i].mFileName, UIFA_LeftTop, UIFE_Right);
                     }
 
                     // 설명
                     ZAY_XYWH(panel, 5, gTitleHeight, panel.w() - 10, gCommentHeight)
                     ZAY_FONT(panel, 1, "Arial Black")
                     ZAY_RGB(panel, 96, 96, 96)
-                        panel.text(m->mSApps[i].mReadMe, UIFA_LeftTop, UIFE_Right);
+                        panel.text(m->mDumApps[i].mReadMe, UIFA_LeftTop, UIFE_Right);
 
                     // 실행버튼
                     static chars CycleType[2] = {"kill", "run"};
                     static chars CycleName[2] = {"KILL ALL", "RUN ONCE"};
-                    for(sint32 j = 0, jend = m->mSApps[i].mCycle.length(); j < jend; ++j)
+                    for(sint32 j = 0, jend = m->mDumApps[i].mCycle.length(); j < jend; ++j)
                     {
                         const BOSS::String UIButton = BOSS::String::Format("%s-%d", CycleType[j], i);
                         ZAY_XYWH_UI(panel, panel.w() - (110 - 5) * (j + 1), panel.h() - (35 - 5), 100, 25,
@@ -90,7 +90,7 @@ ZAY_VIEW_API OnRender(ZayPanel& panel)
                             ZAY_GESTURE_T(t, i, j)
                             {
                                 if(t == GT_InReleased)
-                                    m->ExecSApp(i, CycleType[j]);
+                                    m->ExecDumApp(i, CycleType[j]);
                             })
                         {
                             const bool Focused = (panel.state(UIButton) & (PS_Focused | PS_Dragging));
@@ -122,11 +122,11 @@ ZAY_VIEW_API OnRender(ZayPanel& panel)
 
 launcherData::launcherData()
 {
-    BOSS::String SAppsPath = Platform::File::RootForAssetsRem() + "../sapps/";
-    Platform::File::Search(SAppsPath + '*', [](chars itemname, payload data)->void
+    BOSS::String DumAppsPath = Platform::File::RootForAssetsRem() + "../dumapps/";
+    Platform::File::Search(DumAppsPath + '*', [](chars itemname, payload data)->void
     {
         auto Self = (launcherData*) data;
-        Self->AddSApp(itemname);
+        Self->AddDumApp(itemname);
     }, this, true);
 }
 
@@ -144,8 +144,8 @@ void launcherData::OnRenderButton(ZayPanel& panel, sint32 i, bool installed)
             if(t == GT_InReleased)
             {
                 if(installed)
-                    RemoveSApp(i);
-                else InstallSApp(i);
+                    RemoveDumApp(i);
+                else InstallDumApp(i);
             }
         })
     {
@@ -188,12 +188,12 @@ buffer launcherData::PathToBuffer(chars path)
     return Result;
 }
 
-void launcherData::AddSApp(chars path)
+void launcherData::AddDumApp(chars path)
 {
-    auto& NewSApp = mSApps.AtAdding();
-    NewSApp.mFilePath = path;
-    NewSApp.mFileName = BOSS::String::FromWChars(Platform::File::GetShortName(WString::FromChars(NewSApp.mFilePath)));
-    NewSApp.mWorkCount = 0;
+    auto& NewDumApp = mDumApps.AtAdding();
+    NewDumApp.mFilePath = path;
+    NewDumApp.mFileName = BOSS::String::FromWChars(Platform::File::GetShortName(WString::FromChars(NewDumApp.mFilePath)));
+    NewDumApp.mWorkCount = 0;
 
     buffer NewZipBuffer = PathToBuffer(path);
     if(NewZipBuffer)
@@ -212,7 +212,7 @@ void launcherData::AddSApp(chars path)
                     if(buffer NewPngBuffer = AddOn::Zip::ToFile(NewZip, i))
                     {
                         id_bitmap NewBmp = Png().ToBmp((bytes) NewPngBuffer, true);
-                        id_bitmap OldBmp = NewSApp.mIcon.ChangeBitmap(NewBmp);
+                        id_bitmap OldBmp = NewDumApp.mIcon.ChangeBitmap(NewBmp);
                         Bmp::Remove(OldBmp);
                         Buffer::Free(NewPngBuffer);
                     }
@@ -221,7 +221,7 @@ void launcherData::AddSApp(chars path)
                 {
                     if(buffer NewMdBuffer = AddOn::Zip::ToFile(NewZip, i))
                     {
-                        NewSApp.mReadMe = BOSS::String(((chars) NewMdBuffer) + 3, Buffer::CountOf(NewMdBuffer) - 3);
+                        NewDumApp.mReadMe = BOSS::String(((chars) NewMdBuffer) + 3, Buffer::CountOf(NewMdBuffer) - 3);
                         Buffer::Free(NewMdBuffer);
                     }
                 }
@@ -230,7 +230,7 @@ void launcherData::AddSApp(chars path)
                     if(buffer NewMdBuffer = AddOn::Zip::ToFile(NewZip, i))
                     {
                         const BOSS::String NewYaml(((chars) NewMdBuffer) + 3, Buffer::CountOf(NewMdBuffer) - 3);
-                        NewSApp.mCycle.loadYaml(dString((chars) NewYaml));
+                        NewDumApp.mCycle.loadYaml(dString((chars) NewYaml));
                         Buffer::Free(NewMdBuffer);
                     }
                 }
@@ -241,12 +241,12 @@ void launcherData::AddSApp(chars path)
     }
 }
 
-void launcherData::InstallSApp(sint32 i)
+void launcherData::InstallDumApp(sint32 i)
 {
-    BOSS::String SAppsRemPath = Platform::Utility::GetProgramPath(true) + "../sapps-rem/";
-    auto& CurSApp = mSApps[i];
+    BOSS::String DumAppsRemPath = Platform::Utility::GetProgramPath(true) + "../dumapps-rem/";
+    auto& CurDumApp = mDumApps[i];
 
-    buffer NewZipBuffer = PathToBuffer(CurSApp.mFilePath);
+    buffer NewZipBuffer = PathToBuffer(CurDumApp.mFilePath);
     if(NewZipBuffer)
     {
         sint32 FileCount = 0;
@@ -261,7 +261,7 @@ void launcherData::InstallSApp(sint32 i)
 
                 if(buffer NewFileBuffer = AddOn::Zip::ToFile(NewZip, i))
                 {
-                    id_file NewFile = Platform::File::OpenForWrite(SAppsRemPath + CurSApp.mFileName + '/' + FilePath, true);
+                    id_file NewFile = Platform::File::OpenForWrite(DumAppsRemPath + CurDumApp.mFileName + '/' + FilePath, true);
                     Platform::File::Write(NewFile, (bytes) NewFileBuffer, Buffer::CountOf(NewFileBuffer));
                     Platform::File::Close(NewFile);
                     Buffer::Free(NewFileBuffer);
@@ -284,16 +284,16 @@ static void _RemoveSApp(chars dirpath)
     Platform::File::RemoveDir(WString::FromChars(dirpath));
 }
 
-void launcherData::RemoveSApp(sint32 i)
+void launcherData::RemoveDumApp(sint32 i)
 {
-    ExecSApp(i, "kill");
-    BOSS::String SAppsRemPath = Platform::Utility::GetProgramPath(true) + "../sapps-rem/";
-    _RemoveSApp(SAppsRemPath + mSApps[i].mFileName);
+    ExecDumApp(i, "kill");
+    BOSS::String DumAppsRemPath = Platform::Utility::GetProgramPath(true) + "../dumapps-rem/";
+    _RemoveSApp(DumAppsRemPath + mDumApps[i].mFileName);
 }
 
-void launcherData::ExecSApp(sint32 i, chars act)
+void launcherData::ExecDumApp(sint32 i, chars act)
 {
-    DD_hook(mSApps[i].mCycle(dString(act)))
+    DD_hook(mDumApps[i].mCycle(dString(act)))
     for(sint32 j = 0, jend = DD_fish.length(); j < jend; ++j)
     {
         auto ExecName = DD_fish[j]("exec").get();
@@ -308,8 +308,8 @@ void launcherData::ExecSApp(sint32 i, chars act)
                     ProgramPath = ProgramPath.Right(ProgramPath.Length() - 2); // "Q:"
                 #endif
 
-                dString BinPath((chars) ("../sapps-rem/" + mSApps[i].mFileName + "/bin_ubuntu/"));
-                dString WorkPath((chars) ("../sapps-rem/" + mSApps[i].mFileName + BOSS::String::Format("/work_%d/", mSApps[i].mWorkCount)));
+                dString BinPath((chars) ("../dumapps-rem/" + mDumApps[i].mFileName + "/bin_ubuntu/"));
+                dString WorkPath((chars) ("../dumapps-rem/" + mDumApps[i].mFileName + BOSS::String::Format("/work_%d/", mDumApps[i].mWorkCount)));
                 auto Option = DD_fish[j]("option").get();
                 auto ArgsName = DD_fish[j]("args").get();
                 if(0 < ArgsName.length())
@@ -323,6 +323,6 @@ void launcherData::ExecSApp(sint32 i, chars act)
     }
 
     if(!BOSS::String::Compare(act, "kill"))
-        mSApps.At(i).mWorkCount = 0;
-    else mSApps.At(i).mWorkCount++;
+        mDumApps.At(i).mWorkCount = 0;
+    else mDumApps.At(i).mWorkCount++;
 }

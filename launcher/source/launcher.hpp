@@ -2,7 +2,7 @@
 #include <service/boss_zay.hpp>
 #include <daddy.hpp>
 
-class SApp
+class DumApp
 {
 public:
     String mFilePath;
@@ -12,7 +12,7 @@ public:
     String mReadMe;
     dMarkup mCycle;
 };
-typedef Array<SApp> SApps;
+typedef Array<DumApp> DumApps;
 
 class launcherData : public ZayObject
 {
@@ -24,12 +24,12 @@ public:
     void OnRenderButton(ZayPanel& panel, sint32 i, bool installed);
 
 public:
-    void AddSApp(chars path);
-    void InstallSApp(sint32 i);
-    void RemoveSApp(sint32 i);
-    void ExecSApp(sint32 i, chars act);
+    void AddDumApp(chars path);
+    void InstallDumApp(sint32 i);
+    void RemoveDumApp(sint32 i);
+    void ExecDumApp(sint32 i, chars act);
     buffer PathToBuffer(chars path);
 
 public:
-    SApps mSApps;
+    DumApps mDumApps;
 };
