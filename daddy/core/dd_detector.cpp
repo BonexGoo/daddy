@@ -4,8 +4,10 @@
 #include "dd_detector.hpp"
 
 // Dependencies
+#include "dd_platform.hpp"
 #include "dd_string.hpp"
 #include "dd_thread.hpp"
+#include "dd_unique.hpp"
 #include <chrono>
 #include <string>
 #include <fcntl.h>
@@ -589,9 +591,14 @@ dDetector::Stack::~Stack()
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 // ■ dDetector
-void dDetector::setProcess(ptr_u handle)
+void dDetector::runKit(dLiteral address)
 {
-    DetectorWriterP::ST().setProcess(*((PROCESS_DATA*) &handle));
+    #if DD_OS_WINDOWS
+        auto Handle = dUtility::runProcess(dString(dUnique::programPath(true)) + "logkit.exe", "localhost");
+    #elif DD_OS_LINUX
+        auto Handle = dUtility::runProcess(dString(dUnique::programPath(true)) + "logkit", "localhost");
+    #endif
+    DetectorWriterP::ST().setProcess(*((PROCESS_DATA*) &Handle));
 }
 
 void dDetector::stamp(dLiteral name)

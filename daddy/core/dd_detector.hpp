@@ -51,10 +51,10 @@ private:
         dLiteral mName;
     };
 
-public: // 로그키트관련
-    /// @brief           프로세스 연결하기
-    /// @param handle    프로세스 핸들
-    static void setProcess(ptr_u handle);
+public: // 키트연동
+    /// @brief           키트 실행하기
+    /// @param address   로거의 IP주소
+    static void runKit(dLiteral address);
 
 public: // 로그쓰기
     /// @brief           스탬프(기점로그) 기록
