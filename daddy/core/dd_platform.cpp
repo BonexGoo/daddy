@@ -611,4 +611,162 @@ DD_passage_define_alone(dSocket, ptr_u agent)
     mRefAgent = (SocketAgentP*) agent;
 }
 
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// ■ dUtility
+ptr_u dUtility::runProcess(dLiteral exepath, dLiteral args, dLiteral runtype, dLiteral runpath)
+{
+    ptr_u ProcessHandle = 0;
+
+    #if DD_OS_WINDOWS
+        char ExecutePath[1024] = {};
+        strcat_s(ExecutePath, exepath.buildNative());
+        strcat_s(ExecutePath, " ");
+        strcat_s(ExecutePath, args.buildNative());
+
+        // 프로세스 실행
+        STARTUPINFOA SI;
+        ZeroMemory(&SI, sizeof(SI));
+        SI.cb = sizeof(SI);
+        PROCESS_INFORMATION PI;
+        ZeroMemory(&PI, sizeof(PI));
+        if(!strcmp(runtype.buildNative(), "run"))
+        {
+            CreateProcessA(NULL, ExecutePath, NULL, NULL, FALSE, CREATE_NO_WINDOW, NULL, NULL, &SI, &PI);
+            ProcessHandle = *((ptr_u*) &PI.hProcess);
+        }
+        else if(!strcmp(runtype.buildNative(), "run_with_console"))
+        {
+            CreateProcessA(NULL, ExecutePath, NULL, NULL, FALSE, CREATE_NEW_CONSOLE, NULL, NULL, &SI, &PI);
+            ProcessHandle = *((ptr_u*) &PI.hProcess);
+        }
+    #elif DD_OS_LINUX
+        char ExecutePath[1024] = {};
+        strcat(ExecutePath, exepath.buildNative());
+
+        if(chmod(ExecutePath, 0755) != -1)
+        {
+            // 프로세스 실행
+            if(!strcmp(runtype.buildNative(), "certify_only")) {} // 스킵
+            else if(!strcmp(runtype.buildNative(), "run"))
+            {
+                if(fork() == 0)
+                {
+                    chmod(ExecutePath, 0755);
+                    if(0 < args.length())
+                        execlp(ExecutePath, ExecutePath, args.buildNative(), NULL);
+                    else execlp(ExecutePath, ExecutePath, NULL);
+                }
+            }
+            else if(!strcmp(runtype.buildNative(), "run_with_console"))
+            {
+                chmod(ExecutePath, 0755);
+                char SystemCall[1024];
+                SystemCall[0] = '\0';
+                if(0 < runpath.length())
+                {
+                    strcat(SystemCall, "mkdir -p ");
+                    strcat(SystemCall, runpath.buildNative());
+                    strcat(SystemCall, " && cd ");
+                    strcat(SystemCall, runpath.buildNative());
+                    strcat(SystemCall, " && ");
+                }
+                strcat(SystemCall, "gnome-terminal -e '");
+                strcat(SystemCall, ExecutePath);
+                if(0 < args.length())
+                {
+                    strcat(SystemCall, " ");
+                    strcat(SystemCall, args.buildNative());
+                }
+                strcat(SystemCall, "\'");
+                system(SystemCall);
+            }
+        }
+    #else
+        #error [daddy] this platform is not ready!
+    #endif
+
+    return ProcessHandle;
+}
+
+void dUtility::killProcess(ptr_u handle)
+{
+    #if DD_OS_WINDOWS
+    #elif DD_OS_LINUX
+    #else
+        #error [daddy] this platform is not ready!
+    #endif
+}
+
+void dUtility::killProcessAll(dLiteral exename)
+{
+    #if DD_OS_WINDOWS
+        /* 나중에 정리할 것!
+        #include <windows.h>
+        #include <tlhelp32.h>
+        #include <iostream>
+        #include <string>
+        #include "psapi.h"
+
+        DWORD GetProcessByFileName(char* name){
+            DWORD process_id_array[1024];
+            DWORD bytes_returned;
+            DWORD num_processes;
+            HANDLE hProcess;
+            char image_name[256];
+            char buffer[256];
+            int i;
+            DWORD exitcode;
+            EnumProcesses(process_id_array, 256*sizeof(DWORD), &bytes_returned);
+            num_processes = (bytes_returned/sizeof(DWORD));
+            for (i = 0; i < num_processes; i++) {
+                hProcess=OpenProcess(PROCESS_ALL_ACCESS,TRUE,process_id_array[i]);
+                if(GetModuleBaseName(hProcess,0,image_name,256)){
+                    if(!stricmp(image_name,name)){
+                        CloseHandle(hProcess);
+                        return process_id_array[i];
+                    }
+                }
+                CloseHandle(hProcess);
+            }
+            return 0;
+        }
+        void __cdecl main(int argc, char *argv[])
+        {
+            DWORD dwPID;
+            dwPID = GetProcessByFileName("calc.exe");
+            printf("%lu", (unsigned long)dwPID);
+            return;
+        }*/
+    #elif DD_OS_LINUX
+        DIR* CurDir = opendir("/proc/");
+        dirent* CurDirEntry = nullptr;
+        while((CurDirEntry = readdir(CurDir)) != nullptr)
+        {
+            if(strspn(CurDirEntry->d_name, "0123456789") == strlen(CurDirEntry->d_name))
+            {
+                char ExeLink[252];
+                strcpy(ExeLink, "/proc/");
+                strcat(ExeLink, CurDirEntry->d_name);
+                strcat(ExeLink, "/exe");
+
+                char TargetName[252];
+                int TargetLength = readlink(ExeLink, TargetName, 252);
+                if(0 < TargetLength)
+                {
+                    TargetName[TargetLength] = '\0';
+                    if(strstr(TargetName, name.buildNative()))
+                    {
+                        const int ProcessID = atoi(CurDirEntry->d_name);
+                        kill(ProcessID, SIGINT);
+                        if(!all) break;
+                    }
+                }
+            }
+        }
+        closedir(CurDir);
+    #else
+        #error [daddy] this platform is not ready!
+    #endif
+}
+
 } // namespace Daddy

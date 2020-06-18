@@ -51,18 +51,10 @@ private:
         dLiteral mName;
     };
 
-public: // 로그클라이언트
-    /// @brief           클라이언트 실행
-    /// @param exepath   실행파일의 상대경로
-    /// @param option    실행방식("certify_only", "run", "run_with_console")
-    /// @param hostname  로그서버의 도메인주소 또는 IP주소
-    /// @param workpath  실행경로
-    static void runClient(dLiteral exepath, dLiteral option, dLiteral hostname = "", dLiteral workpath = "");
-
-    /// @brief           클라이언트 강제종료
-    /// @param name      프로세스명
-    /// @param all       전체대상여부(true-전체 프로세스, false-하나의 프로세스)
-    static void killClient(dLiteral name, bool all);
+public: // 로그키트관련
+    /// @brief           프로세스 연결하기
+    /// @param handle    프로세스 핸들
+    static void setProcess(ptr_u handle);
 
 public: // 로그쓰기
     /// @brief           스탬프(기점로그) 기록

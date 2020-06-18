@@ -35,7 +35,7 @@ ZAY_VIEW_API OnRender(ZayPanel& panel)
 
     ZAY_INNER(panel, 10)
     {
-        BOSS::String DumAppsRemPath = Platform::Utility::GetProgramPath(true) + "../dumapps-rem/";
+        const String DumAppsRemPath = Platform::File::RootForAssetsRem() + "../dumapps-rem/";
         const sint32 WidgetWidth = Math::Max(gIconSize + 300, panel.w());
         for(sint32 i = 0, iend = m->mDumApps.Count(); i < iend; ++i)
         {
@@ -68,7 +68,7 @@ ZAY_VIEW_API OnRender(ZayPanel& panel)
                     ZAY_RGB(panel, 0, 0, 0)
                     {
                         if(0 < m->mDumApps[i].mWorkCount)
-                            panel.text(m->mDumApps[i].mFileName + BOSS::String::Format(" (%d+)", m->mDumApps[i].mWorkCount),
+                            panel.text(m->mDumApps[i].mFileName + String::Format(" (%d+)", m->mDumApps[i].mWorkCount),
                                 UIFA_LeftTop, UIFE_Right);
                         else panel.text(m->mDumApps[i].mFileName, UIFA_LeftTop, UIFE_Right);
                     }
@@ -84,9 +84,9 @@ ZAY_VIEW_API OnRender(ZayPanel& panel)
                     static chars CycleName[2] = {"KILL ALL", "RUN ONCE"};
                     for(sint32 j = 0, jend = m->mDumApps[i].mCycle.length(); j < jend; ++j)
                     {
-                        const BOSS::String UIButton = BOSS::String::Format("%s-%d", CycleType[j], i);
+                        const String UIButton = String::Format("%s-%d", CycleType[j], i);
                         ZAY_XYWH_UI(panel, panel.w() - (110 - 5) * (j + 1), panel.h() - (35 - 5), 100, 25,
-                            (IsInstalled)? UIButton : BOSS::String(),
+                            (IsInstalled)? UIButton : String(),
                             ZAY_GESTURE_T(t, i, j)
                             {
                                 if(t == GT_InReleased)
@@ -122,7 +122,7 @@ ZAY_VIEW_API OnRender(ZayPanel& panel)
 
 launcherData::launcherData()
 {
-    BOSS::String DumAppsPath = Platform::File::RootForAssetsRem() + "../dumapps/";
+    String DumAppsPath = Platform::File::RootForAssetsRem() + "../dumapps/";
     Platform::File::Search(DumAppsPath + '*', [](chars itemname, payload data)->void
     {
         auto Self = (launcherData*) data;
@@ -137,7 +137,7 @@ launcherData::~launcherData()
 void launcherData::OnRenderButton(ZayPanel& panel, sint32 i, bool installed)
 {
     // 설치버튼
-    const BOSS::String UIButton = BOSS::String::Format("button-%d", i);
+    const String UIButton = String::Format("button-%d", i);
     ZAY_LTRB_UI(panel, 0, 0, gButtonWidth, gButtonHeight, UIButton,
         ZAY_GESTURE_T(t, this, i, installed)
         {
@@ -192,7 +192,7 @@ void launcherData::AddDumApp(chars path)
 {
     auto& NewDumApp = mDumApps.AtAdding();
     NewDumApp.mFilePath = path;
-    NewDumApp.mFileName = BOSS::String::FromWChars(Platform::File::GetShortName(WString::FromChars(NewDumApp.mFilePath)));
+    NewDumApp.mFileName = String::FromWChars(Platform::File::GetShortName(WString::FromChars(NewDumApp.mFilePath)));
     NewDumApp.mWorkCount = 0;
 
     buffer NewZipBuffer = PathToBuffer(path);
@@ -207,7 +207,7 @@ void launcherData::AddDumApp(chars path)
                 chars FilePath = AddOn::Zip::GetFileInfo(NewZip, i, &IsDir);
                 if(IsDir) continue;
 
-                if(!BOSS::String::CompareNoCase(FilePath, "install/icon.png"))
+                if(!String::CompareNoCase(FilePath, "install/icon.png"))
                 {
                     if(buffer NewPngBuffer = AddOn::Zip::ToFile(NewZip, i))
                     {
@@ -217,19 +217,19 @@ void launcherData::AddDumApp(chars path)
                         Buffer::Free(NewPngBuffer);
                     }
                 }
-                else if(!BOSS::String::CompareNoCase(FilePath, "install/readme.md"))
+                else if(!String::CompareNoCase(FilePath, "install/readme.md"))
                 {
                     if(buffer NewMdBuffer = AddOn::Zip::ToFile(NewZip, i))
                     {
-                        NewDumApp.mReadMe = BOSS::String(((chars) NewMdBuffer) + 3, Buffer::CountOf(NewMdBuffer) - 3);
+                        NewDumApp.mReadMe = String(((chars) NewMdBuffer) + 3, Buffer::CountOf(NewMdBuffer) - 3);
                         Buffer::Free(NewMdBuffer);
                     }
                 }
-                else if(!BOSS::String::CompareNoCase(FilePath, "install/cycle.yaml"))
+                else if(!String::CompareNoCase(FilePath, "install/cycle.yaml"))
                 {
                     if(buffer NewMdBuffer = AddOn::Zip::ToFile(NewZip, i))
                     {
-                        const BOSS::String NewYaml(((chars) NewMdBuffer) + 3, Buffer::CountOf(NewMdBuffer) - 3);
+                        const String NewYaml(((chars) NewMdBuffer) + 3, Buffer::CountOf(NewMdBuffer) - 3);
                         NewDumApp.mCycle.loadYaml(dString((chars) NewYaml));
                         Buffer::Free(NewMdBuffer);
                     }
@@ -243,7 +243,7 @@ void launcherData::AddDumApp(chars path)
 
 void launcherData::InstallDumApp(sint32 i)
 {
-    BOSS::String DumAppsRemPath = Platform::Utility::GetProgramPath(true) + "../dumapps-rem/";
+    const String DumAppsRemPath = Platform::File::RootForAssetsRem() + "../dumapps-rem/";
     auto& CurDumApp = mDumApps[i];
 
     buffer NewZipBuffer = PathToBuffer(CurDumApp.mFilePath);
@@ -256,7 +256,7 @@ void launcherData::InstallDumApp(sint32 i)
             {
                 bool IsDir = false;
                 chars FilePath = AddOn::Zip::GetFileInfo(NewZip, i, &IsDir);
-                if(IsDir || !BOSS::String::CompareNoCase(FilePath, "install/", 8))
+                if(IsDir || !String::CompareNoCase(FilePath, "install/", 8))
                     continue;
 
                 if(buffer NewFileBuffer = AddOn::Zip::ToFile(NewZip, i))
@@ -287,7 +287,7 @@ static void _RemoveSApp(chars dirpath)
 void launcherData::RemoveDumApp(sint32 i)
 {
     ExecDumApp(i, "kill");
-    BOSS::String DumAppsRemPath = Platform::Utility::GetProgramPath(true) + "../dumapps-rem/";
+    const String DumAppsRemPath = Platform::File::RootForAssetsRem() + "../dumapps-rem/";
     _RemoveSApp(DumAppsRemPath + mDumApps[i].mFileName);
 }
 
@@ -299,30 +299,30 @@ void launcherData::ExecDumApp(sint32 i, chars act)
         auto ExecName = DD_fish[j]("exec").get();
         if(0 < ExecName.length())
         {
-            if(!BOSS::String::Compare(act, "kill"))
-                dDetector::killClient(ExecName, true);
+            if(!String::Compare(act, "kill"))
+                dUtility::killProcessAll(ExecName);
             else
             {
-                BOSS::String ProgramPath = Platform::Utility::GetProgramPath(true);
-                #if DD_OS_LINUX
-                    ProgramPath = ProgramPath.Right(ProgramPath.Length() - 2); // "Q:"
+                #if DD_OS_WINDOWS
+                    #define BIN_PATH "/bin_windows/"
+                #elif DD_OS_LINUX
+                    #define BIN_PATH "/bin_ubuntu/"
                 #endif
 
-                dString BinPath((chars) ("../dumapps-rem/" + mDumApps[i].mFileName + "/bin_ubuntu/"));
-                dString WorkPath((chars) ("../dumapps-rem/" + mDumApps[i].mFileName + BOSS::String::Format("/work_%d/", mDumApps[i].mWorkCount)));
-                auto Option = DD_fish[j]("option").get();
+                const String DumAppsRemPath = Platform::File::RootForAssetsRem() + "../dumapps-rem/";
+                dString BinPath((chars) (mDumApps[i].mFileName + BIN_PATH));
+                dString WorkPath((chars) (mDumApps[i].mFileName + String::Format("/work_%d/", mDumApps[i].mWorkCount)));
+                auto RunType = DD_fish[j]("option").get();
                 auto ArgsName = DD_fish[j]("args").get();
                 if(0 < ArgsName.length())
-                {
-                    auto DllPath = ((chars) ProgramPath) + BinPath + ArgsName;
-                    dDetector::runClient(BinPath + ExecName, Option, DllPath, ((chars) ProgramPath) + WorkPath);
-                }
-                else dDetector::runClient(BinPath + ExecName, Option, "", ((chars) ProgramPath) + WorkPath);
+                    dUtility::runProcess(DumAppsRemPath + BinPath + ExecName,
+                        DumAppsRemPath + BinPath + ArgsName, RunType, DumAppsRemPath + WorkPath);
+                else dUtility::runProcess(DumAppsRemPath + BinPath + ExecName, "", RunType, DumAppsRemPath + WorkPath);
             }
         }
     }
 
-    if(!BOSS::String::Compare(act, "kill"))
+    if(!String::Compare(act, "kill"))
         mDumApps.At(i).mWorkCount = 0;
     else mDumApps.At(i).mWorkCount++;
 }

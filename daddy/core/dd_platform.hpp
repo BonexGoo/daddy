@@ -81,4 +81,25 @@ private:
     DD_passage_declare_alone(dSocket, ptr_u agent); // move only
 };
 
+/// @brief 유틸리티
+class dUtility
+{
+public:
+    /// @brief            프로세스 실행
+    /// @param exepath    응용프로그램의 절대경로
+    /// @param args       응용프로그램에 전달되는 인수들
+    /// @param runtype    실행방식("certify_only", "run", "run_with_console")
+    /// @param runpath    실행경로
+    /// @return           프로세스핸들
+    static ptr_u runProcess(dLiteral exepath, dLiteral args = "", dLiteral runtype = "run", dLiteral runpath = "");
+
+    /// @brief            해당 프로세스 강제종료
+    /// @param handle     프로세스핸들
+    static void killProcess(ptr_u handle);
+
+    /// @brief            전체 프로세스 강제종료
+    /// @param name       프로세스명칭
+    static void killProcessAll(dLiteral exename);
+};
+
 } // namespace Daddy
