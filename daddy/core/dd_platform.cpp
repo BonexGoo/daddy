@@ -17,6 +17,8 @@
     #else
         #include <windows.h>
         #pragma comment(lib, "ws2_32.lib")
+        #include <psapi.h>
+        #pragma comment(lib, "psapi.lib")
     #endif
     #define SOCKET_DATA                       SOCKET
     #define SOCKET_NEW                        socket(AF_INET, SOCK_STREAM, IPPROTO_TCP)
@@ -691,7 +693,11 @@ ptr_u dUtility::runProcess(dLiteral exepath, dLiteral args, dLiteral runtype, dL
 void dUtility::killProcess(ptr_u handle)
 {
     #if DD_OS_WINDOWS
+        HANDLE OldHandle = *((HANDLE*) &handle);
+        TerminateProcess(OldHandle, 0);
+        CloseHandle(OldHandle);
     #elif DD_OS_LINUX
+        #error [daddy] this platform is not ready!
     #else
         #error [daddy] this platform is not ready!
     #endif
@@ -700,43 +706,22 @@ void dUtility::killProcess(ptr_u handle)
 void dUtility::killProcessAll(dLiteral exename)
 {
     #if DD_OS_WINDOWS
-        /* 나중에 정리할 것!
-        #include <windows.h>
-        #include <tlhelp32.h>
-        #include <iostream>
-        #include <string>
-        #include "psapi.h"
+        DWORD* ProcessIDs = new DWORD[100000];
+        DWORD ProcessBytes = 0;
+        EnumProcesses(ProcessIDs, sizeof(DWORD) * 100000, &ProcessBytes);
+        const int ProcessCount = ProcessBytes / sizeof(DWORD);
 
-        DWORD GetProcessByFileName(char* name){
-            DWORD process_id_array[1024];
-            DWORD bytes_returned;
-            DWORD num_processes;
-            HANDLE hProcess;
-            char image_name[256];
-            char buffer[256];
-            int i;
-            DWORD exitcode;
-            EnumProcesses(process_id_array, 256*sizeof(DWORD), &bytes_returned);
-            num_processes = (bytes_returned/sizeof(DWORD));
-            for (i = 0; i < num_processes; i++) {
-                hProcess=OpenProcess(PROCESS_ALL_ACCESS,TRUE,process_id_array[i]);
-                if(GetModuleBaseName(hProcess,0,image_name,256)){
-                    if(!stricmp(image_name,name)){
-                        CloseHandle(hProcess);
-                        return process_id_array[i];
-                    }
-                }
-                CloseHandle(hProcess);
-            }
-            return 0;
-        }
-        void __cdecl main(int argc, char *argv[])
+        utf8 TempName[256];
+        utf8s CompName = exename.buildNative();
+        for(int i = 0; i < ProcessCount; ++i)
         {
-            DWORD dwPID;
-            dwPID = GetProcessByFileName("calc.exe");
-            printf("%lu", (unsigned long)dwPID);
-            return;
-        }*/
+            HANDLE CurProcess = OpenProcess(PROCESS_ALL_ACCESS, TRUE, ProcessIDs[i]);
+            if(GetModuleBaseName(CurProcess, 0, TempName, 256))
+                if(!strcmp(TempName, CompName))
+                    TerminateProcess(CurProcess, 0);
+            CloseHandle(CurProcess);
+        }
+        delete[] ProcessIDs;
     #elif DD_OS_LINUX
         DIR* CurDir = opendir("/proc/");
         dirent* CurDirEntry = nullptr;

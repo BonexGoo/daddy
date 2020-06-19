@@ -23,7 +23,7 @@
   <td id="projectlogo"><img alt="Logo" src="daddy.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">daddy
-   &#160;<span id="projectnumber">1.0.0</span>
+   &#160;<span id="projectnumber">1.1.4</span>
    </div>
   </td>
  </tr>
@@ -117,12 +117,9 @@ typedef std::function&lt; void(FuncID id, ptr payload, uint32_t size)&gt;&#160;<
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ac7b6a7dc2f4f185c3ccc36b6057217d7"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_daddy_1_1d_detector.html#ac7b6a7dc2f4f185c3ccc36b6057217d7">runClient</a> (<a class="el" href="class_daddy_1_1d_literal.html">dLiteral</a> exepath, <a class="el" href="class_daddy_1_1d_literal.html">dLiteral</a> option, <a class="el" href="class_daddy_1_1d_literal.html">dLiteral</a> hostname=&quot;&quot;, <a class="el" href="class_daddy_1_1d_literal.html">dLiteral</a> workpath=&quot;&quot;)</td></tr>
-<tr class="memdesc:ac7b6a7dc2f4f185c3ccc36b6057217d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">클라이언트 실행  <a href="class_daddy_1_1d_detector.html#ac7b6a7dc2f4f185c3ccc36b6057217d7">More...</a><br /></td></tr>
-<tr class="separator:ac7b6a7dc2f4f185c3ccc36b6057217d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19c375e11745cd8bfa5275d0babc5722"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_daddy_1_1d_detector.html#a19c375e11745cd8bfa5275d0babc5722">killClient</a> (<a class="el" href="class_daddy_1_1d_literal.html">dLiteral</a> name, bool all)</td></tr>
-<tr class="memdesc:a19c375e11745cd8bfa5275d0babc5722"><td class="mdescLeft">&#160;</td><td class="mdescRight">클라이언트 강제종료  <a href="class_daddy_1_1d_detector.html#a19c375e11745cd8bfa5275d0babc5722">More...</a><br /></td></tr>
-<tr class="separator:a19c375e11745cd8bfa5275d0babc5722"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add2a8dacfaf14b34bd0dd1f2cadaf380"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_daddy_1_1d_detector.html#add2a8dacfaf14b34bd0dd1f2cadaf380">runKit</a> (<a class="el" href="class_daddy_1_1d_literal.html">dLiteral</a> address)</td></tr>
+<tr class="memdesc:add2a8dacfaf14b34bd0dd1f2cadaf380"><td class="mdescLeft">&#160;</td><td class="mdescRight">키트 실행하기  <a href="class_daddy_1_1d_detector.html#add2a8dacfaf14b34bd0dd1f2cadaf380">More...</a><br /></td></tr>
+<tr class="separator:add2a8dacfaf14b34bd0dd1f2cadaf380"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91f2af3e330e65ca4769537b8ccce0f8"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_daddy_1_1d_detector.html#a91f2af3e330e65ca4769537b8ccce0f8">stamp</a> (<a class="el" href="class_daddy_1_1d_literal.html">dLiteral</a> name)</td></tr>
 <tr class="memdesc:a91f2af3e330e65ca4769537b8ccce0f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">스탬프(기점로그) 기록  <a href="class_daddy_1_1d_detector.html#a91f2af3e330e65ca4769537b8ccce0f8">More...</a><br /></td></tr>
 <tr class="separator:a91f2af3e330e65ca4769537b8ccce0f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -276,60 +273,6 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>스택처리를 위한 객체 </dd></dl>
-
-</div>
-</div>
-<a id="a19c375e11745cd8bfa5275d0babc5722"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a19c375e11745cd8bfa5275d0babc5722">&#9670;&nbsp;</a></span>killClient()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Daddy::dDetector::killClient </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_daddy_1_1d_literal.html">dLiteral</a>&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>all</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>클라이언트 강제종료 </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">name</td><td>프로세스명 </td></tr>
-    <tr><td class="paramname">all</td><td>전체대상여부(true-전체 프로세스, false-하나의 프로세스) </td></tr>
-  </table>
-  </dd>
-</dl>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_daddy_1_1d_detector_a19c375e11745cd8bfa5275d0babc5722_cgraph.png" border="0" usemap="#class_daddy_1_1d_detector_a19c375e11745cd8bfa5275d0babc5722_cgraph" alt=""/></div>
-<map name="class_daddy_1_1d_detector_a19c375e11745cd8bfa5275d0babc5722_cgraph" id="class_daddy_1_1d_detector_a19c375e11745cd8bfa5275d0babc5722_cgraph">
-<area shape="rect" title="클라이언트 강제종료" alt="" coords="5,5,185,32"/>
-<area shape="rect" href="class_daddy_1_1d_literal.html#a6ad682d66a37a311977681890ad377e9" title="네이티브스트링 반환(null문자있음)" alt="" coords="233,5,412,32"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -550,8 +493,8 @@ LogBloken-비정상적 로그파일 </dd></dl>
 
 </div>
 </div>
-<a id="ac7b6a7dc2f4f185c3ccc36b6057217d7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac7b6a7dc2f4f185c3ccc36b6057217d7">&#9670;&nbsp;</a></span>runClient()</h2>
+<a id="add2a8dacfaf14b34bd0dd1f2cadaf380"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add2a8dacfaf14b34bd0dd1f2cadaf380">&#9670;&nbsp;</a></span>runKit()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -560,33 +503,11 @@ LogBloken-비정상적 로그파일 </dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Daddy::dDetector::runClient </td>
+          <td class="memname">void Daddy::dDetector::runKit </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_daddy_1_1d_literal.html">dLiteral</a>&#160;</td>
-          <td class="paramname"><em>exepath</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>address</em></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_daddy_1_1d_literal.html">dLiteral</a>&#160;</td>
-          <td class="paramname"><em>option</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="class_daddy_1_1d_literal.html">dLiteral</a>&#160;</td>
-          <td class="paramname"><em>hostname</em> = <code>&quot;&quot;</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="class_daddy_1_1d_literal.html">dLiteral</a>&#160;</td>
-          <td class="paramname"><em>workpath</em> = <code>&quot;&quot;</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -596,24 +517,23 @@ LogBloken-비정상적 로그파일 </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p>클라이언트 실행 </p>
+<p>키트 실행하기 </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">exepath</td><td>실행파일의 상대경로 </td></tr>
-    <tr><td class="paramname">option</td><td>실행방식("certify_only", "run", "run_with_console") </td></tr>
-    <tr><td class="paramname">hostname</td><td>로그서버의 도메인주소 또는 IP주소 </td></tr>
-    <tr><td class="paramname">workpath</td><td>실행경로 </td></tr>
+    <tr><td class="paramname">address</td><td>로거의 IP주소 </td></tr>
   </table>
   </dd>
 </dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_daddy_1_1d_detector_ac7b6a7dc2f4f185c3ccc36b6057217d7_cgraph.png" border="0" usemap="#class_daddy_1_1d_detector_ac7b6a7dc2f4f185c3ccc36b6057217d7_cgraph" alt=""/></div>
-<map name="class_daddy_1_1d_detector_ac7b6a7dc2f4f185c3ccc36b6057217d7_cgraph" id="class_daddy_1_1d_detector_ac7b6a7dc2f4f185c3ccc36b6057217d7_cgraph">
-<area shape="rect" title="클라이언트 실행" alt="" coords="5,31,188,57"/>
-<area shape="rect" href="class_daddy_1_1d_literal.html#a6ad682d66a37a311977681890ad377e9" title="네이티브스트링 반환(null문자있음)" alt="" coords="236,5,415,32"/>
-<area shape="rect" href="class_daddy_1_1d_literal.html#a16092f724471d9dd827bc645ab759e70" title="스트링 길이반환" alt="" coords="249,56,401,83"/>
+<div class="center"><img src="class_daddy_1_1d_detector_add2a8dacfaf14b34bd0dd1f2cadaf380_cgraph.png" border="0" usemap="#class_daddy_1_1d_detector_add2a8dacfaf14b34bd0dd1f2cadaf380_cgraph" alt=""/></div>
+<map name="class_daddy_1_1d_detector_add2a8dacfaf14b34bd0dd1f2cadaf380_cgraph" id="class_daddy_1_1d_detector_add2a8dacfaf14b34bd0dd1f2cadaf380_cgraph">
+<area shape="rect" title="키트 실행하기" alt="" coords="5,31,171,57"/>
+<area shape="rect" href="class_daddy_1_1d_unique.html#aa640f396f9fecab9f864bd4e01ceb9bf" title="응용프로그램의 경로" alt="" coords="219,5,415,32"/>
+<area shape="rect" href="class_daddy_1_1d_utility.html#ad37fab646999fa88305d861d327293f1" title="프로세스 실행" alt="" coords="226,56,407,83"/>
+<area shape="rect" href="class_daddy_1_1d_literal.html#a6ad682d66a37a311977681890ad377e9" title="네이티브스트링 반환(null문자있음)" alt="" coords="463,31,641,57"/>
+<area shape="rect" href="class_daddy_1_1d_literal.html#a16092f724471d9dd827bc645ab759e70" title="스트링 길이반환" alt="" coords="476,81,628,108"/>
 </map>
 </div>
 

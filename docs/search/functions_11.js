@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['valid_306',['valid',['../class_daddy_1_1d_detector.html#a3f49dbc8741a3bc59c8ae2f83b301bc2',1,'Daddy::dDetector']]],
-  ['value_307',['value',['../class_daddy_1_1d_zoker.html#ae07c90282ff6973cd4fc85fd9fe646e1',1,'Daddy::dZoker']]]
+  ['valid_316',['valid',['../class_daddy_1_1d_detector.html#a3f49dbc8741a3bc59c8ae2f83b301bc2',1,'Daddy::dDetector']]],
+  ['value_317',['value',['../class_daddy_1_1d_zoker.html#ae07c90282ff6973cd4fc85fd9fe646e1',1,'Daddy::dZoker']]]
 ];
