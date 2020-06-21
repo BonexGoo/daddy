@@ -625,6 +625,13 @@ ptr_u dUtility::runProcess(dLiteral exepath, dLiteral args, dLiteral runtype, dL
         strcat_s(ExecutePath, " ");
         strcat_s(ExecutePath, args.buildNative());
 
+        utf8s CurrentDirectory = NULL;
+        if(0 < runpath.length())
+        {
+            CurrentDirectory = runpath.buildNative();
+            CreateDirectoryA(CurrentDirectory, NULL);
+        }
+
         // 프로세스 실행
         STARTUPINFOA SI;
         ZeroMemory(&SI, sizeof(SI));
@@ -633,12 +640,14 @@ ptr_u dUtility::runProcess(dLiteral exepath, dLiteral args, dLiteral runtype, dL
         ZeroMemory(&PI, sizeof(PI));
         if(!strcmp(runtype.buildNative(), "run"))
         {
-            CreateProcessA(NULL, ExecutePath, NULL, NULL, FALSE, CREATE_NO_WINDOW, NULL, NULL, &SI, &PI);
+            CreateProcessA(NULL, ExecutePath, NULL, NULL, FALSE, CREATE_NO_WINDOW, NULL,
+                CurrentDirectory, &SI, &PI);
             ProcessHandle = *((ptr_u*) &PI.hProcess);
         }
         else if(!strcmp(runtype.buildNative(), "run_with_console"))
         {
-            CreateProcessA(NULL, ExecutePath, NULL, NULL, FALSE, CREATE_NEW_CONSOLE, NULL, NULL, &SI, &PI);
+            CreateProcessA(NULL, ExecutePath, NULL, NULL, FALSE, CREATE_NEW_CONSOLE, NULL,
+                CurrentDirectory, &SI, &PI);
             ProcessHandle = *((ptr_u*) &PI.hProcess);
         }
     #elif DD_OS_LINUX

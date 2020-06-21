@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT Type="Advanced Installer" CreateVersion="17.1.2" version="17.1.2" Modules="professional" RootPath="." Language="ko" Id="{2C8CE8A0-2FA8-4887-A3D7-9E7D9F4B91C7}">
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="AI_BITMAP_DISPLAY_MODE" Value="0"/>
+    <ROW Property="AI_COLOR_DISABLED_TEXT" Value="3026478" MultiBuildValue="DefaultBuild:15461355" MsiKey="AI_COLOR_DISABLED_TEXT"/>
+    <ROW Property="AI_CONTROL_VISUAL_STYLE" Value="2960685;4276545;6776679;16176031" MultiBuildValue="DefaultBuild:16777215;15859690;7579735;3957806" MsiKey="AI_CONTROL_VISUAL_STYLE"/>
+    <ROW Property="AI_CONTROL_VISUAL_STYLE_EX" Value="1513239;3026478;3026478" MultiBuildValue="DefaultBuild:16514043;15461355;15461355" MsiKey="AI_CONTROL_VISUAL_STYLE_EX"/>
+    <ROW Property="AI_CONTROL_VISUAL_STYLE_FLAT" MultiBuildValue="DefaultBuild:15859690;15859690;7579735;3957806" MsiKey="AI_CONTROL_VISUAL_STYLE_FLAT"/>
+    <ROW Property="AI_EXTERNALUIUNINSTALLERNAME" MultiBuildValue="DefaultBuild:aiui"/>
+    <ROW Property="AI_FINDEXE_TITLE" Value="[|ProductName]에 해당하는 설치 패키지를 선택하십시오." ValueLocId="AI.Property.FindExeTitle"/>
+    <ROW Property="AI_FrameBtnsColor" Value="metroblack" MultiBuildValue="DefaultBuild:metrogreen" MsiKey="AI_FrameBtnsColor"/>
+    <ROW Property="AI_FrameColor" Value="metroblack" MultiBuildValue="DefaultBuild:metrogreen" MsiKey="AI_FrameColor"/>
+    <ROW Property="AI_PRODUCTNAME_ARP" Value="launcher"/>
+    <ROW Property="AI_ThemeStyle" Value="default" MultiBuildValue="DefaultBuild:metrogreen" MsiKey="AI_ThemeStyle"/>
+    <ROW Property="AI_UNINSTALLER" Value="msiexec.exe"/>
+    <ROW Property="ALLUSERS" Value="1"/>
+    <ROW Property="ARPCOMMENTS" Value="이 설치 관리자 데이터베이스에는 [|ProductName] 설치에 필요한 논리와 데이터가 들어있습니다." ValueLocId="*"/>
+    <ROW Property="ARPNOREPAIR" Value="1" MultiBuildValue="DefaultBuild:1"/>
+    <ROW Property="ARPPRODUCTICON" Value="main_1.exe" Type="8"/>
+    <ROW Property="ARPSYSTEMCOMPONENT" Value="1"/>
+    <ROW Property="AppLogoIcon" Value="applogoicon" MultiBuildValue="DefaultBuild:daddy.jpg_1" Type="1" MsiKey="AppLogoIcon"/>
+    <ROW Property="CTRLS" Value="2"/>
+    <ROW Property="Manufacturer" Value="daddy"/>
+    <ROW Property="ProductCode" Value="1042:{56E99320-17D6-425E-A603-E57D5F361268} " Type="16"/>
+    <ROW Property="ProductLanguage" Value="1042"/>
+    <ROW Property="ProductName" Value="launcher"/>
+    <ROW Property="ProductVersion" Value="1.0.0" Type="32"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND;AI_SETUPEXEPATH;SETUPEXEDIR"/>
+    <ROW Property="UpgradeCode" Value="{E6914295-CFF6-48F6-A8AB-CA1C657FD0DB}"/>
+    <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsType9XDisplay" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40Display" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50Display" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5X" MultiBuildValue="DefaultBuild:Windows XP/2003" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5XDisplay" MultiBuildValue="DefaultBuild:Windows XP/2003" ValueLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1"/>
+    <ROW Directory="ProgramMenuFolder" Directory_Parent="TARGETDIR" DefaultDir="PROGRA~1|ProgramMenuFolder" IsPseudoRoot="1"/>
+    <ROW Directory="StartupFolder" Directory_Parent="TARGETDIR" DefaultDir="STARTU~1|StartupFolder" IsPseudoRoot="1"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+    <ROW Directory="assets_Dir" Directory_Parent="APPDIR" DefaultDir="assets"/>
+    <ROW Directory="bearer_Dir" Directory_Parent="bin_Release64_Dir" DefaultDir="bearer"/>
+    <ROW Directory="bin_Release64_Dir" Directory_Parent="APPDIR" DefaultDir="BIN_RE~1|bin_Release64"/>
+    <ROW Directory="daddy_Dir" Directory_Parent="ProgramMenuFolder" DefaultDir="daddy"/>
+    <ROW Directory="dumapps_Dir" Directory_Parent="APPDIR" DefaultDir="dumapps"/>
+    <ROW Directory="iconengines_Dir" Directory_Parent="bin_Release64_Dir" DefaultDir="ICONEN~1|iconengines"/>
+    <ROW Directory="image_Dir" Directory_Parent="assets_Dir" DefaultDir="image"/>
+    <ROW Directory="imageformats_Dir" Directory_Parent="bin_Release64_Dir" DefaultDir="IMAGEF~1|imageformats"/>
+    <ROW Directory="platforms_Dir" Directory_Parent="bin_Release64_Dir" DefaultDir="PLATFO~1|platforms"/>
+    <ROW Directory="position_Dir" Directory_Parent="bin_Release64_Dir" DefaultDir="position"/>
+    <ROW Directory="printsupport_Dir" Directory_Parent="bin_Release64_Dir" DefaultDir="PRINTS~1|printsupport"/>
+    <ROW Directory="qtwebengine_locales_Dir" Directory_Parent="translations_Dir" DefaultDir="QTWEBE~1|qtwebengine_locales"/>
+    <ROW Directory="resources_Dir" Directory_Parent="bin_Release64_Dir" DefaultDir="RESOUR~1|resources"/>
+    <ROW Directory="styles_Dir" Directory_Parent="bin_Release64_Dir" DefaultDir="styles"/>
+    <ROW Directory="translations_Dir" Directory_Parent="bin_Release64_Dir" DefaultDir="TRANSL~1|translations"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="AI_CustomARPName" ComponentId="{225FEE00-9E02-4201-BED1-2651460D8AF9}" Directory_="APPDIR" Attributes="4" KeyPath="DisplayName" Options="1"/>
+    <ROW Component="AI_ExePath" ComponentId="{12482F26-DB5D-4E68-AFE9-9845EFE3E310}" Directory_="APPDIR" Attributes="4" KeyPath="AI_ExePath"/>
+    <ROW Component="APPDIR" ComponentId="{F1F64EC3-727A-46F7-8086-82BEDCEDB4B3}" Directory_="APPDIR" Attributes="0"/>
+    <ROW Component="D3Dcompiler_47.dll" ComponentId="{7B45F920-D432-4B38-975B-C301CD6865D7}" Directory_="bin_Release64_Dir" Attributes="256" KeyPath="D3Dcompiler_47.dll"/>
+    <ROW Component="ProductInformation" ComponentId="{89917401-29A7-4D9B-81D4-D907771D3972}" Directory_="APPDIR" Attributes="4" KeyPath="Version"/>
+    <ROW Component="Qt5Core.dll" ComponentId="{5C8CA6DF-09A4-43EA-AF58-ABDC636D667B}" Directory_="bin_Release64_Dir" Attributes="256" KeyPath="Qt5Core.dll"/>
+    <ROW Component="Qt5Gui.dll" ComponentId="{5BC91624-DE3B-4FBF-BFBE-2DD3E3591FA3}" Directory_="bin_Release64_Dir" Attributes="256" KeyPath="Qt5Gui.dll"/>
+    <ROW Component="Qt5Network.dll" ComponentId="{31973A96-5BAE-40A5-B3F4-730BAB284A64}" Directory_="bin_Release64_Dir" Attributes="256" KeyPath="Qt5Network.dll"/>
+    <ROW Component="Qt5OpenGL.dll" ComponentId="{79D3DB16-7837-4541-8A72-C7C78C4460FF}" Directory_="bin_Release64_Dir" Attributes="256" KeyPath="Qt5OpenGL.dll"/>
+    <ROW Component="Qt5Positioning.dll" ComponentId="{4F6302ED-AE99-4709-BF9F-DC1DD3338C76}" Directory_="bin_Release64_Dir" Attributes="256" KeyPath="Qt5Positioning.dll"/>
+    <ROW Component="Qt5PrintSupport.dll" ComponentId="{5D845114-2AFD-4EA4-A52D-7B8EBBC18EC0}" Directory_="bin_Release64_Dir" Attributes="256" KeyPath="Qt5PrintSupport.dll"/>
+    <ROW Component="Qt5Qml.dll" ComponentId="{573840A2-735D-4CFD-96F3-11F9A97C1659}" Directory_="bin_Release64_Dir" Attributes="256" KeyPath="Qt5Qml.dll"/>
+    <ROW Component="Qt5QmlModels.dll" ComponentId="{48E7B799-67A0-4B14-8970-55902F1F7A5C}" Directory_="bin_Release64_Dir" Attributes="256" KeyPath="Qt5QmlModels.dll"/>
+    <ROW Component="Qt5Quick.dll" ComponentId="{A53B24D7-A340-4AF3-82EF-D04A8B2C13E8}" Directory_="bin_Release64_Dir" Attributes="256" KeyPath="Qt5Quick.dll"/>
+    <ROW Component="Qt5QuickWidgets.dll" ComponentId="{4865B8EB-5CDB-4286-A4FD-41C259F87D95}" Directory_="bin_Release64_Dir" Attributes="256" KeyPath="Qt5QuickWidgets.dll"/>
+    <ROW Component="Qt5SerialPort.dll" ComponentId="{F34DE407-4984-4008-BCCC-D47036B04E25}" Directory_="bin_Release64_Dir" Attributes="256" KeyPath="Qt5SerialPort.dll"/>
+    <ROW Component="Qt5Svg.dll" ComponentId="{DA51A756-BBD7-4ED4-9328-0E0C230EBFA9}" Directory_="bin_Release64_Dir" Attributes="256" KeyPath="Qt5Svg.dll"/>
+    <ROW Component="Qt5WebChannel.dll" ComponentId="{CFC12545-4FDB-4E30-AC10-200D9F9AB09D}" Directory_="bin_Release64_Dir" Attributes="256" KeyPath="Qt5WebChannel.dll"/>
+    <ROW Component="Qt5WebEngineCore.dll" ComponentId="{216FED82-5324-458D-B66F-8511A3E9D474}" Directory_="bin_Release64_Dir" Attributes="256" KeyPath="Qt5WebEngineCore.dll"/>
+    <ROW Component="Qt5WebEngineWidgets.dll" ComponentId="{0D6D72A2-F296-44CB-9526-3FA5D50307F6}" Directory_="bin_Release64_Dir" Attributes="256" KeyPath="Qt5WebEngineWidgets.dll"/>
+    <ROW Component="Qt5Widgets.dll" ComponentId="{D03688C0-F6D2-4DF2-BADA-BABBBEEF3711}" Directory_="bin_Release64_Dir" Attributes="256" KeyPath="Qt5Widgets.dll"/>
+    <ROW Component="QtWebEngineProcess.exe" ComponentId="{9524D92F-C1CE-49FC-877D-60BD1612D6C2}" Directory_="bin_Release64_Dir" Attributes="256" KeyPath="QtWebEngineProcess.exe"/>
+    <ROW Component="am.pak" ComponentId="{034092CB-4DEC-4FB5-BD6F-3C6E6DD24AB0}" Directory_="qtwebengine_locales_Dir" Attributes="0" KeyPath="am.pak" Type="0"/>
+    <ROW Component="atlas.png" ComponentId="{2AF5E20B-A80D-46C0-94A5-9E9E7EC4BD5A}" Directory_="image_Dir" Attributes="0" KeyPath="atlas.png" Type="0"/>
+    <ROW Component="concrt140.dll" ComponentId="{77791B6E-6079-4B15-9F41-F297C8D7707F}" Directory_="bin_Release64_Dir" Attributes="256" KeyPath="concrt140.dll"/>
+    <ROW Component="daddy" ComponentId="{ADC409D9-D6A1-42BA-8EC8-4C404F954C53}" Directory_="daddy_Dir" Attributes="0"/>
+    <ROW Component="icudtl.dat" ComponentId="{341BE508-E617-4A78-A284-52268F317F32}" Directory_="resources_Dir" Attributes="0" KeyPath="icudtl.dat" Type="0"/>
+    <ROW Component="launcher.exe" ComponentId="{331DCEA0-3274-4857-9A5D-518B8DEF5442}" Directory_="bin_Release64_Dir" Attributes="256" KeyPath="launcher.exe"/>
+    <ROW Component="libEGL.dll" ComponentId="{925E857D-528E-4903-A5FD-2DCE80F51602}" Directory_="bin_Release64_Dir" Attributes="256" KeyPath="libEGL.dll"/>
+    <ROW Component="libGLESv2.dll" ComponentId="{671C1EFF-3CFB-4B4B-A367-72D4E11EEA5D}" Directory_="bin_Release64_Dir" Attributes="256" KeyPath="libGLESv2.dll"/>
+    <ROW Component="logger.dum" ComponentId="{3359AB71-25E5-45DF-B276-EC8686254792}" Directory_="dumapps_Dir" Attributes="0" KeyPath="logger.dum" Type="0"/>
+    <ROW Component="msvcp140.dll" ComponentId="{9C2AC7AA-EE56-44F4-8C16-BDEFC2A4A8F3}" Directory_="bin_Release64_Dir" Attributes="256" KeyPath="msvcp140.dll"/>
+    <ROW Component="msvcp140_1.dll" ComponentId="{530D57CE-56F9-46EF-9259-441B7E335D91}" Directory_="bin_Release64_Dir" Attributes="256" KeyPath="msvcp140_1.dll"/>
+    <ROW Component="msvcp140_2.dll" ComponentId="{7E627209-C8FC-47C1-B673-63566250CD5D}" Directory_="bin_Release64_Dir" Attributes="256" KeyPath="msvcp140_2.dll"/>
+    <ROW Component="msvcp140_codecvt_ids.dll" ComponentId="{2CA7E40D-B2D1-4E31-9A3F-81B5D9CA874D}" Directory_="bin_Release64_Dir" Attributes="256" KeyPath="msvcp140_codecvt_ids.dll"/>
+    <ROW Component="opengl32sw.dll" ComponentId="{9C6D547F-CCF9-415B-895A-191812D3B78C}" Directory_="bin_Release64_Dir" Attributes="256" KeyPath="opengl32sw.dll"/>
+    <ROW Component="qgenericbearer.dll" ComponentId="{FEE22723-81A0-4A92-A949-EB7632D9BCA3}" Directory_="bearer_Dir" Attributes="256" KeyPath="qgenericbearer.dll"/>
+    <ROW Component="qgif.dll" ComponentId="{3152B3AD-23E8-4A0F-AFF3-E0E4B4439EB6}" Directory_="imageformats_Dir" Attributes="256" KeyPath="qgif.dll"/>
+    <ROW Component="qicns.dll" ComponentId="{0D625ABF-AC6C-4BA0-A3A5-1355E143AA64}" Directory_="imageformats_Dir" Attributes="256" KeyPath="qicns.dll"/>
+    <ROW Component="qico.dll" ComponentId="{C933F21C-E94E-4259-BAD5-0C6ECE1B4A50}" Directory_="imageformats_Dir" Attributes="256" KeyPath="qico.dll"/>
+    <ROW Component="qjpeg.dll" ComponentId="{2F32A6D3-8896-4200-ADA2-8B0A30B86A11}" Directory_="imageformats_Dir" Attributes="256" KeyPath="qjpeg.dll"/>
+    <ROW Component="qsvg.dll" ComponentId="{66616A36-8BC7-4C1D-8511-51B07148F519}" Directory_="imageformats_Dir" Attributes="256" KeyPath="qsvg.dll"/>
+    <ROW Component="qsvgicon.dll" ComponentId="{9A9A05D3-C5E0-42A0-951A-44BC3C175D5B}" Directory_="iconengines_Dir" Attributes="256" KeyPath="qsvgicon.dll"/>
+    <ROW Component="qt_ar.qm" ComponentId="{4918AD61-3E69-4D8B-A002-3C4B29642B18}" Directory_="translations_Dir" Attributes="0" KeyPath="qt_ar.qm" Type="0"/>
+    <ROW Component="qtga.dll" ComponentId="{C3379F14-4889-4EC2-9E75-28ABDE0F27C4}" Directory_="imageformats_Dir" Attributes="256" KeyPath="qtga.dll"/>
+    <ROW Component="qtiff.dll" ComponentId="{DA43F025-AED0-4723-BC95-5A7FF0BCC10F}" Directory_="imageformats_Dir" Attributes="256" KeyPath="qtiff.dll"/>
+    <ROW Component="qtposition_positionpoll.dll" ComponentId="{17848A84-FF3D-4D8F-9556-49B4E5ECB65D}" Directory_="position_Dir" Attributes="256" KeyPath="qtposition_positionpoll.dll"/>
+    <ROW Component="qtposition_serialnmea.dll" ComponentId="{E7FF4BEA-CF9D-4F68-B415-D117E4ABDDE3}" Directory_="position_Dir" Attributes="256" KeyPath="qtposition_serialnmea.dll"/>
+    <ROW Component="qtposition_winrt.dll" ComponentId="{53685ED9-6CB5-4CAA-B1C9-9935FCD4A6C7}" Directory_="position_Dir" Attributes="256" KeyPath="qtposition_winrt.dll"/>
+    <ROW Component="qwbmp.dll" ComponentId="{977058C4-E6B6-419A-B93B-17A23EC45F06}" Directory_="imageformats_Dir" Attributes="256" KeyPath="qwbmp.dll"/>
+    <ROW Component="qwebp.dll" ComponentId="{A39055D9-C326-4E6B-89AF-093551E1BB72}" Directory_="imageformats_Dir" Attributes="256" KeyPath="qwebp.dll"/>
+    <ROW Component="qwindows.dll" ComponentId="{E4518C35-B43B-43DC-BB72-E27C591B5C44}" Directory_="platforms_Dir" Attributes="256" KeyPath="qwindows.dll"/>
+    <ROW Component="qwindowsvistastyle.dll" ComponentId="{CBE1CC4C-C479-4935-87D4-B44045060CF3}" Directory_="styles_Dir" Attributes="256" KeyPath="qwindowsvistastyle.dll"/>
+    <ROW Component="vccorlib140.dll" ComponentId="{63D3CEB4-140A-424C-B34B-CC851425C188}" Directory_="bin_Release64_Dir" Attributes="256" KeyPath="vccorlib140.dll"/>
+    <ROW Component="vcruntime140.dll" ComponentId="{548F39B8-CE5E-43A8-808A-F5747CBE2767}" Directory_="bin_Release64_Dir" Attributes="256" KeyPath="vcruntime140.dll"/>
+    <ROW Component="vcruntime140_1.dll" ComponentId="{BB50FEF1-5917-403D-BB5C-A892DDC8F18E}" Directory_="bin_Release64_Dir" Attributes="256" KeyPath="vcruntime140_1.dll"/>
+    <ROW Component="windowsprintersupport.dll" ComponentId="{20AC04E0-EF1B-4F08-BC65-2B793496B7B0}" Directory_="printsupport_Dir" Attributes="256" KeyPath="windowsprintersupport.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0"/>
+    <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="atlas.png" Component_="atlas.png" FileName="atlas.png" Attributes="0" SourcePath="..\..\assets\image\atlas.png" SelfReg="false"/>
+    <ROW File="noimg.png" Component_="atlas.png" FileName="noimg.png" Attributes="0" SourcePath="..\..\assets\image\noimg.png" SelfReg="false"/>
+    <ROW File="ui_atlaskey.png" Component_="atlas.png" FileName="UI_ATL~1.PNG|ui_atlaskey.png" Attributes="0" SourcePath="..\..\assets\image\ui_atlaskey.png" SelfReg="false"/>
+    <ROW File="qgenericbearer.dll" Component_="qgenericbearer.dll" FileName="QGENER~1.DLL|qgenericbearer.dll" Attributes="0" SourcePath="..\..\bin_Release64\bearer\qgenericbearer.dll" SelfReg="false"/>
+    <ROW File="concrt140.dll" Component_="concrt140.dll" FileName="CONCRT~1.DLL|concrt140.dll" Attributes="0" SourcePath="..\..\bin_Release64\concrt140.dll" SelfReg="false"/>
+    <ROW File="D3Dcompiler_47.dll" Component_="D3Dcompiler_47.dll" FileName="D3DCOM~1.DLL|D3Dcompiler_47.dll" Attributes="0" SourcePath="..\..\bin_Release64\D3Dcompiler_47.dll" SelfReg="false"/>
+    <ROW File="qsvgicon.dll" Component_="qsvgicon.dll" FileName="qsvgicon.dll" Attributes="0" SourcePath="..\..\bin_Release64\iconengines\qsvgicon.dll" SelfReg="false"/>
+    <ROW File="qgif.dll" Component_="qgif.dll" FileName="qgif.dll" Attributes="0" SourcePath="..\..\bin_Release64\imageformats\qgif.dll" SelfReg="false"/>
+    <ROW File="qicns.dll" Component_="qicns.dll" FileName="qicns.dll" Attributes="0" SourcePath="..\..\bin_Release64\imageformats\qicns.dll" SelfReg="false"/>
+    <ROW File="qico.dll" Component_="qico.dll" FileName="qico.dll" Attributes="0" SourcePath="..\..\bin_Release64\imageformats\qico.dll" SelfReg="false"/>
+    <ROW File="qjpeg.dll" Component_="qjpeg.dll" FileName="qjpeg.dll" Attributes="0" SourcePath="..\..\bin_Release64\imageformats\qjpeg.dll" SelfReg="false"/>
+    <ROW File="qsvg.dll" Component_="qsvg.dll" FileName="qsvg.dll" Attributes="0" SourcePath="..\..\bin_Release64\imageformats\qsvg.dll" SelfReg="false"/>
+    <ROW File="qtga.dll" Component_="qtga.dll" FileName="qtga.dll" Attributes="0" SourcePath="..\..\bin_Release64\imageformats\qtga.dll" SelfReg="false"/>
+    <ROW File="qtiff.dll" Component_="qtiff.dll" FileName="qtiff.dll" Attributes="0" SourcePath="..\..\bin_Release64\imageformats\qtiff.dll" SelfReg="false"/>
+    <ROW File="qwbmp.dll" Component_="qwbmp.dll" FileName="qwbmp.dll" Attributes="0" SourcePath="..\..\bin_Release64\imageformats\qwbmp.dll" SelfReg="false"/>
+    <ROW File="qwebp.dll" Component_="qwebp.dll" FileName="qwebp.dll" Attributes="0" SourcePath="..\..\bin_Release64\imageformats\qwebp.dll" SelfReg="false"/>
+    <ROW File="launcher.exe" Component_="launcher.exe" FileName="launcher.exe" Attributes="0" SourcePath="..\..\bin_Release64\launcher.exe" SelfReg="false" DigSign="true"/>
+    <ROW File="libEGL.dll" Component_="libEGL.dll" FileName="libEGL.dll" Attributes="0" SourcePath="..\..\bin_Release64\libEGL.dll" SelfReg="false"/>
+    <ROW File="libGLESv2.dll" Component_="libGLESv2.dll" FileName="LIBGLE~1.DLL|libGLESv2.dll" Attributes="0" SourcePath="..\..\bin_Release64\libGLESv2.dll" SelfReg="false"/>
+    <ROW File="msvcp140.dll" Component_="msvcp140.dll" FileName="msvcp140.dll" Attributes="0" SourcePath="..\..\bin_Release64\msvcp140.dll" SelfReg="false"/>
+    <ROW File="msvcp140_1.dll" Component_="msvcp140_1.dll" FileName="MSVCP1~1.DLL|msvcp140_1.dll" Attributes="0" SourcePath="..\..\bin_Release64\msvcp140_1.dll" SelfReg="false"/>
+    <ROW File="msvcp140_2.dll" Component_="msvcp140_2.dll" FileName="MSVCP1~2.DLL|msvcp140_2.dll" Attributes="0" SourcePath="..\..\bin_Release64\msvcp140_2.dll" SelfReg="false"/>
+    <ROW File="msvcp140_codecvt_ids.dll" Component_="msvcp140_codecvt_ids.dll" FileName="MSVCP1~3.DLL|msvcp140_codecvt_ids.dll" Attributes="0" SourcePath="..\..\bin_Release64\msvcp140_codecvt_ids.dll" SelfReg="false"/>
+    <ROW File="opengl32sw.dll" Component_="opengl32sw.dll" FileName="OPENGL~1.DLL|opengl32sw.dll" Attributes="0" SourcePath="..\..\bin_Release64\opengl32sw.dll" SelfReg="false"/>
+    <ROW File="qwindows.dll" Component_="qwindows.dll" FileName="qwindows.dll" Attributes="0" SourcePath="..\..\bin_Release64\platforms\qwindows.dll" SelfReg="false"/>
+    <ROW File="qtposition_positionpoll.dll" Component_="qtposition_positionpoll.dll" FileName="QTPOSI~1.DLL|qtposition_positionpoll.dll" Attributes="0" SourcePath="..\..\bin_Release64\position\qtposition_positionpoll.dll" SelfReg="false"/>
+    <ROW File="qtposition_serialnmea.dll" Component_="qtposition_serialnmea.dll" FileName="QTPOSI~2.DLL|qtposition_serialnmea.dll" Attributes="0" SourcePath="..\..\bin_Release64\position\qtposition_serialnmea.dll" SelfReg="false"/>
+    <ROW File="qtposition_winrt.dll" Component_="qtposition_winrt.dll" FileName="QTPOSI~3.DLL|qtposition_winrt.dll" Attributes="0" SourcePath="..\..\bin_Release64\position\qtposition_winrt.dll" SelfReg="false"/>
+    <ROW File="windowsprintersupport.dll" Component_="windowsprintersupport.dll" FileName="WINDOW~1.DLL|windowsprintersupport.dll" Attributes="0" SourcePath="..\..\bin_Release64\printsupport\windowsprintersupport.dll" SelfReg="false"/>
+    <ROW File="Qt5Core.dll" Component_="Qt5Core.dll" FileName="Qt5Core.dll" Attributes="0" SourcePath="..\..\bin_Release64\Qt5Core.dll" SelfReg="false"/>
+    <ROW File="Qt5Gui.dll" Component_="Qt5Gui.dll" FileName="Qt5Gui.dll" Attributes="0" SourcePath="..\..\bin_Release64\Qt5Gui.dll" SelfReg="false"/>
+    <ROW File="Qt5Network.dll" Component_="Qt5Network.dll" FileName="QT5NET~1.DLL|Qt5Network.dll" Attributes="0" SourcePath="..\..\bin_Release64\Qt5Network.dll" SelfReg="false"/>
+    <ROW File="Qt5OpenGL.dll" Component_="Qt5OpenGL.dll" FileName="QT5OPE~1.DLL|Qt5OpenGL.dll" Attributes="0" SourcePath="..\..\bin_Release64\Qt5OpenGL.dll" SelfReg="false"/>
+    <ROW File="Qt5Positioning.dll" Component_="Qt5Positioning.dll" FileName="QT5POS~1.DLL|Qt5Positioning.dll" Attributes="0" SourcePath="..\..\bin_Release64\Qt5Positioning.dll" SelfReg="false"/>
+    <ROW File="Qt5PrintSupport.dll" Component_="Qt5PrintSupport.dll" FileName="QT5PRI~1.DLL|Qt5PrintSupport.dll" Attributes="0" SourcePath="..\..\bin_Release64\Qt5PrintSupport.dll" SelfReg="false"/>
+    <ROW File="Qt5Qml.dll" Component_="Qt5Qml.dll" FileName="Qt5Qml.dll" Attributes="0" SourcePath="..\..\bin_Release64\Qt5Qml.dll" SelfReg="false"/>
+    <ROW File="Qt5QmlModels.dll" Component_="Qt5QmlModels.dll" FileName="QT5QML~1.DLL|Qt5QmlModels.dll" Attributes="0" SourcePath="..\..\bin_Release64\Qt5QmlModels.dll" SelfReg="false"/>
+    <ROW File="Qt5Quick.dll" Component_="Qt5Quick.dll" FileName="Qt5Quick.dll" Attributes="0" SourcePath="..\..\bin_Release64\Qt5Quick.dll" SelfReg="false"/>
+    <ROW File="Qt5QuickWidgets.dll" Component_="Qt5QuickWidgets.dll" FileName="QT5QUI~1.DLL|Qt5QuickWidgets.dll" Attributes="0" SourcePath="..\..\bin_Release64\Qt5QuickWidgets.dll" SelfReg="false"/>
+    <ROW File="Qt5SerialPort.dll" Component_="Qt5SerialPort.dll" FileName="QT5SER~1.DLL|Qt5SerialPort.dll" Attributes="0" SourcePath="..\..\bin_Release64\Qt5SerialPort.dll" SelfReg="false"/>
+    <ROW File="Qt5Svg.dll" Component_="Qt5Svg.dll" FileName="Qt5Svg.dll" Attributes="0" SourcePath="..\..\bin_Release64\Qt5Svg.dll" SelfReg="false"/>
+    <ROW File="Qt5WebChannel.dll" Component_="Qt5WebChannel.dll" FileName="QT5WEB~1.DLL|Qt5WebChannel.dll" Attributes="0" SourcePath="..\..\bin_Release64\Qt5WebChannel.dll" SelfReg="false"/>
+    <ROW File="Qt5WebEngineCore.dll" Component_="Qt5WebEngineCore.dll" FileName="QT5WEB~2.DLL|Qt5WebEngineCore.dll" Attributes="0" SourcePath="..\..\bin_Release64\Qt5WebEngineCore.dll" SelfReg="false"/>
+    <ROW File="Qt5WebEngineWidgets.dll" Component_="Qt5WebEngineWidgets.dll" FileName="QT5WEB~3.DLL|Qt5WebEngineWidgets.dll" Attributes="0" SourcePath="..\..\bin_Release64\Qt5WebEngineWidgets.dll" SelfReg="false"/>
+    <ROW File="Qt5Widgets.dll" Component_="Qt5Widgets.dll" FileName="QT5WID~1.DLL|Qt5Widgets.dll" Attributes="0" SourcePath="..\..\bin_Release64\Qt5Widgets.dll" SelfReg="false"/>
+    <ROW File="QtWebEngineProcess.exe" Component_="QtWebEngineProcess.exe" FileName="QTWEBE~1.EXE|QtWebEngineProcess.exe" Attributes="0" SourcePath="..\..\bin_Release64\QtWebEngineProcess.exe" SelfReg="false"/>
+    <ROW File="icudtl.dat" Component_="icudtl.dat" FileName="icudtl.dat" Attributes="0" SourcePath="..\..\bin_Release64\resources\icudtl.dat" SelfReg="false"/>
+    <ROW File="qtwebengine_devtools_resources.pak" Component_="icudtl.dat" FileName="QTWEBE~1.PAK|qtwebengine_devtools_resources.pak" Attributes="0" SourcePath="..\..\bin_Release64\resources\qtwebengine_devtools_resources.pak" SelfReg="false"/>
+    <ROW File="qtwebengine_resources.pak" Component_="icudtl.dat" FileName="QTWEBE~2.PAK|qtwebengine_resources.pak" Attributes="0" SourcePath="..\..\bin_Release64\resources\qtwebengine_resources.pak" SelfReg="false"/>
+    <ROW File="qtwebengine_resources_100p.pak" Component_="icudtl.dat" FileName="QTWEBE~3.PAK|qtwebengine_resources_100p.pak" Attributes="0" SourcePath="..\..\bin_Release64\resources\qtwebengine_resources_100p.pak" SelfReg="false"/>
+    <ROW File="qtwebengine_resources_200p.pak" Component_="icudtl.dat" FileName="QTWEBE~4.PAK|qtwebengine_resources_200p.pak" Attributes="0" SourcePath="..\..\bin_Release64\resources\qtwebengine_resources_200p.pak" SelfReg="false"/>
+    <ROW File="qwindowsvistastyle.dll" Component_="qwindowsvistastyle.dll" FileName="QWINDO~1.DLL|qwindowsvistastyle.dll" Attributes="0" SourcePath="..\..\bin_Release64\styles\qwindowsvistastyle.dll" SelfReg="false"/>
+    <ROW File="am.pak" Component_="am.pak" FileName="am.pak" Attributes="0" SourcePath="..\..\bin_Release64\translations\qtwebengine_locales\am.pak" SelfReg="false"/>
+    <ROW File="ar.pak" Component_="am.pak" FileName="ar.pak" Attributes="0" SourcePath="..\..\bin_Release64\translations\qtwebengine_locales\ar.pak" SelfReg="false"/>
+    <ROW File="bg.pak" Component_="am.pak" FileName="bg.pak" Attributes="0" SourcePath="..\..\bin_Release64\translations\qtwebengine_locales\bg.pak" SelfReg="false"/>
+    <ROW File="bn.pak" Component_="am.pak" FileName="bn.pak" Attributes="0" SourcePath="..\..\bin_Release64\translations\qtwebengine_locales\bn.pak" SelfReg="false"/>
+    <ROW File="ca.pak" Component_="am.pak" FileName="ca.pak" Attributes="0" SourcePath="..\..\bin_Release64\translations\qtwebengine_locales\ca.pak" SelfReg="false"/>
+    <ROW File="cs.pak" Component_="am.pak" FileName="cs.pak" Attributes="0" SourcePath="..\..\bin_Release64\translations\qtwebengine_locales\cs.pak" SelfReg="false"/>
+    <ROW File="da.pak" Component_="am.pak" FileName="da.pak" Attributes="0" SourcePath="..\..\bin_Release64\translations\qtwebengine_locales\da.pak" SelfReg="false"/>
+    <ROW File="de.pak" Component_="am.pak" FileName="de.pak" Attributes="0" SourcePath="..\..\bin_Release64\translations\qtwebengine_locales\de.pak" SelfReg="false"/>
+    <ROW File="el.pak" Component_="am.pak" FileName="el.pak" Attributes="0" SourcePath="..\..\bin_Release64\translations\qtwebengine_locales\el.pak" SelfReg="false"/>
+    <ROW File="enGB.pak" Component_="am.pak" FileName="en-GB.pak" Attributes="0" SourcePath="..\..\bin_Release64\translations\qtwebengine_locales\en-GB.pak" SelfReg="false"/>
+    <ROW File="enUS.pak" Component_="am.pak" FileName="en-US.pak" Attributes="0" SourcePath="..\..\bin_Release64\translations\qtwebengine_locales\en-US.pak" SelfReg="false"/>
+    <ROW File="es419.pak" Component_="am.pak" FileName="es-419.pak" Attributes="0" SourcePath="..\..\bin_Release64\translations\qtwebengine_locales\es-419.pak" SelfReg="false"/>
+    <ROW File="es.pak" Component_="am.pak" FileName="es.pak" Attributes="0" SourcePath="..\..\bin_Release64\translations\qtwebengine_locales\es.pak" SelfReg="false"/>
+    <ROW File="et.pak" Component_="am.pak" FileName="et.pak" Attributes="0" SourcePath="..\..\bin_Release64\translations\qtwebengine_locales\et.pak" SelfReg="false"/>
+    <ROW File="fa.pak" Component_="am.pak" FileName="fa.pak" Attributes="0" SourcePath="..\..\bin_Release64\translations\qtwebengine_locales\fa.pak" SelfReg="false"/>
+    <ROW File="fi.pak" Component_="am.pak" FileName="fi.pak" Attributes="0" SourcePath="..\..\bin_Release64\translations\qtwebengine_locales\fi.pak" SelfReg="false"/>
+    <ROW File="fil.pak" Component_="am.pak" FileName="fil.pak" Attributes="0" SourcePath="..\..\bin_Release64\translations\qtwebengine_locales\fil.pak" SelfReg="false"/>
+    <ROW File="fr.pak" Component_="am.pak" FileName="fr.pak" Attributes="0" SourcePath="..\..\bin_Release64\translations\qtwebengine_locales\fr.pak" SelfReg="false"/>
+    <ROW File="gu.pak" Component_="am.pak" FileName="gu.pak" Attributes="0" SourcePath="..\..\bin_Release64\translations\qtwebengine_locales\gu.pak" SelfReg="false"/>
+    <ROW File="he.pak" Component_="am.pak" FileName="he.pak" Attributes="0" SourcePath="..\..\bin_Release64\translations\qtwebengine_locales\he.pak" SelfReg="false"/>
+    <ROW File="hi.pak" Component_="am.pak" FileName="hi.pak" Attributes="0" SourcePath="..\..\bin_Release64\translations\qtwebengine_locales\hi.pak" SelfReg="false"/>
+    <ROW File="hr.pak" Component_="am.pak" FileName="hr.pak" Attributes="0" SourcePath="..\..\bin_Release64\translations\qtwebengine_locales\hr.pak" SelfReg="false"/>
+    <ROW File="hu.pak" Component_="am.pak" FileName="hu.pak" Attributes="0" SourcePath="..\..\bin_Release64\translations\qtwebengine_locales\hu.pak" SelfReg="false"/>
+    <ROW File="id.pak" Component_="am.pak" FileName="id.pak" Attributes="0" SourcePath="..\..\bin_Release64\translations\qtwebengine_locales\id.pak" SelfReg="false"/>
+    <ROW File="it.pak" Component_="am.pak" FileName="it.pak" Attributes="0" SourcePath="..\..\bin_Release64\translations\qtwebengine_locales\it.pak" SelfReg="false"/>
+    <ROW File="ja.pak" Component_="am.pak" FileName="ja.pak" Attributes="0" SourcePath="..\..\bin_Release64\translations\qtwebengine_locales\ja.pak" SelfReg="false"/>
+    <ROW File="kn.pak" Component_="am.pak" FileName="kn.pak" Attributes="0" SourcePath="..\..\bin_Release64\translations\qtwebengine_locales\kn.pak" SelfReg="false"/>
+    <ROW File="ko.pak" Component_="am.pak" FileName="ko.pak" Attributes="0" SourcePath="..\..\bin_Release64\translations\qtwebengine_locales\ko.pak" SelfReg="false"/>
+    <ROW File="lt.pak" Component_="am.pak" FileName="lt.pak" Attributes="0" SourcePath="..\..\bin_Release64\translations\qtwebengine_locales\lt.pak" SelfReg="false"/>
+    <ROW File="lv.pak" Component_="am.pak" FileName="lv.pak" Attributes="0" SourcePath="..\..\bin_Release64\translations\qtwebengine_locales\lv.pak" SelfReg="false"/>
+    <ROW File="ml.pak" Component_="am.pak" FileName="ml.pak" Attributes="0" SourcePath="..\..\bin_Release64\translations\qtwebengine_locales\ml.pak" SelfReg="false"/>
+    <ROW File="mr.pak" Component_="am.pak" FileName="mr.pak" Attributes="0" SourcePath="..\..\bin_Release64\translations\qtwebengine_locales\mr.pak" SelfReg="false"/>
+    <ROW File="ms.pak" Component_="am.pak" FileName="ms.pak" Attributes="0" SourcePath="..\..\bin_Release64\translations\qtwebengine_locales\ms.pak" SelfReg="false"/>
+    <ROW File="nb.pak" Component_="am.pak" FileName="nb.pak" Attributes="0" SourcePath="..\..\bin_Release64\translations\qtwebengine_locales\nb.pak" SelfReg="false"/>
+    <ROW File="nl.pak" Component_="am.pak" FileName="nl.pak" Attributes="0" SourcePath="..\..\bin_Release64\translations\qtwebengine_locales\nl.pak" SelfReg="false"/>
+    <ROW File="pl.pak" Component_="am.pak" FileName="pl.pak" Attributes="0" SourcePath="..\..\bin_Release64\translations\qtwebengine_locales\pl.pak" SelfReg="false"/>
+    <ROW File="ptBR.pak" Component_="am.pak" FileName="pt-BR.pak" Attributes="0" SourcePath="..\..\bin_Release64\translations\qtwebengine_locales\pt-BR.pak" SelfReg="false"/>
+    <ROW File="ptPT.pak" Component_="am.pak" FileName="pt-PT.pak" Attributes="0" SourcePath="..\..\bin_Release64\translations\qtwebengine_locales\pt-PT.pak" SelfReg="false"/>
+    <ROW File="ro.pak" Component_="am.pak" FileName="ro.pak" Attributes="0" SourcePath="..\..\bin_Release64\translations\qtwebengine_locales\ro.pak" SelfReg="false"/>
+    <ROW File="ru.pak" Component_="am.pak" FileName="ru.pak" Attributes="0" SourcePath="..\..\bin_Release64\translations\qtwebengine_locales\ru.pak" SelfReg="false"/>
+    <ROW File="sk.pak" Component_="am.pak" FileName="sk.pak" Attributes="0" SourcePath="..\..\bin_Release64\translations\qtwebengine_locales\sk.pak" SelfReg="false"/>
+    <ROW File="sl.pak" Component_="am.pak" FileName="sl.pak" Attributes="0" SourcePath="..\..\bin_Release64\translations\qtwebengine_locales\sl.pak" SelfReg="false"/>
+    <ROW File="sr.pak" Component_="am.pak" FileName="sr.pak" Attributes="0" SourcePath="..\..\bin_Release64\translations\qtwebengine_locales\sr.pak" SelfReg="false"/>
+    <ROW File="sv.pak" Component_="am.pak" FileName="sv.pak" Attributes="0" SourcePath="..\..\bin_Release64\translations\qtwebengine_locales\sv.pak" SelfReg="false"/>
+    <ROW File="sw.pak" Component_="am.pak" FileName="sw.pak" Attributes="0" SourcePath="..\..\bin_Release64\translations\qtwebengine_locales\sw.pak" SelfReg="false"/>
+    <ROW File="ta.pak" Component_="am.pak" FileName="ta.pak" Attributes="0" SourcePath="..\..\bin_Release64\translations\qtwebengine_locales\ta.pak" SelfReg="false"/>
+    <ROW File="te.pak" Component_="am.pak" FileName="te.pak" Attributes="0" SourcePath="..\..\bin_Release64\translations\qtwebengine_locales\te.pak" SelfReg="false"/>
+    <ROW File="th.pak" Component_="am.pak" FileName="th.pak" Attributes="0" SourcePath="..\..\bin_Release64\translations\qtwebengine_locales\th.pak" SelfReg="false"/>
+    <ROW File="tr.pak" Component_="am.pak" FileName="tr.pak" Attributes="0" SourcePath="..\..\bin_Release64\translations\qtwebengine_locales\tr.pak" SelfReg="false"/>
+    <ROW File="uk.pak" Component_="am.pak" FileName="uk.pak" Attributes="0" SourcePath="..\..\bin_Release64\translations\qtwebengine_locales\uk.pak" SelfReg="false"/>
+    <ROW File="vi.pak" Component_="am.pak" FileName="vi.pak" Attributes="0" SourcePath="..\..\bin_Release64\translations\qtwebengine_locales\vi.pak" SelfReg="false"/>
+    <ROW File="zhCN.pak" Component_="am.pak" FileName="zh-CN.pak" Attributes="0" SourcePath="..\..\bin_Release64\translations\qtwebengine_locales\zh-CN.pak" SelfReg="false"/>
+    <ROW File="zhTW.pak" Component_="am.pak" FileName="zh-TW.pak" Attributes="0" SourcePath="..\..\bin_Release64\translations\qtwebengine_locales\zh-TW.pak" SelfReg="false"/>
+    <ROW File="qt_ar.qm" Component_="qt_ar.qm" FileName="qt_ar.qm" Attributes="0" SourcePath="..\..\bin_Release64\translations\qt_ar.qm" SelfReg="false"/>
+    <ROW File="qt_bg.qm" Component_="qt_ar.qm" FileName="qt_bg.qm" Attributes="0" SourcePath="..\..\bin_Release64\translations\qt_bg.qm" SelfReg="false"/>
+    <ROW File="qt_ca.qm" Component_="qt_ar.qm" FileName="qt_ca.qm" Attributes="0" SourcePath="..\..\bin_Release64\translations\qt_ca.qm" SelfReg="false"/>
+    <ROW File="qt_cs.qm" Component_="qt_ar.qm" FileName="qt_cs.qm" Attributes="0" SourcePath="..\..\bin_Release64\translations\qt_cs.qm" SelfReg="false"/>
+    <ROW File="qt_da.qm" Component_="qt_ar.qm" FileName="qt_da.qm" Attributes="0" SourcePath="..\..\bin_Release64\translations\qt_da.qm" SelfReg="false"/>
+    <ROW File="qt_de.qm" Component_="qt_ar.qm" FileName="qt_de.qm" Attributes="0" SourcePath="..\..\bin_Release64\translations\qt_de.qm" SelfReg="false"/>
+    <ROW File="qt_en.qm" Component_="qt_ar.qm" FileName="qt_en.qm" Attributes="0" SourcePath="..\..\bin_Release64\translations\qt_en.qm" SelfReg="false"/>
+    <ROW File="qt_es.qm" Component_="qt_ar.qm" FileName="qt_es.qm" Attributes="0" SourcePath="..\..\bin_Release64\translations\qt_es.qm" SelfReg="false"/>
+    <ROW File="qt_fi.qm" Component_="qt_ar.qm" FileName="qt_fi.qm" Attributes="0" SourcePath="..\..\bin_Release64\translations\qt_fi.qm" SelfReg="false"/>
+    <ROW File="qt_fr.qm" Component_="qt_ar.qm" FileName="qt_fr.qm" Attributes="0" SourcePath="..\..\bin_Release64\translations\qt_fr.qm" SelfReg="false"/>
+    <ROW File="qt_gd.qm" Component_="qt_ar.qm" FileName="qt_gd.qm" Attributes="0" SourcePath="..\..\bin_Release64\translations\qt_gd.qm" SelfReg="false"/>
+    <ROW File="qt_he.qm" Component_="qt_ar.qm" FileName="qt_he.qm" Attributes="0" SourcePath="..\..\bin_Release64\translations\qt_he.qm" SelfReg="false"/>
+    <ROW File="qt_hu.qm" Component_="qt_ar.qm" FileName="qt_hu.qm" Attributes="0" SourcePath="..\..\bin_Release64\translations\qt_hu.qm" SelfReg="false"/>
+    <ROW File="qt_it.qm" Component_="qt_ar.qm" FileName="qt_it.qm" Attributes="0" SourcePath="..\..\bin_Release64\translations\qt_it.qm" SelfReg="false"/>
+    <ROW File="qt_ja.qm" Component_="qt_ar.qm" FileName="qt_ja.qm" Attributes="0" SourcePath="..\..\bin_Release64\translations\qt_ja.qm" SelfReg="false"/>
+    <ROW File="qt_ko.qm" Component_="qt_ar.qm" FileName="qt_ko.qm" Attributes="0" SourcePath="..\..\bin_Release64\translations\qt_ko.qm" SelfReg="false"/>
+    <ROW File="qt_lv.qm" Component_="qt_ar.qm" FileName="qt_lv.qm" Attributes="0" SourcePath="..\..\bin_Release64\translations\qt_lv.qm" SelfReg="false"/>
+    <ROW File="qt_pl.qm" Component_="qt_ar.qm" FileName="qt_pl.qm" Attributes="0" SourcePath="..\..\bin_Release64\translations\qt_pl.qm" SelfReg="false"/>
+    <ROW File="qt_ru.qm" Component_="qt_ar.qm" FileName="qt_ru.qm" Attributes="0" SourcePath="..\..\bin_Release64\translations\qt_ru.qm" SelfReg="false"/>
+    <ROW File="qt_sk.qm" Component_="qt_ar.qm" FileName="qt_sk.qm" Attributes="0" SourcePath="..\..\bin_Release64\translations\qt_sk.qm" SelfReg="false"/>
+    <ROW File="qt_uk.qm" Component_="qt_ar.qm" FileName="qt_uk.qm" Attributes="0" SourcePath="..\..\bin_Release64\translations\qt_uk.qm" SelfReg="false"/>
+    <ROW File="qt_zh_TW.qm" Component_="qt_ar.qm" FileName="qt_zh_TW.qm" Attributes="0" SourcePath="..\..\bin_Release64\translations\qt_zh_TW.qm" SelfReg="false"/>
+    <ROW File="vccorlib140.dll" Component_="vccorlib140.dll" FileName="VCCORL~1.DLL|vccorlib140.dll" Attributes="0" SourcePath="..\..\bin_Release64\vccorlib140.dll" SelfReg="false"/>
+    <ROW File="vcruntime140.dll" Component_="vcruntime140.dll" FileName="VCRUNT~1.DLL|vcruntime140.dll" Attributes="0" SourcePath="..\..\bin_Release64\vcruntime140.dll" SelfReg="false"/>
+    <ROW File="vcruntime140_1.dll" Component_="vcruntime140_1.dll" FileName="VCRUNT~2.DLL|vcruntime140_1.dll" Attributes="0" SourcePath="..\..\bin_Release64\vcruntime140_1.dll" SelfReg="false"/>
+    <ROW File="logger.dum" Component_="logger.dum" FileName="logger.dum" Attributes="0" SourcePath="..\..\dumapps\logger.dum" SelfReg="false"/>
+    <ROW File="telegraph.dum" Component_="logger.dum" FileName="TELEGR~1.DUM|telegraph.dum" Attributes="0" SourcePath="..\..\dumapps\telegraph.dum" SelfReg="false"/>
+    <ROW File="zayeditor.dum" Component_="logger.dum" FileName="ZAYEDI~1.DUM|zayeditor.dum" Attributes="0" SourcePath="..\..\dumapps\zayeditor.dum" SelfReg="false"/>
+    <ROW File="zayreviewer.dum" Component_="logger.dum" FileName="ZAYREV~1.DUM|zayreviewer.dum" Attributes="0" SourcePath="..\..\dumapps\zayreviewer.dum" SelfReg="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BootstrOptComponent">
+    <ROW BootstrOptKey="GlobalOptions" DownloadFolder="[AppDataFolder][|Manufacturer]\[|ProductName]\prerequisites" Options="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="1" Languages="ko" InstallationType="4" CabsLocation="1" PackageType="1" FilesInsideExe="true" ExeIconPath="..\..\common\windows\main.ico" ExtractionFolder="[AppDataFolder][|Manufacturer]\[|ProductName] [|ProductVersion]\install" ExtUI="true" UseLargeSchema="true"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_ko.ail"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="CommonUI.aip" Path="&lt;AI_FRAGS&gt;CommonUI.aip"/>
+    <ROW Fragment="InstallDlg.aip" Path="&lt;AI_THEMES&gt;surface\fragments\InstallDlg.aip"/>
+    <ROW Fragment="LicenseAgreementDlg.aip" Path="&lt;AI_THEMES&gt;surface\fragments\LicenseAgreementDlg.aip"/>
+    <ROW Fragment="MaintenanceTypeDlg.aip" Path="&lt;AI_THEMES&gt;surface\fragments\MaintenanceTypeDlg.aip"/>
+    <ROW Fragment="SequenceDialogs.aip" Path="&lt;AI_THEMES&gt;surface\fragments\SequenceDialogs.aip"/>
+    <ROW Fragment="Sequences.aip" Path="&lt;AI_FRAGS&gt;Sequences.aip"/>
+    <ROW Fragment="StaticUIStrings.aip" Path="&lt;AI_FRAGS&gt;StaticUIStrings.aip"/>
+    <ROW Fragment="UI.aip" Path="&lt;AI_THEMES&gt;surface\fragments\UI.aip"/>
+    <ROW Fragment="Validation.aip" Path="&lt;AI_FRAGS&gt;Validation.aip"/>
+    <ROW Fragment="VerifyRemoveDlg.aip" Path="&lt;AI_THEMES&gt;surface\fragments\VerifyRemoveDlg.aip"/>
+    <ROW Fragment="VerifyRepairDlg.aip" Path="&lt;AI_THEMES&gt;surface\fragments\VerifyRepairDlg.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiActionTextComponent">
+    <ROW Action="AI_DeleteLzma" Description="아카이브에서 추출된 파일을 삭제하는 중" DescriptionLocId="ActionText.Description.AI_DeleteLzma" TemplateLocId="-"/>
+    <ROW Action="AI_DeleteRLzma" Description="아카이브에서 추출된 파일을 삭제하는 중" DescriptionLocId="ActionText.Description.AI_DeleteLzma" TemplateLocId="-"/>
+    <ROW Action="AI_ExtractFiles" Description="아카이브에서 파일을 추출하는 중" DescriptionLocId="ActionText.Description.AI_ExtractLzma" TemplateLocId="-"/>
+    <ROW Action="AI_ExtractLzma" Description="아카이브에서 파일을 추출하는 중" DescriptionLocId="ActionText.Description.AI_ExtractLzma" TemplateLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiAppSearchComponent">
+    <ROW Property="AI_SETUPEXEPATH" Signature_="AI_EXE_PATH_LM" Builds="DefaultBuild"/>
+    <ROW Property="AI_SETUPEXEPATH" Signature_="AI_EXE_PATH_CU" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="ExternalUICleaner.dll" SourcePath="&lt;AI_CUSTACTS&gt;ExternalUICleaner.dll"/>
+    <ROW Name="Prereq.dll" SourcePath="&lt;AI_CUSTACTS&gt;Prereq.dll"/>
+    <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
+    <ROW Name="daddy.jpg_1" SourcePath="daddy.jpg"/>
+    <ROW Name="lzmaextractor.dll" SourcePath="&lt;AI_CUSTACTS&gt;lzmaextractor.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlComponent">
+    <ROW Dialog_="CustomizeDlg" Control="CustomizeDlgDialogInitializer" Type="DialogInitializer" X="0" Y="0" Width="0" Height="0" Attributes="0" Order="-1" TextLocId="-" HelpLocId="-" ExtDataLocId="-"/>
+    <ROW Dialog_="MsiRMFilesInUse" Control="Cancel" Type="ImageButton" X="163" Y="359" Width="78" Height="28" Attributes="2" Text="[NextCancelButtons]" TextStyle="[MetroButtonText]" Order="100" MsiKey="MsiRMFilesInUse#Cancel" Options="1" ExtType="ImageButton" ExtData="[ButtonText_Cancel]" ExtDataLocId="-"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control="PatchWelcomeDlgDialogInitializer" Type="DialogInitializer" X="0" Y="0" Width="0" Height="0" Attributes="0" Order="-1" TextLocId="-" HelpLocId="-" ExtDataLocId="-"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control="ProductNameTitle" Type="Text" X="83" Y="21" Width="245" Height="50" Attributes="196611" Text="[ProductName]" TextStyle="[ProductNameForSplash]" Order="600" TextLocId="Metro.Control.Text.ProductName" MsiKey="PatchWelcomeDlg#ProductNameTitle"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control="CompanyText" Type="Text" X="83" Y="16" Width="191" Height="12" Attributes="196611" Text="[Manufacturer]" TextStyle="[ManufacturerFont]" Order="700" TextLocId="Metro.Control.Text.Manufacturer" MsiKey="PatchWelcomeDlg#CompanyText"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control="ProductLogo" Type="Bitmap" X="17" Y="5" Width="59" Height="63" Attributes="1" Text="[AppLogoIcon]" Order="800" MsiKey="PatchWelcomeDlg#ProductLogo"/>
+    <ROW Dialog_="VerifyReadyDlg" Control="Cancel" Type="ImageButton" X="163" Y="359" Width="78" Height="28" Attributes="2" Text="[NextCancelButtons]" TextStyle="[MetroButtonText]" Order="100" MsiKey="VerifyReadyDlg#Cancel" Options="1" ExtType="ImageButton" ExtData="[ButtonText_Cancel]" ExtDataLocId="-"/>
+    <ROW Dialog_="VerifyReadyDlg" Control="Back" Type="PushButton" X="5" Y="381" Width="11" Height="11" Attributes="2" Text="Control.Text.VerifyReadyDlg#Back" Help="Back|" Order="200" TextLocId="Control.Text.VerifyReadyDlg#Back" HelpLocId="Air.Control.Help#Back" MsiKey="VerifyReadyDlg#Back" Options="1" ExtType="PushButton" ExtData="[ButtonText_Back]" ExtDataLocId="-"/>
+    <ROW Dialog_="VerifyReadyDlg" Control="ReadyToInstall" Type="Text" X="17" Y="105" Width="312" Height="19" Attributes="196611" Text="설치 준비" TextStyle="[SubTitleStyle]" Order="400" TextLocId="Control.Text.VerifyReadyDlg#Title" MsiKey="VerifyReadyDlg#ReadyToInstall"/>
+    <ROW Dialog_="VerifyReadyDlg" Control="Text_2" Type="Text" X="17" Y="139" Width="312" Height="100" Attributes="65539" Text="[Wizard]가 [ProductName] 설치를 시작할 준비가 되었습니다" Order="500" TextLocId="Control.Text.VerifyReadyDlg#Description" MsiKey="VerifyReadyDlg#Text_2"/>
+    <ROW Dialog_="VerifyReadyDlg" Control="InstallButton" Type="ImageButton" X="251" Y="359" Width="78" Height="28" Attributes="3" Text="[metrobuttonimage]" TextStyle="[MetroButtonText]" Order="600" MsiKey="VerifyReadyDlg#InstallButton" ExtType="ImageButton" ExtData="INSTALL" ExtDataLocId="Metro.Control.ExtData.VerifyReadyDlg#InstallButton"/>
+    <ROW Dialog_="VerifyReadyDlg" Control="ProductNameTitle" Type="Text" X="83" Y="21" Width="245" Height="50" Attributes="196611" Text="[ProductName]" TextStyle="[ProductNameForSplash]" Order="700" TextLocId="Metro.Control.Text.ProductName" MsiKey="VerifyReadyDlg#ProductNameTitle"/>
+    <ROW Dialog_="VerifyReadyDlg" Control="CompanyText" Type="Text" X="83" Y="16" Width="191" Height="12" Attributes="196611" Text="[Manufacturer]" TextStyle="[ManufacturerFont]" Order="800" TextLocId="Metro.Control.Text.Manufacturer" MsiKey="VerifyReadyDlg#CompanyText"/>
+    <ROW Dialog_="VerifyReadyDlg" Control="ProductLogo" Type="Bitmap" X="17" Y="5" Width="59" Height="63" Attributes="1" Text="[AppLogoIcon]" Order="900" MsiKey="VerifyReadyDlg#ProductLogo"/>
+    <ROW Dialog_="VerifyReadyDlg" Control="AdvInst" Type="Text" X="5" Y="388" Width="74" Height="11" Attributes="196611" Text="Advanced Installer" TextStyle="[BrandingStyle]" Order="1000" MsiKey="VerifyReadyDlg#AdvInst"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control="Cancel" Type="ImageButton" X="163" Y="359" Width="78" Height="28" Attributes="2" Text="[NextCancelButtons]" TextStyle="[MetroButtonText]" Order="100" MsiKey="VerifyRemoveDlg#Cancel" Options="1" ExtType="ImageButton" ExtData="[ButtonText_Cancel]" ExtDataLocId="-"/>
+    <ROW Dialog_="VerifyRepairDlg" Control="Bitmap" Type="Bitmap" X="0" Y="0" Width="345" Height="400" Attributes="1" Text="[Background]" Order="100" MsiKey="VerifyRepairDlg#Bitmap"/>
+    <ROW Dialog_="VerifyRepairDlg" Control="Repair" Type="ImageButton" X="251" Y="359" Width="78" Height="28" Attributes="3" Text="[metrobuttonimage]" TextStyle="[MetroButtonText]" Order="200" MsiKey="VerifyRepairDlg#Repair" Options="1" ExtType="ImageButton" ExtData="&amp;Repair" ExtDataLocId="Metro.Control.ExtData.VerifyRepairDlg#Repair"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="InstallDlg" Control_="Next" Event="EndDialog" Argument="Return" Condition="AI_INSTALL" Ordering="301"/>
+    <ROW Dialog_="InstallDlg" Control_="YouMustAgreeCtrl" Event="NewDialog" Argument="LicenseAgreementDlg" Condition="AI_INSTALL AND AiLicenseAgreement" Ordering="301"/>
+    <ROW Dialog_="LicenseAgreementDlg" Control_="Back" Event="NewDialog" Argument="InstallDlg" Condition="AI_INSTALL AND AiLicenseAgreement" Ordering="1"/>
+    <ROW Dialog_="LicenseAgreementDlg" Control_="Next" Event="EndDialog" Argument="Return" Condition="AI_INSTALL AND AiLicenseAgreement" Ordering="101"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="ChangeButton" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="501"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RemoveButton" Event="NewDialog" Argument="VerifyRemoveDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="699"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="1"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Remove" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="199" Options="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RepairButton" Event="NewDialog" Argument="VerifyRepairDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="699"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="1"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Repair" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="299" Options="1"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Modify" Event="EndDialog" Argument="Return" Condition="AI_MAINT" Ordering="101"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="EndDialog" Argument="Return" Condition="AI_PATCH" Ordering="201"/>
+    <ROW Dialog_="ResumeDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_RESUME" Ordering="99"/>
+    <ROW Dialog_="InstallDlg" Control_="Next" Event="SpawnDialog" Argument="OutOfRbDiskDlg" Condition="AI_INSTALL AND OutOfDiskSpace = 1 AND OutOfNoRbDiskSpace = 0 AND (PROMPTROLLBACKCOST=&quot;P&quot; OR NOT PROMPTROLLBACKCOST)" Ordering="302" Options="2"/>
+    <ROW Dialog_="InstallDlg" Control_="Next" Event="EnableRollback" Argument="False" Condition="AI_INSTALL AND OutOfDiskSpace = 1 AND OutOfNoRbDiskSpace = 0 AND PROMPTROLLBACKCOST=&quot;D&quot;" Ordering="303" Options="2"/>
+    <ROW Dialog_="InstallDlg" Control_="Next" Event="SpawnDialog" Argument="OutOfDiskDlg" Condition="AI_INSTALL AND ( (OutOfDiskSpace = 1 AND OutOfNoRbDiskSpace = 1) OR (OutOfDiskSpace = 1 AND PROMPTROLLBACKCOST=&quot;F&quot;) )" Ordering="304" Options="2"/>
+    <ROW Dialog_="InstallDlg" Control_="InstallDlgDialogInitializer" Event="[AI_ButtonText_Next_Orig]" Argument="[ButtonText_Next]" Condition="AI_INSTALL" Ordering="101" Options="2"/>
+    <ROW Dialog_="InstallDlg" Control_="InstallDlgDialogInitializer" Event="[ButtonText_Next]" Argument="[[AI_CommitButton]]" Condition="AI_INSTALL" Ordering="102" Options="2"/>
+    <ROW Dialog_="InstallDlg" Control_="InstallDlgDialogInitializer" Event="[AI_Text_Next_Orig]" Argument="[Text_Next]" Condition="AI_INSTALL" Ordering="103" Options="2"/>
+    <ROW Dialog_="InstallDlg" Control_="InstallDlgDialogInitializer" Event="[Text_Next]" Argument="[Text_Install]" Condition="AI_INSTALL" Ordering="104" Options="2"/>
+    <ROW Dialog_="InstallDlg" Control_="YouMustAgreeCtrl" Event="[ButtonText_Next]" Argument="[AI_ButtonText_Next_Orig]" Condition="AI_INSTALL" Ordering="302" Options="2"/>
+    <ROW Dialog_="InstallDlg" Control_="YouMustAgreeCtrl" Event="[Text_Next]" Argument="[AI_Text_Next_Orig]" Condition="AI_INSTALL" Ordering="303" Options="2"/>
+    <ROW Dialog_="InstallDlg" Control_="Back" Event="[ButtonText_Next]" Argument="[AI_ButtonText_Next_Orig]" Condition="AI_INSTALL" Ordering="0" Options="2"/>
+    <ROW Dialog_="InstallDlg" Control_="Back" Event="[Text_Next]" Argument="[AI_Text_Next_Orig]" Condition="AI_INSTALL" Ordering="1" Options="2"/>
+    <ROW Dialog_="LicenseAgreementDlg" Control_="Next" Event="SpawnDialog" Argument="OutOfRbDiskDlg" Condition="AI_INSTALL AND AiLicenseAgreement AND OutOfDiskSpace = 1 AND OutOfNoRbDiskSpace = 0 AND (PROMPTROLLBACKCOST=&quot;P&quot; OR NOT PROMPTROLLBACKCOST)" Ordering="102" Options="2"/>
+    <ROW Dialog_="LicenseAgreementDlg" Control_="Next" Event="EnableRollback" Argument="False" Condition="AI_INSTALL AND AiLicenseAgreement AND OutOfDiskSpace = 1 AND OutOfNoRbDiskSpace = 0 AND PROMPTROLLBACKCOST=&quot;D&quot;" Ordering="103" Options="2"/>
+    <ROW Dialog_="LicenseAgreementDlg" Control_="Next" Event="SpawnDialog" Argument="OutOfDiskDlg" Condition="AI_INSTALL AND AiLicenseAgreement AND ( (OutOfDiskSpace = 1 AND OutOfNoRbDiskSpace = 1) OR (OutOfDiskSpace = 1 AND PROMPTROLLBACKCOST=&quot;F&quot;) )" Ordering="104" Options="2"/>
+    <ROW Dialog_="LicenseAgreementDlg" Control_="LicenseAgreementDlgDialogInitializer" Event="[AI_ButtonText_Next_Orig]" Argument="[ButtonText_Next]" Condition="AI_INSTALL AND AiLicenseAgreement" Ordering="101" Options="2"/>
+    <ROW Dialog_="LicenseAgreementDlg" Control_="LicenseAgreementDlgDialogInitializer" Event="[ButtonText_Next]" Argument="[[AI_CommitButton]]" Condition="AI_INSTALL AND AiLicenseAgreement" Ordering="102" Options="2"/>
+    <ROW Dialog_="LicenseAgreementDlg" Control_="LicenseAgreementDlgDialogInitializer" Event="[AI_Text_Next_Orig]" Argument="[Text_Next]" Condition="AI_INSTALL AND AiLicenseAgreement" Ordering="103" Options="2"/>
+    <ROW Dialog_="LicenseAgreementDlg" Control_="LicenseAgreementDlgDialogInitializer" Event="[Text_Next]" Argument="[Text_Install]" Condition="AI_INSTALL AND AiLicenseAgreement" Ordering="104" Options="2"/>
+    <ROW Dialog_="LicenseAgreementDlg" Control_="Back" Event="[ButtonText_Next]" Argument="[AI_ButtonText_Next_Orig]" Condition="AI_INSTALL AND AiLicenseAgreement" Ordering="2" Options="2"/>
+    <ROW Dialog_="LicenseAgreementDlg" Control_="Back" Event="[Text_Next]" Argument="[AI_Text_Next_Orig]" Condition="AI_INSTALL AND AiLicenseAgreement" Ordering="3" Options="2"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Modify" Event="SpawnDialog" Argument="OutOfRbDiskDlg" Condition="AI_MAINT AND OutOfDiskSpace = 1 AND OutOfNoRbDiskSpace = 0 AND (PROMPTROLLBACKCOST=&quot;P&quot; OR NOT PROMPTROLLBACKCOST)" Ordering="102" Options="2"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Modify" Event="EnableRollback" Argument="False" Condition="AI_MAINT AND OutOfDiskSpace = 1 AND OutOfNoRbDiskSpace = 0 AND PROMPTROLLBACKCOST=&quot;D&quot;" Ordering="103" Options="2"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Modify" Event="SpawnDialog" Argument="OutOfDiskDlg" Condition="AI_MAINT AND ( (OutOfDiskSpace = 1 AND OutOfNoRbDiskSpace = 1) OR (OutOfDiskSpace = 1 AND PROMPTROLLBACKCOST=&quot;F&quot;) )" Ordering="104" Options="2"/>
+    <ROW Dialog_="CustomizeDlg" Control_="CustomizeDlgDialogInitializer" Event="[AI_ButtonText_Next_Orig]" Argument="[ButtonText_Next]" Condition="AI_MAINT" Ordering="0" Options="2"/>
+    <ROW Dialog_="CustomizeDlg" Control_="CustomizeDlgDialogInitializer" Event="[ButtonText_Next]" Argument="[[AI_CommitButton]]" Condition="AI_MAINT" Ordering="1" Options="2"/>
+    <ROW Dialog_="CustomizeDlg" Control_="CustomizeDlgDialogInitializer" Event="[AI_Text_Next_Orig]" Argument="[Text_Next]" Condition="AI_MAINT" Ordering="2" Options="2"/>
+    <ROW Dialog_="CustomizeDlg" Control_="CustomizeDlgDialogInitializer" Event="[Text_Next]" Argument="[Text_Install]" Condition="AI_MAINT" Ordering="3" Options="2"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Back" Event="[ButtonText_Next]" Argument="[AI_ButtonText_Next_Orig]" Condition="AI_MAINT" Ordering="2" Options="2"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Back" Event="[Text_Next]" Argument="[AI_Text_Next_Orig]" Condition="AI_MAINT" Ordering="3" Options="2"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="SpawnDialog" Argument="OutOfRbDiskDlg" Condition="AI_PATCH AND OutOfDiskSpace = 1 AND OutOfNoRbDiskSpace = 0 AND (PROMPTROLLBACKCOST=&quot;P&quot; OR NOT PROMPTROLLBACKCOST)" Ordering="202" Options="2"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="EnableRollback" Argument="False" Condition="AI_PATCH AND OutOfDiskSpace = 1 AND OutOfNoRbDiskSpace = 0 AND PROMPTROLLBACKCOST=&quot;D&quot;" Ordering="203" Options="2"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="SpawnDialog" Argument="OutOfDiskDlg" Condition="AI_PATCH AND ( (OutOfDiskSpace = 1 AND OutOfNoRbDiskSpace = 1) OR (OutOfDiskSpace = 1 AND PROMPTROLLBACKCOST=&quot;F&quot;) )" Ordering="204" Options="2"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="PatchWelcomeDlgDialogInitializer" Event="[AI_ButtonText_Next_Orig]" Argument="[ButtonText_Next]" Condition="AI_PATCH" Ordering="0" Options="2"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="PatchWelcomeDlgDialogInitializer" Event="[ButtonText_Next]" Argument="[[AI_CommitButton]]" Condition="AI_PATCH" Ordering="1" Options="2"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="PatchWelcomeDlgDialogInitializer" Event="[AI_Text_Next_Orig]" Argument="[Text_Next]" Condition="AI_PATCH" Ordering="2" Options="2"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="PatchWelcomeDlgDialogInitializer" Event="[Text_Next]" Argument="[Text_Install]" Condition="AI_PATCH" Ordering="3" Options="2"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Back" Event="[ButtonText_Next]" Argument="[AI_ButtonText_Next_Orig]" Condition="AI_PATCH" Ordering="0" Options="2"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Back" Event="[Text_Next]" Argument="[AI_Text_Next_Orig]" Condition="AI_PATCH" Ordering="1" Options="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCreateFolderComponent">
+    <ROW Directory_="APPDIR" Component_="APPDIR" ManualDelete="true"/>
+    <ROW Directory_="daddy_Dir" Component_="daddy" ManualDelete="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Type="51" Source="AI_SETUPEXEPATH_ORIGINAL" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_ChooseTextStyles" Type="1" Source="aicustact.dll" Target="ChooseTextStyles"/>
+    <ROW Action="AI_DATA_SETTER" Type="51" Source="AI_ExtractFiles" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_DeleteCadLzma" Type="51" Source="AI_DeleteLzma" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_DeleteLzma" Type="1025" Source="lzmaextractor.dll" Target="DeleteLZMAFiles"/>
+    <ROW Action="AI_DeleteRCadLzma" Type="51" Source="AI_DeleteRLzma" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_DeleteRLzma" Type="1281" Source="lzmaextractor.dll" Target="DeleteLZMAFiles"/>
+    <ROW Action="AI_DoRemoveExternalUIStub" Type="3585" Source="ExternalUICleaner.dll" Target="DoRemoveExternalUIStub" WithoutSeq="true"/>
+    <ROW Action="AI_DpiContentScale" Type="1" Source="aicustact.dll" Target="DpiContentScale"/>
+    <ROW Action="AI_EnableDebugLog" Type="321" Source="aicustact.dll" Target="EnableDebugLog"/>
+    <ROW Action="AI_EstimateExtractFiles" Type="1" Source="Prereq.dll" Target="EstimateExtractFiles"/>
+    <ROW Action="AI_ExtractCadLzma" Type="51" Source="AI_ExtractLzma" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_ExtractFiles" Type="1025" Source="Prereq.dll" Target="ExtractSourceFiles" AdditionalSeq="AI_DATA_SETTER"/>
+    <ROW Action="AI_ExtractLzma" Type="1025" Source="lzmaextractor.dll" Target="ExtractLZMAFiles"/>
+    <ROW Action="AI_FindExeLzma" Type="1" Source="lzmaextractor.dll" Target="FindEXE"/>
+    <ROW Action="AI_GetArpIconPath" Type="1" Source="aicustact.dll" Target="GetArpIconPath"/>
+    <ROW Action="AI_InstallModeCheck" Type="1" Source="aicustact.dll" Target="UpdateInstallMode" WithoutSeq="true"/>
+    <ROW Action="AI_LaunchApp" Type="1" Source="aicustact.dll" Target="[#launcher.exe]"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Type="51" Source="AI_SETUPEXEPATH" Target="[AI_SETUPEXEPATH_ORIGINAL]"/>
+    <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
+    <ROW Action="AI_RemoveExternalUIStub" Type="1" Source="ExternalUICleaner.dll" Target="RemoveExternalUIStub"/>
+    <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
+    <ROW Action="AI_RunFinishActions" Type="1" Source="aicustact.dll" Target="RunFinishActions" WithoutSeq="true"/>
+    <ROW Action="AI_SHOW_LOG" Type="65" Source="aicustact.dll" Target="LaunchLogFile" WithoutSeq="true"/>
+    <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]"/>
+    <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatCompsComponent">
+    <ROW Feature_="MainFeature" Component_="APPDIR"/>
+    <ROW Feature_="MainFeature" Component_="ProductInformation"/>
+    <ROW Feature_="MainFeature" Component_="atlas.png"/>
+    <ROW Feature_="MainFeature" Component_="qgenericbearer.dll"/>
+    <ROW Feature_="MainFeature" Component_="concrt140.dll"/>
+    <ROW Feature_="MainFeature" Component_="D3Dcompiler_47.dll"/>
+    <ROW Feature_="MainFeature" Component_="qsvgicon.dll"/>
+    <ROW Feature_="MainFeature" Component_="qgif.dll"/>
+    <ROW Feature_="MainFeature" Component_="qicns.dll"/>
+    <ROW Feature_="MainFeature" Component_="qico.dll"/>
+    <ROW Feature_="MainFeature" Component_="qjpeg.dll"/>
+    <ROW Feature_="MainFeature" Component_="qsvg.dll"/>
+    <ROW Feature_="MainFeature" Component_="qtga.dll"/>
+    <ROW Feature_="MainFeature" Component_="qtiff.dll"/>
+    <ROW Feature_="MainFeature" Component_="qwbmp.dll"/>
+    <ROW Feature_="MainFeature" Component_="qwebp.dll"/>
+    <ROW Feature_="MainFeature" Component_="launcher.exe"/>
+    <ROW Feature_="MainFeature" Component_="libEGL.dll"/>
+    <ROW Feature_="MainFeature" Component_="libGLESv2.dll"/>
+    <ROW Feature_="MainFeature" Component_="msvcp140.dll"/>
+    <ROW Feature_="MainFeature" Component_="msvcp140_1.dll"/>
+    <ROW Feature_="MainFeature" Component_="msvcp140_2.dll"/>
+    <ROW Feature_="MainFeature" Component_="msvcp140_codecvt_ids.dll"/>
+    <ROW Feature_="MainFeature" Component_="opengl32sw.dll"/>
+    <ROW Feature_="MainFeature" Component_="qwindows.dll"/>
+    <ROW Feature_="MainFeature" Component_="qtposition_positionpoll.dll"/>
+    <ROW Feature_="MainFeature" Component_="qtposition_serialnmea.dll"/>
+    <ROW Feature_="MainFeature" Component_="qtposition_winrt.dll"/>
+    <ROW Feature_="MainFeature" Component_="windowsprintersupport.dll"/>
+    <ROW Feature_="MainFeature" Component_="Qt5Core.dll"/>
+    <ROW Feature_="MainFeature" Component_="Qt5Gui.dll"/>
+    <ROW Feature_="MainFeature" Component_="Qt5Network.dll"/>
+    <ROW Feature_="MainFeature" Component_="Qt5OpenGL.dll"/>
+    <ROW Feature_="MainFeature" Component_="Qt5Positioning.dll"/>
+    <ROW Feature_="MainFeature" Component_="Qt5PrintSupport.dll"/>
+    <ROW Feature_="MainFeature" Component_="Qt5Qml.dll"/>
+    <ROW Feature_="MainFeature" Component_="Qt5QmlModels.dll"/>
+    <ROW Feature_="MainFeature" Component_="Qt5Quick.dll"/>
+    <ROW Feature_="MainFeature" Component_="Qt5QuickWidgets.dll"/>
+    <ROW Feature_="MainFeature" Component_="Qt5SerialPort.dll"/>
+    <ROW Feature_="MainFeature" Component_="Qt5Svg.dll"/>
+    <ROW Feature_="MainFeature" Component_="Qt5WebChannel.dll"/>
+    <ROW Feature_="MainFeature" Component_="Qt5WebEngineCore.dll"/>
+    <ROW Feature_="MainFeature" Component_="Qt5WebEngineWidgets.dll"/>
+    <ROW Feature_="MainFeature" Component_="Qt5Widgets.dll"/>
+    <ROW Feature_="MainFeature" Component_="QtWebEngineProcess.exe"/>
+    <ROW Feature_="MainFeature" Component_="icudtl.dat"/>
+    <ROW Feature_="MainFeature" Component_="qwindowsvistastyle.dll"/>
+    <ROW Feature_="MainFeature" Component_="am.pak"/>
+    <ROW Feature_="MainFeature" Component_="qt_ar.qm"/>
+    <ROW Feature_="MainFeature" Component_="vccorlib140.dll"/>
+    <ROW Feature_="MainFeature" Component_="vcruntime140.dll"/>
+    <ROW Feature_="MainFeature" Component_="vcruntime140_1.dll"/>
+    <ROW Feature_="MainFeature" Component_="daddy"/>
+    <ROW Feature_="MainFeature" Component_="AI_ExePath"/>
+    <ROW Feature_="MainFeature" Component_="AI_CustomARPName"/>
+    <ROW Feature_="MainFeature" Component_="logger.dum"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
+    <ROW Name="SystemFoldermsiexec.exe" SourcePath="&lt;AI_RES&gt;uninstall.ico" Index="0"/>
+    <ROW Name="main_1.exe" SourcePath="..\..\common\windows\main.ico" Index="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_STORE_LOCATION" Condition="(Not Installed) OR REINSTALL" Sequence="1502"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1399"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+    <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Sequence="99" Builds="DefaultBuild"/>
+    <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Condition="AI_SETUPEXEPATH_ORIGINAL" Sequence="101" Builds="DefaultBuild"/>
+    <ROW Action="AI_DeleteCadLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="199" Builds="DefaultBuild"/>
+    <ROW Action="AI_DeleteRCadLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="198" Builds="DefaultBuild"/>
+    <ROW Action="AI_ExtractCadLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="197" Builds="DefaultBuild"/>
+    <ROW Action="AI_FindExeLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="196" Builds="DefaultBuild"/>
+    <ROW Action="AI_ExtractLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="1549" Builds="DefaultBuild"/>
+    <ROW Action="AI_DeleteRLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="1548" Builds="DefaultBuild"/>
+    <ROW Action="AI_DeleteLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="6599" Builds="DefaultBuild"/>
+    <ROW Action="AI_ExtractFiles" Sequence="3998" Builds="DefaultBuild"/>
+    <ROW Action="AI_DATA_SETTER" Sequence="3997"/>
+    <ROW Action="AI_EstimateExtractFiles" Sequence="3999" Builds="DefaultBuild"/>
+    <ROW Action="AI_GetArpIconPath" Sequence="1401"/>
+    <ROW Action="AI_RemoveExternalUIStub" Condition="(REMOVE=&quot;ALL&quot;) AND ((VersionNT &gt; 500) OR((VersionNT = 500) AND (ServicePackLevel &gt;= 4)))" Sequence="1501"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="53"/>
+    <ROW Action="AI_DpiContentScale" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+    <ROW Action="InstallDlg" Condition="AI_INSTALL" Sequence="1230" SeqType="3" MsiKey="WelcomeDlg"/>
+    <ROW Action="MaintenanceTypeDlg" Condition="AI_MAINT" Sequence="1250" SeqType="3" MsiKey="MaintenanceTypeDlg"/>
+    <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Sequence="99"/>
+    <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Condition="AI_SETUPEXEPATH_ORIGINAL" Sequence="101"/>
+    <ROW Action="AI_ChooseTextStyles" Sequence="74"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
+    <ROW Condition="((VersionNT &lt;&gt; 501) AND (VersionNT &lt;&gt; 502))" Description="[ProductName]s에는 [WindowsTypeNT5XDisplay]을(를) 설치할 수 없습니다." DescriptionLocId="AI.LaunchCondition.NoNT5X" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 400)" Description="[ProductName]s에는 [WindowsTypeNT40Display]을(를) 설치할 수 없습니다." DescriptionLocId="AI.LaunchCondition.NoNT40" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 500)" Description="[ProductName]s에는 [WindowsTypeNT50Display]을(를) 설치할 수 없습니다." DescriptionLocId="AI.LaunchCondition.NoNT50" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="SETUPEXEDIR OR (REMOVE=&quot;ALL&quot;)" Description="This package can only be run from a bootstrapper." DescriptionLocId="AI.LaunchCondition.RequireBootstrapper" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="VersionNT" Description="[ProductName]s에는 [WindowsType9XDisplay]을(를) 설치할 수 없습니다." DescriptionLocId="AI.LaunchCondition.No9X" IsPredefined="true" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegLocatorComponent">
+    <ROW Signature_="AI_EXE_PATH_CU" Root="1" Key="Software\Caphyon\Advanced Installer\LZMA\[ProductCode]\[ProductVersion]" Name="AI_ExePath" Type="2"/>
+    <ROW Signature_="AI_EXE_PATH_LM" Root="2" Key="Software\Caphyon\Advanced Installer\LZMA\[ProductCode]\[ProductVersion]" Name="AI_ExePath" Type="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegsComponent">
+    <ROW Registry="AI_ExePath" Root="-1" Key="Software\Caphyon\Advanced Installer\LZMA\[ProductCode]\[ProductVersion]" Name="AI_ExePath" Value="[AI_SETUPEXEPATH]" Component_="AI_ExePath"/>
+    <ROW Registry="Comments" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="Comments" Value="[ARPCOMMENTS]" Component_="AI_CustomARPName"/>
+    <ROW Registry="Contact" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="Contact" Value="[ARPCONTACT]" Component_="AI_CustomARPName"/>
+    <ROW Registry="DisplayIcon" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="DisplayIcon" Value="[ARP_ICON_PATH]" Component_="AI_CustomARPName"/>
+    <ROW Registry="DisplayName" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="DisplayName" Value="[AI_PRODUCTNAME_ARP]" Component_="AI_CustomARPName"/>
+    <ROW Registry="DisplayVersion" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="DisplayVersion" Value="[ProductVersion]" Component_="AI_CustomARPName"/>
+    <ROW Registry="EstimatedSize" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="EstimatedSize" Value="#[AI_ARP_SIZE]" Component_="AI_CustomARPName"/>
+    <ROW Registry="HelpLink" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="HelpLink" Value="[ARPHELPLINK]" Component_="AI_CustomARPName"/>
+    <ROW Registry="HelpTelephone" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="HelpTelephone" Value="[ARPHELPTELEPHONE]" Component_="AI_CustomARPName"/>
+    <ROW Registry="InstallLocation" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="InstallLocation" Value="[APPDIR]" Component_="AI_CustomARPName"/>
+    <ROW Registry="ModifyPath" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="ModifyPath" Value="[AI_UNINSTALLER] /i [ProductCode] AI_UNINSTALLER_CTP=1" Component_="AI_CustomARPName"/>
+    <ROW Registry="NoRepair" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="NoRepair" Value="#1" Component_="AI_CustomARPName"/>
+    <ROW Registry="Path" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Path" Value="[APPDIR]" Component_="ProductInformation"/>
+    <ROW Registry="Publisher" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="Publisher" Value="[Manufacturer]" Component_="AI_CustomARPName"/>
+    <ROW Registry="Readme" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="Readme" Value="[ARPREADME]" Component_="AI_CustomARPName"/>
+    <ROW Registry="URLInfoAbout" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="URLInfoAbout" Value="[ARPURLINFOABOUT]" Component_="AI_CustomARPName"/>
+    <ROW Registry="URLUpdateInfo" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="URLUpdateInfo" Value="[ARPURLUPDATEINFO]" Component_="AI_CustomARPName"/>
+    <ROW Registry="UninstallPath" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="UninstallPath" Value="[AI_UNINSTALLER] /x [ProductCode] AI_UNINSTALLER_CTP=1" Component_="AI_CustomARPName"/>
+    <ROW Registry="UninstallString" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="UninstallString" Value="[AI_UNINSTALLER] /x [ProductCode] AI_UNINSTALLER_CTP=1" Component_="AI_CustomARPName"/>
+    <ROW Registry="Version" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Version" Value="[ProductVersion]" Component_="ProductInformation"/>
+    <ROW Registry="VersionMajor" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="VersionMajor" Value="#1" Component_="AI_CustomARPName"/>
+    <ROW Registry="VersionMinor" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="VersionMinor" Value="#0" Component_="AI_CustomARPName"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
+    <ROW Shortcut="ProductNameProductVersion" Directory_="daddy_Dir" Name="REMOVE~1|remove-launcher" Component_="vcruntime140_1.dll" Target="[SystemFolder]msiexec.exe" Arguments="/x [ProductCode]" Hotkey="0" Icon_="SystemFoldermsiexec.exe" IconIndex="0" ShowCmd="1"/>
+    <ROW Shortcut="launcher" Directory_="daddy_Dir" Name="launcher" Component_="launcher.exe" Target="[#launcher.exe]" Hotkey="0" Icon_="main_1.exe" IconIndex="0" ShowCmd="1" WkDir="bin_Release64_Dir"/>
+    <ROW Shortcut="launcher_1" Directory_="StartupFolder" Name="launcher" Component_="launcher.exe" Target="[#launcher.exe]" Hotkey="0" Icon_="main_1.exe" IconIndex="0" ShowCmd="1" WkDir="bin_Release64_Dir"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
+    <ATTRIBUTE name="UsedTheme" value="surface"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="0.0.1" VersionMax="[|ProductVersion]" Attributes="257" ActionProperty="OLDPRODUCTS"/>
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
+  </COMPONENT>
+</DOCUMENT>

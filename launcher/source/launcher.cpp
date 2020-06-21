@@ -304,20 +304,16 @@ void launcherData::ExecDumApp(sint32 i, chars act)
             else
             {
                 #if DD_OS_WINDOWS
-                    #define BIN_PATH "/bin_windows/"
+                    #define BIN_PATH "/bin_windows"
                 #elif DD_OS_LINUX
-                    #define BIN_PATH "/bin_ubuntu/"
+                    #define BIN_PATH "/bin_ubuntu"
                 #endif
 
                 const String DumAppsRemPath = Platform::File::RootForAssetsRem() + "../dumapps-rem/";
-                dString BinPath((chars) (mDumApps[i].mFileName + BIN_PATH));
-                dString WorkPath((chars) (mDumApps[i].mFileName + String::Format("/work_%d/", mDumApps[i].mWorkCount)));
+                dString BinPath((chars) (DumAppsRemPath + mDumApps[i].mFileName + BIN_PATH));
                 auto RunType = DD_fish[j]("option").get();
                 auto ArgsName = DD_fish[j]("args").get();
-                if(0 < ArgsName.length())
-                    dUtility::runProcess(DumAppsRemPath + BinPath + ExecName,
-                        DumAppsRemPath + BinPath + ArgsName, RunType, DumAppsRemPath + WorkPath);
-                else dUtility::runProcess(DumAppsRemPath + BinPath + ExecName, "", RunType, DumAppsRemPath + WorkPath);
+                dUtility::runProcess(BinPath + "/" + ExecName, ArgsName, RunType, BinPath);
             }
         }
     }
