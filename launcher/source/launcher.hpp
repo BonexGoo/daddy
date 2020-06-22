@@ -32,4 +32,6 @@ public:
 
 public:
     DumApps mDumApps;
+    float mScrollPos;
+    float mScrollTarget;
 };

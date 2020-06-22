@@ -18,14 +18,42 @@ ZAY_VIEW_API OnNotify(NotifyType type, chars topic, id_share in, id_cloned_share
 
 ZAY_VIEW_API OnGesture(GestureType type, sint32 x, sint32 y)
 {
+    static bool HasDrag = false;
+    static sint32 OldY = 0;
+    if(type == GT_Pressed)
+    {
+        HasDrag = false;
+        OldY = y;
+    }
+    else if(type == GT_InReleased || type == GT_OutReleased)
+    {
+        if(!HasDrag)
+            m->hide();
+    }
+    else if(type == GT_InDragging || type == GT_OutDragging)
+    {
+        HasDrag = true;
+        m->mScrollTarget += (OldY - y) * 2;
+        OldY = y;
+        m->invalidate();
+    }
+    else if(type == GT_WheelDown || type == GT_WheelUp)
+    {
+        m->mScrollTarget += (type == GT_WheelDown)? 300 : -300;
+        m->invalidate();
+    }
 }
 
-static const sint32 gIconSize = 60;
-static const sint32 gButtonWidth = 100;
-static const sint32 gButtonHeight = 36;
-static const sint32 gTitleHeight = 26;
+static const sint32 gIconSize = 40;
+static const sint32 gWidgetGap = 8;
+static const sint32 gWidgetWidthMin = 250;
+static const sint32 gWidgetHeight = gWidgetGap + 90;
+static const sint32 gButtonWidth = 60;
+static const sint32 gButtonHeight = 30;
+static const sint32 gSubButtonWidth = 75;
+static const sint32 gSubButtonHeight = 25;
+static const sint32 gTitleHeight = 22;
 static const sint32 gCommentHeight = 26;
-static const sint32 gWidgetHeight = 100;
 static const Color gWidgetColor[2] = {Color(96, 96, 96, 128), Color(0, 128, 255, 128)};
 
 ZAY_VIEW_API OnRender(ZayPanel& panel)
@@ -36,10 +64,14 @@ ZAY_VIEW_API OnRender(ZayPanel& panel)
     ZAY_INNER(panel, 10)
     {
         const String DumAppsRemPath = Platform::File::RootForAssetsRem() + "../dumapps-rem/";
-        const sint32 WidgetWidth = Math::Max(gIconSize + 300, panel.w());
-        for(sint32 i = 0, iend = m->mDumApps.Count(); i < iend; ++i)
+        const sint32 WidgetWidth = Math::Max(gWidgetWidthMin, panel.w());
+        const sint32 ScrollPos = sint32(m->mScrollPos + 0.5);
+        const sint32 iBegin = Math::Clamp(ScrollPos / gWidgetHeight, 0, m->mDumApps.Count() - 1);
+        const sint32 iEnd = Math::Clamp((ScrollPos + panel.h() + gWidgetHeight - 1) / gWidgetHeight, 0, m->mDumApps.Count());
+        for(sint32 i = iBegin; i < iEnd; ++i)
         {
-            ZAY_XYWH(panel, 0, (gWidgetHeight + 10 + 1) * i, WidgetWidth, gWidgetHeight)
+            ZAY_XYWH_SCISSOR(panel, 0, gWidgetHeight * i - ScrollPos, WidgetWidth, gWidgetHeight - gWidgetGap)
+            ZAY_INNER(panel, 1)
             {
                 const bool IsInstalled = Platform::File::ExistForDir(DumAppsRemPath + m->mDumApps[i].mFileName);
                 ZAY_COLOR(panel, gWidgetColor[IsInstalled])
@@ -64,18 +96,18 @@ ZAY_VIEW_API OnRender(ZayPanel& panel)
 
                     // 타이틀
                     ZAY_XYWH(panel, 5, 0, panel.w() - 10, gTitleHeight)
-                    ZAY_FONT(panel, 1.2, "Arial Black")
+                    ZAY_FONT(panel, 1.0, "Arial Black")
                     ZAY_RGB(panel, 0, 0, 0)
                     {
                         if(0 < m->mDumApps[i].mWorkCount)
                             panel.text(m->mDumApps[i].mFileName + String::Format(" (%d+)", m->mDumApps[i].mWorkCount),
-                                UIFA_LeftTop, UIFE_Right);
-                        else panel.text(m->mDumApps[i].mFileName, UIFA_LeftTop, UIFE_Right);
+                                UIFA_LeftBottom, UIFE_Right);
+                        else panel.text(m->mDumApps[i].mFileName, UIFA_LeftBottom, UIFE_Right);
                     }
 
                     // 설명
                     ZAY_XYWH(panel, 5, gTitleHeight, panel.w() - 10, gCommentHeight)
-                    ZAY_FONT(panel, 1, "Arial Black")
+                    ZAY_FONT(panel, 0.8, "Arial Black")
                     ZAY_RGB(panel, 96, 96, 96)
                         panel.text(m->mDumApps[i].mReadMe, UIFA_LeftTop, UIFE_Right);
 
@@ -85,8 +117,8 @@ ZAY_VIEW_API OnRender(ZayPanel& panel)
                     for(sint32 j = 0, jend = m->mDumApps[i].mCycle.length(); j < jend; ++j)
                     {
                         const String UIButton = String::Format("%s-%d", CycleType[j], i);
-                        ZAY_XYWH_UI(panel, panel.w() - (110 - 5) * (j + 1), panel.h() - (35 - 5), 100, 25,
-                            (IsInstalled)? UIButton : String(),
+                        ZAY_XYWH_UI(panel, panel.w() - (gSubButtonWidth + 5) * (j + 1), panel.h() - (gSubButtonHeight + 5),
+                            gSubButtonWidth, gSubButtonHeight, (IsInstalled)? UIButton : String(),
                             ZAY_GESTURE_T(t, i, j)
                             {
                                 if(t == GT_InReleased)
@@ -104,7 +136,7 @@ ZAY_VIEW_API OnRender(ZayPanel& panel)
                                     ZAY_RGBA(panel, 128, 128, 128, 160)
                                         panel.rect(1);
                                     ZAY_RGB(panel, 128, 128, 128)
-                                    ZAY_FONT(panel, 1.0, "Arial Black")
+                                    ZAY_FONT(panel, 0.8, "Arial Black")
                                         panel.text(panel.w() / 2, panel.h() / 2 - 1, CycleName[j]);
                                 }
                             }
@@ -117,6 +149,53 @@ ZAY_VIEW_API OnRender(ZayPanel& panel)
                     m->OnRenderButton(panel, i, IsInstalled);
             }
         }
+
+        // 스크롤한계처리
+        auto CheckScrollMax = [](float value, sint32 height)->float
+        {
+            if(value < 0)
+            {
+                value = 0;
+                m->invalidate(2);
+            }
+            else if(0 < value)
+            {
+                const sint32 ScrollMax = gWidgetHeight * m->mDumApps.Count() - height - gWidgetGap;
+                if(value > ScrollMax)
+                {
+                    value = ScrollMax;
+                    m->invalidate(2);
+                }
+            }
+            return value;
+        };
+        m->mScrollPos = CheckScrollMax(m->mScrollPos, panel.h());
+        m->mScrollTarget = CheckScrollMax(m->mScrollTarget, panel.h());
+    }
+
+    // 부드러운 마감선
+    for(sint32 i = 0; i < 10; ++i)
+    {
+        ZAY_XYWH(panel, 0, i, panel.w(), 1)
+        ZAY_RGBA(panel, 255, 255, 255, 255 * (10 - i) / 10)
+            panel.fill();
+        ZAY_XYWH(panel, 0, panel.h() - 1 - i, panel.w(), 1)
+        ZAY_RGBA(panel, 255, 255, 255, 255 * (10 - i) / 10)
+            panel.fill();
+    }
+
+    // 전체 마감선
+    ZAY_INNER(panel, 2)
+    ZAY_RGBA(panel, 0, 0, 0, 32)
+        panel.rect(2);
+
+    // 부드러운 스크롤이동
+    if(m->mScrollPos != m->mScrollTarget)
+    {
+        if(Math::AbsF(m->mScrollPos - m->mScrollTarget) < 1)
+            m->mScrollPos = m->mScrollTarget;
+        else m->mScrollPos = m->mScrollPos * 0.9 + m->mScrollTarget * 0.1;
+        m->invalidate(2);
     }
 }
 
@@ -128,6 +207,9 @@ launcherData::launcherData()
         auto Self = (launcherData*) data;
         Self->AddDumApp(itemname);
     }, this, true);
+
+    mScrollPos = 0;
+    mScrollTarget = 0;
 }
 
 launcherData::~launcherData()
@@ -161,7 +243,7 @@ void launcherData::OnRenderButton(ZayPanel& panel, sint32 i, bool installed)
                     panel.rect(1);
             }
 
-            ZAY_FONT(panel, 1.2, "Arial Black")
+            ZAY_FONT(panel, 0.8, "Arial Black")
             {
                 if(installed)
                 {

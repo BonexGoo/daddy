@@ -5,24 +5,19 @@
 #include <resource.hpp>
 #include <daddy.hpp>
 
+h_window gTrayWindow;
+
 bool PlatformInit()
 {
     dGlobal::load();
-    Platform::InitForMDI();
+    Platform::InitForGL();
     Platform::SetViewCreator(ZayView::Creator);
+    Platform::SetWindowVisible(false);
 
-    Platform::SetWindowName("launcher");
-    Platform::SetWindowView("launcherView");
-
-    String InfoString = String::FromAsset("windowinfo.json");
-    if(0 < InfoString.Length())
-    {
-        Context Info(ST_Json, SO_OnlyReference, InfoString, InfoString.Length());
-        Platform::SetWindowRect(
-            Info("x").GetInt(0), Info("y").GetInt(0),
-            Info("w").GetInt(640), Info("h").GetInt(480));
-    }
-    else Platform::SetWindowSize(640, 480);
+    h_policy NewPolicy = Platform::CreatePolicy(250, 200);
+    h_view NewView = Platform::CreateView("", 350, 300, NewPolicy, "launcherView");
+    h_icon NewIcon = Platform::CreateIcon("icon/daddy.png");
+    gTrayWindow = Platform::OpenTrayWindow(NewView, NewIcon);
 
     String AtlasInfoString = String::FromAsset("atlasinfo.json");
     Context AtlasInfo(ST_Json, SO_OnlyReference, AtlasInfoString, AtlasInfoString.Length());
@@ -51,14 +46,7 @@ bool PlatformInit()
 
 void PlatformQuit()
 {
-    rect128 WindowRect = Platform::GetWindowRect(true);
-
-    Context Info;
-    Info.At("x").Set(String::FromInteger(WindowRect.l));
-    Info.At("y").Set(String::FromInteger(WindowRect.t));
-    Info.At("w").Set(String::FromInteger(WindowRect.r - WindowRect.l));
-    Info.At("h").Set(String::FromInteger(WindowRect.b - WindowRect.t));
-    Info.SaveJson().ToAsset("windowinfo.json");
+    Platform::CloseWindow(gTrayWindow);
 
     Context AtlasInfo;
     R::SaveAtlas(AtlasInfo);

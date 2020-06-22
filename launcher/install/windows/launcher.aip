@@ -21,10 +21,10 @@
     <ROW Property="AppLogoIcon" Value="applogoicon" MultiBuildValue="DefaultBuild:daddy.jpg_1" Type="1" MsiKey="AppLogoIcon"/>
     <ROW Property="CTRLS" Value="2"/>
     <ROW Property="Manufacturer" Value="daddy"/>
-    <ROW Property="ProductCode" Value="1042:{56E99320-17D6-425E-A603-E57D5F361268} " Type="16"/>
+    <ROW Property="ProductCode" Value="1042:{DE2E54C8-EF93-4279-939D-C378AD9EE435} " Type="16"/>
     <ROW Property="ProductLanguage" Value="1042"/>
     <ROW Property="ProductName" Value="launcher"/>
-    <ROW Property="ProductVersion" Value="1.0.0" Type="32"/>
+    <ROW Property="ProductVersion" Value="1.0.1" Type="32"/>
     <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND;AI_SETUPEXEPATH;SETUPEXEDIR"/>
     <ROW Property="UpgradeCode" Value="{E6914295-CFF6-48F6-A8AB-CA1C657FD0DB}"/>
     <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
@@ -46,6 +46,7 @@
     <ROW Directory="bin_Release64_Dir" Directory_Parent="APPDIR" DefaultDir="BIN_RE~1|bin_Release64"/>
     <ROW Directory="daddy_Dir" Directory_Parent="ProgramMenuFolder" DefaultDir="daddy"/>
     <ROW Directory="dumapps_Dir" Directory_Parent="APPDIR" DefaultDir="dumapps"/>
+    <ROW Directory="icon_Dir" Directory_Parent="assets_Dir" DefaultDir="icon"/>
     <ROW Directory="iconengines_Dir" Directory_Parent="bin_Release64_Dir" DefaultDir="ICONEN~1|iconengines"/>
     <ROW Directory="image_Dir" Directory_Parent="assets_Dir" DefaultDir="image"/>
     <ROW Directory="imageformats_Dir" Directory_Parent="bin_Release64_Dir" DefaultDir="IMAGEF~1|imageformats"/>
@@ -58,7 +59,7 @@
     <ROW Directory="translations_Dir" Directory_Parent="bin_Release64_Dir" DefaultDir="TRANSL~1|translations"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
-    <ROW Component="AI_CustomARPName" ComponentId="{225FEE00-9E02-4201-BED1-2651460D8AF9}" Directory_="APPDIR" Attributes="4" KeyPath="DisplayName" Options="1"/>
+    <ROW Component="AI_CustomARPName" ComponentId="{75ABF7C6-9C81-4D70-9A2A-0F3306CD56C2}" Directory_="APPDIR" Attributes="4" KeyPath="DisplayName" Options="1"/>
     <ROW Component="AI_ExePath" ComponentId="{12482F26-DB5D-4E68-AFE9-9845EFE3E310}" Directory_="APPDIR" Attributes="4" KeyPath="AI_ExePath"/>
     <ROW Component="APPDIR" ComponentId="{F1F64EC3-727A-46F7-8086-82BEDCEDB4B3}" Directory_="APPDIR" Attributes="0"/>
     <ROW Component="D3Dcompiler_47.dll" ComponentId="{7B45F920-D432-4B38-975B-C301CD6865D7}" Directory_="bin_Release64_Dir" Attributes="256" KeyPath="D3Dcompiler_47.dll"/>
@@ -84,6 +85,7 @@
     <ROW Component="atlas.png" ComponentId="{2AF5E20B-A80D-46C0-94A5-9E9E7EC4BD5A}" Directory_="image_Dir" Attributes="0" KeyPath="atlas.png" Type="0"/>
     <ROW Component="concrt140.dll" ComponentId="{77791B6E-6079-4B15-9F41-F297C8D7707F}" Directory_="bin_Release64_Dir" Attributes="256" KeyPath="concrt140.dll"/>
     <ROW Component="daddy" ComponentId="{ADC409D9-D6A1-42BA-8EC8-4C404F954C53}" Directory_="daddy_Dir" Attributes="0"/>
+    <ROW Component="daddy.png" ComponentId="{994D37B9-E3D2-41E3-83D6-00438B7F86F0}" Directory_="icon_Dir" Attributes="0" KeyPath="daddy.png" Type="0"/>
     <ROW Component="icudtl.dat" ComponentId="{341BE508-E617-4A78-A284-52268F317F32}" Directory_="resources_Dir" Attributes="0" KeyPath="icudtl.dat" Type="0"/>
     <ROW Component="launcher.exe" ComponentId="{331DCEA0-3274-4857-9A5D-518B8DEF5442}" Directory_="bin_Release64_Dir" Attributes="256" KeyPath="launcher.exe"/>
     <ROW Component="libEGL.dll" ComponentId="{925E857D-528E-4903-A5FD-2DCE80F51602}" Directory_="bin_Release64_Dir" Attributes="256" KeyPath="libEGL.dll"/>
@@ -255,6 +257,7 @@
     <ROW File="telegraph.dum" Component_="logger.dum" FileName="TELEGR~1.DUM|telegraph.dum" Attributes="0" SourcePath="..\..\dumapps\telegraph.dum" SelfReg="false"/>
     <ROW File="zayeditor.dum" Component_="logger.dum" FileName="ZAYEDI~1.DUM|zayeditor.dum" Attributes="0" SourcePath="..\..\dumapps\zayeditor.dum" SelfReg="false"/>
     <ROW File="zayreviewer.dum" Component_="logger.dum" FileName="ZAYREV~1.DUM|zayreviewer.dum" Attributes="0" SourcePath="..\..\dumapps\zayreviewer.dum" SelfReg="false"/>
+    <ROW File="daddy.png" Component_="daddy.png" FileName="daddy.png" Attributes="0" SourcePath="..\..\assets\icon\daddy.png" SelfReg="false"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.BootstrOptComponent">
     <ROW BootstrOptKey="GlobalOptions" DownloadFolder="[AppDataFolder][|Manufacturer]\[|ProductName]\prerequisites" Options="2"/>
@@ -465,6 +468,7 @@
     <ROW Feature_="MainFeature" Component_="AI_ExePath"/>
     <ROW Feature_="MainFeature" Component_="AI_CustomARPName"/>
     <ROW Feature_="MainFeature" Component_="logger.dum"/>
+    <ROW Feature_="MainFeature" Component_="daddy.png"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
     <ROW Name="SystemFoldermsiexec.exe" SourcePath="&lt;AI_RES&gt;uninstall.ico" Index="0"/>
