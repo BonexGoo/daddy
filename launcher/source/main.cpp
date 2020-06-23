@@ -6,10 +6,14 @@
 #include <daddy.hpp>
 
 h_window gTrayWindow;
+DD_global("gSemaphore", dSemaphore, gSemaphore);
 
 bool PlatformInit()
 {
     dGlobal::load();
+    if(!gSemaphore.createOnly("daddy-launcher"))
+        return false;
+
     Platform::InitForGL();
     Platform::SetViewCreator(ZayView::Creator);
     Platform::SetWindowVisible(false);

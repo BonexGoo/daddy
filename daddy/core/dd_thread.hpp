@@ -5,7 +5,6 @@
 
 // Dependencies
 #include "dd_escaper.hpp"
-#include "dd_string.hpp"
 
 namespace Daddy {
 
@@ -56,7 +55,7 @@ DD_escaper_alone(dSemaphore): // 객체사이클
     void _move_(_self_&& rhs);
     void _copy_(const _self_& rhs);
     ptr mData;
-    dString mName;
+    utf8* mName;
 };
 
 } // namespace Daddy

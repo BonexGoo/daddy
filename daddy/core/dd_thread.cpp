@@ -40,6 +40,7 @@
             else if(GetLastError() == ERROR_ALREADY_EXISTS) \
             { \
                 CloseHandle(*(ID)); \
+                *(ID) = nullptr; \
                 RET = false; \
             } \
             else RET = true; \
@@ -124,7 +125,9 @@ void dMutex::_copy_(const _self_& rhs)
 void dSemaphore::bind(utf8s name)
 {
     SEMAPHORE_BIND((SemaphoreData*) mData, name);
-    mName = name;
+    const size_t NameLen = strlen(name);
+    mName = new utf8[NameLen + 1];
+    strcpy(mName, name);
 }
 
 bool dSemaphore::createOnly(utf8s name)
@@ -133,7 +136,9 @@ bool dSemaphore::createOnly(utf8s name)
     SEMAPHORE_CREATE((SemaphoreData*) mData, name, Success);
     if(Success)
     {
-        mName = name;
+        const size_t NameLen = strlen(name);
+        mName = new utf8[NameLen + 1];
+        strcpy(mName, name);
         return true;
     }
     return false;
@@ -160,18 +165,20 @@ void dSemaphore::_init_(InitType type)
         mData = NewData;
     }
     else mData = nullptr;
+    mName = nullptr;
 }
 
 void dSemaphore::_quit_()
 {
     if(*((SemaphoreData*) mData))
         SEMAPHORE_DESTROY((SemaphoreData*) mData, mName);
+    delete[] mName;
 }
 
 void dSemaphore::_move_(_self_&& rhs)
 {
     mData = rhs.mData;
-    mName = DD_rvalue(rhs.mName);
+    mName = rhs.mName;
 }
 
 void dSemaphore::_copy_(const _self_& rhs)
