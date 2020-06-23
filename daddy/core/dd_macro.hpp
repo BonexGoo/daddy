@@ -3,8 +3,25 @@
 \section information 목적
     - 컴포넌트식 네트워크 서버엔진
 \section advanced 소개
-    - core: 기반기술
-    - toolkit: 지원프로그램
+    - dd_binary.hpp/dBinary: 바이너리의 스마트한 데이터관리
+    - dd_detector.hpp/dDetector: logger랑 통신하는 로그클라이언트
+    - dd_escaper.hpp/dEscaper: 기존 객체개념을 탈출한 새로운 객체모델
+    - dd_global.hpp/dGlobal: 일괄적으로 On/Off가 가능한 글로벌인스턴스관리
+    - dd_handle.hpp/dHandle: 사용자 객체의 스마트한 핸들관리
+    - dd_markup.hpp/dMarkup: 구조적데이터관리(현재 yaml파서)
+    - dd_platform.hpp/dSocket: 서버/클라이언트의 역할모델
+    - dd_platform.hpp/dUtility: 유틸리티 기능제공(현재 프로세스관리)
+    - dd_string.hpp/dLiteral: 상수를 보장하는 스트링객체
+    - dd_string.hpp/dString: 복사하지 않고 스트링끼리 부분참조되는 스트링객체
+    - dd_telepath.hpp/dTelepath: telegraph랑 통신하는 RPC클라이언트
+    - dd_thread.hpp/dMutex: 뮤텍스객체
+    - dd_thread.hpp/dSemaphore: 세마포어객체
+    - dd_unique.hpp/dUnique: 자기 프로세스의 각종 정보제공
+    - dd_zoker.hpp/dZoker: 메모리할당없는 구조적바이너리 생산객체
+    - dd_zoker.hpp/dZokeReader: 메모리할당없는 구조적바이너리 사용객체
+\section precautions 주의사항
+    - 응용프로그램이 시작하는 시점에 dGlobal::load()를 호출
+    - 응용프로그램이 종료되는 시점에 dGlobal::release()를 호출
 \section developer 개발자
     - BonexGoo
 \section contact 연락처
