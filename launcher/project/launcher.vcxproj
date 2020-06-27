@@ -29,10 +29,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\source\boss_config.h" />
+    <ClInclude Include="..\source\appview.hpp" />
     <ClInclude Include="..\source\launcher.hpp" />
     <ClInclude Include="..\source\resource.hpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\source\appview.cpp" />
     <ClCompile Include="..\source\launcher.cpp" />
     <ClCompile Include="..\source\main.cpp" />
     <ClCompile Include="..\source\resource.cpp" />

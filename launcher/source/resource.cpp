@@ -8,6 +8,8 @@
 
 namespace BOSS
 {
+    const Color R::WidgetColor[2] = {Color(96, 96, 96, 128), Color(0, 128, 255, 128)};
+
     class BoolClass
     {
     public:

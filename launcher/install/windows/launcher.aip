@@ -21,10 +21,10 @@
     <ROW Property="AppLogoIcon" Value="applogoicon" MultiBuildValue="DefaultBuild:daddy.jpg_1" Type="1" MsiKey="AppLogoIcon"/>
     <ROW Property="CTRLS" Value="2"/>
     <ROW Property="Manufacturer" Value="daddy"/>
-    <ROW Property="ProductCode" Value="1042:{510A9488-D12D-4751-8C9C-1548D2025DD5} " Type="16"/>
+    <ROW Property="ProductCode" Value="1042:{966200C2-02D5-46DC-BBBD-D98F3328FF51} " Type="16"/>
     <ROW Property="ProductLanguage" Value="1042"/>
     <ROW Property="ProductName" Value="launcher"/>
-    <ROW Property="ProductVersion" Value="1.0.2" Type="32"/>
+    <ROW Property="ProductVersion" Value="1.0.3" Type="32"/>
     <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND;AI_SETUPEXEPATH;SETUPEXEDIR"/>
     <ROW Property="UpgradeCode" Value="{E6914295-CFF6-48F6-A8AB-CA1C657FD0DB}"/>
     <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
@@ -59,7 +59,7 @@
     <ROW Directory="translations_Dir" Directory_Parent="bin_Release64_Dir" DefaultDir="TRANSL~1|translations"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
-    <ROW Component="AI_CustomARPName" ComponentId="{6CAE0621-2B25-4A96-90AA-B36CF7AC61ED}" Directory_="APPDIR" Attributes="4" KeyPath="DisplayName" Options="1"/>
+    <ROW Component="AI_CustomARPName" ComponentId="{F7BB2CBE-CE0A-4AA6-8E70-640A63575442}" Directory_="APPDIR" Attributes="4" KeyPath="DisplayName" Options="1"/>
     <ROW Component="AI_ExePath" ComponentId="{12482F26-DB5D-4E68-AFE9-9845EFE3E310}" Directory_="APPDIR" Attributes="4" KeyPath="AI_ExePath"/>
     <ROW Component="APPDIR" ComponentId="{F1F64EC3-727A-46F7-8086-82BEDCEDB4B3}" Directory_="APPDIR" Attributes="0"/>
     <ROW Component="D3Dcompiler_47.dll" ComponentId="{7B45F920-D432-4B38-975B-C301CD6865D7}" Directory_="bin_Release64_Dir" Attributes="256" KeyPath="D3Dcompiler_47.dll"/>

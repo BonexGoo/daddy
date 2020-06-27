@@ -10,6 +10,19 @@ namespace BOSS
         ~R();
 
     public:
+        static const sint32 IconSize = 40;
+        static const sint32 WidgetGap = 8;
+        static const sint32 WidgetWidthMin = 250;
+        static const sint32 WidgetHeight = WidgetGap + 90;
+        static const sint32 ButtonWidth = 60;
+        static const sint32 ButtonHeight = 30;
+        static const sint32 SubButtonWidth = 75;
+        static const sint32 SubButtonHeight = 25;
+        static const sint32 TitleHeight = 22;
+        static const sint32 CommentHeight = 26;
+        static const Color WidgetColor[2];
+
+    public:
         static void SetAtlasDir(chars dirname);
         static void AddAtlas(chars key_filename, chars map_filename, const Context& ctx);
         static void SaveAtlas(Context& ctx);
