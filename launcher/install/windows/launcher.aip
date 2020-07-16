@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<DOCUMENT Type="Advanced Installer" CreateVersion="17.1.2" version="17.1.2" Modules="professional" RootPath="." Language="ko" Id="{2C8CE8A0-2FA8-4887-A3D7-9E7D9F4B91C7}">
+<DOCUMENT Type="Advanced Installer" CreateVersion="17.1.2" version="17.2" Modules="professional" RootPath="." Language="ko" Id="{2C8CE8A0-2FA8-4887-A3D7-9E7D9F4B91C7}">
   <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
     <ROW Property="AI_BITMAP_DISPLAY_MODE" Value="0"/>
     <ROW Property="AI_COLOR_DISABLED_TEXT" Value="3026478" MultiBuildValue="DefaultBuild:15461355" MsiKey="AI_COLOR_DISABLED_TEXT"/>
@@ -21,10 +21,10 @@
     <ROW Property="AppLogoIcon" Value="applogoicon" MultiBuildValue="DefaultBuild:daddy.jpg_1" Type="1" MsiKey="AppLogoIcon"/>
     <ROW Property="CTRLS" Value="2"/>
     <ROW Property="Manufacturer" Value="daddy"/>
-    <ROW Property="ProductCode" Value="1042:{966200C2-02D5-46DC-BBBD-D98F3328FF51} " Type="16"/>
+    <ROW Property="ProductCode" Value="1042:{CF568A1F-1E8F-4819-B061-6F360B4918E5} " Type="16"/>
     <ROW Property="ProductLanguage" Value="1042"/>
     <ROW Property="ProductName" Value="launcher"/>
-    <ROW Property="ProductVersion" Value="1.0.3" Type="32"/>
+    <ROW Property="ProductVersion" Value="1.0.5" Type="32"/>
     <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND;AI_SETUPEXEPATH;SETUPEXEDIR"/>
     <ROW Property="UpgradeCode" Value="{E6914295-CFF6-48F6-A8AB-CA1C657FD0DB}"/>
     <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
@@ -59,7 +59,7 @@
     <ROW Directory="translations_Dir" Directory_Parent="bin_Release64_Dir" DefaultDir="TRANSL~1|translations"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
-    <ROW Component="AI_CustomARPName" ComponentId="{F7BB2CBE-CE0A-4AA6-8E70-640A63575442}" Directory_="APPDIR" Attributes="4" KeyPath="DisplayName" Options="1"/>
+    <ROW Component="AI_CustomARPName" ComponentId="{A2E127EC-3DDA-47FA-BE5B-9F0ED7B5FB81}" Directory_="APPDIR" Attributes="4" KeyPath="DisplayName" Options="1"/>
     <ROW Component="AI_ExePath" ComponentId="{12482F26-DB5D-4E68-AFE9-9845EFE3E310}" Directory_="APPDIR" Attributes="4" KeyPath="AI_ExePath"/>
     <ROW Component="APPDIR" ComponentId="{F1F64EC3-727A-46F7-8086-82BEDCEDB4B3}" Directory_="APPDIR" Attributes="0"/>
     <ROW Component="D3Dcompiler_47.dll" ComponentId="{7B45F920-D432-4B38-975B-C301CD6865D7}" Directory_="bin_Release64_Dir" Attributes="256" KeyPath="D3Dcompiler_47.dll"/>

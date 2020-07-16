@@ -8,7 +8,7 @@
 
 AppView::AppView()
 {
-    String DumAppsPath = Platform::File::RootForAssetsRem() + "../dumapps/";
+    String DumAppsPath = Platform::File::RootForAssets() + "../dumapps/";
     Platform::File::Search(DumAppsPath + '*', [](chars itemname, payload data)->void
     {
         auto Self = (AppView*) data;
@@ -56,7 +56,7 @@ bool AppView::Render(ZayPanel& panel)
         })
     ZAY_INNER(panel, 10)
     {
-        const String DumAppsRemPath = Platform::File::RootForAssetsRem() + "../dumapps-rem/";
+        const String DumAppsRemPath = Platform::File::RootForAssetsRem() + "dumapps-rem/";
         const sint32 WidgetWidth = Math::Max(R::WidgetWidthMin, panel.w());
         const sint32 ScrollPos = sint32(mScrollPos + 0.5);
         const sint32 iBegin = Math::Clamp(ScrollPos / R::WidgetHeight, 0, mDumApps.Count() - 1);
@@ -297,7 +297,7 @@ void AppView::AddDumApp(chars path)
 
 void AppView::InstallDumApp(sint32 i)
 {
-    const String DumAppsRemPath = Platform::File::RootForAssetsRem() + "../dumapps-rem/";
+    const String DumAppsRemPath = Platform::File::RootForAssetsRem() + "dumapps-rem/";
     auto& CurDumApp = mDumApps[i];
 
     buffer NewZipBuffer = PathToBuffer(CurDumApp.mFilePath);
@@ -341,7 +341,7 @@ static void _RemoveSApp(chars dirpath)
 void AppView::RemoveDumApp(sint32 i)
 {
     ExecDumApp(i, "kill");
-    const String DumAppsRemPath = Platform::File::RootForAssetsRem() + "../dumapps-rem/";
+    const String DumAppsRemPath = Platform::File::RootForAssetsRem() + "dumapps-rem/";
     _RemoveSApp(DumAppsRemPath + mDumApps[i].mFileName);
 }
 
@@ -363,7 +363,7 @@ void AppView::ExecDumApp(sint32 i, chars act)
                     #define BIN_PATH "/bin_ubuntu"
                 #endif
 
-                const String DumAppsRemPath = Platform::File::RootForAssetsRem() + "../dumapps-rem/";
+                const String DumAppsRemPath = Platform::File::RootForAssetsRem() + "dumapps-rem/";
                 dString BinPath((chars) (DumAppsRemPath + mDumApps[i].mFileName + BIN_PATH));
                 auto RunType = DD_fish[j]("option").get();
                 auto ArgsName = DD_fish[j]("args").get();

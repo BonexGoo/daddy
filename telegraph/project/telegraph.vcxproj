@@ -97,20 +97,24 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
     <IncludePath>$(IncludePath);</IncludePath>
+    <TargetName>telegraph</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
     <IncludePath>$(IncludePath);</IncludePath>
     <EmbedManifest>false</EmbedManifest>
+    <TargetName>telegraph</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
     <IncludePath>$(IncludePath);</IncludePath>
+    <TargetName>telegraph</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
     <IncludePath>$(IncludePath);</IncludePath>
     <EmbedManifest>false</EmbedManifest>
+    <TargetName>telegraph</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -125,16 +129,16 @@
       </PrecompiledHeaderFile>
     </ClCompile>
     <Link>
-      <SubSystem>Console</SubSystem>
-      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)$(TargetName).exe</OutputFile>
       <AdditionalLibraryDirectories>$(OutDir).;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
       <UACExecutionLevel>AsInvoker</UACExecutionLevel>
     </Link>
     <PostBuildEvent>
-      <Command>xcopy "$(OutDir)$(ProjectName).exe" "..\bin_$(Configuration)$(PlatformArchitecture)" /F /S /R /Y /I
-xcopy "$(OutDir)$(ProjectName).pdb" "..\bin_$(Configuration)$(PlatformArchitecture)" /F /S /R /Y /I
+      <Command>xcopy "$(OutDir)$(TargetFileName)" "..\bin_$(Configuration)$(PlatformArchitecture)" /F /S /R /Y /I
+xcopy "$(OutDir)$(TargetName).pdb" "..\bin_$(Configuration)$(PlatformArchitecture)" /F /S /R /Y /I
 xcopy "$(VCInstallDir)Redist\MSVC\$(VCToolsRedistVersion)\$(PlatformTarget)\Microsoft.VC$(PlatformToolsetVersion).CRT\*.*" "..\bin_$(Configuration)$(PlatformArchitecture)" /F /R /Y /I
 "$(QTDIR)\bin\windeployqt.exe" "..\bin_$(Configuration)$(PlatformArchitecture)\$(TargetFileName)"
 </Command>
@@ -156,15 +160,15 @@ xcopy "$(VCInstallDir)Redist\MSVC\$(VCToolsRedistVersion)\$(PlatformTarget)\Micr
       </PrecompiledHeaderFile>
     </ClCompile>
     <Link>
-      <SubSystem>Console</SubSystem>
-      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)$(TargetName).exe</OutputFile>
       <AdditionalLibraryDirectories>$(OutDir).;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>xcopy "$(OutDir)$(ProjectName).exe" "..\bin_$(Configuration)$(PlatformArchitecture)" /F /S /R /Y /I
-xcopy "$(OutDir)$(ProjectName).pdb" "..\bin_$(Configuration)$(PlatformArchitecture)" /F /S /R /Y /I
+      <Command>xcopy "$(OutDir)$(TargetFileName)" "..\bin_$(Configuration)$(PlatformArchitecture)" /F /S /R /Y /I
+xcopy "$(OutDir)$(TargetName).pdb" "..\bin_$(Configuration)$(PlatformArchitecture)" /F /S /R /Y /I
 xcopy "$(VCInstallDir)Redist\MSVC\$(VCToolsRedistVersion)\$(PlatformTarget)\Microsoft.VC$(PlatformToolsetVersion).CRT\*.*" "..\bin_$(Configuration)$(PlatformArchitecture)" /F /R /Y /I
 "$(QTDIR)\bin\windeployqt.exe" "..\bin_$(Configuration)$(PlatformArchitecture)\$(TargetFileName)"
 </Command>
@@ -189,15 +193,15 @@ xcopy "$(VCInstallDir)Redist\MSVC\$(VCToolsRedistVersion)\$(PlatformTarget)\Micr
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
-      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <OutputFile>$(OutDir)$(TargetName).exe</OutputFile>
       <AdditionalLibraryDirectories>$(OutDir).;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
       <UACExecutionLevel>AsInvoker</UACExecutionLevel>
     </Link>
     <PostBuildEvent>
-      <Command>xcopy "$(OutDir)$(ProjectName).exe" "..\bin_$(Configuration)$(PlatformArchitecture)" /F /S /R /Y /I
-xcopy "$(OutDir)$(ProjectName).pdb" "..\bin_$(Configuration)$(PlatformArchitecture)" /F /S /R /Y /I
+      <Command>xcopy "$(OutDir)$(TargetFileName)" "..\bin_$(Configuration)$(PlatformArchitecture)" /F /S /R /Y /I
+xcopy "$(OutDir)$(TargetName).pdb" "..\bin_$(Configuration)$(PlatformArchitecture)" /F /S /R /Y /I
 xcopy "$(VCInstallDir)Redist\MSVC\$(VCToolsRedistVersion)\$(PlatformTarget)\Microsoft.VC$(PlatformToolsetVersion).CRT\*.*" "..\bin_$(Configuration)$(PlatformArchitecture)" /F /R /Y /I
 "$(QTDIR)\bin\windeployqt.exe" "..\bin_$(Configuration)$(PlatformArchitecture)\$(TargetFileName)"
 </Command>
@@ -223,14 +227,14 @@ xcopy "$(VCInstallDir)Redist\MSVC\$(VCToolsRedistVersion)\$(PlatformTarget)\Micr
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
-      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <OutputFile>$(OutDir)$(TargetName).exe</OutputFile>
       <AdditionalLibraryDirectories>$(OutDir).;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>xcopy "$(OutDir)$(ProjectName).exe" "..\bin_$(Configuration)$(PlatformArchitecture)" /F /S /R /Y /I
-xcopy "$(OutDir)$(ProjectName).pdb" "..\bin_$(Configuration)$(PlatformArchitecture)" /F /S /R /Y /I
+      <Command>xcopy "$(OutDir)$(TargetFileName)" "..\bin_$(Configuration)$(PlatformArchitecture)" /F /S /R /Y /I
+xcopy "$(OutDir)$(TargetName).pdb" "..\bin_$(Configuration)$(PlatformArchitecture)" /F /S /R /Y /I
 xcopy "$(VCInstallDir)Redist\MSVC\$(VCToolsRedistVersion)\$(PlatformTarget)\Microsoft.VC$(PlatformToolsetVersion).CRT\*.*" "..\bin_$(Configuration)$(PlatformArchitecture)" /F /R /Y /I
 "$(QTDIR)\bin\windeployqt.exe" "..\bin_$(Configuration)$(PlatformArchitecture)\$(TargetFileName)"
 </Command>
@@ -244,7 +248,7 @@ xcopy "$(VCInstallDir)Redist\MSVC\$(VCToolsRedistVersion)\$(PlatformTarget)\Micr
   </ImportGroup>
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties lreleaseOptions="" lupdateOnBuild="0" lupdateOptions="" MocDir=".\GeneratedFiles\$(ConfigurationName)" MocOptions="" Qt5Version_x0020_Win32="msvc2019" Qt5Version_x0020_x64="msvc2019_64" RccDir=".\GeneratedFiles" UicDir=".\GeneratedFiles" />
+      <UserProperties lreleaseOptions="" lupdateOnBuild="0" lupdateOptions="" MocDir=".\GeneratedFiles\$(ConfigurationName)" MocOptions="" Qt5Version_x0020_Win32="$(DefaultQtVersion)" Qt5Version_x0020_x64="$(DefaultQtVersion)" RccDir=".\GeneratedFiles" UicDir=".\GeneratedFiles" />
     </VisualStudio>
   </ProjectExtensions>
 </Project>
