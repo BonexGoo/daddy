@@ -725,7 +725,7 @@ void dUtility::killProcessAll(dLiteral exename)
         for(int i = 0; i < ProcessCount; ++i)
         {
             HANDLE CurProcess = OpenProcess(PROCESS_ALL_ACCESS, TRUE, ProcessIDs[i]);
-            if(GetModuleBaseName(CurProcess, 0, TempName, 256))
+            if(GetModuleBaseNameA(CurProcess, 0, TempName, 256))
                 if(!strcmp(TempName, CompName))
                     TerminateProcess(CurProcess, 0);
             CloseHandle(CurProcess);
