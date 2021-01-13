@@ -19,7 +19,7 @@ void dZoker::clear()
 dZoker& dZoker::operator()(utf8s_nn key, int32_t length)
 {
     valid(ZokeType::Nameable);
-    return (*mValue.mNameablePtr)[std::string(key, (length == -1)? std::strlen(key) : length)];
+    return (*mValue.mNameablePtr)[std::string(key, (length == -1)? strlen(key) : length)];
 }
 
 dZoker& dZoker::operator()(const dLiteral& key)
@@ -31,7 +31,7 @@ dZoker* dZoker::access(utf8s_nn key, int32_t length) const
 {
     if(mType == ZokeType::Nameable)
     {
-        auto it = mValue.mNameablePtr->find(std::string(key, (length == -1)? std::strlen(key) : length));
+        auto it = mValue.mNameablePtr->find(std::string(key, (length == -1)? strlen(key) : length));
         if(it != mValue.mNameablePtr->end())
             return &it->second;
     }
@@ -314,7 +314,7 @@ const dZokeReader dZokeReader::operator()(utf8s_nn key, int32_t length) const
     if(mBuffer[0] != (dump) ZokeType::Nameable)
         return blank();
     if(length == -1)
-        length = std::strlen(key);
+        length = strlen(key);
 
     dumps Temp = &mBuffer[1];
     const uint32_t ChildCount = readVar(Temp);

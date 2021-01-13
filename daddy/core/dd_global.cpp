@@ -6,6 +6,7 @@
 // Dependencies
 #if DD_OS_WINDOWS
 #else
+    #include <cstring>
 #endif
 
 namespace Daddy {

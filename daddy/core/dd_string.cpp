@@ -8,8 +8,8 @@
 #include <stdarg.h>
 #include <unordered_set>
 
+// https://docs.microsoft.com/ko-kr/cpp/c-language/type-double?view=vs-2019
 #define DBL_MAX_BIAS 308
-// [INFO] https://docs.microsoft.com/ko-kr/cpp/c-language/type-double?view=vs-2019
 
 namespace Daddy {
 

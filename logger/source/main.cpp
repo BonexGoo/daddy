@@ -9,6 +9,12 @@ bool PlatformInit()
 {
     dGlobal::load();
     Platform::InitForGL();
+    if(Asset::RebuildForEmbedded())
+        return false;
+
+    String DataPath = Platform::File::RootForData();
+    Platform::File::ResetAssetsRemRoot(DataPath);
+
     Platform::SetViewCreator(ZayView::Creator);
     Platform::SetWindowName("logger");
     Platform::SetWindowView("loggerView");

@@ -44,17 +44,34 @@ dLiteral dUnique::deviceId(dString* fp)
         }
     #elif DD_OS_LINUX
         // 맥어드레스
-        struct ifreq s;
-        int fd = socket(PF_INET, SOCK_DGRAM, IPPROTO_IP);
-        strcpy(s.ifr_name, "eth0");
-        if(!ioctl(fd, SIOCGIFHWADDR, &s))
+        const int Sock = socket(AF_INET, SOCK_DGRAM, IPPROTO_IP);
+        if(Sock != -1)
         {
-            gFingerPrint += "/mac:";
-            for(int i = 0; i < 6; ++i)
+            struct ifreq Ifr;
+            struct ifconf Ifc;
+            char Buf[1024];
+            Ifc.ifc_len = sizeof(Buf);
+            Ifc.ifc_buf = Buf;
+            if(ioctl(Sock, SIOCGIFCONF, &Ifc) == -1) {}
+            struct ifreq* It = Ifc.ifc_req;
+            const struct ifreq* const End = It + (Ifc.ifc_len / sizeof(struct ifreq));
+            while(It != End)
             {
-                if(0 < i)
-                    gFingerPrint += ".";
-                gFingerPrint += String::fromNumber(s.ifr_addr.sa_data[i] & 0xFF);
+                strcpy(Ifr.ifr_name, It->ifr_name);
+                if(ioctl(Sock, SIOCGIFFLAGS, &Ifr) == 0)
+                if(!(Ifr.ifr_flags & IFF_LOOPBACK))
+                if(ioctl(Sock, SIOCGIFHWADDR, &Ifr) == 0)
+                {
+                    gFingerPrint += "/mac:";
+                    dumps Ip6Code = (dumps) Ifr.ifr_hwaddr.sa_data;
+                    for(int i = 0; i < 6; ++i)
+                    {
+                        if(0 < i) gFingerPrint += ".";
+                        gFingerPrint += dString::fromNumber(Ip6Code[i] & 0xFF);
+                    }
+                    break;
+                }
+                It++;
             }
         }
     #endif
@@ -63,6 +80,7 @@ dLiteral dUnique::deviceId(dString* fp)
     gDeviceID = fingerPrint(gFingerPrint.string(), gFingerPrint.length());
     printf("[daddy] deviceId: \"%.*s\" ---> %.*s\n",
         gFingerPrint.length(), gFingerPrint.string(), gDeviceID.length(), gDeviceID.string());
+    fflush(stdout);
     if(fp) *fp = gFingerPrint;
     return gDeviceID;
 }
@@ -78,7 +96,7 @@ dLiteral dUnique::instanceId(dString* fp)
     }
 
     // 응용프로그램 패스
-    utf8 ProgramPath[1024] = {};
+    static utf8 ProgramPath[1024] = {};
     memcpy(ProgramPath, programPath(false).string(), programPath(false).length());
     gFingerPrint.add(ProgramPath);
 
@@ -124,6 +142,7 @@ dLiteral dUnique::instanceId(dString* fp)
     gInstanceID = fingerPrint(gFingerPrint.string(), gFingerPrint.length());
     printf("[daddy] instanceId: \"%.*s\" ---> %.*s\n",
         gFingerPrint.length(), gFingerPrint.string(), gInstanceID.length(), gInstanceID.string());
+    fflush(stdout);
     if(fp) *fp = gFingerPrint;
     return gInstanceID;
 }

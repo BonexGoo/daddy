@@ -48,10 +48,11 @@
     #define SEMAPHORE_DESTROY(ID, NAME)     do {CloseHandle(*(ID));} while(false)
     #define SEMAPHORE_LOCK(ID)              do {WaitForSingleObject(*(ID), INFINITE);} while(false)
     #define SEMAPHORE_UNLOCK(ID)            do {ReleaseSemaphore(*(ID), 1, nullptr);} while(false)
-#else
+#elif DD_OS_LINUX
     #include <pthread.h>
     #include <semaphore.h>
     #include <fcntl.h>
+    #include <string.h>
     #define MUTEX_DATA                      pthread_mutex_t
     #define MUTEX_INIT(ID)                  pthread_mutex_init((ID), nullptr)
     #define MUTEX_DESTROY(ID)               pthread_mutex_destroy((ID))
@@ -70,7 +71,7 @@
             *(ID) = sem_open(NAME, O_CREAT | O_EXCL); \
             RET = (*(ID) != SEM_FAILED); \
         } while(false)
-    #define SEMAPHORE_DESTROY(ID, NAME)     do {sem_close(*(ID)); sem_unlink(((Literal) NAME).buildNative());} while(false)
+    #define SEMAPHORE_DESTROY(ID, NAME)     do {sem_close(*(ID)); sem_unlink(NAME);} while(false)
     #define SEMAPHORE_LOCK(ID)              do {sem_wait(*(ID));} while(false)
     #define SEMAPHORE_UNLOCK(ID)            do {sem_post(*(ID));} while(false)
 #endif

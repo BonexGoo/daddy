@@ -19,20 +19,26 @@
     #define PROCESS_DATA                                HANDLE
     #define PROCESS_INIT(ID)                            do {ID = INVALID_HANDLE_VALUE;} while(false)
     #define PROCESS_EXITCODE(ID, CODE)                  GetExitCodeProcess(ID, CODE)
+    #define PROCESS_EXITCODE_DATA                       DWORD
+    #define PROCESS_EXITCODE_SUCCESS(RESULT)            (RESULT == STILL_ACTIVE)
     #define LOG_VIEW_OPEN_FOR_WRITE(FM, OFFSET, LENGTH) MapViewOfFile((FM).mMap, FILE_MAP_WRITE, 0, OFFSET, LENGTH)
     #define LOG_VIEW_OPEN_FOR_READ(FM, OFFSET, LENGTH)  MapViewOfFile((FM).mMap, FILE_MAP_READ, 0, OFFSET, LENGTH)
     #define LOG_VIEW_CLOSE(BUF, LENGTH)                 UnmapViewOfFile(BUF)
     #define LOG_VIEW_FLUSH(BUF, LENGTH)                 FlushViewOfFile(BUF, LENGTH)
-#else
+#elif DD_OS_LINUX
     #include <cstring>
     #include <dirent.h>
     #include <unistd.h>
     #include <signal.h>
     #include <sys/mman.h>
     #include <sys/stat.h>
-    #define PROCESS_DATA                                // Will be developed in the future!
-    #define PROCESS_INIT(ID)                            // Will be developed in the future!
-    #define PROCESS_EXITCODE(ID, CODE)                  // Will be developed in the future!
+    #include <sys/types.h>
+    #include <sys/wait.h>
+    #define PROCESS_DATA                                pid_t
+    #define PROCESS_INIT(ID)                            do {ID = -1;} while(false)
+    #define PROCESS_EXITCODE(ID, CODE)                  waitpid(ID, CODE, 0)
+    #define PROCESS_EXITCODE_DATA                       int
+    #define PROCESS_EXITCODE_SUCCESS(RESULT)            (WIFEXITED(RESULT) != 0)
     #define LOG_VIEW_OPEN_FOR_WRITE(FM, OFFSET, LENGTH) mmap(0, LENGTH, PROT_READ | PROT_WRITE, MAP_SHARED, (FM).mFD, OFFSET)
     #define LOG_VIEW_OPEN_FOR_READ(FM, OFFSET, LENGTH)  mmap(0, LENGTH, PROT_READ, MAP_SHARED, (FM).mFD, OFFSET)
     #define LOG_VIEW_CLOSE(BUF, LENGTH)                 munmap(BUF, LENGTH)
@@ -416,10 +422,10 @@ public:
     }
     bool alivedProcess()
     {
-        DWORD ExitCode = 0;
+        PROCESS_EXITCODE_DATA ExitCode = 0;
         if(PROCESS_EXITCODE(mLastProcess, &ExitCode))
         {
-            if(ExitCode == STILL_ACTIVE)
+            if(PROCESS_EXITCODE_SUCCESS(ExitCode))
                 return true;
         }
         return false;
@@ -519,7 +525,7 @@ public:
         #if DD_OS_LINUX | DD_OS_OSX | DD_OS_IOS
             const int32_t LengthW = vswprintf(nullptr, 0, format, args);
             wchar_t* ResultW = (wchar_t*) std::malloc(sizeof(wchar_t) * (LengthW + 1));
-            vswprintf(Result, LengthW + 1, format, args);
+            vswprintf(ResultW, LengthW + 1, format, args);
         #else
             const int32_t LengthW = _vsnwprintf(nullptr, 0, format, args);
             wchar_t* ResultW = (wchar_t*) std::malloc(sizeof(wchar_t) * (LengthW + 1));

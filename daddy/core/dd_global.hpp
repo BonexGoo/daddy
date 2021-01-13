@@ -12,20 +12,20 @@ namespace Daddy {
 #define DD_global(NAME, TYPE, VAR, ...) \
     static uint8_t _##VAR[sizeof(TYPE)]; \
     static TYPE& VAR = *(TYPE*) Daddy::dGlobal::loadAttach(NAME, _##VAR, \
-    [&](void* _)->void {new(_) TYPE(__VA_ARGS__);}, \
-    [&](void* _)->void {((TYPE*) _)->~TYPE();})
+    [](void* _)->void {new(_) TYPE(__VA_ARGS__);}, \
+    [](void* _)->void {((TYPE*) _)->~TYPE();})
 
 #define DD_global_direct(TYPE, VAR, ...) \
     static uint8_t _##VAR[sizeof(TYPE)]; \
     static TYPE& VAR = *(TYPE*) Daddy::dGlobal::loadDirect(_##VAR, \
-    [&](void* _)->void {new(_) TYPE(__VA_ARGS__);}, \
-    [&](void* _)->void {((TYPE*) _)->~TYPE();})
+    [](void* _)->void {new(_) TYPE(__VA_ARGS__);}, \
+    [](void* _)->void {((TYPE*) _)->~TYPE();})
 
-#define DD_global_direct_ptr(TYPE, VAR, ...) \
+#define DD_global_direct_ptr(TYPE, VAR, PTR) \
     static uint8_t _##VAR[sizeof(TYPE)]; \
     static TYPE& VAR = *(TYPE*) Daddy::dGlobal::loadDirect(_##VAR, \
-    [&](void* _)->void {*((void**) _) = (void*) __VA_ARGS__;}, \
-    [&](void* _)->void {*((void**) _) = nullptr;})
+    [](void* _)->void {*((void**) _) = (void*) PTR;}, \
+    [](void* _)->void {*((void**) _) = nullptr;})
 
 /// @brief 글로벌
 class dGlobal

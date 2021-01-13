@@ -44,6 +44,8 @@
     #include <sys/ioctl.h>
     #include <sys/socket.h>
     #include <sys/types.h>
+    #include <sys/stat.h>
+    #include <dirent.h>
     #include <unistd.h>
     #define SOCKET_DATA                       int
     #define SOCKET_NEW                        ::socket(AF_INET, SOCK_STREAM, 0)
@@ -706,7 +708,8 @@ void dUtility::killProcess(ptr_u handle)
         TerminateProcess(OldHandle, 0);
         CloseHandle(OldHandle);
     #elif DD_OS_LINUX
-        #error [daddy] this platform is not ready!
+        pid_t ProcessID = *((pid_t*) &handle);
+        kill(ProcessID, SIGINT);
     #else
         #error [daddy] this platform is not ready!
     #endif
@@ -748,11 +751,10 @@ void dUtility::killProcessAll(dLiteral exename)
                 if(0 < TargetLength)
                 {
                     TargetName[TargetLength] = '\0';
-                    if(strstr(TargetName, name.buildNative()))
+                    if(strstr(TargetName, exename.buildNative()))
                     {
                         const int ProcessID = atoi(CurDirEntry->d_name);
                         kill(ProcessID, SIGINT);
-                        if(!all) break;
                     }
                 }
             }

@@ -6,14 +6,17 @@
 // Dependencies
 #include <chrono>
 #include <cstdio>
+#include <ctime>
+#include <ratio>
+#include <chrono>
 
 namespace Daddy {
 
 static int64_t GetCounter__()
 {
-    typedef std::chrono::steady_clock::time_point TimePoint;
-    DD_global_direct(TimePoint, gNowFirst, std::chrono::high_resolution_clock::now());
     auto Now = std::chrono::high_resolution_clock::now();
+    typedef decltype(Now) TimePoint;
+    DD_global_direct(TimePoint, gNowFirst, std::chrono::high_resolution_clock::now());
     return std::chrono::duration_cast<std::chrono::nanoseconds>(Now - gNowFirst).count();
 }
 
