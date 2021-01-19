@@ -255,9 +255,9 @@ void Scheduler::OnHttp(sint32 peerid, chars url)
             const String NewJobID = String::FromInteger(mLastJobID);
             SendHttp(peerid, 200, NewJobID, NewJobID.Length());
             // 배치잡 분산전달
-            auto BatchJob = String::FromUrlString(UrlParams("batchjob").GetString());
+            auto BatchJob = String::FromUrlString(UrlParams("batchjob").GetText());
             auto BatchCount = UrlParams("batchcount").GetInt();
-            auto RedirectUrl = String::FromUrlString(UrlParams("redirect_url").GetString());
+            auto RedirectUrl = String::FromUrlString(UrlParams("redirect_url").GetText());
             SendCreateJob(mLastJobID, BatchJob, BatchCount, RedirectUrl);
         }
         else

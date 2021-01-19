@@ -39,8 +39,11 @@ Connector* Node::ConnectAdd(sint32 entryid, chars entrytype, chars protocol)
     {
         mConnectors[entryid].Init(NewConnectorID, EntryType::Client, protocol, entryid);
         const Context LoadContext(ST_Json, SO_NeedCopy, String::FromAsset("node/" + mNodeID + ".json"));
-        if(auto JoinedConnectorID = LoadContext("client")(NewConnectorID).GetString(nullptr))
+        if(LoadContext("client")(NewConnectorID).HasValue())
+        {
+            auto JoinedConnectorID = LoadContext("client")(NewConnectorID).GetText();
             mConnectors[entryid].JoinToServer(JoinedConnectorID);
+        }
     }
     return nullptr;
 }

@@ -63,11 +63,11 @@ void WebPeer::_copy_(const _self_& rhs)
 // ■ WebJob
 bool WebJob::Init(sint32 jobid, const Context& params)
 {
-    mDeviceID = String::FromUrlString(params("deviceid").GetString());
-    mSApp = String::FromUrlString(params("sapp").GetString());
-    mBatchJob = String::FromUrlString(params("batchjob").GetString());
+    mDeviceID = String::FromUrlString(params("deviceid").GetText());
+    mSApp = String::FromUrlString(params("sapp").GetText());
+    mBatchJob = String::FromUrlString(params("batchjob").GetText());
     mBatchCount = params("batchcount").GetInt();
-    mRedirectUrl = String::FromUrlString(params("redirect_url").GetString());
+    mRedirectUrl = String::FromUrlString(params("redirect_url").GetText());
 
     mJobID = jobid;
     mLastJobPermil = 0;
