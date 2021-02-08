@@ -322,10 +322,10 @@ const dZokeReader dZokeReader::operator()(utf8s_nn key, int32_t length) const
     DD_assert(0 < ChildCount, "ChildCount must be greater than zero.");
 
     // 이진탐색
-    uint32_t Begin = 0, End = ChildCount - 1;
+    int32_t Begin = 0, End = ChildCount - 1;
     while(Begin <= End)
     {
-        const uint32_t Middle = (Begin + End) / 2;
+        const int32_t Middle = (Begin + End) / 2;
         dumps CurKey = jumpTo(Temp, Middle, JumperSize);
         const int Compare = strncmp((utf8s) CurKey, key, length);
         const bool NullCheck = (CurKey[length] == 0);
