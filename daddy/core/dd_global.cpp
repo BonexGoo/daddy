@@ -4,8 +4,7 @@
 #include "dd_global.hpp"
 
 // Dependencies
-#if DD_OS_WINDOWS
-#else
+#if !DD_OS_WINDOWS | DD_OS_WINDOWS_MINGW
     #include <cstring>
 #endif
 
