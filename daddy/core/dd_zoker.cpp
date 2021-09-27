@@ -516,12 +516,12 @@ void dZokeReader::_copy_(const _self_& rhs)
     mBuffer = rhs.mBuffer;
 }
 
-DD_passage_define_alone(dZokeReader, const dBinary& binary), mBinary(binary)
+DD_passage_define_alone(dZokeReader, const dBinary& binary) : mBinary(binary)
 {
     mBuffer = mBinary.buffer();
 }
 
-DD_passage_define_alone(dZokeReader, const dBinary& binary, dumps buffer), mBinary(binary)
+DD_passage_define_alone(dZokeReader, const dBinary& binary, dumps buffer) : mBinary(binary)
 {
     mBuffer = buffer;
 }

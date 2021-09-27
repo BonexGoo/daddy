@@ -10,11 +10,11 @@
 // ▶ DD_escaper()
 //
 // 사용예시-1) DD_escaper(ClassA, ParentA):
-// 사용예시-2) DD_escaper(ClassA, ParentA, value(0)):
-//                 void _init_(Daddy::InitType type) {}
-//                 void _quit_() {}
-//                 void _move_(_self_&& rhs) {}
-//                 void _copy_(const _self_& rhs) {}
+// 사용예시-2) DD_escaper(ClassA, ParentA, value1(0), value2(0)):
+//                void _init_(Daddy::InitType type) {}
+//                void _quit_() {}
+//                void _move_(_self_&& rhs) {}
+//                void _copy_(const _self_& rhs) {}
 //
 #define DD_escaper(CLASS, PARENT, ...) \
     /* 객체명칭통일 */ \
@@ -105,32 +105,120 @@
 // ▶ DD_escaper_alone()
 //
 // 사용예시-1) DD_escaper_alone(ClassA):
-// 사용예시-2) DD_escaper_alone(ClassA, value(0)):
-//                 void _init_(Daddy::InitType type) {}
-//                 void _quit_() {}
-//                 void _move_(_self_&& rhs) {}
-//                 void _copy_(const _self_& rhs) {}
+//                void _init_(Daddy::InitType type) {}
+//                void _quit_() {}
+//                void _move_(_self_&& rhs) {}
+//                void _copy_(const _self_& rhs) {}
 //
-#define DD_escaper_alone(CLASS, ...) \
+#define DD_escaper_alone(CLASS) \
     /* 객체명칭통일 */ \
     private: \
         using _self_ = CLASS; \
     \
     \
     /* 객체-사이클 */ \
-    private: \
-        const struct NoUse {} __nouse; \
     public: \
-        CLASS() : __nouse(), ## __VA_ARGS__ { \
+        CLASS() { \
             __model(__em_plan()); \
             __init(this, Daddy::InitType::Create); \
         } \
-        CLASS(_self_&& rhs) noexcept : __nouse(), ## __VA_ARGS__ { \
+        CLASS(_self_&& rhs) noexcept { \
             __model(__em_plan()); \
             __move(this, &rhs); \
             __init(&rhs, Daddy::InitType::ClearOnly); \
         } \
-        CLASS(const _self_& rhs) : __nouse(), ## __VA_ARGS__ { \
+        CLASS(const _self_& rhs) { \
+            __model(__em_plan()); \
+            __copy(this, &rhs); \
+        } \
+        ~CLASS() { \
+            Daddy::EscapeModel::__em_release_alone(__model(), this); \
+        } \
+        _self_& operator=(_self_&& rhs) noexcept { \
+            __model()->__em_operatorMove(this, &rhs); \
+            return *this; \
+        } \
+        _self_& operator=(const _self_& rhs) { \
+            __model()->__em_operatorCopy(this, &rhs); \
+            return *this; \
+        } \
+    \
+    \
+    /* 싱글톤관리 */ \
+    private: \
+        inline static Daddy::EscapePlanP* __em_plan() { \
+            DD_global_direct_ptr(Daddy::EscapePlanP*, gSingleton, Daddy::EscapeModel::__em_build( \
+                (const Daddy::EscapePlanP*) 1, #CLASS, sizeof(_self_), \
+                __FILE__, __LINE__, __init, __quit, __move, __copy)); \
+            return gSingleton; \
+        } \
+        inline static Daddy::EscapeModel* __model(Daddy::EscapePlanP* ep = nullptr) { \
+            static Daddy::EscapeModel gSingleton(ep); \
+            return &gSingleton; \
+        } \
+    \
+    \
+    /* 이스케이퍼-사이클 */ \
+    private: \
+        static void __init(void* self, Daddy::InitType type) { \
+            auto TimeNS = __toSelf(self)->__model()->__em_enter(Daddy::EscapeModel::CycleType::Init); \
+            __toSelf(self)->_init_(type); \
+            __toSelf(self)->__model()->__em_leave(Daddy::EscapeModel::CycleType::Init, TimeNS); \
+        } \
+        static void __quit(void* self) { \
+            auto TimeNS = __toSelf(self)->__model()->__em_enter(Daddy::EscapeModel::CycleType::Quit); \
+            __toSelf(self)->_quit_(); \
+            __toSelf(self)->__model()->__em_leave(Daddy::EscapeModel::CycleType::Quit, TimeNS); \
+        } \
+        static void __move(void* self, void* rhs) { \
+            auto TimeNS = __toSelf(self)->__model()->__em_enter(Daddy::EscapeModel::CycleType::Move); \
+            __toSelf(self)->_move_(Daddy::DD_rvalue(*__toSelf(rhs))); \
+            __toSelf(self)->__model()->__em_leave(Daddy::EscapeModel::CycleType::Move, TimeNS); \
+        } \
+        static void __copy(void* self, const void* rhs) { \
+            auto TimeNS = __toSelf(self)->__model()->__em_enter(Daddy::EscapeModel::CycleType::Copy); \
+            __toSelf(self)->_copy_(*__toSelf(rhs)); \
+            __toSelf(self)->__model()->__em_leave(Daddy::EscapeModel::CycleType::Copy, TimeNS); \
+        } \
+    \
+    \
+    /* 형변환도구 */ \
+    private: \
+        inline static _self_* __toSelf(void* ptr) { \
+            return (_self_*) ptr; \
+        } \
+        inline static const _self_* __toSelf(const void* ptr) { \
+            return (const _self_*) ptr; \
+        } \
+    protected
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// ▶ DD_escaper_alone_with_inits()
+//
+// 사용예시-1) DD_escaper_alone_with_inits(ClassA, value1(0), value2(0)):
+//                void _init_(Daddy::InitType type) {}
+//                void _quit_() {}
+//                void _move_(_self_&& rhs) {}
+//                void _copy_(const _self_& rhs) {}
+//
+#define DD_escaper_alone_with_inits(CLASS, INIT1, ...) \
+    /* 객체명칭통일 */ \
+    private: \
+        using _self_ = CLASS; \
+    \
+    \
+    /* 객체-사이클 */ \
+    public: \
+        CLASS() : INIT1, ## __VA_ARGS__ { \
+            __model(__em_plan()); \
+            __init(this, Daddy::InitType::Create); \
+        } \
+        CLASS(_self_&& rhs) noexcept : INIT1, ## __VA_ARGS__ { \
+            __model(__em_plan()); \
+            __move(this, &rhs); \
+            __init(&rhs, Daddy::InitType::ClearOnly); \
+        } \
+        CLASS(const _self_& rhs) : INIT1, ## __VA_ARGS__ { \
             __model(__em_plan()); \
             __copy(this, &rhs); \
         } \
@@ -198,57 +286,64 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 // ▶ DD_passage()
 //
-// 사용예시-1) DD_passage(ClassA, int a, char* b) {}
-// 사용예시-2) DD_passage(ClassA, int a, char* b), c(a) {}
+// 사용예시-1) DD_passage(ClassA) {}
+// 사용예시-2) DD_passage(ClassA, int a, char* b) {}
+// 사용예시-3) DD_passage(ClassA, int a, char* b), c(a) {}
 //
-#define DD_passage(CLASS, ...)                CLASS(__VA_ARGS__, Daddy::EscapePlanP* ep = __em_plan()) : _super_(ep)
+#define DD_passage(CLASS, ...)               CLASS(__VA_ARGS__, Daddy::EscapePlanP* ep = __em_plan()) : _super_(ep)
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 // ▶ DD_passage_()_with_super()
 //
-// 사용예시-1) DD_passage_(ClassA, int a, char* b)_with_super(a, b) {}
-// 사용예시-2) DD_passage_(ClassA, int a, char* b)_with_super(a, b), c(a) {}
+// 사용예시-1) DD_passage_(ClassA)_with_super(a, b) {}
+// 사용예시-2) DD_passage_(ClassA, int a, char* b)_with_super(a, b) {}
+// 사용예시-3) DD_passage_(ClassA, int a, char* b)_with_super(a, b), c(a) {}
 //
-#define DD_passage_(CLASS, ...)               CLASS(__VA_ARGS__, Daddy::EscapePlanP* ep = __em_plan()) : _super_
-#define _with_super(...)                      (__VA_ARGS__, ep)
+#define DD_passage_(CLASS, ...)              CLASS(__VA_ARGS__, Daddy::EscapePlanP* ep = __em_plan()) : _super_
+#define _with_super(...)                     (__VA_ARGS__, ep)
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 // ▶ DD_passage_declare()
 //
-// 사용예시-1) DD_passage_declare(ClassA, int a, char* b);
+// 사용예시-1) DD_passage_declare(ClassA);
+// 사용예시-2) DD_passage_declare(ClassA, int a, char* b);
 //
-#define DD_passage_declare(CLASS, ...)        CLASS(__VA_ARGS__, Daddy::EscapePlanP* ep = __em_plan())
+#define DD_passage_declare(CLASS, ...)       CLASS(__VA_ARGS__, Daddy::EscapePlanP* ep = __em_plan())
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 // ▶ DD_passage_define()
 //
-// 사용예시-1) DD_passage_define(ClassA, int a, char* b) {}
-// 사용예시-2) DD_passage_define(ClassA, int a, char* b), c(a) {}
+// 사용예시-1) DD_passage_define(ClassA) {}
+// 사용예시-2) DD_passage_define(ClassA, int a, char* b) {}
+// 사용예시-3) DD_passage_define(ClassA, int a, char* b), c(a) {}
 //
-#define DD_passage_define(CLASS, ...)         CLASS::CLASS(__VA_ARGS__, Daddy::EscapePlanP* ep) : _super_(ep)
+#define DD_passage_define(CLASS, ...)        CLASS::CLASS(__VA_ARGS__, Daddy::EscapePlanP* ep) : _super_(ep)
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 // ▶ DD_passage_alone()
 //
-// 사용예시-1) DD_passage_alone(ClassA, int a, char* b) {}
-// 사용예시-2) DD_passage_alone(ClassA, int a, char* b), c(a) {}
+// 사용예시-1) DD_passage_alone(ClassA) {}
+// 사용예시-2) DD_passage_alone(ClassA, int a, char* b) {}
+// 사용예시-3) DD_passage_alone(ClassA, int a, char* b) : c(a) {}
 //
-#define DD_passage_alone(CLASS, ...)          CLASS(__VA_ARGS__, Daddy::EscapeModel* m = __model(__em_plan())) : __nouse()
+#define DD_passage_alone(CLASS, ...)         CLASS(__VA_ARGS__, Daddy::EscapeModel* m = __model(__em_plan()))
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 // ▶ DD_passage_declare_alone()
 //
-// 사용예시-1) DD_passage_declare_alone(ClassA, int a, char* b);
+// 사용예시-1) DD_passage_declare_alone(ClassA);
+// 사용예시-2) DD_passage_declare_alone(ClassA, int a, char* b);
 //
-#define DD_passage_declare_alone(CLASS, ...)  CLASS(__VA_ARGS__, Daddy::EscapeModel* m = __model(__em_plan()))
+#define DD_passage_declare_alone(CLASS, ...) CLASS(__VA_ARGS__, Daddy::EscapeModel* m = __model(__em_plan()))
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 // ▶ DD_passage_define_alone()
 //
-// 사용예시-1) DD_passage_define_alone(ClassA, int a, char* b) {}
-// 사용예시-2) DD_passage_define_alone(ClassA, int a, char* b), c(a) {}
+// 사용예시-1) DD_passage_define_alone(ClassA) {}
+// 사용예시-2) DD_passage_define_alone(ClassA, int a, char* b) {}
+// 사용예시-3) DD_passage_define_alone(ClassA, int a, char* b) : c(a) {}
 //
-#define DD_passage_define_alone(CLASS, ...)   CLASS::CLASS(__VA_ARGS__, Daddy::EscapeModel* m) : __nouse()
+#define DD_passage_define_alone(CLASS, ...)  CLASS::CLASS(__VA_ARGS__, Daddy::EscapeModel* m)
 
 namespace Daddy {
 
