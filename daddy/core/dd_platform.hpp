@@ -7,6 +7,8 @@
 #include "dd_binary.hpp"
 #include "dd_string.hpp"
 #include <functional>
+#include <string>
+#include <map>
 
 namespace Daddy {
 
@@ -81,8 +83,42 @@ private:
     DD_passage_declare_alone(dSocket, ptr_u agent); // move only
 };
 
-/// @brief 유틸리티
-class dUtility
+/// @brief 디렉터리객체
+class dDirectory
+{
+public:
+    struct FileStatus
+    {
+        bool mReadOnly;
+        uint64_t mFileSize;
+        uint64_t mCreationTime;
+        uint64_t mLastAccessTime;
+        uint64_t mLastWriteTime;
+    };
+
+public:
+    void load(dLiteral dirpath);
+
+public:
+    inline std::map<std::string, bool>& dirs() {return mDirs;}
+    inline const std::map<std::string, bool>& dirs() const {return mDirs;}
+    inline std::map<std::string, FileStatus>& files() {return mFiles;}
+    inline const std::map<std::string, FileStatus>& files() const {return mFiles;}
+
+DD_escaper_alone(dDirectory): // 객체사이클
+    void _init_(InitType);
+    void _quit_();
+    void _move_(_self_&& rhs);
+    void _copy_(const _self_& rhs);
+    std::map<std::string, bool> mDirs;
+    std::map<std::string, FileStatus> mFiles;
+
+public:
+    DD_passage_declare_alone(dDirectory, dLiteral dirpath);
+};
+
+/// @brief 프로세스
+class dProcess
 {
 public:
     /// @brief            프로세스 실행

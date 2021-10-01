@@ -9,8 +9,10 @@
     - dd_global.hpp/dGlobal: 일괄적으로 On/Off가 가능한 글로벌인스턴스관리
     - dd_handle.hpp/dHandle: 사용자 객체의 스마트한 핸들관리
     - dd_markup.hpp/dMarkup: 구조적데이터관리(현재 yaml파서)
+    - dd_patcher.hpp/dPatcher: 다운로드런처/버저닝업로더를 통합한 파일패치관리
     - dd_platform.hpp/dSocket: 서버/클라이언트의 역할모델
-    - dd_platform.hpp/dUtility: 유틸리티 기능제공(현재 프로세스관리)
+    - dd_platform.hpp/dDirectory: 디렉터리관리
+    - dd_platform.hpp/dProcess: 프로세스관리
     - dd_string.hpp/dLiteral: 상수를 보장하는 스트링객체
     - dd_string.hpp/dString: 복사하지 않고 스트링끼리 부분참조되는 스트링객체
     - dd_telepath.hpp/dTelepath: telegraph랑 통신하는 RPC클라이언트

@@ -11,6 +11,8 @@
 #include <string>
 #include <thread>
 #include <stack>
+#include <locale.h>
+#include <direct.h>
 #if DD_OS_WINDOWS
     #if DD_OS_WINDOWS_MINGW
         #include <ws2tcpip.h>
@@ -92,7 +94,7 @@ public:
     {return (mSocket != SOCKET_ERROR);}
 
 DD_escaper(SocketAgentP, dEscaper):
-    void _init_(InitType)
+    void _init_(InitType type)
     {
         mSocket = SOCKET_ERROR;
         mAssignCB = nullptr;
@@ -616,8 +618,82 @@ DD_passage_define_alone(dSocket, ptr_u agent)
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
-// ■ dUtility
-ptr_u dUtility::runProcess(dLiteral exepath, dLiteral args, dLiteral runtype, dLiteral runpath)
+// ■ dDirectory
+void dDirectory::load(dLiteral dirpath)
+{
+    mDirs.clear();
+    mFiles.clear();
+
+    #if DD_OS_WINDOWS
+        dString OldLocale = setlocale(LC_ALL, nullptr);
+        setlocale(LC_ALL, "en_US.UTF-8");
+        WIN32_FIND_DATAA* FindFileData = new WIN32_FIND_DATAA();
+        dString FindCommand = dString::print("%.*s/*", dirpath.length(), dirpath.string());
+        HANDLE DirHandle = FindFirstFileA(dLiteral(FindCommand).buildNative(), FindFileData);
+        setlocale(LC_ALL, ((dLiteral) OldLocale).buildNative());
+
+        if(DirHandle != INVALID_HANDLE_VALUE)
+        {
+            for(bool next = true; next;)
+            {
+                const bool ReadOnly = ((FindFileData->dwFileAttributes & FILE_ATTRIBUTE_READONLY) != 0);
+                if(FindFileData->dwFileAttributes & FILE_ATTRIBUTE_DIRECTORY)
+                {
+                    if(strcmp(FindFileData->cFileName, ".") && strcmp(FindFileData->cFileName, ".."))
+                    {
+                        auto& NewDir = mDirs[FindFileData->cFileName];
+                        NewDir = ReadOnly;
+                    }
+                }
+                else
+                {
+                    auto& NewFile = mFiles[FindFileData->cFileName];
+                    NewFile.mReadOnly = ReadOnly;
+                    NewFile.mFileSize = uint64_t(FindFileData->nFileSizeHigh) << 32 | FindFileData->nFileSizeLow;
+                    NewFile.mCreationTime = uint64_t(FindFileData->ftCreationTime.dwHighDateTime) << 32 | FindFileData->ftCreationTime.dwLowDateTime;
+                    NewFile.mLastAccessTime = uint64_t(FindFileData->ftLastAccessTime.dwHighDateTime) << 32 | FindFileData->ftLastAccessTime.dwLowDateTime;
+                    NewFile.mLastWriteTime = uint64_t(FindFileData->ftLastWriteTime.dwHighDateTime) << 32 | FindFileData->ftLastWriteTime.dwLowDateTime;
+                }
+                next = FindNextFileA(DirHandle, FindFileData);
+            }
+            FindClose(DirHandle);
+        }
+        delete FindFileData;
+    #else
+        #error [daddy] this platform is not ready!
+    #endif
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// ■ dDirectory::escaper
+void dDirectory::_init_(InitType type)
+{
+}
+
+void dDirectory::_quit_()
+{
+}
+
+void dDirectory::_move_(_self_&& rhs)
+{
+    mDirs = DD_rvalue(rhs.mDirs);
+    mFiles = DD_rvalue(rhs.mFiles);
+}
+
+void dDirectory::_copy_(const _self_& rhs)
+{
+    mDirs = rhs.mDirs;
+    mFiles = rhs.mFiles;
+}
+
+DD_passage_define_alone(dDirectory, dLiteral dirpath)
+{
+    load(dirpath);
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// ■ dProcess
+ptr_u dProcess::runProcess(dLiteral exepath, dLiteral args, dLiteral runtype, dLiteral runpath)
 {
     ptr_u ProcessHandle = 0;
 
@@ -701,7 +777,7 @@ ptr_u dUtility::runProcess(dLiteral exepath, dLiteral args, dLiteral runtype, dL
     return ProcessHandle;
 }
 
-void dUtility::killProcess(ptr_u handle)
+void dProcess::killProcess(ptr_u handle)
 {
     #if DD_OS_WINDOWS
         HANDLE OldHandle = *((HANDLE*) &handle);
@@ -715,7 +791,7 @@ void dUtility::killProcess(ptr_u handle)
     #endif
 }
 
-void dUtility::killProcessAll(dLiteral exename)
+void dProcess::killProcessAll(dLiteral exename)
 {
     #if DD_OS_WINDOWS
         DWORD* ProcessIDs = new DWORD[100000];

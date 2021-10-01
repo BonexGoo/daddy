@@ -6,6 +6,7 @@
 // Dependencies
 #include <cstring>
 #include <locale.h>
+#include <direct.h>
 
 namespace Daddy {
 
@@ -151,11 +152,11 @@ dBinary dBinary::fromExternal(dumps buffer, uint32_t length)
     return Result;
 }
 
-dBinary dBinary::fromFile(const dLiteral& path)
+dBinary dBinary::fromFile(const dLiteral& filepath)
 {
     dString OldLocale = setlocale(LC_ALL, nullptr);
     setlocale(LC_ALL, "en_US.UTF-8");
-    FILE* NewFile = std::fopen(path.buildNative(), "rb");
+    FILE* NewFile = std::fopen(filepath.buildNative(), "rb");
     setlocale(LC_ALL, ((dLiteral) OldLocale).buildNative());
 
     if(NewFile)
@@ -172,11 +173,11 @@ dBinary dBinary::fromFile(const dLiteral& path)
     return dBinary();
 }
 
-bool dBinary::toFile(const dLiteral& path) const
+bool dBinary::toFile(const dLiteral& filepath, bool autodir) const
 {
     dString OldLocale = setlocale(LC_ALL, nullptr);
     setlocale(LC_ALL, "en_US.UTF-8");
-    FILE* NewFile = std::fopen(path.buildNative(), "wb");
+    FILE* NewFile = std::fopen(filepath.buildNative(), "wb");
     setlocale(LC_ALL, ((dLiteral) OldLocale).buildNative());
 
     if(NewFile)
@@ -184,6 +185,22 @@ bool dBinary::toFile(const dLiteral& path) const
         std::fwrite(buffer(), sizeof(dump), length(), NewFile);
         std::fclose(NewFile);
         return true;
+    }
+    else if(autodir)
+    {
+        dString DirName;
+        for(utf8s iWord = filepath.buildNative(); *iWord; ++iWord)
+        {
+            if(*iWord == '/' || *iWord == '\\')
+            {
+                dLiteral DirPath = DirName;
+                if(_mkdir(DirPath.buildNative()) != 0)
+                    return false;
+                DirName += '/';
+            }
+            else DirName += *iWord;
+        }
+        return toFile(filepath, false);
     }
     return false;
 }

@@ -7,6 +7,7 @@
 #include "core/dd_handle.hpp"
 #include "core/dd_macro.hpp"
 #include "core/dd_markup.hpp"
+#include "core/dd_patcher.hpp"
 #include "core/dd_platform.hpp"
 #include "core/dd_string.hpp"
 #include "core/dd_telepath.hpp"

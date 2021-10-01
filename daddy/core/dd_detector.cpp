@@ -141,17 +141,17 @@ public:
     enum {LOG_PAGE_COUNT = LOG_FILE_SIZE / LOG_PAGE_SIZE}; // 80개
     enum {LOG_UNIT_PACKING = 4};
     /// @brief 페이지내 청크구조 - 헤더
-    /// @sheet ┏━━━━━━━┳━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━┓
-    /// @sheet ┃ 시작기호[1]  ┃ 페이지 활성화 여부[1]                  ┃ 총 유니트 패킹수량[2]      ┃ 페이지ID[4]  ┃
-    /// @sheet ┣━━━━━━━╋━━━━━━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━╋━━━━━━━┫
-    /// @sheet ┃ '#'          ┃ 작업중:'+', 작업완료:'-', 로깅종료:'/' ┃ 4바이트단위 길이(uint16_t) ┃ uint32_t     ┃
-    /// @sheet ┗━━━━━━━┻━━━━━━━━━━━━━━━━━━━━┻━━━━━━━━━━━━━━┻━━━━━━━┛
+    /// @sheet ┏━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━┓
+    /// @sheet ┃ 시작기호[1] ┃ 페이지 활성화 여부[1]                  ┃ 총 유니트 패킹수량[2]      ┃ 페이지ID[4] ┃
+    /// @sheet ┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━┫
+    /// @sheet ┃ '#'         ┃ 작업중:'+', 작업완료:'-', 로깅종료:'/' ┃ 4바이트단위 길이(uint16_t) ┃ uint32_t    ┃
+    /// @sheet ┗━━━━━━━━━━━━━┻━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┻━━━━━━━━━━━━━━━━━━━━━━━━━━━━┻━━━━━━━━━━━━━┛
     /// @brief 페이지내 청크구조 - 로그유니트
-    /// @sheet ┏━━━━━━━━━━━━━━┳━━━━━━┳━━━━━━━━━━━┓
-    /// @sheet ┃ 현재 유니트 패킹수량[2]    ┃ 함수ID[2]  ┃ 페이로드[N]          ┃
-    /// @sheet ┣━━━━━━━━━━━━━━╋━━━━━━╋━━━━━━━━━━━┫
-    /// @sheet ┃ 4바이트단위 길이(uint16_t) ┃ uint16_t   ┃ 버전 및 함수아규먼트 ┃
-    /// @sheet ┗━━━━━━━━━━━━━━┻━━━━━━┻━━━━━━━━━━━┛
+    /// @sheet ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━┓
+    /// @sheet ┃ 현재 유니트 패킹수량[2]    ┃ 함수ID[2] ┃ 페이로드[N]          ┃
+    /// @sheet ┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━┫
+    /// @sheet ┃ 4바이트단위 길이(uint16_t) ┃ uint16_t  ┃ 버전 및 함수아규먼트 ┃
+    /// @sheet ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━━━━━━━━━━━━┛
 
 public:
     static uint32_t alignedSize(uint32_t size)
@@ -600,9 +600,9 @@ dDetector::Stack::~Stack()
 void dDetector::runKit(dLiteral address)
 {
     #if DD_OS_WINDOWS
-        auto Handle = dUtility::runProcess(dString(dUnique::programPath(true)) + "logkit.exe", "localhost");
+        auto Handle = dProcess::runProcess(dString(dUnique::programPath(true)) + "logkit.exe", "localhost");
     #elif DD_OS_LINUX
-        auto Handle = dUtility::runProcess(dString(dUnique::programPath(true)) + "logkit", "localhost");
+        auto Handle = dProcess::runProcess(dString(dUnique::programPath(true)) + "logkit", "localhost");
     #endif
     DetectorWriterP::ST().setProcess(*((PROCESS_DATA*) &Handle));
 }

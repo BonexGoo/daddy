@@ -1,4 +1,4 @@
-﻿/// @brief     Configration.
+﻿/// @brief     Definition of markup class.
 /// @license   MIT License
 /// @author    BonexGoo
 #pragma once

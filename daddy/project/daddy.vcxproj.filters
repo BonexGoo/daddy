@@ -45,6 +45,9 @@
     <ClCompile Include="..\core\dd_handle.cpp">
       <Filter>core</Filter>
     </ClCompile>
+    <ClCompile Include="..\core\dd_patcher.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\core\dd_binary.hpp">
@@ -88,6 +91,9 @@
     </ClInclude>
     <ClInclude Include="..\daddy.hpp" />
     <ClInclude Include="..\core\dd_handle.hpp">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\core\dd_patcher.hpp">
       <Filter>core</Filter>
     </ClInclude>
   </ItemGroup>

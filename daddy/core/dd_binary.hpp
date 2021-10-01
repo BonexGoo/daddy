@@ -58,12 +58,13 @@ public: // 입출력
     /// @brief          파일에서 바이너리 가져오기
     /// @param path     파일경로
     /// @return         새로운 객체
-    static dBinary fromFile(const dLiteral& path);
+    static dBinary fromFile(const dLiteral& filepath);
 
     /// @brief          파일로 바이너리 내보내기
     /// @param path     파일경로
+    /// @param autodir  폴더가 없을 경우 자동생성
     /// @return         true-성공, false-실패
-    bool toFile(const dLiteral& path) const;
+    bool toFile(const dLiteral& filepath, bool autodir = false) const;
 
 private:
     static const dBinary& blank();
