@@ -99,6 +99,9 @@ DD_escaper_alone(dMarkup): // 객체사이클
     typedef std::unordered_map<int, dMarkup> IndexableMap;
     NameableMap* mNameable;
     IndexableMap* mIndexable;
+
+public:
+    DD_passage_declare_alone(dMarkup, const dString& yaml);
 };
 
 } // namespace Daddy

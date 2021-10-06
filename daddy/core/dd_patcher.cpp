@@ -4,64 +4,102 @@
 #include "dd_patcher.hpp"
 
 // Dependencies
+#include "dd_markup.hpp"
 #include "dd_platform.hpp"
-#include "dd_zoker.hpp"
+#include "dd_unique.hpp"
 #include <map>
 #include <string>
 
 namespace Daddy {
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
-// ■ GUIStatusP
-class GUIStatusP : public dEscaper
+// ■ GUIDataP
+class GUIDataP : public dEscaper
 {
-DD_escaper(GUIStatusP, dEscaper):
+public:
+    uint32_t ui() const
+    {
+        return mUI;
+    }
+    static GUIDataP* at(uint32_t ui)
+    {
+        return MAP().at(ui);
+    }
+    virtual char typecode() const = 0;
+
+private:
+    typedef std::map<uint32_t, GUIDataP*> GUIDataMap;
+    static GUIDataMap& MAP()
+    {
+        DD_global_direct(GUIDataMap, _);
+        return _;
+    }
+    uint32_t generatedUI()
+    {
+        DD_global_direct(uint32_t, LastUI, 0);
+        return ++LastUI;
+    }
+
+DD_escaper(GUIDataP, dEscaper, mUI(generatedUI())):
     void _init_(InitType type)
     {
+        if(type == InitType::Create)
+            MAP()[mUI] = this;
     }
     void _quit_()
     {
+        MAP().erase(mUI);
     }
+    const uint32_t mUI;
 };
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 // ■ FileDataP
-class FileDataP : public GUIStatusP
+class FileDataP : public GUIDataP
 {
 public:
-    void load(dString name, const dDirectory::FileStatus& status);
+    void load(dString filepath, const dDirectory::FileStatus& status);
 
-DD_escaper(FileDataP, GUIStatusP):
+private:
+    char typecode() const override {return 'F';}
+
+DD_escaper(FileDataP, GUIDataP):
     void _init_(InitType type)
     {
         _super_::_init_(type);
+        mSize = 0;
+        mHash = 0;
+        mDate = 0;
     }
     void _quit_()
     {
-         _super_::_quit_();
+        _super_::_quit_();
     }
-    dString mName;
-    dString mSize;
-    dString mHash;
-    dString mDate;
+    dString mPath;
+    uint64_t mSize;
+    uint64_t mHash;
+    uint64_t mDate;
 };
 
-void FileDataP::load(dString name, const dDirectory::FileStatus& status)
+void FileDataP::load(dString filepath, const dDirectory::FileStatus& status)
 {
-    mName = name;
-    mSize = dString::print("%llu", status.mFileSize);
-    mHash = dString::print("%llu", status.mFileSize);///////////// 여기서부터!!!
-    mDate = dString::print("%llu", status.mLastWriteTime);
+    mPath = filepath;
+    mSize = status.mFileSize;
+    mHash = dUnique::generateHash(mPath);
+    mDate = status.mLastWriteTime;
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 // ■ IODirDataP
-class IODirDataP : public GUIStatusP
+class IODirDataP : public GUIDataP
 {
 public:
-    void load(const dZokeReader& hash);
+    void load(const dMarkup& yaml);
 
-DD_escaper(IODirDataP, GUIStatusP):
+private:
+    char typecode() const override {return 'I';}
+
+DD_escaper(IODirDataP, GUIDataP):
     void _init_(InitType type)
     {
         _super_::_init_(type);
@@ -74,26 +112,56 @@ DD_escaper(IODirDataP, GUIStatusP):
     std::map<std::string, FileDataP> mFiles;
 };
 
-void IODirDataP::load(const dZokeReader& hash)
+void IODirDataP::load(const dMarkup& yaml)
 {
+    //////////////////////////////////// 여기서부터!!!!
+    ////////////////////////////////////
+    ////////////////////////////////////
+    ////////////////////////////////////
+
+    /*const dDirectory NewDirectory(dirpath);
+
+    mDirs.clear();
+    for(const auto& it : NewDirectory.dirs())
+        mDirs[it.first].load(dirpath + '/' + it.first.c_str());
+
+    mFiles.clear();
+    for(const auto& it : NewDirectory.files())
+        mFiles[it.first].load(dirpath + '/' + it.first.c_str(), it.second);*/
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 // ■ LocalDirDataP
-class LocalDirDataP : public GUIStatusP
+class LocalDirDataP : public GUIDataP
 {
 public:
     void load(dString dirpath);
+    uint32_t render(uint32_t deep, uint32_t pos, const dPatcher::RenderCB& renderer) const;
+    void toggleExpand();
 
-DD_escaper(LocalDirDataP, GUIStatusP):
+public:
+    static LocalDirDataP* toClass(ptr_u handle)
+    {
+        if(auto CurGUIData = (GUIDataP*) handle)
+        if(CurGUIData->typecode() == 'D')
+            return (LocalDirDataP*) CurGUIData;
+        return nullptr;
+    }
+
+private:
+    char typecode() const override {return 'D';}
+
+DD_escaper(LocalDirDataP, GUIDataP):
     void _init_(InitType type)
     {
         _super_::_init_(type);
+        mExpanded = true;
     }
     void _quit_()
     {
         _super_::_quit_();
     }
+    bool mExpanded;
     std::map<std::string, LocalDirDataP> mDirs;
     std::map<std::string, FileDataP> mFiles;
 };
@@ -108,7 +176,36 @@ void LocalDirDataP::load(dString dirpath)
 
     mFiles.clear();
     for(const auto& it : NewDirectory.files())
-        mFiles[it.first].load(it.first.c_str(), it.second);
+        mFiles[it.first].load(dirpath + '/' + it.first.c_str(), it.second);
+}
+
+uint32_t LocalDirDataP::render(uint32_t deep, uint32_t pos, const dPatcher::RenderCB& renderer) const
+{
+    dPatcher::RenderStatus Status;
+    Status.mDeep = deep;
+    Status.mPos = pos;
+
+    if(mExpanded)
+    {
+        Status.mFolder = true;
+        for(const auto& it : mDirs)
+        {
+            Status.mExpanded = it.second.mExpanded;
+            Status.mPos = renderer(it.second.ui(), Status, it.first);
+            Status.mPos = it.second.render(Status.mDeep + 1, Status.mPos, renderer);
+        }
+
+        Status.mFolder = false;
+        Status.mExpanded = false;
+        for(const auto& it : mFiles)
+            Status.mPos = renderer(it.second.ui(), Status, it.first);
+    }
+    return Status.mPos;
+}
+
+void LocalDirDataP::toggleExpand()
+{
+    mExpanded ^= true;
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -148,6 +245,7 @@ void dPatcher::setLogger(LogCB logger)
 
 dPatcher::vercode dPatcher::searchLatestVersion(vercode startversion) const
 {
+    ////////////////////////////////////////////////////////
     return 0; /////
 }
 
@@ -158,15 +256,21 @@ dPatcher::IOData dPatcher::readyForDownload(vercode version) const
 
 dPatcher::IOData dPatcher::readyForUpload(vercode startversion) const
 {
-    return dPatcher::IOData(); /////
+    const vercode LatestVersion = searchLatestVersion(startversion);
+    const dMarkup HashYaml(mReader(LatestVersion, DT_TotalHash, "hash.txt").toString());
+
+    auto NewIODirData = new IODirDataP();
+    NewIODirData->load(HashYaml);
+    return dPatcher::IOData((ptr_u)(GUIDataP*) NewIODirData,
+        [](ptr_u handle)->void {delete (IODirDataP*)(GUIDataP*) handle;});
 }
 
 dPatcher::LocalData dPatcher::readyForLocal(dLiteral dirpath)
 {
-    LocalDirDataP* NewLocalDirData = new LocalDirDataP();
+    auto NewLocalDirData = new LocalDirDataP();
     NewLocalDirData->load(dirpath);
-    return dPatcher::LocalData((ptr_u) NewLocalDirData,
-        [](ptr_u handle)->void {delete (LocalDirDataP*) handle;});
+    return dPatcher::LocalData((ptr_u)(GUIDataP*) NewLocalDirData,
+        [](ptr_u handle)->void {delete (LocalDirDataP*)(GUIDataP*) handle;});
 }
 
 dPatcher::Schedule dPatcher::build(IOData io, LocalData local)
@@ -176,9 +280,9 @@ dPatcher::Schedule dPatcher::build(IOData io, LocalData local)
 
 bool dPatcher::drive(Schedule schedule, dLiteral memo) const
 {
-    dBinary NewBinary;
-    NewBinary.add((dumps) memo.string(), memo.length());
-    mWriter(0, UploadMemo, "uploader.txt", NewBinary);
+    //dBinary NewBinary;
+    //NewBinary.add((dumps) memo.string(), memo.length());
+    //mWriter(0, DT_UploadMemo, "uploader.txt", NewBinary);
     return false; /////
 }
 
@@ -194,7 +298,7 @@ bool dPatcher::save(const Schedule& schedule, dLiteral filepath)
 
 dPatcher::worktype dPatcher::getType(const Schedule& schedule)
 {
-    return NoWork; /////
+    return WT_NoWork; /////
 }
 
 dPatcher::vercode dPatcher::getVersion(const Schedule& schedule)
@@ -205,6 +309,24 @@ dPatcher::vercode dPatcher::getVersion(const Schedule& schedule)
 dString dPatcher::getMemo(const Schedule& schedule)
 {
     return ""; /////
+}
+
+uint32_t dPatcher::renderOnce(LocalData local, RenderCB renderer)
+{
+    if(auto CurDirData = local.get<const LocalDirDataP>())
+        return CurDirData->render(0, 0, renderer);
+    return 0;
+}
+
+bool dPatcher::toggleExpand(uint32_t ui)
+{
+    if(auto CurGui = GUIDataP::at(ui))
+    if(auto CurDir = LocalDirDataP::toClass((ptr_u) CurGui))
+    {
+        CurDir->toggleExpand();
+        return true;
+    }
+    return false;
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -233,19 +355,19 @@ void dPatcher::_init_(InitType type)
         {
             switch(type)
             {
-            case steptype::CheckingForDownload:
+            case ST_CheckingForDownload:
                 printf("Checking[%d%%] %s", int(progress * 100 + 0.5), detail.buildNative());
                 break;
-            case steptype::CleaningForDownload:
+            case ST_CleaningForDownload:
                 printf("Cleaning[%d%%] %s", int(progress * 100 + 0.5), detail.buildNative());
                 break;
-            case steptype::Downloading:
+            case ST_Downloading:
                 printf("Downloading[%d%%] %s", int(progress * 100 + 0.5), detail.buildNative());
                 break;
-            case steptype::CopyingForUpload:
+            case ST_CopyingForUpload:
                 printf("Copying[%d%%] %s", int(progress * 100 + 0.5), detail.buildNative());
                 break;
-            case steptype::Uploading:
+            case ST_Uploading:
                 printf("Uploading[%d%%] %s", int(progress * 100 + 0.5), detail.buildNative());
                 break;
             }

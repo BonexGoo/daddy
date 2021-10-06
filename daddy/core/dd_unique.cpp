@@ -5,6 +5,7 @@
 
 // Dependencies
 #include "dd_thread.hpp"
+#include <locale.h>
 #if DD_OS_WINDOWS
     #include <windows.h>
     #include <intrin.h>
@@ -20,6 +21,35 @@
 #endif
 
 namespace Daddy {
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// ■ UniqueUtilP
+class UniqueUtilP
+{
+public:
+    UniqueUtilP()
+    {
+        for(int i = 0; i < 256; ++i)
+        {
+            uint64_t crc = i;
+            for(int j = 0; j < 8; ++j)
+            {
+                if(crc & 1)
+                    crc = (crc >> 1) ^ 0xC96C5795D7870F42;
+                else crc >>= 1;
+            }
+            mCrcTable[i] = crc;
+        }
+    }
+    ~UniqueUtilP()
+    {
+    }
+
+public:
+    uint64_t mCrcTable[256];
+};
+
+DD_global("gUniqueUtil", UniqueUtilP, gUniqueUtil);
 
 dLiteral dUnique::deviceId(dString* fp)
 {
@@ -201,6 +231,27 @@ dLiteral dUnique::programPath(bool dironly)
     return *ProgramPathes[dironly];
 }
 
+uint64_t dUnique::generateHash(dLiteral filepath)
+{
+    dString OldLocale = setlocale(LC_ALL, nullptr);
+    setlocale(LC_ALL, "en_US.UTF-8");
+    FILE* NewFile = std::fopen(filepath.buildNative(), "rb");
+    setlocale(LC_ALL, ((dLiteral) OldLocale).buildNative());
+
+    uint64_t CrcCode = 0;
+    if(NewFile)
+    {
+        // CRC64처리
+        dump NewBuffer[4096];
+        while(int32_t ReadLength = std::fread(NewBuffer, sizeof(dump), 4096, NewFile))
+            for(int32_t i = 0; i < ReadLength; ++i)
+                CrcCode = gUniqueUtil.mCrcTable[(CrcCode ^ NewBuffer[i]) & 0xFF] ^ (CrcCode >> 8);
+
+        std::fclose(NewFile);
+    }
+    return CrcCode;
+}
+
 dString dUnique::fingerPrint(utf8s_nn string, int32_t length)
 {
     DD_assert(-1 <= length, "the index has exceeded the array limit.");
@@ -217,22 +268,10 @@ dString dUnique::fingerPrint(utf8s_nn string, int32_t length)
     #endif
 
     // CRC64처리
-    uint64_t CrcTable[256];
-    for(int i = 0; i < 256; ++i)
-    {
-        uint64_t crc = i;
-        for(int j = 0; j < 8; ++j)
-        {
-            if(crc & 1)
-                crc = (crc >> 1) ^ 0xC96C5795D7870F42;
-            else crc >>= 1;
-        }
-        CrcTable[i] = crc;
-    }
     uint64_t CrcCode = 0;
     utf8s_nn CrcFocus = string;
     for(int i = 0; i < length; ++i)
-        CrcCode = CrcTable[(CrcCode ^ *(CrcFocus++)) & 0xFF] ^ (CrcCode >> 8);
+        CrcCode = gUniqueUtil.mCrcTable[(CrcCode ^ *(CrcFocus++)) & 0xFF] ^ (CrcCode >> 8);
 
     // 6자리 장치식별코드
     uint32_t DeviceCode[10];

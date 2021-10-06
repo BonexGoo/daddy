@@ -185,11 +185,6 @@ public: // 입출력
     /// @return         새로운 객체
     static dString print(utf8s format, ...);
 
-    /// @brief          파일에서 스트링 가져오기
-    /// @param path     파일경로
-    /// @return         새로운 객체
-    static dString fromFile(const dLiteral& path);
-
     /// @brief          정수값으로 스트링 제작
     /// @param value    정수값
     /// @return         새로운 객체
@@ -199,11 +194,6 @@ public: // 입출력
     /// @param value    실수값
     /// @return         새로운 객체
     static dString fromDouble(double value);
-
-    /// @brief          파일로 스트링 내보내기
-    /// @param path     파일경로
-    /// @return         true-성공, false-실패
-    bool toFile(const dLiteral& path) const;
 
     /// @brief          정수값으로 변환
     /// @return         정수값

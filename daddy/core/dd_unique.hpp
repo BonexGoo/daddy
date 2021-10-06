@@ -32,6 +32,11 @@ public: // 사용성
     static dLiteral programPath(bool dironly);
 
 public: // 기능성
+    /// @brief          해시값생성
+    /// @param filepath 파일경로
+    /// @return         해시값(CRC64)
+    static uint64_t generateHash(dLiteral filepath);
+
     /// @brief          핑거프린트
     /// @param string   프린트할 네이티브 스트링
     /// @param length   스트링의 길이(-1이면 끝까지)

@@ -458,22 +458,6 @@ dString dString::print(utf8s format, ...)
     return dString();
 }
 
-dString dString::fromFile(const dLiteral& path)
-{
-    if(FILE* NewFile = std::fopen(path.buildNative(), "rb"))
-    {
-        std::fseek(NewFile, 0, SEEK_END);
-        auto NewLength = (const int32_t) std::ftell(NewFile);
-        std::fseek(NewFile, 0, SEEK_SET);
-
-        utf8* NewString = new utf8[NewLength];
-        std::fread(NewString, sizeof(utf8), NewLength, NewFile);
-        std::fclose(NewFile);
-        return dString(*((ptr_u*) &NewString), NewLength);
-    }
-    return dString();
-}
-
 dString dString::fromNumber(int64_t value)
 {
     utf8 Result[1024];
@@ -488,17 +472,6 @@ dString dString::fromDouble(double value)
     while(Result[Length - 1] == '0') Length--;
     if(Result[Length - 1] == '.') Length--;
     return dString(Result, Length);
-}
-
-bool dString::toFile(const dLiteral& path) const
-{
-    if(FILE* NewFile = std::fopen(path.buildNative(), "wb"))
-    {
-        std::fwrite(string(), sizeof(utf8), length(), NewFile);
-        std::fclose(NewFile);
-        return true;
-    }
-    return false;
 }
 
 static int64_t StringToNumber(utf8s_nn focus, const utf8s_nn end)

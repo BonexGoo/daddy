@@ -198,6 +198,7 @@ void dMarkup::loadYaml(const dString& yaml)
 
 dString dMarkup::saveYaml() const
 {
+    /////////////////////////////////////// 여기서부터!!!!!
     return dString();
 }
 
@@ -350,6 +351,13 @@ void dMarkup::_copy_(const _self_& rhs)
     mValue = rhs.mValue;
     mNameable = (rhs.mNameable)? new NameableMap(*rhs.mNameable) : nullptr;
     mIndexable = (rhs.mIndexable)? new IndexableMap(*rhs.mIndexable) : nullptr;
+}
+
+DD_passage_define_alone(dMarkup, const dString& yaml)
+{
+    mNameable = nullptr;
+    mIndexable = nullptr;
+    loadYaml(yaml);
 }
 
 } // namespace Daddy

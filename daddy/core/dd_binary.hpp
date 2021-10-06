@@ -55,10 +55,19 @@ public: // 입출력
     /// @return         새로운 객체
     static dBinary fromExternal(dumps buffer, uint32_t length);
 
+    /// @brief          스트링에서 바이너리 가져오기
+    /// @param string   가져올 스트링
+    /// @return         새로운 객체
+    static dBinary fromString(const dLiteral& string);
+
     /// @brief          파일에서 바이너리 가져오기
     /// @param path     파일경로
     /// @return         새로운 객체
     static dBinary fromFile(const dLiteral& filepath);
+
+    /// @brief          스트링으로 바이너리 내보내기
+    /// @return         새로운 스트링
+    dString toString() const;
 
     /// @brief          파일로 바이너리 내보내기
     /// @param path     파일경로

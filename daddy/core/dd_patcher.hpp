@@ -7,6 +7,7 @@
 #include "dd_binary.hpp"
 #include "dd_handle.hpp"
 #include <functional>
+#include <string>
 
 namespace Daddy {
 
@@ -18,9 +19,9 @@ public:
     DD_handle(LocalData);
     DD_handle(Schedule);
     typedef uint32_t vercode;
-    enum worktype:uint8_t {NoWork = 0, Download, Upload};
-    enum datatype:utf8 {UploadMemo = 'a', Changed = 'c', Erased = 'e', TotalHash = 'z'};
-    enum steptype:uint8_t {CheckingForDownload = 0, CleaningForDownload, Downloading, CopyingForUpload, Uploading};
+    enum worktype:uint8_t {WT_NoWork = 0, WT_Download, WT_Upload};
+    enum datatype:utf8 {DT_UploadMemo = 'a', DT_Changed = 'c', DT_Erased = 'e', DT_TotalHash = 'z'};
+    enum steptype:uint8_t {ST_CheckingForDownload = 0, ST_CleaningForDownload, ST_Downloading, ST_CopyingForUpload, ST_Uploading};
     typedef std::function<dBinary(vercode version, datatype type, dLiteral dataname)> IOReadCB;
     typedef std::function<bool(vercode version, datatype type, dLiteral dataname, const dBinary& data)> IOWriteCB;
     typedef std::function<void(steptype type, float progress, dLiteral detail)> LogCB;
@@ -77,7 +78,7 @@ public: // 사용성
     /// @see                build, load, save
     bool drive(Schedule schedule, dLiteral memo) const;
 
-public: // 도구
+public: // 상태도구
     /// @brief              스케줄 불러오기
     /// @param filepath     파일경로
     /// @return             스케줄
@@ -106,6 +107,27 @@ public: // 도구
     /// @param schedule     확인할 스케줄
     /// @return             메모내용
     static dString getMemo(const Schedule& schedule);
+
+public: // 비주얼도구
+    struct RenderStatus
+    {
+        uint32_t mDeep {0};
+        uint32_t mPos {0};
+        bool mFolder {false};
+        bool mExpanded {false};
+    };
+    typedef std::function<uint32_t(uint32_t ui, const RenderStatus& status, const std::string& name)> RenderCB;
+
+    /// @brief              로컬데이터를 즉시 랜더링
+    /// @param local        로컬데이터
+    /// @param renderer     랜더링용 콜백함수
+    /// @return             랜더링된 세로길이
+    static uint32_t renderOnce(LocalData local, RenderCB renderer);
+
+    /// @brief              UI요소의 확장기능 반전
+    /// @param ui           해당되는 UI요소의 ID
+    /// @return             true-성공, false-실패
+    static bool toggleExpand(uint32_t ui);
 
 DD_escaper_alone(dPatcher): // 객체사이클
     void _init_(InitType type);
