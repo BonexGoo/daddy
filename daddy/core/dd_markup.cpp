@@ -77,7 +77,7 @@ void dMarkup::loadYaml(const dString& yaml)
     auto Yaml = (dLiteral) yaml;
     utf8s_nn Focus = Yaml.string();
     utf8s_nn End = Focus + Yaml.length();
-    for(int32_t i = 2; Focus + i < End; ++i) // 시작지점('---') 찾기
+    for(uint32_t i = 2; Focus + i < End; ++i) // 시작지점('---') 찾기
     {
         if(Focus[i] == '-' && Focus[i - 1] == '-' && Focus[i - 2] == '-')
         {
@@ -198,8 +198,11 @@ void dMarkup::loadYaml(const dString& yaml)
 
 dString dMarkup::saveYaml() const
 {
-    /////////////////////////////////////// 여기서부터!!!!!
-    return dString();
+    dBinary Collector;
+    Collector.add((dumps) "---\n", 4);
+    saveYamlCore(Collector, 0, false);
+    Collector.add((dumps) "...\n", 4);
+    return Collector.toString();
 }
 
 void dMarkup::clear()
@@ -311,19 +314,88 @@ void dMarkup::debugPrint(uint32_t space) const
     for(auto& it : *mNameable)
     {
         printf("%*s%s:\n", space, "", it.first.c_str());
-        it.second.debugPrint(space + 4);
+        it.second.debugPrint(space + mSpaceSize);
     }
 
     if(mIndexable)
     for(auto& it : *mIndexable)
     {
         printf("%*s[%d]:\n", space, "", it.first);
-        it.second.debugPrint(space + 4);
+        it.second.debugPrint(space + mSpaceSize);
     }
 }
 
 const dMarkup& dMarkup::blank()
 {DD_global_direct(dMarkup, _); return _;}
+
+void dMarkup::saveYamlCore(dBinary& collector, uint32_t space, uint32_t indent) const
+{
+    if(0 < mValue.length())
+    {
+        auto OneLiteral = (dLiteral) mValue;
+        auto LiteralPtr = OneLiteral.string();
+        auto LiteralLen = OneLiteral.length();
+        uint32_t iBefore = 0;
+        uint32_t Space = (indent)? indent : space;
+        indent = 0;
+
+        // 멀티라인
+        for(uint32_t i = 0; i < LiteralLen; ++i)
+        {
+            if(LiteralPtr[i] == '\n')
+            {
+                if(!iBefore)
+                {
+                    auto NewString = dString::print("%*s|\n", Space, "");
+                    collector.add((dumps) NewString.string(), NewString.length());
+                    // 공백계산
+                    auto CalcPtr = (utf8s_nn) collector.buffer();
+                    for(uint32_t j = collector.length() - 1; 0 <= j; --j)
+                        if(j == 0 || CalcPtr[j - 1] == '\n')
+                        {
+                            Space = collector.length() - j - 2;
+                            break;
+                        }
+                }
+                auto NewString = dString::print("%*s%.*s\n", Space, "", i - iBefore, &LiteralPtr[iBefore]);
+                collector.add((dumps) NewString.string(), NewString.length());
+                iBefore = i + 1;
+            }
+        }
+
+        // 싱글라인
+        auto NewString = dString::print("%*s%.*s\n", Space, "", LiteralLen - iBefore, &LiteralPtr[iBefore]);
+        collector.add((dumps) NewString.string(), NewString.length());
+    }
+
+    if(mNameable)
+    for(auto& it : *mNameable)
+    {
+        if(0 < it.second.mValue.length())
+        {
+            auto NewString = dString::print("%*s%s:", (indent)? indent : space, "", it.first.c_str());
+            collector.add((dumps) NewString.string(), NewString.length());
+            it.second.saveYamlCore(collector, 0, 1);
+            indent = 0;
+        }
+        else
+        {
+            auto NewString = dString::print("%*s%s:\n", (indent)? indent : space, "", it.first.c_str());
+            collector.add((dumps) NewString.string(), NewString.length());
+            it.second.saveYamlCore(collector, space + mSpaceSize, false);
+            indent = 0;
+        }
+    }
+
+    if(mIndexable)
+    for(auto& it : *mIndexable)
+    {
+        auto NewString = dString::print("%*s-", (indent)? indent : space, "", it.first);
+        collector.add((dumps) NewString.string(), NewString.length());
+        it.second.saveYamlCore(collector, space + mSpaceSize, mSpaceSize - 1);
+        indent = 0;
+    }
+}
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 // ■ dMarkup::escaper
