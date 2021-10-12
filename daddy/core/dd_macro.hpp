@@ -11,7 +11,7 @@
     - dd_markup.hpp/dMarkup: 구조적데이터관리(현재 yaml파서)
     - dd_patcher.hpp/dPatcher: 다운로드런처/버저닝업로더를 통합한 파일패치관리
     - dd_platform.hpp/dSocket: 서버/클라이언트의 역할모델
-    - dd_platform.hpp/dDirectory: 디렉터리관리
+    - dd_platform.hpp/dDirectory: 디렉토리관리
     - dd_platform.hpp/dProcess: 프로세스관리
     - dd_string.hpp/dLiteral: 상수를 보장하는 스트링객체
     - dd_string.hpp/dString: 복사하지 않고 스트링끼리 부분참조되는 스트링객체

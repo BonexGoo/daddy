@@ -83,7 +83,7 @@ private:
     DD_passage_declare_alone(dSocket, ptr_u agent); // move only
 };
 
-/// @brief 디렉터리객체
+/// @brief 디렉토리객체
 class dDirectory
 {
 public:

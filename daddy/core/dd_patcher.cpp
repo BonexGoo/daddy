@@ -58,7 +58,12 @@ DD_escaper(GUIDataP, dEscaper, mUI(generatedUI())):
 class FileDataP : public GUIDataP
 {
 public:
-    void load(dString filepath, const dDirectory::FileStatus& status);
+    void load(dString path, uint64_t size, uint64_t hash, uint64_t date);
+    void load(dString path, const dDirectory::FileStatus& status);
+    static bool compare(FileDataP& a, FileDataP& b);
+    inline void setAdded() {mCompare = dPatcher::CT_Added;}
+    inline void setRemoved() {mCompare = dPatcher::CT_Removed;}
+    inline dPatcher::comparetype comparetype() const {return mCompare;}
 
 private:
     char typecode() const override {return 'F';}
@@ -67,6 +72,7 @@ DD_escaper(FileDataP, GUIDataP):
     void _init_(InitType type)
     {
         _super_::_init_(type);
+        mCompare = dPatcher::CT_Same;
         mSize = 0;
         mHash = 0;
         mDate = 0;
@@ -75,111 +81,91 @@ DD_escaper(FileDataP, GUIDataP):
     {
         _super_::_quit_();
     }
+    dPatcher::comparetype mCompare;
     dString mPath;
     uint64_t mSize;
     uint64_t mHash;
     uint64_t mDate;
 };
 
-void FileDataP::load(dString filepath, const dDirectory::FileStatus& status)
+void FileDataP::load(dString path, uint64_t size, uint64_t hash, uint64_t date)
 {
-    mPath = filepath;
+    mPath = path;
+    mSize = size;
+    mHash = hash;
+    mDate = date;
+}
+
+void FileDataP::load(dString path, const dDirectory::FileStatus& status)
+{
+    mPath = path;
     mSize = status.mFileSize;
     mHash = dUnique::generateHash(mPath);
     mDate = status.mLastWriteTime;
 }
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
-// ■ IODirDataP
-class IODirDataP : public GUIDataP
+bool FileDataP::compare(FileDataP& a, FileDataP& b)
 {
-public:
-    void load(const dMarkup& yaml);
-
-private:
-    char typecode() const override {return 'I';}
-
-DD_escaper(IODirDataP, GUIDataP):
-    void _init_(InitType type)
+    if(a.mSize != b.mSize || a.mHash != b.mHash)
     {
-        _super_::_init_(type);
+        a.mCompare = dPatcher::CT_Different;
+        b.mCompare = dPatcher::CT_Different;
+        return true;
     }
-    void _quit_()
-    {
-        _super_::_quit_();
-    }
-    std::map<std::string, IODirDataP> mDirs;
-    std::map<std::string, FileDataP> mFiles;
-};
-
-void IODirDataP::load(const dMarkup& yaml)
-{
-    //////////////////////////////////// 여기서부터!!!!
-    ////////////////////////////////////
-    ////////////////////////////////////
-    ////////////////////////////////////
-
-    /*const dDirectory NewDirectory(dirpath);
-
-    mDirs.clear();
-    for(const auto& it : NewDirectory.dirs())
-        mDirs[it.first].load(dirpath + '/' + it.first.c_str());
-
-    mFiles.clear();
-    for(const auto& it : NewDirectory.files())
-        mFiles[it.first].load(dirpath + '/' + it.first.c_str(), it.second);*/
+    return false;
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
-// ■ LocalDirDataP
-class LocalDirDataP : public GUIDataP
+// ■ DirDataP
+class DirDataP : public GUIDataP
 {
 public:
-    void load(dString dirpath);
     uint32_t render(uint32_t deep, uint32_t pos, const dPatcher::RenderCB& renderer) const;
     void toggleExpand();
+    static bool compare(DirDataP& a, DirDataP& b);
+    inline void setAdded() {mCompare = dPatcher::CT_Added;}
+    static DirDataP* newRemoved()
+    {
+        DirDataP* Result = new DirDataP();
+        Result->mCompare = dPatcher::CT_Removed;
+        return Result;
+    }
 
 public:
-    static LocalDirDataP* toClass(ptr_u handle)
+    static DirDataP* toClass(ptr_u handle)
     {
         if(auto CurGUIData = (GUIDataP*) handle)
         if(CurGUIData->typecode() == 'D')
-            return (LocalDirDataP*) CurGUIData;
+            return (DirDataP*) CurGUIData;
         return nullptr;
     }
 
 private:
     char typecode() const override {return 'D';}
 
-DD_escaper(LocalDirDataP, GUIDataP):
+protected:
+    void clear();
+
+DD_escaper(DirDataP, GUIDataP):
     void _init_(InitType type)
     {
         _super_::_init_(type);
         mExpanded = true;
+        mCompare = dPatcher::CT_Same;
     }
     void _quit_()
     {
         _super_::_quit_();
+        for(const auto& it : mDirPtrs)
+            delete it.second;
     }
     bool mExpanded;
-    std::map<std::string, LocalDirDataP> mDirs;
+    dPatcher::comparetype mCompare;
+    std::map<std::string, DirDataP*> mDirPtrs;
     std::map<std::string, FileDataP> mFiles;
 };
 
-void LocalDirDataP::load(dString dirpath)
-{
-    const dDirectory NewDirectory(dirpath);
-
-    mDirs.clear();
-    for(const auto& it : NewDirectory.dirs())
-        mDirs[it.first].load(dirpath + '/' + it.first.c_str());
-
-    mFiles.clear();
-    for(const auto& it : NewDirectory.files())
-        mFiles[it.first].load(dirpath + '/' + it.first.c_str(), it.second);
-}
-
-uint32_t LocalDirDataP::render(uint32_t deep, uint32_t pos, const dPatcher::RenderCB& renderer) const
+uint32_t DirDataP::render(uint32_t deep, uint32_t pos, const dPatcher::RenderCB& renderer) const
 {
     dPatcher::RenderStatus Status;
     Status.mDeep = deep;
@@ -188,24 +174,215 @@ uint32_t LocalDirDataP::render(uint32_t deep, uint32_t pos, const dPatcher::Rend
     if(mExpanded)
     {
         Status.mFolder = true;
-        for(const auto& it : mDirs)
+        for(const auto& it : mDirPtrs)
         {
-            Status.mExpanded = it.second.mExpanded;
-            Status.mPos = renderer(it.second.ui(), Status, it.first);
-            Status.mPos = it.second.render(Status.mDeep + 1, Status.mPos, renderer);
+            Status.mExpanded = it.second->mExpanded;
+            Status.mCompare = it.second->mCompare;
+            Status.mPos = renderer(it.second->ui(), Status, it.first);
+            Status.mPos = it.second->render(Status.mDeep + 1, Status.mPos, renderer);
         }
 
         Status.mFolder = false;
         Status.mExpanded = false;
         for(const auto& it : mFiles)
+        {
+            Status.mCompare = it.second.comparetype();
             Status.mPos = renderer(it.second.ui(), Status, it.first);
+        }
     }
     return Status.mPos;
 }
 
-void LocalDirDataP::toggleExpand()
+void DirDataP::toggleExpand()
 {
     mExpanded ^= true;
+}
+
+bool DirDataP::compare(DirDataP& a, DirDataP& b)
+{
+    bool IsDiff = false;
+    // 디렉토리
+    {
+        auto itA = a.mDirPtrs.begin();
+        auto itB = b.mDirPtrs.begin();
+        bool nextA = (itA != a.mDirPtrs.end());
+        bool nextB = (itB != b.mDirPtrs.end());
+        while(nextA || nextB)
+        {
+            // 비교
+            int Compare = 0;
+            if(nextA && nextB)
+                Compare = itA->first.compare(itB->first);
+            else if(nextA) Compare = -1;
+            else Compare = 1;
+
+            // 처리
+            if(Compare == 0)
+            {
+                IsDiff |= compare(*itA->second, *itB->second);
+                nextA = (++itA != a.mDirPtrs.end());
+                nextB = (++itB != b.mDirPtrs.end());
+            }
+            else
+            {
+                IsDiff = true;
+                if(Compare < 0)
+                {
+                    itA->second->setAdded();
+                    auto NewB = DirDataP::newRemoved();
+                    compare(*itA->second, *NewB);
+                    b.mDirPtrs[itA->first] = NewB;
+                    nextA = (++itA != a.mDirPtrs.end());
+                }
+                else
+                {
+                    itB->second->setAdded();
+                    auto NewA = DirDataP::newRemoved();
+                    compare(*NewA, *itB->second);
+                    a.mDirPtrs[itB->first] = NewA;
+                    nextB = (++itB != b.mDirPtrs.end());
+                }
+            }
+        }
+    }
+
+    // 파일
+    {
+        auto itA = a.mFiles.begin();
+        auto itB = b.mFiles.begin();
+        bool nextA = (itA != a.mFiles.end());
+        bool nextB = (itB != b.mFiles.end());
+        while(nextA || nextB)
+        {
+            // 비교
+            int Compare = 0;
+            if(nextA && nextB)
+                Compare = itA->first.compare(itB->first);
+            else if(nextA) Compare = -1;
+            else Compare = 1;
+
+            // 처리
+            if(Compare == 0)
+            {
+                IsDiff |= FileDataP::compare(itA->second, itB->second);
+                nextA = (++itA != a.mFiles.end());
+                nextB = (++itB != b.mFiles.end());
+            }
+            else
+            {
+                IsDiff = true;
+                if(Compare < 0)
+                {
+                    itA->second.setAdded();
+                    b.mFiles[itA->first].setRemoved();
+                    nextA = (++itA != a.mFiles.end());
+                }
+                else
+                {
+                    itB->second.setAdded();
+                    a.mFiles[itB->first].setRemoved();
+                    nextB = (++itB != b.mFiles.end());
+                }
+            }
+        }
+    }
+    return IsDiff;
+}
+
+void DirDataP::clear()
+{
+    for(const auto& it : mDirPtrs)
+        delete it.second;
+    mDirPtrs.clear();
+    mFiles.clear();
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// ■ IODirDataP
+class IODirDataP : public DirDataP
+{
+public:
+    void load(const dMarkup& yaml);
+
+DD_escaper(IODirDataP, DirDataP):
+    void _init_(InitType type)
+    {
+        _super_::_init_(type);
+    }
+    void _quit_()
+    {
+        _super_::_quit_();
+    }
+};
+
+void IODirDataP::load(const dMarkup& yaml)
+{
+    clear();
+    DD_hook(yaml("files"))
+    for(uint32_t i = 0, iend = DD_fish.length(); i < iend; ++i)
+    {
+        DD_hook(DD_fish[i])
+        if(DD_fish.isValid())
+        {
+            IODirDataP* CurDir = this;
+            auto& Path = DD_fish("path").get();
+            auto PathPtr = Path.string();
+            for(uint32_t j = 0, jend = Path.length(), jold = 0; j <= jend; ++j)
+            {
+                if(j == jend)
+                {
+                    const std::string Name(&PathPtr[jold], j - jold);
+                    const uint64_t Size = uint64_t(DD_fish("size").get().toNumber() & DD_const8u(0xFFFFFFFFFFFFFFFF));
+                    const uint64_t Hash = uint64_t(DD_fish("hash").get().toNumber() & DD_const8u(0xFFFFFFFFFFFFFFFF));
+                    const uint64_t Date = uint64_t(DD_fish("date").get().toNumber() & DD_const8u(0xFFFFFFFFFFFFFFFF));
+                    CurDir->mFiles[Name].load(Path, Size, Hash, Date);
+                }
+                else if(PathPtr[j] == '/')
+                {
+                    const std::string Name(&PathPtr[jold], j - jold);
+                    if(CurDir->mDirPtrs.find(Name) == CurDir->mDirPtrs.end())
+                        CurDir->mDirPtrs[Name] = new IODirDataP();
+
+                    CurDir = (IODirDataP*) CurDir->mDirPtrs[Name];
+                    jold = j + 1;
+                }
+            }
+        }
+    }
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// ■ LocalDirDataP
+class LocalDirDataP : public DirDataP
+{
+public:
+    void load(dString dirpath);
+
+DD_escaper(LocalDirDataP, DirDataP):
+    void _init_(InitType type)
+    {
+        _super_::_init_(type);
+    }
+    void _quit_()
+    {
+        _super_::_quit_();
+    }
+};
+
+void LocalDirDataP::load(dString dirpath)
+{
+    clear();
+    const dDirectory NewDirectory(dirpath);
+
+    for(const auto& it : NewDirectory.dirs())
+    {
+        if(mDirPtrs.find(it.first) == mDirPtrs.end())
+            mDirPtrs[it.first] = new LocalDirDataP();
+        ((LocalDirDataP*) mDirPtrs[it.first])->load(dirpath + '/' + it.first.c_str());
+    }
+
+    for(const auto& it : NewDirectory.files())
+        mFiles[it.first].load(dirpath + '/' + it.first.c_str(), it.second);
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -262,7 +439,7 @@ dPatcher::IOData dPatcher::readyForUpload(vercode startversion) const
     auto NewIODirData = new IODirDataP();
     NewIODirData->load(HashYaml);
     return dPatcher::IOData((ptr_u)(GUIDataP*) NewIODirData,
-        [](ptr_u handle)->void {delete (IODirDataP*)(GUIDataP*) handle;});
+        [](ptr_u handle)->void {delete (GUIDataP*) handle;});
 }
 
 dPatcher::LocalData dPatcher::readyForLocal(dLiteral dirpath)
@@ -270,11 +447,14 @@ dPatcher::LocalData dPatcher::readyForLocal(dLiteral dirpath)
     auto NewLocalDirData = new LocalDirDataP();
     NewLocalDirData->load(dirpath);
     return dPatcher::LocalData((ptr_u)(GUIDataP*) NewLocalDirData,
-        [](ptr_u handle)->void {delete (LocalDirDataP*)(GUIDataP*) handle;});
+        [](ptr_u handle)->void {delete (GUIDataP*) handle;});
 }
 
 dPatcher::Schedule dPatcher::build(IOData io, LocalData local)
 {
+    if(auto CurIO = io.get<DirDataP>())
+    if(auto CurLocal = local.get<DirDataP>())
+        DirDataP::compare(*CurIO, *CurLocal);
     return dPatcher::Schedule(); /////
 }
 
@@ -311,9 +491,16 @@ dString dPatcher::getMemo(const Schedule& schedule)
     return ""; /////
 }
 
-uint32_t dPatcher::renderOnce(LocalData local, RenderCB renderer)
+uint32_t dPatcher::renderOnce(IOData data, RenderCB renderer)
 {
-    if(auto CurDirData = local.get<const LocalDirDataP>())
+    if(auto CurDirData = data.get<const DirDataP>())
+        return CurDirData->render(0, 0, renderer);
+    return 0;
+}
+
+uint32_t dPatcher::renderOnce(LocalData data, RenderCB renderer)
+{
+    if(auto CurDirData = data.get<const DirDataP>())
         return CurDirData->render(0, 0, renderer);
     return 0;
 }

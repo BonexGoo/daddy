@@ -22,6 +22,7 @@ public:
     enum worktype:uint8_t {WT_NoWork = 0, WT_Download, WT_Upload};
     enum datatype:utf8 {DT_UploadMemo = 'a', DT_Changed = 'c', DT_Erased = 'e', DT_TotalHash = 'z'};
     enum steptype:uint8_t {ST_CheckingForDownload = 0, ST_CleaningForDownload, ST_Downloading, ST_CopyingForUpload, ST_Uploading};
+    enum comparetype:uint8_t {CT_Same = 0, CT_Added, CT_Removed, CT_Different};
     typedef std::function<dBinary(vercode version, datatype type, dLiteral dataname)> IOReadCB;
     typedef std::function<bool(vercode version, datatype type, dLiteral dataname, const dBinary& data)> IOWriteCB;
     typedef std::function<void(steptype type, float progress, dLiteral detail)> LogCB;
@@ -115,14 +116,21 @@ public: // 비주얼도구
         uint32_t mPos {0};
         bool mFolder {false};
         bool mExpanded {false};
+        comparetype mCompare {CT_Same};
     };
     typedef std::function<uint32_t(uint32_t ui, const RenderStatus& status, const std::string& name)> RenderCB;
 
-    /// @brief              로컬데이터를 즉시 랜더링
-    /// @param local        로컬데이터
+    /// @brief              IO데이터를 즉시 랜더링
+    /// @param data         IO데이터
     /// @param renderer     랜더링용 콜백함수
     /// @return             랜더링된 세로길이
-    static uint32_t renderOnce(LocalData local, RenderCB renderer);
+    static uint32_t renderOnce(IOData data, RenderCB renderer);
+
+    /// @brief              로컬데이터를 즉시 랜더링
+    /// @param data         로컬데이터
+    /// @param renderer     랜더링용 콜백함수
+    /// @return             랜더링된 세로길이
+    static uint32_t renderOnce(LocalData data, RenderCB renderer);
 
     /// @brief              UI요소의 확장기능 반전
     /// @param ui           해당되는 UI요소의 ID
