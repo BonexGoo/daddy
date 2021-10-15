@@ -61,6 +61,8 @@ public:
     void load(dString path, uint64_t size, uint64_t hash, uint64_t date);
     void load(dString path, const dDirectory::FileStatus& status);
     static bool compare(FileDataP& a, FileDataP& b);
+    void collect(dMarkup& filelist) const;
+    inline void setSame() {mCompare = dPatcher::CT_Same;}
     inline void setAdded() {mCompare = dPatcher::CT_Added;}
     inline void setRemoved() {mCompare = dPatcher::CT_Removed;}
     inline dPatcher::comparetype comparetype() const {return mCompare;}
@@ -115,6 +117,18 @@ bool FileDataP::compare(FileDataP& a, FileDataP& b)
     return false;
 }
 
+void FileDataP::collect(dMarkup& filelist) const
+{
+    if(mCompare != dPatcher::CT_Same)
+    {
+        auto& NewFile = filelist.atAdding();
+        NewFile.at("path").set(mPath);
+        NewFile.at("size").set(dString::fromNumber(mSize));
+        NewFile.at("hash").set(dString::fromNumber(mHash));
+        NewFile.at("date").set(dString::fromNumber(mDate));
+    }
+}
+
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 // ■ DirDataP
 class DirDataP : public GUIDataP
@@ -123,6 +137,8 @@ public:
     uint32_t render(uint32_t deep, uint32_t pos, const dPatcher::RenderCB& renderer) const;
     void toggleExpand();
     static bool compare(DirDataP& a, DirDataP& b);
+    virtual void collect(dMarkup& filelist) const {}
+    inline void setSame() {mCompare = dPatcher::CT_Same;}
     inline void setAdded() {mCompare = dPatcher::CT_Added;}
     static DirDataP* newRemoved()
     {
@@ -152,6 +168,7 @@ DD_escaper(DirDataP, GUIDataP):
         _super_::_init_(type);
         mExpanded = true;
         mCompare = dPatcher::CT_Same;
+        mRefPair = nullptr;
     }
     void _quit_()
     {
@@ -161,6 +178,7 @@ DD_escaper(DirDataP, GUIDataP):
     }
     bool mExpanded;
     dPatcher::comparetype mCompare;
+    DirDataP* mRefPair;
     std::map<std::string, DirDataP*> mDirPtrs;
     std::map<std::string, FileDataP> mFiles;
 };
@@ -196,10 +214,18 @@ uint32_t DirDataP::render(uint32_t deep, uint32_t pos, const dPatcher::RenderCB&
 void DirDataP::toggleExpand()
 {
     mExpanded ^= true;
+    if(mRefPair)
+        mRefPair->mExpanded = mExpanded;
 }
 
 bool DirDataP::compare(DirDataP& a, DirDataP& b)
 {
+    const bool Expanded = (a.mExpanded || b.mExpanded);
+    a.mExpanded = Expanded;
+    b.mExpanded = Expanded;
+    a.mRefPair = &b;
+    b.mRefPair = &a;
+
     bool IsDiff = false;
     // 디렉토리
     {
@@ -219,7 +245,9 @@ bool DirDataP::compare(DirDataP& a, DirDataP& b)
             // 처리
             if(Compare == 0)
             {
-                IsDiff |= compare(*itA->second, *itB->second);
+                itA->second->setSame();
+                itB->second->setSame();
+                IsDiff |= DirDataP::compare(*itA->second, *itB->second);
                 nextA = (++itA != a.mDirPtrs.end());
                 nextB = (++itB != b.mDirPtrs.end());
             }
@@ -230,7 +258,7 @@ bool DirDataP::compare(DirDataP& a, DirDataP& b)
                 {
                     itA->second->setAdded();
                     auto NewB = DirDataP::newRemoved();
-                    compare(*itA->second, *NewB);
+                    DirDataP::compare(*itA->second, *NewB);
                     b.mDirPtrs[itA->first] = NewB;
                     nextA = (++itA != a.mDirPtrs.end());
                 }
@@ -238,7 +266,7 @@ bool DirDataP::compare(DirDataP& a, DirDataP& b)
                 {
                     itB->second->setAdded();
                     auto NewA = DirDataP::newRemoved();
-                    compare(*NewA, *itB->second);
+                    DirDataP::compare(*NewA, *itB->second);
                     a.mDirPtrs[itB->first] = NewA;
                     nextB = (++itB != b.mDirPtrs.end());
                 }
@@ -264,6 +292,8 @@ bool DirDataP::compare(DirDataP& a, DirDataP& b)
             // 처리
             if(Compare == 0)
             {
+                itA->second.setSame();
+                itB->second.setSame();
                 IsDiff |= FileDataP::compare(itA->second, itB->second);
                 nextA = (++itA != a.mFiles.end());
                 nextB = (++itB != b.mFiles.end());
@@ -302,9 +332,11 @@ void DirDataP::clear()
 class IODirDataP : public DirDataP
 {
 public:
-    void load(const dMarkup& yaml);
+    void load(const dMarkup& filelist);
+    void collect(dMarkup& filelist) const override;
+    inline bool upload() const {return mUpload;}
 
-DD_escaper(IODirDataP, DirDataP):
+DD_escaper(IODirDataP, DirDataP, mUpload(false)):
     void _init_(InitType type)
     {
         _super_::_init_(type);
@@ -313,12 +345,16 @@ DD_escaper(IODirDataP, DirDataP):
     {
         _super_::_quit_();
     }
+    const bool mUpload;
+
+public:
+    DD_passage_declare(IODirDataP, bool upload);
 };
 
-void IODirDataP::load(const dMarkup& yaml)
+void IODirDataP::load(const dMarkup& filelist)
 {
     clear();
-    DD_hook(yaml("files"))
+    DD_hook(filelist("file"))
     for(uint32_t i = 0, iend = DD_fish.length(); i < iend; ++i)
     {
         DD_hook(DD_fish[i])
@@ -329,7 +365,7 @@ void IODirDataP::load(const dMarkup& yaml)
             auto PathPtr = Path.string();
             for(uint32_t j = 0, jend = Path.length(), jold = 0; j <= jend; ++j)
             {
-                if(j == jend)
+                if(j == jend && jold < j) // 슬래시(/)로 끝나는 경우가 아니어야
                 {
                     const std::string Name(&PathPtr[jold], j - jold);
                     const uint64_t Size = uint64_t(DD_fish("size").get().toNumber() & DD_const8u(0xFFFFFFFFFFFFFFFF));
@@ -351,12 +387,23 @@ void IODirDataP::load(const dMarkup& yaml)
     }
 }
 
+void IODirDataP::collect(dMarkup& filelist) const
+{
+    // 다운로드용 파일리스트 구성
+}
+
+DD_passage_define(IODirDataP, bool upload), mUpload(upload)
+{
+    _init_(InitType::Create);
+}
+
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 // ■ LocalDirDataP
 class LocalDirDataP : public DirDataP
 {
 public:
     void load(dString dirpath);
+    void collect(dMarkup& filelist) const override;
 
 DD_escaper(LocalDirDataP, DirDataP):
     void _init_(InitType type)
@@ -385,23 +432,109 @@ void LocalDirDataP::load(dString dirpath)
         mFiles[it.first].load(dirpath + '/' + it.first.c_str(), it.second);
 }
 
+void LocalDirDataP::collect(dMarkup& filelist) const
+{
+    // 업로드용 파일리스트 구성
+    for(const auto& it : mDirPtrs)
+        it.second->collect(filelist);
+    for(const auto& it : mFiles)
+        it.second.collect(filelist);
+}
+
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 // ■ ScheduleP
-class ScheduleP
+class ScheduleP : public dEscaper
 {
+public:
+    virtual char typecode() const {return 'N';}
+    virtual dBinary build() const {return dBinary();}
+
+public:
+    static ScheduleP* toClass(ptr_u handle)
+    {
+        return (ScheduleP*) handle;
+    }
+
+DD_escaper(ScheduleP, dEscaper):
+    void _init_(InitType type)
+    {
+    }
+    void _quit_()
+    {
+    }
 };
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 // ■ DownloadScheduleP
 class DownloadScheduleP : public ScheduleP
 {
+public:
+    char typecode() const override {return 'D';}
+    dBinary build() const override;
+
+DD_escaper(DownloadScheduleP, ScheduleP):
+    void _init_(InitType type)
+    {
+        _super_::_init_(type);
+    }
+    void _quit_()
+    {
+        _super_::_quit_();
+    }
+
+public:
+    DD_passage_declare(DownloadScheduleP, const DirDataP& io);
 };
+
+dBinary DownloadScheduleP::build() const
+{
+    return dBinary();
+}
+
+DD_passage_define(DownloadScheduleP, const DirDataP& io)
+{
+    _init_(InitType::Create);
+}
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 // ■ UploadScheduleP
 class UploadScheduleP : public ScheduleP
 {
+public:
+    char typecode() const override {return 'U';}
+    dBinary build() const override;
+
+DD_escaper(UploadScheduleP, ScheduleP):
+    void _init_(InitType type)
+    {
+        _super_::_init_(type);
+    }
+    void _quit_()
+    {
+        _super_::_quit_();
+    }
+    dMarkup mFileList;
+
+public:
+    DD_passage_declare(UploadScheduleP, const DirDataP& local);
 };
+
+dBinary UploadScheduleP::build() const
+{
+    return dBinary::fromString(mFileList.saveYaml());
+}
+
+DD_passage_define(UploadScheduleP, const DirDataP& local)
+{
+    _init_(InitType::Create);
+
+    mFileList.at("note").at("uploader-id").set("people2");
+    mFileList.at("note").at("uploader-ip").set("240.100.100.1");
+    mFileList.at("note").at("upload-begin").set("2021-10-15T13:20:02Z");
+    mFileList.at("note").at("upload-end").set("2021-10-15T13:20:02Z");
+    mFileList.at("note").at("upload-try").set("1");
+    local.collect(mFileList.at("file"));
+}
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 // ■ dPatcher
@@ -428,15 +561,20 @@ dPatcher::vercode dPatcher::searchLatestVersion(vercode startversion) const
 
 dPatcher::IOData dPatcher::readyForDownload(vercode version) const
 {
-    return dPatcher::IOData(); /////
+    const dMarkup HashYaml(mReader(version, DT_TotalHash, "filelist.txt").toString());
+
+    auto NewIODirData = new IODirDataP(false);
+    NewIODirData->load(HashYaml);
+    return dPatcher::IOData((ptr_u)(GUIDataP*) NewIODirData,
+        [](ptr_u handle)->void {delete (GUIDataP*) handle;});
 }
 
 dPatcher::IOData dPatcher::readyForUpload(vercode startversion) const
 {
     const vercode LatestVersion = searchLatestVersion(startversion);
-    const dMarkup HashYaml(mReader(LatestVersion, DT_TotalHash, "hash.txt").toString());
+    const dMarkup HashYaml(mReader(LatestVersion, DT_TotalHash, "filelist.txt").toString());
 
-    auto NewIODirData = new IODirDataP();
+    auto NewIODirData = new IODirDataP(true);
     NewIODirData->load(HashYaml);
     return dPatcher::IOData((ptr_u)(GUIDataP*) NewIODirData,
         [](ptr_u handle)->void {delete (GUIDataP*) handle;});
@@ -454,8 +592,23 @@ dPatcher::Schedule dPatcher::build(IOData io, LocalData local)
 {
     if(auto CurIO = io.get<DirDataP>())
     if(auto CurLocal = local.get<DirDataP>())
-        DirDataP::compare(*CurIO, *CurLocal);
-    return dPatcher::Schedule(); /////
+    if(DirDataP::compare(*CurIO, *CurLocal))
+    {
+        if(((IODirDataP*) CurIO)->upload())
+        {
+            auto NewUploadSchedule = new UploadScheduleP(*CurLocal);
+            return dPatcher::Schedule((ptr_u)(ScheduleP*) NewUploadSchedule,
+                [](ptr_u handle)->void {delete (ScheduleP*) handle;});
+        }
+        else
+        {
+            auto NewDownloadSchedule = new DownloadScheduleP(*CurIO);
+            return dPatcher::Schedule((ptr_u)(ScheduleP*) NewDownloadSchedule,
+                [](ptr_u handle)->void {delete (ScheduleP*) handle;});
+        }
+    }
+    return dPatcher::Schedule((ptr_u) new ScheduleP(),
+        [](ptr_u handle)->void {delete (ScheduleP*) handle;});
 }
 
 bool dPatcher::drive(Schedule schedule, dLiteral memo) const
@@ -473,12 +626,26 @@ dPatcher::Schedule dPatcher::load(dLiteral filepath)
 
 bool dPatcher::save(const Schedule& schedule, dLiteral filepath)
 {
-    return false; /////
+    if(auto CurSchedule = schedule.get<ScheduleP>())
+    {
+        const dString FilePath = dString::print("dpatcher/schedule/new_filelist.txt");
+        return CurSchedule->build().toFile(FilePath, true);
+    }
+    return false;
 }
 
 dPatcher::worktype dPatcher::getType(const Schedule& schedule)
 {
-    return WT_NoWork; /////
+    if(auto CurSchedule = schedule.get<ScheduleP>())
+    {
+        if(CurSchedule->typecode() == 'N')
+            return WT_NoWork;
+        else if(CurSchedule->typecode() == 'D')
+            return WT_Download;
+        else if(CurSchedule->typecode() == 'U')
+            return WT_Upload;
+    }
+    return WT_NoWork;
 }
 
 dPatcher::vercode dPatcher::getVersion(const Schedule& schedule)

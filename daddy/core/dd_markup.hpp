@@ -6,7 +6,9 @@
 // Dependencies
 #include "dd_binary.hpp"
 #include "dd_string.hpp"
-#include <unordered_map>
+#include <map>
+#include <vector>
+#include <string>
 
 namespace Daddy {
 
@@ -97,8 +99,8 @@ DD_escaper_alone(dMarkup): // 객체사이클
     void _move_(_self_&& rhs);
     void _copy_(const _self_& rhs);
     dString mValue;
-    typedef std::unordered_map<std::string, dMarkup> NameableMap;
-    typedef std::unordered_map<int, dMarkup> IndexableMap;
+    typedef std::map<std::string, dMarkup> NameableMap;
+    typedef std::vector<dMarkup> IndexableMap;
     NameableMap* mNameable;
     IndexableMap* mIndexable;
     static const uint32_t mSpaceSize {2}; // 2 <= mSpaceSize

@@ -96,7 +96,7 @@ void dMarkup::loadYaml(const dString& yaml)
     }
 
     // Yaml파싱
-    std::unordered_map<std::string, dMarkup*> RefMap;
+    std::map<std::string, dMarkup*> RefMap;
     std::stack<Level> LevelStack;
     LevelStack.push(Level(-1, this));
     dMarkup* LastLevel = nullptr;
@@ -251,13 +251,17 @@ dMarkup& dMarkup::at(const dLiteral& key)
 dMarkup& dMarkup::at(uint32_t index)
 {
     if(!mIndexable) mIndexable = new IndexableMap();
+    if(mIndexable->size() <= index)
+        mIndexable->resize(index + 1);
     return (*mIndexable)[index];
 }
 
 dMarkup& dMarkup::atAdding()
 {
     if(!mIndexable) mIndexable = new IndexableMap();
-    return (*mIndexable)[(int) mIndexable->size()];
+    const uint32_t Size = mIndexable->size() + 1;
+    mIndexable->resize(Size + 1);
+    return (*mIndexable)[Size];
 }
 
 const dMarkup& dMarkup::operator()(const dLiteral& key) const
@@ -275,9 +279,8 @@ const dMarkup& dMarkup::operator[](uint32_t index) const
 {
     if(mIndexable)
     {
-        auto it = mIndexable->find(index);
-        if(it != mIndexable->end())
-            return it->second;
+        if(index < mIndexable->size())
+            return (*mIndexable)[index];
     }
     return blank();
 }
@@ -296,8 +299,11 @@ dMarkup& dMarkup::operator+=(const dMarkup& rhs)
     {
         if(!mIndexable)
             mIndexable = new IndexableMap();
-        for(auto& it : *rhs.mIndexable)
-            (*mIndexable)[(int) mIndexable->size()] += it.second;
+
+        const uint32_t Size = rhs.mIndexable->size();
+        mIndexable->resize(Size);
+        for(uint32_t i = 0; i < Size; ++i)
+            (*mIndexable)[i] = (*rhs.mIndexable)[i];
     }
     return *this;
 }
@@ -318,10 +324,10 @@ void dMarkup::debugPrint(uint32_t space) const
     }
 
     if(mIndexable)
-    for(auto& it : *mIndexable)
+    for(uint32_t i = 0, iend = mIndexable->size(); i < iend; ++i)
     {
-        printf("%*s[%d]:\n", space, "", it.first);
-        it.second.debugPrint(space + mSpaceSize);
+        printf("%*s[%d]:\n", space, "", i);
+        (*mIndexable)[i].debugPrint(space + mSpaceSize);
     }
 }
 
@@ -388,11 +394,11 @@ void dMarkup::saveYamlCore(dBinary& collector, uint32_t space, uint32_t indent) 
     }
 
     if(mIndexable)
-    for(auto& it : *mIndexable)
+    for(uint32_t i = 0, iend = mIndexable->size(); i < iend; ++i)
     {
-        auto NewString = dString::print("%*s-", (indent)? indent : space, "", it.first);
+        auto NewString = dString::print("%*s-", (indent)? indent : space, "", i);
         collector.add((dumps) NewString.string(), NewString.length());
-        it.second.saveYamlCore(collector, space + mSpaceSize, mSpaceSize - 1);
+        (*mIndexable)[i].saveYamlCore(collector, space + mSpaceSize, mSpaceSize - 1);
         indent = 0;
     }
 }

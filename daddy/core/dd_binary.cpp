@@ -206,8 +206,7 @@ bool dBinary::toFile(const dLiteral& filepath, bool autodir) const
             if(*iWord == '/' || *iWord == '\\')
             {
                 dLiteral DirPath = DirName;
-                if(_mkdir(DirPath.buildNative()) != 0)
-                    return false;
+                _mkdir(DirPath.buildNative());
                 DirName += '/';
             }
             else DirName += *iWord;
