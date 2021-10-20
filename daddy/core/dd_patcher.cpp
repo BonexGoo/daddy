@@ -27,6 +27,16 @@ public:
     }
     virtual char typecode() const = 0;
 
+public:
+    static dString& MEMO()
+    {
+        DD_global_direct(dString, _);
+        return _;
+    }
+
+protected:
+    static dString generateSafePath(dLiteral path);
+
 private:
     typedef std::map<uint32_t, GUIDataP*> GUIDataMap;
     static GUIDataMap& MAP()
@@ -34,7 +44,7 @@ private:
         DD_global_direct(GUIDataMap, _);
         return _;
     }
-    uint32_t generatedUI()
+    static uint32_t generatedUI()
     {
         DD_global_direct(uint32_t, LastUI, 0);
         return ++LastUI;
@@ -53,15 +63,64 @@ DD_escaper(GUIDataP, dEscaper, mUI(generatedUI())):
     const uint32_t mUI;
 };
 
+dString GUIDataP::generateSafePath(dLiteral path)
+{
+    auto RevSame = [](utf8s lastptr, utf8s key, int32_t len)->bool
+    {
+        for(int32_t i = 1; i <= len; ++i)
+            if(key[len - i] != lastptr[-i])
+                return false;
+        return true;
+    };
+    dBinary Temp = dBinary::fromString(path);
+    const uint32_t TempLength = Temp.length();
+
+    // 기본 가공
+    if(utf8* Ptr = (utf8*) Temp.buffer())
+    {
+        for(uint32_t i = 0; i < TempLength; ++i)
+        {
+            switch(Ptr[i])
+            {
+            case '\\': Ptr[i] = '$'; break;
+            case '/': Ptr[i] = '$'; break;
+            case ' ': Ptr[i] = '+'; break;
+            case 'A': case 'B': case 'C': case 'D': case 'E': case 'F': case 'G':
+            case 'H': case 'I': case 'J': case 'K': case 'L': case 'M': case 'N':
+            case 'O': case 'P': case 'Q': case 'R': case 'S': case 'T': case 'U':
+            case 'V': case 'W': case 'X': case 'Y': case 'Z': Ptr[i] += 'a' - 'A'; break;
+            }
+        }
+    }
+
+    // 특수 가공
+    if(utf8s LastPtr = utf8s(Temp.buffer() + TempLength))
+    {
+        // 빈폴더 처리
+        if(RevSame(LastPtr, DD_string_pair("$")))
+            Temp.add((dumps) DD_string_pair("_blankdir_.txt"));
+        // 안전하지 않은 확장자
+        else if(TempLength < 4 || (
+            !RevSame(LastPtr, DD_string_pair(".txt")) &&
+            !RevSame(LastPtr, DD_string_pair(".bmp")) &&
+            !RevSame(LastPtr, DD_string_pair(".png")) &&
+            !RevSame(LastPtr, DD_string_pair(".jpg")) &&
+            !RevSame(LastPtr, DD_string_pair(".gif"))))
+            Temp.add((dumps) DD_string_pair("_unknownfmt_.txt"));
+    }
+    return Temp.toString();
+}
+
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 // ■ FileDataP
 class FileDataP : public GUIDataP
 {
 public:
-    void load(dString path, uint64_t size, uint64_t hash, uint64_t date);
-    void load(dString path, const dDirectory::FileStatus& status);
+    void load(const dMarkup& file);
+    void load(dString filepath, uint32_t rootpos, const dDirectory::FileStatus& file);
     static bool compare(FileDataP& a, FileDataP& b);
-    void collect(dMarkup& filelist) const;
+    void save(dMarkup& filelist, dPatcher::vercode version, dString lpath) const;
+    void saveForRemoved(dMarkup& filelist, dPatcher::vercode version, dString lpath) const;
     inline void setSame() {mCompare = dPatcher::CT_Same;}
     inline void setAdded() {mCompare = dPatcher::CT_Added;}
     inline void setRemoved() {mCompare = dPatcher::CT_Removed;}
@@ -76,34 +135,33 @@ DD_escaper(FileDataP, GUIDataP):
         _super_::_init_(type);
         mCompare = dPatcher::CT_Same;
         mSize = 0;
-        mHash = 0;
-        mDate = 0;
     }
     void _quit_()
     {
         _super_::_quit_();
     }
     dPatcher::comparetype mCompare;
-    dString mPath;
+    dString mNote;
+    dString mUPath;
     uint64_t mSize;
-    uint64_t mHash;
-    uint64_t mDate;
+    dString mHash;
+    dString mDate;
 };
 
-void FileDataP::load(dString path, uint64_t size, uint64_t hash, uint64_t date)
+void FileDataP::load(const dMarkup& file)
 {
-    mPath = path;
-    mSize = size;
-    mHash = hash;
-    mDate = date;
+    mNote = file("note").get();
+    mUPath = file("pathU").get();
+    mSize = uint64_t(file("size").get().toNumber() & DD_const8u(0xFFFFFFFFFFFFFFFF));
+    mHash = file("tag").get();
+    mDate = file("time").get();
 }
 
-void FileDataP::load(dString path, const dDirectory::FileStatus& status)
+void FileDataP::load(dString filepath, uint32_t rootpos, const dDirectory::FileStatus& file)
 {
-    mPath = path;
-    mSize = status.mFileSize;
-    mHash = dUnique::generateHash(mPath);
-    mDate = status.mLastWriteTime;
+    mSize = file.mFileSize;
+    mHash = dString::print("CRC64_0x%016llx", dUnique::generateHash(filepath));
+    mDate = dDirectory::toUTCTime(file.mLastWriteTime);
 }
 
 bool FileDataP::compare(FileDataP& a, FileDataP& b)
@@ -117,16 +175,49 @@ bool FileDataP::compare(FileDataP& a, FileDataP& b)
     return false;
 }
 
-void FileDataP::collect(dMarkup& filelist) const
+void FileDataP::save(dMarkup& filelist, dPatcher::vercode version, dString lpath) const
 {
-    if(mCompare != dPatcher::CT_Same)
+    auto& NewFile = filelist.atAdding();
+    // 이전 노트
+    if(0 < mNote.length())
+        NewFile.at("note").set(mNote);
+    // 새 노트
+    else if(0 < GUIDataP::MEMO().length())
+        NewFile.at("note").set(GUIDataP::MEMO());
+
+    // 통합명칭 구성
+    NewFile.at("pathL").set(lpath);
+    if(0 < mUPath.length())
+        NewFile.at("pathU").set(mUPath);
+    else
     {
-        auto& NewFile = filelist.atAdding();
-        NewFile.at("path").set(mPath);
-        NewFile.at("size").set(dString::fromNumber(mSize));
-        NewFile.at("hash").set(dString::fromNumber(mHash));
-        NewFile.at("date").set(dString::fromNumber(mDate));
+        const uint32_t HiVersion = version / 1000;
+        const uint32_t LoVersion = version % 1000;
+        const dString SafePath = generateSafePath(lpath);
+        const dString NewUPath = dString::print("p%03u/r%03uc_%.*s",
+            HiVersion, LoVersion, SafePath.length(), SafePath.string());
+        NewFile.at("pathU").set(NewUPath);
     }
+
+    NewFile.at("size").set(dString::fromNumber(mSize));
+    NewFile.at("tag").set(mHash);
+    NewFile.at("time").set(mDate);
+}
+
+void FileDataP::saveForRemoved(dMarkup& filelist, dPatcher::vercode version, dString lpath) const
+{
+    auto& NewFile = filelist.atAdding();
+    // 새 노트
+    if(0 < GUIDataP::MEMO().length())
+        NewFile.at("note").set(GUIDataP::MEMO());
+
+    // 통합명칭 구성
+    const uint32_t HiVersion = version / 1000;
+    const uint32_t LoVersion = version % 1000;
+    const dString SafePath = generateSafePath(lpath);
+    const dString NewUPath = dString::print("p%03u/r%03ue_%.*s",
+        HiVersion, LoVersion, SafePath.length(), SafePath.string());
+    NewFile.at("pathU").set(NewUPath);
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -137,17 +228,21 @@ public:
     uint32_t render(uint32_t deep, uint32_t pos, const dPatcher::RenderCB& renderer) const;
     void toggleExpand();
     static bool compare(DirDataP& a, DirDataP& b);
-    virtual void collect(dMarkup& filelist) const {}
+    virtual void collect(dMarkup& filelist, dPatcher::vercode version) const {}
+    void saveBlankDir(dMarkup& filelist, dPatcher::vercode version, dString lpath, bool removed) const;
     inline void setSame() {mCompare = dPatcher::CT_Same;}
     inline void setAdded() {mCompare = dPatcher::CT_Added;}
+    inline dPatcher::comparetype comparetype() const {return mCompare;}
+    inline const std::map<std::string, DirDataP*>& dirs() const {return mDirPtrs;}
+    inline const std::map<std::string, FileDataP>& files() const {return mFiles;}
+
+public:
     static DirDataP* newRemoved()
     {
         DirDataP* Result = new DirDataP();
         Result->mCompare = dPatcher::CT_Removed;
         return Result;
     }
-
-public:
     static DirDataP* toClass(ptr_u handle)
     {
         if(auto CurGUIData = (GUIDataP*) handle)
@@ -191,7 +286,6 @@ uint32_t DirDataP::render(uint32_t deep, uint32_t pos, const dPatcher::RenderCB&
 
     if(mExpanded)
     {
-        Status.mFolder = true;
         for(const auto& it : mDirPtrs)
         {
             Status.mExpanded = it.second->mExpanded;
@@ -200,7 +294,6 @@ uint32_t DirDataP::render(uint32_t deep, uint32_t pos, const dPatcher::RenderCB&
             Status.mPos = it.second->render(Status.mDeep + 1, Status.mPos, renderer);
         }
 
-        Status.mFolder = false;
         Status.mExpanded = false;
         for(const auto& it : mFiles)
         {
@@ -319,6 +412,22 @@ bool DirDataP::compare(DirDataP& a, DirDataP& b)
     return IsDiff;
 }
 
+void DirDataP::saveBlankDir(dMarkup& filelist, dPatcher::vercode version, dString lpath, bool removed) const
+{
+    auto& NewFile = filelist.atAdding();
+    // 새 노트
+    if(0 < GUIDataP::MEMO().length())
+        NewFile.at("note").set(GUIDataP::MEMO());
+
+    // 통합명칭 구성
+    const uint32_t HiVersion = version / 1000;
+    const uint32_t LoVersion = version % 1000;
+    const dString SafeLPath = generateSafePath(lpath);
+    const dString NewUPath = dString::print("p%03u/r%03u%c_%.*s",
+        HiVersion, LoVersion, (removed)? 'e' : 'c', SafeLPath.length(), SafeLPath.string());
+    NewFile.at("pathU").set(NewUPath);
+}
+
 void DirDataP::clear()
 {
     for(const auto& it : mDirPtrs)
@@ -333,10 +442,13 @@ class IODirDataP : public DirDataP
 {
 public:
     void load(const dMarkup& filelist);
-    void collect(dMarkup& filelist) const override;
+    void collect(dMarkup& filelist, dPatcher::vercode version) const override;
+
+public:
+    inline dPatcher::vercode version() const {return mVersion;}
     inline bool upload() const {return mUpload;}
 
-DD_escaper(IODirDataP, DirDataP, mUpload(false)):
+DD_escaper(IODirDataP, DirDataP, mVersion(0), mUpload(false)):
     void _init_(InitType type)
     {
         _super_::_init_(type);
@@ -345,10 +457,11 @@ DD_escaper(IODirDataP, DirDataP, mUpload(false)):
     {
         _super_::_quit_();
     }
+    const dPatcher::vercode mVersion;
     const bool mUpload;
 
 public:
-    DD_passage_declare(IODirDataP, bool upload);
+    DD_passage_declare(IODirDataP, dPatcher::vercode version, bool upload);
 };
 
 void IODirDataP::load(const dMarkup& filelist)
@@ -361,38 +474,32 @@ void IODirDataP::load(const dMarkup& filelist)
         if(DD_fish.isValid())
         {
             IODirDataP* CurDir = this;
-            auto& Path = DD_fish("path").get();
-            auto PathPtr = Path.string();
-            for(uint32_t j = 0, jend = Path.length(), jold = 0; j <= jend; ++j)
+            auto& LPath = DD_fish("pathL").get();
+            auto LPathPtr = LPath.string();
+            for(uint32_t j = 0, jend = LPath.length(); j <= jend; ++j)
             {
-                if(j == jend && jold < j) // 슬래시(/)로 끝나는 경우가 아니어야
+                if(j == jend && LPathPtr[j - 1] != '/') // 슬래시(/)로 끝나는 경우가 아니어야 파일
                 {
-                    const std::string Name(&PathPtr[jold], j - jold);
-                    const uint64_t Size = uint64_t(DD_fish("size").get().toNumber() & DD_const8u(0xFFFFFFFFFFFFFFFF));
-                    const uint64_t Hash = uint64_t(DD_fish("hash").get().toNumber() & DD_const8u(0xFFFFFFFFFFFFFFFF));
-                    const uint64_t Date = uint64_t(DD_fish("date").get().toNumber() & DD_const8u(0xFFFFFFFFFFFFFFFF));
-                    CurDir->mFiles[Name].load(Path, Size, Hash, Date);
+                    const std::string ChildName(LPathPtr, j);
+                    CurDir->mFiles[ChildName].load(DD_fish);
                 }
-                else if(PathPtr[j] == '/')
+                else if(LPathPtr[j] == '/')
                 {
-                    const std::string Name(&PathPtr[jold], j - jold);
-                    if(CurDir->mDirPtrs.find(Name) == CurDir->mDirPtrs.end())
-                        CurDir->mDirPtrs[Name] = new IODirDataP();
-
-                    CurDir = (IODirDataP*) CurDir->mDirPtrs[Name];
-                    jold = j + 1;
+                    const std::string ChildName(LPathPtr, j + 1); // +1은 슬래시기호
+                    if(CurDir->mDirPtrs.find(ChildName) == CurDir->mDirPtrs.end())
+                        CurDir->mDirPtrs[ChildName] = new IODirDataP();
+                    CurDir = (IODirDataP*) CurDir->mDirPtrs[ChildName];
                 }
             }
         }
     }
 }
 
-void IODirDataP::collect(dMarkup& filelist) const
+void IODirDataP::collect(dMarkup& filelist, dPatcher::vercode version) const
 {
-    // 다운로드용 파일리스트 구성
 }
 
-DD_passage_define(IODirDataP, bool upload), mUpload(upload)
+DD_passage_define(IODirDataP, dPatcher::vercode version, bool upload), mVersion(version), mUpload(upload)
 {
     _init_(InitType::Create);
 }
@@ -402,8 +509,8 @@ DD_passage_define(IODirDataP, bool upload), mUpload(upload)
 class LocalDirDataP : public DirDataP
 {
 public:
-    void load(dString dirpath);
-    void collect(dMarkup& filelist) const override;
+    void load(dString dirpath, uint32_t rootpos);
+    void collect(dMarkup& filelist, dPatcher::vercode version) const override;
 
 DD_escaper(LocalDirDataP, DirDataP):
     void _init_(InitType type)
@@ -416,29 +523,107 @@ DD_escaper(LocalDirDataP, DirDataP):
     }
 };
 
-void LocalDirDataP::load(dString dirpath)
+void LocalDirDataP::load(dString dirpath, uint32_t rootpos)
 {
     clear();
     const dDirectory NewDirectory(dirpath);
 
     for(const auto& it : NewDirectory.dirs())
     {
-        if(mDirPtrs.find(it.first) == mDirPtrs.end())
-            mDirPtrs[it.first] = new LocalDirDataP();
-        ((LocalDirDataP*) mDirPtrs[it.first])->load(dirpath + '/' + it.first.c_str());
+        const dString DirPath = dirpath + it.first.c_str();
+        const std::string ChildName(DirPath.string() + rootpos, DirPath.length() - rootpos);
+        if(mDirPtrs.find(ChildName) == mDirPtrs.end())
+            mDirPtrs[ChildName] = new LocalDirDataP();
+        ((LocalDirDataP*) mDirPtrs[ChildName])->load(DirPath, rootpos);
     }
 
     for(const auto& it : NewDirectory.files())
-        mFiles[it.first].load(dirpath + '/' + it.first.c_str(), it.second);
+    {
+        const dString FilePath = dirpath + it.first.c_str();
+        const std::string ChildName(FilePath.string() + rootpos, FilePath.length() - rootpos);
+        mFiles[ChildName].load(FilePath, rootpos, it.second);
+    }
 }
 
-void LocalDirDataP::collect(dMarkup& filelist) const
+void LocalDirDataP::collect(dMarkup& filelist, dPatcher::vercode version) const
 {
-    // 업로드용 파일리스트 구성
     for(const auto& it : mDirPtrs)
-        it.second->collect(filelist);
+    {
+        bool NeedBlankDirCreated = false;
+        bool NeedBlankDirRemoved = false;
+        switch(it.second->comparetype())
+        {
+        case dPatcher::CT_Same:
+            if(mRefPair)
+            DD_hook(mRefPair->dirs())
+            {
+                auto PairDir = DD_fish.find(it.first);
+                if(PairDir != DD_fish.end())
+                {
+                    // 새 빈폴더정보가 생성될 경우
+                    if(0 < PairDir->second->files().size() && it.second->files().size() == 0)
+                        NeedBlankDirCreated = true;
+                    // 이전 빈폴더정보가 사라질 경우
+                    else if(PairDir->second->files().size() == 0 && 0 < it.second->files().size())
+                        NeedBlankDirRemoved = true;
+                }
+            }
+            break;
+        case dPatcher::CT_Added:
+            // 새 빈폴더정보가 생성될 경우
+            if(it.second->files().size() == 0)
+                NeedBlankDirCreated = true;
+            break;
+        case dPatcher::CT_Removed:
+            // 이전 빈폴더정보가 사라질 경우
+            if(mRefPair)
+            DD_hook(mRefPair->dirs())
+            {
+                auto PairDir = DD_fish.find(it.first);
+                if(PairDir != DD_fish.end())
+                if(PairDir->second->files().size() == 0)
+                    NeedBlankDirRemoved = true;
+            }
+            break;
+        }
+
+        if(NeedBlankDirCreated)
+            it.second->saveBlankDir(filelist, version, it.first.c_str(), false);
+        else if(NeedBlankDirRemoved)
+            it.second->saveBlankDir(filelist, version, it.first.c_str(), true);
+        it.second->collect(filelist, version);
+    }
+
     for(const auto& it : mFiles)
-        it.second.collect(filelist);
+    {
+        switch(it.second.comparetype())
+        {
+        case dPatcher::CT_Same:
+            if(mRefPair)
+            DD_hook(mRefPair->files())
+            {
+                auto PairFile = DD_fish.find(it.first);
+                if(PairFile != DD_fish.end())
+                    PairFile->second.save(filelist, version, it.first.c_str());
+            }
+            break;
+        case dPatcher::CT_Added:
+            it.second.save(filelist, version, it.first.c_str());
+            break;
+        case dPatcher::CT_Removed:
+            if(mRefPair)
+            DD_hook(mRefPair->files())
+            {
+                auto PairFile = DD_fish.find(it.first);
+                if(PairFile != DD_fish.end())
+                    PairFile->second.saveForRemoved(filelist, version, it.first.c_str());
+            }
+            break;
+        case dPatcher::CT_Different:
+            it.second.save(filelist, version, it.first.c_str());
+            break;
+        }
+    }
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -516,7 +701,7 @@ DD_escaper(UploadScheduleP, ScheduleP):
     dMarkup mFileList;
 
 public:
-    DD_passage_declare(UploadScheduleP, const DirDataP& local);
+    DD_passage_declare(UploadScheduleP, const DirDataP& local, dPatcher::vercode version);
 };
 
 dBinary UploadScheduleP::build() const
@@ -524,7 +709,7 @@ dBinary UploadScheduleP::build() const
     return dBinary::fromString(mFileList.saveYaml());
 }
 
-DD_passage_define(UploadScheduleP, const DirDataP& local)
+DD_passage_define(UploadScheduleP, const DirDataP& local, dPatcher::vercode version)
 {
     _init_(InitType::Create);
 
@@ -533,7 +718,7 @@ DD_passage_define(UploadScheduleP, const DirDataP& local)
     mFileList.at("note").at("upload-begin").set("2021-10-15T13:20:02Z");
     mFileList.at("note").at("upload-end").set("2021-10-15T13:20:02Z");
     mFileList.at("note").at("upload-try").set("1");
-    local.collect(mFileList.at("file"));
+    local.collect(mFileList.at("file"), version + 1);
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -563,7 +748,7 @@ dPatcher::IOData dPatcher::readyForDownload(vercode version) const
 {
     const dMarkup HashYaml(mReader(version, DT_TotalHash, "filelist.txt").toString());
 
-    auto NewIODirData = new IODirDataP(false);
+    auto NewIODirData = new IODirDataP(version, false);
     NewIODirData->load(HashYaml);
     return dPatcher::IOData((ptr_u)(GUIDataP*) NewIODirData,
         [](ptr_u handle)->void {delete (GUIDataP*) handle;});
@@ -574,7 +759,7 @@ dPatcher::IOData dPatcher::readyForUpload(vercode startversion) const
     const vercode LatestVersion = searchLatestVersion(startversion);
     const dMarkup HashYaml(mReader(LatestVersion, DT_TotalHash, "filelist.txt").toString());
 
-    auto NewIODirData = new IODirDataP(true);
+    auto NewIODirData = new IODirDataP(LatestVersion, true);
     NewIODirData->load(HashYaml);
     return dPatcher::IOData((ptr_u)(GUIDataP*) NewIODirData,
         [](ptr_u handle)->void {delete (GUIDataP*) handle;});
@@ -583,20 +768,29 @@ dPatcher::IOData dPatcher::readyForUpload(vercode startversion) const
 dPatcher::LocalData dPatcher::readyForLocal(dLiteral dirpath)
 {
     auto NewLocalDirData = new LocalDirDataP();
-    NewLocalDirData->load(dirpath);
+    NewLocalDirData->load(dirpath, dirpath.length());
     return dPatcher::LocalData((ptr_u)(GUIDataP*) NewLocalDirData,
         [](ptr_u handle)->void {delete (GUIDataP*) handle;});
 }
 
-dPatcher::Schedule dPatcher::build(IOData io, LocalData local)
+bool dPatcher::compare(IOData io, LocalData local)
 {
     if(auto CurIO = io.get<DirDataP>())
     if(auto CurLocal = local.get<DirDataP>())
-    if(DirDataP::compare(*CurIO, *CurLocal))
+        return DirDataP::compare(*CurIO, *CurLocal);
+    return false;
+}
+
+dPatcher::Schedule dPatcher::build(IOData io, LocalData local, dLiteral memo)
+{
+    GUIDataP::MEMO() = memo;
+    if(auto CurIO = io.get<DirDataP>())
+    if(auto CurLocal = local.get<DirDataP>())
     {
         if(((IODirDataP*) CurIO)->upload())
         {
-            auto NewUploadSchedule = new UploadScheduleP(*CurLocal);
+            auto Version = ((IODirDataP*) CurIO)->version();
+            auto NewUploadSchedule = new UploadScheduleP(*CurLocal, Version);
             return dPatcher::Schedule((ptr_u)(ScheduleP*) NewUploadSchedule,
                 [](ptr_u handle)->void {delete (ScheduleP*) handle;});
         }
@@ -611,11 +805,8 @@ dPatcher::Schedule dPatcher::build(IOData io, LocalData local)
         [](ptr_u handle)->void {delete (ScheduleP*) handle;});
 }
 
-bool dPatcher::drive(Schedule schedule, dLiteral memo) const
+bool dPatcher::drive(Schedule schedule) const
 {
-    //dBinary NewBinary;
-    //NewBinary.add((dumps) memo.string(), memo.length());
-    //mWriter(0, DT_UploadMemo, "uploader.txt", NewBinary);
     return false; /////
 }
 
@@ -628,7 +819,7 @@ bool dPatcher::save(const Schedule& schedule, dLiteral filepath)
 {
     if(auto CurSchedule = schedule.get<ScheduleP>())
     {
-        const dString FilePath = dString::print("dpatcher/schedule/new_filelist.txt");
+        const dString FilePath = dString::print("dpatcher/schedule/%.*s", filepath.length(), filepath.string());
         return CurSchedule->build().toFile(FilePath, true);
     }
     return false;

@@ -619,6 +619,21 @@ DD_passage_define_alone(dSocket, ptr_u agent)
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 // ■ dDirectory
+dString dDirectory::toUTCTime(uint64_t filetime)
+{
+    FILETIME FileTime;
+    FileTime.dwHighDateTime = filetime >> 32;
+    FileTime.dwLowDateTime = filetime & 0xFFFFFFFF;
+
+    SYSTEMTIME SysTime;
+    if(FileTimeToSystemTime(&FileTime, &SysTime))
+    {
+        return dString::print("%04hu-%02hu-%02huT%02hu:%02hu:%02hu.%03huZ", SysTime.wYear, SysTime.wMonth, SysTime.wDay,
+            SysTime.wHour, SysTime.wMinute, SysTime.wSecond, SysTime.wMilliseconds);
+    }
+    return "0000-00-00T00:00:00.000Z";
+}
+
 void dDirectory::load(dLiteral dirpath)
 {
     mDirs.clear();
@@ -641,7 +656,8 @@ void dDirectory::load(dLiteral dirpath)
                 {
                     if(strcmp(FindFileData->cFileName, ".") && strcmp(FindFileData->cFileName, ".."))
                     {
-                        auto& NewDir = mDirs[FindFileData->cFileName];
+                        const std::string ChildName(FindFileData->cFileName);
+                        auto& NewDir = mDirs[ChildName + '/'];
                         NewDir = ReadOnly;
                     }
                 }

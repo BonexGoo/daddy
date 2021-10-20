@@ -95,8 +95,11 @@ public:
         uint64_t mLastAccessTime;
         uint64_t mLastWriteTime;
     };
+    static dString toUTCTime(uint64_t filetime);
 
 public:
+    /// @brief            디렉토리 탐색
+    /// @param dirpath    탐색할 폴더경로(슬래시포함 → C:/aaa/bbb/)
     void load(dLiteral dirpath);
 
 public:

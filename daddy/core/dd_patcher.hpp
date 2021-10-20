@@ -50,34 +50,41 @@ public: // 사용성
     /// @brief              다운로드용 지정 IO데이터 준비
     /// @param version      타겟버전
     /// @return             다운로드용 IO데이터
-    /// @see                build
+    /// @see                compare
     IOData readyForDownload(vercode version) const;
 
     /// @brief              업로드용 최신 IO데이터 준비
     /// @param startversion 검색 시작버전(특별히 없으면 0)
     /// @return             업로드용 IO데이터
-    /// @see                build
+    /// @see                compare
     IOData readyForUpload(vercode startversion = 0) const;
 
     /// @brief              로컬데이터 준비
-    /// @param dirpath      탐색할 폴더경로
+    /// @param dirpath      탐색할 폴더경로(슬래시포함 → C:/aaa/bbb/)
     /// @return             로컬데이터
-    /// @see                build
+    /// @see                compare
     static LocalData readyForLocal(dLiteral dirpath);
+
+    /// @brief              비교정보 생성
+    /// @param io           IO데이터(다운로드 or 업로드)
+    /// @param local        로컬데이터(기존 파일에 병합 or 수정된 파일을 분석)
+    /// @return             true-성공, false-실패
+    /// @see                build
+    static bool compare(IOData io, LocalData local);
 
     /// @brief              스케줄 생성
     /// @param io           IO데이터(다운로드 or 업로드)
     /// @param local        로컬데이터(기존 파일에 병합 or 수정된 파일을 분석)
+    /// @param memo         간략한 정보삽입
     /// @return             작업정보가 기록된 스케줄(기존 버전 or 새 버전)
-    /// @see                drive
-    static Schedule build(IOData io, LocalData local);
+    /// @see                compare, drive
+    static Schedule build(IOData io, LocalData local, dLiteral memo);
 
     /// @brief              스케줄 구동
     /// @param schedule     구동할 스케줄
-    /// @param memo         간략한 정보삽입
     /// @return             true-성공, false-실패
     /// @see                build, load, save
-    bool drive(Schedule schedule, dLiteral memo) const;
+    bool drive(Schedule schedule) const;
 
 public: // 상태도구
     /// @brief              스케줄 불러오기
@@ -114,11 +121,10 @@ public: // 비주얼도구
     {
         uint32_t mDeep {0};
         uint32_t mPos {0};
-        bool mFolder {false};
         bool mExpanded {false};
         comparetype mCompare {CT_Same};
     };
-    typedef std::function<uint32_t(uint32_t ui, const RenderStatus& status, const std::string& name)> RenderCB;
+    typedef std::function<uint32_t(uint32_t ui, const RenderStatus& status, const std::string& lpath)> RenderCB;
 
     /// @brief              IO데이터를 즉시 랜더링
     /// @param data         IO데이터

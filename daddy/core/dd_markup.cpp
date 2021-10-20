@@ -259,9 +259,9 @@ dMarkup& dMarkup::at(uint32_t index)
 dMarkup& dMarkup::atAdding()
 {
     if(!mIndexable) mIndexable = new IndexableMap();
-    const uint32_t Size = mIndexable->size() + 1;
-    mIndexable->resize(Size + 1);
-    return (*mIndexable)[Size];
+    const uint32_t OldSize = mIndexable->size();
+    mIndexable->resize(OldSize + 1);
+    return (*mIndexable)[OldSize];
 }
 
 const dMarkup& dMarkup::operator()(const dLiteral& key) const
@@ -396,7 +396,7 @@ void dMarkup::saveYamlCore(dBinary& collector, uint32_t space, uint32_t indent) 
     if(mIndexable)
     for(uint32_t i = 0, iend = mIndexable->size(); i < iend; ++i)
     {
-        auto NewString = dString::print("%*s-", (indent)? indent : space, "", i);
+        auto NewString = dString::print("%*s-", (indent)? indent : space, "");
         collector.add((dumps) NewString.string(), NewString.length());
         (*mIndexable)[i].saveYamlCore(collector, space + mSpaceSize, mSpaceSize - 1);
         indent = 0;
