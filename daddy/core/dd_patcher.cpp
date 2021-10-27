@@ -526,9 +526,9 @@ DD_escaper(LocalDirDataP, DirDataP):
 void LocalDirDataP::load(dString dirpath, uint32_t rootpos)
 {
     clear();
-    const dDirectory NewDirectory(dirpath);
+    const dDirectory Directory(dirpath);
 
-    for(const auto& it : NewDirectory.dirs())
+    for(const auto& it : Directory.dirs())
     {
         const dString DirPath = dirpath + it.first.c_str();
         const std::string ChildName(DirPath.string() + rootpos, DirPath.length() - rootpos);
@@ -537,7 +537,7 @@ void LocalDirDataP::load(dString dirpath, uint32_t rootpos)
         ((LocalDirDataP*) mDirPtrs[ChildName])->load(DirPath, rootpos);
     }
 
-    for(const auto& it : NewDirectory.files())
+    for(const auto& it : Directory.files())
     {
         const dString FilePath = dirpath + it.first.c_str();
         const std::string ChildName(FilePath.string() + rootpos, FilePath.length() - rootpos);
@@ -632,6 +632,7 @@ class ScheduleP : public dEscaper
 {
 public:
     virtual char typecode() const {return 'N';}
+    virtual dPatcher::vercode version() const {return 0;}
     virtual dBinary build() const {return dBinary();}
 
 public:
@@ -655,9 +656,10 @@ class DownloadScheduleP : public ScheduleP
 {
 public:
     char typecode() const override {return 'D';}
+    dPatcher::vercode version() const override {return mVersion;}
     dBinary build() const override;
 
-DD_escaper(DownloadScheduleP, ScheduleP):
+DD_escaper(DownloadScheduleP, ScheduleP, mVersion(0)):
     void _init_(InitType type)
     {
         _super_::_init_(type);
@@ -666,6 +668,7 @@ DD_escaper(DownloadScheduleP, ScheduleP):
     {
         _super_::_quit_();
     }
+    const dPatcher::vercode mVersion;
 
 public:
     DD_passage_declare(DownloadScheduleP, const DirDataP& io);
@@ -676,7 +679,7 @@ dBinary DownloadScheduleP::build() const
     return dBinary();
 }
 
-DD_passage_define(DownloadScheduleP, const DirDataP& io)
+DD_passage_define(DownloadScheduleP, const DirDataP& io), mVersion(0)
 {
     _init_(InitType::Create);
 }
@@ -687,9 +690,10 @@ class UploadScheduleP : public ScheduleP
 {
 public:
     char typecode() const override {return 'U';}
+    dPatcher::vercode version() const override {return mVersion;}
     dBinary build() const override;
 
-DD_escaper(UploadScheduleP, ScheduleP):
+DD_escaper(UploadScheduleP, ScheduleP, mVersion(0)):
     void _init_(InitType type)
     {
         _super_::_init_(type);
@@ -698,6 +702,7 @@ DD_escaper(UploadScheduleP, ScheduleP):
     {
         _super_::_quit_();
     }
+    const dPatcher::vercode mVersion;
     dMarkup mFileList;
 
 public:
@@ -709,7 +714,7 @@ dBinary UploadScheduleP::build() const
     return dBinary::fromString(mFileList.saveYaml());
 }
 
-DD_passage_define(UploadScheduleP, const DirDataP& local, dPatcher::vercode version)
+DD_passage_define(UploadScheduleP, const DirDataP& local, dPatcher::vercode version), mVersion(version + 1)
 {
     _init_(InitType::Create);
 
@@ -718,11 +723,21 @@ DD_passage_define(UploadScheduleP, const DirDataP& local, dPatcher::vercode vers
     mFileList.at("note").at("upload-begin").set("2021-10-15T13:20:02Z");
     mFileList.at("note").at("upload-end").set("2021-10-15T13:20:02Z");
     mFileList.at("note").at("upload-try").set("1");
-    local.collect(mFileList.at("file"), version + 1);
+    local.collect(mFileList.at("file"), mVersion);
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 // ■ dPatcher
+void dPatcher::setGroupGetter(IOGetGroupNameCB getter)
+{
+    mGroupGetter = getter;
+}
+
+void dPatcher::setGroupSetter(IOSetGroupFocusCB getter)
+{
+    mGroupSetter = getter;
+}
+
 void dPatcher::setReader(IOReadCB reader)
 {
     mReader = reader;
@@ -736,6 +751,25 @@ void dPatcher::setWriter(IOWriteCB writer)
 void dPatcher::setLogger(LogCB logger)
 {
     mLogger = logger;
+}
+
+uint32_t dPatcher::getGroupCount()
+{
+    for(uint32_t i = 0; true; ++i)
+        if(mGroupGetter(i).length() == 0)
+            return i;
+    return 0;
+}
+
+dString dPatcher::getGroupName(uint32_t index)
+{
+    const dString GroupName = mGroupGetter(index);
+    return GroupName.clone(0, GroupName.length() - 1); // -1은 슬래시기호
+}
+
+void dPatcher::setGroupFocusing(dLiteral groupname)
+{
+    mGroupSetter(groupname);
 }
 
 dPatcher::vercode dPatcher::searchLatestVersion(vercode startversion) const
@@ -754,10 +788,11 @@ dPatcher::IOData dPatcher::readyForDownload(vercode version) const
         [](ptr_u handle)->void {delete (GUIDataP*) handle;});
 }
 
-dPatcher::IOData dPatcher::readyForUpload(vercode startversion) const
+dPatcher::IOData dPatcher::readyForUpload(vercode startversion, vercode* getversion) const
 {
     const vercode LatestVersion = searchLatestVersion(startversion);
     const dMarkup HashYaml(mReader(LatestVersion, DT_TotalHash, "filelist.txt").toString());
+    if(getversion) *getversion = LatestVersion;
 
     auto NewIODirData = new IODirDataP(LatestVersion, true);
     NewIODirData->load(HashYaml);
@@ -841,7 +876,9 @@ dPatcher::worktype dPatcher::getType(const Schedule& schedule)
 
 dPatcher::vercode dPatcher::getVersion(const Schedule& schedule)
 {
-    return 0; /////
+    if(auto CurSchedule = schedule.get<ScheduleP>())
+        return CurSchedule->version();
+    return 0;
 }
 
 dString dPatcher::getMemo(const Schedule& schedule)
@@ -880,11 +917,37 @@ void dPatcher::_init_(InitType type)
 {
     if(type == InitType::Create)
     {
+        DD_global_direct(std::vector<dString>, gGroups);
+        DD_global_direct(dString, gFocusedGroup);
+
+        mGroupGetter = [](uint32_t index)->dString
+        {
+            if(gGroups.size() == 0)
+            {
+                const dDirectory Directory("dpatcher/");
+                for(const auto& it : Directory.dirs())
+                {
+                    const dString FirstFilePath = ("dpatcher/" + it.first + "p000/r000z_filelist.txt").c_str();
+                    if(0 < dBinary::fromFile(FirstFilePath).length())
+                        gGroups.push_back(it.first.c_str());
+                }
+            }
+            if(index < gGroups.size())
+                return gGroups[index];
+            return "";
+        };
+
+        mGroupSetter = [](dString groupname)->void
+        {
+            gFocusedGroup = groupname + '/';
+        };
+
         mReader = [](vercode version, datatype type, dLiteral dataname)->dBinary
         {
             const uint32_t HiNumber = version / 1000;
             const uint32_t LoNumber = version % 1000;
-            const dString FilePath = dString::print("dpatcher/p%03u/r%03u%c_%s", HiNumber, LoNumber, type, dataname.buildNative());
+            const dString FilePath = dString::print("dpatcher/%.*sp%03u/r%03u%c_%.*s", gFocusedGroup.length(), gFocusedGroup.string(),
+                HiNumber, LoNumber, type, dataname.length(), dataname.string());
             return dBinary::fromFile(FilePath);
         };
 
@@ -892,7 +955,8 @@ void dPatcher::_init_(InitType type)
         {
             const uint32_t HiNumber = version / 1000;
             const uint32_t LoNumber = version % 1000;
-            const dString FilePath = dString::print("dpatcher/p%03u/r%03u%c_%s", HiNumber, LoNumber, type, dataname.buildNative());
+            const dString FilePath = dString::print("dpatcher/%.*sp%03u/r%03u%c_%.*s", gFocusedGroup.length(), gFocusedGroup.string(),
+                HiNumber, LoNumber, type, dataname.length(), dataname.string());
             return data.toFile(FilePath, true);
         };
 
@@ -901,19 +965,19 @@ void dPatcher::_init_(InitType type)
             switch(type)
             {
             case ST_CheckingForDownload:
-                printf("Checking[%d%%] %s", int(progress * 100 + 0.5), detail.buildNative());
+                printf("Checking[%d%%] %.*s", int(progress * 100 + 0.5), detail.length(), detail.string());
                 break;
             case ST_CleaningForDownload:
-                printf("Cleaning[%d%%] %s", int(progress * 100 + 0.5), detail.buildNative());
+                printf("Cleaning[%d%%] %.*s", int(progress * 100 + 0.5), detail.length(), detail.string());
                 break;
             case ST_Downloading:
-                printf("Downloading[%d%%] %s", int(progress * 100 + 0.5), detail.buildNative());
+                printf("Downloading[%d%%] %.*s", int(progress * 100 + 0.5), detail.length(), detail.string());
                 break;
             case ST_CopyingForUpload:
-                printf("Copying[%d%%] %s", int(progress * 100 + 0.5), detail.buildNative());
+                printf("Copying[%d%%] %.*s", int(progress * 100 + 0.5), detail.length(), detail.string());
                 break;
             case ST_Uploading:
-                printf("Uploading[%d%%] %s", int(progress * 100 + 0.5), detail.buildNative());
+                printf("Uploading[%d%%] %.*s", int(progress * 100 + 0.5), detail.length(), detail.string());
                 break;
             }
         };
@@ -926,6 +990,8 @@ void dPatcher::_quit_()
 
 void dPatcher::_move_(_self_&& rhs)
 {
+    mGroupGetter = DD_rvalue(rhs.mGroupGetter);
+    mGroupSetter = DD_rvalue(rhs.mGroupSetter);
     mReader = DD_rvalue(rhs.mReader);
     mWriter = DD_rvalue(rhs.mWriter);
     mLogger = DD_rvalue(rhs.mLogger);
@@ -933,13 +999,17 @@ void dPatcher::_move_(_self_&& rhs)
 
 void dPatcher::_copy_(const _self_& rhs)
 {
+    mGroupGetter = rhs.mGroupGetter;
+    mGroupSetter = rhs.mGroupSetter;
     mReader = rhs.mReader;
     mWriter = rhs.mWriter;
     mLogger = rhs.mLogger;
 }
 
-DD_passage_define_alone(dPatcher, IOReadCB reader, IOWriteCB writer, LogCB logger)
+DD_passage_define_alone(dPatcher, IOGetGroupNameCB getter, IOSetGroupFocusCB setter, IOReadCB reader, IOWriteCB writer, LogCB logger)
 {
+    mGroupGetter = getter;
+    mGroupSetter = setter;
     mReader = reader;
     mWriter = writer;
     mLogger = logger;

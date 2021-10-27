@@ -23,11 +23,21 @@ public:
     enum datatype:utf8 {DT_UploadMemo = 'a', DT_Changed = 'c', DT_Erased = 'e', DT_TotalHash = 'z'};
     enum steptype:uint8_t {ST_CheckingForDownload = 0, ST_CleaningForDownload, ST_Downloading, ST_CopyingForUpload, ST_Uploading};
     enum comparetype:uint8_t {CT_Same = 0, CT_Added, CT_Removed, CT_Different};
+    typedef std::function<dString(uint32_t index)> IOGetGroupNameCB;
+    typedef std::function<void(dString groupname)> IOSetGroupFocusCB;
     typedef std::function<dBinary(vercode version, datatype type, dLiteral dataname)> IOReadCB;
     typedef std::function<bool(vercode version, datatype type, dLiteral dataname, const dBinary& data)> IOWriteCB;
     typedef std::function<void(steptype type, float progress, dLiteral detail)> LogCB;
 
 public: // IO연결
+    /// @brief              IOGetGroupNameCB연결
+    /// @param groupgetter  콜백함수
+    void setGroupGetter(IOGetGroupNameCB getter);
+
+    /// @brief              IOSetGroupFocusCB연결
+    /// @param groupsetter  콜백함수
+    void setGroupSetter(IOSetGroupFocusCB setter);
+
     /// @brief              IORead연결
     /// @param reader       콜백함수
     void setReader(IOReadCB reader);
@@ -41,23 +51,40 @@ public: // IO연결
     void setLogger(LogCB logger);
 
 public: // 사용성
-    /// @brief              마지막 버전코드 검색
+    /// @brief              전체 그룹의 수량 반환
+    /// @return             그룹의 수량
+    /// @see                getGroupName, setGroupFocusing
+    uint32_t getGroupCount();
+
+    /// @brief              그룹명 반환
+    /// @param index        해당 그룹의 인덱스
+    /// @return             그룹명
+    /// @see                getGroupCount, setGroupFocusing
+    dString getGroupName(uint32_t index);
+
+    /// @brief              그룹을 포커싱
+    /// @param groupname    그룹명(신규 그룹명 가능)
+    /// @see                getGroupCount, getGroupName
+    void setGroupFocusing(dLiteral groupname);
+
+    /// @brief              포커싱된 그룹의 마지막 버전코드 검색
     /// @param startversion 검색 시작버전(특별히 없으면 0)
     /// @return             마지막 버전코드
     /// @see                readyForDownload
     vercode searchLatestVersion(vercode startversion = 0) const;
 
-    /// @brief              다운로드용 지정 IO데이터 준비
+    /// @brief              포커싱된 그룹의 다운로드용 지정 IO데이터 준비
     /// @param version      타겟버전
     /// @return             다운로드용 IO데이터
     /// @see                compare
     IOData readyForDownload(vercode version) const;
 
-    /// @brief              업로드용 최신 IO데이터 준비
+    /// @brief              포커싱된 그룹의 업로드용 최신 IO데이터 준비
     /// @param startversion 검색 시작버전(특별히 없으면 0)
+    /// @param getversion   검색된 버전(nullptr가능)
     /// @return             업로드용 IO데이터
     /// @see                compare
-    IOData readyForUpload(vercode startversion = 0) const;
+    IOData readyForUpload(vercode startversion = 0, vercode* getversion = nullptr) const;
 
     /// @brief              로컬데이터 준비
     /// @param dirpath      탐색할 폴더경로(슬래시포함 → C:/aaa/bbb/)
@@ -148,12 +175,14 @@ DD_escaper_alone(dPatcher): // 객체사이클
     void _quit_();
     void _move_(_self_&& rhs);
     void _copy_(const _self_& rhs);
+    IOGetGroupNameCB mGroupGetter;
+    IOSetGroupFocusCB mGroupSetter;
     IOReadCB mReader;
     IOWriteCB mWriter;
     LogCB mLogger;
 
 public:
-    DD_passage_declare_alone(dPatcher, IOReadCB reader, IOWriteCB writer, LogCB logger);
+    DD_passage_declare_alone(dPatcher, IOGetGroupNameCB getter, IOSetGroupFocusCB setter, IOReadCB reader, IOWriteCB writer, LogCB logger);
 };
 
 } // namespace Daddy
