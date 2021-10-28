@@ -4,6 +4,7 @@
 #include "dd_binary.hpp"
 
 // Dependencies
+#include "dd_string.hpp"
 #include <cstring>
 #include <locale.h>
 #include <direct.h>
@@ -152,13 +153,6 @@ dBinary dBinary::fromExternal(dumps buffer, uint32_t length)
     return Result;
 }
 
-dBinary dBinary::fromString(const dLiteral& string)
-{
-    dBinary Result;
-    Result.add((dumps) string.string(), string.length());
-    return Result;
-}
-
 dBinary dBinary::fromFile(const dLiteral& filepath)
 {
     dString OldLocale = setlocale(LC_ALL, nullptr);
@@ -178,11 +172,6 @@ dBinary dBinary::fromFile(const dLiteral& filepath)
         return dBinary(NewBuffer, NewLength);
     }
     return dBinary();
-}
-
-dString dBinary::toString() const
-{
-    return dString((utf8s_nn) buffer(), length());
 }
 
 bool dBinary::toFile(const dLiteral& filepath, bool autodir) const

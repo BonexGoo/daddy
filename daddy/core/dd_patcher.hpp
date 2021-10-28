@@ -6,6 +6,7 @@
 // Dependencies
 #include "dd_binary.hpp"
 #include "dd_handle.hpp"
+#include "dd_string.hpp"
 #include <functional>
 #include <string>
 
@@ -104,20 +105,21 @@ public: // 사용성
     /// @param local        로컬데이터(기존 파일에 병합 or 수정된 파일을 분석)
     /// @param memo         간략한 정보삽입
     /// @return             작업정보가 기록된 스케줄(기존 버전 or 새 버전)
-    /// @see                compare, drive
+    /// @see                compare, driveOnce
     static Schedule build(IOData io, LocalData local, dLiteral memo);
 
     /// @brief              스케줄 구동
     /// @param schedule     구동할 스케줄
-    /// @return             true-성공, false-실패
+    /// @param msec         구동할 시간
+    /// @return             true-구동계속, false-스케줄완료
     /// @see                build, load, save
-    bool drive(Schedule schedule) const;
+    bool driveOnce(Schedule schedule, uint32_t msec) const;
 
 public: // 상태도구
     /// @brief              스케줄 불러오기
     /// @param filepath     파일경로
     /// @return             스케줄
-    /// @see                save, drive
+    /// @see                save, driveOnce
     static Schedule load(dLiteral filepath);
 
     /// @brief              스케줄 저장하기
@@ -130,7 +132,7 @@ public: // 상태도구
     /// @brief              스케줄의 작업종류
     /// @param schedule     확인할 스케줄
     /// @return             작업종류
-    /// @see                load, drive
+    /// @see                load, driveOnce
     static worktype getType(const Schedule& schedule);
 
     /// @brief              스케줄의 타겟버전

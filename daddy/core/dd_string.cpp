@@ -4,9 +4,14 @@
 #include "dd_string.hpp"
 
 // Dependencies
+#include "dd_binary.hpp"
 #include <cstring>
 #include <stdarg.h>
 #include <unordered_set>
+#include <locale.h>
+#if DD_OS_WINDOWS
+    #include <windows.h>
+#endif
 
 // https://docs.microsoft.com/ko-kr/cpp/c-language/type-double?view=vs-2019
 #define DBL_MAX_BIAS 308
@@ -474,6 +479,33 @@ dString dString::fromDouble(double value)
     return dString(Result, Length);
 }
 
+dString dString::fromBinaryUTF8(dBinary binary)
+{
+    int32_t DumpLength = binary.length() / sizeof(utf8);
+    auto DumpPtr = (utf8s_nn) binary.buffer();
+    if(DumpPtr[DumpLength - 1] == '\0')
+        DumpLength--;
+    return dString((ptr_u) DumpPtr, DumpLength);
+}
+
+dString dString::fromBinaryUTF16(dBinary binary)
+{
+    int32_t DumpLengthW = binary.length() / sizeof(ucode);
+    auto DumpPtrW = (ucodes_nn) binary.buffer();
+    if(DumpPtrW[DumpLengthW - 1] == L'\0')
+        DumpLengthW--;
+
+    #if DD_OS_WINDOWS
+        auto DumpLengthA = WideCharToMultiByte(CP_UTF8, 0, DumpPtrW, DumpLengthW, NULL, 0, 0, 0);
+        auto DumpPtrA = new utf8[DumpLengthA];
+        WideCharToMultiByte(CP_UTF8, 0, DumpPtrW, DumpLengthW, DumpPtrA, DumpLengthA, 0, 0);
+        return dString((ptr_u) DumpPtrA, DumpLengthA);
+    #else
+        #error [daddy] this platform is not ready!
+    return dString();
+    #endif
+}
+
 static int64_t StringToNumber(utf8s_nn focus, const utf8s_nn end)
 {
     if(focus == end)
@@ -533,6 +565,32 @@ double dString::toDouble() const
     utf8s_nn Focus = mRefAgent->string();
     const utf8s_nn End = Focus + mRefAgent->length();
     return StringToDouble(Focus, End);
+}
+
+dBinary dString::toBinaryUTF8(bool endmark) const
+{
+    dBinary Collector;
+    Collector.add((dumps) mRefAgent->string(), mRefAgent->length());
+    if(endmark) Collector.add((dumps) "\0", sizeof(utf8));
+    return Collector;
+}
+
+dBinary dString::toBinaryUTF16(bool endmark) const
+{
+    dBinary Collector;
+    #if DD_OS_WINDOWS
+        auto DumpLengthW = MultiByteToWideChar(CP_UTF8, 0, mRefAgent->string(), mRefAgent->length(), NULL, 0);
+        if(auto DumpPtrW = new ucode[DumpLengthW])
+        {
+            MultiByteToWideChar(CP_UTF8, 0, mRefAgent->string(), mRefAgent->length(), DumpPtrW, DumpLengthW);
+            Collector.add((dumps) DumpPtrW, DumpLengthW * sizeof(ucode));
+            delete[] DumpPtrW;
+        }
+    #else
+        #error [daddy] this platform is not ready!
+    #endif
+    if(endmark) Collector.add((dumps) L"\0", sizeof(ucode));
+    return Collector;
 }
 
 void dString::debugPrint() const

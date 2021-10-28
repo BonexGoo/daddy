@@ -202,7 +202,7 @@ dString dMarkup::saveYaml() const
     Collector.add((dumps) "---\n", 4);
     saveYamlCore(Collector, 0, false);
     Collector.add((dumps) "...\n", 4);
-    return Collector.toString();
+    return dString::fromBinaryUTF8(Collector);
 }
 
 void dMarkup::clear()

@@ -5,7 +5,6 @@
 
 // Dependencies
 #include "dd_escaper.hpp"
-#include <cstdio>
 
 namespace Daddy {
 
@@ -59,6 +58,8 @@ private:
     mutable utf8* mNative;
     friend class dString;
 };
+
+class dBinary;
 
 /// @brief 스트링객체
 class dString
@@ -195,6 +196,16 @@ public: // 입출력
     /// @return         새로운 객체
     static dString fromDouble(double value);
 
+    /// @brief          바이너리(UTF8)로 스트링 제작
+    /// @param binary   바이너리(UTF8)
+    /// @return         새로운 객체
+    static dString fromBinaryUTF8(dBinary binary);
+
+    /// @brief          바이너리(UTF16)로 스트링 제작
+    /// @param binary   바이너리(UTF16)
+    /// @return         새로운 객체
+    static dString fromBinaryUTF16(dBinary binary);
+
     /// @brief          정수값으로 변환
     /// @return         정수값
     int64_t toNumber() const;
@@ -202,6 +213,16 @@ public: // 입출력
     /// @brief          실수값으로 변환
     /// @return         실수값
     double toDouble() const;
+
+    /// @brief          바이너리(UTF8)로 변환
+    /// @param endmark  문자열종료기호('\0') 포함여부
+    /// @return         바이너리(UTF8)
+    dBinary toBinaryUTF8(bool endmark) const;
+
+    /// @brief          바이너리(UTF16)로 변환
+    /// @param endmark  문자열종료기호('\0') 포함여부
+    /// @return         바이너리(UTF16)
+    dBinary toBinaryUTF16(bool endmark) const;
 
 public: // 디버깅
     /// @brief          현재 스트링 정보출력

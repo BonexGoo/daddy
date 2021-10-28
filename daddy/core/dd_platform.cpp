@@ -640,12 +640,9 @@ void dDirectory::load(dLiteral dirpath)
     mFiles.clear();
 
     #if DD_OS_WINDOWS
-        dString OldLocale = setlocale(LC_ALL, nullptr);
-        setlocale(LC_ALL, "en_US.UTF-8");
-        WIN32_FIND_DATAA* FindFileData = new WIN32_FIND_DATAA();
-        dString FindCommand = dString::print("%.*s/*", dirpath.length(), dirpath.string());
-        HANDLE DirHandle = FindFirstFileA(dLiteral(FindCommand).buildNative(), FindFileData);
-        setlocale(LC_ALL, ((dLiteral) OldLocale).buildNative());
+        WIN32_FIND_DATAW* FindFileData = new WIN32_FIND_DATAW();
+        auto FindCommand = dString::print("%.*s/*", dirpath.length(), dirpath.string()).toBinaryUTF16(true);
+        HANDLE DirHandle = FindFirstFileW((ucodes) FindCommand.buffer(), FindFileData);
 
         if(DirHandle != INVALID_HANDLE_VALUE)
         {
@@ -654,23 +651,28 @@ void dDirectory::load(dLiteral dirpath)
                 const bool ReadOnly = ((FindFileData->dwFileAttributes & FILE_ATTRIBUTE_READONLY) != 0);
                 if(FindFileData->dwFileAttributes & FILE_ATTRIBUTE_DIRECTORY)
                 {
-                    if(strcmp(FindFileData->cFileName, ".") && strcmp(FindFileData->cFileName, ".."))
+                    if(wcscmp(FindFileData->cFileName, L".") && wcscmp(FindFileData->cFileName, L".."))
                     {
-                        const std::string ChildName(FindFileData->cFileName);
-                        auto& NewDir = mDirs[ChildName + '/'];
+                        const uint32_t ChildBinarySize = sizeof(ucode) * wcslen(FindFileData->cFileName);
+                        const dBinary ChildBinary = dBinary::fromExternal((dumps) FindFileData->cFileName, ChildBinarySize);
+                        const dString ChildName = dString::fromBinaryUTF16(ChildBinary) + '/';
+                        auto& NewDir = mDirs[std::string(ChildName.string(), ChildName.length())];
                         NewDir = ReadOnly;
                     }
                 }
                 else
                 {
-                    auto& NewFile = mFiles[FindFileData->cFileName];
+                    const uint32_t ChildBinarySize = sizeof(ucode) * wcslen(FindFileData->cFileName);
+                    const dBinary ChildBinary = dBinary::fromExternal((dumps) FindFileData->cFileName, ChildBinarySize);
+                    const dString ChildName = dString::fromBinaryUTF16(ChildBinary);
+                    auto& NewFile = mFiles[std::string(ChildName.string(), ChildName.length())];
                     NewFile.mReadOnly = ReadOnly;
                     NewFile.mFileSize = uint64_t(FindFileData->nFileSizeHigh) << 32 | FindFileData->nFileSizeLow;
                     NewFile.mCreationTime = uint64_t(FindFileData->ftCreationTime.dwHighDateTime) << 32 | FindFileData->ftCreationTime.dwLowDateTime;
                     NewFile.mLastAccessTime = uint64_t(FindFileData->ftLastAccessTime.dwHighDateTime) << 32 | FindFileData->ftLastAccessTime.dwLowDateTime;
                     NewFile.mLastWriteTime = uint64_t(FindFileData->ftLastWriteTime.dwHighDateTime) << 32 | FindFileData->ftLastWriteTime.dwLowDateTime;
                 }
-                next = FindNextFileA(DirHandle, FindFileData);
+                next = FindNextFileW(DirHandle, FindFileData);
             }
             FindClose(DirHandle);
         }

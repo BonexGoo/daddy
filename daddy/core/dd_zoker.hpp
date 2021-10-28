@@ -5,6 +5,7 @@
 
 // Dependencies
 #include "dd_binary.hpp"
+#include "dd_string.hpp"
 #include <map>
 #include <string>
 

@@ -72,13 +72,13 @@ dString GUIDataP::generateSafePath(dLiteral path)
                 return false;
         return true;
     };
-    dBinary Temp = dBinary::fromString(path);
-    const uint32_t TempLength = Temp.length();
+    dBinary SafePath = dString(path).toBinaryUTF8(false);
+    const uint32_t SafePathLength = SafePath.length();
 
     // 기본 가공
-    if(utf8* Ptr = (utf8*) Temp.buffer())
+    if(utf8* Ptr = (utf8*) SafePath.buffer())
     {
-        for(uint32_t i = 0; i < TempLength; ++i)
+        for(uint32_t i = 0; i < SafePathLength; ++i)
         {
             switch(Ptr[i])
             {
@@ -94,21 +94,21 @@ dString GUIDataP::generateSafePath(dLiteral path)
     }
 
     // 특수 가공
-    if(utf8s LastPtr = utf8s(Temp.buffer() + TempLength))
+    if(utf8s LastPtr = utf8s(SafePath.buffer() + SafePathLength))
     {
         // 빈폴더 처리
         if(RevSame(LastPtr, DD_string_pair("$")))
-            Temp.add((dumps) DD_string_pair("_blankdir_.txt"));
+            SafePath.add((dumps) DD_string_pair("_blankdir_.txt"));
         // 안전하지 않은 확장자
-        else if(TempLength < 4 || (
+        else if(SafePathLength < 4 || (
             !RevSame(LastPtr, DD_string_pair(".txt")) &&
             !RevSame(LastPtr, DD_string_pair(".bmp")) &&
             !RevSame(LastPtr, DD_string_pair(".png")) &&
             !RevSame(LastPtr, DD_string_pair(".jpg")) &&
             !RevSame(LastPtr, DD_string_pair(".gif"))))
-            Temp.add((dumps) DD_string_pair("_unknownfmt_.txt"));
+            SafePath.add((dumps) DD_string_pair("_unknownfmt_.txt"));
     }
-    return Temp.toString();
+    return dString::fromBinaryUTF8(SafePath);
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -711,7 +711,7 @@ public:
 
 dBinary UploadScheduleP::build() const
 {
-    return dBinary::fromString(mFileList.saveYaml());
+    return mFileList.saveYaml().toBinaryUTF8(false);
 }
 
 DD_passage_define(UploadScheduleP, const DirDataP& local, dPatcher::vercode version), mVersion(version + 1)
@@ -780,7 +780,7 @@ dPatcher::vercode dPatcher::searchLatestVersion(vercode startversion) const
 
 dPatcher::IOData dPatcher::readyForDownload(vercode version) const
 {
-    const dMarkup HashYaml(mReader(version, DT_TotalHash, "filelist.txt").toString());
+    const dMarkup HashYaml(dString::fromBinaryUTF8(mReader(version, DT_TotalHash, "filelist.txt")));
 
     auto NewIODirData = new IODirDataP(version, false);
     NewIODirData->load(HashYaml);
@@ -791,7 +791,7 @@ dPatcher::IOData dPatcher::readyForDownload(vercode version) const
 dPatcher::IOData dPatcher::readyForUpload(vercode startversion, vercode* getversion) const
 {
     const vercode LatestVersion = searchLatestVersion(startversion);
-    const dMarkup HashYaml(mReader(LatestVersion, DT_TotalHash, "filelist.txt").toString());
+    const dMarkup HashYaml(dString::fromBinaryUTF8(mReader(LatestVersion, DT_TotalHash, "filelist.txt")));
     if(getversion) *getversion = LatestVersion;
 
     auto NewIODirData = new IODirDataP(LatestVersion, true);
@@ -840,9 +840,9 @@ dPatcher::Schedule dPatcher::build(IOData io, LocalData local, dLiteral memo)
         [](ptr_u handle)->void {delete (ScheduleP*) handle;});
 }
 
-bool dPatcher::drive(Schedule schedule) const
+bool dPatcher::driveOnce(Schedule schedule, uint32_t msec) const
 {
-    return false; /////
+    return true; /////
 }
 
 dPatcher::Schedule dPatcher::load(dLiteral filepath)
