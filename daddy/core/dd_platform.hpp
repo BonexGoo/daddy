@@ -95,6 +95,7 @@ public:
         uint64_t mLastAccessTime;
         uint64_t mLastWriteTime;
     };
+    static uint64_t now();
     static dString toUTCTime(uint64_t filetime);
 
 public:

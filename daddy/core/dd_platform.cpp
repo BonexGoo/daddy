@@ -619,6 +619,21 @@ DD_passage_define_alone(dSocket, ptr_u agent)
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 // ■ dDirectory
+uint64_t dDirectory::now()
+{
+    SYSTEMTIME SysTime;
+    GetSystemTime(&SysTime);
+
+    FILETIME FileTime;
+    if(SystemTimeToFileTime(&SysTime, &FileTime))
+    {
+        uint64_t ResultTime = FileTime.dwHighDateTime;
+        ResultTime = (ResultTime << 32) | FileTime.dwLowDateTime;
+        return ResultTime;
+    }
+    return 0;
+}
+
 dString dDirectory::toUTCTime(uint64_t filetime)
 {
     FILETIME FileTime;

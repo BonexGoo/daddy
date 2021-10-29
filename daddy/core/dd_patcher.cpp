@@ -212,6 +212,7 @@ void FileDataP::saveForRemoved(dMarkup& filelist, dPatcher::vercode version, dSt
         NewFile.at("note").set(GUIDataP::MEMO());
 
     // 통합명칭 구성
+    NewFile.at("pathL").set(lpath);
     const uint32_t HiVersion = version / 1000;
     const uint32_t LoVersion = version % 1000;
     const dString SafePath = generateSafePath(lpath);
@@ -228,6 +229,7 @@ public:
     uint32_t render(uint32_t deep, uint32_t pos, const dPatcher::RenderCB& renderer) const;
     void toggleExpand();
     static bool compare(DirDataP& a, DirDataP& b);
+    virtual dString rootDir() const {return dString();}
     virtual void collect(dMarkup& filelist, dPatcher::vercode version) const {}
     void saveBlankDir(dMarkup& filelist, dPatcher::vercode version, dString lpath, bool removed) const;
     inline void setSame() {mCompare = dPatcher::CT_Same;}
@@ -420,6 +422,7 @@ void DirDataP::saveBlankDir(dMarkup& filelist, dPatcher::vercode version, dStrin
         NewFile.at("note").set(GUIDataP::MEMO());
 
     // 통합명칭 구성
+    NewFile.at("pathL").set(lpath);
     const uint32_t HiVersion = version / 1000;
     const uint32_t LoVersion = version % 1000;
     const dString SafeLPath = generateSafePath(lpath);
@@ -509,8 +512,12 @@ DD_passage_define(IODirDataP, dPatcher::vercode version, bool upload), mVersion(
 class LocalDirDataP : public DirDataP
 {
 public:
-    void load(dString dirpath, uint32_t rootpos);
+    void load(dLiteral dirpath);
+    dString rootDir() const override {return mRootDir;}
     void collect(dMarkup& filelist, dPatcher::vercode version) const override;
+
+private:
+    void loadCore(dString dirpath, uint32_t rootpos);
 
 DD_escaper(LocalDirDataP, DirDataP):
     void _init_(InitType type)
@@ -521,28 +528,13 @@ DD_escaper(LocalDirDataP, DirDataP):
     {
         _super_::_quit_();
     }
+    dString mRootDir;
 };
 
-void LocalDirDataP::load(dString dirpath, uint32_t rootpos)
+void LocalDirDataP::load(dLiteral dirpath)
 {
-    clear();
-    const dDirectory Directory(dirpath);
-
-    for(const auto& it : Directory.dirs())
-    {
-        const dString DirPath = dirpath + it.first.c_str();
-        const std::string ChildName(DirPath.string() + rootpos, DirPath.length() - rootpos);
-        if(mDirPtrs.find(ChildName) == mDirPtrs.end())
-            mDirPtrs[ChildName] = new LocalDirDataP();
-        ((LocalDirDataP*) mDirPtrs[ChildName])->load(DirPath, rootpos);
-    }
-
-    for(const auto& it : Directory.files())
-    {
-        const dString FilePath = dirpath + it.first.c_str();
-        const std::string ChildName(FilePath.string() + rootpos, FilePath.length() - rootpos);
-        mFiles[ChildName].load(FilePath, rootpos, it.second);
-    }
+    mRootDir = dirpath;
+    loadCore(mRootDir, mRootDir.length());
 }
 
 void LocalDirDataP::collect(dMarkup& filelist, dPatcher::vercode version) const
@@ -626,6 +618,28 @@ void LocalDirDataP::collect(dMarkup& filelist, dPatcher::vercode version) const
     }
 }
 
+void LocalDirDataP::loadCore(dString dirpath, uint32_t rootpos)
+{
+    clear();
+    const dDirectory Directory(dirpath);
+
+    for(const auto& it : Directory.dirs())
+    {
+        const dString DirPath = dirpath + it.first.c_str();
+        const std::string ChildName(DirPath.string() + rootpos, DirPath.length() - rootpos);
+        if(mDirPtrs.find(ChildName) == mDirPtrs.end())
+            mDirPtrs[ChildName] = new LocalDirDataP();
+        ((LocalDirDataP*) mDirPtrs[ChildName])->loadCore(DirPath, rootpos);
+    }
+
+    for(const auto& it : Directory.files())
+    {
+        const dString FilePath = dirpath + it.first.c_str();
+        const std::string ChildName(FilePath.string() + rootpos, FilePath.length() - rootpos);
+        mFiles[ChildName].load(FilePath, rootpos, it.second);
+    }
+}
+
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 // ■ ScheduleP
 class ScheduleP : public dEscaper
@@ -634,6 +648,7 @@ public:
     virtual char typecode() const {return 'N';}
     virtual dPatcher::vercode version() const {return 0;}
     virtual dBinary build() const {return dBinary();}
+    virtual bool workOnce(dPatcher::IOReadCB reader, dPatcher::IOWriteCB writer) {return false;}
 
 public:
     static ScheduleP* toClass(ptr_u handle)
@@ -658,6 +673,7 @@ public:
     char typecode() const override {return 'D';}
     dPatcher::vercode version() const override {return mVersion;}
     dBinary build() const override;
+    bool workOnce(dPatcher::IOReadCB reader, dPatcher::IOWriteCB writer) override;
 
 DD_escaper(DownloadScheduleP, ScheduleP, mVersion(0)):
     void _init_(InitType type)
@@ -679,6 +695,11 @@ dBinary DownloadScheduleP::build() const
     return dBinary();
 }
 
+bool DownloadScheduleP::workOnce(dPatcher::IOReadCB reader, dPatcher::IOWriteCB writer)
+{
+    return false;
+}
+
 DD_passage_define(DownloadScheduleP, const DirDataP& io), mVersion(0)
 {
     _init_(InitType::Create);
@@ -692,18 +713,26 @@ public:
     char typecode() const override {return 'U';}
     dPatcher::vercode version() const override {return mVersion;}
     dBinary build() const override;
+    bool workOnce(dPatcher::IOReadCB reader, dPatcher::IOWriteCB writer) override;
 
-DD_escaper(UploadScheduleP, ScheduleP, mVersion(0)):
+DD_escaper(UploadScheduleP, ScheduleP, mVersion(0), mRootDir()):
     void _init_(InitType type)
     {
         _super_::_init_(type);
+        mFileFocus = 0;
+        mWorkCount = 0;
+        mWorkFocus = 0;
     }
     void _quit_()
     {
         _super_::_quit_();
     }
     const dPatcher::vercode mVersion;
+    const dString mRootDir;
     dMarkup mFileList;
+    uint32_t mFileFocus;
+    uint32_t mWorkCount;
+    uint32_t mWorkFocus;
 
 public:
     DD_passage_declare(UploadScheduleP, const DirDataP& local, dPatcher::vercode version);
@@ -714,16 +743,67 @@ dBinary UploadScheduleP::build() const
     return mFileList.saveYaml().toBinaryUTF8(false);
 }
 
-DD_passage_define(UploadScheduleP, const DirDataP& local, dPatcher::vercode version), mVersion(version + 1)
+bool UploadScheduleP::workOnce(dPatcher::IOReadCB reader, dPatcher::IOWriteCB writer)
+{
+    const uint32_t HiVersion = mVersion / 1000;
+    const uint32_t LoVersion = mVersion % 1000;
+    const dString VersionToken = dString::print("p%03u/r%03u", HiVersion, LoVersion);
+    for(uint32_t i = mFileFocus, iend = mFileList("file").length(); i < iend; ++i)
+    {
+        auto PathU = mFileList("file")[i]("pathU").get();
+        auto PtrPathU = PathU.string();
+        if(!strncmp(PtrPathU, VersionToken.string(), VersionToken.length()))
+        {
+            const dBinary NewFile = dBinary::fromFile(mRootDir + mFileList("file")[i]("pathL").get());
+            if(writer(mVersion, (dPatcher::datatype) PtrPathU[VersionToken.length()], PathU.clone(VersionToken.length() + 2), NewFile))
+            {
+                dMarkup mUploader;
+                mUploader.at("file-focus").set(dString::fromNumber(mFileFocus = i + 1));
+                mUploader.at("work-count").set(dString::fromNumber(mWorkCount));
+                mUploader.at("work-focus").set(dString::fromNumber(++mWorkFocus));
+                mUploader.at("upload-end").set(dDirectory::toUTCTime(dDirectory::now()));
+                writer(mVersion, dPatcher::DT_UploadMemo, "uploader.txt",
+                    mUploader.saveYaml().toBinaryUTF8(false));
+
+                if(mWorkFocus < mWorkCount)
+                    return true;
+                else
+                {
+                    writer(mVersion, dPatcher::DT_TotalHash, "filelist.txt",
+                        mFileList.saveYaml().toBinaryUTF8(false));
+                    return false;
+                }
+            }
+            else break;
+        }
+    }
+    return false;
+}
+
+DD_passage_define(UploadScheduleP, const DirDataP& local, dPatcher::vercode version), mVersion(version + 1), mRootDir(local.rootDir())
 {
     _init_(InitType::Create);
 
-    mFileList.at("note").at("uploader-id").set("people2");
-    mFileList.at("note").at("uploader-ip").set("240.100.100.1");
-    mFileList.at("note").at("upload-begin").set("2021-10-15T13:20:02Z");
-    mFileList.at("note").at("upload-end").set("2021-10-15T13:20:02Z");
-    mFileList.at("note").at("upload-try").set("1");
+    mFileList.at("note").at("upload-begin").set(dDirectory::toUTCTime(dDirectory::now()));
+    mFileList.at("note").at("upload-version").set(dString::fromNumber(mVersion));
+    mFileList.at("note").at("upload-rootdir").set(mRootDir);
+    mFileList.at("note").at("user-device").set(dUnique::deviceId());
+    mFileList.at("note").at("user-name").set(dUnique::userName());
     local.collect(mFileList.at("file"), mVersion);
+
+    mFileFocus = 0;
+    mWorkCount = 0;
+    mWorkFocus = 0;
+
+    const uint32_t HiVersion = mVersion / 1000;
+    const uint32_t LoVersion = mVersion % 1000;
+    const dString VersionToken = dString::print("p%03u/r%03u", HiVersion, LoVersion);
+    for(uint32_t i = 0, iend = mFileList("file").length(); i < iend; ++i)
+    {
+        auto PtrPathU = mFileList("file")[i]("pathU").get().string();
+        if(!strncmp(PtrPathU, VersionToken.string(), VersionToken.length()))
+            mWorkCount++;
+    }
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -774,8 +854,23 @@ void dPatcher::setGroupFocusing(dLiteral groupname)
 
 dPatcher::vercode dPatcher::searchLatestVersion(vercode startversion) const
 {
-    ////////////////////////////////////////////////////////
-    return 0; /////
+    vercode ValidVersion = -1;
+    vercode TryVersion = startversion;
+    uint32_t TryStep = 1;
+
+    // 발산탐색
+    while(0 < mReader(TryVersion, DT_TotalHash, "filelist.txt").length())
+    {
+        ValidVersion = TryVersion;
+        TryVersion += TryStep;
+        TryStep *= 2;
+    }
+
+    // 세부탐색
+    for(vercode i = ValidVersion + 1; i < TryVersion; ++i)
+        if(mReader(i, DT_TotalHash, "filelist.txt").length() == 0)
+            return i - 1;
+    return ValidVersion;
 }
 
 dPatcher::IOData dPatcher::readyForDownload(vercode version) const
@@ -791,11 +886,17 @@ dPatcher::IOData dPatcher::readyForDownload(vercode version) const
 dPatcher::IOData dPatcher::readyForUpload(vercode startversion, vercode* getversion) const
 {
     const vercode LatestVersion = searchLatestVersion(startversion);
-    const dMarkup HashYaml(dString::fromBinaryUTF8(mReader(LatestVersion, DT_TotalHash, "filelist.txt")));
-    if(getversion) *getversion = LatestVersion;
+    IODirDataP* NewIODirData = new IODirDataP(LatestVersion, true);
 
-    auto NewIODirData = new IODirDataP(LatestVersion, true);
-    NewIODirData->load(HashYaml);
+    if(0 <= LatestVersion)
+    {
+        const dBinary LatestFileList = mReader(LatestVersion, DT_TotalHash, "filelist.txt");
+        const dMarkup HashYaml(dString::fromBinaryUTF8(LatestFileList));
+        NewIODirData->load(HashYaml);
+    }
+    if(getversion)
+        *getversion = LatestVersion;
+
     return dPatcher::IOData((ptr_u)(GUIDataP*) NewIODirData,
         [](ptr_u handle)->void {delete (GUIDataP*) handle;});
 }
@@ -803,7 +904,7 @@ dPatcher::IOData dPatcher::readyForUpload(vercode startversion, vercode* getvers
 dPatcher::LocalData dPatcher::readyForLocal(dLiteral dirpath)
 {
     auto NewLocalDirData = new LocalDirDataP();
-    NewLocalDirData->load(dirpath, dirpath.length());
+    NewLocalDirData->load(dirpath);
     return dPatcher::LocalData((ptr_u)(GUIDataP*) NewLocalDirData,
         [](ptr_u handle)->void {delete (GUIDataP*) handle;});
 }
@@ -840,9 +941,16 @@ dPatcher::Schedule dPatcher::build(IOData io, LocalData local, dLiteral memo)
         [](ptr_u handle)->void {delete (ScheduleP*) handle;});
 }
 
-bool dPatcher::driveOnce(Schedule schedule, uint32_t msec) const
+bool dPatcher::driveOnce(Schedule schedule, uint32_t msec)
 {
-    return true; /////
+    bool NeedRetry = false;
+    if(auto CurSchedule = schedule.get<ScheduleP>())
+    {
+        auto LimitCSec = dDirectory::now() + msec / 10;
+        do {NeedRetry = CurSchedule->workOnce(mReader, mWriter);}
+        while(NeedRetry && dDirectory::now() < LimitCSec);
+    }
+    return NeedRetry;
 }
 
 dPatcher::Schedule dPatcher::load(dLiteral filepath)

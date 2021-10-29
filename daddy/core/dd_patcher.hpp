@@ -19,7 +19,7 @@ public:
     DD_handle(IOData);
     DD_handle(LocalData);
     DD_handle(Schedule);
-    typedef uint32_t vercode;
+    typedef int32_t vercode;
     enum worktype:uint8_t {WT_NoWork = 0, WT_Download, WT_Upload};
     enum datatype:utf8 {DT_UploadMemo = 'a', DT_Changed = 'c', DT_Erased = 'e', DT_TotalHash = 'z'};
     enum steptype:uint8_t {ST_CheckingForDownload = 0, ST_CleaningForDownload, ST_Downloading, ST_CopyingForUpload, ST_Uploading};
@@ -96,7 +96,7 @@ public: // 사용성
     /// @brief              비교정보 생성
     /// @param io           IO데이터(다운로드 or 업로드)
     /// @param local        로컬데이터(기존 파일에 병합 or 수정된 파일을 분석)
-    /// @return             true-성공, false-실패
+    /// @return             true-스케줄필요, false-스케줄불필요
     /// @see                build
     static bool compare(IOData io, LocalData local);
 
@@ -113,7 +113,7 @@ public: // 사용성
     /// @param msec         구동할 시간
     /// @return             true-구동계속, false-스케줄완료
     /// @see                build, load, save
-    bool driveOnce(Schedule schedule, uint32_t msec) const;
+    bool driveOnce(Schedule schedule, uint32_t msec);
 
 public: // 상태도구
     /// @brief              스케줄 불러오기
