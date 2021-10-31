@@ -177,7 +177,7 @@ bool FileDataP::compare(FileDataP& a, FileDataP& b)
 
 void FileDataP::save(dMarkup& filelist, dPatcher::vercode version, dString lpath) const
 {
-    auto& NewFile = filelist.atAdding();
+    auto& NewFile = filelist.at("file").atAdding();
     // 이전 노트
     if(0 < mNote.length())
         NewFile.at("note").set(mNote);
@@ -206,13 +206,12 @@ void FileDataP::save(dMarkup& filelist, dPatcher::vercode version, dString lpath
 
 void FileDataP::saveForRemoved(dMarkup& filelist, dPatcher::vercode version, dString lpath) const
 {
-    auto& NewFile = filelist.atAdding();
+    auto& NewFile = filelist.at("file-removed").atAdding();
     // 새 노트
     if(0 < GUIDataP::MEMO().length())
         NewFile.at("note").set(GUIDataP::MEMO());
 
     // 통합명칭 구성
-    NewFile.at("pathL").set(lpath);
     const uint32_t HiVersion = version / 1000;
     const uint32_t LoVersion = version % 1000;
     const dString SafePath = generateSafePath(lpath);
@@ -416,13 +415,14 @@ bool DirDataP::compare(DirDataP& a, DirDataP& b)
 
 void DirDataP::saveBlankDir(dMarkup& filelist, dPatcher::vercode version, dString lpath, bool removed) const
 {
-    auto& NewFile = filelist.atAdding();
+    auto& NewFile = filelist.at((removed)? dLiteral("file-removed") : dLiteral("file")).atAdding();
     // 새 노트
     if(0 < GUIDataP::MEMO().length())
         NewFile.at("note").set(GUIDataP::MEMO());
 
     // 통합명칭 구성
-    NewFile.at("pathL").set(lpath);
+    if(!removed)
+        NewFile.at("pathL").set(lpath);
     const uint32_t HiVersion = version / 1000;
     const uint32_t LoVersion = version % 1000;
     const dString SafeLPath = generateSafePath(lpath);
@@ -647,8 +647,11 @@ class ScheduleP : public dEscaper
 public:
     virtual char typecode() const {return 'N';}
     virtual dPatcher::vercode version() const {return 0;}
+    const dString& memo() const {return mMemo;}
     virtual dBinary build() const {return dBinary();}
     virtual bool workOnce(dPatcher::IOReadCB reader, dPatcher::IOWriteCB writer) {return false;}
+    virtual uint32_t workPermil() const {return 0;}
+    virtual dString workDetail() const {return "";}
 
 public:
     static ScheduleP* toClass(ptr_u handle)
@@ -656,14 +659,22 @@ public:
         return (ScheduleP*) handle;
     }
 
-DD_escaper(ScheduleP, dEscaper):
+DD_escaper(ScheduleP, dEscaper, mMemo()):
     void _init_(InitType type)
     {
     }
     void _quit_()
     {
     }
+    const dString mMemo;
+
+public:
+    DD_passage_declare(ScheduleP, dLiteral memo);
 };
+
+DD_passage_define(ScheduleP, dLiteral memo), mMemo(memo)
+{
+}
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 // ■ DownloadScheduleP
@@ -674,6 +685,8 @@ public:
     dPatcher::vercode version() const override {return mVersion;}
     dBinary build() const override;
     bool workOnce(dPatcher::IOReadCB reader, dPatcher::IOWriteCB writer) override;
+    uint32_t workPermil() const override;
+    dString workDetail() const override;
 
 DD_escaper(DownloadScheduleP, ScheduleP, mVersion(0)):
     void _init_(InitType type)
@@ -687,7 +700,7 @@ DD_escaper(DownloadScheduleP, ScheduleP, mVersion(0)):
     const dPatcher::vercode mVersion;
 
 public:
-    DD_passage_declare(DownloadScheduleP, const DirDataP& io);
+    DD_passage_declare(DownloadScheduleP, dLiteral memo, const DirDataP& io);
 };
 
 dBinary DownloadScheduleP::build() const
@@ -700,7 +713,17 @@ bool DownloadScheduleP::workOnce(dPatcher::IOReadCB reader, dPatcher::IOWriteCB 
     return false;
 }
 
-DD_passage_define(DownloadScheduleP, const DirDataP& io), mVersion(0)
+uint32_t DownloadScheduleP::workPermil() const
+{
+    return 0;
+}
+
+dString DownloadScheduleP::workDetail() const
+{
+    return "";
+}
+
+DD_passage_define_(DownloadScheduleP, dLiteral memo, const DirDataP& io)_with_super(memo), mVersion(0)
 {
     _init_(InitType::Create);
 }
@@ -710,18 +733,27 @@ DD_passage_define(DownloadScheduleP, const DirDataP& io), mVersion(0)
 class UploadScheduleP : public ScheduleP
 {
 public:
+    dString saveStep() const;
+    bool loadStep(dString text);
+
+public:
     char typecode() const override {return 'U';}
     dPatcher::vercode version() const override {return mVersion;}
     dBinary build() const override;
     bool workOnce(dPatcher::IOReadCB reader, dPatcher::IOWriteCB writer) override;
+    uint32_t workPermil() const override;
+    dString workDetail() const override;
 
 DD_escaper(UploadScheduleP, ScheduleP, mVersion(0), mRootDir()):
     void _init_(InitType type)
     {
         _super_::_init_(type);
-        mFileFocus = 0;
-        mWorkCount = 0;
-        mWorkFocus = 0;
+        mUploadStep = dPatcher::US_Ready;
+        mUploadFocus = 0;
+        mRemoveCount = 0;
+        mRemoveFocus = 0;
+        mCreateCount = 0;
+        mCreateFocus = 0;
     }
     void _quit_()
     {
@@ -730,13 +762,44 @@ DD_escaper(UploadScheduleP, ScheduleP, mVersion(0), mRootDir()):
     const dPatcher::vercode mVersion;
     const dString mRootDir;
     dMarkup mFileList;
-    uint32_t mFileFocus;
-    uint32_t mWorkCount;
-    uint32_t mWorkFocus;
+    dPatcher::uploadstep mUploadStep;
+    uint32_t mUploadFocus;
+    uint32_t mRemoveCount;
+    uint32_t mRemoveFocus;
+    uint32_t mCreateCount;
+    uint32_t mCreateFocus;
 
 public:
-    DD_passage_declare(UploadScheduleP, const DirDataP& local, dPatcher::vercode version);
+    DD_passage_declare(UploadScheduleP, dLiteral memo, const DirDataP& local, dPatcher::vercode version);
 };
+
+dString UploadScheduleP::saveStep() const
+{
+    switch(mUploadStep)
+    {
+    case dPatcher::US_Ready: return "ready";
+    case dPatcher::US_Remove: return "remove";
+    case dPatcher::US_Create: return "create";
+    case dPatcher::US_Done: return "done";
+    case dPatcher::US_Error_UploadFail: return "error/UploadFail";
+    case dPatcher::US_Error_UnknownStep: return "error/UnknownStep";
+    }
+    return "unknown";
+}
+
+bool UploadScheduleP::loadStep(dString text)
+{
+    if(text == "ready")
+        mUploadStep = dPatcher::US_Ready;
+    else if(text == "remove")
+        mUploadStep = dPatcher::US_Remove;
+    else if(text == "create")
+        mUploadStep = dPatcher::US_Create;
+    else if(text == "done")
+        mUploadStep = dPatcher::US_Done;
+    else return false;
+    return true;
+}
 
 dBinary UploadScheduleP::build() const
 {
@@ -745,42 +808,131 @@ dBinary UploadScheduleP::build() const
 
 bool UploadScheduleP::workOnce(dPatcher::IOReadCB reader, dPatcher::IOWriteCB writer)
 {
+    auto UploadMemo = [this](dPatcher::IOWriteCB writer)->bool
+    {
+        dMarkup mUploader;
+        mUploader.at("upload-step").set(saveStep());
+        mUploader.at("upload-focus").set(dString::fromNumber(mUploadFocus));
+        mUploader.at("remove-count").set(dString::fromNumber(mRemoveCount));
+        mUploader.at("remove-focus").set(dString::fromNumber(mRemoveFocus));
+        mUploader.at("create-count").set(dString::fromNumber(mCreateCount));
+        mUploader.at("create-focus").set(dString::fromNumber(mCreateFocus));
+        mUploader.at("upload-end").set(dDirectory::toUTCTime(dDirectory::now()));
+        return writer(mVersion, dPatcher::DT_UploadMemo, "uploader.txt", mUploader.saveYaml().toBinaryUTF8(false));
+    };
+
     const uint32_t HiVersion = mVersion / 1000;
     const uint32_t LoVersion = mVersion % 1000;
     const dString VersionToken = dString::print("p%03u/r%03u", HiVersion, LoVersion);
-    for(uint32_t i = mFileFocus, iend = mFileList("file").length(); i < iend; ++i)
+    switch(mUploadStep)
     {
-        auto PathU = mFileList("file")[i]("pathU").get();
-        auto PtrPathU = PathU.string();
-        if(!strncmp(PtrPathU, VersionToken.string(), VersionToken.length()))
+    case dPatcher::US_Ready:
+        if(!UploadMemo(writer))
         {
-            const dBinary NewFile = dBinary::fromFile(mRootDir + mFileList("file")[i]("pathL").get());
-            if(writer(mVersion, (dPatcher::datatype) PtrPathU[VersionToken.length()], PathU.clone(VersionToken.length() + 2), NewFile))
-            {
-                dMarkup mUploader;
-                mUploader.at("file-focus").set(dString::fromNumber(mFileFocus = i + 1));
-                mUploader.at("work-count").set(dString::fromNumber(mWorkCount));
-                mUploader.at("work-focus").set(dString::fromNumber(++mWorkFocus));
-                mUploader.at("upload-end").set(dDirectory::toUTCTime(dDirectory::now()));
-                writer(mVersion, dPatcher::DT_UploadMemo, "uploader.txt",
-                    mUploader.saveYaml().toBinaryUTF8(false));
+            mUploadStep = dPatcher::US_Error_UploadFail;
+            return false; // 진행종료
+        }
 
-                if(mWorkFocus < mWorkCount)
-                    return true;
+        mUploadStep = dPatcher::US_Remove;
+        mUploadFocus = 0;
+        return true; // 진행계속
+
+    case dPatcher::US_Remove:
+        for(uint32_t i = mUploadFocus, iend = mFileList("file-removed").length(); i < iend; ++i)
+        {
+            auto PathU = mFileList("file-removed")[i]("pathU").get();
+            auto PtrPathU = PathU.string();
+            if(writer(mVersion, (dPatcher::datatype) PtrPathU[VersionToken.length()], PathU.clone(VersionToken.length() + 2), dBinary()))
+            {
+                mUploadFocus = i + 1;
+                mRemoveFocus++;
+                if(!UploadMemo(writer))
+                {
+                    mUploadStep = dPatcher::US_Error_UploadFail;
+                    return false; // 진행종료
+                }
+                break;
+            }
+            else
+            {
+                mUploadStep = dPatcher::US_Error_UploadFail;
+                return false; // 진행종료
+            }
+        }
+
+        if(mRemoveFocus == mRemoveCount)
+        {
+            mUploadStep = dPatcher::US_Create;
+            mUploadFocus = 0;
+        }
+        return true; // 진행계속
+
+    case dPatcher::US_Create:
+        for(uint32_t i = mUploadFocus, iend = mFileList("file").length(); i < iend; ++i)
+        {
+            auto PathU = mFileList("file")[i]("pathU").get();
+            auto PtrPathU = PathU.string();
+            if(!strncmp(PtrPathU, VersionToken.string(), VersionToken.length()))
+            {
+                const dBinary NewFile = dBinary::fromFile(mRootDir + mFileList("file")[i]("pathL").get());
+                if(writer(mVersion, (dPatcher::datatype) PtrPathU[VersionToken.length()], PathU.clone(VersionToken.length() + 2), NewFile))
+                {
+                    mUploadFocus = i + 1;
+                    mCreateFocus++;
+                    if(!UploadMemo(writer))
+                    {
+                        mUploadStep = dPatcher::US_Error_UploadFail;
+                        return false; // 진행종료
+                    }
+                    break;
+                }
                 else
                 {
-                    writer(mVersion, dPatcher::DT_TotalHash, "filelist.txt",
-                        mFileList.saveYaml().toBinaryUTF8(false));
-                    return false;
+                    mUploadStep = dPatcher::US_Error_UploadFail;
+                    return false; // 진행종료
                 }
             }
-            else break;
         }
+
+        if(mCreateFocus == mCreateCount)
+        {
+            mUploadStep = dPatcher::US_Done;
+            mUploadFocus = 0;
+        }
+        return true; // 진행계속
+
+    case dPatcher::US_Done:
+        if(writer(mVersion, dPatcher::DT_TotalHash, "filelist.txt", mFileList.saveYaml().toBinaryUTF8(false)))
+        {
+            if(!UploadMemo(writer))
+            {
+                mUploadStep = dPatcher::US_Error_UploadFail;
+                return false; // 진행종료
+            }
+        }
+        else
+        {
+            mUploadStep = dPatcher::US_Error_UploadFail;
+            return false; // 진행종료
+        }
+        return false; // 진행종료
     }
-    return false;
+
+    mUploadStep = dPatcher::US_Error_UnknownStep;
+    return false; // 진행종료
 }
 
-DD_passage_define(UploadScheduleP, const DirDataP& local, dPatcher::vercode version), mVersion(version + 1), mRootDir(local.rootDir())
+uint32_t UploadScheduleP::workPermil() const
+{
+    return 1000 * (mRemoveFocus + mCreateFocus) / (mRemoveCount + mCreateCount);
+}
+
+dString UploadScheduleP::workDetail() const
+{
+    return saveStep();
+}
+
+DD_passage_define_(UploadScheduleP, dLiteral memo, const DirDataP& local, dPatcher::vercode version)_with_super(memo), mVersion(version + 1), mRootDir(local.rootDir())
 {
     _init_(InitType::Create);
 
@@ -789,11 +941,14 @@ DD_passage_define(UploadScheduleP, const DirDataP& local, dPatcher::vercode vers
     mFileList.at("note").at("upload-rootdir").set(mRootDir);
     mFileList.at("note").at("user-device").set(dUnique::deviceId());
     mFileList.at("note").at("user-name").set(dUnique::userName());
-    local.collect(mFileList.at("file"), mVersion);
+    local.collect(mFileList, mVersion);
 
-    mFileFocus = 0;
-    mWorkCount = 0;
-    mWorkFocus = 0;
+    mUploadStep = dPatcher::US_Ready;
+    mUploadFocus = 0;
+    mRemoveCount = mFileList("file-removed").length();
+    mRemoveFocus = 0;
+    mCreateCount = 0;
+    mCreateFocus = 0;
 
     const uint32_t HiVersion = mVersion / 1000;
     const uint32_t LoVersion = mVersion % 1000;
@@ -802,7 +957,7 @@ DD_passage_define(UploadScheduleP, const DirDataP& local, dPatcher::vercode vers
     {
         auto PtrPathU = mFileList("file")[i]("pathU").get().string();
         if(!strncmp(PtrPathU, VersionToken.string(), VersionToken.length()))
-            mWorkCount++;
+            mCreateCount++;
     }
 }
 
@@ -826,11 +981,6 @@ void dPatcher::setReader(IOReadCB reader)
 void dPatcher::setWriter(IOWriteCB writer)
 {
     mWriter = writer;
-}
-
-void dPatcher::setLogger(LogCB logger)
-{
-    mLogger = logger;
 }
 
 uint32_t dPatcher::getGroupCount()
@@ -926,18 +1076,18 @@ dPatcher::Schedule dPatcher::build(IOData io, LocalData local, dLiteral memo)
         if(((IODirDataP*) CurIO)->upload())
         {
             auto Version = ((IODirDataP*) CurIO)->version();
-            auto NewUploadSchedule = new UploadScheduleP(*CurLocal, Version);
+            auto NewUploadSchedule = new UploadScheduleP(memo, *CurLocal, Version);
             return dPatcher::Schedule((ptr_u)(ScheduleP*) NewUploadSchedule,
                 [](ptr_u handle)->void {delete (ScheduleP*) handle;});
         }
         else
         {
-            auto NewDownloadSchedule = new DownloadScheduleP(*CurIO);
+            auto NewDownloadSchedule = new DownloadScheduleP(memo, *CurIO);
             return dPatcher::Schedule((ptr_u)(ScheduleP*) NewDownloadSchedule,
                 [](ptr_u handle)->void {delete (ScheduleP*) handle;});
         }
     }
-    return dPatcher::Schedule((ptr_u) new ScheduleP(),
+    return dPatcher::Schedule((ptr_u) new ScheduleP(memo),
         [](ptr_u handle)->void {delete (ScheduleP*) handle;});
 }
 
@@ -991,7 +1141,20 @@ dPatcher::vercode dPatcher::getVersion(const Schedule& schedule)
 
 dString dPatcher::getMemo(const Schedule& schedule)
 {
-    return ""; /////
+    if(auto CurSchedule = schedule.get<ScheduleP>())
+        return CurSchedule->memo();
+    return "";
+}
+
+uint32_t dPatcher::getProgress(const Schedule& schedule, dString* detail)
+{
+    uint32_t Permil = 0;
+    if(auto CurSchedule = schedule.get<ScheduleP>())
+    {
+        Permil = CurSchedule->workPermil();
+        if(detail) *detail = CurSchedule->workDetail();
+    }
+    return Permil;
 }
 
 uint32_t dPatcher::renderOnce(IOData data, RenderCB renderer)
@@ -1067,28 +1230,6 @@ void dPatcher::_init_(InitType type)
                 HiNumber, LoNumber, type, dataname.length(), dataname.string());
             return data.toFile(FilePath, true);
         };
-
-        mLogger = [](steptype type, float progress, dLiteral detail)->void
-        {
-            switch(type)
-            {
-            case ST_CheckingForDownload:
-                printf("Checking[%d%%] %.*s", int(progress * 100 + 0.5), detail.length(), detail.string());
-                break;
-            case ST_CleaningForDownload:
-                printf("Cleaning[%d%%] %.*s", int(progress * 100 + 0.5), detail.length(), detail.string());
-                break;
-            case ST_Downloading:
-                printf("Downloading[%d%%] %.*s", int(progress * 100 + 0.5), detail.length(), detail.string());
-                break;
-            case ST_CopyingForUpload:
-                printf("Copying[%d%%] %.*s", int(progress * 100 + 0.5), detail.length(), detail.string());
-                break;
-            case ST_Uploading:
-                printf("Uploading[%d%%] %.*s", int(progress * 100 + 0.5), detail.length(), detail.string());
-                break;
-            }
-        };
     }
 }
 
@@ -1102,7 +1243,6 @@ void dPatcher::_move_(_self_&& rhs)
     mGroupSetter = DD_rvalue(rhs.mGroupSetter);
     mReader = DD_rvalue(rhs.mReader);
     mWriter = DD_rvalue(rhs.mWriter);
-    mLogger = DD_rvalue(rhs.mLogger);
 }
 
 void dPatcher::_copy_(const _self_& rhs)
@@ -1111,16 +1251,14 @@ void dPatcher::_copy_(const _self_& rhs)
     mGroupSetter = rhs.mGroupSetter;
     mReader = rhs.mReader;
     mWriter = rhs.mWriter;
-    mLogger = rhs.mLogger;
 }
 
-DD_passage_define_alone(dPatcher, IOGetGroupNameCB getter, IOSetGroupFocusCB setter, IOReadCB reader, IOWriteCB writer, LogCB logger)
+DD_passage_define_alone(dPatcher, IOGetGroupNameCB getter, IOSetGroupFocusCB setter, IOReadCB reader, IOWriteCB writer)
 {
     mGroupGetter = getter;
     mGroupSetter = setter;
     mReader = reader;
     mWriter = writer;
-    mLogger = logger;
 }
 
 } // namespace Daddy

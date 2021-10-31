@@ -320,6 +320,15 @@
 #define DD_passage_define(CLASS, ...)        CLASS::CLASS(__VA_ARGS__, Daddy::EscapePlanP* ep) : _super_(ep)
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
+// ▶ DD_passage_define_()_with_super()
+//
+// 사용예시-1) DD_passage_define_(ClassA)_with_super(a, b) {}
+// 사용예시-2) DD_passage_define_(ClassA, int a, char* b)_with_super(a, b) {}
+// 사용예시-3) DD_passage_define_(ClassA, int a, char* b)_with_super(a, b), c(a) {}
+//
+#define DD_passage_define_(CLASS, ...)       CLASS::CLASS(__VA_ARGS__, Daddy::EscapePlanP* ep) : _super_
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
 // ▶ DD_passage_alone()
 //
 // 사용예시-1) DD_passage_alone(ClassA) {}

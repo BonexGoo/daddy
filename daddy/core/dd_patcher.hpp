@@ -24,11 +24,11 @@ public:
     enum datatype:utf8 {DT_UploadMemo = 'a', DT_Changed = 'c', DT_Erased = 'e', DT_TotalHash = 'z'};
     enum steptype:uint8_t {ST_CheckingForDownload = 0, ST_CleaningForDownload, ST_Downloading, ST_CopyingForUpload, ST_Uploading};
     enum comparetype:uint8_t {CT_Same = 0, CT_Added, CT_Removed, CT_Different};
+    enum uploadstep:uint8_t {US_Ready = 0, US_Remove, US_Create, US_Done, US_Error_UploadFail = -1, US_Error_UnknownStep = -2};
     typedef std::function<dString(uint32_t index)> IOGetGroupNameCB;
     typedef std::function<void(dString groupname)> IOSetGroupFocusCB;
     typedef std::function<dBinary(vercode version, datatype type, dLiteral dataname)> IOReadCB;
     typedef std::function<bool(vercode version, datatype type, dLiteral dataname, const dBinary& data)> IOWriteCB;
-    typedef std::function<void(steptype type, float progress, dLiteral detail)> LogCB;
 
 public: // IO연결
     /// @brief              IOGetGroupNameCB연결
@@ -46,10 +46,6 @@ public: // IO연결
     /// @brief              IOWrite연결
     /// @param writer       콜백함수
     void setWriter(IOWriteCB writer);
-
-    /// @brief              Status연결
-    /// @param logger       콜백함수
-    void setLogger(LogCB logger);
 
 public: // 사용성
     /// @brief              전체 그룹의 수량 반환
@@ -140,10 +136,16 @@ public: // 상태도구
     /// @return             타겟버전
     static vercode getVersion(const Schedule& schedule);
 
-    /// @brief              스케줄의 메모내용
+    /// @brief              스케줄의 메모내용(build시 입력)
     /// @param schedule     확인할 스케줄
     /// @return             메모내용
     static dString getMemo(const Schedule& schedule);
+
+    /// @brief              스케줄의 진행경과
+    /// @param schedule     확인할 스케줄
+    /// @param detail       부연설명
+    /// @return             Permil값
+    static uint32_t getProgress(const Schedule& schedule, dString* detail = nullptr);
 
 public: // 비주얼도구
     struct RenderStatus
@@ -181,10 +183,9 @@ DD_escaper_alone(dPatcher): // 객체사이클
     IOSetGroupFocusCB mGroupSetter;
     IOReadCB mReader;
     IOWriteCB mWriter;
-    LogCB mLogger;
 
 public:
-    DD_passage_declare_alone(dPatcher, IOGetGroupNameCB getter, IOSetGroupFocusCB setter, IOReadCB reader, IOWriteCB writer, LogCB logger);
+    DD_passage_declare_alone(dPatcher, IOGetGroupNameCB getter, IOSetGroupFocusCB setter, IOReadCB reader, IOWriteCB writer);
 };
 
 } // namespace Daddy
