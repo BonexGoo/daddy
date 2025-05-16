@@ -8,7 +8,7 @@
 #include "dd_platform.hpp"
 #include "dd_unique.hpp"
 #include <map>
-#include <string>
+#include <cstring>
 
 namespace Daddy {
 

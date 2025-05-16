@@ -157,18 +157,18 @@ dBinary dBinary::fromFile(const dLiteral& filepath)
 {
     dString OldLocale = setlocale(LC_ALL, nullptr);
     setlocale(LC_ALL, "en_US.UTF-8");
-    FILE* NewFile = std::fopen(filepath.buildNative(), "rb");
+    FILE* NewFile = fopen(filepath.buildNative(), "rb");
     setlocale(LC_ALL, ((dLiteral) OldLocale).buildNative());
 
     if(NewFile)
     {
-        std::fseek(NewFile, 0, SEEK_END);
-        auto NewLength = (const int32_t) std::ftell(NewFile);
-        std::fseek(NewFile, 0, SEEK_SET);
+        fseek(NewFile, 0, SEEK_END);
+        auto NewLength = (const int32_t) ftell(NewFile);
+        fseek(NewFile, 0, SEEK_SET);
 
         dump* NewBuffer = new dump[NewLength];
-        std::fread(NewBuffer, sizeof(dump), NewLength, NewFile);
-        std::fclose(NewFile);
+        fread(NewBuffer, sizeof(dump), NewLength, NewFile);
+        fclose(NewFile);
         return dBinary(NewBuffer, NewLength);
     }
     return dBinary();
@@ -178,13 +178,13 @@ bool dBinary::toFile(const dLiteral& filepath, bool autodir) const
 {
     dString OldLocale = setlocale(LC_ALL, nullptr);
     setlocale(LC_ALL, "en_US.UTF-8");
-    FILE* NewFile = std::fopen(filepath.buildNative(), "wb");
+    FILE* NewFile = fopen(filepath.buildNative(), "wb");
     setlocale(LC_ALL, ((dLiteral) OldLocale).buildNative());
 
     if(NewFile)
     {
-        std::fwrite(buffer(), sizeof(dump), length(), NewFile);
-        std::fclose(NewFile);
+        fwrite(buffer(), sizeof(dump), length(), NewFile);
+        fclose(NewFile);
         return true;
     }
     else if(autodir)

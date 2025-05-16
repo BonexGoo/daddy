@@ -466,14 +466,14 @@ dString dString::print(utf8s format, ...)
 dString dString::fromNumber(int64_t value)
 {
     utf8 Result[1024];
-    auto Length = std::snprintf(Result, 1024, "%lld", (long long int) value);
+    auto Length = snprintf(Result, 1024, "%lld", (long long int) value);
     return dString(Result, Length);
 }
 
 dString dString::fromDouble(double value)
 {
     utf8 Result[1024];
-    auto Length = std::snprintf(Result, 1024, "%lf", value);
+    auto Length = snprintf(Result, 1024, "%lf", value);
     while(Result[Length - 1] == '0') Length--;
     if(Result[Length - 1] == '.') Length--;
     return dString(Result, Length);

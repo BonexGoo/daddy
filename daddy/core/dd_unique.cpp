@@ -235,7 +235,7 @@ uint64_t dUnique::generateHash(dLiteral filepath)
 {
     dString OldLocale = setlocale(LC_ALL, nullptr);
     setlocale(LC_ALL, "en_US.UTF-8");
-    FILE* NewFile = std::fopen(filepath.buildNative(), "rb");
+    FILE* NewFile = fopen(filepath.buildNative(), "rb");
     setlocale(LC_ALL, ((dLiteral) OldLocale).buildNative());
 
     uint64_t CrcCode = 0;
@@ -243,11 +243,11 @@ uint64_t dUnique::generateHash(dLiteral filepath)
     {
         // CRC64처리
         dump NewBuffer[4096];
-        while(int32_t ReadLength = std::fread(NewBuffer, sizeof(dump), 4096, NewFile))
+        while(int32_t ReadLength = fread(NewBuffer, sizeof(dump), 4096, NewFile))
             for(int32_t i = 0; i < ReadLength; ++i)
                 CrcCode = gUniqueUtil.mCrcTable[(CrcCode ^ NewBuffer[i]) & 0xFF] ^ (CrcCode >> 8);
 
-        std::fclose(NewFile);
+        fclose(NewFile);
     }
     return CrcCode;
 }

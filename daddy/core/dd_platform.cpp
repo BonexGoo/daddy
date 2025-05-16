@@ -16,6 +16,8 @@
 #if DD_OS_WINDOWS
     #if DD_OS_WINDOWS_MINGW
         #include <ws2tcpip.h>
+        #include <psapi.h>
+        #pragma comment(lib, "psapi.lib")
     #else
         #include <windows.h>
         #pragma comment(lib, "ws2_32.lib")

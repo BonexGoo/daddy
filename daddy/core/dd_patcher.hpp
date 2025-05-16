@@ -24,7 +24,7 @@ public:
     enum datatype:utf8 {DT_UploadMemo = 'a', DT_Changed = 'c', DT_Erased = 'e', DT_TotalHash = 'z'};
     enum steptype:uint8_t {ST_CheckingForDownload = 0, ST_CleaningForDownload, ST_Downloading, ST_CopyingForUpload, ST_Uploading};
     enum comparetype:uint8_t {CT_Same = 0, CT_Added, CT_Removed, CT_Different};
-    enum uploadstep:uint8_t {US_Ready = 0, US_Remove, US_Create, US_Done, US_Error_UploadFail = -1, US_Error_UnknownStep = -2};
+    enum uploadstep:uint8_t {US_Ready = 0, US_Remove, US_Create, US_Done, US_Error_UploadFail = (uint8_t) -1, US_Error_UnknownStep = (uint8_t) -2};
     typedef std::function<dString(uint32_t index)> IOGetGroupNameCB;
     typedef std::function<void(dString groupname)> IOSetGroupFocusCB;
     typedef std::function<dBinary(vercode version, datatype type, dLiteral dataname)> IOReadCB;
