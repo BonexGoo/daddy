@@ -1,4 +1,0 @@
-<map id="Daddy::dGlobal::setDependency" name="Daddy::dGlobal::setDependency">
-<area shape="rect" id="node1" title="글로벌 인스턴스끼리의 종속관계 정의" alt="" coords="196,5,405,32"/>
-<area shape="rect" id="node2" href="$class_daddy_1_1d_global.html#a7769d0710ec4636f0db38b67349d38c6" title="등록된 인스턴스중 로딩이 필요한 것을 종속관계에 맞게 일괄로딩" alt="" coords="5,5,148,32"/>
-</map>

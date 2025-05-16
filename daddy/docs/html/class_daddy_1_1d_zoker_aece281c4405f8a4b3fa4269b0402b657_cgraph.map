@@ -1,6 +1,0 @@
-<map id="Daddy::dZoker::operator()" name="Daddy::dZoker::operator()">
-<area shape="rect" id="node1" title="네임방식 자식접근(보장형)" alt="" coords="5,56,175,83"/>
-<area shape="rect" id="node2" href="$class_daddy_1_1d_literal.html#a16092f724471d9dd827bc645ab759e70" title="스트링 길이반환" alt="" coords="231,5,383,32"/>
-<area shape="rect" id="node3" href="$class_daddy_1_1d_zoker.html#ada6f080a15674952d95223344e446607" title="네임방식 자식접근(보장형)" alt="" coords="223,56,392,83"/>
-<area shape="rect" id="node4" href="$class_daddy_1_1d_literal.html#ae5f6d26021eca41453132c6a9cf36536" title="스트링 반환(null문자없음)" alt="" coords="233,107,382,133"/>
-</map>

@@ -1,7 +1,0 @@
-<map id="Daddy::dUnique::deviceId" name="Daddy::dUnique::deviceId">
-<area shape="rect" id="node1" title="장치ID" alt="" coords="5,81,173,108"/>
-<area shape="rect" id="node2" href="$class_daddy_1_1d_string.html#aa2f4ae5463e9511c624dde3655325271" title="스트링 연결" alt="" coords="246,5,383,32"/>
-<area shape="rect" id="node3" href="$class_daddy_1_1d_unique.html#a21508f6e07239391e38847394ef62c9c" title="핑거프린트" alt="" coords="225,56,405,83"/>
-<area shape="rect" id="node4" href="$class_daddy_1_1d_string.html#a59558f4dc1cf1a47de582eaf982dbe05" title="정수값으로 스트링 제작" alt="" coords="221,107,408,133"/>
-<area shape="rect" id="node5" href="$class_daddy_1_1d_unique.html#a1c24b2178951146f3a46c935357e7824" title="유저네임" alt="" coords="224,157,405,184"/>
-</map>

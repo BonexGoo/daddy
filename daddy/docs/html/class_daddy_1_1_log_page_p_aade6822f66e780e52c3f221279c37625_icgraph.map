@@ -1,6 +1,0 @@
-<map id="Daddy::LogPageP::alignedSize" name="Daddy::LogPageP::alignedSize">
-<area shape="rect" id="node1" title="페이지내 청크구조 &#45; 헤더 @sheet ┏━━━━━━━┳━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━┓ @sheet ┃ 시작기호[1] ┃ 페이지 활성..." alt="" coords="251,56,453,83"/>
-<area shape="rect" id="node2" href="$class_daddy_1_1d_detector.html#a6e75968fefeea127b0347fdd25b6099a" title="페이로드에서 32비트정수 반환" alt="" coords="9,5,199,32"/>
-<area shape="rect" id="node3" href="$class_daddy_1_1d_detector.html#af88837e327b28acc75045880e7617fe6" title="페이로드에서 64비트정수 반환" alt="" coords="9,56,199,83"/>
-<area shape="rect" id="node4" href="$class_daddy_1_1d_detector.html#acd0426707240ad9ab2046db36455ecba" title="페이로드에서 스트링 반환" alt="" coords="5,107,203,133"/>
-</map>

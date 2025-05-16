@@ -1,5 +1,0 @@
-<map id="Daddy::dBinary::fromInternal" name="Daddy::dBinary::fromInternal">
-<area shape="rect" id="node1" title="내부에서 바이너리 가져오기(소유권 넘어오고 사용후 자동삭제)" alt="" coords="5,31,192,57"/>
-<area shape="rect" id="node2" href="$class_daddy_1_1d_binary.html#a4a0163c189fb90721e5e0b7b1d0d18cd" title="바이너리 버퍼반환" alt="" coords="242,5,393,32"/>
-<area shape="rect" id="node3" href="$class_daddy_1_1d_binary.html#a1396ddc03ca1b1cc0606acca3f57c35f" title="바이너리 길이반환" alt="" coords="240,56,395,83"/>
-</map>

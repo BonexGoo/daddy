@@ -1,4 +1,0 @@
-<map id="Daddy::dDetector::parseInt32" name="Daddy::dDetector::parseInt32">
-<area shape="rect" id="node1" title="페이로드에서 32비트정수 반환" alt="" coords="5,5,196,32"/>
-<area shape="rect" id="node2" href="$class_daddy_1_1_log_page_p.html#aade6822f66e780e52c3f221279c37625" title="페이지내 청크구조 &#45; 헤더 @sheet ┏━━━━━━━┳━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━┓ @sheet ┃ 시작기호[1] ┃ 페이지 활성..." alt="" coords="244,5,447,32"/>
-</map>

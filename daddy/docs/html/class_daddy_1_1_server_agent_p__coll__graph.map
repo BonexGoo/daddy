@@ -1,7 +1,0 @@
-<map id="Daddy::ServerAgentP" name="Daddy::ServerAgentP">
-<area shape="rect" id="node1" title=" " alt="" coords="123,247,270,273"/>
-<area shape="rect" id="node2" href="$class_daddy_1_1_socket_agent_p.html" title=" " alt="" coords="5,157,156,184"/>
-<area shape="rect" id="node3" href="$class_daddy_1_1d_escaper.html" title="dEscaper" alt="" coords="19,81,142,108"/>
-<area shape="rect" id="node4" href="$class_daddy_1_1_escape_model.html" title="EscapeModel." alt="" coords="7,5,154,32"/>
-<area shape="rect" id="node5" href="$class_daddy_1_1d_mutex.html" title="뮤텍스" alt="" coords="180,157,291,184"/>
-</map>

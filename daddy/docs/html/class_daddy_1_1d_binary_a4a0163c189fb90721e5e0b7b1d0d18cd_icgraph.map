@@ -1,9 +1,0 @@
-<map id="Daddy::dBinary::buffer" name="Daddy::dBinary::buffer">
-<area shape="rect" id="node1" title="바이너리 버퍼반환" alt="" coords="476,107,627,133"/>
-<area shape="rect" id="node2" href="$class_daddy_1_1d_binary.html#acd5c7e9c2bb73c19b80bdcabe36ca8ce" title="바이너리 연결(네이티브식)" alt="" coords="262,5,402,32"/>
-<area shape="rect" id="node4" href="$class_daddy_1_1d_binary.html#a897186136ab6f77bf5d4f08b8a8575af" title="바이너리 연결" alt="" coords="5,56,188,83"/>
-<area shape="rect" id="node5" href="$class_daddy_1_1d_binary.html#a30a8680be73dd7df53f484dbf93c87f2" title="외부에서 바이너리 가져오기(사용후 삭제하지 않음)" alt="" coords="236,107,428,133"/>
-<area shape="rect" id="node6" href="$class_daddy_1_1d_binary.html#a22a7006da6a091abd8e570c99017e6d0" title="내부에서 바이너리 가져오기(소유권 넘어오고 사용후 자동삭제)" alt="" coords="239,157,425,184"/>
-<area shape="rect" id="node7" href="$class_daddy_1_1d_binary.html#abc82400898cd2c6c9b48bf4fa091c861" title="파일로 바이너리 내보내기" alt="" coords="257,208,407,235"/>
-<area shape="rect" id="node3" href="$class_daddy_1_1d_zoker.html#a48176acfafa5f034825a177ee6f288bf" title="조크생성" alt="" coords="26,5,167,32"/>
-</map>
