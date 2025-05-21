@@ -13,11 +13,11 @@ set(DADDY_INCLUDES
     ../daddy)
 
 set(DADDY_DEFINES
-    DADDY_NDEBUG=${NDEBUG})
+    DADDY_NDEBUG=${NDEBUG}
+    DD_ENABLE_TRACE)
 
 set(DADDY_SOURCES
     ../daddy/daddy.hpp
-
     ../daddy/core/dd_binary.hpp
     ../daddy/core/dd_binary.cpp
     ../daddy/core/dd_detector.hpp
@@ -47,6 +47,9 @@ set(DADDY_SOURCES
     ../daddy/core/dd_unique.cpp
     ../daddy/core/dd_zoker.hpp
     ../daddy/core/dd_zoker.cpp
+    ../daddy/vtk/dd_vtk_api.hpp
+    ../daddy/vtk/dd_vtk_api_browser.cpp
+    ../daddy/vtk/dd_vtk_api_desktop.cpp
     ../daddy/vtk/dd_vtk_canvas.hpp
     ../daddy/vtk/dd_vtk_canvas.cpp)
 

@@ -4,6 +4,7 @@
 #pragma once
 
 // Dependencies
+#include <functional>
 #include <daddy.hpp>
 
 namespace Daddy {
@@ -13,7 +14,10 @@ class VtkCanvasAgentP;
 /// @brief VTK캔버스객체
 class dVtkCanvas
 {
-public: // 사용성
+public:
+    typedef std::function<void(utf8s wid, dVtkCanvas& canvas)> PassCB;
+
+public: // 위젯사용성
     /// @brief          부모의 ptr값 등록
     /// @param parent   포인트주소
     void setParent(ptr parent);
@@ -44,7 +48,10 @@ public: // 사용성
     /// @return         컬러
     dString color() const;
 
-public: // 전체설정
+public: // VTK사용성
+    void setDicom(ptr dicom);
+
+public: // UI설정
     /// @brief          레이아웃의 마진값 셋팅
     /// @param left     마진값 Left
     /// @param top      마진값 Top
@@ -81,6 +88,11 @@ public: // 전체설정
     /// @return         간격값 Y
     static int32_t canvasSpacingY();
 
+public: // 회람
+    /// @brief          모든 캔버스를 회람
+    /// @param cb       콜백함수
+    static void passAll(PassCB cb);
+
 private:
     static const dVtkCanvas& blank();
 
@@ -92,7 +104,7 @@ DD_escaper_alone(dVtkCanvas): // 객체사이클
     VtkCanvasAgentP* mRefAgent;
 
 public:
-    DD_passage_declare_alone(dVtkCanvas, dString wid, dString style, dString channel, dString color);
+    DD_passage_declare_alone(dVtkCanvas, dLiteral wid, dLiteral style, dLiteral channel, dLiteral color);
 };
 
 } // namespace Daddy
