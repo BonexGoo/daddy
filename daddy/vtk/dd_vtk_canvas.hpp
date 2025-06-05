@@ -4,8 +4,8 @@
 #pragma once
 
 // Dependencies
-#include <functional>
 #include <daddy.hpp>
+#include <functional>
 
 namespace Daddy {
 

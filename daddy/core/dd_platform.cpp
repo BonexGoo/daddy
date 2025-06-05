@@ -876,4 +876,42 @@ void dProcess::killProcessAll(dLiteral exename)
     #endif
 }
 
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// ■ dExternalDom
+static std::map<std::string, std::string> gDom;
+static dExternalDom::SetValueCB gSetValueCB = [](dLiteral key, dLiteral value)->void {gDom[key.buildNative()] = value.buildNative();};
+static dExternalDom::GetValueCB gGetValueCB = [](dLiteral key)->dString {return dString(gDom[key.buildNative()].c_str());};
+static dExternalDom::RemoveValueCB gRemoveValueCB = [](dLiteral keyword)->void
+{
+    auto OneKeyword = keyword.buildNative();
+    for(auto it = gDom.begin(); it != gDom.end();)
+    {
+        if(it->first.find(OneKeyword) != std::string::npos)
+            it = gDom.erase(it);
+        else ++it;
+    }
+};
+
+void dExternalDom::bind(SetValueCB setcb, GetValueCB getcb, RemoveValueCB removecb)
+{
+    gSetValueCB = setcb;
+    gGetValueCB = getcb;
+    gRemoveValueCB = removecb;
+}
+
+void dExternalDom::set(dLiteral key, dLiteral value)
+{
+    gSetValueCB(key, value);
+}
+
+dString dExternalDom::get(dLiteral key)
+{
+    return gGetValueCB(key);
+}
+
+void dExternalDom::remove(dLiteral keyword)
+{
+    gRemoveValueCB(keyword);
+}
+
 } // namespace Daddy

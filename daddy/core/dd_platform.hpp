@@ -142,4 +142,34 @@ public:
     static void killProcessAll(dLiteral exename);
 };
 
+/// @brief 외부DOM객체
+class dExternalDom
+{
+public:
+    typedef std::function<void(dLiteral key, dLiteral value)> SetValueCB;
+    typedef std::function<dString(dLiteral key)> GetValueCB;
+    typedef std::function<void(dLiteral keyword)> RemoveValueCB;
+
+public: // 사용성
+    /// @brief            Set콜백함수와 Get콜백함수를 등록
+    /// @param setcb      Set용 콜백함수
+    /// @param getcb      Get용 콜백함수
+    /// @param removecb   삭제용 콜백함수
+    static void bind(SetValueCB setcb, GetValueCB getcb, RemoveValueCB removecb);
+
+    /// @brief            Set처리
+    /// @param key        키
+    /// @param value      값
+    static void set(dLiteral key, dLiteral value);
+
+    /// @brief            Get처리
+    /// @param key        키
+    /// @return           값
+    static dString get(dLiteral key);
+
+    /// @brief            검색어로 삭제처리
+    /// @param keyword    검색어
+    static void remove(dLiteral keyword);
+};
+
 } // namespace Daddy

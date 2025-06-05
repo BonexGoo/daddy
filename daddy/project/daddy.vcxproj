@@ -35,11 +35,11 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -47,18 +47,26 @@
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="daddy.props" />
+    <Import Project="daddy_vtk.props" />
+    <Import Project="daddy_dcmtk.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="daddy.props" />
+    <Import Project="daddy_vtk.props" />
+    <Import Project="daddy_dcmtk.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="daddy.props" />
+    <Import Project="daddy_vtk.props" />
+    <Import Project="daddy_dcmtk.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="daddy.props" />
+    <Import Project="daddy_vtk.props" />
+    <Import Project="daddy_dcmtk.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
@@ -109,7 +117,9 @@
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
-      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>/bigobj /Zc:__cplusplus %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <ConformanceMode>true</ConformanceMode>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -152,9 +162,11 @@
       </DebugInformationFormat>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
-      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>/bigobj /Zc:__cplusplus %(AdditionalOptions)</AdditionalOptions>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <ConformanceMode>true</ConformanceMode>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -167,22 +179,6 @@
       <OutputFile>$(SolutionDir)..\[daddy]\bin\$(PlatformTarget)\$(Configuration)\$(TargetName)$(TargetExt)</OutputFile>
     </Lib>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="..\core\dd_binary.cpp" />
-    <ClCompile Include="..\core\dd_detector.cpp" />
-    <ClCompile Include="..\core\dd_escaper.cpp" />
-    <ClCompile Include="..\core\dd_global.cpp" />
-    <ClCompile Include="..\core\dd_handle.cpp" />
-    <ClCompile Include="..\core\dd_markup.cpp" />
-    <ClCompile Include="..\core\dd_patcher.cpp" />
-    <ClCompile Include="..\core\dd_platform.cpp" />
-    <ClCompile Include="..\core\dd_string.cpp" />
-    <ClCompile Include="..\core\dd_telepath.cpp" />
-    <ClCompile Include="..\core\dd_thread.cpp" />
-    <ClCompile Include="..\core\dd_type.cpp" />
-    <ClCompile Include="..\core\dd_unique.cpp" />
-    <ClCompile Include="..\core\dd_zoker.cpp" />
-  </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\core\dd_binary.hpp" />
     <ClInclude Include="..\core\dd_detector.hpp" />
@@ -200,6 +196,35 @@
     <ClInclude Include="..\core\dd_unique.hpp" />
     <ClInclude Include="..\core\dd_zoker.hpp" />
     <ClInclude Include="..\daddy.hpp" />
+    <ClInclude Include="..\vtk\canvas_desktop\dd_vtk_widget.hpp" />
+    <ClInclude Include="..\vtk\canvas_desktop\dd_vtk_widget_slice.hpp" />
+    <ClInclude Include="..\vtk\canvas_desktop\dd_vtk_widget_volume.hpp" />
+    <ClInclude Include="..\vtk\dd_vtk_api.hpp" />
+    <ClInclude Include="..\vtk\dd_vtk_canvas.hpp" />
+    <ClInclude Include="..\vtk\dd_vtk_volume.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\core\dd_binary.cpp" />
+    <ClCompile Include="..\core\dd_detector.cpp" />
+    <ClCompile Include="..\core\dd_escaper.cpp" />
+    <ClCompile Include="..\core\dd_global.cpp" />
+    <ClCompile Include="..\core\dd_handle.cpp" />
+    <ClCompile Include="..\core\dd_markup.cpp" />
+    <ClCompile Include="..\core\dd_patcher.cpp" />
+    <ClCompile Include="..\core\dd_platform.cpp" />
+    <ClCompile Include="..\core\dd_string.cpp" />
+    <ClCompile Include="..\core\dd_telepath.cpp" />
+    <ClCompile Include="..\core\dd_thread.cpp" />
+    <ClCompile Include="..\core\dd_type.cpp" />
+    <ClCompile Include="..\core\dd_unique.cpp" />
+    <ClCompile Include="..\core\dd_zoker.cpp" />
+    <ClCompile Include="..\vtk\canvas_desktop\dd_vtk_widget.cpp" />
+    <ClCompile Include="..\vtk\canvas_desktop\dd_vtk_widget_slice.cpp" />
+    <ClCompile Include="..\vtk\canvas_desktop\dd_vtk_widget_volume.cpp" />
+    <ClCompile Include="..\vtk\dd_vtk_api_browser.cpp" />
+    <ClCompile Include="..\vtk\dd_vtk_api_desktop.cpp" />
+    <ClCompile Include="..\vtk\dd_vtk_canvas.cpp" />
+    <ClCompile Include="..\vtk\dd_vtk_volume.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

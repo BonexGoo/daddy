@@ -5,7 +5,7 @@
 #if !DD_OS_WASM
 
 // Dependencies
-#include <vtk/dd_vtk_canvas.hpp>
+#include "dd_vtk_canvas.hpp"
 #include <vtkDICOMDirectory.h>
 #include <vtkDICOMMetaData.h>
 #include <vtkDICOMReader.h>
