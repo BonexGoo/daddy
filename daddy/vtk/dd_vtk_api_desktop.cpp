@@ -72,6 +72,11 @@ dVtkApi::dDicom dVtkApi::openDicom(dLiteral dirpath)
     NewDicomP->mSpec["study_id"] = Meta->Get(DC::StudyID).AsString().c_str();
     NewDicomP->mSpec["study_uid"] = Meta->Get(DC::StudyInstanceUID).AsString().c_str();
     NewDicomP->mSpec["comment"] = Meta->Get(DC::AssertionComments).AsString().c_str();
+    NewDicomP->mSpec["kvp"] = Meta->Get(DC::KVP).AsString().c_str();
+    NewDicomP->mSpec["window_center"] = Meta->Get(DC::WindowCenter).AsString().c_str();
+    NewDicomP->mSpec["window_width"] = Meta->Get(DC::WindowWidth).AsString().c_str();
+    NewDicomP->mSpec["xray_tube_current"] = Meta->Get(DC::XRayTubeCurrent).AsString().c_str();
+    NewDicomP->mSpec["modality"] = Meta->Get(DC::Modality).AsString().c_str();
 
     dVtkCanvas::passAll([RefDicomReader](utf8s wid, dVtkCanvas& canvas)->void
     {
