@@ -12,15 +12,16 @@
 #include <thread>
 #include <stack>
 #include <locale.h>
-#include <direct.h>
 #if DD_OS_WINDOWS
     #if DD_OS_WINDOWS_MINGW
         #include <ws2tcpip.h>
+        #include <direct.h>
         #include <psapi.h>
         #pragma comment(lib, "psapi.lib")
     #else
         #include <windows.h>
         #pragma comment(lib, "ws2_32.lib")
+        #include <direct.h>
         #include <psapi.h>
         #pragma comment(lib, "psapi.lib")
     #endif
@@ -65,6 +66,21 @@
     #define SOCKET_SEND(S, BUF, LEN)          ::send(S, BUF, LEN, MSG_NOSIGNAL)
     #define SOCKET_RECV(S, BUF, LEN)          ::recv(S, BUF, LEN, MSG_NOSIGNAL)
     #define SOCKET_RECVLEN(S, LEN)            ::ioctl(S, FIONREAD, &LEN)
+    #define SOCKET_ERROR                      (-1)
+#elif DD_OS_WASM // by GPT
+    #include <cstring>
+    #define SOCKET_DATA                       int
+    #define SOCKET_NEW                        (-1)
+    #define SOCKET_SET_KEEPALIVE(S)           ((void) 0)
+    #define SOCKET_SET_TIMEOUT(S, MSEC, RET)  do {RET = 0;} while(0)
+    #define SOCKET_DELETE(S)                  ((void) 0)
+    #define SOCKET_CONNECT(S, ADDR, LEN)      (-1)
+    #define SOCKET_BIND(S, ADDR, LEN)         (-1)
+    #define SOCKET_ACCEPT(S, ADDR, LEN)       (-1)
+    #define SOCKET_LISTEN(S, COUNT)           ((void) 0)
+    #define SOCKET_SEND(S, BUF, LEN)          (-1)
+    #define SOCKET_RECV(S, BUF, LEN)          (-1)
+    #define SOCKET_RECVLEN(S, LEN)            (-1)
     #define SOCKET_ERROR                      (-1)
 #endif
 typedef SOCKET_DATA SocketData;

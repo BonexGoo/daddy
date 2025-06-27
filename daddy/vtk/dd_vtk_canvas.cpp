@@ -4,8 +4,10 @@
 #include "dd_vtk_canvas.hpp"
 
 // Dependencies
-#include "canvas_desktop/dd_vtk_widget_slice.hpp"
-#include "canvas_desktop/dd_vtk_widget_volume.hpp"
+#if !DD_OS_WASM
+    #include "canvas_desktop/dd_vtk_widget_slice.hpp"
+    #include "canvas_desktop/dd_vtk_widget_volume.hpp"
+#endif
 
 namespace Daddy {
 
@@ -37,7 +39,7 @@ DD_escaper_alone(VtkCanvasAgentP):
     void _quit_()
     {
         DD_assert(mRefCount == 0 || mRefCount == 1, "reference count does not match.");
-        if(mRefCount == 1)
+        if(mRefCount == 0 || mRefCount == 1)
             delete mWidget;
     }
     void _move_(_self_&& rhs)
@@ -127,14 +129,39 @@ void dVtkCanvas::setGeometry(int32_t x, int32_t y, int32_t width, int32_t height
         OneWidget->setGeometry(x, y, width, height);
 }
 
+void dVtkCanvas::getGeometry(int32_t& x, int32_t& y, int32_t& width, int32_t& height) const
+{
+    if(auto OneWidget = mRefAgent->widget())
+    {
+        auto& Rect = OneWidget->geometry();
+        x = Rect.x();
+        y = Rect.y();
+        width = Rect.width();
+        height = Rect.height();
+    }
+}
+
 void dVtkCanvas::setVisible(bool show)
 {
     if(auto OneWidget = mRefAgent->widget())
         OneWidget->updateVisible(show);
 }
 
+bool dVtkCanvas::wasVisible()
+{
+    if(auto OneWidget = mRefAgent->widget())
+        return OneWidget->wasVisible();
+    return false;
+}
+
 void dVtkCanvas::addDelegate()
 {
+}
+
+void dVtkCanvas::repaint()
+{
+    if(auto OneWidget = mRefAgent->widget())
+        OneWidget->repaint();
 }
 
 dString dVtkCanvas::style() const
@@ -155,6 +182,38 @@ dString dVtkCanvas::color() const
 void dVtkCanvas::setDicom(ptr dicom)
 {
     mRefAgent->widget()->setDicom(dicom);
+}
+
+void dVtkCanvas::toggleDicom(bool show)
+{
+    //bx250626: 우선 개발필요
+    //////////////////////
+    //////////////////////
+    //////////////////////
+}
+
+void dVtkCanvas::toggleActor(dLiteral aidcode, bool show)
+{
+    //bx250626: 우선 개발필요
+    //////////////////////
+    //////////////////////
+    //////////////////////
+}
+
+void dVtkCanvas::toggleSegment(dLiteral segname, dLiteral fileext, bool show, dLiteral dirpath)
+{
+    //bx250626: 우선 개발필요
+    //////////////////////
+    //////////////////////
+    //////////////////////
+}
+
+void dVtkCanvas::coloringSegment(dLiteral segname, double r, double g, double b)
+{
+    //bx250626: 우선 개발필요
+    //////////////////////
+    //////////////////////
+    //////////////////////
 }
 
 void dVtkCanvas::setLayoutMargin(int32_t left, int32_t top, int32_t right, int32_t bottom)

@@ -14,6 +14,7 @@ class dVtkApi
 public: // Dicom
     DD_handle(dDicom);
     static dDicom openDicom(dLiteral dirpath);
+    static ptr getPtr(const dDicom& dicom);
     static dLiteral dicomSpec(dDicom dicom, dLiteral key, dLiteral default_value = "");
 };
 

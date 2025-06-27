@@ -52,12 +52,18 @@ set(DADDY_SOURCES
     ../daddy/vtk/dd_vtk_api_desktop.cpp
     ../daddy/vtk/dd_vtk_canvas.hpp
     ../daddy/vtk/dd_vtk_canvas.cpp
-    ../daddy/vtk/canvas_desktop/dd_vtk_widget.cpp
-    ../daddy/vtk/canvas_desktop/dd_vtk_widget.hpp
-    ../daddy/vtk/canvas_desktop/dd_vtk_widget_slice.cpp
-    ../daddy/vtk/canvas_desktop/dd_vtk_widget_slice.hpp
-    ../daddy/vtk/canvas_desktop/dd_vtk_widget_volume.cpp
-    ../daddy/vtk/canvas_desktop/dd_vtk_widget_volume.hpp)
+    ../daddy/vtk/dd_vtk_volume.hpp
+    ../daddy/vtk/dd_vtk_volume.cpp)
+
+if(NOT EMSCRIPTEN)
+    list(APPEND DADDY_SOURCES
+        ../daddy/vtk/canvas_desktop/dd_vtk_widget.hpp
+        ../daddy/vtk/canvas_desktop/dd_vtk_widget.cpp
+        ../daddy/vtk/canvas_desktop/dd_vtk_widget_slice.hpp
+        ../daddy/vtk/canvas_desktop/dd_vtk_widget_slice.cpp
+        ../daddy/vtk/canvas_desktop/dd_vtk_widget_volume.hpp
+        ../daddy/vtk/canvas_desktop/dd_vtk_widget_volume.cpp)
+endif()
 
 file(GLOB DADDY_DLLS
     ../daddy/vtk/library-9.4.0/mingw-64bit-debug/dll/*.dll)

@@ -43,6 +43,11 @@ void VtkWidgetP::updateVisible(bool show)
     }
 }
 
+bool VtkWidgetP::wasVisible() const
+{
+    return (mVisibled == true);
+}
+
 void VtkWidgetP::repaint()
 {
     interactor()->Render();

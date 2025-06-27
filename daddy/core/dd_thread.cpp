@@ -74,6 +74,20 @@
     #define SEMAPHORE_DESTROY(ID, NAME)     do {sem_close(*(ID)); sem_unlink(NAME);} while(false)
     #define SEMAPHORE_LOCK(ID)              do {sem_wait(*(ID));} while(false)
     #define SEMAPHORE_UNLOCK(ID)            do {sem_post(*(ID));} while(false)
+#elif DD_OS_WASM // by GPT
+    #include <atomic>
+    #define MUTEX_DATA                      std::atomic<int>
+    #define MUTEX_INIT(ID)                  do {(ID)->store(0);} while(false)
+    #define MUTEX_DESTROY(ID)               do {(void)(ID);} while(false)
+    #define MUTEX_LOCK(ID)                  while((ID)->exchange(1)) {}
+    #define MUTEX_UNLOCK(ID)                (ID)->store(0)
+    #define SEMAPHORE_DATA                  int
+    #define SEMAPHORE_CLEAR(ID)             do {*(ID) = 0;} while(false)
+    #define SEMAPHORE_BIND(ID, NAME)        do {*(ID) = 1;} while(false)
+    #define SEMAPHORE_CREATE(ID, NAME, RET) do {*(ID) = 1; RET = true;} while(false)
+    #define SEMAPHORE_DESTROY(ID, NAME)     do {} while(false)
+    #define SEMAPHORE_LOCK(ID)              while(!__atomic_test_and_set((ID), __ATOMIC_SEQ_CST)) {}
+    #define SEMAPHORE_UNLOCK(ID)            __atomic_clear((ID), __ATOMIC_SEQ_CST)
 #endif
 typedef MUTEX_DATA MutexData;
 typedef SEMAPHORE_DATA SemaphoreData;

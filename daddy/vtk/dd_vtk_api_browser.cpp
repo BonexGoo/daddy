@@ -13,6 +13,11 @@ dVtkApi::dDicom dVtkApi::openDicom(dLiteral dirpath)
     return dDicom();
 }
 
+ptr dVtkApi::getPtr(const dDicom& dicom)
+{
+    return nullptr;
+}
+
 dLiteral dVtkApi::dicomSpec(dDicom dicom, dLiteral key, dLiteral default_value)
 {
     return default_value;

@@ -26,6 +26,7 @@ public:
 
 public:
     void updateVisible(bool show);
+    bool wasVisible() const;
     void repaint();
 
 protected:

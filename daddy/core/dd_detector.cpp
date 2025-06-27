@@ -43,6 +43,17 @@
     #define LOG_VIEW_OPEN_FOR_READ(FM, OFFSET, LENGTH)  mmap(0, LENGTH, PROT_READ, MAP_SHARED, (FM).mFD, OFFSET)
     #define LOG_VIEW_CLOSE(BUF, LENGTH)                 munmap(BUF, LENGTH)
     #define LOG_VIEW_FLUSH(BUF, LENGTH)                 msync(BUF, LENGTH, MS_ASYNC)
+#elif DD_OS_WASM // by GPT
+    #include <cstring>
+    #define PROCESS_DATA                                int
+    #define PROCESS_INIT(ID)                            do {ID = 0;} while(false)
+    #define PROCESS_EXITCODE(ID, CODE)                  do {*(CODE) = 0;} while(false)
+    #define PROCESS_EXITCODE_DATA                       int
+    #define PROCESS_EXITCODE_SUCCESS(RESULT)            (true)
+    #define LOG_VIEW_OPEN_FOR_WRITE(FM, OFFSET, LENGTH) malloc(LENGTH)
+    #define LOG_VIEW_OPEN_FOR_READ(FM, OFFSET, LENGTH)  malloc(LENGTH)
+    #define LOG_VIEW_CLOSE(BUF, LENGTH)                 free(BUF)
+    #define LOG_VIEW_FLUSH(BUF, LENGTH)                 ((void) 0)
 #endif
 typedef PROCESS_DATA ProcessData;
 

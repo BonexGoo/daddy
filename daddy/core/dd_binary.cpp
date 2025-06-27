@@ -7,7 +7,9 @@
 #include "dd_string.hpp"
 #include <cstring>
 #include <locale.h>
-#include <direct.h>
+#if !DD_OS_WASM
+    #include <direct.h>
+#endif
 
 namespace Daddy {
 

@@ -29,12 +29,26 @@ public: // 위젯사용성
     /// @param height   세로크기
     void setGeometry(int32_t x, int32_t y, int32_t width, int32_t height);
 
+    /// @brief          위치와 크기를 리턴
+    /// @param x        위치 X
+    /// @param y        위치 Y
+    /// @param width    가로크기
+    /// @param height   세로크기
+    void getGeometry(int32_t& x, int32_t& y, int32_t& width, int32_t& height) const;
+
     /// @brief          보여짐 상태를 셋팅
     /// @param show     보여질지의 여부
     void setVisible(bool show);
 
+    /// @brief          보여짐 상태를 리턴
+    /// @return         현재 보여짐 여부
+    bool wasVisible();
+
     /// @brief          델리게이트 함수등록
     void addDelegate();
+
+    /// @brief          화면갱신
+    void repaint();
 
     /// @brief          스타일 반환
     /// @return         스타일
@@ -50,6 +64,10 @@ public: // 위젯사용성
 
 public: // VTK사용성
     void setDicom(ptr dicom);
+    void toggleDicom(bool show);
+    void toggleActor(dLiteral aidcode, bool show);
+    void toggleSegment(dLiteral segname, dLiteral fileext, bool show, dLiteral dirpath);
+    void coloringSegment(dLiteral segname, double r, double g, double b);
 
 public: // UI설정
     /// @brief          레이아웃의 마진값 셋팅
