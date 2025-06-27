@@ -1,0 +1,1785 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\DataModel\vtkDataObjectImplicitBackendInstantiateChar.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\DataModel\vtkDataObjectImplicitBackendInstantiateDouble.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\DataModel\vtkDataObjectImplicitBackendInstantiateFloat.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\DataModel\vtkDataObjectImplicitBackendInstantiateInt.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\DataModel\vtkDataObjectImplicitBackendInstantiateLong.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\DataModel\vtkDataObjectImplicitBackendInstantiateLongLong.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\DataModel\vtkDataObjectImplicitBackendInstantiateShort.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\DataModel\vtkDataObjectImplicitBackendInstantiateSignedChar.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\DataModel\vtkDataObjectImplicitBackendInstantiateUnsignedChar.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\DataModel\vtkDataObjectImplicitBackendInstantiateUnsignedInt.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\DataModel\vtkDataObjectImplicitBackendInstantiateUnsignedLong.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\DataModel\vtkDataObjectImplicitBackendInstantiateUnsignedLongLong.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\DataModel\vtkDataObjectImplicitBackendInstantiateUnsignedShort.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkAMRBox.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkAMRUtilities.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkAbstractCellArray.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkAbstractCellLinks.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkAbstractCellLocator.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkAbstractElectronicData.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkAbstractPointLocator.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkAdjacentVertexIterator.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkAnimationScene.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkAnnotation.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkAnnotationLayers.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkAnnulus.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkArrayData.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkAtom.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkAttributesErrorMetric.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkBSPCuts.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkBSPIntersections.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkBezierCurve.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkBezierHexahedron.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkBezierInterpolation.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkBezierQuadrilateral.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkBezierTetra.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkBezierTriangle.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkBezierWedge.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkBiQuadraticQuad.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkBiQuadraticQuadraticHexahedron.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkBiQuadraticQuadraticWedge.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkBiQuadraticTriangle.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkBond.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkBoundingBox.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkBox.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCell.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCell3D.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellArray.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellArrayIterator.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellAttribute.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellAttributeCalculator.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellData.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellGrid.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellGridBoundsQuery.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellGridCopyQuery.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellGridEvaluator.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellGridRangeQuery.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellGridQuery.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellGridResponders.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellGridSidesCache.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellGridSidesQuery.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellIterator.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellLinks.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellLocator.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellLocatorStrategy.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellMetadata.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellTreeLocator.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellTypes.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkClosestNPointsStrategy.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkClosestPointStrategy.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCompositeDataIterator.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCompositeDataSet.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCone.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkConvexPointSet.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCoordinateFrame.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCubicLine.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCylinder.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkDataAssembly.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkDataAssemblyUtilities.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkDataObject.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkDataObjectCollection.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkDataObjectTree.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkDataObjectTreeIterator.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkDataObjectTypes.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkDataSet.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkDataSetAttributes.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkDataSetAttributesFieldList.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkDataSetCellIterator.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkDataSetCollection.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkDirectedAcyclicGraph.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkDirectedGraph.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkDistributedGraphHelper.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkEdgeListIterator.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkEdgeTable.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkEmptyCell.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkExplicitStructuredGrid.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkExtractStructuredGridHelper.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkFieldData.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkFindCellStrategy.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkGenericAdaptorCell.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkGenericAttribute.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkGenericAttributeCollection.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkGenericCell.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkGenericCellIterator.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkGenericCellTessellator.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkGenericDataSet.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkGenericEdgeTable.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkGenericInterpolatedVelocityField.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkGenericPointIterator.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkGenericSubdivisionErrorMetric.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkGeometricErrorMetric.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkGraph.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkGraphEdge.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkGraphInternals.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHexagonalPrism.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHexahedron.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHierarchicalBoxDataSet.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHigherOrderCurve.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHigherOrderHexahedron.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHigherOrderInterpolation.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHigherOrderQuadrilateral.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHigherOrderTetra.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHigherOrderTriangle.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHigherOrderWedge.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTree.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGrid.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridLocator.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridGeometricLocator.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridNonOrientedCursor.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridNonOrientedGeometryCursor.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridNonOrientedUnlimitedGeometryCursor.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridNonOrientedMooreSuperCursor.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridNonOrientedMooreSuperCursorLight.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridNonOrientedUnlimitedMooreSuperCursor.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridNonOrientedSuperCursor.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridNonOrientedSuperCursorLight.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridNonOrientedUnlimitedSuperCursor.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridNonOrientedVonNeumannSuperCursor.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridNonOrientedVonNeumannSuperCursorLight.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridOrientedCursor.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridOrientedGeometryCursor.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkImageData.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkImageIterator.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkImageTransform.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkImplicitBoolean.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkImplicitDataSet.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkImplicitFunction.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkImplicitFunctionCollection.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkImplicitHalo.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkImplicitSelectionLoop.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkImplicitSum.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkImplicitVolume.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkImplicitWindowFunction.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkInEdgeIterator.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkIncrementalOctreeNode.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkIncrementalOctreePointLocator.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkIncrementalPointLocator.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkInformationQuadratureSchemeDefinitionVectorKey.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkIterativeClosestPointTransform.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkKdNode.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkKdTree.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkKdTreePointLocator.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkLagrangeCurve.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkLagrangeHexahedron.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkLagrangeInterpolation.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkLagrangeQuadrilateral.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkLagrangeTetra.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkLagrangeTriangle.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkLagrangeWedge.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkLine.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkLocator.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkMarchingCubesTriangleCases.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkMarchingCubesPolygonCases.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkMarchingSquaresLineCases.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkMeanValueCoordinatesInterpolator.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkMergePoints.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkMolecule.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkMultiBlockDataSet.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkMultiPieceDataSet.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkMutableDirectedGraph.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkMutableUndirectedGraph.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkNonLinearCell.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkNonMergingPointLocator.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkOctreePointLocator.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkOctreePointLocatorNode.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkOrderedTriangulator.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkOutEdgeIterator.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPartitionedDataSet.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPartitionedDataSetCollection.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPath.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPentagonalPrism.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPerlinNoise.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPiecewiseFunction.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPixel.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPixelExtent.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPixelTransfer.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPlane.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPlaneCollection.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPlanes.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPlanesIntersection.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPointData.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPointLocator.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPointSet.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPointSetCellIterator.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPointsProjectedHull.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPolyData.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPolyDataCollection.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPolyLine.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPolyPlane.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPolyVertex.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPolygon.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPolyhedron.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPolyhedronUtilities.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPyramid.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkQuad.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkQuadraticEdge.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkQuadraticHexahedron.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkQuadraticLinearQuad.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkQuadraticLinearWedge.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkQuadraticPolygon.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkQuadraticPyramid.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkQuadraticQuad.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkQuadraticTetra.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkQuadraticTriangle.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkQuadraticWedge.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkQuadratureSchemeDefinition.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkQuadric.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkRectilinearGrid.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkReebGraph.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkReebGraphSimplificationMetric.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkSelection.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkSelectionNode.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkSimpleCellTessellator.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkSmoothErrorMetric.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkSortFieldData.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkSphere.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkSpheres.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkSphericalPointIterator.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkSpline.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkStaticCellLinks.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkStaticCellLocator.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkStaticPointLocator.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkStaticPointLocator2D.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkStructuredCellArray.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkStructuredData.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkStructuredExtent.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkStructuredGrid.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkStructuredPoints.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkStructuredPointsCollection.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkSuperquadric.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkTable.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkTetra.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkTree.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkTreeBFSIterator.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkTreeDFSIterator.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkTreeIterator.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkTriQuadraticHexahedron.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkTriQuadraticPyramid.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkTriangle.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkTriangleStrip.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkUndirectedGraph.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkUniformGrid.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkUniformHyperTreeGrid.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkUnstructuredGrid.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkUnstructuredGridBase.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkUnstructuredGridCellIterator.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkVertex.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkVertexListIterator.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkVoxel.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkWedge.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkXMLDataElement.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkAMRDataInternals.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkAMRInformation.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkNonOverlappingAMR.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkOverlappingAMR.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkUniformGridAMR.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkUniformGridAMRDataIterator.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridEntry.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridGeometryEntry.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridGeometryUnlimitedEntry.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridGeometryLevelEntry.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridGeometryUnlimitedLevelEntry.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridLevelEntry.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkDataObjectImplicitBackendInterface.txx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkImageIterator.txx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCompositeDataSet.txx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkAngularPeriodicDataArray.txx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkArrayListTemplate.txx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkMappedUnstructuredGrid.txx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkMappedUnstructuredGridCellIterator.txx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPeriodicDataArray.txx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkStaticCellLinksTemplate.txx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkStaticEdgeLocatorTemplate.txx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkStaticFaceHashLinksTemplate.txx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellGridResponder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellGridResponderBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellType.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkColor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkDataAssemblyVisitor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkDataObjectTreeInternals.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridScales.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridTools.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkIntersectionCounter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkLabelMapLookup.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkRect.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkVector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkVectorOperators.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkAMRBox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkAMRUtilities.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkAbstractCellArray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkAbstractCellLinks.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkAbstractCellLocator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkAbstractElectronicData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkAbstractPointLocator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkAdjacentVertexIterator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkAnimationScene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkAnnotation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkAnnotationLayers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkAnnulus.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkArrayData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkAtom.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkAttributesErrorMetric.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkBSPCuts.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkBSPIntersections.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkBezierCurve.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkBezierHexahedron.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkBezierInterpolation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkBezierQuadrilateral.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkBezierTetra.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkBezierTriangle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkBezierWedge.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkBiQuadraticQuad.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkBiQuadraticQuadraticHexahedron.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkBiQuadraticQuadraticWedge.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkBiQuadraticTriangle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkBond.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkBoundingBox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkBox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCell.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCell3D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellArray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellArrayIterator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellAttribute.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellAttributeCalculator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellGrid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellGridBoundsQuery.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellGridCopyQuery.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellGridEvaluator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellGridRangeQuery.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellGridQuery.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellGridResponders.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellGridSidesCache.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellGridSidesQuery.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellIterator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellLinks.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellLocator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellLocatorStrategy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellMetadata.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellTreeLocator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellTypes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkClosestNPointsStrategy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkClosestPointStrategy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCompositeDataIterator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCompositeDataSet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCone.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkConvexPointSet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCoordinateFrame.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCubicLine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCylinder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkDataAssembly.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkDataAssemblyUtilities.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkDataObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkDataObjectCollection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkDataObjectTree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkDataObjectTreeIterator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkDataObjectTypes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkDataSet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkDataSetAttributes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkDataSetAttributesFieldList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkDataSetCellIterator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkDataSetCollection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkDirectedAcyclicGraph.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkDirectedGraph.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkDistributedGraphHelper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkEdgeListIterator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkEdgeTable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkEmptyCell.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkExplicitStructuredGrid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkExtractStructuredGridHelper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkFieldData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkFindCellStrategy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkGenericAdaptorCell.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkGenericAttribute.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkGenericAttributeCollection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkGenericCell.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkGenericCellIterator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkGenericCellTessellator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkGenericDataSet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkGenericEdgeTable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkGenericInterpolatedVelocityField.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkGenericPointIterator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkGenericSubdivisionErrorMetric.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkGeometricErrorMetric.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkGraph.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkGraphEdge.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkGraphInternals.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHexagonalPrism.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHexahedron.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHierarchicalBoxDataSet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHigherOrderCurve.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHigherOrderHexahedron.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHigherOrderInterpolation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHigherOrderQuadrilateral.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHigherOrderTetra.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHigherOrderTriangle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHigherOrderWedge.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGrid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridLocator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridGeometricLocator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridNonOrientedCursor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridNonOrientedGeometryCursor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridNonOrientedUnlimitedGeometryCursor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridNonOrientedMooreSuperCursor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridNonOrientedMooreSuperCursorLight.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridNonOrientedUnlimitedMooreSuperCursor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridNonOrientedSuperCursor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridNonOrientedSuperCursorLight.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridNonOrientedUnlimitedSuperCursor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridNonOrientedVonNeumannSuperCursor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridNonOrientedVonNeumannSuperCursorLight.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridOrientedCursor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridOrientedGeometryCursor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkImageData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkImageIterator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkImageTransform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkImplicitBoolean.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkImplicitDataSet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkImplicitFunction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkImplicitFunctionCollection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkImplicitHalo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkImplicitSelectionLoop.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkImplicitSum.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkImplicitVolume.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkImplicitWindowFunction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkInEdgeIterator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkIncrementalOctreeNode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkIncrementalOctreePointLocator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkIncrementalPointLocator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkInformationQuadratureSchemeDefinitionVectorKey.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkIterativeClosestPointTransform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkKdNode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkKdTree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkKdTreePointLocator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkLagrangeCurve.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkLagrangeHexahedron.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkLagrangeInterpolation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkLagrangeQuadrilateral.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkLagrangeTetra.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkLagrangeTriangle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkLagrangeWedge.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkLine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkLocator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkMarchingCubesTriangleCases.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkMarchingCubesPolygonCases.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkMarchingSquaresLineCases.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkMeanValueCoordinatesInterpolator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkMergePoints.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkMolecule.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkMultiBlockDataSet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkMultiPieceDataSet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkMutableDirectedGraph.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkMutableUndirectedGraph.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkNonLinearCell.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkNonMergingPointLocator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkOctreePointLocator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkOctreePointLocatorNode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkOrderedTriangulator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkOutEdgeIterator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPartitionedDataSet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPartitionedDataSetCollection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPath.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPentagonalPrism.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPerlinNoise.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPiecewiseFunction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPixel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPixelExtent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPixelTransfer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPlane.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPlaneCollection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPlanes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPlanesIntersection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPointData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPointLocator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPointSet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPointSetCellIterator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPointsProjectedHull.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPolyData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPolyDataCollection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPolyLine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPolyPlane.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPolyVertex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPolygon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPolyhedron.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPolyhedronUtilities.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPyramid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkQuad.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkQuadraticEdge.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkQuadraticHexahedron.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkQuadraticLinearQuad.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkQuadraticLinearWedge.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkQuadraticPolygon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkQuadraticPyramid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkQuadraticQuad.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkQuadraticTetra.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkQuadraticTriangle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkQuadraticWedge.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkQuadratureSchemeDefinition.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkQuadric.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkRectilinearGrid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkReebGraph.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkReebGraphSimplificationMetric.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkSelection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkSelectionNode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkSimpleCellTessellator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkSmoothErrorMetric.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkSortFieldData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkSphere.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkSpheres.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkSphericalPointIterator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkSpline.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkStaticCellLinks.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkStaticCellLocator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkStaticPointLocator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkStaticPointLocator2D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkStructuredCellArray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkStructuredData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkStructuredExtent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkStructuredGrid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkStructuredPoints.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkStructuredPointsCollection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkSuperquadric.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkTable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkTetra.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkTree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkTreeBFSIterator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkTreeDFSIterator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkTreeIterator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkTriQuadraticHexahedron.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkTriQuadraticPyramid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkTriangle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkTriangleStrip.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkUndirectedGraph.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkUniformGrid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkUniformHyperTreeGrid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkUnstructuredGrid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkUnstructuredGridBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkUnstructuredGridCellIterator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkVertex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkVertexListIterator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkVoxel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkWedge.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkXMLDataElement.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkAMRDataInternals.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkAMRInformation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkNonOverlappingAMR.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkOverlappingAMR.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkUniformGridAMR.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkUniformGridAMRDataIterator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkAngularPeriodicDataArray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkArrayListTemplate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkMappedUnstructuredGrid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkMappedUnstructuredGridCellIterator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPeriodicDataArray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkStaticCellLinksTemplate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkStaticEdgeLocatorTemplate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkStaticFaceHashLinksTemplate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCompositeDataSetNodeReference.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCompositeDataSetRange.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkDataObjectImplicitBackendInterface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkDataObjectTreeRange.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPolyDataInternals.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridEntry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridGeometryEntry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridGeometryUnlimitedEntry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridGeometryLevelEntry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridGeometryUnlimitedLevelEntry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridLevelEntry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\DataModel\vtkCommonDataModelModule.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{162D4FFA-EABE-37C8-B497-EF7F0B57E0E3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{F5D6D842-070C-3B59-BC69-A411D94F79A1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

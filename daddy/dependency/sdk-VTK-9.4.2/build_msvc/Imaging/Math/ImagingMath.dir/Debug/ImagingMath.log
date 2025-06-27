@@ -1,0 +1,12 @@
+﻿  Building Custom Rule D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Imaging/Math/CMakeLists.txt
+  vtkImageDivergence.cxx
+  vtkImageDotProduct.cxx
+  vtkImageLogarithmicScale.cxx
+  vtkImageLogic.cxx
+  vtkImageMagnitude.cxx
+  vtkImageMaskBits.cxx
+  vtkImageMathematics.cxx
+  vtkImageWeightedSum.cxx
+  코드를 생성하고 있습니다...
+     D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Debug/vtkImagingMath-9.4d.lib 라이브러리 및 D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Debug/vtkImagingMath-9.4d.exp 개체를 생성하고 있습니다.
+  ImagingMath.vcxproj -> D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\bin\Debug\vtkImagingMath-9.4d.dll

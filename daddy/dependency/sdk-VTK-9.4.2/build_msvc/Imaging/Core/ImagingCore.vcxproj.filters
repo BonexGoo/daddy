@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkAbstractImageInterpolator.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkExtractVOI.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkGenericImageInterpolator.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkImageAppendComponents.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkImageBlend.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkImageBSplineCoefficients.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkImageBSplineInternals.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkImageBSplineInterpolator.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkImageCacheFilter.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkImageCast.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkImageChangeInformation.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkImageClip.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkImageConstantPad.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkImageDataStreamer.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkImageDecomposeFilter.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkImageDifference.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkImageExtractComponents.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkImageFlip.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkImageInterpolator.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkImageIterateFilter.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkImageMagnify.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkImageMapToColors.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkImageMask.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkImageMirrorPad.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkImagePadFilter.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkImagePermute.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkImagePointDataIterator.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkImagePointIterator.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkImageProbeFilter.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkImageResample.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkImageResize.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkImageReslice.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkImageResliceToColors.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkImageShiftScale.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkImageShrink3D.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkImageSincInterpolator.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkImageStencilAlgorithm.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkImageStencilData.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkImageStencilIterator.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkImageStencilSource.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkImageSSIM.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkImageThreshold.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkImageTranslateExtent.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkImageWrapPad.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkRTAnalyticSource.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkAbstractImageInterpolator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkExtractVOI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkGenericImageInterpolator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkImageAppendComponents.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkImageBlend.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkImageBSplineCoefficients.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkImageBSplineInternals.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkImageBSplineInterpolator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkImageCacheFilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkImageCast.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkImageChangeInformation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkImageClip.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkImageConstantPad.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkImageDataStreamer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkImageDecomposeFilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkImageDifference.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkImageExtractComponents.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkImageFlip.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkImageInterpolator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkImageIterateFilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkImageMagnify.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkImageMapToColors.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkImageMask.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkImageMirrorPad.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkImagePadFilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkImagePermute.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkImagePointDataIterator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkImagePointIterator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkImageProbeFilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkImageResample.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkImageResize.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkImageReslice.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkImageResliceToColors.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkImageShiftScale.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkImageShrink3D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkImageSincInterpolator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkImageStencilAlgorithm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkImageStencilData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkImageStencilIterator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkImageStencilSource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkImageSSIM.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkImageThreshold.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkImageTranslateExtent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkImageWrapPad.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\vtkRTAnalyticSource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Imaging\Core\vtkImagingCoreModule.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Core\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{162D4FFA-EABE-37C8-B497-EF7F0B57E0E3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{F5D6D842-070C-3B59-BC69-A411D94F79A1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

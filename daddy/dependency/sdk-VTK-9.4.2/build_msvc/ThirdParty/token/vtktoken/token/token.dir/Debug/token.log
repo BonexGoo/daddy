@@ -1,0 +1,35 @@
+﻿  Building Custom Rule D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/token/vtktoken/token/CMakeLists.txt
+  Singletons.cxx
+  Token.cxx
+  TypeContainer.cxx
+  Manager.cxx
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\token\vtktoken\token\Manager.cxx(17,26): warning C4244: '인수': 'int'에서 'const _Elem'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\token\vtktoken\token\Manager.cxx(17,26): warning C4244:         with
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\token\vtktoken\token\Manager.cxx(17,26): warning C4244:         [
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\token\vtktoken\token\Manager.cxx(17,26): warning C4244:             _Elem=char
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\token\vtktoken\token\Manager.cxx(17,26): warning C4244:         ]
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\token\vtktoken\token\Manager.cxx(20,28): warning C4244: '인수': 'int'에서 'const _Elem'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\token\vtktoken\token\Manager.cxx(20,28): warning C4244:         with
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\token\vtktoken\token\Manager.cxx(20,28): warning C4244:         [
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\token\vtktoken\token\Manager.cxx(20,28): warning C4244:             _Elem=char
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\token\vtktoken\token\Manager.cxx(20,28): warning C4244:         ]
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\token\vtktoken\token\Manager.cxx(22,26): warning C4244: '인수': 'int'에서 'const _Elem'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\token\vtktoken\token\Manager.cxx(22,26): warning C4244:         with
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\token\vtktoken\token\Manager.cxx(22,26): warning C4244:         [
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\token\vtktoken\token\Manager.cxx(22,26): warning C4244:             _Elem=char
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\token\vtktoken\token\Manager.cxx(22,26): warning C4244:         ]
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\token\vtktoken\token\Manager.cxx(25,28): warning C4244: '인수': 'int'에서 'const _Elem'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\token\vtktoken\token\Manager.cxx(25,28): warning C4244:         with
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\token\vtktoken\token\Manager.cxx(25,28): warning C4244:         [
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\token\vtktoken\token\Manager.cxx(25,28): warning C4244:             _Elem=char
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\token\vtktoken\token\Manager.cxx(25,28): warning C4244:         ]
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\token\vtktoken\token\Manager.cxx(28,30): warning C4244: '인수': 'int'에서 'const _Elem'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\token\vtktoken\token\Manager.cxx(28,30): warning C4244:         with
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\token\vtktoken\token\Manager.cxx(28,30): warning C4244:         [
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\token\vtktoken\token\Manager.cxx(28,30): warning C4244:             _Elem=char
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\token\vtktoken\token\Manager.cxx(28,30): warning C4244:         ]
+  jsonToken.cxx
+  jsonManager.cxx
+  코드를 생성하고 있습니다...
+     D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Debug/vtktoken-9.4d.lib 라이브러리 및 D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Debug/vtktoken-9.4d.exp 개체를 생성하고 있습니다.
+  token.vcxproj -> D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\bin\Debug\vtktoken-9.4d.dll

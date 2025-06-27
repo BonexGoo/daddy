@@ -1,0 +1,12 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.31/Modules/CheckIncludeFile.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CheckIncludeFileCXX.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CheckIncludeFiles.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CheckSymbolExists.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CheckTypeSize.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/TestBigEndian.cmake
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/netcdf/vtknetcdf/CMakeLists.txt
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/netcdf/vtknetcdf/config.h.in
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/netcdf/vtknetcdf/include/netcdf_dispatch.h.in
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/netcdf/vtknetcdf/include/netcdf_meta.h.in
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/netcdf/vtknetcdf/vtk_netcdf_config.h.in

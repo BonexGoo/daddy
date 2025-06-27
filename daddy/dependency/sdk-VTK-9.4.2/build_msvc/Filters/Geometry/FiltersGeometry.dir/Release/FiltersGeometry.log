@@ -1,0 +1,30 @@
+﻿  Building Custom Rule D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Filters/Geometry/CMakeLists.txt
+  vtkAbstractGridConnectivity.cxx
+  vtkAttributeSmoothingFilter.cxx
+  vtkCompositeDataGeometryFilter.cxx
+  vtkDataSetRegionSurfaceFilter.cxx
+  vtkDataSetSurfaceFilter.cxx
+  vtkExplicitStructuredGridSurfaceFilter.cxx
+  vtkGeometryFilter.cxx
+  vtkHierarchicalDataSetGeometryFilter.cxx
+  vtkImageDataGeometryFilter.cxx
+  vtkImageDataToUniformGrid.cxx
+  vtkLinearToQuadraticCellsFilter.cxx
+  vtkMarkBoundaryFilter.cxx
+  vtkProjectSphereFilter.cxx
+  vtkRecoverGeometryWireframe.cxx
+  vtkRectilinearGridGeometryFilter.cxx
+  vtkRectilinearGridPartitioner.cxx
+  vtkStructuredAMRGridConnectivity.cxx
+  vtkStructuredAMRNeighbor.cxx
+  vtkStructuredGridConnectivity.cxx
+  vtkStructuredGridGeometryFilter.cxx
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  vtkStructuredGridPartitioner.cxx
+  vtkStructuredNeighbor.cxx
+  vtkStructuredPointsGeometryFilter.cxx
+  vtkUnstructuredGridGeometryFilter.cxx
+  코드를 생성하고 있습니다...
+     D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Release/vtkFiltersGeometry-9.4.lib 라이브러리 및 D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Release/vtkFiltersGeometry-9.4.exp 개체를 생성하고 있습니다.
+  FiltersGeometry.vcxproj -> D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\bin\Release\vtkFiltersGeometry-9.4.dll

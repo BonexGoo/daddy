@@ -1,0 +1,30 @@
+^D:\CYBERMED\DADDY\DEPENDENCY\SDK-VTK-9.4.2\BUILD_MSVC\CMAKEFILES\CA9AA9FED93D79DD9D626753235B306A\VTKFILTERSVERDICT-HIERARCHY.TXT.RULE
+setlocal
+..\..\bin\Release\vtkWrapHierarchy-9.4.exe -MF D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Filters/Verdict/CMakeFiles/vtkFiltersVerdict-hierarchy.txt.Release.d @D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Filters/Verdict/CMakeFiles/vtkFiltersVerdict-hierarchy.Release.args -o D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/vtk-9.4/hierarchy/VTK/vtkFiltersVerdict-hierarchy.txt D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Filters/Verdict/CMakeFiles/vtkFiltersVerdict-hierarchy.data @D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Filters/Verdict/CMakeFiles/vtkFiltersVerdict-hierarchy.depends.args
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_transform_depfile "Visual Studio 17 2022" MSBuildAdditionalInputs D:/cybermed/daddy/dependency/sdk-VTK-9.4.2 D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Filters/Verdict D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Filters/Verdict D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Filters/Verdict/CMakeFiles/vtkFiltersVerdict-hierarchy.txt.Release.d D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/CMakeFiles/d/7f991ffc5efec6815e83064d5a41a774de1c76d55c5e3f86369e45cf321c8b6b.AdditionalInputs
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CYBERMED\DADDY\DEPENDENCY\SDK-VTK-9.4.2\BUILD_MSVC\CMAKEFILES\13986DB0D2340D1C36FD007DEE961F48\VTKFILTERSVERDICT-HIERARCHY.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CYBERMED\DADDY\DEPENDENCY\SDK-VTK-9.4.2\FILTERS\VERDICT\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/cybermed/daddy/dependency/sdk-VTK-9.4.2 -BD:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc --check-stamp-file D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Filters/Verdict/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

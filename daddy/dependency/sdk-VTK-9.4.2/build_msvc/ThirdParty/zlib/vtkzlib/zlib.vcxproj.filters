@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\zlib\vtkzlib\adler32.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\zlib\vtkzlib\compress.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\zlib\vtkzlib\crc32.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\zlib\vtkzlib\deflate.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\zlib\vtkzlib\gzclose.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\zlib\vtkzlib\gzlib.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\zlib\vtkzlib\gzread.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\zlib\vtkzlib\gzwrite.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\zlib\vtkzlib\inflate.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\zlib\vtkzlib\infback.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\zlib\vtkzlib\inftrees.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\zlib\vtkzlib\inffast.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\zlib\vtkzlib\trees.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\zlib\vtkzlib\uncompr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\zlib\vtkzlib\zutil.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\zlib\vtkzlib\crc32.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\zlib\vtkzlib\deflate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\zlib\vtkzlib\gzguts.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\zlib\vtkzlib\inffast.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\zlib\vtkzlib\inffixed.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\zlib\vtkzlib\inflate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\zlib\vtkzlib\inftrees.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\zlib\vtkzlib\trees.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\zlib\vtkzlib\zutil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\zlib\vtkzlib\zconf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\zlib\vtkzlib\zlib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\zlib\vtkzlib\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{162D4FFA-EABE-37C8-B497-EF7F0B57E0E3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{F5D6D842-070C-3B59-BC69-A411D94F79A1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

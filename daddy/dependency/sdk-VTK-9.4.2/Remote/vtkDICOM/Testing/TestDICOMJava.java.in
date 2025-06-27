@@ -1,0 +1,81 @@
+import vtk.vtkDICOMReader;
+import vtk.vtkDICOMWriter;
+import vtk.vtkDICOMMetaData;
+import vtk.vtkObject;
+import vtk.vtkIntArray;
+//import vtk.vtkJavaTesting;
+import vtk.vtkSettings;
+
+import java.io.File;
+
+public class TestDICOMJava {
+    public static void main(final String[] args) {
+        // try loading the VTK libs from the VTK build directory
+        try {
+          String[] kits = vtkSettings.GetKits();
+          String vtk5libs[] = {
+            "vtkCommonJava", "vtkFilteringJava", "vtkImagingJava",
+            "vtkGraphicsJava", "vtkIOJava", "vtkInfovisJava"
+          };
+          String vtk6libs[] = {
+            "vtkCommonCoreJava", "vtkCommonDataModelJava",
+            "vtkCommonExecutionModelJava", "vtkIOImageJava",
+            "vtkIOMPIImageJava"
+          };
+          int cc;
+          for (cc = 0; cc < kits.length; cc++) {
+            String libname = "vtk" + kits[cc] + "Java";
+            boolean found = false;
+            int i;
+            for (i = 0; i < vtk5libs.length; i++) {
+              if (libname.equals(vtk5libs[i])) {
+                found = true;
+                break;
+              }
+            }
+            for (i = 0; i < vtk6libs.length; i++) {
+              if (libname.equals(vtk6libs[i])) {
+                found = true;
+                break;
+              }
+            }
+            if (found) {
+              Runtime.getRuntime().loadLibrary(libname);
+            }
+          }
+        }
+        catch (UnsatisfiedLinkError ee) {
+          // try using VTK's own load function instead
+          //vtkJavaTesting.Initialize(args, false);
+        }
+
+        // load the vtkDICOMJava lib
+        String sep = System.getProperty("file.separator");
+        String lname = System.mapLibraryName("vtkDICOMJava");
+        String lpath = "@CMAKE_LIBRARY_OUTPUT_DIRECTORY@";
+        String configs[] = {
+          "Release", "Debug", "RelWithDebInfo", "MinSizeRel", ""
+        };
+        int i;
+        for (i = 0; i < 5; i++) {
+          String config = configs[i];
+          String fullpath = lpath + sep;
+          if (config != "") {
+            fullpath = fullpath + config + sep;
+          }
+          fullpath = fullpath + lname;
+          if (new File(fullpath).exists() || config == "") {
+            Runtime.getRuntime().load(fullpath);
+            break;
+          }
+        }
+        System.out.println("Ran the vtk-dicom Java test.");
+        vtkDICOMReader reader = new vtkDICOMReader();
+        vtkDICOMWriter writer = new vtkDICOMWriter();
+        vtkDICOMMetaData meta = new vtkDICOMMetaData();
+        writer.SetInputConnection(reader.GetOutputPort());
+        vtkIntArray a = new vtkIntArray();
+        vtkObject.JAVA_OBJECT_MANAGER.deleteAll();
+        System.out.println("Ran the vtk-dicom Java test.");
+    }
+}

@@ -1,0 +1,9 @@
+﻿  Building Custom Rule D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/dcmpmap/libsrc/CMakeLists.txt
+  dpmmodparametricmapimage.cc
+  dpmmodparametricmapseries.cc
+  dpmparametricmapbase.cc
+  dpmparametricmapiod.cc
+  dpmtypes.cc
+  코드를 생성하고 있습니다...
+     D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/lib/Debug/dcmpmap.lib 라이브러리 및 D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/lib/Debug/dcmpmap.exp 개체를 생성하고 있습니다.
+  dcmpmap.vcxproj -> D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\bin\Debug\dcmpmap.dll

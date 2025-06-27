@@ -1,0 +1,38 @@
+﻿  Automatic MOC for target GUISupportQtQuick
+  Building Custom Rule D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/GUISupport/QtQuick/CMakeLists.txt
+  QQuickVTKInteractiveWidget.cxx
+  QQuickVTKInteractorAdapter.cxx
+  QQuickVTKRenderItem.cxx
+  QQuickVTKRenderWindow.cxx
+  QQuickVTKItem.cxx
+  mocs_compilation_Release.cpp
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\GUISupport\QtQuick\QQuickVTKRenderWindow.h(188,12): warning C4996: 'QQuickVTKInteractorAdapter': Use QQuickVTKItem instead
+  (소스 파일 'GUISupportQtQuick_autogen/mocs_compilation_Release.cpp'을(를) 컴파일하는 중)
+  
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\GUISupport\QtQuick\QQuickVTKRenderWindow.h(263,12): warning C4996: 'QQuickVTKInteractorAdapter': Use QQuickVTKItem instead
+  (소스 파일 'GUISupportQtQuick_autogen/mocs_compilation_Release.cpp'을(를) 컴파일하는 중)
+  
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\GUISupport\QtQuick\QQuickVTKRenderItem.h(160,3): warning C4996: 'QQuickVTKRenderWindow': Use QQuickVTKItem instead
+  (소스 파일 'GUISupportQtQuick_autogen/mocs_compilation_Release.cpp'을(를) 컴파일하는 중)
+  
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\GUISupport\QtQuick\QQuickVTKRenderItem.h(161,32): warning C4996: 'QQuickVTKRenderWindow': Use QQuickVTKItem instead
+  (소스 파일 'GUISupportQtQuick_autogen/mocs_compilation_Release.cpp'을(를) 컴파일하는 중)
+  
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\GUISupport\QtQuick\QQuickVTKRenderItem.h(181,26): warning C4996: 'QQuickVTKInteractiveWidget': Use QQuickVTKItem instead
+  (소스 파일 'GUISupportQtQuick_autogen/mocs_compilation_Release.cpp'을(를) 컴파일하는 중)
+  
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\GUISupport\QtQuick\QQuickVTKRenderItem.h(182,29): warning C4996: 'QQuickVTKInteractiveWidget': Use QQuickVTKItem instead
+  (소스 파일 'GUISupportQtQuick_autogen/mocs_compilation_Release.cpp'을(를) 컴파일하는 중)
+  
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\GUISupport\QtQuick\QQuickVTKRenderItem.h(189,11): warning C4996: 'QQuickVTKInteractiveWidget': Use QQuickVTKItem instead
+  (소스 파일 'GUISupportQtQuick_autogen/mocs_compilation_Release.cpp'을(를) 컴파일하는 중)
+  
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\GUISupport\QtQuick\QQuickVTKRenderItem.h(233,3): warning C4996: 'QQuickVTKRenderWindow': Use QQuickVTKItem instead
+  (소스 파일 'GUISupportQtQuick_autogen/mocs_compilation_Release.cpp'을(를) 컴파일하는 중)
+  
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\GUISupport\QtQuick\QQuickVTKRenderItem.h(236,11): warning C4996: 'QQuickVTKInteractiveWidget': Use QQuickVTKItem instead
+  (소스 파일 'GUISupportQtQuick_autogen/mocs_compilation_Release.cpp'을(를) 컴파일하는 중)
+  
+  코드를 생성하고 있습니다...
+     D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Release/vtkGUISupportQtQuick-9.4.lib 라이브러리 및 D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Release/vtkGUISupportQtQuick-9.4.exp 개체를 생성하고 있습니다.
+  GUISupportQtQuick.vcxproj -> D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\bin\Release\vtkGUISupportQtQuick-9.4.dll

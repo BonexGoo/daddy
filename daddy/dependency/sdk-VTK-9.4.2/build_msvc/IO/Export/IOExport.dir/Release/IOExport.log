@@ -1,0 +1,9 @@
+﻿  vtkGLTFExporter.cxx
+  vtkJSONDataSetWriter.cxx
+  vtkJSONRenderWindowExporter.cxx
+  vtkJSONSceneExporter.cxx
+  vtkSVGContextDevice2D.cxx
+  vtkX3DExporterFIWriter.cxx
+  코드를 생성하고 있습니다...
+     D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Release/vtkIOExport-9.4.lib 라이브러리 및 D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Release/vtkIOExport-9.4.exp 개체를 생성하고 있습니다.
+  IOExport.vcxproj -> D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\bin\Release\vtkIOExport-9.4.dll

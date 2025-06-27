@@ -1,0 +1,9 @@
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\IO\NetCDF\vtkMPASReader.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\IO\NetCDF\IONetCDF.dir\Debug\vtkMPASReader.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\IO\NetCDF\vtkNetCDFCAMReader.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\IO\NetCDF\IONetCDF.dir\Debug\vtkNetCDFCAMReader.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\IO\NetCDF\vtkNetCDFCFReader.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\IO\NetCDF\IONetCDF.dir\Debug\vtkNetCDFCFReader.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\IO\NetCDF\vtkNetCDFCFWriter.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\IO\NetCDF\IONetCDF.dir\Debug\vtkNetCDFCFWriter.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\IO\NetCDF\vtkNetCDFPOPReader.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\IO\NetCDF\IONetCDF.dir\Debug\vtkNetCDFPOPReader.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\IO\NetCDF\vtkNetCDFReader.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\IO\NetCDF\IONetCDF.dir\Debug\vtkNetCDFReader.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\IO\NetCDF\vtkNetCDFUGRIDReader.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\IO\NetCDF\IONetCDF.dir\Debug\vtkNetCDFUGRIDReader.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\IO\NetCDF\vtkSLACParticleReader.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\IO\NetCDF\IONetCDF.dir\Debug\vtkSLACParticleReader.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\IO\NetCDF\vtkSLACReader.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\IO\NetCDF\IONetCDF.dir\Debug\vtkSLACReader.obj

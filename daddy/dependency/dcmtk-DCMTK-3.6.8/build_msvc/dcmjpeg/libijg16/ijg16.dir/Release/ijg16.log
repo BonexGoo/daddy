@@ -1,0 +1,74 @@
+﻿  Building Custom Rule D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/dcmjpeg/libijg16/CMakeLists.txt
+  jaricom.c
+  jcapimin.c
+  jcapistd.c
+  jcarith.c
+  jccoefct.c
+  jccolor.c
+  jcdctmgr.c
+  jcdiffct.c
+  jchuff.c
+  jcinit.c
+  jclhuff.c
+  jclossls.c
+  jclossy.c
+  jcmainct.c
+  jcmarker.c
+  jcmaster.c
+  jcodec.c
+  jcomapi.c
+  jcparam.c
+  jcphuff.c
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  jcpred.c
+  jcprepct.c
+  jcsample.c
+  jcscale.c
+  jcshuff.c
+  jctrans.c
+  jdapimin.c
+  jdapistd.c
+  jdarith.c
+  jdatadst.c
+  jdatasrc.c
+  jdcoefct.c
+  jdcolor.c
+  jddctmgr.c
+  jddiffct.c
+  jdhuff.c
+  jdinput.c
+  jdlhuff.c
+  jdlossls.c
+  jdlossy.c
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  jdmainct.c
+  jdmarker.c
+  jdmaster.c
+  jdmerge.c
+  jdphuff.c
+  jdpostct.c
+  jdpred.c
+  jdsample.c
+  jdscale.c
+  jdshuff.c
+  jdtrans.c
+  jerror.c
+  jfdctflt.c
+  jfdctfst.c
+  jfdctint.c
+  jidctflt.c
+  jidctfst.c
+  jidctint.c
+  jidctred.c
+  jmemmgr.c
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  jmemnobs.c
+  jquant1.c
+  jquant2.c
+  jutils.c
+  코드를 생성하고 있습니다...
+     D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/lib/Release/ijg16.lib 라이브러리 및 D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/lib/Release/ijg16.exp 개체를 생성하고 있습니다.
+  ijg16.vcxproj -> D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\bin\Release\ijg16.dll

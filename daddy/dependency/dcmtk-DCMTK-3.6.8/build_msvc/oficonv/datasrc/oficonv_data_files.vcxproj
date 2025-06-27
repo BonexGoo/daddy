@@ -1,0 +1,1212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4BBB70FE-BE87-3451-A337-D343DB8FDB22}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>oficonv_data_files</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\config\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\ofstd\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\oflog\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\oficonv\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmdata\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmimgle\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmimage\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmjpeg\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmjpls\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmtls\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmnet\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsign\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmwlm\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmqrdb\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmpstat\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmiod\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmfg\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmseg\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmtract\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmpmap\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmect\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\config\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\ofstd\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\oflog\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\oficonv\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmdata\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmimgle\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmimage\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmjpeg\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmjpls\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmtls\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmnet\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsign\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmwlm\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmqrdb\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmpstat\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmiod\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmfg\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmseg\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmtract\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmpmap\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmect\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\config\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\ofstd\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\oflog\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\oficonv\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmdata\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmimgle\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmimage\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmjpeg\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmjpls\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmtls\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmnet\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsign\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmwlm\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmqrdb\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmpstat\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmiod\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmfg\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmseg\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmtract\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmpmap\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmect\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\config\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\ofstd\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\oflog\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\oficonv\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmdata\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmimgle\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmimage\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmjpeg\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmjpls\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmtls\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmnet\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsign\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmwlm\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmqrdb\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmpstat\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmiod\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmfg\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmseg\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmtract\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmpmap\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmect\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\CMakeFiles\1b9f76e850fbc510e30d83372c5710a0\oficonv_data_files.rule">
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Creating oficonv data files from source</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+..\..\bin\Debug\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/CP/CP936EXT%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/CP/CP936EXT%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/CP/UCS%CP936EXT.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/CP/UCS%CP936EXT.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/GB/GB18030%UCS@BMP.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/GB/GB18030%UCS@BMP.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/GB/GB2312%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/GB/GB2312%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/GB/GB2312EXT%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/GB/GB2312EXT%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/GB/GB2312GBK%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/GB/GB2312GBK%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/GB/GB2312UDA1%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/GB/GB2312UDA1%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/GB/GB2312UDA2%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/GB/GB2312UDA2%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/GB/GBKEXT%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/GB/GBKEXT%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/GB/GBKUDA%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/GB/GBKUDA%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/GB/UCS%GB2312.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/GB/UCS%GB2312.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/GB/UCS%GB2312EXT.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/GB/UCS%GB2312EXT.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/GB/UCS%GB2312UDA1.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/GB/UCS%GB2312UDA1.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/GB/UCS%GB2312UDA2.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/GB/UCS%GB2312UDA2.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/GB/UCS%GBKEXT.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/GB/UCS%GBKEXT.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/GB/UCS%GBKUDA.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/GB/UCS%GBKUDA.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/GB/UCS@BMP%GB18030.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/GB/UCS@BMP%GB18030.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO-8859/ISO-8859-2%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO-8859/ISO-8859-2%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO-8859/ISO-8859-3%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO-8859/ISO-8859-3%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO-8859/ISO-8859-4%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO-8859/ISO-8859-4%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO-8859/ISO-8859-5%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO-8859/ISO-8859-5%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO-8859/ISO-8859-6%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO-8859/ISO-8859-6%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO-8859/ISO-8859-7%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO-8859/ISO-8859-7%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO-8859/ISO-8859-8%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO-8859/ISO-8859-8%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO-8859/ISO-8859-9%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO-8859/ISO-8859-9%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO-8859/ISO-8859-11%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO-8859/ISO-8859-11%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO-8859/ISO-8859-15%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO-8859/ISO-8859-15%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO-8859/UCS%ISO-8859-2.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO-8859/UCS%ISO-8859-2.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO-8859/UCS%ISO-8859-3.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO-8859/UCS%ISO-8859-3.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO-8859/UCS%ISO-8859-4.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO-8859/UCS%ISO-8859-4.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO-8859/UCS%ISO-8859-5.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO-8859/UCS%ISO-8859-5.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO-8859/UCS%ISO-8859-6.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO-8859/UCS%ISO-8859-6.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO-8859/UCS%ISO-8859-7.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO-8859/UCS%ISO-8859-7.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO-8859/UCS%ISO-8859-8.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO-8859/UCS%ISO-8859-8.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO-8859/UCS%ISO-8859-9.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO-8859/UCS%ISO-8859-9.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO-8859/UCS%ISO-8859-11.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO-8859/UCS%ISO-8859-11.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO-8859/UCS%ISO-8859-15.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO-8859/UCS%ISO-8859-15.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/JIS/JISX0201-KANA%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/JIS/JISX0201-KANA%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/JIS/JISX0208@1990%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/JIS/JISX0208@1990%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/JIS/JISX0212%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/JIS/JISX0212%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/JIS/UCS%JISX0201-KANA.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/JIS/UCS%JISX0201-KANA.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/JIS/UCS%JISX0208@1990.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/JIS/UCS%JISX0208@1990.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/JIS/UCS%JISX0212.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/JIS/UCS%JISX0212.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/KS/KSC5601HANGUL%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/KS/KSC5601HANGUL%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/KS/KSC5601HANJA%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/KS/KSC5601HANJA%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/KS/UCS%KSC5601HANGUL.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/KS/UCS%KSC5601HANGUL.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/KS/UCS%KSC5601HANJA.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/KS/UCS%KSC5601HANJA.src"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO646/ISO646-JP%UCS.646" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO646/ISO646-JP%UCS.646"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO646/ISO646-US%UCS.646" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO646/ISO646-US%UCS.646"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/mapper.dir" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/mapper.dir"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\mkcsmapper.exe -m -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/mapper.dir.db" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/mapper.dir"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\mkcsmapper.exe -p -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/charset.pivot.pvdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/charset.pivot"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/EUC/EUC-CN.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/EUC/EUC-CN.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/EUC/EUC-KR.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/EUC/EUC-KR.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/GB/GB18030.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/GB/GB18030.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/GB/GBK.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/GB/GBK.src"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/ISO-8859/ISO-8859.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-1.src" -DREGEX=ISO-8859-x -DREPLACE=ISO-8859-1 -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/ISO-8859/ISO-8859.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-2.src" -DREGEX=ISO-8859-x -DREPLACE=ISO-8859-2 -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/ISO-8859/ISO-8859.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-3.src" -DREGEX=ISO-8859-x -DREPLACE=ISO-8859-3 -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/ISO-8859/ISO-8859.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-4.src" -DREGEX=ISO-8859-x -DREPLACE=ISO-8859-4 -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/ISO-8859/ISO-8859.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-5.src" -DREGEX=ISO-8859-x -DREPLACE=ISO-8859-5 -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/ISO-8859/ISO-8859.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-6.src" -DREGEX=ISO-8859-x -DREPLACE=ISO-8859-6 -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/ISO-8859/ISO-8859.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-7.src" -DREGEX=ISO-8859-x -DREPLACE=ISO-8859-7 -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/ISO-8859/ISO-8859.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-8.src" -DREGEX=ISO-8859-x -DREPLACE=ISO-8859-8 -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/ISO-8859/ISO-8859.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-9.src" -DREGEX=ISO-8859-x -DREPLACE=ISO-8859-9 -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/ISO-8859/ISO-8859.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-11.src" -DREGEX=ISO-8859-x -DREPLACE=ISO-8859-11 -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/ISO-8859/ISO-8859.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-15.src" -DREGEX=ISO-8859-x -DREPLACE=ISO-8859-15 -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/ISO-8859/ISO-8859-1.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-1.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/ISO-8859/ISO-8859-2.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-2.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/ISO-8859/ISO-8859-3.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-3.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/ISO-8859/ISO-8859-4.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-4.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/ISO-8859/ISO-8859-5.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-5.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/ISO-8859/ISO-8859-6.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-6.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/ISO-8859/ISO-8859-7.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-7.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/ISO-8859/ISO-8859-8.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-8.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/ISO-8859/ISO-8859-9.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-9.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/ISO-8859/ISO-8859-11.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-11.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/ISO-8859/ISO-8859-15.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-15.src"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/ISO646/ISO646.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO646-US.src" -DREGEX=ISO646-x -DREPLACE=ISO646-US -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/ISO646/ISO646-US.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO646-US.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/MISC/JISX0201-KANA.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/MISC/JISX0201-KANA.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/MISC/JISX0208@1990.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/MISC/JISX0208@1990.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/MISC/Shift_JIS.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/MISC/Shift_JIS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/MISC/JISX0212.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/MISC/JISX0212.src"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/UTF/UTF.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp01.src" -DREGEX=UTF-mod -DREPLACE=UTF1632 -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/UTF/UTF.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp03.src" -DREGEX=UTF-mod -DREPLACE=UTF8 -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp01.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp04.src" -DREGEX=UTF-x -DREPLACE=UTF-16-INTERNAL -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp01.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp05.src" -DREGEX=UTF-x -DREPLACE=UTF-16-SWAPPED -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp01.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp06.src" -DREGEX=UTF-x -DREPLACE=UTF-16 -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp01.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp07.src" -DREGEX=UTF-x -DREPLACE=UTF-16BE -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp01.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp08.src" -DREGEX=UTF-x -DREPLACE=UTF-16LE -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp01.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp09.src" -DREGEX=UTF-x -DREPLACE=UTF-32-INTERNAL -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp01.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp10.src" -DREGEX=UTF-x -DREPLACE=UTF-32-SWAPPED -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp01.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp11.src" -DREGEX=UTF-x -DREPLACE=UTF-32 -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp01.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp12.src" -DREGEX=UTF-x -DREPLACE=UTF-32BE -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp01.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp13.src" -DREGEX=UTF-x -DREPLACE=UTF-32LE -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp03.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp15.src" -DREGEX=UTF-x -DREPLACE=UTF-8 -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp04.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-16-INTERNAL.src" -DREGEX=UTF-var -DREPLACE=utf16,internal,force -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp05.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-16-SWAPPED.src" -DREGEX=UTF-var -DREPLACE=utf16,swapped,force -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp06.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-16.src" -DREGEX=UTF-var -DREPLACE=utf16 -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp07.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-16BE.src" -DREGEX=UTF-var -DREPLACE=utf16,big,force -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp08.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-16LE.src" -DREGEX=UTF-var -DREPLACE=utf16,little,force -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp09.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-32-INTERNAL.src" -DREGEX=UTF-var -DREPLACE=utf32,internal,force -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp10.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-32-SWAPPED.src" -DREGEX=UTF-var -DREPLACE=utf32,swapped,force -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp11.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-32.src" -DREGEX=UTF-var -DREPLACE=utf32 -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp12.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-32BE.src" -DREGEX=UTF-var -DREPLACE=utf32,big,force -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp13.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-32LE.src" -DREGEX=UTF-var -DREPLACE=utf32,little,force -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp15.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-8.src" -DREGEX=UTF-var -DREPLACE=utf8 -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/UTF/UTF-16-INTERNAL.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-16-INTERNAL.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/UTF/UTF-16-SWAPPED.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-16-SWAPPED.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/UTF/UTF-16.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-16.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/UTF/UTF-16BE.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-16BE.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/UTF/UTF-16LE.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-16LE.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/UTF/UTF-32-INTERNAL.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-32-INTERNAL.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/UTF/UTF-32-SWAPPED.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-32-SWAPPED.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/UTF/UTF-32.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-32.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/UTF/UTF-32BE.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-32BE.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/UTF/UTF-32LE.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-32LE.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/UTF/UTF-8.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-8.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\mkesdb.exe -m -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/esdb.dir.db" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/esdb.dir"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\mkesdb.exe -m -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/esdb.alias.db" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/esdb.alias"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\oficonv\datasrc\CMakeFiles\oficonv_data_files</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Creating oficonv data files from source</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+..\..\bin\Release\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/CP/CP936EXT%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/CP/CP936EXT%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/CP/UCS%CP936EXT.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/CP/UCS%CP936EXT.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/GB/GB18030%UCS@BMP.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/GB/GB18030%UCS@BMP.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/GB/GB2312%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/GB/GB2312%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/GB/GB2312EXT%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/GB/GB2312EXT%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/GB/GB2312GBK%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/GB/GB2312GBK%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/GB/GB2312UDA1%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/GB/GB2312UDA1%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/GB/GB2312UDA2%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/GB/GB2312UDA2%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/GB/GBKEXT%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/GB/GBKEXT%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/GB/GBKUDA%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/GB/GBKUDA%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/GB/UCS%GB2312.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/GB/UCS%GB2312.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/GB/UCS%GB2312EXT.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/GB/UCS%GB2312EXT.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/GB/UCS%GB2312UDA1.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/GB/UCS%GB2312UDA1.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/GB/UCS%GB2312UDA2.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/GB/UCS%GB2312UDA2.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/GB/UCS%GBKEXT.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/GB/UCS%GBKEXT.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/GB/UCS%GBKUDA.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/GB/UCS%GBKUDA.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/GB/UCS@BMP%GB18030.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/GB/UCS@BMP%GB18030.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO-8859/ISO-8859-2%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO-8859/ISO-8859-2%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO-8859/ISO-8859-3%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO-8859/ISO-8859-3%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO-8859/ISO-8859-4%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO-8859/ISO-8859-4%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO-8859/ISO-8859-5%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO-8859/ISO-8859-5%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO-8859/ISO-8859-6%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO-8859/ISO-8859-6%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO-8859/ISO-8859-7%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO-8859/ISO-8859-7%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO-8859/ISO-8859-8%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO-8859/ISO-8859-8%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO-8859/ISO-8859-9%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO-8859/ISO-8859-9%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO-8859/ISO-8859-11%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO-8859/ISO-8859-11%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO-8859/ISO-8859-15%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO-8859/ISO-8859-15%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO-8859/UCS%ISO-8859-2.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO-8859/UCS%ISO-8859-2.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO-8859/UCS%ISO-8859-3.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO-8859/UCS%ISO-8859-3.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO-8859/UCS%ISO-8859-4.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO-8859/UCS%ISO-8859-4.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO-8859/UCS%ISO-8859-5.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO-8859/UCS%ISO-8859-5.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO-8859/UCS%ISO-8859-6.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO-8859/UCS%ISO-8859-6.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO-8859/UCS%ISO-8859-7.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO-8859/UCS%ISO-8859-7.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO-8859/UCS%ISO-8859-8.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO-8859/UCS%ISO-8859-8.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO-8859/UCS%ISO-8859-9.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO-8859/UCS%ISO-8859-9.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO-8859/UCS%ISO-8859-11.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO-8859/UCS%ISO-8859-11.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO-8859/UCS%ISO-8859-15.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO-8859/UCS%ISO-8859-15.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/JIS/JISX0201-KANA%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/JIS/JISX0201-KANA%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/JIS/JISX0208@1990%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/JIS/JISX0208@1990%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/JIS/JISX0212%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/JIS/JISX0212%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/JIS/UCS%JISX0201-KANA.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/JIS/UCS%JISX0201-KANA.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/JIS/UCS%JISX0208@1990.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/JIS/UCS%JISX0208@1990.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/JIS/UCS%JISX0212.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/JIS/UCS%JISX0212.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/KS/KSC5601HANGUL%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/KS/KSC5601HANGUL%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/KS/KSC5601HANJA%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/KS/KSC5601HANJA%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/KS/UCS%KSC5601HANGUL.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/KS/UCS%KSC5601HANGUL.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/KS/UCS%KSC5601HANJA.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/KS/UCS%KSC5601HANJA.src"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO646/ISO646-JP%UCS.646" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO646/ISO646-JP%UCS.646"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO646/ISO646-US%UCS.646" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO646/ISO646-US%UCS.646"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/mapper.dir" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/mapper.dir"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\mkcsmapper.exe -m -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/mapper.dir.db" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/mapper.dir"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\mkcsmapper.exe -p -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/charset.pivot.pvdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/charset.pivot"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/EUC/EUC-CN.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/EUC/EUC-CN.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/EUC/EUC-KR.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/EUC/EUC-KR.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/GB/GB18030.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/GB/GB18030.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/GB/GBK.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/GB/GBK.src"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/ISO-8859/ISO-8859.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-1.src" -DREGEX=ISO-8859-x -DREPLACE=ISO-8859-1 -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/ISO-8859/ISO-8859.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-2.src" -DREGEX=ISO-8859-x -DREPLACE=ISO-8859-2 -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/ISO-8859/ISO-8859.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-3.src" -DREGEX=ISO-8859-x -DREPLACE=ISO-8859-3 -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/ISO-8859/ISO-8859.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-4.src" -DREGEX=ISO-8859-x -DREPLACE=ISO-8859-4 -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/ISO-8859/ISO-8859.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-5.src" -DREGEX=ISO-8859-x -DREPLACE=ISO-8859-5 -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/ISO-8859/ISO-8859.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-6.src" -DREGEX=ISO-8859-x -DREPLACE=ISO-8859-6 -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/ISO-8859/ISO-8859.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-7.src" -DREGEX=ISO-8859-x -DREPLACE=ISO-8859-7 -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/ISO-8859/ISO-8859.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-8.src" -DREGEX=ISO-8859-x -DREPLACE=ISO-8859-8 -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/ISO-8859/ISO-8859.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-9.src" -DREGEX=ISO-8859-x -DREPLACE=ISO-8859-9 -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/ISO-8859/ISO-8859.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-11.src" -DREGEX=ISO-8859-x -DREPLACE=ISO-8859-11 -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/ISO-8859/ISO-8859.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-15.src" -DREGEX=ISO-8859-x -DREPLACE=ISO-8859-15 -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/ISO-8859/ISO-8859-1.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-1.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/ISO-8859/ISO-8859-2.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-2.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/ISO-8859/ISO-8859-3.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-3.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/ISO-8859/ISO-8859-4.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-4.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/ISO-8859/ISO-8859-5.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-5.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/ISO-8859/ISO-8859-6.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-6.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/ISO-8859/ISO-8859-7.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-7.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/ISO-8859/ISO-8859-8.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-8.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/ISO-8859/ISO-8859-9.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-9.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/ISO-8859/ISO-8859-11.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-11.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/ISO-8859/ISO-8859-15.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-15.src"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/ISO646/ISO646.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO646-US.src" -DREGEX=ISO646-x -DREPLACE=ISO646-US -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/ISO646/ISO646-US.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO646-US.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/MISC/JISX0201-KANA.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/MISC/JISX0201-KANA.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/MISC/JISX0208@1990.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/MISC/JISX0208@1990.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/MISC/Shift_JIS.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/MISC/Shift_JIS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/MISC/JISX0212.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/MISC/JISX0212.src"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/UTF/UTF.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp01.src" -DREGEX=UTF-mod -DREPLACE=UTF1632 -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/UTF/UTF.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp03.src" -DREGEX=UTF-mod -DREPLACE=UTF8 -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp01.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp04.src" -DREGEX=UTF-x -DREPLACE=UTF-16-INTERNAL -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp01.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp05.src" -DREGEX=UTF-x -DREPLACE=UTF-16-SWAPPED -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp01.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp06.src" -DREGEX=UTF-x -DREPLACE=UTF-16 -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp01.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp07.src" -DREGEX=UTF-x -DREPLACE=UTF-16BE -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp01.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp08.src" -DREGEX=UTF-x -DREPLACE=UTF-16LE -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp01.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp09.src" -DREGEX=UTF-x -DREPLACE=UTF-32-INTERNAL -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp01.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp10.src" -DREGEX=UTF-x -DREPLACE=UTF-32-SWAPPED -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp01.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp11.src" -DREGEX=UTF-x -DREPLACE=UTF-32 -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp01.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp12.src" -DREGEX=UTF-x -DREPLACE=UTF-32BE -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp01.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp13.src" -DREGEX=UTF-x -DREPLACE=UTF-32LE -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp03.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp15.src" -DREGEX=UTF-x -DREPLACE=UTF-8 -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp04.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-16-INTERNAL.src" -DREGEX=UTF-var -DREPLACE=utf16,internal,force -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp05.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-16-SWAPPED.src" -DREGEX=UTF-var -DREPLACE=utf16,swapped,force -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp06.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-16.src" -DREGEX=UTF-var -DREPLACE=utf16 -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp07.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-16BE.src" -DREGEX=UTF-var -DREPLACE=utf16,big,force -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp08.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-16LE.src" -DREGEX=UTF-var -DREPLACE=utf16,little,force -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp09.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-32-INTERNAL.src" -DREGEX=UTF-var -DREPLACE=utf32,internal,force -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp10.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-32-SWAPPED.src" -DREGEX=UTF-var -DREPLACE=utf32,swapped,force -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp11.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-32.src" -DREGEX=UTF-var -DREPLACE=utf32 -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp12.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-32BE.src" -DREGEX=UTF-var -DREPLACE=utf32,big,force -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp13.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-32LE.src" -DREGEX=UTF-var -DREPLACE=utf32,little,force -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp15.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-8.src" -DREGEX=UTF-var -DREPLACE=utf8 -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/UTF/UTF-16-INTERNAL.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-16-INTERNAL.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/UTF/UTF-16-SWAPPED.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-16-SWAPPED.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/UTF/UTF-16.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-16.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/UTF/UTF-16BE.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-16BE.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/UTF/UTF-16LE.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-16LE.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/UTF/UTF-32-INTERNAL.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-32-INTERNAL.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/UTF/UTF-32-SWAPPED.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-32-SWAPPED.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/UTF/UTF-32.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-32.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/UTF/UTF-32BE.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-32BE.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/UTF/UTF-32LE.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-32LE.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/UTF/UTF-8.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-8.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\mkesdb.exe -m -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/esdb.dir.db" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/esdb.dir"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\mkesdb.exe -m -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/esdb.alias.db" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/esdb.alias"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\oficonv\datasrc\CMakeFiles\oficonv_data_files</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</VerifyInputsAndOutputsExist>
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Creating oficonv data files from source</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+..\..\bin\MinSizeRel\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/CP/CP936EXT%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/CP/CP936EXT%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/CP/UCS%CP936EXT.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/CP/UCS%CP936EXT.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/GB/GB18030%UCS@BMP.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/GB/GB18030%UCS@BMP.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/GB/GB2312%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/GB/GB2312%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/GB/GB2312EXT%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/GB/GB2312EXT%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/GB/GB2312GBK%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/GB/GB2312GBK%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/GB/GB2312UDA1%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/GB/GB2312UDA1%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/GB/GB2312UDA2%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/GB/GB2312UDA2%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/GB/GBKEXT%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/GB/GBKEXT%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/GB/GBKUDA%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/GB/GBKUDA%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/GB/UCS%GB2312.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/GB/UCS%GB2312.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/GB/UCS%GB2312EXT.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/GB/UCS%GB2312EXT.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/GB/UCS%GB2312UDA1.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/GB/UCS%GB2312UDA1.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/GB/UCS%GB2312UDA2.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/GB/UCS%GB2312UDA2.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/GB/UCS%GBKEXT.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/GB/UCS%GBKEXT.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/GB/UCS%GBKUDA.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/GB/UCS%GBKUDA.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/GB/UCS@BMP%GB18030.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/GB/UCS@BMP%GB18030.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO-8859/ISO-8859-2%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO-8859/ISO-8859-2%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO-8859/ISO-8859-3%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO-8859/ISO-8859-3%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO-8859/ISO-8859-4%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO-8859/ISO-8859-4%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO-8859/ISO-8859-5%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO-8859/ISO-8859-5%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO-8859/ISO-8859-6%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO-8859/ISO-8859-6%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO-8859/ISO-8859-7%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO-8859/ISO-8859-7%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO-8859/ISO-8859-8%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO-8859/ISO-8859-8%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO-8859/ISO-8859-9%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO-8859/ISO-8859-9%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO-8859/ISO-8859-11%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO-8859/ISO-8859-11%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO-8859/ISO-8859-15%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO-8859/ISO-8859-15%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO-8859/UCS%ISO-8859-2.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO-8859/UCS%ISO-8859-2.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO-8859/UCS%ISO-8859-3.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO-8859/UCS%ISO-8859-3.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO-8859/UCS%ISO-8859-4.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO-8859/UCS%ISO-8859-4.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO-8859/UCS%ISO-8859-5.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO-8859/UCS%ISO-8859-5.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO-8859/UCS%ISO-8859-6.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO-8859/UCS%ISO-8859-6.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO-8859/UCS%ISO-8859-7.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO-8859/UCS%ISO-8859-7.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO-8859/UCS%ISO-8859-8.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO-8859/UCS%ISO-8859-8.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO-8859/UCS%ISO-8859-9.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO-8859/UCS%ISO-8859-9.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO-8859/UCS%ISO-8859-11.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO-8859/UCS%ISO-8859-11.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO-8859/UCS%ISO-8859-15.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO-8859/UCS%ISO-8859-15.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/JIS/JISX0201-KANA%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/JIS/JISX0201-KANA%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/JIS/JISX0208@1990%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/JIS/JISX0208@1990%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/JIS/JISX0212%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/JIS/JISX0212%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/JIS/UCS%JISX0201-KANA.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/JIS/UCS%JISX0201-KANA.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/JIS/UCS%JISX0208@1990.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/JIS/UCS%JISX0208@1990.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/JIS/UCS%JISX0212.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/JIS/UCS%JISX0212.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/KS/KSC5601HANGUL%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/KS/KSC5601HANGUL%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/KS/KSC5601HANJA%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/KS/KSC5601HANJA%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/KS/UCS%KSC5601HANGUL.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/KS/UCS%KSC5601HANGUL.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/KS/UCS%KSC5601HANJA.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/KS/UCS%KSC5601HANJA.src"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO646/ISO646-JP%UCS.646" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO646/ISO646-JP%UCS.646"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO646/ISO646-US%UCS.646" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO646/ISO646-US%UCS.646"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/mapper.dir" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/mapper.dir"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\mkcsmapper.exe -m -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/mapper.dir.db" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/mapper.dir"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\mkcsmapper.exe -p -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/charset.pivot.pvdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/charset.pivot"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/EUC/EUC-CN.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/EUC/EUC-CN.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/EUC/EUC-KR.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/EUC/EUC-KR.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/GB/GB18030.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/GB/GB18030.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/GB/GBK.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/GB/GBK.src"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/ISO-8859/ISO-8859.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-1.src" -DREGEX=ISO-8859-x -DREPLACE=ISO-8859-1 -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/ISO-8859/ISO-8859.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-2.src" -DREGEX=ISO-8859-x -DREPLACE=ISO-8859-2 -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/ISO-8859/ISO-8859.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-3.src" -DREGEX=ISO-8859-x -DREPLACE=ISO-8859-3 -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/ISO-8859/ISO-8859.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-4.src" -DREGEX=ISO-8859-x -DREPLACE=ISO-8859-4 -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/ISO-8859/ISO-8859.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-5.src" -DREGEX=ISO-8859-x -DREPLACE=ISO-8859-5 -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/ISO-8859/ISO-8859.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-6.src" -DREGEX=ISO-8859-x -DREPLACE=ISO-8859-6 -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/ISO-8859/ISO-8859.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-7.src" -DREGEX=ISO-8859-x -DREPLACE=ISO-8859-7 -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/ISO-8859/ISO-8859.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-8.src" -DREGEX=ISO-8859-x -DREPLACE=ISO-8859-8 -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/ISO-8859/ISO-8859.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-9.src" -DREGEX=ISO-8859-x -DREPLACE=ISO-8859-9 -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/ISO-8859/ISO-8859.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-11.src" -DREGEX=ISO-8859-x -DREPLACE=ISO-8859-11 -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/ISO-8859/ISO-8859.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-15.src" -DREGEX=ISO-8859-x -DREPLACE=ISO-8859-15 -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/ISO-8859/ISO-8859-1.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-1.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/ISO-8859/ISO-8859-2.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-2.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/ISO-8859/ISO-8859-3.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-3.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/ISO-8859/ISO-8859-4.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-4.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/ISO-8859/ISO-8859-5.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-5.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/ISO-8859/ISO-8859-6.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-6.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/ISO-8859/ISO-8859-7.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-7.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/ISO-8859/ISO-8859-8.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-8.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/ISO-8859/ISO-8859-9.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-9.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/ISO-8859/ISO-8859-11.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-11.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/ISO-8859/ISO-8859-15.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-15.src"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/ISO646/ISO646.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO646-US.src" -DREGEX=ISO646-x -DREPLACE=ISO646-US -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/ISO646/ISO646-US.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO646-US.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/MISC/JISX0201-KANA.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/MISC/JISX0201-KANA.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/MISC/JISX0208@1990.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/MISC/JISX0208@1990.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/MISC/Shift_JIS.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/MISC/Shift_JIS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/MISC/JISX0212.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/MISC/JISX0212.src"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/UTF/UTF.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp01.src" -DREGEX=UTF-mod -DREPLACE=UTF1632 -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/UTF/UTF.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp03.src" -DREGEX=UTF-mod -DREPLACE=UTF8 -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp01.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp04.src" -DREGEX=UTF-x -DREPLACE=UTF-16-INTERNAL -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp01.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp05.src" -DREGEX=UTF-x -DREPLACE=UTF-16-SWAPPED -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp01.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp06.src" -DREGEX=UTF-x -DREPLACE=UTF-16 -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp01.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp07.src" -DREGEX=UTF-x -DREPLACE=UTF-16BE -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp01.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp08.src" -DREGEX=UTF-x -DREPLACE=UTF-16LE -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp01.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp09.src" -DREGEX=UTF-x -DREPLACE=UTF-32-INTERNAL -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp01.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp10.src" -DREGEX=UTF-x -DREPLACE=UTF-32-SWAPPED -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp01.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp11.src" -DREGEX=UTF-x -DREPLACE=UTF-32 -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp01.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp12.src" -DREGEX=UTF-x -DREPLACE=UTF-32BE -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp01.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp13.src" -DREGEX=UTF-x -DREPLACE=UTF-32LE -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp03.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp15.src" -DREGEX=UTF-x -DREPLACE=UTF-8 -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp04.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-16-INTERNAL.src" -DREGEX=UTF-var -DREPLACE=utf16,internal,force -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp05.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-16-SWAPPED.src" -DREGEX=UTF-var -DREPLACE=utf16,swapped,force -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp06.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-16.src" -DREGEX=UTF-var -DREPLACE=utf16 -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp07.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-16BE.src" -DREGEX=UTF-var -DREPLACE=utf16,big,force -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp08.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-16LE.src" -DREGEX=UTF-var -DREPLACE=utf16,little,force -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp09.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-32-INTERNAL.src" -DREGEX=UTF-var -DREPLACE=utf32,internal,force -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp10.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-32-SWAPPED.src" -DREGEX=UTF-var -DREPLACE=utf32,swapped,force -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp11.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-32.src" -DREGEX=UTF-var -DREPLACE=utf32 -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp12.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-32BE.src" -DREGEX=UTF-var -DREPLACE=utf32,big,force -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp13.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-32LE.src" -DREGEX=UTF-var -DREPLACE=utf32,little,force -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp15.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-8.src" -DREGEX=UTF-var -DREPLACE=utf8 -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/UTF/UTF-16-INTERNAL.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-16-INTERNAL.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/UTF/UTF-16-SWAPPED.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-16-SWAPPED.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/UTF/UTF-16.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-16.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/UTF/UTF-16BE.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-16BE.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/UTF/UTF-16LE.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-16LE.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/UTF/UTF-32-INTERNAL.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-32-INTERNAL.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/UTF/UTF-32-SWAPPED.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-32-SWAPPED.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/UTF/UTF-32.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-32.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/UTF/UTF-32BE.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-32BE.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/UTF/UTF-32LE.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-32LE.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/UTF/UTF-8.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-8.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\mkesdb.exe -m -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/esdb.dir.db" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/esdb.dir"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\mkesdb.exe -m -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/esdb.alias.db" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/esdb.alias"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\oficonv\datasrc\CMakeFiles\oficonv_data_files</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</VerifyInputsAndOutputsExist>
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Creating oficonv data files from source</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+..\..\bin\RelWithDebInfo\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/CP/CP936EXT%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/CP/CP936EXT%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/CP/UCS%CP936EXT.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/CP/UCS%CP936EXT.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/GB/GB18030%UCS@BMP.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/GB/GB18030%UCS@BMP.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/GB/GB2312%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/GB/GB2312%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/GB/GB2312EXT%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/GB/GB2312EXT%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/GB/GB2312GBK%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/GB/GB2312GBK%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/GB/GB2312UDA1%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/GB/GB2312UDA1%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/GB/GB2312UDA2%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/GB/GB2312UDA2%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/GB/GBKEXT%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/GB/GBKEXT%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/GB/GBKUDA%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/GB/GBKUDA%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/GB/UCS%GB2312.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/GB/UCS%GB2312.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/GB/UCS%GB2312EXT.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/GB/UCS%GB2312EXT.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/GB/UCS%GB2312UDA1.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/GB/UCS%GB2312UDA1.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/GB/UCS%GB2312UDA2.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/GB/UCS%GB2312UDA2.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/GB/UCS%GBKEXT.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/GB/UCS%GBKEXT.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/GB/UCS%GBKUDA.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/GB/UCS%GBKUDA.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/GB/UCS@BMP%GB18030.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/GB/UCS@BMP%GB18030.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO-8859/ISO-8859-2%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO-8859/ISO-8859-2%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO-8859/ISO-8859-3%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO-8859/ISO-8859-3%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO-8859/ISO-8859-4%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO-8859/ISO-8859-4%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO-8859/ISO-8859-5%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO-8859/ISO-8859-5%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO-8859/ISO-8859-6%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO-8859/ISO-8859-6%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO-8859/ISO-8859-7%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO-8859/ISO-8859-7%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO-8859/ISO-8859-8%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO-8859/ISO-8859-8%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO-8859/ISO-8859-9%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO-8859/ISO-8859-9%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO-8859/ISO-8859-11%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO-8859/ISO-8859-11%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO-8859/ISO-8859-15%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO-8859/ISO-8859-15%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO-8859/UCS%ISO-8859-2.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO-8859/UCS%ISO-8859-2.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO-8859/UCS%ISO-8859-3.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO-8859/UCS%ISO-8859-3.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO-8859/UCS%ISO-8859-4.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO-8859/UCS%ISO-8859-4.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO-8859/UCS%ISO-8859-5.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO-8859/UCS%ISO-8859-5.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO-8859/UCS%ISO-8859-6.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO-8859/UCS%ISO-8859-6.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO-8859/UCS%ISO-8859-7.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO-8859/UCS%ISO-8859-7.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO-8859/UCS%ISO-8859-8.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO-8859/UCS%ISO-8859-8.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO-8859/UCS%ISO-8859-9.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO-8859/UCS%ISO-8859-9.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO-8859/UCS%ISO-8859-11.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO-8859/UCS%ISO-8859-11.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO-8859/UCS%ISO-8859-15.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO-8859/UCS%ISO-8859-15.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/JIS/JISX0201-KANA%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/JIS/JISX0201-KANA%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/JIS/JISX0208@1990%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/JIS/JISX0208@1990%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/JIS/JISX0212%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/JIS/JISX0212%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/JIS/UCS%JISX0201-KANA.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/JIS/UCS%JISX0201-KANA.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/JIS/UCS%JISX0208@1990.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/JIS/UCS%JISX0208@1990.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/JIS/UCS%JISX0212.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/JIS/UCS%JISX0212.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/KS/KSC5601HANGUL%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/KS/KSC5601HANGUL%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/KS/KSC5601HANJA%UCS.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/KS/KSC5601HANJA%UCS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/KS/UCS%KSC5601HANGUL.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/KS/UCS%KSC5601HANGUL.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\mkcsmapper.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/KS/UCS%KSC5601HANJA.mps" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/KS/UCS%KSC5601HANJA.src"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO646/ISO646-JP%UCS.646" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO646/ISO646-JP%UCS.646"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/ISO646/ISO646-US%UCS.646" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/ISO646/ISO646-US%UCS.646"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/mapper.dir" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/mapper.dir"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\mkcsmapper.exe -m -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/mapper.dir.db" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/mapper.dir"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\mkcsmapper.exe -p -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/csmapper/charset.pivot.pvdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/csmapper/charset.pivot"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/EUC/EUC-CN.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/EUC/EUC-CN.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/EUC/EUC-KR.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/EUC/EUC-KR.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/GB/GB18030.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/GB/GB18030.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/GB/GBK.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/GB/GBK.src"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/ISO-8859/ISO-8859.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-1.src" -DREGEX=ISO-8859-x -DREPLACE=ISO-8859-1 -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/ISO-8859/ISO-8859.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-2.src" -DREGEX=ISO-8859-x -DREPLACE=ISO-8859-2 -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/ISO-8859/ISO-8859.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-3.src" -DREGEX=ISO-8859-x -DREPLACE=ISO-8859-3 -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/ISO-8859/ISO-8859.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-4.src" -DREGEX=ISO-8859-x -DREPLACE=ISO-8859-4 -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/ISO-8859/ISO-8859.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-5.src" -DREGEX=ISO-8859-x -DREPLACE=ISO-8859-5 -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/ISO-8859/ISO-8859.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-6.src" -DREGEX=ISO-8859-x -DREPLACE=ISO-8859-6 -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/ISO-8859/ISO-8859.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-7.src" -DREGEX=ISO-8859-x -DREPLACE=ISO-8859-7 -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/ISO-8859/ISO-8859.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-8.src" -DREGEX=ISO-8859-x -DREPLACE=ISO-8859-8 -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/ISO-8859/ISO-8859.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-9.src" -DREGEX=ISO-8859-x -DREPLACE=ISO-8859-9 -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/ISO-8859/ISO-8859.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-11.src" -DREGEX=ISO-8859-x -DREPLACE=ISO-8859-11 -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/ISO-8859/ISO-8859.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-15.src" -DREGEX=ISO-8859-x -DREPLACE=ISO-8859-15 -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/ISO-8859/ISO-8859-1.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-1.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/ISO-8859/ISO-8859-2.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-2.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/ISO-8859/ISO-8859-3.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-3.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/ISO-8859/ISO-8859-4.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-4.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/ISO-8859/ISO-8859-5.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-5.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/ISO-8859/ISO-8859-6.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-6.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/ISO-8859/ISO-8859-7.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-7.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/ISO-8859/ISO-8859-8.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-8.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/ISO-8859/ISO-8859-9.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-9.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/ISO-8859/ISO-8859-11.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-11.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/ISO-8859/ISO-8859-15.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO-8859-15.src"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/ISO646/ISO646.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO646-US.src" -DREGEX=ISO646-x -DREPLACE=ISO646-US -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/ISO646/ISO646-US.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/ISO646-US.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/MISC/JISX0201-KANA.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/MISC/JISX0201-KANA.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/MISC/JISX0208@1990.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/MISC/JISX0208@1990.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/MISC/Shift_JIS.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/MISC/Shift_JIS.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/MISC/JISX0212.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/MISC/JISX0212.src"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/UTF/UTF.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp01.src" -DREGEX=UTF-mod -DREPLACE=UTF1632 -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/UTF/UTF.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp03.src" -DREGEX=UTF-mod -DREPLACE=UTF8 -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp01.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp04.src" -DREGEX=UTF-x -DREPLACE=UTF-16-INTERNAL -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp01.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp05.src" -DREGEX=UTF-x -DREPLACE=UTF-16-SWAPPED -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp01.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp06.src" -DREGEX=UTF-x -DREPLACE=UTF-16 -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp01.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp07.src" -DREGEX=UTF-x -DREPLACE=UTF-16BE -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp01.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp08.src" -DREGEX=UTF-x -DREPLACE=UTF-16LE -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp01.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp09.src" -DREGEX=UTF-x -DREPLACE=UTF-32-INTERNAL -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp01.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp10.src" -DREGEX=UTF-x -DREPLACE=UTF-32-SWAPPED -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp01.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp11.src" -DREGEX=UTF-x -DREPLACE=UTF-32 -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp01.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp12.src" -DREGEX=UTF-x -DREPLACE=UTF-32BE -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp01.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp13.src" -DREGEX=UTF-x -DREPLACE=UTF-32LE -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp03.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp15.src" -DREGEX=UTF-x -DREPLACE=UTF-8 -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp04.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-16-INTERNAL.src" -DREGEX=UTF-var -DREPLACE=utf16,internal,force -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp05.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-16-SWAPPED.src" -DREGEX=UTF-var -DREPLACE=utf16,swapped,force -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp06.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-16.src" -DREGEX=UTF-var -DREPLACE=utf16 -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp07.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-16BE.src" -DREGEX=UTF-var -DREPLACE=utf16,big,force -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp08.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-16LE.src" -DREGEX=UTF-var -DREPLACE=utf16,little,force -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp09.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-32-INTERNAL.src" -DREGEX=UTF-var -DREPLACE=utf32,internal,force -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp10.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-32-SWAPPED.src" -DREGEX=UTF-var -DREPLACE=utf32,swapped,force -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp11.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-32.src" -DREGEX=UTF-var -DREPLACE=utf32 -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp12.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-32BE.src" -DREGEX=UTF-var -DREPLACE=utf32,big,force -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp13.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-32LE.src" -DREGEX=UTF-var -DREPLACE=utf32,little,force -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DINFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/temp15.src" -DOUTFILE="D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-8.src" -DREGEX=UTF-var -DREPLACE=utf8 -P "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/replace.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/UTF/UTF-16-INTERNAL.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-16-INTERNAL.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/UTF/UTF-16-SWAPPED.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-16-SWAPPED.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/UTF/UTF-16.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-16.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/UTF/UTF-16BE.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-16BE.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/UTF/UTF-16LE.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-16LE.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/UTF/UTF-32-INTERNAL.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-32-INTERNAL.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/UTF/UTF-32-SWAPPED.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-32-SWAPPED.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/UTF/UTF-32.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-32.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/UTF/UTF-32BE.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-32BE.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/UTF/UTF-32LE.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-32LE.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\mkesdb.exe -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/UTF/UTF-8.esdb" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/UTF-8.src"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\mkesdb.exe -m -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/esdb.dir.db" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/esdb.dir"
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\mkesdb.exe -m -o "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/data/esdb/esdb.alias.db" "D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/esdb/esdb.alias"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\oficonv\datasrc\CMakeFiles\oficonv_data_files</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\oficonv\datasrc\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8 -BD:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc --check-stamp-file D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\oficonv\datasrc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8 -BD:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc --check-stamp-file D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\oficonv\datasrc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8 -BD:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc --check-stamp-file D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\oficonv\datasrc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/datasrc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8 -BD:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc --check-stamp-file D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/oficonv/datasrc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\oficonv\datasrc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\oficonv\datasrc\CMakeFiles\oficonv_data_files">
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\ZERO_CHECK.vcxproj">
+      <Project>{9FA95D2F-2D56-3762-BBB5-3BB7D10895DD}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\oficonv\apps\mkcsmapper.vcxproj">
+      <Project>{B2F3A85A-86AE-39C8-BE89-06A8D8BF8DE9}</Project>
+      <Name>mkcsmapper</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\oficonv\apps\mkesdb.vcxproj">
+      <Project>{8DD9D490-58A7-304B-A196-8D46EB209DCE}</Project>
+      <Name>mkesdb</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

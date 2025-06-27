@@ -1,0 +1,30 @@
+^D:\CYBERMED\DADDY\DEPENDENCY\SDK-VTK-9.4.2\BUILD_MSVC\CMAKEFILES\CA9AA9FED93D79DD9D626753235B306A\VTKIOMOTIONFX-HIERARCHY.TXT.RULE
+setlocal
+..\..\bin\Debug\vtkWrapHierarchy-9.4d.exe -MF D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/IO/MotionFX/CMakeFiles/vtkIOMotionFX-hierarchy.txt.Debug.d @D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/IO/MotionFX/CMakeFiles/vtkIOMotionFX-hierarchy.Debug.args -o D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/vtk-9.4/hierarchy/VTK/vtkIOMotionFX-hierarchy.txt D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/IO/MotionFX/CMakeFiles/vtkIOMotionFX-hierarchy.data @D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/IO/MotionFX/CMakeFiles/vtkIOMotionFX-hierarchy.depends.args
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_transform_depfile "Visual Studio 17 2022" MSBuildAdditionalInputs D:/cybermed/daddy/dependency/sdk-VTK-9.4.2 D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/IO/MotionFX D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/IO/MotionFX D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/IO/MotionFX/CMakeFiles/vtkIOMotionFX-hierarchy.txt.Debug.d D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/CMakeFiles/d/035a7acaf49f85da35bac030792345bc1e043ba58790574be36a6552a886d2cc.AdditionalInputs
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CYBERMED\DADDY\DEPENDENCY\SDK-VTK-9.4.2\BUILD_MSVC\CMAKEFILES\6D6E56DE94182F6B345977FAC36BE895\VTKIOMOTIONFX-HIERARCHY.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CYBERMED\DADDY\DEPENDENCY\SDK-VTK-9.4.2\IO\MOTIONFX\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/cybermed/daddy/dependency/sdk-VTK-9.4.2 -BD:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc --check-stamp-file D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/IO/MotionFX/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,4 @@
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Rendering\UI\vtkRenderingUIObjectFactory.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Rendering\UI\RenderingUI.dir\Debug\vtkRenderingUIObjectFactory.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\UI\vtkGenericRenderWindowInteractor.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Rendering\UI\RenderingUI.dir\Debug\vtkGenericRenderWindowInteractor.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\UI\vtkWin32HardwareWindow.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Rendering\UI\RenderingUI.dir\Debug\vtkWin32HardwareWindow.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\UI\vtkWin32RenderWindowInteractor.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Rendering\UI\RenderingUI.dir\Debug\vtkWin32RenderWindowInteractor.obj

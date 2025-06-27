@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\ComputationalGeometry\vtkBilinearQuadIntersection.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\ComputationalGeometry\vtkCardinalSpline.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\ComputationalGeometry\vtkKochanekSpline.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\ComputationalGeometry\vtkParametricBohemianDome.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\ComputationalGeometry\vtkParametricBour.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\ComputationalGeometry\vtkParametricBoy.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\ComputationalGeometry\vtkParametricCatalanMinimal.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\ComputationalGeometry\vtkParametricConicSpiral.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\ComputationalGeometry\vtkParametricCrossCap.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\ComputationalGeometry\vtkParametricDini.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\ComputationalGeometry\vtkParametricEllipsoid.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\ComputationalGeometry\vtkParametricEnneper.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\ComputationalGeometry\vtkParametricFigure8Klein.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\ComputationalGeometry\vtkParametricFunction.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\ComputationalGeometry\vtkParametricHenneberg.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\ComputationalGeometry\vtkParametricKlein.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\ComputationalGeometry\vtkParametricKuen.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\ComputationalGeometry\vtkParametricMobius.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\ComputationalGeometry\vtkParametricPluckerConoid.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\ComputationalGeometry\vtkParametricPseudosphere.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\ComputationalGeometry\vtkParametricRandomHills.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\ComputationalGeometry\vtkParametricRoman.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\ComputationalGeometry\vtkParametricSpline.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\ComputationalGeometry\vtkParametricSuperEllipsoid.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\ComputationalGeometry\vtkParametricSuperToroid.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\ComputationalGeometry\vtkParametricTorus.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\ComputationalGeometry\vtkBilinearQuadIntersection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\ComputationalGeometry\vtkCardinalSpline.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\ComputationalGeometry\vtkKochanekSpline.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\ComputationalGeometry\vtkParametricBohemianDome.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\ComputationalGeometry\vtkParametricBour.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\ComputationalGeometry\vtkParametricBoy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\ComputationalGeometry\vtkParametricCatalanMinimal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\ComputationalGeometry\vtkParametricConicSpiral.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\ComputationalGeometry\vtkParametricCrossCap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\ComputationalGeometry\vtkParametricDini.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\ComputationalGeometry\vtkParametricEllipsoid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\ComputationalGeometry\vtkParametricEnneper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\ComputationalGeometry\vtkParametricFigure8Klein.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\ComputationalGeometry\vtkParametricFunction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\ComputationalGeometry\vtkParametricHenneberg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\ComputationalGeometry\vtkParametricKlein.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\ComputationalGeometry\vtkParametricKuen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\ComputationalGeometry\vtkParametricMobius.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\ComputationalGeometry\vtkParametricPluckerConoid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\ComputationalGeometry\vtkParametricPseudosphere.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\ComputationalGeometry\vtkParametricRandomHills.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\ComputationalGeometry\vtkParametricRoman.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\ComputationalGeometry\vtkParametricSpline.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\ComputationalGeometry\vtkParametricSuperEllipsoid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\ComputationalGeometry\vtkParametricSuperToroid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\ComputationalGeometry\vtkParametricTorus.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\ComputationalGeometry\vtkCommonComputationalGeometryModule.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\ComputationalGeometry\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{162D4FFA-EABE-37C8-B497-EF7F0B57E0E3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{F5D6D842-070C-3B59-BC69-A411D94F79A1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

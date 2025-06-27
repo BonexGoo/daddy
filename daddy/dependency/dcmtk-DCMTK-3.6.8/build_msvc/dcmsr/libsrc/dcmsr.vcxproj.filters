@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\libsrc\dsracqcc.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\libsrc\dsrbascc.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\libsrc\dsrc3dcc.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\libsrc\dsrchecc.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\libsrc\dsrcitem.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\libsrc\dsrcodtn.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\libsrc\dsrcodvl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\libsrc\dsrcolcc.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\libsrc\dsrcomcc.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\libsrc\dsrcomtn.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\libsrc\dsrcomvl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\libsrc\dsrcontn.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\libsrc\dsrcsidl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\libsrc\dsrctpl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\libsrc\dsrctxgr.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\libsrc\dsrdattn.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\libsrc\dsrdncsr.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\libsrc\dsrdnflt.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\libsrc\dsrdoc.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\libsrc\dsrdocst.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\libsrc\dsrdoctn.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\libsrc\dsrdoctr.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\libsrc\dsrdtitn.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\libsrc\dsrenhcc.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\libsrc\dsrimgfr.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\libsrc\dsrimgse.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\libsrc\dsrimgtn.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\libsrc\dsrimgvl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\libsrc\dsrimpcc.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\libsrc\dsriodcc.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\libsrc\dsritcsr.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\libsrc\dsrkeycc.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\libsrc\dsrmaccc.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\libsrc\dsrmamcc.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\libsrc\dsrnumtn.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\libsrc\dsrnumvl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\libsrc\dsrpficc.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\libsrc\dsrplicc.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\libsrc\dsrpnmtn.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\libsrc\dsrposcn.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\libsrc\dsrprdcc.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\libsrc\dsrprocc.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\libsrc\dsrrefin.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\libsrc\dsrreftn.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\libsrc\dsrrrdcc.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\libsrc\dsrrsdcc.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\libsrc\dsrrtpl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\libsrc\dsrsaecc.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\libsrc\dsrsc3gr.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\libsrc\dsrsc3tn.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\libsrc\dsrsc3vl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\libsrc\dsrscogr.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\libsrc\dsrscotn.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\libsrc\dsrscovl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\libsrc\dsrsoprf.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\libsrc\dsrspecc.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\libsrc\dsrstpl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\libsrc\dsrstrvl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\libsrc\dsrtcodt.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\libsrc\dsrtcosp.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\libsrc\dsrtcotn.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\libsrc\dsrtcoto.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\libsrc\dsrtcovl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\libsrc\dsrtextn.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\libsrc\dsrtimtn.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\libsrc\dsrtpltn.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\libsrc\dsrtree.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\libsrc\dsrtypes.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\libsrc\dsruidtn.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\libsrc\dsrwavch.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\libsrc\dsrwavtn.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\libsrc\dsrwavvl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\libsrc\dsrxmlc.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\libsrc\dsrxmld.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\libsrc\dsrxrdcc.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\libsrc\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{223CA86B-C79F-3D28-815E-BF4CB8A4A19D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,689 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\4D_api.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\aasincos.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\adjlon.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\auth.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\ctx.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\datum_set.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\datums.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\deriv.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\dmstor.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\ell_set.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\ellps.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\factors.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\fwd.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\gauss.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\generic_inverse.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\geodesic.c">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\init.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\initcache.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\internal.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\inv.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\list.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\log.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\malloc.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\mlfn.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\msfn.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\mutex.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\param.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\phi2.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\pipeline.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\pr_list.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\proj_mdist.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\qsfn.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\release.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\rtodms.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\strerrno.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\strtod.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\tsfn.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\units.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\wkt1_generated_parser.c">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\wkt1_parser.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\wkt2_generated_parser.c">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\wkt2_parser.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\wkt_parser.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\zpoly1.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\proj_json_streaming_writer.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\tracing.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\grids.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\filemanager.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\networkfilemanager.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\sqlite3_utils.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\conversions\axisswap.cpp">
+      <Filter>Source Files\Conversions</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\conversions\cart.cpp">
+      <Filter>Source Files\Conversions</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\conversions\geoc.cpp">
+      <Filter>Source Files\Conversions</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\conversions\geocent.cpp">
+      <Filter>Source Files\Conversions</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\conversions\noop.cpp">
+      <Filter>Source Files\Conversions</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\conversions\topocentric.cpp">
+      <Filter>Source Files\Conversions</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\conversions\set.cpp">
+      <Filter>Source Files\Conversions</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\conversions\unitconvert.cpp">
+      <Filter>Source Files\Conversions</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\aeqd.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\adams.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\gnom.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\laea.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\mod_ster.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\nsper.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\nzmg.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\ortho.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\stere.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\sterea.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\aea.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\bipc.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\bonne.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\eqdc.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\isea.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\ccon.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\imw_p.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\krovak.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\lcc.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\poly.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\rpoly.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\sconics.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\rouss.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\cass.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\cc.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\cea.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\eqc.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\gall.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\labrd.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\lsat.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\misrsom.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\merc.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\mill.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\ocea.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\omerc.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\somerc.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\tcc.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\tcea.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\times.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\tmerc.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\tobmerc.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\airy.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\aitoff.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\august.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\bacon.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\bertin1953.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\chamb.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\hammer.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\lagrng.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\larr.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\lask.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\latlong.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\nicol.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\ob_tran.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\oea.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\tpeqd.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\vandg.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\vandg2.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\vandg4.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\wag7.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\lcca.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\geos.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\boggs.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\collg.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\comill.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\crast.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\denoy.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\eck1.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\eck2.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\eck3.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\eck4.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\eck5.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\fahey.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\fouc_s.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\gins8.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\gstmerc.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\gn_sinu.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\goode.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\igh.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\igh_o.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\hatano.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\loxim.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\mbt_fps.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\mbtfpp.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\mbtfpq.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\moll.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\nell.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\nell_h.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\patterson.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\putp2.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\putp3.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\putp4p.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\putp5.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\putp6.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\qsc.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\robin.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\sch.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\sts.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\urm5.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\urmfps.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\wag2.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\wag3.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\wink1.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\wink2.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\healpix.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\natearth.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\natearth2.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\calcofi.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\eqearth.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\col_urban.cpp">
+      <Filter>Source Files\Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\transformations\affine.cpp">
+      <Filter>Source Files\Transformations</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\transformations\deformation.cpp">
+      <Filter>Source Files\Transformations</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\transformations\helmert.cpp">
+      <Filter>Source Files\Transformations</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\transformations\hgridshift.cpp">
+      <Filter>Source Files\Transformations</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\transformations\horner.cpp">
+      <Filter>Source Files\Transformations</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\transformations\molodensky.cpp">
+      <Filter>Source Files\Transformations</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\transformations\vgridshift.cpp">
+      <Filter>Source Files\Transformations</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\transformations\xyzgridshift.cpp">
+      <Filter>Source Files\Transformations</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\transformations\defmodel.cpp">
+      <Filter>Source Files\Transformations</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\transformations\tinshift.cpp">
+      <Filter>Source Files\Transformations</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\iso19111\static.cpp">
+      <Filter>Source Files\ISO19111</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\iso19111\util.cpp">
+      <Filter>Source Files\ISO19111</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\iso19111\metadata.cpp">
+      <Filter>Source Files\ISO19111</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\iso19111\common.cpp">
+      <Filter>Source Files\ISO19111</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\iso19111\crs.cpp">
+      <Filter>Source Files\ISO19111</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\iso19111\datum.cpp">
+      <Filter>Source Files\ISO19111</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\iso19111\coordinatesystem.cpp">
+      <Filter>Source Files\ISO19111</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\iso19111\io.cpp">
+      <Filter>Source Files\ISO19111</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\iso19111\internal.cpp">
+      <Filter>Source Files\ISO19111</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\iso19111\factory.cpp">
+      <Filter>Source Files\ISO19111</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\iso19111\c_api.cpp">
+      <Filter>Source Files\ISO19111</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\iso19111\operation\concatenatedoperation.cpp">
+      <Filter>Source Files\ISO19111</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\iso19111\operation\coordinateoperationfactory.cpp">
+      <Filter>Source Files\ISO19111</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\iso19111\operation\conversion.cpp">
+      <Filter>Source Files\ISO19111</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\iso19111\operation\esriparammappings.cpp">
+      <Filter>Source Files\ISO19111</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\iso19111\operation\oputils.cpp">
+      <Filter>Source Files\ISO19111</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\iso19111\operation\parammappings.cpp">
+      <Filter>Source Files\ISO19111</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\iso19111\operation\projbasedoperation.cpp">
+      <Filter>Source Files\ISO19111</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\iso19111\operation\singleoperation.cpp">
+      <Filter>Source Files\ISO19111</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\iso19111\operation\transformation.cpp">
+      <Filter>Source Files\ISO19111</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\iso19111\operation\vectorofvaluesparams.cpp">
+      <Filter>Source Files\ISO19111</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\pj_list.h">
+      <Filter>Source Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\proj_internal.h">
+      <Filter>Source Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\wkt1_generated_parser.h">
+      <Filter>Source Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\wkt1_parser.h">
+      <Filter>Source Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\wkt2_generated_parser.h">
+      <Filter>Source Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\wkt2_parser.h">
+      <Filter>Source Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\wkt_parser.hpp">
+      <Filter>Source Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\proj_json_streaming_writer.hpp">
+      <Filter>Source Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\grids.hpp">
+      <Filter>Source Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\filemanager.hpp">
+      <Filter>Source Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\sqlite3_utils.hpp">
+      <Filter>Source Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\libproj\vtklibproj\src\proj_config.h">
+      <Filter>Source Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\proj.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\proj_experimental.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\proj_constants.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\geodesic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\vtk_libproj_mangle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\libproj\vtklibproj\src\vtklibproj_export.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\CMakeLists.txt">
+      <Filter>CMake Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Files">
+      <UniqueIdentifier>{BA3E26BA-51F5-3A34-BFAE-4392A12952AE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{162D4FFA-EABE-37C8-B497-EF7F0B57E0E3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{F5D6D842-070C-3B59-BC69-A411D94F79A1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Conversions">
+      <UniqueIdentifier>{D73E5C74-FE33-35A0-AE98-5D698BD41418}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Core">
+      <UniqueIdentifier>{1B0CEBEA-B651-3E6D-BA62-8090095C2573}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ISO19111">
+      <UniqueIdentifier>{5DBD144E-E889-3E9D-9CFD-378A4DF08E19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Projections">
+      <UniqueIdentifier>{E2FF6B3D-F2FE-3F95-A6A9-1BC93973A43D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Transformations">
+      <UniqueIdentifier>{0A0679BF-ADD8-3931-9A1C-B70BFCF71611}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,984 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{93494B65-C933-3617-8EBA-5AA30A247675}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>CommonDataModel</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CommonDataModel.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">vtkCommonDataModel-9.4d</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CommonDataModel.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">vtkCommonDataModel-9.4</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\bin\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CommonDataModel.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">vtkCommonDataModel-9.4</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\bin\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CommonDataModel.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">vtkCommonDataModel-9.4</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\DataModel;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\Core;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\Core;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\token\vtktoken\token;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\token\vtktoken\token;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\token\vtktoken;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\token\vtktoken;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\nlohmannjson\vtknlohmannjson;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\nlohmannjson\vtknlohmannjson;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\nlohmannjson\vtknlohmannjson\include;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\Math;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\Math;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\kissfft\vtkkissfft;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\kissfft\vtkkissfft;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\Transforms;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\Transforms;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\Misc;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\Misc;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\System;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\System;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\pugixml\vtkpugixml;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\pugixml\vtkpugixml;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\pugixml\vtkpugixml\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Utilities/KWIML" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Utilities/KWIML" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Utilities/KWSys" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Utilities/KWSys" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/ThirdParty/token" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/token" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/ThirdParty/nlohmannjson" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/nlohmannjson" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/ThirdParty/kissfft" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/kissfft" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/ThirdParty/pegtl" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/pegtl" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/ThirdParty/pugixml" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/pugixml" /bigobj /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4251</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;kiss_fft_scalar=double;KISSFFT_DLL_IMPORT=1;CMAKE_INTDIR="Debug";CommonDataModel_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;kiss_fft_scalar=double;KISSFFT_DLL_IMPORT=1;CMAKE_INTDIR=\"Debug\";CommonDataModel_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\DataModel;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\Core;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\Core;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\token\vtktoken\token;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\token\vtktoken\token;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\token\vtktoken;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\token\vtktoken;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\nlohmannjson\vtknlohmannjson;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\nlohmannjson\vtknlohmannjson;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\nlohmannjson\vtknlohmannjson\include;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\Math;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\Math;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\kissfft\vtkkissfft;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\kissfft\vtkkissfft;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\Transforms;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\Transforms;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\Misc;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\Misc;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\System;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\System;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\pugixml\vtkpugixml;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\pugixml\vtkpugixml;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\pugixml\vtkpugixml\src;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWIML;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Utilities\KWIML;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWSys;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Utilities\KWSys;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\token;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\token;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\nlohmannjson;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\nlohmannjson;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\kissfft;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\kissfft;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\pegtl;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\pegtl;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\pugixml;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\pugixml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\DataModel;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\Core;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\Core;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\token\vtktoken\token;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\token\vtktoken\token;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\token\vtktoken;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\token\vtktoken;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\nlohmannjson\vtknlohmannjson;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\nlohmannjson\vtknlohmannjson;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\nlohmannjson\vtknlohmannjson\include;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\Math;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\Math;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\kissfft\vtkkissfft;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\kissfft\vtkkissfft;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\Transforms;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\Transforms;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\Misc;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\Misc;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\System;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\System;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\pugixml\vtkpugixml;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\pugixml\vtkpugixml;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\pugixml\vtkpugixml\src;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWIML;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Utilities\KWIML;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWSys;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Utilities\KWSys;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\token;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\token;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\nlohmannjson;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\nlohmannjson;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\kissfft;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\kissfft;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\pegtl;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\pegtl;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\pugixml;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\pugixml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\lib\Debug\vtkCommonTransforms-9.4d.lib;..\..\lib\Debug\vtkCommonMisc-9.4d.lib;..\..\lib\Debug\vtkCommonSystem-9.4d.lib;..\..\lib\Debug\vtkpugixml-9.4d.lib;..\..\lib\Debug\vtkCommonMath-9.4d.lib;..\..\lib\Debug\vtkkissfft-9.4d.lib;..\..\lib\Debug\vtkCommonCore-9.4d.lib;..\..\lib\Debug\vtktoken-9.4d.lib;..\..\lib\Debug\vtksys-9.4d.lib;ws2_32.lib;dbghelp.lib;psapi.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Debug/vtkCommonDataModel-9.4d.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/bin/Debug/vtkCommonDataModel-9.4d.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\DataModel;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\Core;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\Core;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\token\vtktoken\token;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\token\vtktoken\token;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\token\vtktoken;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\token\vtktoken;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\nlohmannjson\vtknlohmannjson;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\nlohmannjson\vtknlohmannjson;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\nlohmannjson\vtknlohmannjson\include;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\Math;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\Math;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\kissfft\vtkkissfft;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\kissfft\vtkkissfft;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\Transforms;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\Transforms;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\Misc;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\Misc;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\System;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\System;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\pugixml\vtkpugixml;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\pugixml\vtkpugixml;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\pugixml\vtkpugixml\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Utilities/KWIML" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Utilities/KWIML" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Utilities/KWSys" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Utilities/KWSys" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/ThirdParty/token" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/token" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/ThirdParty/nlohmannjson" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/nlohmannjson" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/ThirdParty/kissfft" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/kissfft" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/ThirdParty/pegtl" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/pegtl" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/ThirdParty/pugixml" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/pugixml" /bigobj /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DisableSpecificWarnings>4251</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;kiss_fft_scalar=double;KISSFFT_DLL_IMPORT=1;CMAKE_INTDIR="Release";CommonDataModel_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;kiss_fft_scalar=double;KISSFFT_DLL_IMPORT=1;CMAKE_INTDIR=\"Release\";CommonDataModel_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\DataModel;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\Core;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\Core;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\token\vtktoken\token;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\token\vtktoken\token;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\token\vtktoken;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\token\vtktoken;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\nlohmannjson\vtknlohmannjson;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\nlohmannjson\vtknlohmannjson;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\nlohmannjson\vtknlohmannjson\include;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\Math;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\Math;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\kissfft\vtkkissfft;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\kissfft\vtkkissfft;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\Transforms;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\Transforms;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\Misc;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\Misc;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\System;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\System;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\pugixml\vtkpugixml;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\pugixml\vtkpugixml;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\pugixml\vtkpugixml\src;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWIML;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Utilities\KWIML;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWSys;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Utilities\KWSys;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\token;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\token;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\nlohmannjson;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\nlohmannjson;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\kissfft;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\kissfft;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\pegtl;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\pegtl;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\pugixml;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\pugixml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\DataModel;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\Core;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\Core;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\token\vtktoken\token;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\token\vtktoken\token;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\token\vtktoken;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\token\vtktoken;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\nlohmannjson\vtknlohmannjson;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\nlohmannjson\vtknlohmannjson;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\nlohmannjson\vtknlohmannjson\include;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\Math;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\Math;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\kissfft\vtkkissfft;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\kissfft\vtkkissfft;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\Transforms;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\Transforms;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\Misc;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\Misc;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\System;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\System;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\pugixml\vtkpugixml;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\pugixml\vtkpugixml;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\pugixml\vtkpugixml\src;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWIML;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Utilities\KWIML;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWSys;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Utilities\KWSys;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\token;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\token;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\nlohmannjson;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\nlohmannjson;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\kissfft;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\kissfft;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\pegtl;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\pegtl;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\pugixml;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\pugixml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\lib\Release\vtkCommonTransforms-9.4.lib;..\..\lib\Release\vtkCommonMisc-9.4.lib;..\..\lib\Release\vtkCommonSystem-9.4.lib;..\..\lib\Release\vtkpugixml-9.4.lib;..\..\lib\Release\vtkCommonMath-9.4.lib;..\..\lib\Release\vtkkissfft-9.4.lib;..\..\lib\Release\vtkCommonCore-9.4.lib;..\..\lib\Release\vtktoken-9.4.lib;..\..\lib\Release\vtksys-9.4.lib;ws2_32.lib;dbghelp.lib;psapi.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Release/vtkCommonDataModel-9.4.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/bin/Release/vtkCommonDataModel-9.4.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\DataModel;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\Core;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\Core;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\token\vtktoken\token;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\token\vtktoken\token;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\token\vtktoken;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\token\vtktoken;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\nlohmannjson\vtknlohmannjson;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\nlohmannjson\vtknlohmannjson;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\nlohmannjson\vtknlohmannjson\include;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\Math;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\Math;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\kissfft\vtkkissfft;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\kissfft\vtkkissfft;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\Transforms;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\Transforms;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\Misc;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\Misc;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\System;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\System;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\pugixml\vtkpugixml;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\pugixml\vtkpugixml;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\pugixml\vtkpugixml\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Utilities/KWIML" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Utilities/KWIML" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Utilities/KWSys" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Utilities/KWSys" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/ThirdParty/token" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/token" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/ThirdParty/nlohmannjson" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/nlohmannjson" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/ThirdParty/kissfft" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/kissfft" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/ThirdParty/pegtl" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/pegtl" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/ThirdParty/pugixml" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/pugixml" /bigobj /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DisableSpecificWarnings>4251</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;kiss_fft_scalar=double;KISSFFT_DLL_IMPORT=1;CMAKE_INTDIR="MinSizeRel";CommonDataModel_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;kiss_fft_scalar=double;KISSFFT_DLL_IMPORT=1;CMAKE_INTDIR=\"MinSizeRel\";CommonDataModel_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\DataModel;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\Core;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\Core;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\token\vtktoken\token;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\token\vtktoken\token;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\token\vtktoken;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\token\vtktoken;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\nlohmannjson\vtknlohmannjson;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\nlohmannjson\vtknlohmannjson;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\nlohmannjson\vtknlohmannjson\include;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\Math;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\Math;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\kissfft\vtkkissfft;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\kissfft\vtkkissfft;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\Transforms;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\Transforms;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\Misc;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\Misc;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\System;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\System;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\pugixml\vtkpugixml;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\pugixml\vtkpugixml;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\pugixml\vtkpugixml\src;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWIML;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Utilities\KWIML;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWSys;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Utilities\KWSys;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\token;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\token;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\nlohmannjson;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\nlohmannjson;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\kissfft;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\kissfft;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\pegtl;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\pegtl;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\pugixml;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\pugixml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\DataModel;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\Core;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\Core;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\token\vtktoken\token;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\token\vtktoken\token;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\token\vtktoken;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\token\vtktoken;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\nlohmannjson\vtknlohmannjson;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\nlohmannjson\vtknlohmannjson;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\nlohmannjson\vtknlohmannjson\include;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\Math;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\Math;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\kissfft\vtkkissfft;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\kissfft\vtkkissfft;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\Transforms;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\Transforms;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\Misc;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\Misc;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\System;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\System;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\pugixml\vtkpugixml;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\pugixml\vtkpugixml;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\pugixml\vtkpugixml\src;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWIML;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Utilities\KWIML;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWSys;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Utilities\KWSys;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\token;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\token;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\nlohmannjson;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\nlohmannjson;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\kissfft;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\kissfft;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\pegtl;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\pegtl;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\pugixml;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\pugixml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\lib\MinSizeRel\vtkCommonTransforms-9.4.lib;..\..\lib\MinSizeRel\vtkCommonMisc-9.4.lib;..\..\lib\MinSizeRel\vtkCommonSystem-9.4.lib;..\..\lib\MinSizeRel\vtkpugixml-9.4.lib;..\..\lib\MinSizeRel\vtkCommonMath-9.4.lib;..\..\lib\MinSizeRel\vtkkissfft-9.4.lib;..\..\lib\MinSizeRel\vtkCommonCore-9.4.lib;..\..\lib\MinSizeRel\vtktoken-9.4.lib;..\..\lib\MinSizeRel\vtksys-9.4.lib;ws2_32.lib;dbghelp.lib;psapi.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/MinSizeRel/vtkCommonDataModel-9.4.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/bin/MinSizeRel/vtkCommonDataModel-9.4.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\DataModel;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\Core;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\Core;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\token\vtktoken\token;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\token\vtktoken\token;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\token\vtktoken;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\token\vtktoken;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\nlohmannjson\vtknlohmannjson;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\nlohmannjson\vtknlohmannjson;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\nlohmannjson\vtknlohmannjson\include;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\Math;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\Math;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\kissfft\vtkkissfft;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\kissfft\vtkkissfft;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\Transforms;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\Transforms;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\Misc;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\Misc;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\System;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\System;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\pugixml\vtkpugixml;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\pugixml\vtkpugixml;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\pugixml\vtkpugixml\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Utilities/KWIML" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Utilities/KWIML" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Utilities/KWSys" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Utilities/KWSys" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/ThirdParty/token" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/token" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/ThirdParty/nlohmannjson" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/nlohmannjson" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/ThirdParty/kissfft" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/kissfft" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/ThirdParty/pegtl" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/pegtl" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/ThirdParty/pugixml" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/pugixml" /bigobj /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4251</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;kiss_fft_scalar=double;KISSFFT_DLL_IMPORT=1;CMAKE_INTDIR="RelWithDebInfo";CommonDataModel_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;kiss_fft_scalar=double;KISSFFT_DLL_IMPORT=1;CMAKE_INTDIR=\"RelWithDebInfo\";CommonDataModel_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\DataModel;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\Core;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\Core;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\token\vtktoken\token;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\token\vtktoken\token;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\token\vtktoken;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\token\vtktoken;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\nlohmannjson\vtknlohmannjson;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\nlohmannjson\vtknlohmannjson;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\nlohmannjson\vtknlohmannjson\include;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\Math;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\Math;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\kissfft\vtkkissfft;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\kissfft\vtkkissfft;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\Transforms;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\Transforms;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\Misc;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\Misc;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\System;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\System;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\pugixml\vtkpugixml;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\pugixml\vtkpugixml;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\pugixml\vtkpugixml\src;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWIML;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Utilities\KWIML;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWSys;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Utilities\KWSys;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\token;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\token;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\nlohmannjson;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\nlohmannjson;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\kissfft;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\kissfft;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\pegtl;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\pegtl;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\pugixml;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\pugixml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\DataModel;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\Core;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\Core;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\token\vtktoken\token;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\token\vtktoken\token;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\token\vtktoken;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\token\vtktoken;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\nlohmannjson\vtknlohmannjson;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\nlohmannjson\vtknlohmannjson;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\nlohmannjson\vtknlohmannjson\include;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\Math;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\Math;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\kissfft\vtkkissfft;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\kissfft\vtkkissfft;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\Transforms;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\Transforms;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\Misc;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\Misc;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\System;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\System;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\pugixml\vtkpugixml;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\pugixml\vtkpugixml;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\pugixml\vtkpugixml\src;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWIML;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Utilities\KWIML;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWSys;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Utilities\KWSys;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\token;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\token;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\nlohmannjson;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\nlohmannjson;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\kissfft;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\kissfft;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\pegtl;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\pegtl;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\pugixml;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\pugixml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\lib\RelWithDebInfo\vtkCommonTransforms-9.4.lib;..\..\lib\RelWithDebInfo\vtkCommonMisc-9.4.lib;..\..\lib\RelWithDebInfo\vtkCommonSystem-9.4.lib;..\..\lib\RelWithDebInfo\vtkpugixml-9.4.lib;..\..\lib\RelWithDebInfo\vtkCommonMath-9.4.lib;..\..\lib\RelWithDebInfo\vtkkissfft-9.4.lib;..\..\lib\RelWithDebInfo\vtkCommonCore-9.4.lib;..\..\lib\RelWithDebInfo\vtktoken-9.4.lib;..\..\lib\RelWithDebInfo\vtksys-9.4.lib;ws2_32.lib;dbghelp.lib;psapi.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/RelWithDebInfo/vtkCommonDataModel-9.4.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/bin/RelWithDebInfo/vtkCommonDataModel-9.4.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Common/DataModel/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/cybermed/daddy/dependency/sdk-VTK-9.4.2 -BD:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc --check-stamp-file D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Common/DataModel/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.31\Modules\exportheader.cmake.in;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\CMake\vtkTypeLists.cmake;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkDataObjectImplicitBackendInstantiate.cxx.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\DataModel\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Common/DataModel/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/cybermed/daddy/dependency/sdk-VTK-9.4.2 -BD:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc --check-stamp-file D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Common/DataModel/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.31\Modules\exportheader.cmake.in;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\CMake\vtkTypeLists.cmake;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkDataObjectImplicitBackendInstantiate.cxx.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\DataModel\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Common/DataModel/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/cybermed/daddy/dependency/sdk-VTK-9.4.2 -BD:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc --check-stamp-file D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Common/DataModel/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.31\Modules\exportheader.cmake.in;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\CMake\vtkTypeLists.cmake;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkDataObjectImplicitBackendInstantiate.cxx.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\DataModel\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Common/DataModel/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/cybermed/daddy/dependency/sdk-VTK-9.4.2 -BD:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc --check-stamp-file D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Common/DataModel/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.31\Modules\exportheader.cmake.in;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\CMake\vtkTypeLists.cmake;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkDataObjectImplicitBackendInstantiate.cxx.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\DataModel\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\DataModel\vtkDataObjectImplicitBackendInstantiateChar.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\DataModel\vtkDataObjectImplicitBackendInstantiateDouble.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\DataModel\vtkDataObjectImplicitBackendInstantiateFloat.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\DataModel\vtkDataObjectImplicitBackendInstantiateInt.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\DataModel\vtkDataObjectImplicitBackendInstantiateLong.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\DataModel\vtkDataObjectImplicitBackendInstantiateLongLong.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\DataModel\vtkDataObjectImplicitBackendInstantiateShort.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\DataModel\vtkDataObjectImplicitBackendInstantiateSignedChar.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\DataModel\vtkDataObjectImplicitBackendInstantiateUnsignedChar.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\DataModel\vtkDataObjectImplicitBackendInstantiateUnsignedInt.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\DataModel\vtkDataObjectImplicitBackendInstantiateUnsignedLong.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\DataModel\vtkDataObjectImplicitBackendInstantiateUnsignedLongLong.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\DataModel\vtkDataObjectImplicitBackendInstantiateUnsignedShort.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkAMRBox.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkAMRUtilities.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkAbstractCellArray.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkAbstractCellLinks.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkAbstractCellLocator.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkAbstractElectronicData.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkAbstractPointLocator.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkAdjacentVertexIterator.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkAnimationScene.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkAnnotation.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkAnnotationLayers.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkAnnulus.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkArrayData.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkAtom.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkAttributesErrorMetric.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkBSPCuts.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkBSPIntersections.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkBezierCurve.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkBezierHexahedron.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkBezierInterpolation.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkBezierQuadrilateral.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkBezierTetra.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkBezierTriangle.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkBezierWedge.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkBiQuadraticQuad.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkBiQuadraticQuadraticHexahedron.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkBiQuadraticQuadraticWedge.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkBiQuadraticTriangle.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkBond.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkBoundingBox.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkBox.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCell.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCell3D.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellArray.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellArrayIterator.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellAttribute.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellAttributeCalculator.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellData.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellGrid.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellGridBoundsQuery.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellGridCopyQuery.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellGridEvaluator.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellGridRangeQuery.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellGridQuery.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellGridResponders.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellGridSidesCache.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellGridSidesQuery.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellIterator.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellLinks.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellLocator.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellLocatorStrategy.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellMetadata.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellTreeLocator.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellTypes.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkClosestNPointsStrategy.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkClosestPointStrategy.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCompositeDataIterator.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCompositeDataSet.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCone.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkConvexPointSet.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCoordinateFrame.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCubicLine.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCylinder.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkDataAssembly.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkDataAssemblyUtilities.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkDataObject.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkDataObjectCollection.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkDataObjectTree.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkDataObjectTreeIterator.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkDataObjectTypes.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkDataSet.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkDataSetAttributes.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkDataSetAttributesFieldList.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkDataSetCellIterator.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkDataSetCollection.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkDirectedAcyclicGraph.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkDirectedGraph.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkDistributedGraphHelper.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkEdgeListIterator.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkEdgeTable.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkEmptyCell.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkExplicitStructuredGrid.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkExtractStructuredGridHelper.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkFieldData.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkFindCellStrategy.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkGenericAdaptorCell.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkGenericAttribute.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkGenericAttributeCollection.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkGenericCell.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkGenericCellIterator.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkGenericCellTessellator.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkGenericDataSet.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkGenericEdgeTable.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkGenericInterpolatedVelocityField.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkGenericPointIterator.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkGenericSubdivisionErrorMetric.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkGeometricErrorMetric.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkGraph.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkGraphEdge.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkGraphInternals.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHexagonalPrism.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHexahedron.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHierarchicalBoxDataSet.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHigherOrderCurve.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHigherOrderHexahedron.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHigherOrderInterpolation.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHigherOrderQuadrilateral.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHigherOrderTetra.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHigherOrderTriangle.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHigherOrderWedge.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTree.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGrid.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridLocator.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridGeometricLocator.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridNonOrientedCursor.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridNonOrientedGeometryCursor.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridNonOrientedUnlimitedGeometryCursor.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridNonOrientedMooreSuperCursor.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridNonOrientedMooreSuperCursorLight.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridNonOrientedUnlimitedMooreSuperCursor.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridNonOrientedSuperCursor.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridNonOrientedSuperCursorLight.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridNonOrientedUnlimitedSuperCursor.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridNonOrientedVonNeumannSuperCursor.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridNonOrientedVonNeumannSuperCursorLight.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridOrientedCursor.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridOrientedGeometryCursor.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkImageData.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkImageIterator.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkImageTransform.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkImplicitBoolean.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkImplicitDataSet.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkImplicitFunction.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkImplicitFunctionCollection.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkImplicitHalo.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkImplicitSelectionLoop.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkImplicitSum.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkImplicitVolume.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkImplicitWindowFunction.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkInEdgeIterator.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkIncrementalOctreeNode.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkIncrementalOctreePointLocator.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkIncrementalPointLocator.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkInformationQuadratureSchemeDefinitionVectorKey.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkIterativeClosestPointTransform.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkKdNode.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkKdTree.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkKdTreePointLocator.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkLagrangeCurve.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkLagrangeHexahedron.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkLagrangeInterpolation.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkLagrangeQuadrilateral.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkLagrangeTetra.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkLagrangeTriangle.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkLagrangeWedge.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkLine.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkLocator.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkMarchingCubesTriangleCases.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkMarchingCubesPolygonCases.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkMarchingSquaresLineCases.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkMeanValueCoordinatesInterpolator.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkMergePoints.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkMolecule.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkMultiBlockDataSet.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkMultiPieceDataSet.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkMutableDirectedGraph.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkMutableUndirectedGraph.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkNonLinearCell.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkNonMergingPointLocator.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkOctreePointLocator.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkOctreePointLocatorNode.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkOrderedTriangulator.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkOutEdgeIterator.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPartitionedDataSet.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPartitionedDataSetCollection.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPath.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPentagonalPrism.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPerlinNoise.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPiecewiseFunction.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPixel.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPixelExtent.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPixelTransfer.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPlane.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPlaneCollection.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPlanes.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPlanesIntersection.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPointData.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPointLocator.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPointSet.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPointSetCellIterator.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPointsProjectedHull.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPolyData.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPolyDataCollection.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPolyLine.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPolyPlane.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPolyVertex.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPolygon.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPolyhedron.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPolyhedronUtilities.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPyramid.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkQuad.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkQuadraticEdge.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkQuadraticHexahedron.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkQuadraticLinearQuad.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkQuadraticLinearWedge.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkQuadraticPolygon.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkQuadraticPyramid.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkQuadraticQuad.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkQuadraticTetra.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkQuadraticTriangle.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkQuadraticWedge.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkQuadratureSchemeDefinition.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkQuadric.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkRectilinearGrid.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkReebGraph.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkReebGraphSimplificationMetric.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkSelection.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkSelectionNode.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkSimpleCellTessellator.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkSmoothErrorMetric.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkSortFieldData.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkSphere.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkSpheres.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkSphericalPointIterator.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkSpline.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkStaticCellLinks.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkStaticCellLocator.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkStaticPointLocator.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkStaticPointLocator2D.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkStructuredCellArray.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkStructuredData.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkStructuredExtent.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkStructuredGrid.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkStructuredPoints.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkStructuredPointsCollection.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkSuperquadric.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkTable.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkTetra.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkTree.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkTreeBFSIterator.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkTreeDFSIterator.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkTreeIterator.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkTriQuadraticHexahedron.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkTriQuadraticPyramid.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkTriangle.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkTriangleStrip.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkUndirectedGraph.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkUniformGrid.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkUniformHyperTreeGrid.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkUnstructuredGrid.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkUnstructuredGridBase.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkUnstructuredGridCellIterator.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkVertex.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkVertexListIterator.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkVoxel.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkWedge.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkXMLDataElement.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkAMRDataInternals.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkAMRInformation.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkNonOverlappingAMR.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkOverlappingAMR.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkUniformGridAMR.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkUniformGridAMRDataIterator.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridEntry.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridGeometryEntry.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridGeometryUnlimitedEntry.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridGeometryLevelEntry.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridGeometryUnlimitedLevelEntry.cxx" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridLevelEntry.cxx" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkDataObjectImplicitBackendInterface.txx" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkImageIterator.txx" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCompositeDataSet.txx" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkAngularPeriodicDataArray.txx" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkArrayListTemplate.txx" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkMappedUnstructuredGrid.txx" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkMappedUnstructuredGridCellIterator.txx" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPeriodicDataArray.txx" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkStaticCellLinksTemplate.txx" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkStaticEdgeLocatorTemplate.txx" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkStaticFaceHashLinksTemplate.txx" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellGridResponder.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellGridResponderBase.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellType.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkColor.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkDataAssemblyVisitor.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkDataObjectTreeInternals.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridScales.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridTools.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkIntersectionCounter.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkLabelMapLookup.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkRect.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkVector.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkVectorOperators.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkAMRBox.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkAMRUtilities.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkAbstractCellArray.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkAbstractCellLinks.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkAbstractCellLocator.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkAbstractElectronicData.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkAbstractPointLocator.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkAdjacentVertexIterator.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkAnimationScene.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkAnnotation.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkAnnotationLayers.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkAnnulus.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkArrayData.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkAtom.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkAttributesErrorMetric.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkBSPCuts.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkBSPIntersections.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkBezierCurve.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkBezierHexahedron.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkBezierInterpolation.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkBezierQuadrilateral.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkBezierTetra.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkBezierTriangle.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkBezierWedge.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkBiQuadraticQuad.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkBiQuadraticQuadraticHexahedron.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkBiQuadraticQuadraticWedge.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkBiQuadraticTriangle.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkBond.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkBoundingBox.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkBox.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCell.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCell3D.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellArray.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellArrayIterator.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellAttribute.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellAttributeCalculator.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellData.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellGrid.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellGridBoundsQuery.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellGridCopyQuery.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellGridEvaluator.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellGridRangeQuery.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellGridQuery.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellGridResponders.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellGridSidesCache.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellGridSidesQuery.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellIterator.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellLinks.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellLocator.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellLocatorStrategy.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellMetadata.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellTreeLocator.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCellTypes.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkClosestNPointsStrategy.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkClosestPointStrategy.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCompositeDataIterator.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCompositeDataSet.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCone.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkConvexPointSet.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCoordinateFrame.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCubicLine.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCylinder.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkDataAssembly.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkDataAssemblyUtilities.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkDataObject.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkDataObjectCollection.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkDataObjectTree.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkDataObjectTreeIterator.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkDataObjectTypes.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkDataSet.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkDataSetAttributes.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkDataSetAttributesFieldList.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkDataSetCellIterator.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkDataSetCollection.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkDirectedAcyclicGraph.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkDirectedGraph.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkDistributedGraphHelper.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkEdgeListIterator.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkEdgeTable.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkEmptyCell.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkExplicitStructuredGrid.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkExtractStructuredGridHelper.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkFieldData.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkFindCellStrategy.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkGenericAdaptorCell.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkGenericAttribute.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkGenericAttributeCollection.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkGenericCell.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkGenericCellIterator.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkGenericCellTessellator.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkGenericDataSet.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkGenericEdgeTable.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkGenericInterpolatedVelocityField.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkGenericPointIterator.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkGenericSubdivisionErrorMetric.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkGeometricErrorMetric.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkGraph.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkGraphEdge.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkGraphInternals.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHexagonalPrism.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHexahedron.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHierarchicalBoxDataSet.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHigherOrderCurve.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHigherOrderHexahedron.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHigherOrderInterpolation.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHigherOrderQuadrilateral.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHigherOrderTetra.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHigherOrderTriangle.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHigherOrderWedge.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTree.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGrid.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridLocator.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridGeometricLocator.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridNonOrientedCursor.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridNonOrientedGeometryCursor.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridNonOrientedUnlimitedGeometryCursor.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridNonOrientedMooreSuperCursor.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridNonOrientedMooreSuperCursorLight.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridNonOrientedUnlimitedMooreSuperCursor.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridNonOrientedSuperCursor.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridNonOrientedSuperCursorLight.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridNonOrientedUnlimitedSuperCursor.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridNonOrientedVonNeumannSuperCursor.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridNonOrientedVonNeumannSuperCursorLight.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridOrientedCursor.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridOrientedGeometryCursor.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkImageData.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkImageIterator.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkImageTransform.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkImplicitBoolean.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkImplicitDataSet.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkImplicitFunction.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkImplicitFunctionCollection.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkImplicitHalo.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkImplicitSelectionLoop.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkImplicitSum.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkImplicitVolume.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkImplicitWindowFunction.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkInEdgeIterator.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkIncrementalOctreeNode.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkIncrementalOctreePointLocator.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkIncrementalPointLocator.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkInformationQuadratureSchemeDefinitionVectorKey.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkIterativeClosestPointTransform.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkKdNode.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkKdTree.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkKdTreePointLocator.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkLagrangeCurve.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkLagrangeHexahedron.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkLagrangeInterpolation.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkLagrangeQuadrilateral.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkLagrangeTetra.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkLagrangeTriangle.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkLagrangeWedge.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkLine.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkLocator.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkMarchingCubesTriangleCases.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkMarchingCubesPolygonCases.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkMarchingSquaresLineCases.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkMeanValueCoordinatesInterpolator.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkMergePoints.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkMolecule.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkMultiBlockDataSet.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkMultiPieceDataSet.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkMutableDirectedGraph.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkMutableUndirectedGraph.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkNonLinearCell.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkNonMergingPointLocator.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkOctreePointLocator.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkOctreePointLocatorNode.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkOrderedTriangulator.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkOutEdgeIterator.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPartitionedDataSet.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPartitionedDataSetCollection.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPath.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPentagonalPrism.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPerlinNoise.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPiecewiseFunction.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPixel.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPixelExtent.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPixelTransfer.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPlane.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPlaneCollection.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPlanes.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPlanesIntersection.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPointData.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPointLocator.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPointSet.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPointSetCellIterator.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPointsProjectedHull.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPolyData.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPolyDataCollection.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPolyLine.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPolyPlane.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPolyVertex.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPolygon.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPolyhedron.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPolyhedronUtilities.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPyramid.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkQuad.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkQuadraticEdge.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkQuadraticHexahedron.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkQuadraticLinearQuad.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkQuadraticLinearWedge.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkQuadraticPolygon.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkQuadraticPyramid.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkQuadraticQuad.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkQuadraticTetra.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkQuadraticTriangle.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkQuadraticWedge.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkQuadratureSchemeDefinition.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkQuadric.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkRectilinearGrid.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkReebGraph.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkReebGraphSimplificationMetric.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkSelection.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkSelectionNode.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkSimpleCellTessellator.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkSmoothErrorMetric.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkSortFieldData.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkSphere.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkSpheres.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkSphericalPointIterator.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkSpline.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkStaticCellLinks.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkStaticCellLocator.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkStaticPointLocator.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkStaticPointLocator2D.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkStructuredCellArray.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkStructuredData.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkStructuredExtent.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkStructuredGrid.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkStructuredPoints.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkStructuredPointsCollection.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkSuperquadric.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkTable.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkTetra.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkTree.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkTreeBFSIterator.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkTreeDFSIterator.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkTreeIterator.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkTriQuadraticHexahedron.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkTriQuadraticPyramid.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkTriangle.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkTriangleStrip.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkUndirectedGraph.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkUniformGrid.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkUniformHyperTreeGrid.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkUnstructuredGrid.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkUnstructuredGridBase.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkUnstructuredGridCellIterator.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkVertex.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkVertexListIterator.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkVoxel.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkWedge.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkXMLDataElement.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkAMRDataInternals.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkAMRInformation.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkNonOverlappingAMR.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkOverlappingAMR.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkUniformGridAMR.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkUniformGridAMRDataIterator.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkAngularPeriodicDataArray.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkArrayListTemplate.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkMappedUnstructuredGrid.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkMappedUnstructuredGridCellIterator.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPeriodicDataArray.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkStaticCellLinksTemplate.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkStaticEdgeLocatorTemplate.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkStaticFaceHashLinksTemplate.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCompositeDataSetNodeReference.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkCompositeDataSetRange.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkDataObjectImplicitBackendInterface.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkDataObjectTreeRange.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkPolyDataInternals.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridEntry.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridGeometryEntry.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridGeometryUnlimitedEntry.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridGeometryLevelEntry.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridGeometryUnlimitedLevelEntry.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Common\DataModel\vtkHyperTreeGridLevelEntry.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\DataModel\vtkCommonDataModelModule.h" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ZERO_CHECK.vcxproj">
+      <Project>{29A36E60-F9BD-3AF1-92C4-919B78672499}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\Core\CommonCore.vcxproj">
+      <Project>{2E78A1A8-B859-3886-9590-3DB55EB1D146}</Project>
+      <Name>CommonCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\Math\CommonMath.vcxproj">
+      <Project>{11913A19-F4AE-333C-8242-DB7FFBA3B43C}</Project>
+      <Name>CommonMath</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\Misc\CommonMisc.vcxproj">
+      <Project>{835DD9A2-1F06-3A8C-9C3C-2814E2815925}</Project>
+      <Name>CommonMisc</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\System\CommonSystem.vcxproj">
+      <Project>{F73E5E2D-EF28-375D-907E-7206F3E93E28}</Project>
+      <Name>CommonSystem</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\Transforms\CommonTransforms.vcxproj">
+      <Project>{308CC07F-AA9C-302A-B4F6-53032BFCFA65}</Project>
+      <Name>CommonTransforms</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\kissfft\vtkkissfft\kissfft.vcxproj">
+      <Project>{8854424D-0149-32DB-875D-571D7D7CDC95}</Project>
+      <Name>kissfft</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\nlohmannjson\vtknlohmannjson\nlohmannjson.vcxproj">
+      <Project>{6AA8B3ED-850D-37E8-B4A6-E3503BDC81D2}</Project>
+      <Name>nlohmannjson</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\pugixml\vtkpugixml\pugixml.vcxproj">
+      <Project>{EB36DD95-4AE2-34F5-84CE-E11B9369D2F9}</Project>
+      <Name>pugixml</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\token\vtktoken\token\token.vcxproj">
+      <Project>{7314F71A-B8B9-3518-8D99-68D1963A11CE}</Project>
+      <Name>token</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWSys\vtksys\vtksys.vcxproj">
+      <Project>{DBBF6BE4-1569-3E09-9D6C-26C2330A5E6C}</Project>
+      <Name>vtksys</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

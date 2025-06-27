@@ -1,0 +1,30 @@
+^D:\CYBERMED\DADDY\DEPENDENCY\SDK-VTK-9.4.2\BUILD_MSVC\CMAKEFILES\CA9AA9FED93D79DD9D626753235B306A\VTKIOCORE-HIERARCHY.TXT.RULE
+setlocal
+..\..\bin\Release\vtkWrapHierarchy-9.4.exe -MF D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/IO/Core/CMakeFiles/vtkIOCore-hierarchy.txt.Release.d @D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/IO/Core/CMakeFiles/vtkIOCore-hierarchy.Release.args -o D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/vtk-9.4/hierarchy/VTK/vtkIOCore-hierarchy.txt D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/IO/Core/CMakeFiles/vtkIOCore-hierarchy.data @D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/IO/Core/CMakeFiles/vtkIOCore-hierarchy.depends.args
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_transform_depfile "Visual Studio 17 2022" MSBuildAdditionalInputs D:/cybermed/daddy/dependency/sdk-VTK-9.4.2 D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/IO/Core D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/IO/Core D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/IO/Core/CMakeFiles/vtkIOCore-hierarchy.txt.Release.d D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/CMakeFiles/d/f189d19a32d74b87f42ad1c441cd08081e6a6578d88b73f69e80e8a5f629c4ec.AdditionalInputs
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CYBERMED\DADDY\DEPENDENCY\SDK-VTK-9.4.2\BUILD_MSVC\CMAKEFILES\3EBAE476729E8EB2CDF45A5F018D4034\VTKIOCORE-HIERARCHY.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CYBERMED\DADDY\DEPENDENCY\SDK-VTK-9.4.2\IO\CORE\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/cybermed/daddy/dependency/sdk-VTK-9.4.2 -BD:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc --check-stamp-file D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/IO/Core/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

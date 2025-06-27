@@ -1,0 +1,10 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CheckIncludeFile.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CheckLibraryExists.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/FindThreads.cmake
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/exodusII/vtkexodusII/CMakeLists.txt
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/exodusII/vtkexodusII/cmake/exodus_config.h.in
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/exodusII/vtkexodusII/include/exodusII_cfg.h.in

@@ -1,0 +1,915 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_get_concat_node_sets.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_get_concat_side_sets.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_get_elem_attr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_get_elem_attr_names.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_get_elem_blk_ids.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_get_elem_block.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_get_elem_conn.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_get_elem_map.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_get_elem_num_map.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_get_elem_var.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_get_elem_var_tab.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_get_elem_var_time.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_get_glob_var_time.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_get_glob_vars.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_get_n_attr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_get_n_conn.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_get_n_coord.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_get_n_elem_attr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_get_n_elem_conn.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_get_n_elem_num_map.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_get_n_elem_var.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_get_n_nodal_var.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_get_n_node_num_map.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_get_n_node_set.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_get_n_node_set_df.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_get_n_one_attr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_get_n_side_set.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_get_n_side_set_df.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_get_n_var.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_get_nodal_var.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_get_nodal_var_time.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_get_node_map.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_get_node_num_map.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_get_node_set.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_get_node_set_dist_fact.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_get_node_set_ids.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_get_node_set_param.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_get_nset_var.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_get_nset_var_tab.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_get_one_elem_attr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_get_partial_elem_attr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_get_partial_elem_conn.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_get_partial_elem_map.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_get_partial_elem_num_map.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_get_partial_elem_var.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_get_partial_nodal_var.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_get_partial_node_num_map.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_get_partial_node_set.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_get_partial_node_set_df.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_get_partial_side_set.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_get_partial_side_set_df.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_get_side_set.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_get_side_set_dist_fact.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_get_side_set_ids.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_get_side_set_param.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_get_sset_var.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_get_sset_var_tab.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_get_var_name.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_get_var_names.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_get_var_param.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_get_var_tab.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_put_concat_node_sets.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_put_concat_side_sets.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_put_concat_var_param.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_put_elem_attr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_put_elem_attr_names.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_put_elem_block.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_put_elem_conn.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_put_elem_map.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_put_elem_num_map.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_put_elem_var.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_put_elem_var_slab.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_put_elem_var_tab.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_put_glob_vars.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_put_n_attr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_put_n_coord.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_put_n_elem_attr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_put_n_elem_conn.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_put_n_elem_num_map.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_put_n_nodal_var.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_put_n_node_num_map.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_put_n_node_set.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_put_n_node_set_df.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_put_n_one_attr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_put_n_side_set.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_put_n_side_set_df.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_put_n_var.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_put_nodal_var_slab.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_put_node_map.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_put_node_num_map.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_put_node_set.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_put_node_set_dist_fact.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_put_node_set_param.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_put_nset_var.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_put_nset_var_tab.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_put_one_elem_attr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_put_partial_elem_attr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_put_partial_elem_conn.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_put_partial_elem_map.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_put_partial_elem_num_map.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_put_partial_nodal_var.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_put_partial_node_num_map.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_put_partial_node_set.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_put_partial_node_set_df.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_put_partial_side_set.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_put_partial_side_set_df.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_put_side_set.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_put_side_set_dist_fact.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_put_side_set_param.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_put_sset_var.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_put_sset_var_tab.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_put_var_name.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_put_var_names.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_put_var_param.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\deprecated\ex_put_var_tab.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex__get_glob_vars_multi_time.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex__get_nodal_var_multi_time.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex__put_homogenous_block_params.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex__put_nodal_var_multi_time.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_add_attr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_close.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_conv.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_copy.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_create.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_create_group.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_create_par.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_cvt_nodes_to_sides.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_err.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_field_utils.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_all_times.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_assemblies.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_assembly.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_attr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_attr_names.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_attr_param.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_attribute.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_blob.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_blobs.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_block.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_block_id_map.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_block_param.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_block_params.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_cmap_params.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_concat_sets.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_concat_side_set_node_count.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_conn.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_coord.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_coord_names.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_coordinate_frames.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_eb_info_global.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_elem_cmap.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_elem_type.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_entity_count_per_polyhedra.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_field_metadata.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_glob_var_time_int.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_glob_vars_int.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_group_id.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_group_ids.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_id_map.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_ids.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_info.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_init.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_init_ext.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_init_global.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_init_info.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_loadbal_param.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_map.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_map_param.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_name.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_names.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_nodal_var_time_int.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_node_cmap.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_ns_param_global.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_num_map.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_object_truth_vector.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_one_attr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_partial_attr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_partial_conn.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_partial_coord.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_partial_coord_component.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_partial_id_map.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_partial_nodal_var_int.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_partial_num_map.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_partial_one_attr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_partial_set.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_partial_set_dist_fact.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_partial_var.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_processor_elem_maps.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_processor_node_maps.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_prop.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_prop_array.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_prop_names.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_qa.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_reduction_variable_names.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_reduction_variable_param.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_reduction_vars.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_set.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_set_dist_fact.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_set_param.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_sets.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_side_set_node_count.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_side_set_node_list.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_side_set_node_list_len.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_ss_param_global.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_time.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_truth_table.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_var.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_var_multi_time.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_var_time.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_variable_name.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_variable_names.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_get_variable_param.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_inquire.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_int_get_block_param.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_ne_util.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_open.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_open_par.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_opts.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_put_all_var_param.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_put_all_var_param_ext.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_put_assemblies.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_put_attr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_put_attr_names.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_put_attr_param.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_put_attribute.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_put_blobs.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_put_block.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_put_block_param.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_put_block_params.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_put_cmap_params.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_put_cmap_params_cc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_put_concat_all_blocks.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_put_concat_elem_block.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_put_concat_sets.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_put_conn.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_put_coord.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_put_coord_names.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_put_coordinate_frames.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_put_eb_info_global.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_put_elem_cmap.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_put_entity_count_per_polyhedra.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_put_field_metadata.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_put_id_map.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_put_info.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_put_init.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_put_init_ext.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_put_init_global.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_put_init_info.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_put_loadbal_param.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_put_loadbal_param_cc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_put_map.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_put_map_param.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_put_name.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_put_names.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_put_nodal_var.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_put_node_cmap.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_put_ns_param_global.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_put_num_map.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_put_one_attr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_put_partial_attr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_put_partial_conn.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_put_partial_coord.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_put_partial_coord_component.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_put_partial_id_map.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_put_partial_nodal_var_int.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_put_partial_num_map.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_put_partial_one_attr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_put_partial_set.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_put_partial_set_dist_fact.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_put_partial_var.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_put_processor_elem_maps.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_put_processor_node_maps.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_put_prop.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_put_prop_array.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_put_prop_names.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_put_qa.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_put_reduction_variable_names.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_put_reduction_variable_param.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_put_reduction_vars.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_put_set.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_put_set_dist_fact.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_put_set_param.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_put_sets.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_put_ss_param_global.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_put_time.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_put_truth_table.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_put_var.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_put_var_multi_time.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_put_variable_name.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_put_variable_names.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_put_variable_param.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_threadsafe.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_update.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\src\ex_utils.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\include\exodusII.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\include\exodusII_int.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\include\vtk_exodusII_mangle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\exodusII\vtkexodusII\include\exodusII_cfg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\exodusII\vtkexodusII\include\exodus_config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\exodusII\vtkexodusII\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{162D4FFA-EABE-37C8-B497-EF7F0B57E0E3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{F5D6D842-070C-3B59-BC69-A411D94F79A1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

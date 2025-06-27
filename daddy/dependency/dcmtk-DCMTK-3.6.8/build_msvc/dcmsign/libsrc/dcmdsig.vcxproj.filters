@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsign\libsrc\dcsighlp.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsign\libsrc\dcsignat.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsign\libsrc\siautopr.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsign\libsrc\sibrsapr.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsign\libsrc\sicert.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsign\libsrc\sicertvf.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsign\libsrc\sicreapr.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsign\libsrc\simaccon.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsign\libsrc\simdmac.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsign\libsrc\sinullpr.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsign\libsrc\sipkey.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsign\libsrc\siprivat.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsign\libsrc\sipurpos.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsign\libsrc\sisprof.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsign\libsrc\sisrpr.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsign\libsrc\sisrvpr.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsign\libsrc\sitsfs.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsign\libsrc\sitstamp.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsign\libsrc\sitypes.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsign\libsrc\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{223CA86B-C79F-3D28-815E-BF4CB8A4A19D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

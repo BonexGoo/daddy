@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\CMakeFiles\73234cbc2ce47b0a3901c0531d85858c\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{CA4D7796-94E3-32AF-ABBE-60974F026DB6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

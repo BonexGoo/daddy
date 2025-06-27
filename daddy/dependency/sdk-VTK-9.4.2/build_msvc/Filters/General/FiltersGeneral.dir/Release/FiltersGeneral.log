@@ -1,0 +1,148 @@
+﻿  Building Custom Rule D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Filters/General/CMakeLists.txt
+  vtkAnimateModes.cxx
+  vtkAnnotationLink.cxx
+  vtkAppendLocationAttributes.cxx
+  vtkAppendPoints.cxx
+  vtkApproximatingSubdivisionFilter.cxx
+  vtkAreaContourSpectrumFilter.cxx
+  vtkAxes.cxx
+  vtkBlankStructuredGrid.cxx
+  vtkBlankStructuredGridWithImage.cxx
+  vtkBlockIdScalars.cxx
+  vtkBooleanOperationPolyDataFilter.cxx
+  vtkBoxClipDataSet.cxx
+  vtkBrownianPoints.cxx
+  vtkCellDerivatives.cxx
+  vtkCellValidator.cxx
+  vtkCleanUnstructuredGrid.cxx
+  vtkCleanUnstructuredGridCells.cxx
+  vtkClipClosedSurface.cxx
+  vtkClipConvexPolyData.cxx
+  vtkClipDataSet.cxx
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  vtkClipVolume.cxx
+  vtkCoincidentPoints.cxx
+  vtkContourTriangulator.cxx
+  vtkCountFaces.cxx
+  vtkCountVertices.cxx
+  vtkCursor2D.cxx
+  vtkCursor3D.cxx
+  vtkCurvatures.cxx
+  vtkDataSetGradient.cxx
+  vtkDataSetGradientPrecompute.cxx
+  vtkDataSetTriangleFilter.cxx
+  vtkDateToNumeric.cxx
+  vtkDeflectNormals.cxx
+  vtkDeformPointSet.cxx
+  vtkDensifyPolyData.cxx
+  vtkDicer.cxx
+  vtkDiscreteFlyingEdges2D.cxx
+  vtkDiscreteFlyingEdges3D.cxx
+  vtkDiscreteFlyingEdgesClipper2D.cxx
+  vtkDiscreteMarchingCubes.cxx
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  vtkDistancePolyDataFilter.cxx
+  vtkEdgePoints.cxx
+  vtkEqualizerFilter.cxx
+  vtkExtractArray.cxx
+  vtkExtractGhostCells.cxx
+  vtkExtractSelectedFrustum.cxx
+  vtkExtractSelectionBase.cxx
+  vtkFiniteElementFieldDistributor.cxx
+  vtkGradientFilter.cxx
+  vtkGraphLayoutFilter.cxx
+  vtkGraphToPoints.cxx
+  vtkGraphWeightEuclideanDistanceFilter.cxx
+  vtkGraphWeightFilter.cxx
+  vtkGroupDataSetsFilter.cxx
+  vtkGroupTimeStepsFilter.cxx
+  vtkHierarchicalDataLevelFilter.cxx
+  vtkHyperStreamline.cxx
+  vtkIconGlyphFilter.cxx
+  vtkImageDataToPointSet.cxx
+  vtkImageMarchingCubes.cxx
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  vtkInterpolateDataSetAttributes.cxx
+  vtkInterpolatingSubdivisionFilter.cxx
+  vtkIntersectionPolyDataFilter.cxx
+  vtkJoinTables.cxx
+  vtkLevelIdScalars.cxx
+  vtkLinkEdgels.cxx
+  vtkLoopBooleanPolyDataFilter.cxx
+  vtkMarchingContourFilter.cxx
+  vtkMatricizeArray.cxx
+  vtkMergeArrays.cxx
+  vtkMergeCells.cxx
+  vtkMergeTimeFilter.cxx
+  vtkMergeVectorComponents.cxx
+  vtkMultiBlockDataGroupFilter.cxx
+  vtkMultiBlockMergeFilter.cxx
+  vtkMultiThreshold.cxx
+  vtkNormalizeMatrixVectors.cxx
+  vtkOBBDicer.cxx
+  vtkOBBTree.cxx
+  vtkOverlappingAMRLevelIdScalars.cxx
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  vtkPassArrays.cxx
+  vtkPassSelectedArrays.cxx
+  vtkPointConnectivityFilter.cxx
+  vtkPolyDataStreamer.cxx
+  vtkPolyDataToReebGraphFilter.cxx
+  vtkProbePolyhedron.cxx
+  vtkQuadraturePointInterpolator.cxx
+  vtkQuadraturePointsGenerator.cxx
+  vtkQuadratureSchemeDictionaryGenerator.cxx
+  vtkQuantizePolyDataPoints.cxx
+  vtkRandomAttributeGenerator.cxx
+  vtkRectilinearGridClip.cxx
+  vtkRectilinearGridToPointSet.cxx
+  vtkRectilinearGridToTetrahedra.cxx
+  vtkRecursiveDividingCubes.cxx
+  vtkReflectionFilter.cxx
+  vtkRemovePolyData.cxx
+  vtkRotationFilter.cxx
+  vtkSampleImplicitFunctionFilter.cxx
+  vtkShrinkFilter.cxx
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  vtkShrinkPolyData.cxx
+  vtkSpatialRepresentationFilter.cxx
+  vtkSpatioTemporalHarmonicsAttribute.cxx
+  vtkSphericalHarmonics.cxx
+  vtkSplineFilter.cxx
+  vtkSplitByCellScalarFilter.cxx
+  vtkSplitColumnComponents.cxx
+  vtkSplitField.cxx
+  vtkStructuredGridClip.cxx
+  vtkSubPixelPositionEdgels.cxx
+  vtkSubdivisionFilter.cxx
+  vtkSynchronizeTimeFilter.cxx
+  vtkTableBasedClipDataSet.cxx
+  vtkTableFFT.cxx
+  vtkTableToPolyData.cxx
+  vtkTableToStructuredGrid.cxx
+  vtkTemporalPathLineFilter.cxx
+  vtkTemporalStatistics.cxx
+  vtkTessellatorFilter.cxx
+  vtkTimeSourceExample.cxx
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  vtkTransformFilter.cxx
+  vtkTransformPolyDataFilter.cxx
+  vtkUncertaintyTubeFilter.cxx
+  vtkVertexGlyphFilter.cxx
+  vtkVolumeContourSpectrumFilter.cxx
+  vtkVoxelContoursToSurfaceFilter.cxx
+  vtkWarpLens.cxx
+  vtkWarpScalar.cxx
+  vtkWarpTo.cxx
+  vtkWarpVector.cxx
+  vtkYoungsMaterialInterface.cxx
+  vtkTableBasedClipCases.cxx
+  코드를 생성하고 있습니다...
+     D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Release/vtkFiltersGeneral-9.4.lib 라이브러리 및 D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Release/vtkFiltersGeneral-9.4.exp 개체를 생성하고 있습니다.
+  FiltersGeneral.vcxproj -> D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\bin\Release\vtkFiltersGeneral-9.4.dll

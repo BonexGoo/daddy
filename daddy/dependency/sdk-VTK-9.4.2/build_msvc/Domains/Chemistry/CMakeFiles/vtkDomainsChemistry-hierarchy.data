@@ -1,0 +1,12 @@
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Domains/Chemistry/vtkBlueObeliskData.h;vtkDomainsChemistry
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Domains/Chemistry/vtkBlueObeliskDataParser.h;vtkDomainsChemistry
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Domains/Chemistry/vtkMoleculeMapper.h;vtkDomainsChemistry
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Domains/Chemistry/vtkMoleculeToAtomBallFilter.h;vtkDomainsChemistry
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Domains/Chemistry/vtkMoleculeToBondStickFilter.h;vtkDomainsChemistry
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Domains/Chemistry/vtkMoleculeToLinesFilter.h;vtkDomainsChemistry
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Domains/Chemistry/vtkMoleculeToPolyDataFilter.h;vtkDomainsChemistry
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Domains/Chemistry/vtkPeriodicTable.h;vtkDomainsChemistry
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Domains/Chemistry/vtkPointSetToMoleculeFilter.h;vtkDomainsChemistry
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Domains/Chemistry/vtkProgrammableElectronicData.h;vtkDomainsChemistry
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Domains/Chemistry/vtkProteinRibbonFilter.h;vtkDomainsChemistry
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Domains/Chemistry/vtkSimpleBondPerceiver.h;vtkDomainsChemistry

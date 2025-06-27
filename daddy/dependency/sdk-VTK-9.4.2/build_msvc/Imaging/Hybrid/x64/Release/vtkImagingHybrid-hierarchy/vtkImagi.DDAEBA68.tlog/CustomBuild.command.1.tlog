@@ -1,0 +1,30 @@
+^D:\CYBERMED\DADDY\DEPENDENCY\SDK-VTK-9.4.2\BUILD_MSVC\CMAKEFILES\CA9AA9FED93D79DD9D626753235B306A\VTKIMAGINGHYBRID-HIERARCHY.TXT.RULE
+setlocal
+..\..\bin\Release\vtkWrapHierarchy-9.4.exe -MF D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Imaging/Hybrid/CMakeFiles/vtkImagingHybrid-hierarchy.txt.Release.d @D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Imaging/Hybrid/CMakeFiles/vtkImagingHybrid-hierarchy.Release.args -o D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/vtk-9.4/hierarchy/VTK/vtkImagingHybrid-hierarchy.txt D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Imaging/Hybrid/CMakeFiles/vtkImagingHybrid-hierarchy.data @D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Imaging/Hybrid/CMakeFiles/vtkImagingHybrid-hierarchy.depends.args
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_transform_depfile "Visual Studio 17 2022" MSBuildAdditionalInputs D:/cybermed/daddy/dependency/sdk-VTK-9.4.2 D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Imaging/Hybrid D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Imaging/Hybrid D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Imaging/Hybrid/CMakeFiles/vtkImagingHybrid-hierarchy.txt.Release.d D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/CMakeFiles/d/96814374930302a2f47774a8a252c56835febd30dc03d91fd681189cdbf4faec.AdditionalInputs
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CYBERMED\DADDY\DEPENDENCY\SDK-VTK-9.4.2\BUILD_MSVC\CMAKEFILES\8C8AFF6CECED0658DE20D059E1D0F4A5\VTKIMAGINGHYBRID-HIERARCHY.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CYBERMED\DADDY\DEPENDENCY\SDK-VTK-9.4.2\IMAGING\HYBRID\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/cybermed/daddy/dependency/sdk-VTK-9.4.2 -BD:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc --check-stamp-file D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Imaging/Hybrid/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,16 @@
+﻿  Building Custom Rule D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Domains/Chemistry/CMakeLists.txt
+  vtkBlueObeliskData.cxx
+  vtkBlueObeliskDataParser.cxx
+  vtkMoleculeMapper.cxx
+  vtkMoleculeToAtomBallFilter.cxx
+  vtkMoleculeToBondStickFilter.cxx
+  vtkMoleculeToLinesFilter.cxx
+  vtkMoleculeToPolyDataFilter.cxx
+  vtkPeriodicTable.cxx
+  vtkPointSetToMoleculeFilter.cxx
+  vtkProgrammableElectronicData.cxx
+  vtkProteinRibbonFilter.cxx
+  vtkSimpleBondPerceiver.cxx
+  코드를 생성하고 있습니다...
+     D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Debug/vtkDomainsChemistry-9.4d.lib 라이브러리 및 D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Debug/vtkDomainsChemistry-9.4d.exp 개체를 생성하고 있습니다.
+  DomainsChemistry.vcxproj -> D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\bin\Debug\vtkDomainsChemistry-9.4d.dll

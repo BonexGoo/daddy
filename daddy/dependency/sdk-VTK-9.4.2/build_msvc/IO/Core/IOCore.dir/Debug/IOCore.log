@@ -1,0 +1,36 @@
+﻿  vtkASCIITextCodec.cxx
+  vtkAbstractParticleWriter.cxx
+  vtkAbstractPolyDataReader.cxx
+  vtkArrayDataReader.cxx
+  vtkArrayDataWriter.cxx
+  vtkArrayReader.cxx
+  vtkArrayWriter.cxx
+  vtkBase64InputStream.cxx
+  vtkBase64OutputStream.cxx
+  vtkBase64Utilities.cxx
+  vtkDataCompressor.cxx
+  vtkDelimitedTextWriter.cxx
+  vtkFileResourceStream.cxx
+  vtkGlobFileNames.cxx
+  vtkInputStream.cxx
+  vtkJavaScriptDataWriter.cxx
+  vtkLZ4DataCompressor.cxx
+  vtkLZMADataCompressor.cxx
+  vtkMemoryResourceStream.cxx
+  vtkOutputStream.cxx
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  vtkResourceParser.cxx
+  vtkResourceStream.cxx
+  vtkSortFileNames.cxx
+  vtkTextCodec.cxx
+  vtkTextCodecFactory.cxx
+  vtkURI.cxx
+  vtkURILoader.cxx
+  vtkUTF16TextCodec.cxx
+  vtkUTF8TextCodec.cxx
+  vtkWriter.cxx
+  vtkZLibDataCompressor.cxx
+  코드를 생성하고 있습니다...
+     D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Debug/vtkIOCore-9.4d.lib 라이브러리 및 D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Debug/vtkIOCore-9.4d.exp 개체를 생성하고 있습니다.
+  IOCore.vcxproj -> D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\bin\Debug\vtkIOCore-9.4d.dll

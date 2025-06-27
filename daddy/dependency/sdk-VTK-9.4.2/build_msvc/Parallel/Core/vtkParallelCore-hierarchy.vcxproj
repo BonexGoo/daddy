@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B97EC308-A612-39EC-8F1D-C984858B9EF7}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>vtkParallelCore-hierarchy</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\ca9aa9fed93d79dd9d626753235b306a\vtkParallelCore-hierarchy.txt.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating the wrap hierarchy for VTK::ParallelCore</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+..\..\bin\Debug\vtkWrapHierarchy-9.4d.exe -MF D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Parallel/Core/CMakeFiles/vtkParallelCore-hierarchy.txt.Debug.d @D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Parallel/Core/CMakeFiles/vtkParallelCore-hierarchy.Debug.args -o D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/vtk-9.4/hierarchy/VTK/vtkParallelCore-hierarchy.txt D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Parallel/Core/CMakeFiles/vtkParallelCore-hierarchy.data @D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Parallel/Core/CMakeFiles/vtkParallelCore-hierarchy.depends.args
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_transform_depfile "Visual Studio 17 2022" MSBuildAdditionalInputs D:/cybermed/daddy/dependency/sdk-VTK-9.4.2 D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Parallel/Core D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Parallel/Core D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Parallel/Core/CMakeFiles/vtkParallelCore-hierarchy.txt.Debug.d D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/CMakeFiles/d/20c84c59883aa5f43e4b81588af753e225d5ca8609a25233d5aac4ea8f6988ba.AdditionalInputs
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Parallel\Core\vtkCommunicator.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Parallel\Core\vtkDummyCommunicator.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Parallel\Core\vtkDummyController.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Parallel\Core\vtkFieldDataSerializer.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Parallel\Core\vtkMultiProcessController.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Parallel\Core\vtkMultiProcessStream.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Parallel\Core\vtkPDirectory.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Parallel\Core\vtkProcess.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Parallel\Core\vtkProcessGroup.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Parallel\Core\vtkPSystemTools.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Parallel\Core\vtkSocketCommunicator.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Parallel\Core\vtkSocketController.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Parallel\Core\vtkSubCommunicator.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Parallel\Core\vtkSubGroup.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Parallel\Core\CMakeFiles\vtkParallelCore-hierarchy.Debug.args;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Parallel\Core\CMakeFiles\vtkParallelCore-hierarchy.data;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Parallel\Core\CMakeFiles\vtkParallelCore-hierarchy.depends.args;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\lib\vtk-9.4\hierarchy\VTK\vtkParallelCore-hierarchy.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <DepFileAdditionalInputsFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\d\20c84c59883aa5f43e4b81588af753e225d5ca8609a25233d5aac4ea8f6988ba.AdditionalInputs</DepFileAdditionalInputsFile>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating the wrap hierarchy for VTK::ParallelCore</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+..\..\bin\Release\vtkWrapHierarchy-9.4.exe -MF D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Parallel/Core/CMakeFiles/vtkParallelCore-hierarchy.txt.Release.d @D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Parallel/Core/CMakeFiles/vtkParallelCore-hierarchy.Release.args -o D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/vtk-9.4/hierarchy/VTK/vtkParallelCore-hierarchy.txt D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Parallel/Core/CMakeFiles/vtkParallelCore-hierarchy.data @D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Parallel/Core/CMakeFiles/vtkParallelCore-hierarchy.depends.args
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_transform_depfile "Visual Studio 17 2022" MSBuildAdditionalInputs D:/cybermed/daddy/dependency/sdk-VTK-9.4.2 D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Parallel/Core D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Parallel/Core D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Parallel/Core/CMakeFiles/vtkParallelCore-hierarchy.txt.Release.d D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/CMakeFiles/d/08f1001fcc042cf95f8885c0e98d034bdc4fd6ac49154662f9d363a83093f593.AdditionalInputs
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Parallel\Core\vtkCommunicator.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Parallel\Core\vtkDummyCommunicator.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Parallel\Core\vtkDummyController.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Parallel\Core\vtkFieldDataSerializer.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Parallel\Core\vtkMultiProcessController.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Parallel\Core\vtkMultiProcessStream.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Parallel\Core\vtkPDirectory.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Parallel\Core\vtkProcess.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Parallel\Core\vtkProcessGroup.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Parallel\Core\vtkPSystemTools.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Parallel\Core\vtkSocketCommunicator.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Parallel\Core\vtkSocketController.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Parallel\Core\vtkSubCommunicator.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Parallel\Core\vtkSubGroup.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Parallel\Core\CMakeFiles\vtkParallelCore-hierarchy.Release.args;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Parallel\Core\CMakeFiles\vtkParallelCore-hierarchy.data;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Parallel\Core\CMakeFiles\vtkParallelCore-hierarchy.depends.args;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\lib\vtk-9.4\hierarchy\VTK\vtkParallelCore-hierarchy.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <DepFileAdditionalInputsFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\d\08f1001fcc042cf95f8885c0e98d034bdc4fd6ac49154662f9d363a83093f593.AdditionalInputs</DepFileAdditionalInputsFile>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating the wrap hierarchy for VTK::ParallelCore</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+..\..\bin\MinSizeRel\vtkWrapHierarchy-9.4.exe -MF D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Parallel/Core/CMakeFiles/vtkParallelCore-hierarchy.txt.MinSizeRel.d @D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Parallel/Core/CMakeFiles/vtkParallelCore-hierarchy.MinSizeRel.args -o D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/vtk-9.4/hierarchy/VTK/vtkParallelCore-hierarchy.txt D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Parallel/Core/CMakeFiles/vtkParallelCore-hierarchy.data @D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Parallel/Core/CMakeFiles/vtkParallelCore-hierarchy.depends.args
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_transform_depfile "Visual Studio 17 2022" MSBuildAdditionalInputs D:/cybermed/daddy/dependency/sdk-VTK-9.4.2 D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Parallel/Core D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Parallel/Core D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Parallel/Core/CMakeFiles/vtkParallelCore-hierarchy.txt.MinSizeRel.d D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/CMakeFiles/d/edb113aed0a4c50d929b1234cca83e5b5ac928e2f071d5690278ef3a8dd4367c.AdditionalInputs
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Parallel\Core\vtkCommunicator.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Parallel\Core\vtkDummyCommunicator.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Parallel\Core\vtkDummyController.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Parallel\Core\vtkFieldDataSerializer.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Parallel\Core\vtkMultiProcessController.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Parallel\Core\vtkMultiProcessStream.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Parallel\Core\vtkPDirectory.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Parallel\Core\vtkProcess.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Parallel\Core\vtkProcessGroup.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Parallel\Core\vtkPSystemTools.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Parallel\Core\vtkSocketCommunicator.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Parallel\Core\vtkSocketController.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Parallel\Core\vtkSubCommunicator.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Parallel\Core\vtkSubGroup.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Parallel\Core\CMakeFiles\vtkParallelCore-hierarchy.MinSizeRel.args;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Parallel\Core\CMakeFiles\vtkParallelCore-hierarchy.data;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Parallel\Core\CMakeFiles\vtkParallelCore-hierarchy.depends.args;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\lib\vtk-9.4\hierarchy\VTK\vtkParallelCore-hierarchy.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <DepFileAdditionalInputsFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\d\edb113aed0a4c50d929b1234cca83e5b5ac928e2f071d5690278ef3a8dd4367c.AdditionalInputs</DepFileAdditionalInputsFile>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating the wrap hierarchy for VTK::ParallelCore</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+..\..\bin\RelWithDebInfo\vtkWrapHierarchy-9.4.exe -MF D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Parallel/Core/CMakeFiles/vtkParallelCore-hierarchy.txt.RelWithDebInfo.d @D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Parallel/Core/CMakeFiles/vtkParallelCore-hierarchy.RelWithDebInfo.args -o D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/vtk-9.4/hierarchy/VTK/vtkParallelCore-hierarchy.txt D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Parallel/Core/CMakeFiles/vtkParallelCore-hierarchy.data @D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Parallel/Core/CMakeFiles/vtkParallelCore-hierarchy.depends.args
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_transform_depfile "Visual Studio 17 2022" MSBuildAdditionalInputs D:/cybermed/daddy/dependency/sdk-VTK-9.4.2 D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Parallel/Core D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Parallel/Core D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Parallel/Core/CMakeFiles/vtkParallelCore-hierarchy.txt.RelWithDebInfo.d D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/CMakeFiles/d/7e18db453086a805e10ec1158b1d5de8bfb6d275f88b5cc212c2a77dac457412.AdditionalInputs
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Parallel\Core\vtkCommunicator.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Parallel\Core\vtkDummyCommunicator.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Parallel\Core\vtkDummyController.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Parallel\Core\vtkFieldDataSerializer.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Parallel\Core\vtkMultiProcessController.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Parallel\Core\vtkMultiProcessStream.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Parallel\Core\vtkPDirectory.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Parallel\Core\vtkProcess.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Parallel\Core\vtkProcessGroup.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Parallel\Core\vtkPSystemTools.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Parallel\Core\vtkSocketCommunicator.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Parallel\Core\vtkSocketController.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Parallel\Core\vtkSubCommunicator.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Parallel\Core\vtkSubGroup.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Parallel\Core\CMakeFiles\vtkParallelCore-hierarchy.RelWithDebInfo.args;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Parallel\Core\CMakeFiles\vtkParallelCore-hierarchy.data;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Parallel\Core\CMakeFiles\vtkParallelCore-hierarchy.depends.args;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\lib\vtk-9.4\hierarchy\VTK\vtkParallelCore-hierarchy.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <DepFileAdditionalInputsFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\d\7e18db453086a805e10ec1158b1d5de8bfb6d275f88b5cc212c2a77dac457412.AdditionalInputs</DepFileAdditionalInputsFile>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\afb911cb0eeed659425305f674ae45e0\vtkParallelCore-hierarchy.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\lib\vtk-9.4\hierarchy\VTK\vtkParallelCore-hierarchy.txt;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\bin\Debug\vtkWrapHierarchy-9.4d.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Parallel\Core\CMakeFiles\vtkParallelCore-hierarchy</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\lib\vtk-9.4\hierarchy\VTK\vtkParallelCore-hierarchy.txt;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\bin\Release\vtkWrapHierarchy-9.4.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Parallel\Core\CMakeFiles\vtkParallelCore-hierarchy</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\lib\vtk-9.4\hierarchy\VTK\vtkParallelCore-hierarchy.txt;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\bin\MinSizeRel\vtkWrapHierarchy-9.4.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Parallel\Core\CMakeFiles\vtkParallelCore-hierarchy</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\lib\vtk-9.4\hierarchy\VTK\vtkParallelCore-hierarchy.txt;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\bin\RelWithDebInfo\vtkWrapHierarchy-9.4.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Parallel\Core\CMakeFiles\vtkParallelCore-hierarchy</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Parallel\Core\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Parallel/Core/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/cybermed/daddy/dependency/sdk-VTK-9.4.2 -BD:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc --check-stamp-file D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Parallel/Core/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.31\Modules\exportheader.cmake.in;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\CMake\vtkHashSource.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Parallel\Core\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Parallel/Core/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/cybermed/daddy/dependency/sdk-VTK-9.4.2 -BD:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc --check-stamp-file D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Parallel/Core/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.31\Modules\exportheader.cmake.in;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\CMake\vtkHashSource.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Parallel\Core\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Parallel/Core/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/cybermed/daddy/dependency/sdk-VTK-9.4.2 -BD:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc --check-stamp-file D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Parallel/Core/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.31\Modules\exportheader.cmake.in;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\CMake\vtkHashSource.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Parallel\Core\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Parallel/Core/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/cybermed/daddy/dependency/sdk-VTK-9.4.2 -BD:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc --check-stamp-file D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Parallel/Core/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.31\Modules\exportheader.cmake.in;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\CMake\vtkHashSource.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Parallel\Core\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Parallel\Core\CMakeFiles\vtkParallelCore-hierarchy">
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ZERO_CHECK.vcxproj">
+      <Project>{29A36E60-F9BD-3AF1-92C4-919B78672499}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Wrapping\Tools\WrapHierarchy.vcxproj">
+      <Project>{26194890-F1C3-34CF-AF00-AFA21E3C5138}</Project>
+      <Name>WrapHierarchy</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\Core\vtkCommonCore-hierarchy.vcxproj">
+      <Project>{7DB76CF9-1CC4-37BC-B10C-80DA6D1CCEDE}</Project>
+      <Name>vtkCommonCore-hierarchy</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <Import Project="C:\Program Files\CMake\share\cmake-3.31\Templates\MSBuild\CustomBuildDepFile.targets" />
+</Project>

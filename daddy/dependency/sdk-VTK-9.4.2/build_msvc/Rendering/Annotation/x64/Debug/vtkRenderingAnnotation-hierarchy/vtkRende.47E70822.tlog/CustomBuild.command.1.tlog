@@ -1,0 +1,30 @@
+^D:\CYBERMED\DADDY\DEPENDENCY\SDK-VTK-9.4.2\BUILD_MSVC\CMAKEFILES\CA9AA9FED93D79DD9D626753235B306A\VTKRENDERINGANNOTATION-HIERARCHY.TXT.RULE
+setlocal
+..\..\bin\Debug\vtkWrapHierarchy-9.4d.exe -MF D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Rendering/Annotation/CMakeFiles/vtkRenderingAnnotation-hierarchy.txt.Debug.d @D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Rendering/Annotation/CMakeFiles/vtkRenderingAnnotation-hierarchy.Debug.args -o D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/vtk-9.4/hierarchy/VTK/vtkRenderingAnnotation-hierarchy.txt D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Rendering/Annotation/CMakeFiles/vtkRenderingAnnotation-hierarchy.data @D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Rendering/Annotation/CMakeFiles/vtkRenderingAnnotation-hierarchy.depends.args
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_transform_depfile "Visual Studio 17 2022" MSBuildAdditionalInputs D:/cybermed/daddy/dependency/sdk-VTK-9.4.2 D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Rendering/Annotation D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Rendering/Annotation D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Rendering/Annotation/CMakeFiles/vtkRenderingAnnotation-hierarchy.txt.Debug.d D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/CMakeFiles/d/4451b2b4c294d7193ceabc5602440452f54d815c1510201417ac6fae427f09cf.AdditionalInputs
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CYBERMED\DADDY\DEPENDENCY\SDK-VTK-9.4.2\BUILD_MSVC\CMAKEFILES\BB26B1A60463A32BD82764A2CBF2F14D\VTKRENDERINGANNOTATION-HIERARCHY.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CYBERMED\DADDY\DEPENDENCY\SDK-VTK-9.4.2\RENDERING\ANNOTATION\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/cybermed/daddy/dependency/sdk-VTK-9.4.2 -BD:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc --check-stamp-file D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Rendering/Annotation/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,24 @@
+﻿  Building Custom Rule D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Filters/Statistics/CMakeLists.txt
+  vtkAutoCorrelativeStatistics.cxx
+  vtkBivariateLinearTableThreshold.cxx
+  vtkComputeQuantiles.cxx
+  vtkComputeQuartiles.cxx
+  vtkContingencyStatistics.cxx
+  vtkCorrelativeStatistics.cxx
+  vtkDescriptiveStatistics.cxx
+  vtkExtractFunctionalBagPlot.cxx
+  vtkExtractHistogram.cxx
+  vtkHighestDensityRegionsStatistics.cxx
+  vtkKMeansDistanceFunctor.cxx
+  vtkKMeansDistanceFunctorCalculator.cxx
+  vtkKMeansStatistics.cxx
+  vtkLengthDistribution.cxx
+  vtkMultiCorrelativeStatistics.cxx
+  vtkOrderStatistics.cxx
+  vtkPCAStatistics.cxx
+  vtkStatisticsAlgorithm.cxx
+  vtkStrahlerMetric.cxx
+  vtkStreamingStatistics.cxx
+  코드를 생성하고 있습니다...
+     D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Release/vtkFiltersStatistics-9.4.lib 라이브러리 및 D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Release/vtkFiltersStatistics-9.4.exp 개체를 생성하고 있습니다.
+  FiltersStatistics.vcxproj -> D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\bin\Release\vtkFiltersStatistics-9.4.dll

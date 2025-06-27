@@ -1,0 +1,584 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{54A9100C-8D93-370D-A1AC-AA7B62AF316C}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>libproj</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">libproj.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">vtklibproj-9.4d</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">libproj.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">vtklibproj-9.4</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\bin\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">libproj.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">vtklibproj-9.4</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\bin\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">libproj.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">vtklibproj-9.4</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\include;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\libproj\vtklibproj\src;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\nlohmannjson\vtknlohmannjson;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\nlohmannjson\vtknlohmannjson;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\nlohmannjson\vtknlohmannjson\include;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\sqlite\vtksqlite;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\sqlite\vtksqlite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/ThirdParty/libproj" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/libproj" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/ThirdParty/nlohmannjson" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/nlohmannjson" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/ThirdParty/sqlite" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/sqlite" /bigobj /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4251</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NOMINMAX;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;MUTEX_win32;VTK_RELATIVE_DATADIR="share/vtk-9.4/proj";CMAKE_INTDIR="Debug";libproj_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;NOMINMAX;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;MUTEX_win32;VTK_RELATIVE_DATADIR=\"share/vtk-9.4/proj\";CMAKE_INTDIR=\"Debug\";libproj_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\include;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\libproj\vtklibproj\src;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\nlohmannjson\vtknlohmannjson;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\nlohmannjson\vtknlohmannjson;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\nlohmannjson\vtknlohmannjson\include;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\sqlite\vtksqlite;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\sqlite\vtksqlite;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\libproj;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\nlohmannjson;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\nlohmannjson;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\sqlite;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\sqlite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\include;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\libproj\vtklibproj\src;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\nlohmannjson\vtknlohmannjson;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\nlohmannjson\vtknlohmannjson;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\nlohmannjson\vtknlohmannjson\include;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\sqlite\vtksqlite;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\sqlite\vtksqlite;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\libproj;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\nlohmannjson;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\nlohmannjson;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\sqlite;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\sqlite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\..\..\lib\Debug\vtksqlite-9.4d.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Debug/vtklibproj-9.4d.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/bin/Debug/vtklibproj-9.4d.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\include;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\libproj\vtklibproj\src;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\nlohmannjson\vtknlohmannjson;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\nlohmannjson\vtknlohmannjson;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\nlohmannjson\vtknlohmannjson\include;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\sqlite\vtksqlite;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\sqlite\vtksqlite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/ThirdParty/libproj" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/libproj" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/ThirdParty/nlohmannjson" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/nlohmannjson" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/ThirdParty/sqlite" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/sqlite" /bigobj /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DisableSpecificWarnings>4251</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;NOMINMAX;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;MUTEX_win32;VTK_RELATIVE_DATADIR="share/vtk-9.4/proj";CMAKE_INTDIR="Release";libproj_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;NOMINMAX;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;MUTEX_win32;VTK_RELATIVE_DATADIR=\"share/vtk-9.4/proj\";CMAKE_INTDIR=\"Release\";libproj_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\include;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\libproj\vtklibproj\src;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\nlohmannjson\vtknlohmannjson;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\nlohmannjson\vtknlohmannjson;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\nlohmannjson\vtknlohmannjson\include;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\sqlite\vtksqlite;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\sqlite\vtksqlite;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\libproj;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\nlohmannjson;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\nlohmannjson;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\sqlite;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\sqlite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\include;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\libproj\vtklibproj\src;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\nlohmannjson\vtknlohmannjson;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\nlohmannjson\vtknlohmannjson;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\nlohmannjson\vtknlohmannjson\include;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\sqlite\vtksqlite;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\sqlite\vtksqlite;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\libproj;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\nlohmannjson;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\nlohmannjson;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\sqlite;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\sqlite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\..\..\lib\Release\vtksqlite-9.4.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Release/vtklibproj-9.4.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/bin/Release/vtklibproj-9.4.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\include;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\libproj\vtklibproj\src;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\nlohmannjson\vtknlohmannjson;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\nlohmannjson\vtknlohmannjson;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\nlohmannjson\vtknlohmannjson\include;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\sqlite\vtksqlite;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\sqlite\vtksqlite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/ThirdParty/libproj" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/libproj" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/ThirdParty/nlohmannjson" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/nlohmannjson" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/ThirdParty/sqlite" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/sqlite" /bigobj /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DisableSpecificWarnings>4251</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;NOMINMAX;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;MUTEX_win32;VTK_RELATIVE_DATADIR="share/vtk-9.4/proj";CMAKE_INTDIR="MinSizeRel";libproj_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;NOMINMAX;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;MUTEX_win32;VTK_RELATIVE_DATADIR=\"share/vtk-9.4/proj\";CMAKE_INTDIR=\"MinSizeRel\";libproj_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\include;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\libproj\vtklibproj\src;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\nlohmannjson\vtknlohmannjson;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\nlohmannjson\vtknlohmannjson;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\nlohmannjson\vtknlohmannjson\include;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\sqlite\vtksqlite;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\sqlite\vtksqlite;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\libproj;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\nlohmannjson;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\nlohmannjson;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\sqlite;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\sqlite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\include;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\libproj\vtklibproj\src;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\nlohmannjson\vtknlohmannjson;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\nlohmannjson\vtknlohmannjson;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\nlohmannjson\vtknlohmannjson\include;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\sqlite\vtksqlite;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\sqlite\vtksqlite;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\libproj;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\nlohmannjson;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\nlohmannjson;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\sqlite;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\sqlite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\..\..\lib\MinSizeRel\vtksqlite-9.4.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/MinSizeRel/vtklibproj-9.4.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/bin/MinSizeRel/vtklibproj-9.4.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\include;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\libproj\vtklibproj\src;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\nlohmannjson\vtknlohmannjson;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\nlohmannjson\vtknlohmannjson;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\nlohmannjson\vtknlohmannjson\include;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\sqlite\vtksqlite;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\sqlite\vtksqlite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/ThirdParty/libproj" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/libproj" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/ThirdParty/nlohmannjson" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/nlohmannjson" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/ThirdParty/sqlite" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/sqlite" /bigobj /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4251</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;NOMINMAX;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;MUTEX_win32;VTK_RELATIVE_DATADIR="share/vtk-9.4/proj";CMAKE_INTDIR="RelWithDebInfo";libproj_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;NOMINMAX;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;MUTEX_win32;VTK_RELATIVE_DATADIR=\"share/vtk-9.4/proj\";CMAKE_INTDIR=\"RelWithDebInfo\";libproj_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\include;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\libproj\vtklibproj\src;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\nlohmannjson\vtknlohmannjson;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\nlohmannjson\vtknlohmannjson;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\nlohmannjson\vtknlohmannjson\include;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\sqlite\vtksqlite;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\sqlite\vtksqlite;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\libproj;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\nlohmannjson;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\nlohmannjson;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\sqlite;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\sqlite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\include;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\libproj\vtklibproj\src;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\nlohmannjson\vtknlohmannjson;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\nlohmannjson\vtknlohmannjson;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\nlohmannjson\vtknlohmannjson\include;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\sqlite\vtksqlite;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\sqlite\vtksqlite;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\libproj;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\nlohmannjson;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\nlohmannjson;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\sqlite;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\sqlite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\..\..\lib\RelWithDebInfo\vtksqlite-9.4.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/RelWithDebInfo/vtklibproj-9.4.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/bin/RelWithDebInfo/vtklibproj-9.4.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/libproj/vtklibproj/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/cybermed/daddy/dependency/sdk-VTK-9.4.2 -BD:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc --check-stamp-file D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/ThirdParty/libproj/vtklibproj/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.31\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\GenerateExportHeader.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\exportheader.cmake.in;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\lib_proj.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\libproj\vtklibproj\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/libproj/vtklibproj/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/cybermed/daddy/dependency/sdk-VTK-9.4.2 -BD:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc --check-stamp-file D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/ThirdParty/libproj/vtklibproj/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.31\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\GenerateExportHeader.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\exportheader.cmake.in;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\lib_proj.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\libproj\vtklibproj\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/libproj/vtklibproj/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/cybermed/daddy/dependency/sdk-VTK-9.4.2 -BD:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc --check-stamp-file D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/ThirdParty/libproj/vtklibproj/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.31\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\GenerateExportHeader.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\exportheader.cmake.in;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\lib_proj.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\libproj\vtklibproj\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/libproj/vtklibproj/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/cybermed/daddy/dependency/sdk-VTK-9.4.2 -BD:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc --check-stamp-file D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/ThirdParty/libproj/vtklibproj/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.31\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\GenerateExportHeader.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\exportheader.cmake.in;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\lib_proj.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\libproj\vtklibproj\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\4D_api.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\aasincos.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\adjlon.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\auth.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\ctx.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\datum_set.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\datums.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\deriv.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\dmstor.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\ell_set.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\ellps.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\factors.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\fwd.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\gauss.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\generic_inverse.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\geodesic.c" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\init.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\initcache.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\internal.cpp">
+      <ObjectFileName>$(IntDir)/internal.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\inv.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\list.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\log.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\malloc.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\mlfn.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\msfn.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\mutex.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\param.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\phi2.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\pipeline.cpp" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\pj_list.h" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\pr_list.cpp" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\proj_internal.h" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\proj_mdist.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\qsfn.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\release.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\rtodms.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\strerrno.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\strtod.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\tsfn.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\units.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\wkt1_generated_parser.c" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\wkt1_generated_parser.h" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\wkt1_parser.cpp" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\wkt1_parser.h" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\wkt2_generated_parser.c" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\wkt2_generated_parser.h" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\wkt2_parser.cpp" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\wkt2_parser.h" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\wkt_parser.cpp" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\wkt_parser.hpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\zpoly1.cpp" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\proj_json_streaming_writer.hpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\proj_json_streaming_writer.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\tracing.cpp" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\grids.hpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\grids.cpp" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\filemanager.hpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\filemanager.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\networkfilemanager.cpp" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\sqlite3_utils.hpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\sqlite3_utils.cpp" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\libproj\vtklibproj\src\proj_config.h" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\conversions\axisswap.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\conversions\cart.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\conversions\geoc.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\conversions\geocent.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\conversions\noop.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\conversions\topocentric.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\conversions\set.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\conversions\unitconvert.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\aeqd.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\adams.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\gnom.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\laea.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\mod_ster.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\nsper.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\nzmg.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\ortho.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\stere.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\sterea.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\aea.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\bipc.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\bonne.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\eqdc.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\isea.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\ccon.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\imw_p.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\krovak.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\lcc.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\poly.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\rpoly.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\sconics.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\rouss.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\cass.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\cc.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\cea.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\eqc.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\gall.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\labrd.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\lsat.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\misrsom.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\merc.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\mill.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\ocea.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\omerc.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\somerc.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\tcc.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\tcea.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\times.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\tmerc.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\tobmerc.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\airy.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\aitoff.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\august.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\bacon.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\bertin1953.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\chamb.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\hammer.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\lagrng.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\larr.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\lask.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\latlong.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\nicol.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\ob_tran.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\oea.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\tpeqd.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\vandg.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\vandg2.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\vandg4.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\wag7.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\lcca.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\geos.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\boggs.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\collg.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\comill.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\crast.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\denoy.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\eck1.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\eck2.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\eck3.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\eck4.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\eck5.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\fahey.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\fouc_s.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\gins8.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\gstmerc.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\gn_sinu.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\goode.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\igh.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\igh_o.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\hatano.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\loxim.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\mbt_fps.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\mbtfpp.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\mbtfpq.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\moll.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\nell.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\nell_h.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\patterson.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\putp2.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\putp3.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\putp4p.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\putp5.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\putp6.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\qsc.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\robin.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\sch.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\sts.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\urm5.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\urmfps.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\wag2.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\wag3.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\wink1.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\wink2.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\healpix.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\natearth.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\natearth2.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\calcofi.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\eqearth.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\projections\col_urban.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\transformations\affine.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\transformations\deformation.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\transformations\helmert.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\transformations\hgridshift.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\transformations\horner.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\transformations\molodensky.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\transformations\vgridshift.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\transformations\xyzgridshift.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\transformations\defmodel.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\transformations\tinshift.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\iso19111\static.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\iso19111\util.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\iso19111\metadata.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\iso19111\common.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\iso19111\crs.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\iso19111\datum.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\iso19111\coordinatesystem.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\iso19111\io.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\iso19111\internal.cpp">
+      <ObjectFileName>$(IntDir)/iso19111/internal.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\iso19111\factory.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\iso19111\c_api.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\iso19111\operation\concatenatedoperation.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\iso19111\operation\coordinateoperationfactory.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\iso19111\operation\conversion.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\iso19111\operation\esriparammappings.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\iso19111\operation\oputils.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\iso19111\operation\parammappings.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\iso19111\operation\projbasedoperation.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\iso19111\operation\singleoperation.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\iso19111\operation\transformation.cpp" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\iso19111\operation\vectorofvaluesparams.cpp" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\proj.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\proj_experimental.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\proj_constants.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\geodesic.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src\vtk_libproj_mangle.h" />
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\libproj\vtklibproj\src\vtklibproj_export.h" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ZERO_CHECK.vcxproj">
+      <Project>{29A36E60-F9BD-3AF1-92C4-919B78672499}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\nlohmannjson\vtknlohmannjson\nlohmannjson.vcxproj">
+      <Project>{6AA8B3ED-850D-37E8-B4A6-E3503BDC81D2}</Project>
+      <Name>nlohmannjson</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\sqlite\vtksqlite\sqlite.vcxproj">
+      <Project>{8072927C-8D6B-350B-B5FD-28B823E91A4B}</Project>
+      <Name>sqlite</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

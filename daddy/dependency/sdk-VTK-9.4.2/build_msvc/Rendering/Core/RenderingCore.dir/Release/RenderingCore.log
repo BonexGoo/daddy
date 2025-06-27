@@ -1,0 +1,157 @@
+﻿  Building Custom Rule D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Rendering/Core/CMakeLists.txt
+  vtkAbstractHyperTreeGridMapper.cxx
+  vtkAbstractMapper.cxx
+  vtkAbstractMapper3D.cxx
+  vtkAbstractPicker.cxx
+  vtkAbstractVolumeMapper.cxx
+  vtkActor.cxx
+  vtkActor2D.cxx
+  vtkActor2DCollection.cxx
+  vtkActorCollection.cxx
+  vtkAssembly.cxx
+  vtkAvatar.cxx
+  vtkBackgroundColorMonitor.cxx
+  vtkBillboardTextActor3D.cxx
+  vtkCamera.cxx
+  vtkCameraActor.cxx
+  vtkCameraInterpolator.cxx
+  vtkCellCenterDepthSort.cxx
+  vtkCellGraphicsPrimitiveMap.cxx
+  vtkCellGridMapper.cxx
+  vtkCellGridRenderRequest.cxx
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  vtkColorTransferFunction.cxx
+  vtkCompositeCellGridMapper.cxx
+  vtkCompositeDataDisplayAttributes.cxx
+  vtkCompositeDataDisplayAttributesLegacy.cxx
+  vtkCompositePolyDataMapper.cxx
+  vtkCompositePolyDataMapperDelegator.cxx
+  vtkCoordinate.cxx
+  vtkCuller.cxx
+  vtkCullerCollection.cxx
+  vtkDataSetMapper.cxx
+  vtkDiscretizableColorTransferFunction.cxx
+  vtkDistanceToCamera.cxx
+  vtkFXAAOptions.cxx
+  vtkFlagpoleLabel.cxx
+  vtkFollower.cxx
+  vtkFrameBufferObjectBase.cxx
+  vtkFrustumCoverageCuller.cxx
+  vtkGPUInfo.cxx
+  vtkGPUInfoList.cxx
+  vtkGenericVertexAttributeMapping.cxx
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  vtkGlyph3DMapper.cxx
+  vtkGraphMapper.cxx
+  vtkGraphToGlyphs.cxx
+  vtkGraphicsFactory.cxx
+  vtkHardwarePicker.cxx
+  vtkHardwareWindow.cxx
+  vtkHierarchicalPolyDataMapper.cxx
+  vtkImageActor.cxx
+  vtkImageMapper.cxx
+  vtkImageMapper3D.cxx
+  vtkImageProperty.cxx
+  vtkImageSlice.cxx
+  vtkImageSliceMapper.cxx
+  vtkInteractorEventRecorder.cxx
+  vtkInteractorObserver.cxx
+  vtkLabeledContourMapper.cxx
+  vtkLight.cxx
+  vtkLightActor.cxx
+  vtkLightCollection.cxx
+  vtkLightKit.cxx
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  vtkLogLookupTable.cxx
+  vtkLookupTableWithEnabling.cxx
+  vtkMapArrayValues.cxx
+  vtkMapper.cxx
+  vtkMapper2D.cxx
+  vtkMapperCollection.cxx
+  vtkObserverMediator.cxx
+  vtkPointGaussianMapper.cxx
+  vtkPolyDataMapper.cxx
+  vtkPolyDataMapper2D.cxx
+  vtkProp.cxx
+  vtkProp3D.cxx
+  vtkProp3DCollection.cxx
+  vtkProp3DFollower.cxx
+  vtkPropAssembly.cxx
+  vtkPropCollection.cxx
+  vtkProperty.cxx
+  vtkProperty2D.cxx
+  vtkRenderPass.cxx
+  vtkRenderState.cxx
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  vtkRenderTimerLog.cxx
+  vtkRenderWindowCollection.cxx
+  vtkRenderWindowInteractor.cxx
+  vtkRenderWindowInteractor3D.cxx
+  vtkRenderer.cxx
+  vtkRendererCollection.cxx
+  vtkRendererDelegate.cxx
+  vtkRendererSource.cxx
+  vtkResizingWindowToImageFilter.cxx
+  vtkSelectVisiblePoints.cxx
+  vtkShaderProperty.cxx
+  vtkSkybox.cxx
+  vtkStereoCompositor.cxx
+  vtkTextActor.cxx
+  vtkTextActor3D.cxx
+  vtkTexture.cxx
+  vtkTexturedActor2D.cxx
+  vtkTransformCoordinateSystems.cxx
+  vtkTransformInterpolator.cxx
+  vtkTupleInterpolator.cxx
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  vtkUniforms.cxx
+  vtkViewDependentErrorMetric.cxx
+  vtkViewport.cxx
+  vtkVisibilitySort.cxx
+  vtkVolume.cxx
+  vtkVolumeCollection.cxx
+  vtkVolumeProperty.cxx
+  vtkWindowLevelLookupTable.cxx
+  vtkWindowToImageFilter.cxx
+  vtkAssemblyNode.cxx
+  vtkAssemblyPath.cxx
+  vtkAssemblyPaths.cxx
+  vtkAreaPicker.cxx
+  vtkPicker.cxx
+  vtkAbstractPropPicker.cxx
+  vtkLODProp3D.cxx
+  vtkPropPicker.cxx
+  vtkPickingManager.cxx
+  vtkWorldPointPicker.cxx
+  vtkCellPicker.cxx
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  vtkPointPicker.cxx
+  vtkRenderedAreaPicker.cxx
+  vtkScenePicker.cxx
+  vtkInteractorStyle.cxx
+  vtkInteractorStyle3D.cxx
+  vtkInteractorStyleSwitchBase.cxx
+  vtkTDxInteractorStyle.cxx
+  vtkTDxInteractorStyleCamera.cxx
+  vtkTDxInteractorStyleSettings.cxx
+  vtkStringToImage.cxx
+  vtkTextMapper.cxx
+  vtkTextProperty.cxx
+  vtkTextPropertyCollection.cxx
+  vtkTextRenderer.cxx
+  vtkAbstractInteractionDevice.cxx
+  vtkAbstractRenderDevice.cxx
+  vtkRenderWidget.cxx
+  vtkCIEDE2000.cxx
+  코드를 생성하고 있습니다...
+  vtkHardwareSelector.cxx
+  vtkRenderWindow.cxx
+  코드를 생성하고 있습니다...
+     D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Release/vtkRenderingCore-9.4.lib 라이브러리 및 D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Release/vtkRenderingCore-9.4.exp 개체를 생성하고 있습니다.
+  RenderingCore.vcxproj -> D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\bin\Release\vtkRenderingCore-9.4.dll

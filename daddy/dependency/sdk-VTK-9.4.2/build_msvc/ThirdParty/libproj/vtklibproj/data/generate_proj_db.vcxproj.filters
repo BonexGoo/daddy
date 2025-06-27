@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\f4d59fdaa7f5fc43044badd80525752f\proj.db.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\f19177044f79252608bac0c3a04871d0\generate_proj_db.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\libproj\vtklibproj\data\CMakeFiles\generate_proj_db" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{6E4BE47F-71E5-3B1C-ADD4-7EEAE69F3838}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

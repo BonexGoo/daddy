@@ -1,0 +1,31 @@
+﻿  Building Custom Rule D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/ofstd/tests/CMakeLists.txt
+  tests.cc
+  tatof.cc
+  terror.cc
+  tmap.cc
+  tvec.cc
+  tfilsys.cc
+  tftoa.cc
+  tthread.cc
+  tbase64.cc
+  tstring.cc
+  tstrutl.cc
+  tlist.cc
+  tstack.cc
+  tofdatim.cc
+  tofstd.cc
+  tmarkup.cc
+  tchrenc.cc
+  txml.cc
+  tuuid.cc
+  toffile.cc
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  tmem.cc
+  toption.cc
+  ttuple.cc
+  tlimits.cc
+  tvariant.cc
+  tipc.cc
+  코드를 생성하고 있습니다...
+  ofstd_tests.vcxproj -> D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\bin\Debug\ofstd_tests.exe

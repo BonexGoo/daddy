@@ -1,0 +1,2171 @@
+strict digraph modules {
+clusterrank=local;
+rankdir=TB;
+subgraph "modules_without_kits" {
+"VTK::DICOM" [
+    label="VTK::DICOM"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::DICOM" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::DICOM" -> "VTK::CommonDataModel" [style=solid, arrowhead=normal];
+"VTK::DICOM" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+"VTK::DICOM" -> "VTK::IOImage" [style=solid, arrowhead=normal];
+
+"VTK::zlib" [
+    label="VTK::zlib"
+    shape=cds
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=1
+];
+
+"VTK::WrappingTools" [
+    label="VTK::WrappingTools"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=1
+];
+
+"VTK::ViewsQt" [
+    label="VTK::ViewsQt"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=1
+];
+"VTK::ViewsQt" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::ViewsQt" -> "VTK::GUISupportQt" [style=solid, arrowhead=normal];
+"VTK::ViewsQt" -> "VTK::ViewsCore" [style=solid, arrowhead=normal];
+"VTK::ViewsQt" -> "VTK::ViewsInfovis" [style=solid, arrowhead=normal];
+
+"VTK::loguru" [
+    label="VTK::loguru"
+    shape=cds
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=1
+];
+
+"VTK::TestingRendering" [
+    label="VTK::TestingRendering"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::TestingRendering" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::TestingRendering" -> "VTK::ImagingColor" [style=solid, arrowhead=normal];
+"VTK::TestingRendering" -> "VTK::IOXML" [style=solid, arrowhead=normal];
+"VTK::TestingRendering" -> "VTK::RenderingCore" [style=solid, arrowhead=normal];
+"VTK::TestingRendering" -> "VTK::TestingCore" [style=solid, arrowhead=normal];
+
+"VTK::TestingCore" [
+    label="VTK::TestingCore"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=1
+];
+"VTK::TestingCore" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::TestingCore" -> "VTK::CommonDataModel" [style=solid, arrowhead=normal];
+"VTK::TestingCore" -> "VTK::vtksys" [style=solid, arrowhead=normal];
+
+"VTK::vtksys" [
+    label="VTK::vtksys"
+    shape=cds
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=1
+];
+
+"VTK::ViewsInfovis" [
+    label="VTK::ViewsInfovis"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::ViewsInfovis" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::ViewsInfovis" -> "VTK::CommonDataModel" [style=solid, arrowhead=normal];
+"VTK::ViewsInfovis" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+"VTK::ViewsInfovis" -> "VTK::InteractionStyle" [style=solid, arrowhead=normal];
+"VTK::ViewsInfovis" -> "VTK::RenderingContext2D" [style=solid, arrowhead=normal];
+"VTK::ViewsInfovis" -> "VTK::ViewsCore" [style=solid, arrowhead=normal];
+
+"VTK::RenderingRayTracing" [
+    label="VTK::RenderingRayTracing"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::RenderingRayTracing" -> "VTK::RenderingVolume" [style=bold, arrowhead=normal];
+"VTK::RenderingRayTracing" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::RenderingRayTracing" -> "VTK::CommonDataModel" [style=solid, arrowhead=normal];
+"VTK::RenderingRayTracing" -> "VTK::DomainsChemistry" [style=solid, arrowhead=normal];
+"VTK::RenderingRayTracing" -> "VTK::RenderingCore" [style=solid, arrowhead=normal];
+"VTK::RenderingRayTracing" -> "VTK::RenderingOpenGL2" [style=solid, arrowhead=normal];
+"VTK::RenderingRayTracing" -> "VTK::RenderingSceneGraph" [style=solid, arrowhead=normal];
+"VTK::RenderingRayTracing" -> "VTK::RenderingVolume" [style=solid, arrowhead=normal];
+
+"VTK::jsoncpp" [
+    label="VTK::jsoncpp"
+    shape=cds
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=1
+];
+
+"VTK::RenderingQt" [
+    label="VTK::RenderingQt"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::RenderingQt" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::RenderingQt" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+"VTK::RenderingQt" -> "VTK::RenderingCore" [style=solid, arrowhead=normal];
+"VTK::RenderingQt" -> "VTK::RenderingLabel" [style=solid, arrowhead=normal];
+
+"VTK::octree" [
+    label="VTK::octree"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=1
+];
+
+"VTK::RenderingLICOpenGL2" [
+    label="VTK::RenderingLICOpenGL2"
+    shape=rectangle
+    style=filled
+    color="/svg/darkorchid"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::RenderingLICOpenGL2" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::RenderingLICOpenGL2" -> "VTK::CommonDataModel" [style=solid, arrowhead=normal];
+"VTK::RenderingLICOpenGL2" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+"VTK::RenderingLICOpenGL2" -> "VTK::RenderingCore" [style=solid, arrowhead=normal];
+"VTK::RenderingLICOpenGL2" -> "VTK::RenderingOpenGL2" [style=solid, arrowhead=normal];
+
+"VTK::glad" [
+    label="VTK::glad"
+    shape=cds
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=1
+];
+
+"VTK::fmt" [
+    label="VTK::fmt"
+    shape=cds
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=1
+];
+
+"VTK::nlohmannjson" [
+    label="VTK::nlohmannjson"
+    shape=cds
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=1
+];
+
+"VTK::hdf5" [
+    label="VTK::hdf5"
+    shape=cds
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=1
+];
+
+"VTK::IOTecplotTable" [
+    label="VTK::IOTecplotTable"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::IOTecplotTable" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::IOTecplotTable" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+
+"VTK::utf8" [
+    label="VTK::utf8"
+    shape=cds
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=1
+];
+
+"VTK::theora" [
+    label="VTK::theora"
+    shape=cds
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=1
+];
+"VTK::theora" -> "VTK::ogg" [style=solid, arrowhead=normal];
+
+"VTK::ogg" [
+    label="VTK::ogg"
+    shape=cds
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=1
+];
+
+"VTK::netcdf" [
+    label="VTK::netcdf"
+    shape=cds
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=1
+];
+"VTK::netcdf" -> "VTK::hdf5" [style=solid, arrowhead=normal];
+
+"VTK::IOMotionFX" [
+    label="VTK::IOMotionFX"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::IOMotionFX" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+
+"VTK::pegtl" [
+    label="VTK::pegtl"
+    shape=cds
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=1
+];
+
+"VTK::IOMINC" [
+    label="VTK::IOMINC"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::IOMINC" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::IOMINC" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+"VTK::IOMINC" -> "VTK::IOCore" [style=solid, arrowhead=normal];
+"VTK::IOMINC" -> "VTK::IOImage" [style=solid, arrowhead=normal];
+
+"VTK::IOImport" [
+    label="VTK::IOImport"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::IOImport" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::IOImport" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+"VTK::IOImport" -> "VTK::CommonMisc" [style=solid, arrowhead=normal];
+"VTK::IOImport" -> "VTK::RenderingCore" [style=solid, arrowhead=normal];
+"VTK::IOImport" -> "VTK::vtksys" [style=solid, arrowhead=normal];
+
+"VTK::IOIOSS" [
+    label="VTK::IOIOSS"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::IOIOSS" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::IOIOSS" -> "VTK::CommonDataModel" [style=solid, arrowhead=normal];
+"VTK::IOIOSS" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+"VTK::IOIOSS" -> "VTK::FiltersCellGrid" [style=solid, arrowhead=normal];
+"VTK::IOIOSS" -> "VTK::IOCore" [style=solid, arrowhead=normal];
+"VTK::IOIOSS" -> "VTK::ParallelCore" [style=solid, arrowhead=normal];
+
+"VTK::ioss" [
+    label="VTK::ioss"
+    shape=cds
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=1
+];
+"VTK::ioss" -> "VTK::cgns" [style=solid, arrowhead=normal];
+
+"VTK::cgns" [
+    label="VTK::cgns"
+    shape=cds
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=1
+];
+"VTK::cgns" -> "VTK::hdf5" [style=solid, arrowhead=normal];
+
+"VTK::exodusII" [
+    label="VTK::exodusII"
+    shape=cds
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=1
+];
+"VTK::exodusII" -> "VTK::hdf5" [style=solid, arrowhead=normal];
+"VTK::exodusII" -> "VTK::netcdf" [style=solid, arrowhead=normal];
+
+"VTK::IOHDF" [
+    label="VTK::IOHDF"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::IOHDF" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::IOHDF" -> "VTK::CommonDataModel" [style=solid, arrowhead=normal];
+"VTK::IOHDF" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+"VTK::IOHDF" -> "VTK::FiltersCore" [style=solid, arrowhead=normal];
+"VTK::IOHDF" -> "VTK::IOCore" [style=solid, arrowhead=normal];
+"VTK::IOHDF" -> "VTK::IOHDFTools" [style=solid, arrowhead=normal];
+
+"VTK::IOFDS" [
+    label="VTK::IOFDS"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::IOFDS" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::IOFDS" -> "VTK::CommonDataModel" [style=solid, arrowhead=normal];
+"VTK::IOFDS" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+
+"VTK::IOInfovis" [
+    label="VTK::IOInfovis"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::IOInfovis" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::IOInfovis" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+"VTK::IOInfovis" -> "VTK::IOLegacy" [style=solid, arrowhead=normal];
+"VTK::IOInfovis" -> "VTK::IOXML" [style=solid, arrowhead=normal];
+
+"VTK::libxml2" [
+    label="VTK::libxml2"
+    shape=cds
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=1
+];
+"VTK::libxml2" -> "VTK::zlib" [style=solid, arrowhead=normal];
+
+"VTK::IOExportPDF" [
+    label="VTK::IOExportPDF"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::IOExportPDF" -> "VTK::IOExport" [style=bold, arrowhead=normal];
+"VTK::IOExportPDF" -> "VTK::IOExport" [style=solid, arrowhead=normal];
+"VTK::IOExportPDF" -> "VTK::RenderingContext2D" [style=solid, arrowhead=normal];
+
+"VTK::libharu" [
+    label="VTK::libharu"
+    shape=cds
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=1
+];
+
+"VTK::png" [
+    label="VTK::png"
+    shape=cds
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=1
+];
+"VTK::png" -> "VTK::zlib" [style=solid, arrowhead=normal];
+
+"VTK::IOExportGL2PS" [
+    label="VTK::IOExportGL2PS"
+    shape=rectangle
+    style=filled
+    color="/svg/darkorchid"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::IOExportGL2PS" -> "VTK::IOExportGL2PS" [style=bold, arrowhead=normal];
+"VTK::IOExportGL2PS" -> "VTK::IOExport" [style=solid, arrowhead=normal];
+"VTK::IOExportGL2PS" -> "VTK::RenderingGL2PSOpenGL2" [style=solid, arrowhead=normal];
+
+"VTK::RenderingGL2PSOpenGL2" [
+    label="VTK::RenderingGL2PSOpenGL2"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::RenderingGL2PSOpenGL2" -> "VTK::RenderingOpenGL2" [style=bold, arrowhead=normal];
+"VTK::RenderingGL2PSOpenGL2" -> "VTK::RenderingOpenGL2" [style=solid, arrowhead=normal];
+
+"VTK::gl2ps" [
+    label="VTK::gl2ps"
+    shape=cds
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=1
+];
+"VTK::gl2ps" -> "VTK::glad" [style=solid, arrowhead=normal];
+
+"VTK::IOEnSight" [
+    label="VTK::IOEnSight"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::IOEnSight" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+
+"VTK::pugixml" [
+    label="VTK::pugixml"
+    shape=cds
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=1
+];
+
+"VTK::IOChemistry" [
+    label="VTK::IOChemistry"
+    shape=rectangle
+    style=filled
+    color="/svg/darkorchid"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::IOChemistry" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::IOChemistry" -> "VTK::CommonDataModel" [style=solid, arrowhead=normal];
+"VTK::IOChemistry" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+"VTK::IOChemistry" -> "VTK::IOCore" [style=solid, arrowhead=normal];
+
+"VTK::IOCesium3DTiles" [
+    label="VTK::IOCesium3DTiles"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::IOCesium3DTiles" -> "VTK::IOCore" [style=solid, arrowhead=normal];
+
+"VTK::libproj" [
+    label="VTK::libproj"
+    shape=cds
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=1
+];
+"VTK::libproj" -> "VTK::nlohmannjson" [style=solid, arrowhead=normal];
+
+"VTK::IOCONVERGECFD" [
+    label="VTK::IOCONVERGECFD"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::IOCONVERGECFD" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::IOCONVERGECFD" -> "VTK::CommonDataModel" [style=solid, arrowhead=normal];
+"VTK::IOCONVERGECFD" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+
+"VTK::IOHDFTools" [
+    label="VTK::IOHDFTools"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=1
+];
+"VTK::IOHDFTools" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::IOHDFTools" -> "VTK::hdf5" [style=solid, arrowhead=normal];
+
+"VTK::IOAsynchronous" [
+    label="VTK::IOAsynchronous"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::IOAsynchronous" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::IOAsynchronous" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+"VTK::IOAsynchronous" -> "VTK::IOCore" [style=solid, arrowhead=normal];
+"VTK::IOAsynchronous" -> "VTK::IOImage" [style=solid, arrowhead=normal];
+"VTK::IOAsynchronous" -> "VTK::IOXML" [style=solid, arrowhead=normal];
+
+"VTK::IOExport" [
+    label="VTK::IOExport"
+    shape=rectangle
+    style=filled
+    color="/svg/darkorchid"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::IOExport" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::IOExport" -> "VTK::IOCore" [style=solid, arrowhead=normal];
+"VTK::IOExport" -> "VTK::IOImage" [style=solid, arrowhead=normal];
+"VTK::IOExport" -> "VTK::IOXML" [style=solid, arrowhead=normal];
+"VTK::IOExport" -> "VTK::RenderingContext2D" [style=solid, arrowhead=normal];
+"VTK::IOExport" -> "VTK::RenderingCore" [style=solid, arrowhead=normal];
+"VTK::IOExport" -> "VTK::RenderingFreeType" [style=solid, arrowhead=normal];
+"VTK::IOExport" -> "VTK::RenderingVtkJS" [style=solid, arrowhead=normal];
+
+"VTK::RenderingVtkJS" [
+    label="VTK::RenderingVtkJS"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::RenderingVtkJS" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::RenderingVtkJS" -> "VTK::RenderingSceneGraph" [style=solid, arrowhead=normal];
+"VTK::RenderingVtkJS" -> "VTK::jsoncpp" [style=solid, arrowhead=normal];
+
+"VTK::InfovisLayout" [
+    label="VTK::InfovisLayout"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::InfovisLayout" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::InfovisLayout" -> "VTK::CommonDataModel" [style=solid, arrowhead=normal];
+"VTK::InfovisLayout" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+
+"VTK::GUISupportQtSQL" [
+    label="VTK::GUISupportQtSQL"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=1
+];
+"VTK::GUISupportQtSQL" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::GUISupportQtSQL" -> "VTK::GUISupportQt" [style=solid, arrowhead=normal];
+"VTK::GUISupportQtSQL" -> "VTK::IOSQL" [style=solid, arrowhead=normal];
+
+"VTK::sqlite" [
+    label="VTK::sqlite"
+    shape=cds
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=1
+];
+
+"VTK::GUISupportQtQuick" [
+    label="VTK::GUISupportQtQuick"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=1
+];
+"VTK::GUISupportQtQuick" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::GUISupportQtQuick" -> "VTK::GUISupportQt" [style=solid, arrowhead=normal];
+"VTK::GUISupportQtQuick" -> "VTK::RenderingCore" [style=solid, arrowhead=normal];
+
+"VTK::GUISupportQt" [
+    label="VTK::GUISupportQt"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=1
+];
+"VTK::GUISupportQt" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::GUISupportQt" -> "VTK::RenderingCore" [style=solid, arrowhead=normal];
+"VTK::GUISupportQt" -> "VTK::RenderingOpenGL2" [style=solid, arrowhead=normal];
+"VTK::GUISupportQt" -> "VTK::InteractionWidgets" [style=solid, arrowhead=normal];
+
+"VTK::ImagingHybrid" [
+    label="VTK::ImagingHybrid"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::ImagingHybrid" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::ImagingHybrid" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+
+"VTK::GeovisCore" [
+    label="VTK::GeovisCore"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::GeovisCore" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::GeovisCore" -> "VTK::CommonTransforms" [style=solid, arrowhead=normal];
+"VTK::GeovisCore" -> "VTK::libproj" [style=solid, arrowhead=normal];
+
+"VTK::eigen" [
+    label="VTK::eigen"
+    shape=cds
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=1
+];
+
+"VTK::DomainsChemistryOpenGL2" [
+    label="VTK::DomainsChemistryOpenGL2"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::DomainsChemistryOpenGL2" -> "VTK::DomainsChemistry" [style=bold, arrowhead=normal];
+"VTK::DomainsChemistryOpenGL2" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::DomainsChemistryOpenGL2" -> "VTK::DomainsChemistry" [style=solid, arrowhead=normal];
+"VTK::DomainsChemistryOpenGL2" -> "VTK::RenderingOpenGL2" [style=solid, arrowhead=normal];
+
+"VTK::RenderingHyperTreeGrid" [
+    label="VTK::RenderingHyperTreeGrid"
+    shape=rectangle
+    style=filled
+    color="/svg/darkorchid"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::RenderingHyperTreeGrid" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::RenderingHyperTreeGrid" -> "VTK::CommonDataModel" [style=solid, arrowhead=normal];
+"VTK::RenderingHyperTreeGrid" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+"VTK::RenderingHyperTreeGrid" -> "VTK::CommonMath" [style=solid, arrowhead=normal];
+"VTK::RenderingHyperTreeGrid" -> "VTK::RenderingCore" [style=solid, arrowhead=normal];
+
+"VTK::RenderingUI" [
+    label="VTK::RenderingUI"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::RenderingUI" -> "VTK::RenderingCore" [style=bold, arrowhead=normal];
+"VTK::RenderingUI" -> "VTK::RenderingCore" [style=solid, arrowhead=normal];
+
+"VTK::FiltersHybrid" [
+    label="VTK::FiltersHybrid"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::FiltersHybrid" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::FiltersHybrid" -> "VTK::CommonDataModel" [style=solid, arrowhead=normal];
+"VTK::FiltersHybrid" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+"VTK::FiltersHybrid" -> "VTK::CommonTransforms" [style=solid, arrowhead=normal];
+"VTK::FiltersHybrid" -> "VTK::FiltersGeometry" [style=solid, arrowhead=normal];
+
+"VTK::DomainsChemistry" [
+    label="VTK::DomainsChemistry"
+    shape=rectangle
+    style=filled
+    color="/svg/darkorchid"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::DomainsChemistry" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::DomainsChemistry" -> "VTK::CommonDataModel" [style=solid, arrowhead=normal];
+"VTK::DomainsChemistry" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+"VTK::DomainsChemistry" -> "VTK::IOLegacy" [style=solid, arrowhead=normal];
+"VTK::DomainsChemistry" -> "VTK::IOXMLParser" [style=solid, arrowhead=normal];
+"VTK::DomainsChemistry" -> "VTK::RenderingCore" [style=solid, arrowhead=normal];
+
+"VTK::ChartsCore" [
+    label="VTK::ChartsCore"
+    shape=rectangle
+    style=filled
+    color="/svg/darkorchid"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::ChartsCore" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::ChartsCore" -> "VTK::CommonDataModel" [style=solid, arrowhead=normal];
+"VTK::ChartsCore" -> "VTK::FiltersGeneral" [style=solid, arrowhead=normal];
+"VTK::ChartsCore" -> "VTK::RenderingContext2D" [style=solid, arrowhead=normal];
+"VTK::ChartsCore" -> "VTK::RenderingCore" [style=solid, arrowhead=normal];
+"VTK::ChartsCore" -> "VTK::vtksys" [style=solid, arrowhead=normal];
+
+"VTK::InfovisCore" [
+    label="VTK::InfovisCore"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::InfovisCore" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::InfovisCore" -> "VTK::CommonDataModel" [style=solid, arrowhead=normal];
+"VTK::InfovisCore" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+"VTK::InfovisCore" -> "VTK::CommonColor" [style=solid, arrowhead=normal];
+"VTK::InfovisCore" -> "VTK::IOImage" [style=solid, arrowhead=normal];
+"VTK::InfovisCore" -> "VTK::ImagingCore" [style=solid, arrowhead=normal];
+"VTK::InfovisCore" -> "VTK::ImagingSources" [style=solid, arrowhead=normal];
+"VTK::InfovisCore" -> "VTK::RenderingFreeType" [style=solid, arrowhead=normal];
+
+"VTK::diy2" [
+    label="VTK::diy2"
+    shape=cds
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=1
+];
+
+"VTK::expat" [
+    label="VTK::expat"
+    shape=cds
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=1
+];
+
+"VTK::token" [
+    label="VTK::token"
+    shape=cds
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=1
+];
+"VTK::token" -> "VTK::nlohmannjson" [style=solid, arrowhead=normal];
+
+"VTK::lz4" [
+    label="VTK::lz4"
+    shape=cds
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=1
+];
+
+"VTK::lzma" [
+    label="VTK::lzma"
+    shape=cds
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=1
+];
+
+"VTK::fast_float" [
+    label="VTK::fast_float"
+    shape=cds
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=1
+];
+
+"VTK::DICOMParser" [
+    label="VTK::DICOMParser"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=1
+];
+
+"VTK::jpeg" [
+    label="VTK::jpeg"
+    shape=cds
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=1
+];
+
+"VTK::metaio" [
+    label="VTK::metaio"
+    shape=cds
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=1
+];
+
+"VTK::tiff" [
+    label="VTK::tiff"
+    shape=cds
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=1
+];
+
+"VTK::freetype" [
+    label="VTK::freetype"
+    shape=cds
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=1
+];
+"VTK::freetype" -> "VTK::kwiml" [style=solid, arrowhead=normal];
+"VTK::freetype" -> "VTK::zlib" [style=solid, arrowhead=normal];
+
+"VTK::kwiml" [
+    label="VTK::kwiml"
+    shape=cds
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=1
+];
+
+"VTK::verdict" [
+    label="VTK::verdict"
+    shape=cds
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=1
+];
+
+"VTK::exprtk" [
+    label="VTK::exprtk"
+    shape=cds
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=1
+];
+
+"VTK::kissfft" [
+    label="VTK::kissfft"
+    shape=cds
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=1
+];
+
+"VTK::doubleconversion" [
+    label="VTK::doubleconversion"
+    shape=cds
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=1
+];
+
+}
+subgraph "cluster_VTK::Views" {
+label="VTK::Views"
+"VTK::ViewsContext2D" [
+    label="VTK::ViewsContext2D"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::ViewsContext2D" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::ViewsContext2D" -> "VTK::RenderingCore" [style=solid, arrowhead=normal];
+"VTK::ViewsContext2D" -> "VTK::ViewsCore" [style=solid, arrowhead=normal];
+
+"VTK::ViewsCore" [
+    label="VTK::ViewsCore"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::ViewsCore" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::ViewsCore" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+"VTK::ViewsCore" -> "VTK::InteractionWidgets" [style=solid, arrowhead=normal];
+
+}
+subgraph "cluster_VTK::Common" {
+label="VTK::Common"
+"VTK::CommonColor" [
+    label="VTK::CommonColor"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::CommonColor" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::CommonColor" -> "VTK::CommonDataModel" [style=solid, arrowhead=normal];
+
+"VTK::CommonComputationalGeometry" [
+    label="VTK::CommonComputationalGeometry"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::CommonComputationalGeometry" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::CommonComputationalGeometry" -> "VTK::CommonDataModel" [style=solid, arrowhead=normal];
+
+"VTK::CommonExecutionModel" [
+    label="VTK::CommonExecutionModel"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::CommonExecutionModel" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::CommonExecutionModel" -> "VTK::CommonDataModel" [style=solid, arrowhead=normal];
+
+"VTK::CommonDataModel" [
+    label="VTK::CommonDataModel"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::CommonDataModel" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::CommonDataModel" -> "VTK::CommonMath" [style=solid, arrowhead=normal];
+"VTK::CommonDataModel" -> "VTK::CommonTransforms" [style=solid, arrowhead=normal];
+
+"VTK::CommonSystem" [
+    label="VTK::CommonSystem"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::CommonSystem" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+
+"VTK::CommonMisc" [
+    label="VTK::CommonMisc"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::CommonMisc" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::CommonMisc" -> "VTK::CommonMath" [style=solid, arrowhead=normal];
+
+"VTK::CommonTransforms" [
+    label="VTK::CommonTransforms"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::CommonTransforms" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::CommonTransforms" -> "VTK::CommonMath" [style=solid, arrowhead=normal];
+
+"VTK::CommonMath" [
+    label="VTK::CommonMath"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::CommonMath" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::CommonMath" -> "VTK::kissfft" [style=solid, arrowhead=normal];
+
+"VTK::CommonCore" [
+    label="VTK::CommonCore"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::CommonCore" -> "VTK::kwiml" [style=solid, arrowhead=normal];
+"VTK::CommonCore" -> "VTK::vtksys" [style=solid, arrowhead=normal];
+"VTK::CommonCore" -> "VTK::token" [style=solid, arrowhead=normal];
+"VTK::CommonCore" -> "VTK::nlohmannjson" [style=solid, arrowhead=normal];
+
+}
+subgraph "cluster_VTK::Rendering" {
+label="VTK::Rendering"
+"VTK::RenderingSceneGraph" [
+    label="VTK::RenderingSceneGraph"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::RenderingSceneGraph" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+
+"VTK::RenderingLabel" [
+    label="VTK::RenderingLabel"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::RenderingLabel" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::RenderingLabel" -> "VTK::CommonDataModel" [style=solid, arrowhead=normal];
+"VTK::RenderingLabel" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+"VTK::RenderingLabel" -> "VTK::RenderingCore" [style=solid, arrowhead=normal];
+"VTK::RenderingLabel" -> "VTK::RenderingFreeType" [style=solid, arrowhead=normal];
+
+"VTK::RenderingLOD" [
+    label="VTK::RenderingLOD"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::RenderingLOD" -> "VTK::RenderingCore" [style=solid, arrowhead=normal];
+
+"VTK::RenderingImage" [
+    label="VTK::RenderingImage"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::RenderingImage" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+"VTK::RenderingImage" -> "VTK::RenderingCore" [style=solid, arrowhead=normal];
+
+"VTK::RenderingVolume" [
+    label="VTK::RenderingVolume"
+    shape=rectangle
+    style=filled
+    color="/svg/darkorchid"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::RenderingVolume" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::RenderingVolume" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+"VTK::RenderingVolume" -> "VTK::RenderingCore" [style=solid, arrowhead=normal];
+
+"VTK::RenderingAnnotation" [
+    label="VTK::RenderingAnnotation"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::RenderingAnnotation" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::RenderingAnnotation" -> "VTK::CommonDataModel" [style=solid, arrowhead=normal];
+"VTK::RenderingAnnotation" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+"VTK::RenderingAnnotation" -> "VTK::RenderingCore" [style=solid, arrowhead=normal];
+
+"VTK::RenderingContext2D" [
+    label="VTK::RenderingContext2D"
+    shape=rectangle
+    style=filled
+    color="/svg/darkorchid"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::RenderingContext2D" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::RenderingContext2D" -> "VTK::CommonDataModel" [style=solid, arrowhead=normal];
+"VTK::RenderingContext2D" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+"VTK::RenderingContext2D" -> "VTK::RenderingCore" [style=solid, arrowhead=normal];
+
+"VTK::RenderingFreeType" [
+    label="VTK::RenderingFreeType"
+    shape=rectangle
+    style=filled
+    color="/svg/darkorchid"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::RenderingFreeType" -> "VTK::RenderingCore" [style=bold, arrowhead=normal];
+"VTK::RenderingFreeType" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::RenderingFreeType" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+"VTK::RenderingFreeType" -> "VTK::RenderingCore" [style=solid, arrowhead=normal];
+"VTK::RenderingFreeType" -> "VTK::freetype" [style=solid, arrowhead=normal];
+
+"VTK::RenderingCore" [
+    label="VTK::RenderingCore"
+    shape=rectangle
+    style=filled
+    color="/svg/darkorchid"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::RenderingCore" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::RenderingCore" -> "VTK::CommonDataModel" [style=solid, arrowhead=normal];
+"VTK::RenderingCore" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+"VTK::RenderingCore" -> "VTK::CommonMath" [style=solid, arrowhead=normal];
+"VTK::RenderingCore" -> "VTK::FiltersCore" [style=solid, arrowhead=normal];
+
+}
+subgraph "cluster_VTK::Parallel" {
+label="VTK::Parallel"
+"VTK::RenderingVolumeAMR" [
+    label="VTK::RenderingVolumeAMR"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::RenderingVolumeAMR" -> "VTK::ImagingCore" [style=solid, arrowhead=normal];
+"VTK::RenderingVolumeAMR" -> "VTK::RenderingVolume" [style=solid, arrowhead=normal];
+"VTK::RenderingVolumeAMR" -> "VTK::RenderingVolumeOpenGL2" [style=solid, arrowhead=normal];
+
+"VTK::IOParallelXML" [
+    label="VTK::IOParallelXML"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::IOParallelXML" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::IOParallelXML" -> "VTK::IOXML" [style=solid, arrowhead=normal];
+
+"VTK::IOParallel" [
+    label="VTK::IOParallel"
+    shape=rectangle
+    style=filled
+    color="/svg/darkorchid"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::IOParallel" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::IOParallel" -> "VTK::CommonDataModel" [style=solid, arrowhead=normal];
+"VTK::IOParallel" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+"VTK::IOParallel" -> "VTK::IOCore" [style=solid, arrowhead=normal];
+"VTK::IOParallel" -> "VTK::IOGeometry" [style=solid, arrowhead=normal];
+"VTK::IOParallel" -> "VTK::IOImage" [style=solid, arrowhead=normal];
+"VTK::IOParallel" -> "VTK::IOLegacy" [style=solid, arrowhead=normal];
+"VTK::IOParallel" -> "VTK::jsoncpp" [style=solid, arrowhead=normal];
+
+"VTK::IOCGNSReader" [
+    label="VTK::IOCGNSReader"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::IOCGNSReader" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::IOCGNSReader" -> "VTK::CommonDataModel" [style=solid, arrowhead=normal];
+"VTK::IOCGNSReader" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+"VTK::IOCGNSReader" -> "VTK::ParallelCore" [style=solid, arrowhead=normal];
+
+"VTK::IOAMR" [
+    label="VTK::IOAMR"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::IOAMR" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::IOAMR" -> "VTK::CommonDataModel" [style=solid, arrowhead=normal];
+"VTK::IOAMR" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+
+"VTK::FiltersParallelImaging" [
+    label="VTK::FiltersParallelImaging"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::FiltersParallelImaging" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+"VTK::FiltersParallelImaging" -> "VTK::FiltersImaging" [style=solid, arrowhead=normal];
+"VTK::FiltersParallelImaging" -> "VTK::FiltersParallel" [style=solid, arrowhead=normal];
+"VTK::FiltersParallelImaging" -> "VTK::ImagingCore" [style=solid, arrowhead=normal];
+
+"VTK::FiltersFlowPaths" [
+    label="VTK::FiltersFlowPaths"
+    shape=rectangle
+    style=filled
+    color="/svg/darkorchid"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::FiltersFlowPaths" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::FiltersFlowPaths" -> "VTK::CommonComputationalGeometry" [style=solid, arrowhead=normal];
+"VTK::FiltersFlowPaths" -> "VTK::CommonDataModel" [style=solid, arrowhead=normal];
+"VTK::FiltersFlowPaths" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+"VTK::FiltersFlowPaths" -> "VTK::CommonMath" [style=solid, arrowhead=normal];
+
+"VTK::FiltersAMR" [
+    label="VTK::FiltersAMR"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::FiltersAMR" -> "VTK::CommonDataModel" [style=solid, arrowhead=normal];
+"VTK::FiltersAMR" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+
+"VTK::FiltersParallel" [
+    label="VTK::FiltersParallel"
+    shape=rectangle
+    style=filled
+    color="/svg/darkorchid"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::FiltersParallel" -> "VTK::FiltersCore" [style=bold, arrowhead=normal];
+"VTK::FiltersParallel" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::FiltersParallel" -> "VTK::CommonDataModel" [style=solid, arrowhead=normal];
+"VTK::FiltersParallel" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+"VTK::FiltersParallel" -> "VTK::FiltersCore" [style=solid, arrowhead=normal];
+"VTK::FiltersParallel" -> "VTK::FiltersExtraction" [style=solid, arrowhead=normal];
+"VTK::FiltersParallel" -> "VTK::FiltersGeneral" [style=solid, arrowhead=normal];
+"VTK::FiltersParallel" -> "VTK::FiltersGeometry" [style=solid, arrowhead=normal];
+"VTK::FiltersParallel" -> "VTK::FiltersHybrid" [style=solid, arrowhead=normal];
+"VTK::FiltersParallel" -> "VTK::FiltersHyperTree" [style=solid, arrowhead=normal];
+"VTK::FiltersParallel" -> "VTK::FiltersModeling" [style=solid, arrowhead=normal];
+"VTK::FiltersParallel" -> "VTK::FiltersSources" [style=solid, arrowhead=normal];
+"VTK::FiltersParallel" -> "VTK::FiltersTexture" [style=solid, arrowhead=normal];
+"VTK::FiltersParallel" -> "VTK::ParallelCore" [style=solid, arrowhead=normal];
+
+"VTK::FiltersExtraction" [
+    label="VTK::FiltersExtraction"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::FiltersExtraction" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::FiltersExtraction" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+"VTK::FiltersExtraction" -> "VTK::FiltersGeneral" [style=solid, arrowhead=normal];
+
+"VTK::ParallelDIY" [
+    label="VTK::ParallelDIY"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=1
+];
+"VTK::ParallelDIY" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::ParallelDIY" -> "VTK::CommonDataModel" [style=solid, arrowhead=normal];
+"VTK::ParallelDIY" -> "VTK::CommonSystem" [style=solid, arrowhead=normal];
+"VTK::ParallelDIY" -> "VTK::ParallelCore" [style=solid, arrowhead=normal];
+"VTK::ParallelDIY" -> "VTK::diy2" [style=solid, arrowhead=normal];
+
+"VTK::ParallelCore" [
+    label="VTK::ParallelCore"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::ParallelCore" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+
+}
+subgraph "cluster_VTK::OpenGL" {
+label="VTK::OpenGL"
+"VTK::RenderingContextOpenGL2" [
+    label="VTK::RenderingContextOpenGL2"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::RenderingContextOpenGL2" -> "VTK::RenderingContext2D" [style=bold, arrowhead=normal];
+"VTK::RenderingContextOpenGL2" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::RenderingContextOpenGL2" -> "VTK::CommonDataModel" [style=solid, arrowhead=normal];
+"VTK::RenderingContextOpenGL2" -> "VTK::RenderingContext2D" [style=solid, arrowhead=normal];
+"VTK::RenderingContextOpenGL2" -> "VTK::RenderingCore" [style=solid, arrowhead=normal];
+"VTK::RenderingContextOpenGL2" -> "VTK::RenderingFreeType" [style=solid, arrowhead=normal];
+"VTK::RenderingContextOpenGL2" -> "VTK::RenderingOpenGL2" [style=solid, arrowhead=normal];
+
+"VTK::RenderingCellGrid" [
+    label="VTK::RenderingCellGrid"
+    shape=rectangle
+    style=filled
+    color="/svg/darkorchid"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::RenderingCellGrid" -> "VTK::RenderingCore" [style=bold, arrowhead=normal];
+"VTK::RenderingCellGrid" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::RenderingCellGrid" -> "VTK::CommonDataModel" [style=solid, arrowhead=normal];
+"VTK::RenderingCellGrid" -> "VTK::FiltersCellGrid" [style=solid, arrowhead=normal];
+"VTK::RenderingCellGrid" -> "VTK::RenderingCore" [style=solid, arrowhead=normal];
+"VTK::RenderingCellGrid" -> "VTK::RenderingOpenGL2" [style=solid, arrowhead=normal];
+"VTK::RenderingCellGrid" -> "VTK::glad" [style=solid, arrowhead=normal];
+
+"VTK::RenderingVolumeOpenGL2" [
+    label="VTK::RenderingVolumeOpenGL2"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::RenderingVolumeOpenGL2" -> "VTK::RenderingVolume" [style=bold, arrowhead=normal];
+"VTK::RenderingVolumeOpenGL2" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::RenderingVolumeOpenGL2" -> "VTK::CommonDataModel" [style=solid, arrowhead=normal];
+"VTK::RenderingVolumeOpenGL2" -> "VTK::ImagingCore" [style=solid, arrowhead=normal];
+"VTK::RenderingVolumeOpenGL2" -> "VTK::ImagingMath" [style=solid, arrowhead=normal];
+"VTK::RenderingVolumeOpenGL2" -> "VTK::RenderingCore" [style=solid, arrowhead=normal];
+"VTK::RenderingVolumeOpenGL2" -> "VTK::RenderingOpenGL2" [style=solid, arrowhead=normal];
+"VTK::RenderingVolumeOpenGL2" -> "VTK::RenderingVolume" [style=solid, arrowhead=normal];
+
+"VTK::RenderingOpenGL2" [
+    label="VTK::RenderingOpenGL2"
+    shape=rectangle
+    style=filled
+    color="/svg/darkorchid"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::RenderingOpenGL2" -> "VTK::RenderingCore" [style=bold, arrowhead=normal];
+"VTK::RenderingOpenGL2" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::RenderingOpenGL2" -> "VTK::CommonDataModel" [style=solid, arrowhead=normal];
+"VTK::RenderingOpenGL2" -> "VTK::FiltersGeneral" [style=solid, arrowhead=normal];
+"VTK::RenderingOpenGL2" -> "VTK::IOImage" [style=solid, arrowhead=normal];
+"VTK::RenderingOpenGL2" -> "VTK::RenderingCore" [style=solid, arrowhead=normal];
+"VTK::RenderingOpenGL2" -> "VTK::RenderingHyperTreeGrid" [style=solid, arrowhead=normal];
+"VTK::RenderingOpenGL2" -> "VTK::RenderingUI" [style=solid, arrowhead=normal];
+"VTK::RenderingOpenGL2" -> "VTK::glad" [style=solid, arrowhead=normal];
+
+}
+subgraph "cluster_VTK::IO" {
+label="VTK::IO"
+"VTK::IOVeraOut" [
+    label="VTK::IOVeraOut"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::IOVeraOut" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+
+"VTK::IOSegY" [
+    label="VTK::IOSegY"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::IOSegY" -> "VTK::CommonDataModel" [style=solid, arrowhead=normal];
+"VTK::IOSegY" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+"VTK::IOSegY" -> "VTK::IOImage" [style=solid, arrowhead=normal];
+
+"VTK::IOPLY" [
+    label="VTK::IOPLY"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::IOPLY" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::IOPLY" -> "VTK::IOCore" [style=solid, arrowhead=normal];
+
+"VTK::IOOggTheora" [
+    label="VTK::IOOggTheora"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::IOOggTheora" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+"VTK::IOOggTheora" -> "VTK::IOMovie" [style=solid, arrowhead=normal];
+
+"VTK::IONetCDF" [
+    label="VTK::IONetCDF"
+    shape=rectangle
+    style=filled
+    color="/svg/darkorchid"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::IONetCDF" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::IONetCDF" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+"VTK::IONetCDF" -> "VTK::IOCore" [style=solid, arrowhead=normal];
+
+"VTK::IOLSDyna" [
+    label="VTK::IOLSDyna"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::IOLSDyna" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::IOLSDyna" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+"VTK::IOLSDyna" -> "VTK::IOXMLParser" [style=solid, arrowhead=normal];
+
+"VTK::IOFLUENTCFF" [
+    label="VTK::IOFLUENTCFF"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::IOFLUENTCFF" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::IOFLUENTCFF" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+
+"VTK::IOVideo" [
+    label="VTK::IOVideo"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::IOVideo" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+
+"VTK::IOMovie" [
+    label="VTK::IOMovie"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::IOMovie" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+
+"VTK::IOExodus" [
+    label="VTK::IOExodus"
+    shape=rectangle
+    style=filled
+    color="/svg/darkorchid"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::IOExodus" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::IOExodus" -> "VTK::CommonDataModel" [style=solid, arrowhead=normal];
+"VTK::IOExodus" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+"VTK::IOExodus" -> "VTK::IOCore" [style=solid, arrowhead=normal];
+"VTK::IOExodus" -> "VTK::IOXMLParser" [style=solid, arrowhead=normal];
+"VTK::IOExodus" -> "VTK::exodusII" [style=solid, arrowhead=normal];
+
+"VTK::IOEngys" [
+    label="VTK::IOEngys"
+    shape=rectangle
+    style=filled
+    color="/svg/darkorchid"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::IOEngys" -> "VTK::vtksys" [style=solid, arrowhead=normal];
+"VTK::IOEngys" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+"VTK::IOEngys" -> "VTK::CommonMisc" [style=solid, arrowhead=normal];
+
+"VTK::IOERF" [
+    label="VTK::IOERF"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::IOERF" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::IOERF" -> "VTK::CommonDataModel" [style=solid, arrowhead=normal];
+"VTK::IOERF" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+"VTK::IOERF" -> "VTK::hdf5" [style=solid, arrowhead=normal];
+"VTK::IOERF" -> "VTK::IOHDFTools" [style=solid, arrowhead=normal];
+
+"VTK::IOCityGML" [
+    label="VTK::IOCityGML"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::IOCityGML" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+
+"VTK::IOGeometry" [
+    label="VTK::IOGeometry"
+    shape=rectangle
+    style=filled
+    color="/svg/darkorchid"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::IOGeometry" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::IOGeometry" -> "VTK::CommonDataModel" [style=solid, arrowhead=normal];
+"VTK::IOGeometry" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+"VTK::IOGeometry" -> "VTK::IOCore" [style=solid, arrowhead=normal];
+"VTK::IOGeometry" -> "VTK::IOLegacy" [style=solid, arrowhead=normal];
+"VTK::IOGeometry" -> "VTK::nlohmannjson" [style=solid, arrowhead=normal];
+
+"VTK::IOSQL" [
+    label="VTK::IOSQL"
+    shape=rectangle
+    style=filled
+    color="/svg/darkorchid"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::IOSQL" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::IOSQL" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+"VTK::IOSQL" -> "VTK::IOCore" [style=solid, arrowhead=normal];
+
+"VTK::IOXML" [
+    label="VTK::IOXML"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::IOXML" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::IOXML" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+"VTK::IOXML" -> "VTK::IOXMLParser" [style=solid, arrowhead=normal];
+
+"VTK::IOXMLParser" [
+    label="VTK::IOXMLParser"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::IOXMLParser" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::IOXMLParser" -> "VTK::CommonDataModel" [style=solid, arrowhead=normal];
+
+"VTK::IOLegacy" [
+    label="VTK::IOLegacy"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::IOLegacy" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::IOLegacy" -> "VTK::CommonDataModel" [style=solid, arrowhead=normal];
+"VTK::IOLegacy" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+"VTK::IOLegacy" -> "VTK::IOCore" [style=solid, arrowhead=normal];
+"VTK::IOLegacy" -> "VTK::IOCellGrid" [style=solid, arrowhead=normal];
+"VTK::IOLegacy" -> "VTK::nlohmannjson" [style=solid, arrowhead=normal];
+
+"VTK::IOCellGrid" [
+    label="VTK::IOCellGrid"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::IOCellGrid" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::IOCellGrid" -> "VTK::CommonDataModel" [style=solid, arrowhead=normal];
+"VTK::IOCellGrid" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+"VTK::IOCellGrid" -> "VTK::IOCore" [style=solid, arrowhead=normal];
+"VTK::IOCellGrid" -> "VTK::FiltersCellGrid" [style=solid, arrowhead=normal];
+"VTK::IOCellGrid" -> "VTK::nlohmannjson" [style=solid, arrowhead=normal];
+
+"VTK::IOCore" [
+    label="VTK::IOCore"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::IOCore" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::IOCore" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+
+"VTK::IOImage" [
+    label="VTK::IOImage"
+    shape=rectangle
+    style=filled
+    color="/svg/darkorchid"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::IOImage" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::IOImage" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+"VTK::IOImage" -> "VTK::ImagingCore" [style=solid, arrowhead=normal];
+
+}
+subgraph "cluster_VTK::Interaction" {
+label="VTK::Interaction"
+"VTK::InteractionImage" [
+    label="VTK::InteractionImage"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::InteractionImage" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::InteractionImage" -> "VTK::RenderingCore" [style=solid, arrowhead=normal];
+
+"VTK::InteractionWidgets" [
+    label="VTK::InteractionWidgets"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::InteractionWidgets" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::InteractionWidgets" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+"VTK::InteractionWidgets" -> "VTK::FiltersGeneral" [style=solid, arrowhead=normal];
+"VTK::InteractionWidgets" -> "VTK::FiltersSources" [style=solid, arrowhead=normal];
+"VTK::InteractionWidgets" -> "VTK::RenderingCore" [style=solid, arrowhead=normal];
+"VTK::InteractionWidgets" -> "VTK::RenderingContext2D" [style=solid, arrowhead=normal];
+
+"VTK::InteractionStyle" [
+    label="VTK::InteractionStyle"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::InteractionStyle" -> "VTK::RenderingCore" [style=bold, arrowhead=normal];
+"VTK::InteractionStyle" -> "VTK::CommonDataModel" [style=solid, arrowhead=normal];
+"VTK::InteractionStyle" -> "VTK::RenderingCore" [style=solid, arrowhead=normal];
+
+}
+subgraph "cluster_VTK::Imaging" {
+label="VTK::Imaging"
+"VTK::ImagingStencil" [
+    label="VTK::ImagingStencil"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::ImagingStencil" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+"VTK::ImagingStencil" -> "VTK::ImagingCore" [style=solid, arrowhead=normal];
+
+"VTK::ImagingStatistics" [
+    label="VTK::ImagingStatistics"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::ImagingStatistics" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+
+"VTK::ImagingMorphological" [
+    label="VTK::ImagingMorphological"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::ImagingMorphological" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::ImagingMorphological" -> "VTK::CommonDataModel" [style=solid, arrowhead=normal];
+"VTK::ImagingMorphological" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+"VTK::ImagingMorphological" -> "VTK::ImagingCore" [style=solid, arrowhead=normal];
+"VTK::ImagingMorphological" -> "VTK::ImagingGeneral" [style=solid, arrowhead=normal];
+
+"VTK::ImagingMath" [
+    label="VTK::ImagingMath"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::ImagingMath" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+
+"VTK::ImagingFourier" [
+    label="VTK::ImagingFourier"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::ImagingFourier" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::ImagingFourier" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+"VTK::ImagingFourier" -> "VTK::ImagingCore" [style=solid, arrowhead=normal];
+
+"VTK::ImagingColor" [
+    label="VTK::ImagingColor"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::ImagingColor" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+"VTK::ImagingColor" -> "VTK::ImagingCore" [style=solid, arrowhead=normal];
+
+"VTK::ImagingGeneral" [
+    label="VTK::ImagingGeneral"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::ImagingGeneral" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+"VTK::ImagingGeneral" -> "VTK::ImagingCore" [style=solid, arrowhead=normal];
+
+"VTK::ImagingSources" [
+    label="VTK::ImagingSources"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::ImagingSources" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+
+"VTK::ImagingCore" [
+    label="VTK::ImagingCore"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::ImagingCore" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::ImagingCore" -> "VTK::CommonDataModel" [style=solid, arrowhead=normal];
+"VTK::ImagingCore" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+
+}
+subgraph "cluster_VTK::Filters" {
+label="VTK::Filters"
+"VTK::FiltersTopology" [
+    label="VTK::FiltersTopology"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::FiltersTopology" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::FiltersTopology" -> "VTK::CommonDataModel" [style=solid, arrowhead=normal];
+"VTK::FiltersTopology" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+
+"VTK::FiltersTensor" [
+    label="VTK::FiltersTensor"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::FiltersTensor" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::FiltersTensor" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+
+"VTK::FiltersSelection" [
+    label="VTK::FiltersSelection"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::FiltersSelection" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::FiltersSelection" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+
+"VTK::FiltersSMP" [
+    label="VTK::FiltersSMP"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::FiltersSMP" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::FiltersSMP" -> "VTK::CommonDataModel" [style=solid, arrowhead=normal];
+"VTK::FiltersSMP" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+"VTK::FiltersSMP" -> "VTK::CommonMisc" [style=solid, arrowhead=normal];
+"VTK::FiltersSMP" -> "VTK::CommonTransforms" [style=solid, arrowhead=normal];
+"VTK::FiltersSMP" -> "VTK::FiltersCore" [style=solid, arrowhead=normal];
+"VTK::FiltersSMP" -> "VTK::FiltersGeneral" [style=solid, arrowhead=normal];
+
+"VTK::FiltersProgrammable" [
+    label="VTK::FiltersProgrammable"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::FiltersProgrammable" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+
+"VTK::FiltersPoints" [
+    label="VTK::FiltersPoints"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::FiltersPoints" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::FiltersPoints" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+"VTK::FiltersPoints" -> "VTK::CommonMisc" [style=solid, arrowhead=normal];
+"VTK::FiltersPoints" -> "VTK::FiltersModeling" [style=solid, arrowhead=normal];
+
+"VTK::FiltersTemporal" [
+    label="VTK::FiltersTemporal"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::FiltersTemporal" -> "VTK::FiltersCore" [style=solid, arrowhead=normal];
+
+"VTK::FiltersImaging" [
+    label="VTK::FiltersImaging"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::FiltersImaging" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::FiltersImaging" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+"VTK::FiltersImaging" -> "VTK::FiltersStatistics" [style=solid, arrowhead=normal];
+
+"VTK::FiltersGeometryPreview" [
+    label="VTK::FiltersGeometryPreview"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::FiltersGeometryPreview" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::FiltersGeometryPreview" -> "VTK::CommonDataModel" [style=solid, arrowhead=normal];
+"VTK::FiltersGeometryPreview" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+
+"VTK::FiltersGeneric" [
+    label="VTK::FiltersGeneric"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::FiltersGeneric" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+"VTK::FiltersGeneric" -> "VTK::CommonMath" [style=solid, arrowhead=normal];
+
+"VTK::FiltersTexture" [
+    label="VTK::FiltersTexture"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::FiltersTexture" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+
+"VTK::FiltersModeling" [
+    label="VTK::FiltersModeling"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::FiltersModeling" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+"VTK::FiltersModeling" -> "VTK::CommonMisc" [style=solid, arrowhead=normal];
+"VTK::FiltersModeling" -> "VTK::FiltersGeneral" [style=solid, arrowhead=normal];
+
+"VTK::FiltersCellGrid" [
+    label="VTK::FiltersCellGrid"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::FiltersCellGrid" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::FiltersCellGrid" -> "VTK::CommonDataModel" [style=solid, arrowhead=normal];
+"VTK::FiltersCellGrid" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+"VTK::FiltersCellGrid" -> "VTK::CommonTransforms" [style=solid, arrowhead=normal];
+
+"VTK::FiltersStatistics" [
+    label="VTK::FiltersStatistics"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::FiltersStatistics" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::FiltersStatistics" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+
+"VTK::FiltersHyperTree" [
+    label="VTK::FiltersHyperTree"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::FiltersHyperTree" -> "VTK::CommonDataModel" [style=solid, arrowhead=normal];
+"VTK::FiltersHyperTree" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+"VTK::FiltersHyperTree" -> "VTK::CommonMisc" [style=solid, arrowhead=normal];
+"VTK::FiltersHyperTree" -> "VTK::FiltersCore" [style=solid, arrowhead=normal];
+"VTK::FiltersHyperTree" -> "VTK::FiltersGeneral" [style=solid, arrowhead=normal];
+
+"VTK::FiltersSources" [
+    label="VTK::FiltersSources"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::FiltersSources" -> "VTK::CommonDataModel" [style=solid, arrowhead=normal];
+"VTK::FiltersSources" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+
+"VTK::FiltersGeneral" [
+    label="VTK::FiltersGeneral"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::FiltersGeneral" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::FiltersGeneral" -> "VTK::CommonDataModel" [style=solid, arrowhead=normal];
+"VTK::FiltersGeneral" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+"VTK::FiltersGeneral" -> "VTK::CommonMisc" [style=solid, arrowhead=normal];
+"VTK::FiltersGeneral" -> "VTK::FiltersCore" [style=solid, arrowhead=normal];
+
+"VTK::FiltersVerdict" [
+    label="VTK::FiltersVerdict"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::FiltersVerdict" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+
+"VTK::FiltersGeometry" [
+    label="VTK::FiltersGeometry"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::FiltersGeometry" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::FiltersGeometry" -> "VTK::CommonDataModel" [style=solid, arrowhead=normal];
+"VTK::FiltersGeometry" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+
+"VTK::FiltersCore" [
+    label="VTK::FiltersCore"
+    shape=rectangle
+    style=filled
+    color="/svg/darkorchid"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::FiltersCore" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::FiltersCore" -> "VTK::CommonDataModel" [style=solid, arrowhead=normal];
+"VTK::FiltersCore" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+"VTK::FiltersCore" -> "VTK::CommonMisc" [style=solid, arrowhead=normal];
+
+"VTK::FiltersReduction" [
+    label="VTK::FiltersReduction"
+    shape=rectangle
+    style=filled
+    color="/svg/coral"
+    fillcolor="/svg/white"
+    penwidth=5
+];
+"VTK::FiltersReduction" -> "VTK::CommonCore" [style=solid, arrowhead=normal];
+"VTK::FiltersReduction" -> "VTK::CommonExecutionModel" [style=solid, arrowhead=normal];
+
+}
+
+subgraph cluster_key {
+  label=Key;
+  subgraph cluster_party {
+    first_party [
+      label="First party"
+      shape=rectangle
+      style=filled
+      color="/svg/coral"
+      fillcolor="/svg/white"
+      penwidth=5
+    ];
+    third_party [
+      label="Third party"
+      shape=cds
+      style=filled
+      color="/svg/coral"
+      fillcolor="/svg/white"
+      penwidth=5
+    ];
+  }
+  subgraph cluster_whence {
+    internal [
+      label="Internal module"
+      shape=rectangle
+      style=filled
+      color="/svg/coral"
+      fillcolor="/svg/white"
+      penwidth=5
+    ];
+    external [
+      label="External module"
+      shape=rectangle
+      style=filled
+      color="/svg/coral"
+      fillcolor="/svg/cyan"
+      penwidth=5
+    ];
+  }
+  subgraph cluster_wrapping {
+    include_wrap [
+      label="Wrappable"
+      shape=rectangle
+      style=filled
+      color="/svg/coral"
+      fillcolor="/svg/white"
+      penwidth=5
+    ];
+    exclude_wrap [
+      label="Not wrappable"
+      shape=rectangle
+      style=filled
+      color="/svg/coral"
+      fillcolor="/svg/white"
+      penwidth=1
+    ];
+  }
+  subgraph cluster_implementable {
+    implementable [
+      label="Implementable"
+      shape=rectangle
+      style=filled
+      color="/svg/darkorchid"
+      fillcolor="/svg/white"
+      penwidth=5
+    ];
+    not_implementable [
+      label="Not implementable"
+      shape=rectangle
+      style=filled
+      color="/svg/coral"
+      fillcolor="/svg/white"
+      penwidth=5
+    ];
+  }
+  subgraph cluster_dependencies {
+    dependent [
+      label="Dependent"
+      shape=rectangle
+      style=filled
+      color="/svg/coral"
+      fillcolor="/svg/white"
+      penwidth=5
+    ];
+    private_dependee [
+      label="Private Dependee"
+      shape=rectangle
+      style=filled
+      color="/svg/coral"
+      fillcolor="/svg/white"
+      penwidth=5
+    ];
+    optional_dependee [
+      label="Optional Dependee"
+      shape=rectangle
+      style=filled
+      color="/svg/coral"
+      fillcolor="/svg/white"
+      penwidth=5
+    ];
+    public_dependee [
+      label="Public Dependee"
+      shape=rectangle
+      style=filled
+      color="/svg/coral"
+      fillcolor="/svg/white"
+      penwidth=5
+    ];
+    implemented [
+      label="Implemented"
+      shape=rectangle
+      style=filled
+      color="/svg/darkorchid"
+      fillcolor="/svg/white"
+      penwidth=5
+    ];
+    dependent -> private_dependee [style=dotted, arrowhead=normal];
+    dependent -> optional_dependee [style=dotted, arrowhead=empty];
+    dependent -> public_dependee [style=solid, arrowhead=normal];
+    dependent -> implemented [style=bold, arrowhead=normal];
+  }
+}
+}

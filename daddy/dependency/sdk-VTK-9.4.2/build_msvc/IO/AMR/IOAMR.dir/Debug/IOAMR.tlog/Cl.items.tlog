@@ -1,0 +1,14 @@
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\IO\AMR\vtkAMRBaseParticlesReader.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\IO\AMR\IOAMR.dir\Debug\vtkAMRBaseParticlesReader.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\IO\AMR\vtkAMRBaseReader.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\IO\AMR\IOAMR.dir\Debug\vtkAMRBaseReader.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\IO\AMR\vtkAMRDataSetCache.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\IO\AMR\IOAMR.dir\Debug\vtkAMRDataSetCache.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\IO\AMR\vtkAMREnzoParticlesReader.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\IO\AMR\IOAMR.dir\Debug\vtkAMREnzoParticlesReader.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\IO\AMR\vtkAMREnzoReader.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\IO\AMR\IOAMR.dir\Debug\vtkAMREnzoReader.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\IO\AMR\vtkAMReXGridReader.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\IO\AMR\IOAMR.dir\Debug\vtkAMReXGridReader.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\IO\AMR\vtkAMReXParticlesReader.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\IO\AMR\IOAMR.dir\Debug\vtkAMReXParticlesReader.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\IO\AMR\vtkAMRFlashParticlesReader.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\IO\AMR\IOAMR.dir\Debug\vtkAMRFlashParticlesReader.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\IO\AMR\vtkAMRFlashReader.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\IO\AMR\IOAMR.dir\Debug\vtkAMRFlashReader.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\IO\AMR\vtkAMRVelodyneReader.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\IO\AMR\IOAMR.dir\Debug\vtkAMRVelodyneReader.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\IO\AMR\vtkAMREnzoReaderInternal.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\IO\AMR\IOAMR.dir\Debug\vtkAMREnzoReaderInternal.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\IO\AMR\vtkAMReXGridReaderInternal.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\IO\AMR\IOAMR.dir\Debug\vtkAMReXGridReaderInternal.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\IO\AMR\vtkAMRFlashReaderInternal.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\IO\AMR\IOAMR.dir\Debug\vtkAMRFlashReaderInternal.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\IO\AMR\vtkAMRVelodyneReaderInternal.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\IO\AMR\IOAMR.dir\Debug\vtkAMRVelodyneReaderInternal.obj

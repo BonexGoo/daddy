@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\x64\Debug\ZERO_CHECK</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\bin\Debug\oficonv.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\bin\Debug\ofstd.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\bin\Debug\oflog.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\bin\Debug\dcmdata.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\bin\Debug\dcmiod.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\bin\Debug\dcmfg.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\bin\Debug\dcmect.dll</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles />
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>

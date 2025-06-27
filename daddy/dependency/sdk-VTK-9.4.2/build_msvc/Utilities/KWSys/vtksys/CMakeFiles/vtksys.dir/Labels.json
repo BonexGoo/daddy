@@ -1,0 +1,112 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Utilities/KWSys/vtksys/ProcessWin32.c"
+		},
+		{
+			"file" : "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Utilities/KWSys/vtksys/Base64.c"
+		},
+		{
+			"file" : "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Utilities/KWSys/vtksys/EncodingC.c"
+		},
+		{
+			"file" : "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Utilities/KWSys/vtksys/MD5.c"
+		},
+		{
+			"file" : "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Utilities/KWSys/vtksys/System.c"
+		},
+		{
+			"file" : "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Utilities/KWSys/vtksys/Configure.h"
+		},
+		{
+			"file" : "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Utilities/KWSys/vtksys/SharedForward.h"
+		},
+		{
+			"file" : "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Utilities/KWSys/vtksys/Process.h"
+		},
+		{
+			"file" : "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Utilities/KWSys/vtksys/Base64.h"
+		},
+		{
+			"file" : "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Utilities/KWSys/vtksys/Encoding.h"
+		},
+		{
+			"file" : "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Utilities/KWSys/vtksys/MD5.h"
+		},
+		{
+			"file" : "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Utilities/KWSys/vtksys/System.h"
+		},
+		{
+			"file" : "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Utilities/KWSys/vtksys/Directory.cxx"
+		},
+		{
+			"file" : "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Utilities/KWSys/vtksys/Directory.hxx"
+		},
+		{
+			"file" : "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Utilities/KWSys/vtksys/DynamicLoader.cxx"
+		},
+		{
+			"file" : "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Utilities/KWSys/vtksys/DynamicLoader.hxx"
+		},
+		{
+			"file" : "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Utilities/KWSys/vtksys/EncodingCXX.cxx"
+		},
+		{
+			"file" : "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Utilities/KWSys/vtksys/Encoding.hxx"
+		},
+		{
+			"file" : "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Utilities/KWSys/vtksys/Glob.cxx"
+		},
+		{
+			"file" : "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Utilities/KWSys/vtksys/Glob.hxx"
+		},
+		{
+			"file" : "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Utilities/KWSys/vtksys/RegularExpression.cxx"
+		},
+		{
+			"file" : "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Utilities/KWSys/vtksys/RegularExpression.hxx"
+		},
+		{
+			"file" : "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Utilities/KWSys/vtksys/SystemTools.cxx"
+		},
+		{
+			"file" : "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Utilities/KWSys/vtksys/SystemTools.hxx"
+		},
+		{
+			"file" : "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Utilities/KWSys/vtksys/CommandLineArguments.cxx"
+		},
+		{
+			"file" : "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Utilities/KWSys/vtksys/CommandLineArguments.hxx"
+		},
+		{
+			"file" : "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Utilities/KWSys/vtksys/FStream.cxx"
+		},
+		{
+			"file" : "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Utilities/KWSys/vtksys/FStream.hxx"
+		},
+		{
+			"file" : "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Utilities/KWSys/vtksys/SystemInformation.cxx"
+		},
+		{
+			"file" : "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Utilities/KWSys/vtksys/SystemInformation.hxx"
+		},
+		{
+			"file" : "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Utilities/KWSys/vtksys/Status.cxx"
+		},
+		{
+			"file" : "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Utilities/KWSys/vtksys/Status.hxx"
+		},
+		{
+			"file" : "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Utilities/KWSys/vtksys/Configure.hxx"
+		},
+		{
+			"file" : "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Utilities/KWSys/vtksys/String.hxx"
+		}
+	],
+	"target" : 
+	{
+		"labels" : [],
+		"name" : "vtksys"
+	}
+}

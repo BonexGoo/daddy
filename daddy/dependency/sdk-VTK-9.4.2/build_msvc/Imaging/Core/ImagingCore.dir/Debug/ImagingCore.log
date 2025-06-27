@@ -1,0 +1,53 @@
+﻿  Building Custom Rule D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Imaging/Core/CMakeLists.txt
+  vtkAbstractImageInterpolator.cxx
+  vtkExtractVOI.cxx
+  vtkGenericImageInterpolator.cxx
+  vtkImageAppendComponents.cxx
+  vtkImageBlend.cxx
+  vtkImageBSplineCoefficients.cxx
+  vtkImageBSplineInternals.cxx
+  vtkImageBSplineInterpolator.cxx
+  vtkImageCacheFilter.cxx
+  vtkImageCast.cxx
+  vtkImageChangeInformation.cxx
+  vtkImageClip.cxx
+  vtkImageConstantPad.cxx
+  vtkImageDataStreamer.cxx
+  vtkImageDecomposeFilter.cxx
+  vtkImageDifference.cxx
+  vtkImageExtractComponents.cxx
+  vtkImageFlip.cxx
+  vtkImageInterpolator.cxx
+  vtkImageIterateFilter.cxx
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  vtkImageMagnify.cxx
+  vtkImageMapToColors.cxx
+  vtkImageMask.cxx
+  vtkImageMirrorPad.cxx
+  vtkImagePadFilter.cxx
+  vtkImagePermute.cxx
+  vtkImagePointDataIterator.cxx
+  vtkImagePointIterator.cxx
+  vtkImageProbeFilter.cxx
+  vtkImageResample.cxx
+  vtkImageResize.cxx
+  vtkImageReslice.cxx
+  vtkImageResliceToColors.cxx
+  vtkImageShiftScale.cxx
+  vtkImageShrink3D.cxx
+  vtkImageSincInterpolator.cxx
+  vtkImageStencilAlgorithm.cxx
+  vtkImageStencilData.cxx
+  vtkImageStencilIterator.cxx
+  vtkImageStencilSource.cxx
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  vtkImageSSIM.cxx
+  vtkImageThreshold.cxx
+  vtkImageTranslateExtent.cxx
+  vtkImageWrapPad.cxx
+  vtkRTAnalyticSource.cxx
+  코드를 생성하고 있습니다...
+     D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Debug/vtkImagingCore-9.4d.lib 라이브러리 및 D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Debug/vtkImagingCore-9.4d.exp 개체를 생성하고 있습니다.
+  ImagingCore.vcxproj -> D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\bin\Debug\vtkImagingCore-9.4d.dll

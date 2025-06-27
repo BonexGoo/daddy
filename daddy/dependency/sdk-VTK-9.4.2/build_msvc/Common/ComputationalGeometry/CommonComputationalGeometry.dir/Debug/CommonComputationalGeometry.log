@@ -1,0 +1,32 @@
+﻿  Building Custom Rule D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Common/ComputationalGeometry/CMakeLists.txt
+  vtkBilinearQuadIntersection.cxx
+  vtkCardinalSpline.cxx
+  vtkKochanekSpline.cxx
+  vtkParametricBohemianDome.cxx
+  vtkParametricBour.cxx
+  vtkParametricBoy.cxx
+  vtkParametricCatalanMinimal.cxx
+  vtkParametricConicSpiral.cxx
+  vtkParametricCrossCap.cxx
+  vtkParametricDini.cxx
+  vtkParametricEllipsoid.cxx
+  vtkParametricEnneper.cxx
+  vtkParametricFigure8Klein.cxx
+  vtkParametricFunction.cxx
+  vtkParametricHenneberg.cxx
+  vtkParametricKlein.cxx
+  vtkParametricKuen.cxx
+  vtkParametricMobius.cxx
+  vtkParametricPluckerConoid.cxx
+  vtkParametricPseudosphere.cxx
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  vtkParametricRandomHills.cxx
+  vtkParametricRoman.cxx
+  vtkParametricSpline.cxx
+  vtkParametricSuperEllipsoid.cxx
+  vtkParametricSuperToroid.cxx
+  vtkParametricTorus.cxx
+  코드를 생성하고 있습니다...
+     D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Debug/vtkCommonComputationalGeometry-9.4d.lib 라이브러리 및 D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Debug/vtkCommonComputationalGeometry-9.4d.exp 개체를 생성하고 있습니다.
+  CommonComputationalGeometry.vcxproj -> D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\bin\Debug\vtkCommonComputationalGeometry-9.4d.dll

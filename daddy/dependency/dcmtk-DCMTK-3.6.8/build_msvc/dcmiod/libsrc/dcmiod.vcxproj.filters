@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmiod\libsrc\cielabutil.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmiod\libsrc\iodcontentitemmacro.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmiod\libsrc\iodcommn.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmiod\libsrc\iodmacro.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmiod\libsrc\iodrules.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmiod\libsrc\iodreferences.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmiod\libsrc\iodutil.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmiod\libsrc\iodtypes.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmiod\libsrc\modacquisitioncontext.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmiod\libsrc\modbase.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmiod\libsrc\modcommoninstanceref.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmiod\libsrc\modenhequipment.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmiod\libsrc\modenhusimage.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmiod\libsrc\modenhusseries.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmiod\libsrc\modequipment.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmiod\libsrc\modfloatingpointimagepixel.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmiod\libsrc\modfor.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmiod\libsrc\modgeneralimage.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmiod\libsrc\modgeneralseries.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmiod\libsrc\modgeneralstudy.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmiod\libsrc\modhelp.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmiod\libsrc\modimagepixel.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmiod\libsrc\modimagepixelbase.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmiod\libsrc\modmultiframefg.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmiod\libsrc\modmultiframedimension.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmiod\libsrc\modpatient.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmiod\libsrc\modpatientstudy.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmiod\libsrc\modsegmentationseries.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmiod\libsrc\modsopcommon.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmiod\libsrc\modsynchronization.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmiod\libsrc\modusfor.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmiod\libsrc\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{223CA86B-C79F-3D28-815E-BF4CB8A4A19D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

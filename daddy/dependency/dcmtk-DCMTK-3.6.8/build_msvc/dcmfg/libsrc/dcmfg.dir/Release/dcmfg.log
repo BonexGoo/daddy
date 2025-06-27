@@ -1,0 +1,42 @@
+﻿  Building Custom Rule D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/dcmfg/libsrc/CMakeLists.txt
+  concatenationcreator.cc
+  concatenationloader.cc
+  fg.cc
+  fgbase.cc
+  fgctacquisitiondetails.cc
+  fgctacquisitiontype.cc
+  fgctadditionalxraysource.cc
+  fgctexposure.cc
+  fgctgeometry.cc
+  fgctimageframetype.cc
+  fgctposition.cc
+  fgctreconstruction.cc
+  fgcttabledynamics.cc
+  fgctxraydetails.cc
+  fgderimg.cc
+  fgfact.cc
+  fgfracon.cc
+  fgframeanatomy.cc
+  fgframevoilut.cc
+  fgpixeltransform.cc
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  fgimagedatatype.cc
+  fginterface.cc
+  fgirradiationeventid.cc
+  fgpixmsr.cc
+  fgparametricmapframetype.cc
+  fgplanor.cc
+  fgplanorvol.cc
+  fgplanpo.cc
+  fgplanposvol.cc
+  fgrealworldvaluemapping.cc
+  fgseg.cc
+  fgtemporalposition.cc
+  fgusimagedescription.cc
+  fgtypes.cc
+  stack.cc
+  stackinterface.cc
+  코드를 생성하고 있습니다...
+     D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/lib/Release/dcmfg.lib 라이브러리 및 D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/lib/Release/dcmfg.exp 개체를 생성하고 있습니다.
+  dcmfg.vcxproj -> D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\bin\Release\dcmfg.dll

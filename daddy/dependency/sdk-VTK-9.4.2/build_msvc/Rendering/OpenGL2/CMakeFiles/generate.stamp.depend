@@ -1,0 +1,10 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDependentOption.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/exportheader.cmake.in
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/CMake/FindDirectX.cmake
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/CMake/vtkObjectFactory.cxx.in
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/CMake/vtkObjectFactory.h.in
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/CMake/vtkOpenGLOptions.cmake
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Rendering/OpenGL2/CMakeLists.txt
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Rendering/OpenGL2/vtkOpenGLError.h.in
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Rendering/OpenGL2/vtkRenderingOpenGLConfigure.h.in

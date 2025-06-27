@@ -1,0 +1,14 @@
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Parallel\Core\vtkCommunicator.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Parallel\Core\ParallelCore.dir\Debug\vtkCommunicator.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Parallel\Core\vtkDummyCommunicator.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Parallel\Core\ParallelCore.dir\Debug\vtkDummyCommunicator.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Parallel\Core\vtkDummyController.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Parallel\Core\ParallelCore.dir\Debug\vtkDummyController.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Parallel\Core\vtkFieldDataSerializer.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Parallel\Core\ParallelCore.dir\Debug\vtkFieldDataSerializer.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Parallel\Core\vtkMultiProcessController.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Parallel\Core\ParallelCore.dir\Debug\vtkMultiProcessController.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Parallel\Core\vtkMultiProcessStream.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Parallel\Core\ParallelCore.dir\Debug\vtkMultiProcessStream.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Parallel\Core\vtkPDirectory.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Parallel\Core\ParallelCore.dir\Debug\vtkPDirectory.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Parallel\Core\vtkProcess.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Parallel\Core\ParallelCore.dir\Debug\vtkProcess.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Parallel\Core\vtkProcessGroup.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Parallel\Core\ParallelCore.dir\Debug\vtkProcessGroup.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Parallel\Core\vtkPSystemTools.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Parallel\Core\ParallelCore.dir\Debug\vtkPSystemTools.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Parallel\Core\vtkSocketCommunicator.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Parallel\Core\ParallelCore.dir\Debug\vtkSocketCommunicator.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Parallel\Core\vtkSocketController.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Parallel\Core\ParallelCore.dir\Debug\vtkSocketController.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Parallel\Core\vtkSubCommunicator.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Parallel\Core\ParallelCore.dir\Debug\vtkSubCommunicator.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Parallel\Core\vtkSubGroup.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Parallel\Core\ParallelCore.dir\Debug\vtkSubGroup.obj

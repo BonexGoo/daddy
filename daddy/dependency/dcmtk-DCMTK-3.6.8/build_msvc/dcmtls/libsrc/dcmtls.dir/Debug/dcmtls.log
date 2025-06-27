@@ -1,0 +1,10 @@
+﻿  Building Custom Rule D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/dcmtls/libsrc/CMakeLists.txt
+  tlscond.cc
+  tlslayer.cc
+  tlsopt.cc
+  tlstrans.cc
+  tlsscu.cc
+  tlsciphr.cc
+  코드를 생성하고 있습니다...
+     D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/lib/Debug/dcmtls.lib 라이브러리 및 D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/lib/Debug/dcmtls.exp 개체를 생성하고 있습니다.
+  dcmtls.vcxproj -> D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\bin\Debug\dcmtls.dll

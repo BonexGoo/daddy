@@ -1,0 +1,69 @@
+// Copyright 2009 Intel Corporation
+// SPDX-License-Identifier: Apache-2.0
+
+#pragma once
+
+#include "Texture.ih"
+#include "common/OSPCommon.ih"
+#include "rkcommon/math/AffineSpace.ih"
+#include "rkcommon/math/vec.ih"
+// c++ shared
+#include "TextureParamShared.h"
+
+OSPRAY_BEGIN_ISPC_NAMESPACE
+
+struct DifferentialGeometry;
+
+SYCL_EXTERNAL __noinline float get1f(const uniform TextureParam uniform &tp,
+    const varying DifferentialGeometry &dg);
+
+SYCL_EXTERNAL __noinline vec3f get3f(const uniform TextureParam uniform &tp,
+    const varying DifferentialGeometry &dg);
+
+SYCL_EXTERNAL __noinline vec4f get4f(const uniform TextureParam uniform &tp,
+    const varying DifferentialGeometry &dg);
+
+SYCL_EXTERNAL __noinline vec3f getNormal(const uniform TextureParam uniform &tp,
+    const varying DifferentialGeometry &dg);
+
+inline uniform bool valid(const uniform TextureParam uniform &tex)
+{
+  return tex.ptr;
+}
+
+inline uniform bool hasAlpha(const uniform TextureParam uniform &tex)
+{
+  return hasAlpha(tex.ptr);
+}
+
+inline float get1f(const uniform TextureParam uniform &tp,
+    const varying DifferentialGeometry &dg,
+    const varying float defaultValue)
+{
+  if (!valid(tp))
+    return defaultValue;
+
+  return get1f(tp, dg);
+}
+
+inline vec3f get3f(const uniform TextureParam uniform &tp,
+    const varying DifferentialGeometry &dg,
+    const varying vec3f defaultValue)
+{
+  if (!valid(tp))
+    return defaultValue;
+
+  return get3f(tp, dg);
+}
+
+inline vec4f get4f(const uniform TextureParam uniform &tp,
+    const varying DifferentialGeometry &dg,
+    const varying vec4f defaultValue)
+{
+  if (!valid(tp))
+    return defaultValue;
+
+  return get4f(tp, dg);
+}
+
+OSPRAY_END_ISPC_NAMESPACE

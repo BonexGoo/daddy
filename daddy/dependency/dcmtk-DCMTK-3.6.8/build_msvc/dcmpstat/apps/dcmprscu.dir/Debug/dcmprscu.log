@@ -1,0 +1,18 @@
+﻿  Building Custom Rule D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/dcmpstat/apps/CMakeLists.txt
+  dcmprscu.cc
+D:\vcpkg\installed\x64-windows\include\dirent.h(459,1): warning C4505: '_wreaddir': 내부 링크가 있는 참조되지 않은 함수가 제거되었습니다
+  (소스 파일 '../../../dcmpstat/apps/dcmprscu.cc'을(를) 컴파일하는 중)
+  
+D:\vcpkg\installed\x64-windows\include\dirent.h(727,1): warning C4505: 'readdir': 내부 링크가 있는 참조되지 않은 함수가 제거되었습니다
+  (소스 파일 '../../../dcmpstat/apps/dcmprscu.cc'을(를) 컴파일하는 중)
+  
+D:\vcpkg\installed\x64-windows\include\dirent.h(865,1): warning C4505: 'rewinddir': 내부 링크가 있는 참조되지 않은 함수가 제거되었습니다
+  (소스 파일 '../../../dcmpstat/apps/dcmprscu.cc'을(를) 컴파일하는 중)
+  
+D:\vcpkg\installed\x64-windows\include\dirent.h(876,1): warning C4505: 'scandir': 내부 링크가 있는 참조되지 않은 함수가 제거되었습니다
+  (소스 파일 '../../../dcmpstat/apps/dcmprscu.cc'을(를) 컴파일하는 중)
+  
+D:\vcpkg\installed\x64-windows\include\dirent.h(1023,1): warning C4505: 'versionsort': 내부 링크가 있는 참조되지 않은 함수가 제거되었습니다
+  (소스 파일 '../../../dcmpstat/apps/dcmprscu.cc'을(를) 컴파일하는 중)
+  
+  dcmprscu.vcxproj -> D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\bin\Debug\dcmprscu.exe

@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DEB8D0E9-F581-3453-B649-6A3BA4D97899}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>generate_proj_db</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\f4d59fdaa7f5fc43044badd80525752f\proj.db.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating proj.db</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/../share/vtk-9.4/proj/proj.db
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_SYSTEM_NAME=Windows -DCMAKE_CROSSCOMPILING_EMULATOR= -DALL_SQL_IN=D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/ThirdParty/libproj/vtklibproj/data/all.sql.in -DEXE_SQLITE3=D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/bin/Debug/sqlitebin-9.4d.exe -DPROJ_DB=D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/../share/vtk-9.4/proj/proj.db -DPROJ_VERSION=8.1.0 -P D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/libproj/vtklibproj/data/generate_proj_db.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/../share/vtk-9.4/proj/proj.db D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/ThirdParty/libproj/vtklibproj/data/for_tests
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\begin.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\proj_db_table_defs.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\conversion_triggers.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\metadata.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\unit_of_measure.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\extent.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\scope.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\coordinate_system.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\axis.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\ellipsoid.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\prime_meridian.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\geodetic_datum.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\geodetic_datum_ensemble_member.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\vertical_datum.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\vertical_datum_ensemble_member.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\conversion.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\geodetic_crs.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\projected_crs.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\vertical_crs.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\compound_crs.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\helmert_transformation.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\grid_transformation.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\grid_transformation_custom.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\other_transformation.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\other_transformation_custom.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\concatenated_operation.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\concatenated_operation_step.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\alias_name.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\supersession.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\deprecation.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\esri.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\ignf.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\nkg.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\grid_alternatives.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\grid_alternatives_generated_noaa.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\customizations.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\nkg_post_customizations.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\commit.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\generate_proj_db.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\share\vtk-9.4\proj\proj.db</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating proj.db</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/../share/vtk-9.4/proj/proj.db
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_SYSTEM_NAME=Windows -DCMAKE_CROSSCOMPILING_EMULATOR= -DALL_SQL_IN=D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/ThirdParty/libproj/vtklibproj/data/all.sql.in -DEXE_SQLITE3=D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/bin/Release/sqlitebin-9.4.exe -DPROJ_DB=D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/../share/vtk-9.4/proj/proj.db -DPROJ_VERSION=8.1.0 -P D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/libproj/vtklibproj/data/generate_proj_db.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/../share/vtk-9.4/proj/proj.db D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/ThirdParty/libproj/vtklibproj/data/for_tests
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\begin.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\proj_db_table_defs.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\conversion_triggers.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\metadata.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\unit_of_measure.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\extent.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\scope.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\coordinate_system.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\axis.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\ellipsoid.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\prime_meridian.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\geodetic_datum.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\geodetic_datum_ensemble_member.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\vertical_datum.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\vertical_datum_ensemble_member.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\conversion.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\geodetic_crs.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\projected_crs.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\vertical_crs.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\compound_crs.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\helmert_transformation.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\grid_transformation.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\grid_transformation_custom.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\other_transformation.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\other_transformation_custom.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\concatenated_operation.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\concatenated_operation_step.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\alias_name.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\supersession.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\deprecation.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\esri.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\ignf.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\nkg.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\grid_alternatives.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\grid_alternatives_generated_noaa.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\customizations.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\nkg_post_customizations.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\commit.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\generate_proj_db.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\share\vtk-9.4\proj\proj.db</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating proj.db</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/../share/vtk-9.4/proj/proj.db
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_SYSTEM_NAME=Windows -DCMAKE_CROSSCOMPILING_EMULATOR= -DALL_SQL_IN=D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/ThirdParty/libproj/vtklibproj/data/all.sql.in -DEXE_SQLITE3=D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/bin/MinSizeRel/sqlitebin-9.4.exe -DPROJ_DB=D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/../share/vtk-9.4/proj/proj.db -DPROJ_VERSION=8.1.0 -P D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/libproj/vtklibproj/data/generate_proj_db.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/../share/vtk-9.4/proj/proj.db D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/ThirdParty/libproj/vtklibproj/data/for_tests
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\begin.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\proj_db_table_defs.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\conversion_triggers.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\metadata.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\unit_of_measure.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\extent.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\scope.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\coordinate_system.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\axis.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\ellipsoid.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\prime_meridian.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\geodetic_datum.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\geodetic_datum_ensemble_member.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\vertical_datum.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\vertical_datum_ensemble_member.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\conversion.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\geodetic_crs.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\projected_crs.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\vertical_crs.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\compound_crs.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\helmert_transformation.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\grid_transformation.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\grid_transformation_custom.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\other_transformation.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\other_transformation_custom.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\concatenated_operation.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\concatenated_operation_step.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\alias_name.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\supersession.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\deprecation.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\esri.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\ignf.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\nkg.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\grid_alternatives.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\grid_alternatives_generated_noaa.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\customizations.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\nkg_post_customizations.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\commit.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\generate_proj_db.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\share\vtk-9.4\proj\proj.db</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating proj.db</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/../share/vtk-9.4/proj/proj.db
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_SYSTEM_NAME=Windows -DCMAKE_CROSSCOMPILING_EMULATOR= -DALL_SQL_IN=D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/ThirdParty/libproj/vtklibproj/data/all.sql.in -DEXE_SQLITE3=D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/bin/RelWithDebInfo/sqlitebin-9.4.exe -DPROJ_DB=D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/../share/vtk-9.4/proj/proj.db -DPROJ_VERSION=8.1.0 -P D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/libproj/vtklibproj/data/generate_proj_db.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/../share/vtk-9.4/proj/proj.db D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/ThirdParty/libproj/vtklibproj/data/for_tests
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\begin.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\proj_db_table_defs.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\conversion_triggers.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\metadata.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\unit_of_measure.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\extent.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\scope.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\coordinate_system.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\axis.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\ellipsoid.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\prime_meridian.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\geodetic_datum.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\geodetic_datum_ensemble_member.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\vertical_datum.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\vertical_datum_ensemble_member.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\conversion.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\geodetic_crs.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\projected_crs.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\vertical_crs.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\compound_crs.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\helmert_transformation.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\grid_transformation.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\grid_transformation_custom.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\other_transformation.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\other_transformation_custom.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\concatenated_operation.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\concatenated_operation_step.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\alias_name.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\supersession.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\deprecation.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\esri.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\ignf.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\nkg.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\grid_alternatives.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\grid_alternatives_generated_noaa.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\customizations.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\nkg_post_customizations.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql\commit.sql;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\generate_proj_db.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\share\vtk-9.4\proj\proj.db</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\f19177044f79252608bac0c3a04871d0\generate_proj_db.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\share\vtk-9.4\proj\proj.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\libproj\vtklibproj\data\CMakeFiles\generate_proj_db</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\share\vtk-9.4\proj\proj.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\libproj\vtklibproj\data\CMakeFiles\generate_proj_db</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\share\vtk-9.4\proj\proj.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\libproj\vtklibproj\data\CMakeFiles\generate_proj_db</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\share\vtk-9.4\proj\proj.db;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\libproj\vtklibproj\data\CMakeFiles\generate_proj_db</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/libproj/vtklibproj/data/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/cybermed/daddy/dependency/sdk-VTK-9.4.2 -BD:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc --check-stamp-file D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/ThirdParty/libproj/vtklibproj/data/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\CH;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\GL27;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\ITRF2000;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\ITRF2008;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\ITRF2014;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\nad.lst;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\nad27;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\nad83;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\other.extra;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\proj.ini;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql_filelist.cmake;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\world;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\libproj\vtklibproj\data\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/libproj/vtklibproj/data/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/cybermed/daddy/dependency/sdk-VTK-9.4.2 -BD:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc --check-stamp-file D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/ThirdParty/libproj/vtklibproj/data/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\CH;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\GL27;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\ITRF2000;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\ITRF2008;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\ITRF2014;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\nad.lst;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\nad27;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\nad83;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\other.extra;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\proj.ini;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql_filelist.cmake;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\world;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\libproj\vtklibproj\data\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/libproj/vtklibproj/data/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/cybermed/daddy/dependency/sdk-VTK-9.4.2 -BD:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc --check-stamp-file D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/ThirdParty/libproj/vtklibproj/data/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\CH;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\GL27;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\ITRF2000;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\ITRF2008;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\ITRF2014;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\nad.lst;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\nad27;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\nad83;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\other.extra;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\proj.ini;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql_filelist.cmake;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\world;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\libproj\vtklibproj\data\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/libproj/vtklibproj/data/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/cybermed/daddy/dependency/sdk-VTK-9.4.2 -BD:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc --check-stamp-file D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/ThirdParty/libproj/vtklibproj/data/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\CH;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\GL27;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\ITRF2000;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\ITRF2008;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\ITRF2014;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\nad.lst;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\nad27;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\nad83;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\other.extra;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\proj.ini;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\sql_filelist.cmake;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data\world;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\libproj\vtklibproj\data\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\libproj\vtklibproj\data\CMakeFiles\generate_proj_db">
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ZERO_CHECK.vcxproj">
+      <Project>{29A36E60-F9BD-3AF1-92C4-919B78672499}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\sqlite\vtksqlite\sqlitebin.vcxproj">
+      <Project>{CB0EEDAA-A62E-3775-B909-9D3DCF185A02}</Project>
+      <Name>sqlitebin</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

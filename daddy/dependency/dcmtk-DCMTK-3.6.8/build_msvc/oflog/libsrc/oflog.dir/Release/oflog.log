@@ -1,0 +1,62 @@
+﻿  Building Custom Rule D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oflog/libsrc/CMakeLists.txt
+  apndimpl.cc
+  appender.cc
+  asyncap.cc
+  clogger.cc
+  config.cc
+  consap.cc
+  cygwin32.cc
+  env.cc
+  factory.cc
+  fileap.cc
+  fileinfo.cc
+  filter.cc
+  globinit.cc
+  hierarchy.cc
+  hierlock.cc
+  layout.cc
+  lloguser.cc
+  lockfile.cc
+  log4judp.cc
+  logevent.cc
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  logger.cc
+  logimpl.cc
+  loglevel.cc
+  loglog.cc
+  logmacro.cc
+  mdc.cc
+  ndc.cc
+  ntelogap.cc
+  nullap.cc
+  objreg.cc
+  oflog.cc
+  patlay.cc
+  pointer.cc
+  property.cc
+  queue.cc
+  rootlog.cc
+  sleep.cc
+  snprintf.cc
+  sockbuff.cc
+  socket.cc
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  socketap.cc
+  strccloc.cc
+  strcloc.cc
+  strhelp.cc
+  striconv.cc
+  syncprims.cc
+  syslogap.cc
+  threads.cc
+  timehelp.cc
+  tls.cc
+  version.cc
+  winsock.cc
+  windebap.cc
+  winconap.cc
+  코드를 생성하고 있습니다...
+     D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/lib/Release/oflog.lib 라이브러리 및 D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/lib/Release/oflog.exp 개체를 생성하고 있습니다.
+  oflog.vcxproj -> D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\bin\Release\oflog.dll

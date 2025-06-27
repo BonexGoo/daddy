@@ -1,0 +1,191 @@
+﻿  Building Custom Rule D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Interaction/Widgets/CMakeLists.txt
+  vtk3DCursorRepresentation.cxx
+  vtk3DCursorWidget.cxx
+  vtk3DWidget.cxx
+  vtkAbstractPolygonalHandleRepresentation3D.cxx
+  vtkAbstractSplineRepresentation.cxx
+  vtkAbstractWidget.cxx
+  vtkAffineRepresentation.cxx
+  vtkAffineRepresentation2D.cxx
+  vtkAffineWidget.cxx
+  vtkAngleRepresentation.cxx
+  vtkAngleRepresentation2D.cxx
+  vtkAngleRepresentation3D.cxx
+  vtkAngleWidget.cxx
+  vtkAxesTransformRepresentation.cxx
+  vtkAxesTransformWidget.cxx
+  vtkBalloonRepresentation.cxx
+  vtkBalloonWidget.cxx
+  vtkBezierContourLineInterpolator.cxx
+  vtkBiDimensionalRepresentation.cxx
+  vtkBiDimensionalRepresentation2D.cxx
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  vtkBiDimensionalWidget.cxx
+  vtkBorderRepresentation.cxx
+  vtkBorderWidget.cxx
+  vtkBoundedPlanePointPlacer.cxx
+  vtkBoxRepresentation.cxx
+  vtkBoxWidget.cxx
+  vtkBoxWidget2.cxx
+  vtkBrokenLineWidget.cxx
+  vtkButtonRepresentation.cxx
+  vtkButtonWidget.cxx
+  vtkCamera3DRepresentation.cxx
+  vtkCamera3DWidget.cxx
+  vtkCameraHandleSource.cxx
+  vtkCameraOrientationWidget.cxx
+  vtkCameraOrientationRepresentation.cxx
+  vtkCameraPathRepresentation.cxx
+  vtkCameraPathWidget.cxx
+  vtkCameraRepresentation.cxx
+  vtkCameraWidget.cxx
+  vtkCaptionRepresentation.cxx
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  vtkCaptionWidget.cxx
+  vtkCellCentersPointPlacer.cxx
+  vtkCenteredSliderRepresentation.cxx
+  vtkCenteredSliderWidget.cxx
+  vtkCheckerboardRepresentation.cxx
+  vtkCheckerboardWidget.cxx
+  vtkClosedSurfacePointPlacer.cxx
+  vtkCompassRepresentation.cxx
+  vtkCompassWidget.cxx
+  vtkConstrainedPointHandleRepresentation.cxx
+  vtkContinuousValueWidget.cxx
+  vtkContinuousValueWidgetRepresentation.cxx
+  vtkContourLineInterpolator.cxx
+  vtkContourRepresentation.cxx
+  vtkContourWidget.cxx
+  vtkCoordinateFrameRepresentation.cxx
+  vtkCoordinateFrameWidget.cxx
+  vtkCurveRepresentation.cxx
+  vtkDijkstraImageContourLineInterpolator.cxx
+  vtkDisplaySizedImplicitPlaneWidget.cxx
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  vtkDisplaySizedImplicitPlaneRepresentation.cxx
+  vtkDistanceRepresentation.cxx
+  vtkDistanceRepresentation2D.cxx
+  vtkDistanceRepresentation3D.cxx
+  vtkDistanceWidget.cxx
+  vtkEllipsoidTensorProbeRepresentation.cxx
+  vtkEqualizerContextItem.cxx
+  vtkEvent.cxx
+  vtkFinitePlaneRepresentation.cxx
+  vtkFinitePlaneWidget.cxx
+  vtkFixedSizeHandleRepresentation3D.cxx
+  vtkFocalPlaneContourRepresentation.cxx
+  vtkFocalPlanePointPlacer.cxx
+  vtkHandleRepresentation.cxx
+  vtkHandleWidget.cxx
+  vtkHoverWidget.cxx
+  vtkImageActorPointPlacer.cxx
+  vtkImageCroppingRegionsWidget.cxx
+  vtkImageOrthoPlanes.cxx
+  vtkImagePlaneWidget.cxx
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  vtkImageTracerWidget.cxx
+  vtkImplicitAnnulusRepresentation.cxx
+  vtkImplicitAnnulusWidget.cxx
+  vtkImplicitConeRepresentation.cxx
+  vtkImplicitConeWidget.cxx
+  vtkImplicitCylinderRepresentation.cxx
+  vtkImplicitCylinderWidget.cxx
+  vtkImplicitImageRepresentation.cxx
+  vtkImplicitPlaneRepresentation.cxx
+  vtkImplicitPlaneWidget.cxx
+  vtkImplicitPlaneWidget2.cxx
+  vtkLightRepresentation.cxx
+  vtkLightWidget.cxx
+  vtkLinearContourLineInterpolator.cxx
+  vtkLineRepresentation.cxx
+  vtkLineWidget.cxx
+  vtkLineWidget2.cxx
+  vtkLogoRepresentation.cxx
+  vtkLogoWidget.cxx
+  vtkMagnifierRepresentation.cxx
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  vtkMagnifierWidget.cxx
+  vtkMeasurementCubeHandleRepresentation3D.cxx
+  vtkOrientationMarkerWidget.cxx
+  vtkOrientationRepresentation.cxx
+  vtkOrientationWidget.cxx
+  vtkOrientedGlyphContourRepresentation.cxx
+  vtkOrientedGlyphFocalPlaneContourRepresentation.cxx
+  vtkOrientedPolygonalHandleRepresentation3D.cxx
+  vtkParallelopipedRepresentation.cxx
+  vtkParallelopipedWidget.cxx
+  vtkPlaneWidget.cxx
+  vtkPlaybackRepresentation.cxx
+  vtkPlaybackWidget.cxx
+  vtkPointCloudRepresentation.cxx
+  vtkPointCloudWidget.cxx
+  vtkPointHandleRepresentation2D.cxx
+  vtkPointHandleRepresentation3D.cxx
+  vtkPointPlacer.cxx
+  vtkPointWidget.cxx
+  vtkPolyDataContourLineInterpolator.cxx
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  vtkPolyDataPointPlacer.cxx
+  vtkPolyDataSourceWidget.cxx
+  vtkPolygonalHandleRepresentation3D.cxx
+  vtkPolygonalSurfaceContourLineInterpolator.cxx
+  vtkPolygonalSurfacePointPlacer.cxx
+  vtkPolyLineRepresentation.cxx
+  vtkPolyLineWidget.cxx
+  vtkProgressBarRepresentation.cxx
+  vtkProgressBarWidget.cxx
+  vtkProp3DButtonRepresentation.cxx
+  vtkRectilinearWipeRepresentation.cxx
+  vtkRectilinearWipeWidget.cxx
+  vtkResliceCursor.cxx
+  vtkResliceCursorActor.cxx
+  vtkResliceCursorLineRepresentation.cxx
+  vtkResliceCursorPicker.cxx
+  vtkResliceCursorPolyDataAlgorithm.cxx
+  vtkResliceCursorRepresentation.cxx
+  vtkResliceCursorThickLineRepresentation.cxx
+  vtkResliceCursorWidget.cxx
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  vtkScalarBarRepresentation.cxx
+  vtkScalarBarWidget.cxx
+  vtkSeedRepresentation.cxx
+  vtkSeedWidget.cxx
+  vtkSliderRepresentation.cxx
+  vtkSliderRepresentation2D.cxx
+  vtkSliderRepresentation3D.cxx
+  vtkSliderWidget.cxx
+  vtkSphereHandleRepresentation.cxx
+  vtkSphereRepresentation.cxx
+  vtkSphereWidget.cxx
+  vtkSphereWidget2.cxx
+  vtkSplineRepresentation.cxx
+  vtkSplineWidget.cxx
+  vtkSplineWidget2.cxx
+  vtkTensorProbeRepresentation.cxx
+  vtkTensorProbeWidget.cxx
+  vtkTensorRepresentation.cxx
+  vtkTensorWidget.cxx
+  vtkTerrainContourLineInterpolator.cxx
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  vtkTerrainDataPointPlacer.cxx
+  vtkTextRepresentation.cxx
+  vtkTexturedButtonRepresentation.cxx
+  vtkTexturedButtonRepresentation2D.cxx
+  vtkTextWidget.cxx
+  vtkWidgetCallbackMapper.cxx
+  vtkWidgetEvent.cxx
+  vtkWidgetEventTranslator.cxx
+  vtkWidgetRepresentation.cxx
+  vtkWidgetSet.cxx
+  vtkXYPlotWidget.cxx
+  코드를 생성하고 있습니다...
+     D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Release/vtkInteractionWidgets-9.4.lib 라이브러리 및 D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Release/vtkInteractionWidgets-9.4.exp 개체를 생성하고 있습니다.
+  InteractionWidgets.vcxproj -> D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\bin\Release\vtkInteractionWidgets-9.4.dll

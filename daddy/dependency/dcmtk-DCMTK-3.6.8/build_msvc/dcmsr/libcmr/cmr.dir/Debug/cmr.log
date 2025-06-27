@@ -1,0 +1,50 @@
+﻿  Building Custom Rule D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/dcmsr/libcmr/CMakeLists.txt
+  cid100.cc
+  cid10013.cc
+  cid10013e.cc
+  cid10033.cc
+  cid10033e.cc
+  cid11.cc
+  cid218.cc
+  cid218e.cc
+  cid244.cc
+  cid244e.cc
+  cid247.cc
+  cid29.cc
+  cid29e.cc
+  cid4020.cc
+  cid4021.cc
+  cid4031.cc
+  cid4031e.cc
+  cid42.cc
+  cid5000.cc
+  cid5001.cc
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  cid6147.cc
+  cid7021.cc
+  cid7181.cc
+  cid7445.cc
+  cid7452.cc
+  cid7453.cc
+  cid7464.cc
+  cid7469.cc
+  cid7551.cc
+  init.cc
+  logger.cc
+  srnumvl.cc
+  tid1001.cc
+  tid1204.cc
+  tid1411.cc
+  tid1419m.cc
+  tid1500.cc
+  tid1501.cc
+  tid15def.cc
+  tid1600.cc
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  tid300.cc
+  tid4019.cc
+  코드를 생성하고 있습니다...
+     D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/lib/Debug/cmr.lib 라이브러리 및 D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/lib/Debug/cmr.exp 개체를 생성하고 있습니다.
+  cmr.vcxproj -> D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\bin\Debug\cmr.dll

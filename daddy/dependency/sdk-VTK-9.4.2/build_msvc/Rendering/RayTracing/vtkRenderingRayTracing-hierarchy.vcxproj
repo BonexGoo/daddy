@@ -1,0 +1,347 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4A3D2DBA-2B96-396D-8385-3976EC239299}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>vtkRenderingRayTracing-hierarchy</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\ca9aa9fed93d79dd9d626753235b306a\vtkRenderingRayTracing-hierarchy.txt.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating the wrap hierarchy for VTK::RenderingRayTracing</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+..\..\bin\Debug\vtkWrapHierarchy-9.4d.exe -MF D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Rendering/RayTracing/CMakeFiles/vtkRenderingRayTracing-hierarchy.txt.Debug.d @D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Rendering/RayTracing/CMakeFiles/vtkRenderingRayTracing-hierarchy.Debug.args -o D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/vtk-9.4/hierarchy/VTK/vtkRenderingRayTracing-hierarchy.txt D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Rendering/RayTracing/CMakeFiles/vtkRenderingRayTracing-hierarchy.data @D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Rendering/RayTracing/CMakeFiles/vtkRenderingRayTracing-hierarchy.depends.args
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_transform_depfile "Visual Studio 17 2022" MSBuildAdditionalInputs D:/cybermed/daddy/dependency/sdk-VTK-9.4.2 D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Rendering/RayTracing D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Rendering/RayTracing D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Rendering/RayTracing/CMakeFiles/vtkRenderingRayTracing-hierarchy.txt.Debug.d D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/CMakeFiles/d/c69317f140e3fc14941d733e7caabf15e3b52202192b455995db28062a0c51c7.AdditionalInputs
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\RayTracing\vtkOSPRayActorNode.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\RayTracing\vtkOSPRayAMRVolumeMapperNode.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\RayTracing\vtkOSPRayCameraNode.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\RayTracing\vtkOSPRayCompositePolyDataMapperNode.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\RayTracing\vtkOSPRayCompositePolyDataMapper2Node.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\RayTracing\vtkOSPRayLightNode.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\RayTracing\vtkOSPRayMaterialHelpers.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\RayTracing\vtkOSPRayMaterialLibrary.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\RayTracing\vtkOSPRayMoleculeMapperNode.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\RayTracing\vtkOSPRayPass.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\RayTracing\vtkOSPRayPolyDataMapperNode.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\RayTracing\vtkOSPRayPointGaussianMapperNode.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\RayTracing\vtkOSPRayRendererNode.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\RayTracing\vtkOSPRayUnstructuredVolumeMapperNode.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\RayTracing\vtkOSPRayViewNodeFactory.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\RayTracing\vtkOSPRayVolumeMapper.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\RayTracing\vtkOSPRayVolumeMapperNode.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\RayTracing\vtkOSPRayVolumeNode.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\RayTracing\vtkOSPRayWindowNode.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Rendering\RayTracing\CMakeFiles\vtkRenderingRayTracing-hierarchy.Debug.args;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Rendering\RayTracing\CMakeFiles\vtkRenderingRayTracing-hierarchy.data;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Rendering\RayTracing\CMakeFiles\vtkRenderingRayTracing-hierarchy.depends.args;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\lib\vtk-9.4\hierarchy\VTK\vtkRenderingRayTracing-hierarchy.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <DepFileAdditionalInputsFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\d\c69317f140e3fc14941d733e7caabf15e3b52202192b455995db28062a0c51c7.AdditionalInputs</DepFileAdditionalInputsFile>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating the wrap hierarchy for VTK::RenderingRayTracing</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+..\..\bin\Release\vtkWrapHierarchy-9.4.exe -MF D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Rendering/RayTracing/CMakeFiles/vtkRenderingRayTracing-hierarchy.txt.Release.d @D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Rendering/RayTracing/CMakeFiles/vtkRenderingRayTracing-hierarchy.Release.args -o D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/vtk-9.4/hierarchy/VTK/vtkRenderingRayTracing-hierarchy.txt D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Rendering/RayTracing/CMakeFiles/vtkRenderingRayTracing-hierarchy.data @D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Rendering/RayTracing/CMakeFiles/vtkRenderingRayTracing-hierarchy.depends.args
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_transform_depfile "Visual Studio 17 2022" MSBuildAdditionalInputs D:/cybermed/daddy/dependency/sdk-VTK-9.4.2 D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Rendering/RayTracing D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Rendering/RayTracing D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Rendering/RayTracing/CMakeFiles/vtkRenderingRayTracing-hierarchy.txt.Release.d D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/CMakeFiles/d/2f64f3ce8b20bc70cdc578002a802d78a37e066ad34faf43eb9fe8ad7c06a1c3.AdditionalInputs
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\RayTracing\vtkOSPRayActorNode.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\RayTracing\vtkOSPRayAMRVolumeMapperNode.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\RayTracing\vtkOSPRayCameraNode.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\RayTracing\vtkOSPRayCompositePolyDataMapperNode.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\RayTracing\vtkOSPRayCompositePolyDataMapper2Node.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\RayTracing\vtkOSPRayLightNode.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\RayTracing\vtkOSPRayMaterialHelpers.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\RayTracing\vtkOSPRayMaterialLibrary.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\RayTracing\vtkOSPRayMoleculeMapperNode.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\RayTracing\vtkOSPRayPass.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\RayTracing\vtkOSPRayPolyDataMapperNode.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\RayTracing\vtkOSPRayPointGaussianMapperNode.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\RayTracing\vtkOSPRayRendererNode.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\RayTracing\vtkOSPRayUnstructuredVolumeMapperNode.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\RayTracing\vtkOSPRayViewNodeFactory.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\RayTracing\vtkOSPRayVolumeMapper.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\RayTracing\vtkOSPRayVolumeMapperNode.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\RayTracing\vtkOSPRayVolumeNode.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\RayTracing\vtkOSPRayWindowNode.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Rendering\RayTracing\CMakeFiles\vtkRenderingRayTracing-hierarchy.Release.args;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Rendering\RayTracing\CMakeFiles\vtkRenderingRayTracing-hierarchy.data;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Rendering\RayTracing\CMakeFiles\vtkRenderingRayTracing-hierarchy.depends.args;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\lib\vtk-9.4\hierarchy\VTK\vtkRenderingRayTracing-hierarchy.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <DepFileAdditionalInputsFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\d\2f64f3ce8b20bc70cdc578002a802d78a37e066ad34faf43eb9fe8ad7c06a1c3.AdditionalInputs</DepFileAdditionalInputsFile>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating the wrap hierarchy for VTK::RenderingRayTracing</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+..\..\bin\MinSizeRel\vtkWrapHierarchy-9.4.exe -MF D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Rendering/RayTracing/CMakeFiles/vtkRenderingRayTracing-hierarchy.txt.MinSizeRel.d @D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Rendering/RayTracing/CMakeFiles/vtkRenderingRayTracing-hierarchy.MinSizeRel.args -o D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/vtk-9.4/hierarchy/VTK/vtkRenderingRayTracing-hierarchy.txt D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Rendering/RayTracing/CMakeFiles/vtkRenderingRayTracing-hierarchy.data @D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Rendering/RayTracing/CMakeFiles/vtkRenderingRayTracing-hierarchy.depends.args
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_transform_depfile "Visual Studio 17 2022" MSBuildAdditionalInputs D:/cybermed/daddy/dependency/sdk-VTK-9.4.2 D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Rendering/RayTracing D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Rendering/RayTracing D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Rendering/RayTracing/CMakeFiles/vtkRenderingRayTracing-hierarchy.txt.MinSizeRel.d D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/CMakeFiles/d/ca2404d3ca021c49e9f1d3bc2d4e0e67b0deac23d732ac886f8f6c4f9727e2ef.AdditionalInputs
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\RayTracing\vtkOSPRayActorNode.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\RayTracing\vtkOSPRayAMRVolumeMapperNode.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\RayTracing\vtkOSPRayCameraNode.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\RayTracing\vtkOSPRayCompositePolyDataMapperNode.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\RayTracing\vtkOSPRayCompositePolyDataMapper2Node.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\RayTracing\vtkOSPRayLightNode.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\RayTracing\vtkOSPRayMaterialHelpers.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\RayTracing\vtkOSPRayMaterialLibrary.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\RayTracing\vtkOSPRayMoleculeMapperNode.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\RayTracing\vtkOSPRayPass.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\RayTracing\vtkOSPRayPolyDataMapperNode.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\RayTracing\vtkOSPRayPointGaussianMapperNode.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\RayTracing\vtkOSPRayRendererNode.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\RayTracing\vtkOSPRayUnstructuredVolumeMapperNode.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\RayTracing\vtkOSPRayViewNodeFactory.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\RayTracing\vtkOSPRayVolumeMapper.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\RayTracing\vtkOSPRayVolumeMapperNode.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\RayTracing\vtkOSPRayVolumeNode.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\RayTracing\vtkOSPRayWindowNode.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Rendering\RayTracing\CMakeFiles\vtkRenderingRayTracing-hierarchy.MinSizeRel.args;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Rendering\RayTracing\CMakeFiles\vtkRenderingRayTracing-hierarchy.data;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Rendering\RayTracing\CMakeFiles\vtkRenderingRayTracing-hierarchy.depends.args;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\lib\vtk-9.4\hierarchy\VTK\vtkRenderingRayTracing-hierarchy.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <DepFileAdditionalInputsFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\d\ca2404d3ca021c49e9f1d3bc2d4e0e67b0deac23d732ac886f8f6c4f9727e2ef.AdditionalInputs</DepFileAdditionalInputsFile>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating the wrap hierarchy for VTK::RenderingRayTracing</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+..\..\bin\RelWithDebInfo\vtkWrapHierarchy-9.4.exe -MF D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Rendering/RayTracing/CMakeFiles/vtkRenderingRayTracing-hierarchy.txt.RelWithDebInfo.d @D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Rendering/RayTracing/CMakeFiles/vtkRenderingRayTracing-hierarchy.RelWithDebInfo.args -o D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/vtk-9.4/hierarchy/VTK/vtkRenderingRayTracing-hierarchy.txt D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Rendering/RayTracing/CMakeFiles/vtkRenderingRayTracing-hierarchy.data @D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Rendering/RayTracing/CMakeFiles/vtkRenderingRayTracing-hierarchy.depends.args
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_transform_depfile "Visual Studio 17 2022" MSBuildAdditionalInputs D:/cybermed/daddy/dependency/sdk-VTK-9.4.2 D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Rendering/RayTracing D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Rendering/RayTracing D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Rendering/RayTracing/CMakeFiles/vtkRenderingRayTracing-hierarchy.txt.RelWithDebInfo.d D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/CMakeFiles/d/76b47c69420dfb2dd8d2fd0e89beab04fe15b7e421c240310765b68f490e128e.AdditionalInputs
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\RayTracing\vtkOSPRayActorNode.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\RayTracing\vtkOSPRayAMRVolumeMapperNode.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\RayTracing\vtkOSPRayCameraNode.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\RayTracing\vtkOSPRayCompositePolyDataMapperNode.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\RayTracing\vtkOSPRayCompositePolyDataMapper2Node.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\RayTracing\vtkOSPRayLightNode.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\RayTracing\vtkOSPRayMaterialHelpers.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\RayTracing\vtkOSPRayMaterialLibrary.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\RayTracing\vtkOSPRayMoleculeMapperNode.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\RayTracing\vtkOSPRayPass.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\RayTracing\vtkOSPRayPolyDataMapperNode.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\RayTracing\vtkOSPRayPointGaussianMapperNode.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\RayTracing\vtkOSPRayRendererNode.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\RayTracing\vtkOSPRayUnstructuredVolumeMapperNode.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\RayTracing\vtkOSPRayViewNodeFactory.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\RayTracing\vtkOSPRayVolumeMapper.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\RayTracing\vtkOSPRayVolumeMapperNode.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\RayTracing\vtkOSPRayVolumeNode.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\RayTracing\vtkOSPRayWindowNode.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Rendering\RayTracing\CMakeFiles\vtkRenderingRayTracing-hierarchy.RelWithDebInfo.args;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Rendering\RayTracing\CMakeFiles\vtkRenderingRayTracing-hierarchy.data;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Rendering\RayTracing\CMakeFiles\vtkRenderingRayTracing-hierarchy.depends.args;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\lib\vtk-9.4\hierarchy\VTK\vtkRenderingRayTracing-hierarchy.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <DepFileAdditionalInputsFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\d\76b47c69420dfb2dd8d2fd0e89beab04fe15b7e421c240310765b68f490e128e.AdditionalInputs</DepFileAdditionalInputsFile>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\945d02313f8b4ac09918faedddede9bf\vtkRenderingRayTracing-hierarchy.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\lib\vtk-9.4\hierarchy\VTK\vtkRenderingRayTracing-hierarchy.txt;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\bin\Debug\vtkWrapHierarchy-9.4d.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Rendering\RayTracing\CMakeFiles\vtkRenderingRayTracing-hierarchy</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\lib\vtk-9.4\hierarchy\VTK\vtkRenderingRayTracing-hierarchy.txt;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\bin\Release\vtkWrapHierarchy-9.4.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Rendering\RayTracing\CMakeFiles\vtkRenderingRayTracing-hierarchy</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\lib\vtk-9.4\hierarchy\VTK\vtkRenderingRayTracing-hierarchy.txt;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\bin\MinSizeRel\vtkWrapHierarchy-9.4.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Rendering\RayTracing\CMakeFiles\vtkRenderingRayTracing-hierarchy</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\lib\vtk-9.4\hierarchy\VTK\vtkRenderingRayTracing-hierarchy.txt;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\bin\RelWithDebInfo\vtkWrapHierarchy-9.4.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Rendering\RayTracing\CMakeFiles\vtkRenderingRayTracing-hierarchy</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\RayTracing\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Rendering/RayTracing/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/cybermed/daddy/dependency/sdk-VTK-9.4.2 -BD:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc --check-stamp-file D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Rendering/RayTracing/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\exportheader.cmake.in;D:\cybermed\daddy\dependency\oidn-2.3.1.x64.windows\lib\cmake\OpenImageDenoise-2.3.1\OpenImageDenoiseConfig.cmake;D:\cybermed\daddy\dependency\oidn-2.3.1.x64.windows\lib\cmake\OpenImageDenoise-2.3.1\OpenImageDenoiseConfigVersion.cmake;D:\cybermed\daddy\dependency\oidn-2.3.1.x64.windows\lib\cmake\OpenImageDenoise-2.3.1\OpenImageDenoiseTargets-release.cmake;D:\cybermed\daddy\dependency\oidn-2.3.1.x64.windows\lib\cmake\OpenImageDenoise-2.3.1\OpenImageDenoiseTargets.cmake;D:\cybermed\daddy\dependency\ospray-3.2.0.x86_64.windows\lib\cmake\ospray-3.2.0\osprayConfig.cmake;D:\cybermed\daddy\dependency\ospray-3.2.0.x86_64.windows\lib\cmake\ospray-3.2.0\osprayConfigVersion.cmake;D:\cybermed\daddy\dependency\ospray-3.2.0.x86_64.windows\lib\cmake\ospray-3.2.0\ospray_Exports-release.cmake;D:\cybermed\daddy\dependency\ospray-3.2.0.x86_64.windows\lib\cmake\ospray-3.2.0\ospray_Exports.cmake;D:\cybermed\daddy\dependency\ospray-3.2.0.x86_64.windows\lib\cmake\ospray-3.2.0\ospray_macros.cmake;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\CMake\vtkObjectFactory.cxx.in;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\CMake\vtkObjectFactory.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Rendering\RayTracing\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Rendering/RayTracing/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/cybermed/daddy/dependency/sdk-VTK-9.4.2 -BD:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc --check-stamp-file D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Rendering/RayTracing/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\exportheader.cmake.in;D:\cybermed\daddy\dependency\oidn-2.3.1.x64.windows\lib\cmake\OpenImageDenoise-2.3.1\OpenImageDenoiseConfig.cmake;D:\cybermed\daddy\dependency\oidn-2.3.1.x64.windows\lib\cmake\OpenImageDenoise-2.3.1\OpenImageDenoiseConfigVersion.cmake;D:\cybermed\daddy\dependency\oidn-2.3.1.x64.windows\lib\cmake\OpenImageDenoise-2.3.1\OpenImageDenoiseTargets-release.cmake;D:\cybermed\daddy\dependency\oidn-2.3.1.x64.windows\lib\cmake\OpenImageDenoise-2.3.1\OpenImageDenoiseTargets.cmake;D:\cybermed\daddy\dependency\ospray-3.2.0.x86_64.windows\lib\cmake\ospray-3.2.0\osprayConfig.cmake;D:\cybermed\daddy\dependency\ospray-3.2.0.x86_64.windows\lib\cmake\ospray-3.2.0\osprayConfigVersion.cmake;D:\cybermed\daddy\dependency\ospray-3.2.0.x86_64.windows\lib\cmake\ospray-3.2.0\ospray_Exports-release.cmake;D:\cybermed\daddy\dependency\ospray-3.2.0.x86_64.windows\lib\cmake\ospray-3.2.0\ospray_Exports.cmake;D:\cybermed\daddy\dependency\ospray-3.2.0.x86_64.windows\lib\cmake\ospray-3.2.0\ospray_macros.cmake;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\CMake\vtkObjectFactory.cxx.in;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\CMake\vtkObjectFactory.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Rendering\RayTracing\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Rendering/RayTracing/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/cybermed/daddy/dependency/sdk-VTK-9.4.2 -BD:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc --check-stamp-file D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Rendering/RayTracing/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\exportheader.cmake.in;D:\cybermed\daddy\dependency\oidn-2.3.1.x64.windows\lib\cmake\OpenImageDenoise-2.3.1\OpenImageDenoiseConfig.cmake;D:\cybermed\daddy\dependency\oidn-2.3.1.x64.windows\lib\cmake\OpenImageDenoise-2.3.1\OpenImageDenoiseConfigVersion.cmake;D:\cybermed\daddy\dependency\oidn-2.3.1.x64.windows\lib\cmake\OpenImageDenoise-2.3.1\OpenImageDenoiseTargets-release.cmake;D:\cybermed\daddy\dependency\oidn-2.3.1.x64.windows\lib\cmake\OpenImageDenoise-2.3.1\OpenImageDenoiseTargets.cmake;D:\cybermed\daddy\dependency\ospray-3.2.0.x86_64.windows\lib\cmake\ospray-3.2.0\osprayConfig.cmake;D:\cybermed\daddy\dependency\ospray-3.2.0.x86_64.windows\lib\cmake\ospray-3.2.0\osprayConfigVersion.cmake;D:\cybermed\daddy\dependency\ospray-3.2.0.x86_64.windows\lib\cmake\ospray-3.2.0\ospray_Exports-release.cmake;D:\cybermed\daddy\dependency\ospray-3.2.0.x86_64.windows\lib\cmake\ospray-3.2.0\ospray_Exports.cmake;D:\cybermed\daddy\dependency\ospray-3.2.0.x86_64.windows\lib\cmake\ospray-3.2.0\ospray_macros.cmake;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\CMake\vtkObjectFactory.cxx.in;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\CMake\vtkObjectFactory.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Rendering\RayTracing\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Rendering/RayTracing/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/cybermed/daddy/dependency/sdk-VTK-9.4.2 -BD:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc --check-stamp-file D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Rendering/RayTracing/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\exportheader.cmake.in;D:\cybermed\daddy\dependency\oidn-2.3.1.x64.windows\lib\cmake\OpenImageDenoise-2.3.1\OpenImageDenoiseConfig.cmake;D:\cybermed\daddy\dependency\oidn-2.3.1.x64.windows\lib\cmake\OpenImageDenoise-2.3.1\OpenImageDenoiseConfigVersion.cmake;D:\cybermed\daddy\dependency\oidn-2.3.1.x64.windows\lib\cmake\OpenImageDenoise-2.3.1\OpenImageDenoiseTargets-release.cmake;D:\cybermed\daddy\dependency\oidn-2.3.1.x64.windows\lib\cmake\OpenImageDenoise-2.3.1\OpenImageDenoiseTargets.cmake;D:\cybermed\daddy\dependency\ospray-3.2.0.x86_64.windows\lib\cmake\ospray-3.2.0\osprayConfig.cmake;D:\cybermed\daddy\dependency\ospray-3.2.0.x86_64.windows\lib\cmake\ospray-3.2.0\osprayConfigVersion.cmake;D:\cybermed\daddy\dependency\ospray-3.2.0.x86_64.windows\lib\cmake\ospray-3.2.0\ospray_Exports-release.cmake;D:\cybermed\daddy\dependency\ospray-3.2.0.x86_64.windows\lib\cmake\ospray-3.2.0\ospray_Exports.cmake;D:\cybermed\daddy\dependency\ospray-3.2.0.x86_64.windows\lib\cmake\ospray-3.2.0\ospray_macros.cmake;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\CMake\vtkObjectFactory.cxx.in;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\CMake\vtkObjectFactory.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Rendering\RayTracing\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Rendering\RayTracing\CMakeFiles\vtkRenderingRayTracing-hierarchy">
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ZERO_CHECK.vcxproj">
+      <Project>{29A36E60-F9BD-3AF1-92C4-919B78672499}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Wrapping\Tools\WrapHierarchy.vcxproj">
+      <Project>{26194890-F1C3-34CF-AF00-AFA21E3C5138}</Project>
+      <Name>WrapHierarchy</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\Core\vtkCommonCore-hierarchy.vcxproj">
+      <Project>{7DB76CF9-1CC4-37BC-B10C-80DA6D1CCEDE}</Project>
+      <Name>vtkCommonCore-hierarchy</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\DataModel\vtkCommonDataModel-hierarchy.vcxproj">
+      <Project>{C7E02112-592D-3086-B351-A35375A1D3F7}</Project>
+      <Name>vtkCommonDataModel-hierarchy</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Domains\Chemistry\vtkDomainsChemistry-hierarchy.vcxproj">
+      <Project>{0889908E-CB2B-3987-B88B-03B84477E530}</Project>
+      <Name>vtkDomainsChemistry-hierarchy</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Rendering\Core\vtkRenderingCore-hierarchy.vcxproj">
+      <Project>{D6D2F269-0FBB-3267-831D-694DD255D5CC}</Project>
+      <Name>vtkRenderingCore-hierarchy</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Rendering\OpenGL2\vtkRenderingOpenGL2-hierarchy.vcxproj">
+      <Project>{7615B7CA-0C9F-3265-B800-F9DB80108FD9}</Project>
+      <Name>vtkRenderingOpenGL2-hierarchy</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Rendering\SceneGraph\vtkRenderingSceneGraph-hierarchy.vcxproj">
+      <Project>{E215FE4F-C429-3657-925B-221FCEBC546F}</Project>
+      <Name>vtkRenderingSceneGraph-hierarchy</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Rendering\Volume\vtkRenderingVolume-hierarchy.vcxproj">
+      <Project>{C3C02D50-2E25-3F74-AFF5-D96D0BE10B86}</Project>
+      <Name>vtkRenderingVolume-hierarchy</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <Import Project="C:\Program Files\CMake\share\cmake-3.31\Templates\MSBuild\CustomBuildDepFile.targets" />
+</Project>

@@ -1,0 +1,7 @@
+﻿  Building Custom Rule D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Imaging/Statistics/CMakeLists.txt
+  vtkImageAccumulate.cxx
+  vtkImageHistogram.cxx
+  vtkImageHistogramStatistics.cxx
+  코드를 생성하고 있습니다...
+     D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Release/vtkImagingStatistics-9.4.lib 라이브러리 및 D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Release/vtkImagingStatistics-9.4.exp 개체를 생성하고 있습니다.
+  ImagingStatistics.vcxproj -> D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\bin\Release\vtkImagingStatistics-9.4.dll

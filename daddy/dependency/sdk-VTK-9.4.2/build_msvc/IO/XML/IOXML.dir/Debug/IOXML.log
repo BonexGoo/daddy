@@ -1,0 +1,10 @@
+﻿  vtkXMLHyperTreeGridReader.cxx
+  vtkXMLHyperTreeGridWriter.cxx
+  vtkXMLPartitionedDataSetCollectionReader.cxx
+  vtkXMLReader.cxx
+  vtkXMLStructuredDataWriter.cxx
+  vtkXMLUnstructuredDataWriter.cxx
+  vtkXMLWriter.cxx
+  vtkXMLWriterBase.cxx
+  코드를 생성하고 있습니다...
+  IOXML.vcxproj -> D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\bin\Debug\vtkIOXML-9.4d.dll

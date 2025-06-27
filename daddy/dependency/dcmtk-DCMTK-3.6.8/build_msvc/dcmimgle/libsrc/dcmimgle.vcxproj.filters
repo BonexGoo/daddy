@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmimgle\libsrc\dcmimage.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmimgle\libsrc\dibaslut.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmimgle\libsrc\diciefn.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmimgle\libsrc\dicielut.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmimgle\libsrc\didislut.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmimgle\libsrc\didispfn.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmimgle\libsrc\didocu.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmimgle\libsrc\digsdfn.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmimgle\libsrc\digsdlut.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmimgle\libsrc\diimage.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmimgle\libsrc\diinpx.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmimgle\libsrc\diluptab.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmimgle\libsrc\dimo1img.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmimgle\libsrc\dimo2img.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmimgle\libsrc\dimoimg.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmimgle\libsrc\dimoimg3.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmimgle\libsrc\dimoimg4.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmimgle\libsrc\dimoimg5.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmimgle\libsrc\dimomod.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmimgle\libsrc\dimoopx.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmimgle\libsrc\dimopx.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmimgle\libsrc\diovdat.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmimgle\libsrc\diovlay.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmimgle\libsrc\diovlimg.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmimgle\libsrc\diovpln.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmimgle\libsrc\diutils.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmimgle\libsrc\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{223CA86B-C79F-3D28-815E-BF4CB8A4A19D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

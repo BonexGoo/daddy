@@ -1,0 +1,13 @@
+﻿  Building Custom Rule D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/hdf5/vtkhdf5/hl/src/CMakeLists.txt
+  H5DO.c
+  H5DS.c
+  H5IM.c
+  H5LT.c
+  H5LTanalyze.c
+  H5LTparse.c
+  H5PT.c
+  H5TB.c
+  H5LD.c
+  코드를 생성하고 있습니다...
+     D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Release/vtkhdf5_hl-9.4.lib 라이브러리 및 D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Release/vtkhdf5_hl-9.4.exp 개체를 생성하고 있습니다.
+  vtkhdf5_hl_src.vcxproj -> D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\bin\Release\vtkhdf5_hl-9.4.dll

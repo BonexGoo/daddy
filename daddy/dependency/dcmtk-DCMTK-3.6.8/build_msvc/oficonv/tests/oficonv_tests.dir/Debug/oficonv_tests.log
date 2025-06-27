@@ -1,0 +1,10 @@
+﻿  Building Custom Rule D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/oficonv/tests/CMakeLists.txt
+  tests.cc
+  oficonv_tests.cc
+  ticonv.cc
+  ticonv_iso8859.cc
+  ticonv_chinese.cc
+  ticonv_japanese.cc
+  ticonv_korean.cc
+  코드를 생성하고 있습니다...
+  oficonv_tests.vcxproj -> D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\bin\Debug\oficonv_tests.exe

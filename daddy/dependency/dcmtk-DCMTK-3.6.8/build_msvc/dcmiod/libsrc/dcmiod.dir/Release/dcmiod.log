@@ -1,0 +1,37 @@
+﻿  Building Custom Rule D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/dcmiod/libsrc/CMakeLists.txt
+  cielabutil.cc
+  iodcontentitemmacro.cc
+  iodcommn.cc
+  iodmacro.cc
+  iodrules.cc
+  iodreferences.cc
+  iodutil.cc
+  iodtypes.cc
+  modacquisitioncontext.cc
+  modbase.cc
+  modcommoninstanceref.cc
+  modenhequipment.cc
+  modenhusimage.cc
+  modenhusseries.cc
+  modequipment.cc
+  modfloatingpointimagepixel.cc
+  modfor.cc
+  modgeneralimage.cc
+  modgeneralseries.cc
+  modgeneralstudy.cc
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  modhelp.cc
+  modimagepixel.cc
+  modimagepixelbase.cc
+  modmultiframefg.cc
+  modmultiframedimension.cc
+  modpatient.cc
+  modpatientstudy.cc
+  modsegmentationseries.cc
+  modsopcommon.cc
+  modsynchronization.cc
+  modusfor.cc
+  코드를 생성하고 있습니다...
+     D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/lib/Release/dcmiod.lib 라이브러리 및 D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/lib/Release/dcmiod.exp 개체를 생성하고 있습니다.
+  dcmiod.vcxproj -> D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\bin\Release\dcmiod.dll

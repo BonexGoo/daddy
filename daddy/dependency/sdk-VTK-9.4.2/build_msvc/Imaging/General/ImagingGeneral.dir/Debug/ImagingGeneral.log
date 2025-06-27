@@ -1,0 +1,29 @@
+﻿  Building Custom Rule D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Imaging/General/CMakeLists.txt
+  vtkImageAnisotropicDiffusion2D.cxx
+  vtkImageAnisotropicDiffusion3D.cxx
+  vtkImageCheckerboard.cxx
+  vtkImageCityBlockDistance.cxx
+  vtkImageConvolve.cxx
+  vtkImageCorrelation.cxx
+  vtkImageEuclideanDistance.cxx
+  vtkImageEuclideanToPolar.cxx
+  vtkImageGaussianSmooth.cxx
+  vtkImageGradient.cxx
+  vtkImageGradientMagnitude.cxx
+  vtkImageHybridMedian2D.cxx
+  vtkImageLaplacian.cxx
+  vtkImageMedian3D.cxx
+  vtkImageNormalize.cxx
+  vtkImageRange3D.cxx
+  vtkImageSeparableConvolution.cxx
+  vtkImageSlab.cxx
+  vtkImageSlabReslice.cxx
+  vtkImageSobel2D.cxx
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  vtkImageSobel3D.cxx
+  vtkImageSpatialAlgorithm.cxx
+  vtkImageVariance3D.cxx
+  코드를 생성하고 있습니다...
+     D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Debug/vtkImagingGeneral-9.4d.lib 라이브러리 및 D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Debug/vtkImagingGeneral-9.4d.exp 개체를 생성하고 있습니다.
+  ImagingGeneral.vcxproj -> D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\bin\Debug\vtkImagingGeneral-9.4d.dll

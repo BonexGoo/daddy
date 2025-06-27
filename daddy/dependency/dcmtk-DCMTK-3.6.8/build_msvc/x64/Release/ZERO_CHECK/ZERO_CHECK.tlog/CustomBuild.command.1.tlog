@@ -1,0 +1,10 @@
+^D:\CYBERMED\DADDY\DEPENDENCY\DCMTK-DCMTK-3.6.8\BUILD_MSVC\CMAKEFILES\58F5874855220F61D8A8134A44235B10\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8 -BD:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/DCMTK.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

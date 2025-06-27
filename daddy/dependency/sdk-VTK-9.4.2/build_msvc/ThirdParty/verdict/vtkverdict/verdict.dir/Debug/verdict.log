@@ -1,0 +1,15 @@
+﻿  Building Custom Rule D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/verdict/vtkverdict/CMakeLists.txt
+  V_EdgeMetric.cpp
+  V_GaussIntegration.cpp
+  V_HexMetric.cpp
+  V_KnifeMetric.cpp
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\verdict\vtkverdict\V_HexMetric.cpp(1987,32): warning C4100: 'num_nodes': 참조되지 않은 정식 매개 변수입니다.
+  V_PyramidMetric.cpp
+  V_QuadMetric.cpp
+  V_TetMetric.cpp
+  V_TriMetric.cpp
+  V_WedgeMetric.cpp
+  VerdictVector.cpp
+  코드를 생성하고 있습니다...
+     D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Debug/vtkverdict-9.4d.lib 라이브러리 및 D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Debug/vtkverdict-9.4d.exp 개체를 생성하고 있습니다.
+  verdict.vcxproj -> D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\bin\Debug\vtkverdict-9.4d.dll

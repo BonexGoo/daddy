@@ -1,0 +1,15 @@
+﻿  Building Custom Rule D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Wrapping/Tools/CMakeLists.txt
+  vtkWrapPython.c
+  vtkWrapPythonClass.c
+  vtkWrapPythonConstant.c
+  vtkWrapPythonEnum.c
+  vtkWrapPythonMethod.c
+  vtkWrapPythonMethodDef.c
+  vtkWrapPythonNamespace.c
+  vtkWrapPythonNumberProtocol.c
+  vtkWrapPythonOverload.c
+  vtkWrapPythonProperty.c
+  vtkWrapPythonTemplate.c
+  vtkWrapPythonType.c
+  코드를 생성하고 있습니다...
+  WrapPython.vcxproj -> D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\bin\Release\vtkWrapPython-9.4.exe

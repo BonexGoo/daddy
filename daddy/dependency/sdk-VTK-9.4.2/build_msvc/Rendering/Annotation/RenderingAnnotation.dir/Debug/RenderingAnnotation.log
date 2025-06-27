@@ -1,0 +1,33 @@
+﻿  Building Custom Rule D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Rendering/Annotation/CMakeLists.txt
+  vtkAnnotatedCubeActor.cxx
+  vtkArcPlotter.cxx
+  vtkAxesActor.cxx
+  vtkAxisActor.cxx
+  vtkAxisActor2D.cxx
+  vtkAxisFollower.cxx
+  vtkBarChartActor.cxx
+  vtkCaptionActor2D.cxx
+  vtkConvexHull2D.cxx
+  vtkCornerAnnotation.cxx
+  vtkCubeAxesActor.cxx
+  vtkCubeAxesActor2D.cxx
+  vtkGraphAnnotationLayersFilter.cxx
+  vtkLeaderActor2D.cxx
+  vtkLegendBoxActor.cxx
+  vtkLegendScaleActor.cxx
+  vtkParallelCoordinatesActor.cxx
+  vtkPieChartActor.cxx
+  vtkPolarAxesActor.cxx
+  vtkPolarAxesActor2D.cxx
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  vtkProp3DAxisFollower.cxx
+  vtkRadialGridActor2D.cxx
+  vtkScalarBarActor.cxx
+  vtkSpiderPlotActor.cxx
+  vtkXYPlotActor.cxx
+  vtkArcGridActorPrivate.cxx
+  vtkAxisGridActorPrivate.cxx
+  코드를 생성하고 있습니다...
+     D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Debug/vtkRenderingAnnotation-9.4d.lib 라이브러리 및 D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Debug/vtkRenderingAnnotation-9.4d.exp 개체를 생성하고 있습니다.
+  RenderingAnnotation.vcxproj -> D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\bin\Debug\vtkRenderingAnnotation-9.4d.dll

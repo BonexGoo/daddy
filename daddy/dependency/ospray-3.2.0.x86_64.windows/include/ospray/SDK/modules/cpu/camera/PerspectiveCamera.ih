@@ -1,0 +1,21 @@
+// Copyright 2022 Intel Corporation
+// SPDX-License-Identifier: Apache-2.0
+
+#include "camera/Camera.ih"
+
+OSPRAY_BEGIN_ISPC_NAMESPACE
+
+SYCL_EXTERNAL void PerspectiveCamera_initRay(const Camera *uniform,
+    varying Ray &,
+    varying RayCone &,
+    const varying CameraSample &,
+    const uniform FeatureFlagsHandler &);
+
+SYCL_EXTERNAL void PerspectiveCamera_initRayMB(const Camera *uniform,
+    varying Ray &,
+    varying RayCone &,
+    const varying CameraSample &,
+    const uniform FeatureFlagsHandler &);
+
+OSPRAY_END_ISPC_NAMESPACE
+

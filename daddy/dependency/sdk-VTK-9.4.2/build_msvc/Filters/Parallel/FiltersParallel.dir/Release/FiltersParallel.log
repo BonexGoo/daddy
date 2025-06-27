@@ -1,0 +1,66 @@
+﻿  Building Custom Rule D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Filters/Parallel/CMakeLists.txt
+  vtkFiltersParallelObjectFactory.cxx
+  vtkHyperTreeGridGhostCellsGeneratorInternals.cxx
+  vtkAdaptiveTemporalInterpolator.cxx
+  vtkAggregateDataSetFilter.cxx
+  vtkAlignImageDataSetFilter.cxx
+  vtkAngularPeriodicFilter.cxx
+  vtkCleanArrays.cxx
+  vtkCollectGraph.cxx
+  vtkCollectPolyData.cxx
+  vtkCollectTable.cxx
+  vtkCutMaterial.cxx
+  vtkDistributedDataFilter.cxx
+  vtkDuplicatePolyData.cxx
+  vtkExtractCTHPart.cxx
+  vtkExtractPolyDataPiece.cxx
+  vtkExtractUnstructuredGridPiece.cxx
+  vtkExtractUserDefinedPiece.cxx
+  vtkGenerateProcessIds.cxx
+  vtkHyperTreeGridGenerateGlobalIds.cxx
+  vtkHyperTreeGridGenerateProcessIds.cxx
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  vtkHyperTreeGridGhostCellsGenerator.cxx
+  vtkMergeBlocks.cxx
+  vtkMultiProcessControllerHelper.cxx
+  vtkPHyperTreeGridProbeFilter.cxx
+  vtkIntegrateAttributes.cxx
+  vtkPeriodicFilter.cxx
+  vtkPCellDataToPointData.cxx
+  vtkPConvertToMultiBlockDataSet.cxx
+  vtkPExtractDataArraysOverTime.cxx
+  vtkPExtractExodusGlobalTemporalVariables.cxx
+  vtkPExtractSelectedArraysOverTime.cxx
+  vtkPieceRequestFilter.cxx
+  vtkPieceScalars.cxx
+  vtkPipelineSize.cxx
+  vtkPKdTree.cxx
+  vtkPLinearExtrusionFilter.cxx
+  vtkPMaskPoints.cxx
+  vtkPMergeArrays.cxx
+  vtkPOutlineCornerFilter.cxx
+  vtkPOutlineFilter.cxx
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  vtkPOutlineFilterInternals.cxx
+  vtkPPolyDataNormals.cxx
+  vtkPProbeFilter.cxx
+  vtkPProjectSphereFilter.cxx
+  vtkPReflectionFilter.cxx
+  vtkPResampleFilter.cxx
+  vtkPartitionBalancer.cxx
+  vtkProcessIdScalars.cxx
+  vtkPSphereSource.cxx
+  vtkPTextureMapToSphere.cxx
+  vtkPYoungsMaterialInterface.cxx
+  vtkRectilinearGridOutlineFilter.cxx
+  vtkRemoveGhosts.cxx
+  vtkTransmitPolyDataPiece.cxx
+  vtkTransmitRectilinearGridPiece.cxx
+  vtkTransmitStructuredDataPiece.cxx
+  vtkTransmitStructuredGridPiece.cxx
+  vtkTransmitUnstructuredGridPiece.cxx
+  코드를 생성하고 있습니다...
+     D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Release/vtkFiltersParallel-9.4.lib 라이브러리 및 D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Release/vtkFiltersParallel-9.4.exp 개체를 생성하고 있습니다.
+  FiltersParallel.vcxproj -> D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\bin\Release\vtkFiltersParallel-9.4.dll

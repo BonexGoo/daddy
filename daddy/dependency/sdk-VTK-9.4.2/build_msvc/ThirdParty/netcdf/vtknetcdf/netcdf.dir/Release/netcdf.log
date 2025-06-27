@@ -1,0 +1,105 @@
+﻿  Building Custom Rule D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/netcdf/vtknetcdf/CMakeLists.txt
+  datt.c
+  dattget.c
+  dattinq.c
+  dattput.c
+  dauth.c
+  daux.c
+  dcompound.c
+  dcopy.c
+  dcrc32.c
+  dcrc64.c
+  ddim.c
+  ddispatch.c
+  denum.c
+  derror.c
+  dfile.c
+  dfilter.c
+  dgroup.c
+  dinfermodel.c
+  dinstance.c
+  dinternal.c
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  dnotnc3.c
+  dnotnc4.c
+  doffsets.c
+  dopaque.c
+  dparallel.c
+  dpathmgr.c
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\netcdf\vtknetcdf\libdispatch\dpathmgr.c(704,27): warning C4133: '함수': 'stat *'과(와) '_stat64 *' 사이의 형식이 호환되지 않습니다.
+  drc.c
+  dreadonly.c
+  ds3util.c
+  dstring.c
+  dtype.c
+  dutf8.c
+  dutil.c
+  dvar.c
+  dvarget.c
+  dvarinq.c
+  dvarput.c
+  dvlen.c
+  nc.c
+  ncbytes.c
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  ncexhash.c
+  nchashmap.c
+  ncjson.c
+  nclist.c
+  nclistmgr.c
+  nclog.c
+  nctime.c
+  ncuri.c
+  ncxcache.c
+  utf8proc.c
+  nc_initialize.c
+  attr.c
+  dim.c
+  lookup3.c
+  memio.c
+  nc3dispatch.c
+  nc3internal.c
+  ncio.c
+  ncx.c
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\netcdf\vtknetcdf\libsrc\ncx.c(27,9): warning C4068: 알 수 없는 pragma 'GCC'
+  posixio.c
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  putget.c
+  v1hpg.c
+  var.c
+  nc4attr.c
+  nc4cache.c
+  nc4dim.c
+  nc4dispatch.c
+  nc4grp.c
+  nc4internal.c
+  nc4type.c
+  nc4var.c
+  ncfunc.c
+  ncindex.c
+  nc4hdf.c
+  nc4info.c
+  hdf5attr.c
+  hdf5debug.c
+  hdf5dim.c
+  hdf5file.c
+  hdf5filter.c
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  hdf5grp.c
+  hdf5type.c
+  hdf5internal.c
+  hdf5create.c
+  hdf5open.c
+  hdf5var.c
+  nc4mem.c
+  nc4memcb.c
+  hdf5dispatch.c
+  hdf5set_format_compatibility.c
+  dreg.c
+  코드를 생성하고 있습니다...
+     D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Release/vtknetcdf-9.4.lib 라이브러리 및 D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Release/vtknetcdf-9.4.exp 개체를 생성하고 있습니다.
+  netcdf.vcxproj -> D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\bin\Release\vtknetcdf-9.4.dll

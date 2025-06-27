@@ -1,0 +1,335 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B5F43504-26CE-39B6-826C-2975D1957E86}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>vtkChartsCore-hierarchy</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\ca9aa9fed93d79dd9d626753235b306a\vtkChartsCore-hierarchy.txt.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating the wrap hierarchy for VTK::ChartsCore</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+..\..\bin\Debug\vtkWrapHierarchy-9.4d.exe -MF D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Charts/Core/CMakeFiles/vtkChartsCore-hierarchy.txt.Debug.d @D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Charts/Core/CMakeFiles/vtkChartsCore-hierarchy.Debug.args -o D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/vtk-9.4/hierarchy/VTK/vtkChartsCore-hierarchy.txt D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Charts/Core/CMakeFiles/vtkChartsCore-hierarchy.data @D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Charts/Core/CMakeFiles/vtkChartsCore-hierarchy.depends.args
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_transform_depfile "Visual Studio 17 2022" MSBuildAdditionalInputs D:/cybermed/daddy/dependency/sdk-VTK-9.4.2 D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Charts/Core D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Charts/Core D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Charts/Core/CMakeFiles/vtkChartsCore-hierarchy.txt.Debug.d D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/CMakeFiles/d/10ee3d66cabfd08f4961d175f2bb37cb9a85201b8a18a480e5859d6a1d5a8d89.AdditionalInputs
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkAxis.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkAxisExtended.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkCategoryLegend.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkChart.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkChartBox.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkChartHistogram2D.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkChartLegend.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkChartMatrix.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkChartParallelCoordinates.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkChartPie.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkChartXY.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkChartXYZ.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkColorLegend.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkColorTransferControlPointsItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkColorTransferFunctionItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkCompositeControlPointsItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkCompositeTransferFunctionItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkContextArea.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkContextPolygon.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkControlPointsItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkInteractiveArea.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkLookupTableItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPiecewiseControlPointsItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPiecewiseFunctionItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPiecewisePointHandleItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPlot.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPlot3D.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPlotArea.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPlotBag.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPlotBar.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPlotBarRangeHandlesItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPlotBox.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPlotFunctionalBag.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPlotGrid.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPlotHistogram2D.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPlotLine.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPlotLine3D.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPlotParallelCoordinates.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPlotPie.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPlotPoints.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPlotPoints3D.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPlotRangeHandlesItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPlotStacked.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPlotSurface.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkRangeHandlesItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkScalarsToColorsItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkScatterPlotMatrix.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Charts\Core\CMakeFiles\vtkChartsCore-hierarchy.Debug.args;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Charts\Core\CMakeFiles\vtkChartsCore-hierarchy.data;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Charts\Core\CMakeFiles\vtkChartsCore-hierarchy.depends.args;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\lib\vtk-9.4\hierarchy\VTK\vtkChartsCore-hierarchy.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <DepFileAdditionalInputsFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\d\10ee3d66cabfd08f4961d175f2bb37cb9a85201b8a18a480e5859d6a1d5a8d89.AdditionalInputs</DepFileAdditionalInputsFile>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating the wrap hierarchy for VTK::ChartsCore</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+..\..\bin\Release\vtkWrapHierarchy-9.4.exe -MF D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Charts/Core/CMakeFiles/vtkChartsCore-hierarchy.txt.Release.d @D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Charts/Core/CMakeFiles/vtkChartsCore-hierarchy.Release.args -o D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/vtk-9.4/hierarchy/VTK/vtkChartsCore-hierarchy.txt D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Charts/Core/CMakeFiles/vtkChartsCore-hierarchy.data @D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Charts/Core/CMakeFiles/vtkChartsCore-hierarchy.depends.args
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_transform_depfile "Visual Studio 17 2022" MSBuildAdditionalInputs D:/cybermed/daddy/dependency/sdk-VTK-9.4.2 D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Charts/Core D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Charts/Core D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Charts/Core/CMakeFiles/vtkChartsCore-hierarchy.txt.Release.d D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/CMakeFiles/d/fabef303643bcfeb2abd68feff9f4b63fed3fb1af2bd7c7743c3fc7620d9bfa1.AdditionalInputs
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkAxis.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkAxisExtended.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkCategoryLegend.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkChart.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkChartBox.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkChartHistogram2D.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkChartLegend.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkChartMatrix.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkChartParallelCoordinates.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkChartPie.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkChartXY.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkChartXYZ.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkColorLegend.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkColorTransferControlPointsItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkColorTransferFunctionItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkCompositeControlPointsItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkCompositeTransferFunctionItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkContextArea.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkContextPolygon.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkControlPointsItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkInteractiveArea.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkLookupTableItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPiecewiseControlPointsItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPiecewiseFunctionItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPiecewisePointHandleItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPlot.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPlot3D.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPlotArea.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPlotBag.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPlotBar.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPlotBarRangeHandlesItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPlotBox.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPlotFunctionalBag.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPlotGrid.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPlotHistogram2D.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPlotLine.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPlotLine3D.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPlotParallelCoordinates.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPlotPie.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPlotPoints.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPlotPoints3D.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPlotRangeHandlesItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPlotStacked.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPlotSurface.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkRangeHandlesItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkScalarsToColorsItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkScatterPlotMatrix.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Charts\Core\CMakeFiles\vtkChartsCore-hierarchy.Release.args;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Charts\Core\CMakeFiles\vtkChartsCore-hierarchy.data;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Charts\Core\CMakeFiles\vtkChartsCore-hierarchy.depends.args;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\lib\vtk-9.4\hierarchy\VTK\vtkChartsCore-hierarchy.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <DepFileAdditionalInputsFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\d\fabef303643bcfeb2abd68feff9f4b63fed3fb1af2bd7c7743c3fc7620d9bfa1.AdditionalInputs</DepFileAdditionalInputsFile>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating the wrap hierarchy for VTK::ChartsCore</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+..\..\bin\MinSizeRel\vtkWrapHierarchy-9.4.exe -MF D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Charts/Core/CMakeFiles/vtkChartsCore-hierarchy.txt.MinSizeRel.d @D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Charts/Core/CMakeFiles/vtkChartsCore-hierarchy.MinSizeRel.args -o D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/vtk-9.4/hierarchy/VTK/vtkChartsCore-hierarchy.txt D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Charts/Core/CMakeFiles/vtkChartsCore-hierarchy.data @D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Charts/Core/CMakeFiles/vtkChartsCore-hierarchy.depends.args
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_transform_depfile "Visual Studio 17 2022" MSBuildAdditionalInputs D:/cybermed/daddy/dependency/sdk-VTK-9.4.2 D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Charts/Core D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Charts/Core D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Charts/Core/CMakeFiles/vtkChartsCore-hierarchy.txt.MinSizeRel.d D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/CMakeFiles/d/1d01af32227b050fbaa67175b88c608233156ff06ea258d9fcc782abe9b48527.AdditionalInputs
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkAxis.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkAxisExtended.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkCategoryLegend.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkChart.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkChartBox.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkChartHistogram2D.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkChartLegend.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkChartMatrix.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkChartParallelCoordinates.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkChartPie.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkChartXY.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkChartXYZ.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkColorLegend.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkColorTransferControlPointsItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkColorTransferFunctionItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkCompositeControlPointsItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkCompositeTransferFunctionItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkContextArea.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkContextPolygon.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkControlPointsItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkInteractiveArea.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkLookupTableItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPiecewiseControlPointsItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPiecewiseFunctionItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPiecewisePointHandleItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPlot.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPlot3D.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPlotArea.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPlotBag.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPlotBar.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPlotBarRangeHandlesItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPlotBox.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPlotFunctionalBag.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPlotGrid.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPlotHistogram2D.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPlotLine.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPlotLine3D.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPlotParallelCoordinates.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPlotPie.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPlotPoints.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPlotPoints3D.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPlotRangeHandlesItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPlotStacked.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPlotSurface.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkRangeHandlesItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkScalarsToColorsItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkScatterPlotMatrix.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Charts\Core\CMakeFiles\vtkChartsCore-hierarchy.MinSizeRel.args;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Charts\Core\CMakeFiles\vtkChartsCore-hierarchy.data;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Charts\Core\CMakeFiles\vtkChartsCore-hierarchy.depends.args;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\lib\vtk-9.4\hierarchy\VTK\vtkChartsCore-hierarchy.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <DepFileAdditionalInputsFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\d\1d01af32227b050fbaa67175b88c608233156ff06ea258d9fcc782abe9b48527.AdditionalInputs</DepFileAdditionalInputsFile>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating the wrap hierarchy for VTK::ChartsCore</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+..\..\bin\RelWithDebInfo\vtkWrapHierarchy-9.4.exe -MF D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Charts/Core/CMakeFiles/vtkChartsCore-hierarchy.txt.RelWithDebInfo.d @D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Charts/Core/CMakeFiles/vtkChartsCore-hierarchy.RelWithDebInfo.args -o D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/vtk-9.4/hierarchy/VTK/vtkChartsCore-hierarchy.txt D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Charts/Core/CMakeFiles/vtkChartsCore-hierarchy.data @D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Charts/Core/CMakeFiles/vtkChartsCore-hierarchy.depends.args
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_transform_depfile "Visual Studio 17 2022" MSBuildAdditionalInputs D:/cybermed/daddy/dependency/sdk-VTK-9.4.2 D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Charts/Core D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Charts/Core D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Charts/Core/CMakeFiles/vtkChartsCore-hierarchy.txt.RelWithDebInfo.d D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/CMakeFiles/d/470eb377016791d01d08c085bd8b926c4a418cb90d8ca158597ee9a7b0012ea9.AdditionalInputs
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkAxis.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkAxisExtended.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkCategoryLegend.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkChart.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkChartBox.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkChartHistogram2D.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkChartLegend.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkChartMatrix.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkChartParallelCoordinates.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkChartPie.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkChartXY.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkChartXYZ.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkColorLegend.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkColorTransferControlPointsItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkColorTransferFunctionItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkCompositeControlPointsItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkCompositeTransferFunctionItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkContextArea.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkContextPolygon.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkControlPointsItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkInteractiveArea.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkLookupTableItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPiecewiseControlPointsItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPiecewiseFunctionItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPiecewisePointHandleItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPlot.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPlot3D.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPlotArea.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPlotBag.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPlotBar.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPlotBarRangeHandlesItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPlotBox.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPlotFunctionalBag.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPlotGrid.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPlotHistogram2D.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPlotLine.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPlotLine3D.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPlotParallelCoordinates.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPlotPie.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPlotPoints.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPlotPoints3D.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPlotRangeHandlesItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPlotStacked.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkPlotSurface.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkRangeHandlesItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkScalarsToColorsItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\vtkScatterPlotMatrix.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Charts\Core\CMakeFiles\vtkChartsCore-hierarchy.RelWithDebInfo.args;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Charts\Core\CMakeFiles\vtkChartsCore-hierarchy.data;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Charts\Core\CMakeFiles\vtkChartsCore-hierarchy.depends.args;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\lib\vtk-9.4\hierarchy\VTK\vtkChartsCore-hierarchy.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <DepFileAdditionalInputsFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\d\470eb377016791d01d08c085bd8b926c4a418cb90d8ca158597ee9a7b0012ea9.AdditionalInputs</DepFileAdditionalInputsFile>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\abd757ab159b5a316d2aa44cdf5efdaf\vtkChartsCore-hierarchy.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\lib\vtk-9.4\hierarchy\VTK\vtkChartsCore-hierarchy.txt;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\bin\Debug\vtkWrapHierarchy-9.4d.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Charts\Core\CMakeFiles\vtkChartsCore-hierarchy</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\lib\vtk-9.4\hierarchy\VTK\vtkChartsCore-hierarchy.txt;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\bin\Release\vtkWrapHierarchy-9.4.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Charts\Core\CMakeFiles\vtkChartsCore-hierarchy</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\lib\vtk-9.4\hierarchy\VTK\vtkChartsCore-hierarchy.txt;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\bin\MinSizeRel\vtkWrapHierarchy-9.4.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Charts\Core\CMakeFiles\vtkChartsCore-hierarchy</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\lib\vtk-9.4\hierarchy\VTK\vtkChartsCore-hierarchy.txt;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\bin\RelWithDebInfo\vtkWrapHierarchy-9.4.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Charts\Core\CMakeFiles\vtkChartsCore-hierarchy</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Charts\Core\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Charts/Core/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/cybermed/daddy/dependency/sdk-VTK-9.4.2 -BD:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc --check-stamp-file D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Charts/Core/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.31\Modules\exportheader.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Charts\Core\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Charts/Core/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/cybermed/daddy/dependency/sdk-VTK-9.4.2 -BD:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc --check-stamp-file D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Charts/Core/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.31\Modules\exportheader.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Charts\Core\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Charts/Core/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/cybermed/daddy/dependency/sdk-VTK-9.4.2 -BD:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc --check-stamp-file D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Charts/Core/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.31\Modules\exportheader.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Charts\Core\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Charts/Core/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/cybermed/daddy/dependency/sdk-VTK-9.4.2 -BD:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc --check-stamp-file D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Charts/Core/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.31\Modules\exportheader.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Charts\Core\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Charts\Core\CMakeFiles\vtkChartsCore-hierarchy">
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ZERO_CHECK.vcxproj">
+      <Project>{29A36E60-F9BD-3AF1-92C4-919B78672499}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Wrapping\Tools\WrapHierarchy.vcxproj">
+      <Project>{26194890-F1C3-34CF-AF00-AFA21E3C5138}</Project>
+      <Name>WrapHierarchy</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\Core\vtkCommonCore-hierarchy.vcxproj">
+      <Project>{7DB76CF9-1CC4-37BC-B10C-80DA6D1CCEDE}</Project>
+      <Name>vtkCommonCore-hierarchy</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\DataModel\vtkCommonDataModel-hierarchy.vcxproj">
+      <Project>{C7E02112-592D-3086-B351-A35375A1D3F7}</Project>
+      <Name>vtkCommonDataModel-hierarchy</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Filters\General\vtkFiltersGeneral-hierarchy.vcxproj">
+      <Project>{E224AF98-8889-375F-862B-9C646B512B07}</Project>
+      <Name>vtkFiltersGeneral-hierarchy</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Rendering\Context2D\vtkRenderingContext2D-hierarchy.vcxproj">
+      <Project>{D5DF7770-27E4-3798-B6A0-CD1199431C6F}</Project>
+      <Name>vtkRenderingContext2D-hierarchy</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Rendering\Core\vtkRenderingCore-hierarchy.vcxproj">
+      <Project>{D6D2F269-0FBB-3267-831D-694DD255D5CC}</Project>
+      <Name>vtkRenderingCore-hierarchy</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <Import Project="C:\Program Files\CMake\share\cmake-3.31\Templates\MSBuild\CustomBuildDepFile.targets" />
+</Project>

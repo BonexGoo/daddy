@@ -1,0 +1,33 @@
+﻿  Building Custom Rule D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/dcmdata/tests/CMakeLists.txt
+  tchval.cc
+  tdict.cc
+  telemlen.cc
+  tests.cc
+  tfilter.cc
+  tgenuid.cc
+  ti2dbmp.cc
+  titem.cc
+  tmatch.cc
+  tnewdcme.cc
+  tparent.cc
+  tparser.cc
+  tpath.cc
+  tpread.cc
+  tsequen.cc
+  tspchrs.cc
+  tstrval.cc
+  ttag.cc
+  tvrcomp.cc
+  tvrdatim.cc
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  tvrds.cc
+  tvrfd.cc
+  tvrol.cc
+  tvrov.cc
+  tvrpn.cc
+  tvrsv.cc
+  tvrui.cc
+  tvruv.cc
+  코드를 생성하고 있습니다...
+  dcmdata_tests.vcxproj -> D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\bin\Debug\dcmdata_tests.exe

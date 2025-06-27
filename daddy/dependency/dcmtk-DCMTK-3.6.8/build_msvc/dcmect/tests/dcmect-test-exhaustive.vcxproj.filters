@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\CMakeFiles\513f03fa9a283a0ae3e8de70991a2b70\dcmect-test-exhaustive.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmect\tests\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\dcmect\tests\CMakeFiles\dcmect-test-exhaustive" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{CA4D7796-94E3-32AF-ABBE-60974F026DB6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

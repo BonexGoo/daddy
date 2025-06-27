@@ -1,0 +1,28 @@
+﻿  Generating raycasterfs.h, raycasterfs.cxx
+  Generating raycastervs.h, raycastervs.cxx
+  Generating vtkglProjectedTetrahedraFS.h, vtkglProjectedTetrahedraFS.cxx
+  Generating vtkglProjectedTetrahedraVS.h, vtkglProjectedTetrahedraVS.cxx
+  Building Custom Rule D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Rendering/VolumeOpenGL2/CMakeLists.txt
+  raycasterfs.cxx
+  raycastervs.cxx
+  vtkglProjectedTetrahedraFS.cxx
+  vtkglProjectedTetrahedraVS.cxx
+  vtkRenderingVolumeOpenGL2ObjectFactory.cxx
+  vtkMultiBlockUnstructuredGridVolumeMapper.cxx
+  vtkMultiBlockVolumeMapper.cxx
+  vtkOpenGLGPUVolumeRayCastMapper.cxx
+  vtkOpenGLProjectedTetrahedraMapper.cxx
+  vtkOpenGLRayCastImageDisplayHelper.cxx
+  vtkSmartVolumeMapper.cxx
+  vtkVolumeTexture.cxx
+  vtkOpenGLVolumeGradientOpacityTable.cxx
+  vtkOpenGLVolumeLookupTable.cxx
+  vtkOpenGLVolumeMaskGradientOpacityTransferFunction2D.cxx
+  vtkOpenGLVolumeMaskTransferFunction2D.cxx
+  vtkOpenGLVolumeOpacityTable.cxx
+  vtkOpenGLVolumeRGBTable.cxx
+  vtkOpenGLVolumeTransferFunction2D.cxx
+  vtkVolumeInputHelper.cxx
+  코드를 생성하고 있습니다...
+     D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Debug/vtkRenderingVolumeOpenGL2-9.4d.lib 라이브러리 및 D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Debug/vtkRenderingVolumeOpenGL2-9.4d.exp 개체를 생성하고 있습니다.
+  RenderingVolumeOpenGL2.vcxproj -> D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\bin\Debug\vtkRenderingVolumeOpenGL2-9.4d.dll

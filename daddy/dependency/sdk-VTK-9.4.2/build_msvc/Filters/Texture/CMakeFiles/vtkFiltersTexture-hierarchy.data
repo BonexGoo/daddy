@@ -1,0 +1,8 @@
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Filters/Texture/vtkImplicitTextureCoords.h;vtkFiltersTexture
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Filters/Texture/vtkScalarsToTextureFilter.h;vtkFiltersTexture
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Filters/Texture/vtkTextureMapToCylinder.h;vtkFiltersTexture
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Filters/Texture/vtkTextureMapToPlane.h;vtkFiltersTexture
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Filters/Texture/vtkTextureMapToSphere.h;vtkFiltersTexture
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Filters/Texture/vtkThresholdTextureCoords.h;vtkFiltersTexture
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Filters/Texture/vtkTransformTextureCoords.h;vtkFiltersTexture
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Filters/Texture/vtkTriangularTCoords.h;vtkFiltersTexture

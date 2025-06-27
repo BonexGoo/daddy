@@ -1,0 +1,6 @@
+﻿  Building Custom Rule D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Rendering/GL2PSOpenGL2/CMakeLists.txt
+  vtkRenderingGL2PSOpenGL2ObjectFactory.cxx
+  vtkOpenGLGL2PSHelperImpl.cxx
+  코드를 생성하고 있습니다...
+     D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Debug/vtkRenderingGL2PSOpenGL2-9.4d.lib 라이브러리 및 D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Debug/vtkRenderingGL2PSOpenGL2-9.4d.exp 개체를 생성하고 있습니다.
+  RenderingGL2PSOpenGL2.vcxproj -> D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\bin\Debug\vtkRenderingGL2PSOpenGL2-9.4d.dll

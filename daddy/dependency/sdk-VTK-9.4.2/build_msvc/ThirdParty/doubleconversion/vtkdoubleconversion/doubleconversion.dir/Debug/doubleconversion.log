@@ -1,0 +1,47 @@
+﻿  Building Custom Rule D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/doubleconversion/vtkdoubleconversion/CMakeLists.txt
+  bignum.cc
+  bignum-dtoa.cc
+  cached-powers.cc
+  diy-fp.cc
+  double-conversion.cc
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\doubleconversion\vtkdoubleconversion\double-conversion\double-conversion.cc(855,31): warning C4244: '인수': 'const uc16'에서 'char'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+      D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\doubleconversion\vtkdoubleconversion\double-conversion\double-conversion.cc(855,31):
+      템플릿 인스턴스화 컨텍스트(가장 오래된 인스턴스화 컨텍스트)가
+          D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\doubleconversion\vtkdoubleconversion\double-conversion\double-conversion.cc(1128,10):
+          컴파일되는 함수 템플릿 인스턴스화 'double vtkdouble_conversion::StringToDoubleConverter::StringToIeee<const uc16*>(Iterator,int,bool,int *) const'에 대한 참조를 확인하세요.
+          with
+          [
+              Iterator=const uc16 *
+          ]
+  
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\doubleconversion\vtkdoubleconversion\double-conversion\double-conversion.cc(874,31): warning C4244: '인수': 'const uc16'에서 'char'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\doubleconversion\vtkdoubleconversion\double-conversion\double-conversion.cc(441,3): warning C4244: '인수': 'const uc16'에서 'char'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+      D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\doubleconversion\vtkdoubleconversion\double-conversion\double-conversion.cc(441,3):
+      템플릿 인스턴스화 컨텍스트(가장 오래된 인스턴스화 컨텍스트)가
+          D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\doubleconversion\vtkdoubleconversion\double-conversion\double-conversion.cc(1128,10):
+          컴파일되는 함수 템플릿 인스턴스화 'double vtkdouble_conversion::StringToDoubleConverter::StringToIeee<const uc16*>(Iterator,int,bool,int *) const'에 대한 참조를 확인하세요.
+          with
+          [
+              Iterator=const uc16 *
+          ]
+          D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\doubleconversion\vtkdoubleconversion\double-conversion\double-conversion.cc(856,12):
+          컴파일되는 함수 템플릿 인스턴스화 'bool vtkdouble_conversion::`anonymous-namespace'::ConsumeSubString<Iterator>(Iterator *,Iterator,const char *,bool)'에 대한 참조를 확인하세요.
+          with
+          [
+              Iterator=const uc16 *
+          ]
+          D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\doubleconversion\vtkdoubleconversion\double-conversion\double-conversion.cc(460,12):
+          컴파일되는 함수 템플릿 인스턴스화 'bool vtkdouble_conversion::`anonymous-namespace'::ConsumeSubStringImpl<Iterator,char(__cdecl *)(char)>(Iterator *,Iterator,const char *,Converter)'에 대한 참조를 확인하세요.
+          with
+          [
+              Iterator=const uc16 *,
+              Converter=char (__cdecl *)(char)
+          ]
+  
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\doubleconversion\vtkdoubleconversion\double-conversion\double-conversion.cc(444,38): warning C4244: '인수': 'const uc16'에서 'char'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  fast-dtoa.cc
+  fixed-dtoa.cc
+  strtod.cc
+  코드를 생성하고 있습니다...
+     D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Debug/vtkdoubleconversion-9.4d.lib 라이브러리 및 D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Debug/vtkdoubleconversion-9.4d.exp 개체를 생성하고 있습니다.
+  doubleconversion.vcxproj -> D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\bin\Debug\vtkdoubleconversion-9.4d.dll

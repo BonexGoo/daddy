@@ -1,0 +1,30 @@
+// SPDX-FileCopyrightText: Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
+// SPDX-License-Identifier: BSD-3-Clause
+#include "vtkDepthPeelingPassFinalFS.h"
+
+const char *vtkDepthPeelingPassFinalFS =
+"//VTK::System::Dec\n"
+"\n"
+"// SPDX-FileCopyrightText: Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen\n"
+"// SPDX-License-Identifier: BSD-3-Clause\n"
+"\n"
+"in vec2 texCoord;\n"
+"\n"
+"uniform sampler2D translucentRGBATexture;\n"
+"uniform sampler2D opaqueRGBATexture;\n"
+"uniform sampler2D opaqueZTexture;\n"
+"\n"
+"// the output of this shader\n"
+"//VTK::Output::Dec\n"
+"\n"
+"void main()\n"
+"{\n"
+"  vec4 t1Color = texture2D(translucentRGBATexture, texCoord);\n"
+"  vec4 t2Color = texture2D(opaqueRGBATexture, texCoord);\n"
+"  gl_FragData[0].a = t1Color.a +  (1.0-t1Color.a)*t2Color.a;\n"
+"  gl_FragData[0].rgb = (t1Color.rgb*t1Color.a + t2Color.rgb*(1.0-t1Color.a));\n"
+"\n"
+"  float depth = texture2D(opaqueZTexture, texCoord).x;\n"
+"  gl_FragDepth = depth;\n"
+"}\n"
+"";

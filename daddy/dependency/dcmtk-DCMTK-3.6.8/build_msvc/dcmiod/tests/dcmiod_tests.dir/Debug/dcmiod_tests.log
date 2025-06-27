@@ -1,0 +1,7 @@
+﻿  Building Custom Rule D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/dcmiod/tests/CMakeLists.txt
+  tests.cc
+  tcielabutil.cc
+  tcodes.cc
+  timagepixel.cc
+  코드를 생성하고 있습니다...
+  dcmiod_tests.vcxproj -> D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\bin\Debug\dcmiod_tests.exe

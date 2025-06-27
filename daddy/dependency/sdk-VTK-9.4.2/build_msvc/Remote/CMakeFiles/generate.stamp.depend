@@ -1,0 +1,9 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.31/Modules/FindGit.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/FindPackageMessage.cmake
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/CMake/vtkModuleRemote.cmake
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Remote/CMakeLists.txt
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Remote/MomentInvariants.remote.cmake
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Remote/RenderingLookingGlass.remote.cmake
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Remote/vtkDICOM.remote.cmake

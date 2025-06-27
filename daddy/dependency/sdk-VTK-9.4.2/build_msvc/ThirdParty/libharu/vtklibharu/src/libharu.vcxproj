@@ -1,0 +1,488 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C72050E0-127E-367F-AC17-49CB711199CB}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>libharu</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">libharu.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">vtklibharu-9.4d</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">libharu.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">vtklibharu-9.4</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\bin\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">libharu.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">vtklibharu-9.4</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\bin\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">libharu.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">vtklibharu-9.4</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\libharu\vtklibharu\src;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src\..\include;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\libharu\vtklibharu\src\..\include;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\png\vtkpng;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\png\vtkpng;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\zlib\vtkzlib;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\zlib\vtkzlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/ThirdParty/libharu" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/libharu" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/ThirdParty/png" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/png" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/ThirdParty/zlib" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/zlib" /bigobj /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR="Debug";HPDF_DLL_MAKE</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Debug\";HPDF_DLL_MAKE</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\libharu\vtklibharu\src;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src\..\include;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\libharu\vtklibharu\src\..\include;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\png\vtkpng;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\png\vtkpng;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\zlib\vtkzlib;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\zlib\vtkzlib;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\libharu;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\png;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\png;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\zlib;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\libharu\vtklibharu\src;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src\..\include;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\libharu\vtklibharu\src\..\include;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\png\vtkpng;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\png\vtkpng;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\zlib\vtkzlib;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\zlib\vtkzlib;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\libharu;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\png;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\png;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\zlib;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreLinkEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Auto build dll exports</Message>
+      <Command>setlocal
+cd D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\libharu\vtklibharu\src
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E __create_def D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/ThirdParty/libharu/vtklibharu/src/libharu.dir/Debug/exports.def D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/ThirdParty/libharu/vtklibharu/src/libharu.dir/Debug//objects.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreLinkEvent>
+    <Link>
+      <AdditionalDependencies>..\..\..\..\lib\Debug\vtkpng-9.4d.lib;..\..\..\..\lib\Debug\vtkzlib-9.4d.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Debug/vtklibharu-9.4d.lib</ImportLibrary>
+      <ModuleDefinitionFile>D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/ThirdParty/libharu/vtklibharu/src/libharu.dir/Debug/exports.def</ModuleDefinitionFile>
+      <ProgramDataBaseFile>D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/bin/Debug/vtklibharu-9.4d.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\libharu\vtklibharu\src;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src\..\include;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\libharu\vtklibharu\src\..\include;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\png\vtkpng;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\png\vtkpng;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\zlib\vtkzlib;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\zlib\vtkzlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/ThirdParty/libharu" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/libharu" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/ThirdParty/png" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/png" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/ThirdParty/zlib" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/zlib" /bigobj /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR="Release";HPDF_DLL_MAKE</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Release\";HPDF_DLL_MAKE</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\libharu\vtklibharu\src;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src\..\include;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\libharu\vtklibharu\src\..\include;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\png\vtkpng;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\png\vtkpng;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\zlib\vtkzlib;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\zlib\vtkzlib;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\libharu;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\png;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\png;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\zlib;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\libharu\vtklibharu\src;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src\..\include;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\libharu\vtklibharu\src\..\include;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\png\vtkpng;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\png\vtkpng;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\zlib\vtkzlib;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\zlib\vtkzlib;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\libharu;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\png;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\png;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\zlib;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreLinkEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Auto build dll exports</Message>
+      <Command>setlocal
+cd D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\libharu\vtklibharu\src
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E __create_def D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/ThirdParty/libharu/vtklibharu/src/libharu.dir/Release/exports.def D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/ThirdParty/libharu/vtklibharu/src/libharu.dir/Release//objects.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreLinkEvent>
+    <Link>
+      <AdditionalDependencies>..\..\..\..\lib\Release\vtkpng-9.4.lib;..\..\..\..\lib\Release\vtkzlib-9.4.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Release/vtklibharu-9.4.lib</ImportLibrary>
+      <ModuleDefinitionFile>D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/ThirdParty/libharu/vtklibharu/src/libharu.dir/Release/exports.def</ModuleDefinitionFile>
+      <ProgramDataBaseFile>D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/bin/Release/vtklibharu-9.4.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\libharu\vtklibharu\src;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src\..\include;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\libharu\vtklibharu\src\..\include;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\png\vtkpng;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\png\vtkpng;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\zlib\vtkzlib;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\zlib\vtkzlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/ThirdParty/libharu" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/libharu" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/ThirdParty/png" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/png" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/ThirdParty/zlib" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/zlib" /bigobj /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR="MinSizeRel";HPDF_DLL_MAKE</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"MinSizeRel\";HPDF_DLL_MAKE</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\libharu\vtklibharu\src;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src\..\include;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\libharu\vtklibharu\src\..\include;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\png\vtkpng;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\png\vtkpng;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\zlib\vtkzlib;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\zlib\vtkzlib;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\libharu;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\png;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\png;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\zlib;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\libharu\vtklibharu\src;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src\..\include;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\libharu\vtklibharu\src\..\include;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\png\vtkpng;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\png\vtkpng;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\zlib\vtkzlib;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\zlib\vtkzlib;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\libharu;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\png;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\png;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\zlib;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreLinkEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Auto build dll exports</Message>
+      <Command>setlocal
+cd D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\libharu\vtklibharu\src
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E __create_def D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/ThirdParty/libharu/vtklibharu/src/libharu.dir/MinSizeRel/exports.def D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/ThirdParty/libharu/vtklibharu/src/libharu.dir/MinSizeRel//objects.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreLinkEvent>
+    <Link>
+      <AdditionalDependencies>..\..\..\..\lib\MinSizeRel\vtkpng-9.4.lib;..\..\..\..\lib\MinSizeRel\vtkzlib-9.4.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/MinSizeRel/vtklibharu-9.4.lib</ImportLibrary>
+      <ModuleDefinitionFile>D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/ThirdParty/libharu/vtklibharu/src/libharu.dir/MinSizeRel/exports.def</ModuleDefinitionFile>
+      <ProgramDataBaseFile>D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/bin/MinSizeRel/vtklibharu-9.4.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\libharu\vtklibharu\src;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src\..\include;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\libharu\vtklibharu\src\..\include;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\png\vtkpng;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\png\vtkpng;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\zlib\vtkzlib;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\zlib\vtkzlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/ThirdParty/libharu" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/libharu" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/ThirdParty/png" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/png" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/ThirdParty/zlib" /external:I "D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/zlib" /bigobj /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR="RelWithDebInfo";HPDF_DLL_MAKE</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"RelWithDebInfo\";HPDF_DLL_MAKE</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\libharu\vtklibharu\src;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src\..\include;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\libharu\vtklibharu\src\..\include;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\png\vtkpng;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\png\vtkpng;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\zlib\vtkzlib;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\zlib\vtkzlib;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\libharu;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\png;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\png;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\zlib;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\libharu\vtklibharu\src;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src\..\include;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\libharu\vtklibharu\src\..\include;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\png\vtkpng;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\png\vtkpng;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\zlib\vtkzlib;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\zlib\vtkzlib;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\libharu;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\png;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\png;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\zlib;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreLinkEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Auto build dll exports</Message>
+      <Command>setlocal
+cd D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\libharu\vtklibharu\src
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E __create_def D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/ThirdParty/libharu/vtklibharu/src/libharu.dir/RelWithDebInfo/exports.def D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/ThirdParty/libharu/vtklibharu/src/libharu.dir/RelWithDebInfo//objects.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreLinkEvent>
+    <Link>
+      <AdditionalDependencies>..\..\..\..\lib\RelWithDebInfo\vtkpng-9.4.lib;..\..\..\..\lib\RelWithDebInfo\vtkzlib-9.4.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/RelWithDebInfo/vtklibharu-9.4.lib</ImportLibrary>
+      <ModuleDefinitionFile>D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/ThirdParty/libharu/vtklibharu/src/libharu.dir/RelWithDebInfo/exports.def</ModuleDefinitionFile>
+      <ProgramDataBaseFile>D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/bin/RelWithDebInfo/vtklibharu-9.4.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/libharu/vtklibharu/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/cybermed/daddy/dependency/sdk-VTK-9.4.2 -BD:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc --check-stamp-file D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/ThirdParty/libharu/vtklibharu/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\libharu\vtklibharu\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/libharu/vtklibharu/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/cybermed/daddy/dependency/sdk-VTK-9.4.2 -BD:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc --check-stamp-file D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/ThirdParty/libharu/vtklibharu/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\libharu\vtklibharu\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/libharu/vtklibharu/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/cybermed/daddy/dependency/sdk-VTK-9.4.2 -BD:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc --check-stamp-file D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/ThirdParty/libharu/vtklibharu/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\libharu\vtklibharu\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/libharu/vtklibharu/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/cybermed/daddy/dependency/sdk-VTK-9.4.2 -BD:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc --check-stamp-file D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/ThirdParty/libharu/vtklibharu/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\libharu\vtklibharu\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src\hpdf_annotation.c" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src\hpdf_array.c" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src\hpdf_binary.c" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src\hpdf_boolean.c" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src\hpdf_catalog.c" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src\hpdf_destination.c" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src\hpdf_dict.c" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src\hpdf_direct.c" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src\hpdf_doc_png.c" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src\hpdf_doc.c" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src\hpdf_encoder_cns.c" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src\hpdf_encoder_cnt.c" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src\hpdf_encoder_jp.c" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src\hpdf_encoder_kr.c" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src\hpdf_encoder.c" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src\hpdf_encrypt.c" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src\hpdf_encryptdict.c" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src\hpdf_error.c" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src\hpdf_ext_gstate.c" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src\hpdf_font_cid.c" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src\hpdf_font_tt.c" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src\hpdf_font_type1.c" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src\hpdf_font.c" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src\hpdf_fontdef_base14.c" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src\hpdf_fontdef_cid.c" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src\hpdf_fontdef_cns.c" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src\hpdf_fontdef_cnt.c" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src\hpdf_fontdef_jp.c" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src\hpdf_fontdef_kr.c" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src\hpdf_fontdef_tt.c" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src\hpdf_fontdef_type1.c" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src\hpdf_fontdef.c" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src\hpdf_gstate.c" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src\hpdf_image_ccitt.c" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src\hpdf_image_png.c" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src\hpdf_image.c" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src\hpdf_info.c" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src\hpdf_list.c" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src\hpdf_mmgr.c" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src\hpdf_name.c" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src\hpdf_namedict.c" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src\hpdf_null.c" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src\hpdf_number.c" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src\hpdf_objects.c" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src\hpdf_outline.c" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src\hpdf_page_label.c" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src\hpdf_page_operator.c" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src\hpdf_pages.c" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src\hpdf_real.c" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src\hpdf_shading.c" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src\hpdf_streams.c" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src\hpdf_string.c" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src\hpdf_u3d.c" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src\hpdf_utils.c" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src\hpdf_xref.c" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src\hpdf_pdfa.c" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src\hpdf_3dmeasure.c" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src\hpdf_exdata.c" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libharu\vtklibharu\src\hpdf_encoder_utf.c" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ZERO_CHECK.vcxproj">
+      <Project>{29A36E60-F9BD-3AF1-92C4-919B78672499}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\png\vtkpng\png.vcxproj">
+      <Project>{7ECE25E3-2098-3085-B049-2A7361EEB680}</Project>
+      <Name>png</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\zlib\vtkzlib\zlib.vcxproj">
+      <Project>{79BF4871-4839-33C9-9B5B-38BCFDC821F7}</Project>
+      <Name>zlib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

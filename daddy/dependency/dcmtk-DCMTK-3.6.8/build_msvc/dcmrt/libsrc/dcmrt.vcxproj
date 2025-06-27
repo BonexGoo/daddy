@@ -1,0 +1,636 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B0D0AA27-F471-3C19-A4E3-001C71D7C2A4}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>dcmrt</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">dcmrt.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">dcmrt</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">dcmrt.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">dcmrt</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\bin\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">dcmrt.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">dcmrt</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\bin\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">dcmrt.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">dcmrt</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\config\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\ofstd\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\oflog\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\oficonv\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmdata\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmimgle\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmimage\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmjpeg\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmjpls\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmtls\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmnet\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsign\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmwlm\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmqrdb\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmpstat\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmiod\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmfg\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmseg\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmtract\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmpmap\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmect\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;DEBUG;USE_NULL_SAFE_OFSTRING;DCMTK_BUILD_IN_PROGRESS;NOMINMAX;_CRT_FAR_MAPPINGS_NO_DEPRECATE;_CRT_IS_WCTYPE_NO_DEPRECATE;_CRT_MANAGED_FP_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE_GLOBALS;_CRT_SETERRORMODE_BEEP_SLEEP_NO_DEPRECATE;_CRT_TIME_FUNCTIONS_NO_DEPRECATE;_CRT_VCCLRIT_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;CMAKE_INTDIR="Debug";dcmrt_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;DEBUG;USE_NULL_SAFE_OFSTRING;DCMTK_BUILD_IN_PROGRESS;NOMINMAX;_CRT_FAR_MAPPINGS_NO_DEPRECATE;_CRT_IS_WCTYPE_NO_DEPRECATE;_CRT_MANAGED_FP_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE_GLOBALS;_CRT_SETERRORMODE_BEEP_SLEEP_NO_DEPRECATE;_CRT_TIME_FUNCTIONS_NO_DEPRECATE;_CRT_VCCLRIT_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;CMAKE_INTDIR=\"Debug\";dcmrt_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\config\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\ofstd\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\oflog\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\oficonv\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmdata\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmimgle\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmimage\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmjpeg\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmjpls\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmtls\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmnet\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsign\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmwlm\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmqrdb\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmpstat\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmiod\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmfg\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmseg\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmtract\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmpmap\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmect\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\config\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\ofstd\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\oflog\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\oficonv\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmdata\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmimgle\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmimage\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmjpeg\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmjpls\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmtls\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmnet\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsign\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmwlm\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmqrdb\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmpstat\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmiod\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmfg\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmseg\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmtract\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmpmap\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmect\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\lib\Debug\dcmimgle.lib;..\..\lib\Debug\dcmdata.lib;..\..\lib\Debug\oflog.lib;..\..\lib\Debug\ofstd.lib;..\..\lib\Debug\oficonv.lib;iphlpapi.lib;ws2_32.lib;netapi32.lib;wsock32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /ignore:4099</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/lib/Debug/dcmrt.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/bin/Debug/dcmrt.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\config\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\ofstd\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\oflog\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\oficonv\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmdata\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmimgle\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmimage\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmjpeg\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmjpls\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmtls\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmnet\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsign\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmwlm\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmqrdb\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmpstat\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmiod\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmfg\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmseg\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmtract\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmpmap\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmect\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;USE_NULL_SAFE_OFSTRING;DCMTK_BUILD_IN_PROGRESS;NOMINMAX;_CRT_FAR_MAPPINGS_NO_DEPRECATE;_CRT_IS_WCTYPE_NO_DEPRECATE;_CRT_MANAGED_FP_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE_GLOBALS;_CRT_SETERRORMODE_BEEP_SLEEP_NO_DEPRECATE;_CRT_TIME_FUNCTIONS_NO_DEPRECATE;_CRT_VCCLRIT_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;CMAKE_INTDIR="Release";dcmrt_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;USE_NULL_SAFE_OFSTRING;DCMTK_BUILD_IN_PROGRESS;NOMINMAX;_CRT_FAR_MAPPINGS_NO_DEPRECATE;_CRT_IS_WCTYPE_NO_DEPRECATE;_CRT_MANAGED_FP_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE_GLOBALS;_CRT_SETERRORMODE_BEEP_SLEEP_NO_DEPRECATE;_CRT_TIME_FUNCTIONS_NO_DEPRECATE;_CRT_VCCLRIT_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;CMAKE_INTDIR=\"Release\";dcmrt_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\config\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\ofstd\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\oflog\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\oficonv\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmdata\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmimgle\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmimage\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmjpeg\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmjpls\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmtls\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmnet\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsign\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmwlm\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmqrdb\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmpstat\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmiod\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmfg\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmseg\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmtract\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmpmap\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmect\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\config\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\ofstd\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\oflog\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\oficonv\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmdata\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmimgle\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmimage\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmjpeg\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmjpls\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmtls\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmnet\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsign\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmwlm\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmqrdb\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmpstat\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmiod\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmfg\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmseg\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmtract\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmpmap\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmect\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\lib\Release\dcmimgle.lib;..\..\lib\Release\dcmdata.lib;..\..\lib\Release\oflog.lib;..\..\lib\Release\ofstd.lib;..\..\lib\Release\oficonv.lib;iphlpapi.lib;ws2_32.lib;netapi32.lib;wsock32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /ignore:4099</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/lib/Release/dcmrt.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/bin/Release/dcmrt.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\config\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\ofstd\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\oflog\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\oficonv\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmdata\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmimgle\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmimage\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmjpeg\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmjpls\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmtls\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmnet\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsign\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmwlm\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmqrdb\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmpstat\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmiod\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmfg\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmseg\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmtract\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmpmap\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmect\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;USE_NULL_SAFE_OFSTRING;DCMTK_BUILD_IN_PROGRESS;NOMINMAX;_CRT_FAR_MAPPINGS_NO_DEPRECATE;_CRT_IS_WCTYPE_NO_DEPRECATE;_CRT_MANAGED_FP_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE_GLOBALS;_CRT_SETERRORMODE_BEEP_SLEEP_NO_DEPRECATE;_CRT_TIME_FUNCTIONS_NO_DEPRECATE;_CRT_VCCLRIT_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;CMAKE_INTDIR="MinSizeRel";dcmrt_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;USE_NULL_SAFE_OFSTRING;DCMTK_BUILD_IN_PROGRESS;NOMINMAX;_CRT_FAR_MAPPINGS_NO_DEPRECATE;_CRT_IS_WCTYPE_NO_DEPRECATE;_CRT_MANAGED_FP_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE_GLOBALS;_CRT_SETERRORMODE_BEEP_SLEEP_NO_DEPRECATE;_CRT_TIME_FUNCTIONS_NO_DEPRECATE;_CRT_VCCLRIT_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;CMAKE_INTDIR=\"MinSizeRel\";dcmrt_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\config\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\ofstd\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\oflog\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\oficonv\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmdata\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmimgle\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmimage\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmjpeg\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmjpls\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmtls\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmnet\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsign\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmwlm\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmqrdb\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmpstat\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmiod\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmfg\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmseg\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmtract\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmpmap\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmect\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\config\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\ofstd\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\oflog\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\oficonv\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmdata\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmimgle\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmimage\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmjpeg\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmjpls\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmtls\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmnet\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsign\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmwlm\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmqrdb\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmpstat\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmiod\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmfg\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmseg\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmtract\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmpmap\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmect\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\lib\MinSizeRel\dcmimgle.lib;..\..\lib\MinSizeRel\dcmdata.lib;..\..\lib\MinSizeRel\oflog.lib;..\..\lib\MinSizeRel\ofstd.lib;..\..\lib\MinSizeRel\oficonv.lib;iphlpapi.lib;ws2_32.lib;netapi32.lib;wsock32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /ignore:4099</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/lib/MinSizeRel/dcmrt.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/bin/MinSizeRel/dcmrt.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\config\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\ofstd\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\oflog\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\oficonv\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmdata\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmimgle\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmimage\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmjpeg\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmjpls\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmtls\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmnet\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsign\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmwlm\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmqrdb\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmpstat\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmiod\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmfg\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmseg\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmtract\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmpmap\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmect\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;USE_NULL_SAFE_OFSTRING;DCMTK_BUILD_IN_PROGRESS;NOMINMAX;_CRT_FAR_MAPPINGS_NO_DEPRECATE;_CRT_IS_WCTYPE_NO_DEPRECATE;_CRT_MANAGED_FP_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE_GLOBALS;_CRT_SETERRORMODE_BEEP_SLEEP_NO_DEPRECATE;_CRT_TIME_FUNCTIONS_NO_DEPRECATE;_CRT_VCCLRIT_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;CMAKE_INTDIR="RelWithDebInfo";dcmrt_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;USE_NULL_SAFE_OFSTRING;DCMTK_BUILD_IN_PROGRESS;NOMINMAX;_CRT_FAR_MAPPINGS_NO_DEPRECATE;_CRT_IS_WCTYPE_NO_DEPRECATE;_CRT_MANAGED_FP_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE_GLOBALS;_CRT_SETERRORMODE_BEEP_SLEEP_NO_DEPRECATE;_CRT_TIME_FUNCTIONS_NO_DEPRECATE;_CRT_VCCLRIT_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;CMAKE_INTDIR=\"RelWithDebInfo\";dcmrt_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\config\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\ofstd\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\oflog\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\oficonv\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmdata\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmimgle\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmimage\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmjpeg\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmjpls\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmtls\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmnet\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsign\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmwlm\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmqrdb\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmpstat\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmiod\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmfg\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmseg\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmtract\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmpmap\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmect\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\config\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\ofstd\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\oflog\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\oficonv\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmdata\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmimgle\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmimage\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmjpeg\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmjpls\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmtls\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmnet\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsr\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmsign\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmwlm\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmqrdb\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmpstat\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmiod\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmfg\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmseg\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmtract\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmpmap\include;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmect\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\lib\RelWithDebInfo\dcmimgle.lib;..\..\lib\RelWithDebInfo\dcmdata.lib;..\..\lib\RelWithDebInfo\oflog.lib;..\..\lib\RelWithDebInfo\ofstd.lib;..\..\lib\RelWithDebInfo\oficonv.lib;iphlpapi.lib;ws2_32.lib;netapi32.lib;wsock32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /ignore:4099</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/lib/RelWithDebInfo/dcmrt.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/bin/RelWithDebInfo/dcmrt.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/dcmrt/libsrc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8 -BD:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc --check-stamp-file D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/dcmrt/libsrc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\dcmrt\libsrc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/dcmrt/libsrc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8 -BD:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc --check-stamp-file D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/dcmrt/libsrc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\dcmrt\libsrc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/dcmrt/libsrc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8 -BD:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc --check-stamp-file D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/dcmrt/libsrc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\dcmrt\libsrc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/dcmrt/libsrc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8 -BD:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc --check-stamp-file D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/dcmrt/libsrc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\dcmrt\libsrc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drmdose.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drmimage.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drmplan.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drmstrct.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtaadcs.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtadcs.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtads.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtafcs.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtafs.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtags.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtajcs.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtancs.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtarms.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtars.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtas1.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtas2.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtas3.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtas4.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtass.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtbads.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtbas.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtbcps.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtbl1.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtbl2.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtbldls.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtbldps.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtblds1.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtblds2.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtbldts.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtbrcss.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtbrdrs.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtbrs.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtbs.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtbss.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtbvcps.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtcbars.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtccs.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtcctus.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtcdrs.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtces.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtcgis.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtchs.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtcims.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtcis.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtcncs.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtcos.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtcpas.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtcpis.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtcps.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtcsas.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtcs.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtcshs.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtcsis.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtcsrs.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtcss.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtcttcs.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtcvcss.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtcvdas.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtcvis.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtdccs.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtdcs.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtdcvs.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtdddps.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtddps.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtdfss.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtdias.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtdimcs.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtdimrs.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtdirs.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtdose.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtdrs.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtds.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtdspcs.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtdss.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtdtcs.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtdvhs.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtdvrrs.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drteas.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drteblds.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drteblos.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtecs.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtecvis.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtecvs.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtes.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtfbdds.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtfds.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtfes.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtfgs.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtfgss.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtfms.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtfsss.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtgas1.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtgas2.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtgas3.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtgas4.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtgas5.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtgas6.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtgmcs.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtgms.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtgpis.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drthsdrs.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtiais.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtians.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtiblds.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtibls.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtibs.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drticpds.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drticps.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtics.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtidcs.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtiis.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtimage.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtionpl.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtiontr.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtipiqs.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtircs.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtiseis.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtitts.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtiwps.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtiws.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtlsds1.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtlsds2.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtlsds.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtmacds.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtmas.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtmdrs.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtmls.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtmps.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtmris.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtmss.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtmttcs.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtmucs.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtnmas.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtoas.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtois.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtopis.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtos.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtosirs.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtpasms.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtpass.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtpbcs.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtpbdds.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtpbdos.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtpcs.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtpcxs.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtpdecs.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtpdeds.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtpfms.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtpics.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtplan.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtplos.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtporcs.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtporis.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtppcs.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtpros.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtprsis.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtpscs.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtpsics.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtpss.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtpsss.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtpvis.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtqds.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtras.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtrbas1.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtrbas2.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtrbdgs.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtrbls.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtrbos1.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtrbos2.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtrbos3.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtrbs1.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtrbs2.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtrbs3.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtrbss.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtrcdrs.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtrcos.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtrcps.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtrcs.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtrdais.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtrdcks.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtrdps.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtrdrs1.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtrdrs2.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtrdrs3.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtrds.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtrdsis.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtrecs.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtrfgs.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtrfors.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtrics.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtrims.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtris.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtrlsds.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtrmdrs.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtrms.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtrmss1.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtrmss2.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtrpcs.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtrpis.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtrppcs.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtrpphs.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtrpprs.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtrpps.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtrppss.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtrps.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtrris1.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtrris2.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtrris3.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtrrms.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtrros.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtrrpcs.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtrrros.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtrrs.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtrrshs.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtrscs.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtrsers.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtrses.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtrshs1.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtrshs2.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtrshs.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtrsis.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtrsns.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtrsos.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtrsrs.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtrss.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtrsss.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtrsts.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtrtps1.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtrtps2.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtrtps3.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtrtps4.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtrtrs1.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtrtrs2.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtrvcs.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtrvis.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtrws.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtrwvms.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtscris.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtscs.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtscvs.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtsdcs.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtsds.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtshds.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtsins.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtsis.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtsns.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtspccs.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtspcs.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtspgis.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtsppcs.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtsptcs.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtss.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtssrcs.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtssrs.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtsss.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtstrct.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drttms1.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drttms2.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drttrccs.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drttreat.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drttrtcs.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drttscds.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drttscs.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drttsibs.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drttsmds.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtttrcs.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drttts.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drttypes.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtudis.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtvls.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtwps.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtwrs.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtwrsrs.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtws.cc" />
+    <ClCompile Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmrt\libsrc\drtxrs.cc" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\ZERO_CHECK.vcxproj">
+      <Project>{9FA95D2F-2D56-3762-BBB5-3BB7D10895DD}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\dcmdata\libsrc\dcmdata.vcxproj">
+      <Project>{00C4A58B-8496-3AC1-9A59-C58401F5C7AF}</Project>
+      <Name>dcmdata</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\dcmimgle\libsrc\dcmimgle.vcxproj">
+      <Project>{B1108FA7-324E-37BB-9F4C-A722DB2BBCC3}</Project>
+      <Name>dcmimgle</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\oficonv\libsrc\oficonv.vcxproj">
+      <Project>{550510EC-998A-39B5-AA73-2553B82B8551}</Project>
+      <Name>oficonv</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\oflog\libsrc\oflog.vcxproj">
+      <Project>{1ABC029E-6D19-3550-8105-45910509AC39}</Project>
+      <Name>oflog</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\ofstd\libsrc\ofstd.vcxproj">
+      <Project>{88F04AB0-0E51-30A4-B3C1-67C09E879D57}</Project>
+      <Name>ofstd</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

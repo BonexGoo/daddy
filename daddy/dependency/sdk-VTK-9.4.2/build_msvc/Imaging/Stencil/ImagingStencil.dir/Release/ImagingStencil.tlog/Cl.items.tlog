@@ -1,0 +1,7 @@
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Stencil\vtkImageStencil.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Imaging\Stencil\ImagingStencil.dir\Release\vtkImageStencil.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Stencil\vtkImageStencilToImage.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Imaging\Stencil\ImagingStencil.dir\Release\vtkImageStencilToImage.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Stencil\vtkImageToImageStencil.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Imaging\Stencil\ImagingStencil.dir\Release\vtkImageToImageStencil.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Stencil\vtkImplicitFunctionToImageStencil.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Imaging\Stencil\ImagingStencil.dir\Release\vtkImplicitFunctionToImageStencil.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Stencil\vtkLassoStencilSource.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Imaging\Stencil\ImagingStencil.dir\Release\vtkLassoStencilSource.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Stencil\vtkPolyDataToImageStencil.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Imaging\Stencil\ImagingStencil.dir\Release\vtkPolyDataToImageStencil.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Stencil\vtkROIStencilSource.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Imaging\Stencil\ImagingStencil.dir\Release\vtkROIStencilSource.obj

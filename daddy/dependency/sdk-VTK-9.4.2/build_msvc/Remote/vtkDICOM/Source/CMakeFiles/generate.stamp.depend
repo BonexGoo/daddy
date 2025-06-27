@@ -1,0 +1,8 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.31/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/exportheader.cmake.in
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Remote/vtkDICOM/CMake/FindDCMTK.cmake
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Remote/vtkDICOM/CMake/vtkDICOMBuild.h.in
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Remote/vtkDICOM/CMake/vtkDICOMConfig.h.in
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Remote/vtkDICOM/Source/CMakeLists.txt

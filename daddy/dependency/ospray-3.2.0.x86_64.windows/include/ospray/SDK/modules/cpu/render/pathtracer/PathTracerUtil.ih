@@ -1,0 +1,60 @@
+// Copyright 2009 Intel Corporation
+// SPDX-License-Identifier: Apache-2.0
+
+#pragma once
+
+#include "render/Renderer.ih"
+#include "render/ScreenSample.ih"
+#include "render/pathtracer/PathStructs.ih"
+#ifdef OSPRAY_ENABLE_VOLUMES
+#include "render/pathtracer/volumes/VolumeSampler.ih"
+#endif
+
+OSPRAY_BEGIN_ISPC_NAMESPACE
+
+inline bool isSmooth(const PathVertex &pathVertex)
+{
+  if (pathVertex.type == SURFACE && pathVertex.bsdf
+      && pathVertex.bsdf->scatteringType & SCATTERING_SMOOTH)
+    return true;
+#ifdef OSPRAY_ENABLE_VOLUMES
+  if (pathVertex.type == VOLUME && pathVertex.volume
+      && isSmoothVolumeVertex(pathVertex))
+    return true;
+#endif
+  return false;
+}
+
+inline float misHeuristic(
+    const PathContext &pathContext, float pdf1, float pdf2)
+{
+#ifdef OSPRAY_PATHTRACER_DEBUG
+  if (pathContext.disableNEE || pathContext.disableFWD)
+    return 1.f;
+#else
+  (void)pathContext;
+#endif
+
+  // power heuristic with beta=2
+  const float p = sqr(pdf1) * rcp(sqr(pdf1) + sqr(pdf2));
+  // guard against high pdf (including Dirac delta)
+  // using the limit when pdf1 approaches inf
+  // compare with bit less than sqrt(float_max) (when sqr starts to overflow)
+  return pdf1 > 1e17f ? 1.0f : p;
+}
+
+inline void updateAuxilliaryData(
+    PathState &pathState, const PathVertex &pathVertex, ScreenSample &sample)
+{
+  sample.albedo = pathState.throughput * pathVertex.albedo;
+  if (pathVertex.type == SURFACE) {
+    vec3f Ns = pathVertex.dg.Ns;
+    foreach_unique (f in pathVertex.bsdf) {
+      if (f != NULL && f->frame != NULL)
+        Ns = getN(f);
+    }
+    sample.normal = pathState.throughput * Ns;
+  }
+}
+
+OSPRAY_END_ISPC_NAMESPACE

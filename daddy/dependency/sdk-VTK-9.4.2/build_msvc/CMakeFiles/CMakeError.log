@@ -1,0 +1,687 @@
+Checking whether C compiler has ssize_t in unistd.h failed to compile with the following output:
+Change Dir: 'D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_56701.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+msbuild 踰꾩쟾 17.13.19+0d9f5a35a(.NET Framework??
+鍮뚮뱶 ?쒖옉: 2025-05-28 ?ㅽ썑 4:13:10
+
+1 ?몃뱶??"D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWSys\vtksys\CMakeFiles\CMakeTmp\cmTC_56701.vcxproj" ?꾨줈?앺듃(湲곕낯 ????낅땲??
+PrepareForBuild:
+  "cmTC_56701.dir\Debug\" ?붾젆?곕━瑜?留뚮뱾怨??덉뒿?덈떎.
+  援ъ“??異쒕젰???ъ슜?????덉뒿?덈떎. 而댄뙆?쇰윭 吏꾨떒???쒖떇? ?ㅻ쪟 怨꾩링 援ъ“瑜?諛섏쁺?⑸땲?? ?먯꽭???댁슜? https://aka.ms/cpp/structured-output??李몄“?섏꽭??
+  "D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWSys\vtksys\CMakeFiles\CMakeTmp\Debug\" ?붾젆?곕━瑜?留뚮뱾怨??덉뒿?덈떎.
+  "cmTC_56701.dir\Debug\cmTC_56701.tlog\" ?붾젆?곕━瑜?留뚮뱾怨??덉뒿?덈떎.
+InitializeBuildStatus:
+  "AlwaysCreate"??媛) 吏?뺣릺?덇린 ?뚮Ц??"cmTC_56701.dir\Debug\cmTC_56701.tlog\unsuccessfulbuild"??瑜? 留뚮뱾怨??덉뒿?덈떎.
+  "cmTC_56701.dir\Debug\cmTC_56701.tlog\unsuccessfulbuild"???곌껐(touching)?섍퀬 ?덉뒿?덈떎.
+VcpkgTripletSelection:
+  Using triplet "x64-windows" from "D:\vcpkg\installed\x64-windows\"
+  Using normalized configuration "Debug"
+ClCompile:
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\bin\HostX64\x64\CL.exe /c /I"D:\vcpkg\installed\x64-windows\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D TEST_KWSYS_C_HAS_SSIZE_T /D "CMAKE_INTDIR=\"Debug\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_56701.dir\Debug\\" /Fd"cmTC_56701.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue  /bigobj /utf-8 "D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Utilities\KWSys\vtksys\kwsysPlatformTestsC.c"
+  Microsoft (R) C/C++ 理쒖쟻??而댄뙆?쇰윭 踰꾩쟾 19.43.34810(x64)
+  Copyright (c) Microsoft Corporation. All rights reserved.
+  cl /c /I"D:\vcpkg\installed\x64-windows\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D TEST_KWSYS_C_HAS_SSIZE_T /D "CMAKE_INTDIR=\"Debug\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_56701.dir\Debug\\" /Fd"cmTC_56701.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue  /bigobj /utf-8 "D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Utilities\KWSys\vtksys\kwsysPlatformTestsC.c"
+  kwsysPlatformTestsC.c
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Utilities\KWSys\vtksys\kwsysPlatformTestsC.c(46,12): error C1083: ?ы븿 ?뚯씪???????놁뒿?덈떎. 'unistd.h': No such file or directory [D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWSys\vtksys\CMakeFiles\CMakeTmp\cmTC_56701.vcxproj]
+"D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWSys\vtksys\CMakeFiles\CMakeTmp\cmTC_56701.vcxproj" ?꾨줈?앺듃瑜?鍮뚮뱶?덉뒿?덈떎(湲곕낯 ???. - ?ㅽ뙣
+
+鍮뚮뱶?섏? 紐삵뻽?듬땲??
+
+"D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWSys\vtksys\CMakeFiles\CMakeTmp\cmTC_56701.vcxproj"(湲곕낯 ???(1)->
+(ClCompile ??? -> 
+  D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Utilities\KWSys\vtksys\kwsysPlatformTestsC.c(46,12): error C1083: ?ы븿 ?뚯씪???????놁뒿?덈떎. 'unistd.h': No such file or directory [D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWSys\vtksys\CMakeFiles\CMakeTmp\cmTC_56701.vcxproj]
+
+    寃쎄퀬 0媛?
+    ?ㅻ쪟 1媛?
+
+寃쎄낵 ?쒓컙: 00:00:00.25
+
+
+
+Checking whether C compiler has clock_gettime failed to compile with the following output:
+Change Dir: 'D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_ac41d.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+msbuild 踰꾩쟾 17.13.19+0d9f5a35a(.NET Framework??
+鍮뚮뱶 ?쒖옉: 2025-05-28 ?ㅽ썑 4:13:11
+
+1 ?몃뱶??"D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWSys\vtksys\CMakeFiles\CMakeTmp\cmTC_ac41d.vcxproj" ?꾨줈?앺듃(湲곕낯 ????낅땲??
+PrepareForBuild:
+  "cmTC_ac41d.dir\Debug\" ?붾젆?곕━瑜?留뚮뱾怨??덉뒿?덈떎.
+  援ъ“??異쒕젰???ъ슜?????덉뒿?덈떎. 而댄뙆?쇰윭 吏꾨떒???쒖떇? ?ㅻ쪟 怨꾩링 援ъ“瑜?諛섏쁺?⑸땲?? ?먯꽭???댁슜? https://aka.ms/cpp/structured-output??李몄“?섏꽭??
+  "D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWSys\vtksys\CMakeFiles\CMakeTmp\Debug\" ?붾젆?곕━瑜?留뚮뱾怨??덉뒿?덈떎.
+  "cmTC_ac41d.dir\Debug\cmTC_ac41d.tlog\" ?붾젆?곕━瑜?留뚮뱾怨??덉뒿?덈떎.
+InitializeBuildStatus:
+  "AlwaysCreate"??媛) 吏?뺣릺?덇린 ?뚮Ц??"cmTC_ac41d.dir\Debug\cmTC_ac41d.tlog\unsuccessfulbuild"??瑜? 留뚮뱾怨??덉뒿?덈떎.
+  "cmTC_ac41d.dir\Debug\cmTC_ac41d.tlog\unsuccessfulbuild"???곌껐(touching)?섍퀬 ?덉뒿?덈떎.
+VcpkgTripletSelection:
+  Using triplet "x64-windows" from "D:\vcpkg\installed\x64-windows\"
+  Using normalized configuration "Debug"
+ClCompile:
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\bin\HostX64\x64\CL.exe /c /I"D:\vcpkg\installed\x64-windows\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D TEST_KWSYS_C_HAS_CLOCK_GETTIME_MONOTONIC /D "CMAKE_INTDIR=\"Debug\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ac41d.dir\Debug\\" /Fd"cmTC_ac41d.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue  /bigobj /utf-8 "D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Utilities\KWSys\vtksys\kwsysPlatformTestsC.c"
+  Microsoft (R) C/C++ 理쒖쟻??而댄뙆?쇰윭 踰꾩쟾 19.43.34810(x64)
+  Copyright (c) Microsoft Corporation. All rights reserved.
+  cl /c /I"D:\vcpkg\installed\x64-windows\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D TEST_KWSYS_C_HAS_CLOCK_GETTIME_MONOTONIC /D "CMAKE_INTDIR=\"Debug\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ac41d.dir\Debug\\" /Fd"cmTC_ac41d.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue  /bigobj /utf-8 "D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Utilities\KWSys\vtksys\kwsysPlatformTestsC.c"
+  kwsysPlatformTestsC.c
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Utilities\KWSys\vtksys\kwsysPlatformTestsC.c(69,24): error C2065: 'CLOCK_MONOTONIC': ?좎뼵?섏? ?딆? ?앸퀎?먯엯?덈떎. [D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWSys\vtksys\CMakeFiles\CMakeTmp\cmTC_ac41d.vcxproj]
+"D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWSys\vtksys\CMakeFiles\CMakeTmp\cmTC_ac41d.vcxproj" ?꾨줈?앺듃瑜?鍮뚮뱶?덉뒿?덈떎(湲곕낯 ???. - ?ㅽ뙣
+
+鍮뚮뱶?섏? 紐삵뻽?듬땲??
+
+"D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWSys\vtksys\CMakeFiles\CMakeTmp\cmTC_ac41d.vcxproj"(湲곕낯 ???(1)->
+(ClCompile ??? -> 
+  D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Utilities\KWSys\vtksys\kwsysPlatformTestsC.c(69,24): error C2065: 'CLOCK_MONOTONIC': ?좎뼵?섏? ?딆? ?앸퀎?먯엯?덈떎. [D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWSys\vtksys\CMakeFiles\CMakeTmp\cmTC_ac41d.vcxproj]
+
+    寃쎄퀬 0媛?
+    ?ㅻ쪟 1媛?
+
+寃쎄낵 ?쒓컙: 00:00:00.25
+
+
+
+Checking whether CXX compiler has setenv failed to compile with the following output:
+Change Dir: 'D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_c77c7.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+msbuild 踰꾩쟾 17.13.19+0d9f5a35a(.NET Framework??
+鍮뚮뱶 ?쒖옉: 2025-05-28 ?ㅽ썑 4:13:11
+
+1 ?몃뱶??"D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWSys\vtksys\CMakeFiles\CMakeTmp\cmTC_c77c7.vcxproj" ?꾨줈?앺듃(湲곕낯 ????낅땲??
+PrepareForBuild:
+  "cmTC_c77c7.dir\Debug\" ?붾젆?곕━瑜?留뚮뱾怨??덉뒿?덈떎.
+  援ъ“??異쒕젰???ъ슜?????덉뒿?덈떎. 而댄뙆?쇰윭 吏꾨떒???쒖떇? ?ㅻ쪟 怨꾩링 援ъ“瑜?諛섏쁺?⑸땲?? ?먯꽭???댁슜? https://aka.ms/cpp/structured-output??李몄“?섏꽭??
+  "D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWSys\vtksys\CMakeFiles\CMakeTmp\Debug\" ?붾젆?곕━瑜?留뚮뱾怨??덉뒿?덈떎.
+  "cmTC_c77c7.dir\Debug\cmTC_c77c7.tlog\" ?붾젆?곕━瑜?留뚮뱾怨??덉뒿?덈떎.
+InitializeBuildStatus:
+  "AlwaysCreate"??媛) 吏?뺣릺?덇린 ?뚮Ц??"cmTC_c77c7.dir\Debug\cmTC_c77c7.tlog\unsuccessfulbuild"??瑜? 留뚮뱾怨??덉뒿?덈떎.
+  "cmTC_c77c7.dir\Debug\cmTC_c77c7.tlog\unsuccessfulbuild"???곌껐(touching)?섍퀬 ?덉뒿?덈떎.
+VcpkgTripletSelection:
+  Using triplet "x64-windows" from "D:\vcpkg\installed\x64-windows\"
+  Using normalized configuration "Debug"
+ClCompile:
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\bin\HostX64\x64\CL.exe /c /I"D:\vcpkg\installed\x64-windows\include" /Zi /W4 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D TEST_KWSYS_CXX_HAS_SETENV /D "CMAKE_INTDIR=\"Debug\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_c77c7.dir\Debug\\" /Fd"cmTC_c77c7.dir\Debug\vc143.pdb" /external:W4 /Gd /TP /errorReport:queue  /bigobj /utf-8 "D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Utilities\KWSys\vtksys\kwsysPlatformTestsCXX.cxx"
+  Microsoft (R) C/C++ 理쒖쟻??而댄뙆?쇰윭 踰꾩쟾 19.43.34810(x64)
+  Copyright (c) Microsoft Corporation. All rights reserved.
+  cl /c /I"D:\vcpkg\installed\x64-windows\include" /Zi /W4 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D TEST_KWSYS_CXX_HAS_SETENV /D "CMAKE_INTDIR=\"Debug\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_c77c7.dir\Debug\\" /Fd"cmTC_c77c7.dir\Debug\vc143.pdb" /external:W4 /Gd /TP /errorReport:queue  /bigobj /utf-8 "D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Utilities\KWSys\vtksys\kwsysPlatformTestsCXX.cxx"
+  kwsysPlatformTestsCXX.cxx
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Utilities\KWSys\vtksys\kwsysPlatformTestsCXX.cxx(36,10): error C3861: 'setenv': ?앸퀎?먮? 李얠쓣 ???놁뒿?덈떎. [D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWSys\vtksys\CMakeFiles\CMakeTmp\cmTC_c77c7.vcxproj]
+"D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWSys\vtksys\CMakeFiles\CMakeTmp\cmTC_c77c7.vcxproj" ?꾨줈?앺듃瑜?鍮뚮뱶?덉뒿?덈떎(湲곕낯 ???. - ?ㅽ뙣
+
+鍮뚮뱶?섏? 紐삵뻽?듬땲??
+
+"D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWSys\vtksys\CMakeFiles\CMakeTmp\cmTC_c77c7.vcxproj"(湲곕낯 ???(1)->
+(ClCompile ??? -> 
+  D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Utilities\KWSys\vtksys\kwsysPlatformTestsCXX.cxx(36,10): error C3861: 'setenv': ?앸퀎?먮? 李얠쓣 ???놁뒿?덈떎. [D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWSys\vtksys\CMakeFiles\CMakeTmp\cmTC_c77c7.vcxproj]
+
+    寃쎄퀬 0媛?
+    ?ㅻ쪟 1媛?
+
+寃쎄낵 ?쒓컙: 00:00:00.27
+
+
+
+Checking whether CXX compiler has unsetenv failed to compile with the following output:
+Change Dir: 'D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_59806.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+msbuild 踰꾩쟾 17.13.19+0d9f5a35a(.NET Framework??
+鍮뚮뱶 ?쒖옉: 2025-05-28 ?ㅽ썑 4:13:12
+
+1 ?몃뱶??"D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWSys\vtksys\CMakeFiles\CMakeTmp\cmTC_59806.vcxproj" ?꾨줈?앺듃(湲곕낯 ????낅땲??
+PrepareForBuild:
+  "cmTC_59806.dir\Debug\" ?붾젆?곕━瑜?留뚮뱾怨??덉뒿?덈떎.
+  援ъ“??異쒕젰???ъ슜?????덉뒿?덈떎. 而댄뙆?쇰윭 吏꾨떒???쒖떇? ?ㅻ쪟 怨꾩링 援ъ“瑜?諛섏쁺?⑸땲?? ?먯꽭???댁슜? https://aka.ms/cpp/structured-output??李몄“?섏꽭??
+  "D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWSys\vtksys\CMakeFiles\CMakeTmp\Debug\" ?붾젆?곕━瑜?留뚮뱾怨??덉뒿?덈떎.
+  "cmTC_59806.dir\Debug\cmTC_59806.tlog\" ?붾젆?곕━瑜?留뚮뱾怨??덉뒿?덈떎.
+InitializeBuildStatus:
+  "AlwaysCreate"??媛) 吏?뺣릺?덇린 ?뚮Ц??"cmTC_59806.dir\Debug\cmTC_59806.tlog\unsuccessfulbuild"??瑜? 留뚮뱾怨??덉뒿?덈떎.
+  "cmTC_59806.dir\Debug\cmTC_59806.tlog\unsuccessfulbuild"???곌껐(touching)?섍퀬 ?덉뒿?덈떎.
+VcpkgTripletSelection:
+  Using triplet "x64-windows" from "D:\vcpkg\installed\x64-windows\"
+  Using normalized configuration "Debug"
+ClCompile:
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\bin\HostX64\x64\CL.exe /c /I"D:\vcpkg\installed\x64-windows\include" /Zi /W4 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D TEST_KWSYS_CXX_HAS_UNSETENV /D "CMAKE_INTDIR=\"Debug\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_59806.dir\Debug\\" /Fd"cmTC_59806.dir\Debug\vc143.pdb" /external:W4 /Gd /TP /errorReport:queue  /bigobj /utf-8 "D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Utilities\KWSys\vtksys\kwsysPlatformTestsCXX.cxx"
+  Microsoft (R) C/C++ 理쒖쟻??而댄뙆?쇰윭 踰꾩쟾 19.43.34810(x64)
+  Copyright (c) Microsoft Corporation. All rights reserved.
+  cl /c /I"D:\vcpkg\installed\x64-windows\include" /Zi /W4 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D TEST_KWSYS_CXX_HAS_UNSETENV /D "CMAKE_INTDIR=\"Debug\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_59806.dir\Debug\\" /Fd"cmTC_59806.dir\Debug\vc143.pdb" /external:W4 /Gd /TP /errorReport:queue  /bigobj /utf-8 "D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Utilities\KWSys\vtksys\kwsysPlatformTestsCXX.cxx"
+  kwsysPlatformTestsCXX.cxx
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Utilities\KWSys\vtksys\kwsysPlatformTestsCXX.cxx(44,3): error C3861: 'unsetenv': ?앸퀎?먮? 李얠쓣 ???놁뒿?덈떎. [D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWSys\vtksys\CMakeFiles\CMakeTmp\cmTC_59806.vcxproj]
+"D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWSys\vtksys\CMakeFiles\CMakeTmp\cmTC_59806.vcxproj" ?꾨줈?앺듃瑜?鍮뚮뱶?덉뒿?덈떎(湲곕낯 ???. - ?ㅽ뙣
+
+鍮뚮뱶?섏? 紐삵뻽?듬땲??
+
+"D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWSys\vtksys\CMakeFiles\CMakeTmp\cmTC_59806.vcxproj"(湲곕낯 ???(1)->
+(ClCompile ??? -> 
+  D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Utilities\KWSys\vtksys\kwsysPlatformTestsCXX.cxx(44,3): error C3861: 'unsetenv': ?앸퀎?먮? 李얠쓣 ???놁뒿?덈떎. [D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWSys\vtksys\CMakeFiles\CMakeTmp\cmTC_59806.vcxproj]
+
+    寃쎄퀬 0媛?
+    ?ㅻ쪟 1媛?
+
+寃쎄낵 ?쒓컙: 00:00:00.26
+
+
+
+Checking whether CXX compiler has utimes failed to compile with the following output:
+Change Dir: 'D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_a22ea.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+msbuild 踰꾩쟾 17.13.19+0d9f5a35a(.NET Framework??
+鍮뚮뱶 ?쒖옉: 2025-05-28 ?ㅽ썑 4:13:13
+
+1 ?몃뱶??"D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWSys\vtksys\CMakeFiles\CMakeTmp\cmTC_a22ea.vcxproj" ?꾨줈?앺듃(湲곕낯 ????낅땲??
+PrepareForBuild:
+  "cmTC_a22ea.dir\Debug\" ?붾젆?곕━瑜?留뚮뱾怨??덉뒿?덈떎.
+  援ъ“??異쒕젰???ъ슜?????덉뒿?덈떎. 而댄뙆?쇰윭 吏꾨떒???쒖떇? ?ㅻ쪟 怨꾩링 援ъ“瑜?諛섏쁺?⑸땲?? ?먯꽭???댁슜? https://aka.ms/cpp/structured-output??李몄“?섏꽭??
+  "D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWSys\vtksys\CMakeFiles\CMakeTmp\Debug\" ?붾젆?곕━瑜?留뚮뱾怨??덉뒿?덈떎.
+  "cmTC_a22ea.dir\Debug\cmTC_a22ea.tlog\" ?붾젆?곕━瑜?留뚮뱾怨??덉뒿?덈떎.
+InitializeBuildStatus:
+  "AlwaysCreate"??媛) 吏?뺣릺?덇린 ?뚮Ц??"cmTC_a22ea.dir\Debug\cmTC_a22ea.tlog\unsuccessfulbuild"??瑜? 留뚮뱾怨??덉뒿?덈떎.
+  "cmTC_a22ea.dir\Debug\cmTC_a22ea.tlog\unsuccessfulbuild"???곌껐(touching)?섍퀬 ?덉뒿?덈떎.
+VcpkgTripletSelection:
+  Using triplet "x64-windows" from "D:\vcpkg\installed\x64-windows\"
+  Using normalized configuration "Debug"
+ClCompile:
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\bin\HostX64\x64\CL.exe /c /I"D:\vcpkg\installed\x64-windows\include" /Zi /W4 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D TEST_KWSYS_CXX_HAS_UTIMES /D "CMAKE_INTDIR=\"Debug\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_a22ea.dir\Debug\\" /Fd"cmTC_a22ea.dir\Debug\vc143.pdb" /external:W4 /Gd /TP /errorReport:queue  /bigobj /utf-8 "D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Utilities\KWSys\vtksys\kwsysPlatformTestsCXX.cxx"
+  Microsoft (R) C/C++ 理쒖쟻??而댄뙆?쇰윭 踰꾩쟾 19.43.34810(x64)
+  Copyright (c) Microsoft Corporation. All rights reserved.
+  cl /c /I"D:\vcpkg\installed\x64-windows\include" /Zi /W4 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D TEST_KWSYS_CXX_HAS_UTIMES /D "CMAKE_INTDIR=\"Debug\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_a22ea.dir\Debug\\" /Fd"cmTC_a22ea.dir\Debug\vc143.pdb" /external:W4 /Gd /TP /errorReport:queue  /bigobj /utf-8 "D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Utilities\KWSys\vtksys\kwsysPlatformTestsCXX.cxx"
+  kwsysPlatformTestsCXX.cxx
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Utilities\KWSys\vtksys\kwsysPlatformTestsCXX.cxx(81,12): error C1083: ?ы븿 ?뚯씪???????놁뒿?덈떎. 'sys/time.h': No such file or directory [D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWSys\vtksys\CMakeFiles\CMakeTmp\cmTC_a22ea.vcxproj]
+"D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWSys\vtksys\CMakeFiles\CMakeTmp\cmTC_a22ea.vcxproj" ?꾨줈?앺듃瑜?鍮뚮뱶?덉뒿?덈떎(湲곕낯 ???. - ?ㅽ뙣
+
+鍮뚮뱶?섏? 紐삵뻽?듬땲??
+
+"D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWSys\vtksys\CMakeFiles\CMakeTmp\cmTC_a22ea.vcxproj"(湲곕낯 ???(1)->
+(ClCompile ??? -> 
+  D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Utilities\KWSys\vtksys\kwsysPlatformTestsCXX.cxx(81,12): error C1083: ?ы븿 ?뚯씪???????놁뒿?덈떎. 'sys/time.h': No such file or directory [D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWSys\vtksys\CMakeFiles\CMakeTmp\cmTC_a22ea.vcxproj]
+
+    寃쎄퀬 0媛?
+    ?ㅻ쪟 1媛?
+
+寃쎄낵 ?쒓컙: 00:00:00.26
+
+
+
+Checking whether CXX compiler has utimensat failed to compile with the following output:
+Change Dir: 'D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_6b662.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+msbuild 踰꾩쟾 17.13.19+0d9f5a35a(.NET Framework??
+鍮뚮뱶 ?쒖옉: 2025-05-28 ?ㅽ썑 4:13:14
+
+1 ?몃뱶??"D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWSys\vtksys\CMakeFiles\CMakeTmp\cmTC_6b662.vcxproj" ?꾨줈?앺듃(湲곕낯 ????낅땲??
+PrepareForBuild:
+  "cmTC_6b662.dir\Debug\" ?붾젆?곕━瑜?留뚮뱾怨??덉뒿?덈떎.
+  援ъ“??異쒕젰???ъ슜?????덉뒿?덈떎. 而댄뙆?쇰윭 吏꾨떒???쒖떇? ?ㅻ쪟 怨꾩링 援ъ“瑜?諛섏쁺?⑸땲?? ?먯꽭???댁슜? https://aka.ms/cpp/structured-output??李몄“?섏꽭??
+  "D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWSys\vtksys\CMakeFiles\CMakeTmp\Debug\" ?붾젆?곕━瑜?留뚮뱾怨??덉뒿?덈떎.
+  "cmTC_6b662.dir\Debug\cmTC_6b662.tlog\" ?붾젆?곕━瑜?留뚮뱾怨??덉뒿?덈떎.
+InitializeBuildStatus:
+  "AlwaysCreate"??媛) 吏?뺣릺?덇린 ?뚮Ц??"cmTC_6b662.dir\Debug\cmTC_6b662.tlog\unsuccessfulbuild"??瑜? 留뚮뱾怨??덉뒿?덈떎.
+  "cmTC_6b662.dir\Debug\cmTC_6b662.tlog\unsuccessfulbuild"???곌껐(touching)?섍퀬 ?덉뒿?덈떎.
+VcpkgTripletSelection:
+  Using triplet "x64-windows" from "D:\vcpkg\installed\x64-windows\"
+  Using normalized configuration "Debug"
+ClCompile:
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\bin\HostX64\x64\CL.exe /c /I"D:\vcpkg\installed\x64-windows\include" /Zi /W4 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D TEST_KWSYS_CXX_HAS_UTIMENSAT /D "CMAKE_INTDIR=\"Debug\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_6b662.dir\Debug\\" /Fd"cmTC_6b662.dir\Debug\vc143.pdb" /external:W4 /Gd /TP /errorReport:queue  /bigobj /utf-8 "D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Utilities\KWSys\vtksys\kwsysPlatformTestsCXX.cxx"
+  Microsoft (R) C/C++ 理쒖쟻??而댄뙆?쇰윭 踰꾩쟾 19.43.34810(x64)
+  Copyright (c) Microsoft Corporation. All rights reserved.
+  cl /c /I"D:\vcpkg\installed\x64-windows\include" /Zi /W4 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D TEST_KWSYS_CXX_HAS_UTIMENSAT /D "CMAKE_INTDIR=\"Debug\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_6b662.dir\Debug\\" /Fd"cmTC_6b662.dir\Debug\vc143.pdb" /external:W4 /Gd /TP /errorReport:queue  /bigobj /utf-8 "D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Utilities\KWSys\vtksys\kwsysPlatformTestsCXX.cxx"
+  kwsysPlatformTestsCXX.cxx
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Utilities\KWSys\vtksys\kwsysPlatformTestsCXX.cxx(100,19): error C2079: 'times'?(?? ?뺤쓽?섏? ?딆? struct 'main::timespec'??瑜? ?ъ슜?⑸땲?? [D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWSys\vtksys\CMakeFiles\CMakeTmp\cmTC_6b662.vcxproj]
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Utilities\KWSys\vtksys\kwsysPlatformTestsCXX.cxx(100,37): error C2065: 'UTIME_OMIT': ?좎뼵?섏? ?딆? ?앸퀎?먯엯?덈떎. [D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWSys\vtksys\CMakeFiles\CMakeTmp\cmTC_6b662.vcxproj]
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Utilities\KWSys\vtksys\kwsysPlatformTestsCXX.cxx(100,56): error C2065: 'UTIME_NOW': ?좎뼵?섏? ?딆? ?앸퀎?먯엯?덈떎. [D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWSys\vtksys\CMakeFiles\CMakeTmp\cmTC_6b662.vcxproj]
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Utilities\KWSys\vtksys\kwsysPlatformTestsCXX.cxx(101,20): error C2065: 'AT_FDCWD': ?좎뼵?섏? ?딆? ?앸퀎?먯엯?덈떎. [D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWSys\vtksys\CMakeFiles\CMakeTmp\cmTC_6b662.vcxproj]
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Utilities\KWSys\vtksys\kwsysPlatformTestsCXX.cxx(101,49): error C2065: 'AT_SYMLINK_NOFOLLOW': ?좎뼵?섏? ?딆? ?앸퀎?먯엯?덈떎. [D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWSys\vtksys\CMakeFiles\CMakeTmp\cmTC_6b662.vcxproj]
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Utilities\KWSys\vtksys\kwsysPlatformTestsCXX.cxx(101,10): error C3861: 'utimensat': ?앸퀎?먮? 李얠쓣 ???놁뒿?덈떎. [D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWSys\vtksys\CMakeFiles\CMakeTmp\cmTC_6b662.vcxproj]
+"D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWSys\vtksys\CMakeFiles\CMakeTmp\cmTC_6b662.vcxproj" ?꾨줈?앺듃瑜?鍮뚮뱶?덉뒿?덈떎(湲곕낯 ???. - ?ㅽ뙣
+
+鍮뚮뱶?섏? 紐삵뻽?듬땲??
+
+"D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWSys\vtksys\CMakeFiles\CMakeTmp\cmTC_6b662.vcxproj"(湲곕낯 ???(1)->
+(ClCompile ??? -> 
+  D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Utilities\KWSys\vtksys\kwsysPlatformTestsCXX.cxx(100,19): error C2079: 'times'?(?? ?뺤쓽?섏? ?딆? struct 'main::timespec'??瑜? ?ъ슜?⑸땲?? [D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWSys\vtksys\CMakeFiles\CMakeTmp\cmTC_6b662.vcxproj]
+  D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Utilities\KWSys\vtksys\kwsysPlatformTestsCXX.cxx(100,37): error C2065: 'UTIME_OMIT': ?좎뼵?섏? ?딆? ?앸퀎?먯엯?덈떎. [D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWSys\vtksys\CMakeFiles\CMakeTmp\cmTC_6b662.vcxproj]
+  D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Utilities\KWSys\vtksys\kwsysPlatformTestsCXX.cxx(100,56): error C2065: 'UTIME_NOW': ?좎뼵?섏? ?딆? ?앸퀎?먯엯?덈떎. [D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWSys\vtksys\CMakeFiles\CMakeTmp\cmTC_6b662.vcxproj]
+  D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Utilities\KWSys\vtksys\kwsysPlatformTestsCXX.cxx(101,20): error C2065: 'AT_FDCWD': ?좎뼵?섏? ?딆? ?앸퀎?먯엯?덈떎. [D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWSys\vtksys\CMakeFiles\CMakeTmp\cmTC_6b662.vcxproj]
+  D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Utilities\KWSys\vtksys\kwsysPlatformTestsCXX.cxx(101,49): error C2065: 'AT_SYMLINK_NOFOLLOW': ?좎뼵?섏? ?딆? ?앸퀎?먯엯?덈떎. [D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWSys\vtksys\CMakeFiles\CMakeTmp\cmTC_6b662.vcxproj]
+  D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Utilities\KWSys\vtksys\kwsysPlatformTestsCXX.cxx(101,10): error C3861: 'utimensat': ?앸퀎?먮? 李얠쓣 ???놁뒿?덈떎. [D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWSys\vtksys\CMakeFiles\CMakeTmp\cmTC_6b662.vcxproj]
+
+    寃쎄퀬 0媛?
+    ?ㅻ쪟 6媛?
+
+寃쎄낵 ?쒓컙: 00:00:00.26
+
+
+
+Checking whether CXX compiler struct stat has st_mtim member failed to compile with the following output:
+Change Dir: 'D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_484f1.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+msbuild 踰꾩쟾 17.13.19+0d9f5a35a(.NET Framework??
+鍮뚮뱶 ?쒖옉: 2025-05-28 ?ㅽ썑 4:13:14
+
+1 ?몃뱶??"D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWSys\vtksys\CMakeFiles\CMakeTmp\cmTC_484f1.vcxproj" ?꾨줈?앺듃(湲곕낯 ????낅땲??
+PrepareForBuild:
+  "cmTC_484f1.dir\Debug\" ?붾젆?곕━瑜?留뚮뱾怨??덉뒿?덈떎.
+  援ъ“??異쒕젰???ъ슜?????덉뒿?덈떎. 而댄뙆?쇰윭 吏꾨떒???쒖떇? ?ㅻ쪟 怨꾩링 援ъ“瑜?諛섏쁺?⑸땲?? ?먯꽭???댁슜? https://aka.ms/cpp/structured-output??李몄“?섏꽭??
+  "D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWSys\vtksys\CMakeFiles\CMakeTmp\Debug\" ?붾젆?곕━瑜?留뚮뱾怨??덉뒿?덈떎.
+  "cmTC_484f1.dir\Debug\cmTC_484f1.tlog\" ?붾젆?곕━瑜?留뚮뱾怨??덉뒿?덈떎.
+InitializeBuildStatus:
+  "AlwaysCreate"??媛) 吏?뺣릺?덇린 ?뚮Ц??"cmTC_484f1.dir\Debug\cmTC_484f1.tlog\unsuccessfulbuild"??瑜? 留뚮뱾怨??덉뒿?덈떎.
+  "cmTC_484f1.dir\Debug\cmTC_484f1.tlog\unsuccessfulbuild"???곌껐(touching)?섍퀬 ?덉뒿?덈떎.
+VcpkgTripletSelection:
+  Using triplet "x64-windows" from "D:\vcpkg\installed\x64-windows\"
+  Using normalized configuration "Debug"
+ClCompile:
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\bin\HostX64\x64\CL.exe /c /I"D:\vcpkg\installed\x64-windows\include" /Zi /W4 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D TEST_KWSYS_CXX_STAT_HAS_ST_MTIM /D "CMAKE_INTDIR=\"Debug\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_484f1.dir\Debug\\" /Fd"cmTC_484f1.dir\Debug\vc143.pdb" /external:W4 /Gd /TP /errorReport:queue  /bigobj /utf-8 "D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Utilities\KWSys\vtksys\kwsysPlatformTestsCXX.cxx"
+  Microsoft (R) C/C++ 理쒖쟻??而댄뙆?쇰윭 踰꾩쟾 19.43.34810(x64)
+  Copyright (c) Microsoft Corporation. All rights reserved.
+  cl /c /I"D:\vcpkg\installed\x64-windows\include" /Zi /W4 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D TEST_KWSYS_CXX_STAT_HAS_ST_MTIM /D "CMAKE_INTDIR=\"Debug\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_484f1.dir\Debug\\" /Fd"cmTC_484f1.dir\Debug\vc143.pdb" /external:W4 /Gd /TP /errorReport:queue  /bigobj /utf-8 "D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Utilities\KWSys\vtksys\kwsysPlatformTestsCXX.cxx"
+  kwsysPlatformTestsCXX.cxx
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Utilities\KWSys\vtksys\kwsysPlatformTestsCXX.cxx(8,12): error C1083: ?ы븿 ?뚯씪???????놁뒿?덈떎. 'unistd.h': No such file or directory [D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWSys\vtksys\CMakeFiles\CMakeTmp\cmTC_484f1.vcxproj]
+"D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWSys\vtksys\CMakeFiles\CMakeTmp\cmTC_484f1.vcxproj" ?꾨줈?앺듃瑜?鍮뚮뱶?덉뒿?덈떎(湲곕낯 ???. - ?ㅽ뙣
+
+鍮뚮뱶?섏? 紐삵뻽?듬땲??
+
+"D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWSys\vtksys\CMakeFiles\CMakeTmp\cmTC_484f1.vcxproj"(湲곕낯 ???(1)->
+(ClCompile ??? -> 
+  D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Utilities\KWSys\vtksys\kwsysPlatformTestsCXX.cxx(8,12): error C1083: ?ы븿 ?뚯씪???????놁뒿?덈떎. 'unistd.h': No such file or directory [D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWSys\vtksys\CMakeFiles\CMakeTmp\cmTC_484f1.vcxproj]
+
+    寃쎄퀬 0媛?
+    ?ㅻ쪟 1媛?
+
+寃쎄낵 ?쒓컙: 00:00:00.26
+
+
+
+Checking whether CXX compiler struct stat has st_mtimespec member failed to compile with the following output:
+Change Dir: 'D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_9fccd.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+msbuild 踰꾩쟾 17.13.19+0d9f5a35a(.NET Framework??
+鍮뚮뱶 ?쒖옉: 2025-05-28 ?ㅽ썑 4:13:14
+
+1 ?몃뱶??"D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWSys\vtksys\CMakeFiles\CMakeTmp\cmTC_9fccd.vcxproj" ?꾨줈?앺듃(湲곕낯 ????낅땲??
+PrepareForBuild:
+  "cmTC_9fccd.dir\Debug\" ?붾젆?곕━瑜?留뚮뱾怨??덉뒿?덈떎.
+  援ъ“??異쒕젰???ъ슜?????덉뒿?덈떎. 而댄뙆?쇰윭 吏꾨떒???쒖떇? ?ㅻ쪟 怨꾩링 援ъ“瑜?諛섏쁺?⑸땲?? ?먯꽭???댁슜? https://aka.ms/cpp/structured-output??李몄“?섏꽭??
+  "D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWSys\vtksys\CMakeFiles\CMakeTmp\Debug\" ?붾젆?곕━瑜?留뚮뱾怨??덉뒿?덈떎.
+  "cmTC_9fccd.dir\Debug\cmTC_9fccd.tlog\" ?붾젆?곕━瑜?留뚮뱾怨??덉뒿?덈떎.
+InitializeBuildStatus:
+  "AlwaysCreate"??媛) 吏?뺣릺?덇린 ?뚮Ц??"cmTC_9fccd.dir\Debug\cmTC_9fccd.tlog\unsuccessfulbuild"??瑜? 留뚮뱾怨??덉뒿?덈떎.
+  "cmTC_9fccd.dir\Debug\cmTC_9fccd.tlog\unsuccessfulbuild"???곌껐(touching)?섍퀬 ?덉뒿?덈떎.
+VcpkgTripletSelection:
+  Using triplet "x64-windows" from "D:\vcpkg\installed\x64-windows\"
+  Using normalized configuration "Debug"
+ClCompile:
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\bin\HostX64\x64\CL.exe /c /I"D:\vcpkg\installed\x64-windows\include" /Zi /W4 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D TEST_KWSYS_CXX_STAT_HAS_ST_MTIMESPEC /D "CMAKE_INTDIR=\"Debug\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_9fccd.dir\Debug\\" /Fd"cmTC_9fccd.dir\Debug\vc143.pdb" /external:W4 /Gd /TP /errorReport:queue  /bigobj /utf-8 "D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Utilities\KWSys\vtksys\kwsysPlatformTestsCXX.cxx"
+  Microsoft (R) C/C++ 理쒖쟻??而댄뙆?쇰윭 踰꾩쟾 19.43.34810(x64)
+  Copyright (c) Microsoft Corporation. All rights reserved.
+  cl /c /I"D:\vcpkg\installed\x64-windows\include" /Zi /W4 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D TEST_KWSYS_CXX_STAT_HAS_ST_MTIMESPEC /D "CMAKE_INTDIR=\"Debug\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_9fccd.dir\Debug\\" /Fd"cmTC_9fccd.dir\Debug\vc143.pdb" /external:W4 /Gd /TP /errorReport:queue  /bigobj /utf-8 "D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Utilities\KWSys\vtksys\kwsysPlatformTestsCXX.cxx"
+  kwsysPlatformTestsCXX.cxx
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Utilities\KWSys\vtksys\kwsysPlatformTestsCXX.cxx(22,12): error C1083: ?ы븿 ?뚯씪???????놁뒿?덈떎. 'unistd.h': No such file or directory [D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWSys\vtksys\CMakeFiles\CMakeTmp\cmTC_9fccd.vcxproj]
+"D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWSys\vtksys\CMakeFiles\CMakeTmp\cmTC_9fccd.vcxproj" ?꾨줈?앺듃瑜?鍮뚮뱶?덉뒿?덈떎(湲곕낯 ???. - ?ㅽ뙣
+
+鍮뚮뱶?섏? 紐삵뻽?듬땲??
+
+"D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWSys\vtksys\CMakeFiles\CMakeTmp\cmTC_9fccd.vcxproj"(湲곕낯 ???(1)->
+(ClCompile ??? -> 
+  D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Utilities\KWSys\vtksys\kwsysPlatformTestsCXX.cxx(22,12): error C1083: ?ы븿 ?뚯씪???????놁뒿?덈떎. 'unistd.h': No such file or directory [D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWSys\vtksys\CMakeFiles\CMakeTmp\cmTC_9fccd.vcxproj]
+
+    寃쎄퀬 0媛?
+    ?ㅻ쪟 1媛?
+
+寃쎄낵 ?쒓컙: 00:00:00.26
+
+
+
+Checking whether CXX compiler has rlimit64 failed to compile with the following output:
+Change Dir: 'D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_cbdf0.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+msbuild 踰꾩쟾 17.13.19+0d9f5a35a(.NET Framework??
+鍮뚮뱶 ?쒖옉: 2025-05-28 ?ㅽ썑 4:13:16
+
+1 ?몃뱶??"D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWSys\vtksys\CMakeFiles\CMakeTmp\cmTC_cbdf0.vcxproj" ?꾨줈?앺듃(湲곕낯 ????낅땲??
+PrepareForBuild:
+  "cmTC_cbdf0.dir\Debug\" ?붾젆?곕━瑜?留뚮뱾怨??덉뒿?덈떎.
+  援ъ“??異쒕젰???ъ슜?????덉뒿?덈떎. 而댄뙆?쇰윭 吏꾨떒???쒖떇? ?ㅻ쪟 怨꾩링 援ъ“瑜?諛섏쁺?⑸땲?? ?먯꽭???댁슜? https://aka.ms/cpp/structured-output??李몄“?섏꽭??
+  "D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWSys\vtksys\CMakeFiles\CMakeTmp\Debug\" ?붾젆?곕━瑜?留뚮뱾怨??덉뒿?덈떎.
+  "cmTC_cbdf0.dir\Debug\cmTC_cbdf0.tlog\" ?붾젆?곕━瑜?留뚮뱾怨??덉뒿?덈떎.
+InitializeBuildStatus:
+  "AlwaysCreate"??媛) 吏?뺣릺?덇린 ?뚮Ц??"cmTC_cbdf0.dir\Debug\cmTC_cbdf0.tlog\unsuccessfulbuild"??瑜? 留뚮뱾怨??덉뒿?덈떎.
+  "cmTC_cbdf0.dir\Debug\cmTC_cbdf0.tlog\unsuccessfulbuild"???곌껐(touching)?섍퀬 ?덉뒿?덈떎.
+VcpkgTripletSelection:
+  Using triplet "x64-windows" from "D:\vcpkg\installed\x64-windows\"
+  Using normalized configuration "Debug"
+ClCompile:
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\bin\HostX64\x64\CL.exe /c /I"D:\vcpkg\installed\x64-windows\include" /Zi /W4 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D TEST_KWSYS_CXX_HAS_RLIMIT64 /D "CMAKE_INTDIR=\"Debug\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_cbdf0.dir\Debug\\" /Fd"cmTC_cbdf0.dir\Debug\vc143.pdb" /external:W4 /Gd /TP /errorReport:queue  /bigobj /utf-8 "D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Utilities\KWSys\vtksys\kwsysPlatformTestsCXX.cxx"
+  Microsoft (R) C/C++ 理쒖쟻??而댄뙆?쇰윭 踰꾩쟾 19.43.34810(x64)
+  Copyright (c) Microsoft Corporation. All rights reserved.
+  cl /c /I"D:\vcpkg\installed\x64-windows\include" /Zi /W4 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D TEST_KWSYS_CXX_HAS_RLIMIT64 /D "CMAKE_INTDIR=\"Debug\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_cbdf0.dir\Debug\\" /Fd"cmTC_cbdf0.dir\Debug\vc143.pdb" /external:W4 /Gd /TP /errorReport:queue  /bigobj /utf-8 "D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Utilities\KWSys\vtksys\kwsysPlatformTestsCXX.cxx"
+  kwsysPlatformTestsCXX.cxx
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Utilities\KWSys\vtksys\kwsysPlatformTestsCXX.cxx(72,12): error C1083: ?ы븿 ?뚯씪???????놁뒿?덈떎. 'sys/resource.h': No such file or directory [D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWSys\vtksys\CMakeFiles\CMakeTmp\cmTC_cbdf0.vcxproj]
+"D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWSys\vtksys\CMakeFiles\CMakeTmp\cmTC_cbdf0.vcxproj" ?꾨줈?앺듃瑜?鍮뚮뱶?덉뒿?덈떎(湲곕낯 ???. - ?ㅽ뙣
+
+鍮뚮뱶?섏? 紐삵뻽?듬땲??
+
+"D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWSys\vtksys\CMakeFiles\CMakeTmp\cmTC_cbdf0.vcxproj"(湲곕낯 ???(1)->
+(ClCompile ??? -> 
+  D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Utilities\KWSys\vtksys\kwsysPlatformTestsCXX.cxx(72,12): error C1083: ?ы븿 ?뚯씪???????놁뒿?덈떎. 'sys/resource.h': No such file or directory [D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWSys\vtksys\CMakeFiles\CMakeTmp\cmTC_cbdf0.vcxproj]
+
+    寃쎄퀬 0媛?
+    ?ㅻ쪟 1媛?
+
+寃쎄낵 ?쒓컙: 00:00:00.27
+
+
+
+Checking whether <ext/stdio_filebuf.h> is available failed to compile with the following output:
+Change Dir: 'D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_1124a.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+msbuild 踰꾩쟾 17.13.19+0d9f5a35a(.NET Framework??
+鍮뚮뱶 ?쒖옉: 2025-05-28 ?ㅽ썑 4:13:17
+
+1 ?몃뱶??"D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWSys\vtksys\CMakeFiles\CMakeTmp\cmTC_1124a.vcxproj" ?꾨줈?앺듃(湲곕낯 ????낅땲??
+PrepareForBuild:
+  "cmTC_1124a.dir\Debug\" ?붾젆?곕━瑜?留뚮뱾怨??덉뒿?덈떎.
+  援ъ“??異쒕젰???ъ슜?????덉뒿?덈떎. 而댄뙆?쇰윭 吏꾨떒???쒖떇? ?ㅻ쪟 怨꾩링 援ъ“瑜?諛섏쁺?⑸땲?? ?먯꽭???댁슜? https://aka.ms/cpp/structured-output??李몄“?섏꽭??
+  "D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWSys\vtksys\CMakeFiles\CMakeTmp\Debug\" ?붾젆?곕━瑜?留뚮뱾怨??덉뒿?덈떎.
+  "cmTC_1124a.dir\Debug\cmTC_1124a.tlog\" ?붾젆?곕━瑜?留뚮뱾怨??덉뒿?덈떎.
+InitializeBuildStatus:
+  "AlwaysCreate"??媛) 吏?뺣릺?덇린 ?뚮Ц??"cmTC_1124a.dir\Debug\cmTC_1124a.tlog\unsuccessfulbuild"??瑜? 留뚮뱾怨??덉뒿?덈떎.
+  "cmTC_1124a.dir\Debug\cmTC_1124a.tlog\unsuccessfulbuild"???곌껐(touching)?섍퀬 ?덉뒿?덈떎.
+VcpkgTripletSelection:
+  Using triplet "x64-windows" from "D:\vcpkg\installed\x64-windows\"
+  Using normalized configuration "Debug"
+ClCompile:
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\bin\HostX64\x64\CL.exe /c /I"D:\vcpkg\installed\x64-windows\include" /Zi /W4 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D TEST_KWSYS_CXX_HAS_EXT_STDIO_FILEBUF_H /D "CMAKE_INTDIR=\"Debug\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_1124a.dir\Debug\\" /Fd"cmTC_1124a.dir\Debug\vc143.pdb" /external:W4 /Gd /TP /errorReport:queue  /bigobj /utf-8 "D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Utilities\KWSys\vtksys\kwsysPlatformTestsCXX.cxx"
+  Microsoft (R) C/C++ 理쒖쟻??而댄뙆?쇰윭 踰꾩쟾 19.43.34810(x64)
+  Copyright (c) Microsoft Corporation. All rights reserved.
+  cl /c /I"D:\vcpkg\installed\x64-windows\include" /Zi /W4 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D TEST_KWSYS_CXX_HAS_EXT_STDIO_FILEBUF_H /D "CMAKE_INTDIR=\"Debug\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_1124a.dir\Debug\\" /Fd"cmTC_1124a.dir\Debug\vc143.pdb" /external:W4 /Gd /TP /errorReport:queue  /bigobj /utf-8 "D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Utilities\KWSys\vtksys\kwsysPlatformTestsCXX.cxx"
+  kwsysPlatformTestsCXX.cxx
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Utilities\KWSys\vtksys\kwsysPlatformTestsCXX.cxx(169,12): error C1083: ?ы븿 ?뚯씪???????놁뒿?덈떎. 'ext/stdio_filebuf.h': No such file or directory [D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWSys\vtksys\CMakeFiles\CMakeTmp\cmTC_1124a.vcxproj]
+"D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWSys\vtksys\CMakeFiles\CMakeTmp\cmTC_1124a.vcxproj" ?꾨줈?앺듃瑜?鍮뚮뱶?덉뒿?덈떎(湲곕낯 ???. - ?ㅽ뙣
+
+鍮뚮뱶?섏? 紐삵뻽?듬땲??
+
+"D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWSys\vtksys\CMakeFiles\CMakeTmp\cmTC_1124a.vcxproj"(湲곕낯 ???(1)->
+(ClCompile ??? -> 
+  D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Utilities\KWSys\vtksys\kwsysPlatformTestsCXX.cxx(169,12): error C1083: ?ы븿 ?뚯씪???????놁뒿?덈떎. 'ext/stdio_filebuf.h': No such file or directory [D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Utilities\KWSys\vtksys\CMakeFiles\CMakeTmp\cmTC_1124a.vcxproj]
+
+    寃쎄퀬 0媛?
+    ?ㅻ쪟 1媛?
+
+寃쎄낵 ?쒓컙: 00:00:00.26
+
+
+
+Test H5_LDOUBLE_TO_LONG_SPECIAL Run failed with the following output and exit code:
+ Change Dir: 'D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_8ca25.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+msbuild 踰꾩쟾 17.13.19+0d9f5a35a(.NET Framework??
+鍮뚮뱶 ?쒖옉: 2025-05-28 ?ㅽ썑 4:15:44
+
+1 ?몃뱶??"D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\CMakeTmp\cmTC_8ca25.vcxproj" ?꾨줈?앺듃(湲곕낯 ????낅땲??
+PrepareForBuild:
+  "cmTC_8ca25.dir\Debug\" ?붾젆?곕━瑜?留뚮뱾怨??덉뒿?덈떎.
+  援ъ“??異쒕젰???ъ슜?????덉뒿?덈떎. 而댄뙆?쇰윭 吏꾨떒???쒖떇? ?ㅻ쪟 怨꾩링 援ъ“瑜?諛섏쁺?⑸땲?? ?먯꽭???댁슜? https://aka.ms/cpp/structured-output??李몄“?섏꽭??
+  "D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\CMakeTmp\Debug\" ?붾젆?곕━瑜?留뚮뱾怨??덉뒿?덈떎.
+  "cmTC_8ca25.dir\Debug\cmTC_8ca25.tlog\" ?붾젆?곕━瑜?留뚮뱾怨??덉뒿?덈떎.
+InitializeBuildStatus:
+  "AlwaysCreate"??媛) 吏?뺣릺?덇린 ?뚮Ц??"cmTC_8ca25.dir\Debug\cmTC_8ca25.tlog\unsuccessfulbuild"??瑜? 留뚮뱾怨??덉뒿?덈떎.
+  "cmTC_8ca25.dir\Debug\cmTC_8ca25.tlog\unsuccessfulbuild"???곌껐(touching)?섍퀬 ?덉뒿?덈떎.
+VcpkgTripletSelection:
+  Using triplet "x64-windows" from "D:\vcpkg\installed\x64-windows\"
+  Using normalized configuration "Debug"
+ClCompile:
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\bin\HostX64\x64\CL.exe /c /I"D:\vcpkg\installed\x64-windows\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D H5_LDOUBLE_TO_LONG_SPECIAL_TEST /D "CMAKE_INTDIR=\"Debug\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_8ca25.dir\Debug\\" /Fd"cmTC_8ca25.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue  /bigobj /utf-8 "D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\config\cmake\ConversionTests.c"
+  Microsoft (R) C/C++ 理쒖쟻??而댄뙆?쇰윭 踰꾩쟾 19.43.34810(x64)
+  Copyright (c) Microsoft Corporation. All rights reserved.
+  cl /c /I"D:\vcpkg\installed\x64-windows\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D H5_LDOUBLE_TO_LONG_SPECIAL_TEST /D "CMAKE_INTDIR=\"Debug\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_8ca25.dir\Debug\\" /Fd"cmTC_8ca25.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue  /bigobj /utf-8 "D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\config\cmake\ConversionTests.c"
+  ConversionTests.c
+Link:
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\bin\HostX64\x64\link.exe /ERRORREPORT:QUEUE /OUT:"D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\CMakeTmp\Debug\cmTC_8ca25.exe" /INCREMENTAL /ILK:"cmTC_8ca25.dir\Debug\cmTC_8ca25.ilk" /NOLOGO /LIBPATH:"D:\vcpkg\installed\x64-windows\debug\lib" /LIBPATH:"D:\vcpkg\installed\x64-windows\debug\lib\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "D:\vcpkg\installed\x64-windows\debug\lib\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/CMakeFiles/CMakeTmp/Debug/cmTC_8ca25.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/CMakeFiles/CMakeTmp/Debug/cmTC_8ca25.lib" /MACHINE:X64  /machine:x64 cmTC_8ca25.dir\Debug\ConversionTests.obj
+  cmTC_8ca25.vcxproj -> D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\CMakeTmp\Debug\cmTC_8ca25.exe
+AppLocalFromInstalled:
+  pwsh.exe -ExecutionPolicy Bypass -noprofile -File "D:\vcpkg\scripts\buildsystems\msbuild\applocal.ps1" "D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\CMakeTmp\Debug\cmTC_8ca25.exe" "D:\vcpkg\installed\x64-windows\debug\bin" "cmTC_8ca25.dir\Debug\cmTC_8ca25.tlog\cmTC_8ca25.write.1u.tlog" "cmTC_8ca25.dir\Debug\vcpkg.applocal.log"
+  'pwsh.exe'?(?? ?대? ?먮뒗 ?몃? 紐낅졊, ?ㅽ뻾?????덈뒗 ?꾨줈洹몃옩, ?먮뒗
+  諛곗튂 ?뚯씪???꾨떃?덈떎.
+  "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "D:\vcpkg\scripts\buildsystems\msbuild\applocal.ps1" "D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\CMakeTmp\Debug\cmTC_8ca25.exe" "D:\vcpkg\installed\x64-windows\debug\bin" "cmTC_8ca25.dir\Debug\cmTC_8ca25.tlog\cmTC_8ca25.write.1u.tlog" "cmTC_8ca25.dir\Debug\vcpkg.applocal.log"" 紐낅졊??醫낅즺?섏뿀?듬땲??肄붾뱶: 9009).
+  "C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "D:\vcpkg\scripts\buildsystems\msbuild\applocal.ps1" "D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\CMakeTmp\Debug\cmTC_8ca25.exe" "D:\vcpkg\installed\x64-windows\debug\bin" "cmTC_8ca25.dir\Debug\cmTC_8ca25.tlog\cmTC_8ca25.write.1u.tlog" "cmTC_8ca25.dir\Debug\vcpkg.applocal.log"
+FinalizeBuildStatus:
+  "cmTC_8ca25.dir\Debug\cmTC_8ca25.tlog\unsuccessfulbuild" ?뚯씪????젣?섍퀬 ?덉뒿?덈떎.
+  "cmTC_8ca25.dir\Debug\cmTC_8ca25.tlog\cmTC_8ca25.lastbuildstate"???곌껐(touching)?섍퀬 ?덉뒿?덈떎.
+"D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\CMakeTmp\cmTC_8ca25.vcxproj" ?꾨줈?앺듃瑜?鍮뚮뱶?덉뒿?덈떎(湲곕낯 ???.
+
+鍮뚮뱶?덉뒿?덈떎.
+    寃쎄퀬 0媛?
+    ?ㅻ쪟 0媛?
+
+寃쎄낵 ?쒓컙: 00:00:00.88
+
+
+Test H5_LONG_TO_LDOUBLE_SPECIAL Run failed with the following output and exit code:
+ Change Dir: 'D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_b945e.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+msbuild 踰꾩쟾 17.13.19+0d9f5a35a(.NET Framework??
+鍮뚮뱶 ?쒖옉: 2025-05-28 ?ㅽ썑 4:15:45
+
+1 ?몃뱶??"D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\CMakeTmp\cmTC_b945e.vcxproj" ?꾨줈?앺듃(湲곕낯 ????낅땲??
+PrepareForBuild:
+  "cmTC_b945e.dir\Debug\" ?붾젆?곕━瑜?留뚮뱾怨??덉뒿?덈떎.
+  援ъ“??異쒕젰???ъ슜?????덉뒿?덈떎. 而댄뙆?쇰윭 吏꾨떒???쒖떇? ?ㅻ쪟 怨꾩링 援ъ“瑜?諛섏쁺?⑸땲?? ?먯꽭???댁슜? https://aka.ms/cpp/structured-output??李몄“?섏꽭??
+  "D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\CMakeTmp\Debug\" ?붾젆?곕━瑜?留뚮뱾怨??덉뒿?덈떎.
+  "cmTC_b945e.dir\Debug\cmTC_b945e.tlog\" ?붾젆?곕━瑜?留뚮뱾怨??덉뒿?덈떎.
+InitializeBuildStatus:
+  "AlwaysCreate"??媛) 吏?뺣릺?덇린 ?뚮Ц??"cmTC_b945e.dir\Debug\cmTC_b945e.tlog\unsuccessfulbuild"??瑜? 留뚮뱾怨??덉뒿?덈떎.
+  "cmTC_b945e.dir\Debug\cmTC_b945e.tlog\unsuccessfulbuild"???곌껐(touching)?섍퀬 ?덉뒿?덈떎.
+VcpkgTripletSelection:
+  Using triplet "x64-windows" from "D:\vcpkg\installed\x64-windows\"
+  Using normalized configuration "Debug"
+ClCompile:
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\bin\HostX64\x64\CL.exe /c /I"D:\vcpkg\installed\x64-windows\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D H5_LONG_TO_LDOUBLE_SPECIAL_TEST /D "CMAKE_INTDIR=\"Debug\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b945e.dir\Debug\\" /Fd"cmTC_b945e.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue  /bigobj /utf-8 "D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\config\cmake\ConversionTests.c"
+  Microsoft (R) C/C++ 理쒖쟻??而댄뙆?쇰윭 踰꾩쟾 19.43.34810(x64)
+  Copyright (c) Microsoft Corporation. All rights reserved.
+  cl /c /I"D:\vcpkg\installed\x64-windows\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D H5_LONG_TO_LDOUBLE_SPECIAL_TEST /D "CMAKE_INTDIR=\"Debug\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b945e.dir\Debug\\" /Fd"cmTC_b945e.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue  /bigobj /utf-8 "D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\config\cmake\ConversionTests.c"
+  ConversionTests.c
+Link:
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\bin\HostX64\x64\link.exe /ERRORREPORT:QUEUE /OUT:"D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\CMakeTmp\Debug\cmTC_b945e.exe" /INCREMENTAL /ILK:"cmTC_b945e.dir\Debug\cmTC_b945e.ilk" /NOLOGO /LIBPATH:"D:\vcpkg\installed\x64-windows\debug\lib" /LIBPATH:"D:\vcpkg\installed\x64-windows\debug\lib\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "D:\vcpkg\installed\x64-windows\debug\lib\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/CMakeFiles/CMakeTmp/Debug/cmTC_b945e.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/CMakeFiles/CMakeTmp/Debug/cmTC_b945e.lib" /MACHINE:X64  /machine:x64 cmTC_b945e.dir\Debug\ConversionTests.obj
+  cmTC_b945e.vcxproj -> D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\CMakeTmp\Debug\cmTC_b945e.exe
+AppLocalFromInstalled:
+  pwsh.exe -ExecutionPolicy Bypass -noprofile -File "D:\vcpkg\scripts\buildsystems\msbuild\applocal.ps1" "D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\CMakeTmp\Debug\cmTC_b945e.exe" "D:\vcpkg\installed\x64-windows\debug\bin" "cmTC_b945e.dir\Debug\cmTC_b945e.tlog\cmTC_b945e.write.1u.tlog" "cmTC_b945e.dir\Debug\vcpkg.applocal.log"
+  'pwsh.exe'?(?? ?대? ?먮뒗 ?몃? 紐낅졊, ?ㅽ뻾?????덈뒗 ?꾨줈洹몃옩, ?먮뒗
+  諛곗튂 ?뚯씪???꾨떃?덈떎.
+  "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "D:\vcpkg\scripts\buildsystems\msbuild\applocal.ps1" "D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\CMakeTmp\Debug\cmTC_b945e.exe" "D:\vcpkg\installed\x64-windows\debug\bin" "cmTC_b945e.dir\Debug\cmTC_b945e.tlog\cmTC_b945e.write.1u.tlog" "cmTC_b945e.dir\Debug\vcpkg.applocal.log"" 紐낅졊??醫낅즺?섏뿀?듬땲??肄붾뱶: 9009).
+  "C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "D:\vcpkg\scripts\buildsystems\msbuild\applocal.ps1" "D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\CMakeTmp\Debug\cmTC_b945e.exe" "D:\vcpkg\installed\x64-windows\debug\bin" "cmTC_b945e.dir\Debug\cmTC_b945e.tlog\cmTC_b945e.write.1u.tlog" "cmTC_b945e.dir\Debug\vcpkg.applocal.log"
+FinalizeBuildStatus:
+  "cmTC_b945e.dir\Debug\cmTC_b945e.tlog\unsuccessfulbuild" ?뚯씪????젣?섍퀬 ?덉뒿?덈떎.
+  "cmTC_b945e.dir\Debug\cmTC_b945e.tlog\cmTC_b945e.lastbuildstate"???곌껐(touching)?섍퀬 ?덉뒿?덈떎.
+"D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\CMakeTmp\cmTC_b945e.vcxproj" ?꾨줈?앺듃瑜?鍮뚮뱶?덉뒿?덈떎(湲곕낯 ???.
+
+鍮뚮뱶?덉뒿?덈떎.
+    寃쎄퀬 0媛?
+    ?ㅻ쪟 0媛?
+
+寃쎄낵 ?쒓컙: 00:00:00.83
+
+
+Test H5_DISABLE_SOME_LDOUBLE_CONV Compile failed with the following output:
+ Change Dir: 'D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_ad5a2.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+msbuild 踰꾩쟾 17.13.19+0d9f5a35a(.NET Framework??
+鍮뚮뱶 ?쒖옉: 2025-05-28 ?ㅽ썑 4:15:48
+
+1 ?몃뱶??"D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\CMakeTmp\cmTC_ad5a2.vcxproj" ?꾨줈?앺듃(湲곕낯 ????낅땲??
+PrepareForBuild:
+  "cmTC_ad5a2.dir\Debug\" ?붾젆?곕━瑜?留뚮뱾怨??덉뒿?덈떎.
+  援ъ“??異쒕젰???ъ슜?????덉뒿?덈떎. 而댄뙆?쇰윭 吏꾨떒???쒖떇? ?ㅻ쪟 怨꾩링 援ъ“瑜?諛섏쁺?⑸땲?? ?먯꽭???댁슜? https://aka.ms/cpp/structured-output??李몄“?섏꽭??
+  "D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\CMakeTmp\Debug\" ?붾젆?곕━瑜?留뚮뱾怨??덉뒿?덈떎.
+  "cmTC_ad5a2.dir\Debug\cmTC_ad5a2.tlog\" ?붾젆?곕━瑜?留뚮뱾怨??덉뒿?덈떎.
+InitializeBuildStatus:
+  "AlwaysCreate"??媛) 吏?뺣릺?덇린 ?뚮Ц??"cmTC_ad5a2.dir\Debug\cmTC_ad5a2.tlog\unsuccessfulbuild"??瑜? 留뚮뱾怨??덉뒿?덈떎.
+  "cmTC_ad5a2.dir\Debug\cmTC_ad5a2.tlog\unsuccessfulbuild"???곌껐(touching)?섍퀬 ?덉뒿?덈떎.
+VcpkgTripletSelection:
+  Using triplet "x64-windows" from "D:\vcpkg\installed\x64-windows\"
+  Using normalized configuration "Debug"
+ClCompile:
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\bin\HostX64\x64\CL.exe /c /I"D:\vcpkg\installed\x64-windows\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D H5_DISABLE_SOME_LDOUBLE_CONV_TEST /D "CMAKE_INTDIR=\"Debug\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ad5a2.dir\Debug\\" /Fd"cmTC_ad5a2.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue  /bigobj /utf-8 "D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\config\cmake\ConversionTests.c"
+  Microsoft (R) C/C++ 理쒖쟻??而댄뙆?쇰윭 踰꾩쟾 19.43.34810(x64)
+  Copyright (c) Microsoft Corporation. All rights reserved.
+  cl /c /I"D:\vcpkg\installed\x64-windows\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D H5_DISABLE_SOME_LDOUBLE_CONV_TEST /D "CMAKE_INTDIR=\"Debug\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ad5a2.dir\Debug\\" /Fd"cmTC_ad5a2.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue  /bigobj /utf-8 "D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\config\cmake\ConversionTests.c"
+  ConversionTests.c
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\config\cmake\ConversionTests.c(301,8): warning C4047: '=': 'FILE *'??媛꾩젒 李몄“ ?섏???'int'怨??) ?ㅻ쫭?덈떎. [D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\CMakeTmp\cmTC_ad5a2.vcxproj]
+Link:
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\bin\HostX64\x64\link.exe /ERRORREPORT:QUEUE /OUT:"D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\CMakeTmp\Debug\cmTC_ad5a2.exe" /INCREMENTAL /ILK:"cmTC_ad5a2.dir\Debug\cmTC_ad5a2.ilk" /NOLOGO /LIBPATH:"D:\vcpkg\installed\x64-windows\debug\lib" /LIBPATH:"D:\vcpkg\installed\x64-windows\debug\lib\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "D:\vcpkg\installed\x64-windows\debug\lib\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/CMakeFiles/CMakeTmp/Debug/cmTC_ad5a2.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/CMakeFiles/CMakeTmp/Debug/cmTC_ad5a2.lib" /MACHINE:X64  /machine:x64 cmTC_ad5a2.dir\Debug\ConversionTests.obj
+ConversionTests.obj : error LNK2019: popenmain ?⑥닔?먯꽌 李몄“?섎뒗 ?뺤씤?????녿뒗 ?몃? 湲고샇 [D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\CMakeTmp\cmTC_ad5a2.vcxproj]
+ConversionTests.obj : error LNK2019: pclosemain ?⑥닔?먯꽌 李몄“?섎뒗 ?뺤씤?????녿뒗 ?몃? 湲고샇 [D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\CMakeTmp\cmTC_ad5a2.vcxproj]
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\CMakeTmp\Debug\cmTC_ad5a2.exe : fatal error LNK1120: 2媛쒖쓽 ?뺤씤?????녿뒗 ?몃? 李몄“?낅땲?? [D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\CMakeTmp\cmTC_ad5a2.vcxproj]
+"D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\CMakeTmp\cmTC_ad5a2.vcxproj" ?꾨줈?앺듃瑜?鍮뚮뱶?덉뒿?덈떎(湲곕낯 ???. - ?ㅽ뙣
+
+鍮뚮뱶?섏? 紐삵뻽?듬땲??
+
+"D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\CMakeTmp\cmTC_ad5a2.vcxproj"(湲곕낯 ???(1)->
+(ClCompile ??? -> 
+  D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\config\cmake\ConversionTests.c(301,8): warning C4047: '=': 'FILE *'??媛꾩젒 李몄“ ?섏???'int'怨??) ?ㅻ쫭?덈떎. [D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\CMakeTmp\cmTC_ad5a2.vcxproj]
+
+
+"D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\CMakeTmp\cmTC_ad5a2.vcxproj"(湲곕낯 ???(1)->
+(Link ??? -> 
+  ConversionTests.obj : error LNK2019: popenmain ?⑥닔?먯꽌 李몄“?섎뒗 ?뺤씤?????녿뒗 ?몃? 湲고샇 [D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\CMakeTmp\cmTC_ad5a2.vcxproj]
+  ConversionTests.obj : error LNK2019: pclosemain ?⑥닔?먯꽌 李몄“?섎뒗 ?뺤씤?????녿뒗 ?몃? 湲고샇 [D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\CMakeTmp\cmTC_ad5a2.vcxproj]
+  D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\CMakeTmp\Debug\cmTC_ad5a2.exe : fatal error LNK1120: 2媛쒖쓽 ?뺤씤?????녿뒗 ?몃? 李몄“?낅땲?? [D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\CMakeTmp\cmTC_ad5a2.vcxproj]
+
+    寃쎄퀬 1媛?
+    ?ㅻ쪟 3媛?
+
+寃쎄낵 ?쒓컙: 00:00:00.49
+
+
+Determining if the HDF5 Multi_Dataset exists failed with the following output:
+Change Dir: 'D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_abaff.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+msbuild 踰꾩쟾 17.13.19+0d9f5a35a(.NET Framework??
+鍮뚮뱶 ?쒖옉: 2025-05-28 ?ㅽ썑 4:16:50
+
+1 ?몃뱶??"D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\CMakeTmp\cmTC_abaff.vcxproj" ?꾨줈?앺듃(湲곕낯 ????낅땲??
+PrepareForBuild:
+  "cmTC_abaff.dir\Debug\" ?붾젆?곕━瑜?留뚮뱾怨??덉뒿?덈떎.
+  援ъ“??異쒕젰???ъ슜?????덉뒿?덈떎. 而댄뙆?쇰윭 吏꾨떒???쒖떇? ?ㅻ쪟 怨꾩링 援ъ“瑜?諛섏쁺?⑸땲?? ?먯꽭???댁슜? https://aka.ms/cpp/structured-output??李몄“?섏꽭??
+  "D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\CMakeTmp\Debug\" ?붾젆?곕━瑜?留뚮뱾怨??덉뒿?덈떎.
+  "cmTC_abaff.dir\Debug\cmTC_abaff.tlog\" ?붾젆?곕━瑜?留뚮뱾怨??덉뒿?덈떎.
+InitializeBuildStatus:
+  "AlwaysCreate"??媛) 吏?뺣릺?덇린 ?뚮Ц??"cmTC_abaff.dir\Debug\cmTC_abaff.tlog\unsuccessfulbuild"??瑜? 留뚮뱾怨??덉뒿?덈떎.
+  "cmTC_abaff.dir\Debug\cmTC_abaff.tlog\unsuccessfulbuild"???곌껐(touching)?섍퀬 ?덉뒿?덈떎.
+VcpkgTripletSelection:
+  Using triplet "x64-windows" from "D:\vcpkg\installed\x64-windows\"
+  Using normalized configuration "Debug"
+ClCompile:
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\bin\HostX64\x64\CL.exe /c /I"D:\vcpkg\installed\x64-windows\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_abaff.dir\Debug\\" /Fd"cmTC_abaff.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue  /bigobj /utf-8 "D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\CMakeTmp\test_HDF.c"
+  Microsoft (R) C/C++ 理쒖쟻??而댄뙆?쇰윭 踰꾩쟾 19.43.34810(x64)
+  Copyright (c) Microsoft Corporation. All rights reserved.
+  cl /c /I"D:\vcpkg\installed\x64-windows\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_abaff.dir\Debug\\" /Fd"cmTC_abaff.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue  /bigobj /utf-8 "D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\CMakeTmp\test_HDF.c"
+  test_HDF.c
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\CMakeTmp\test_HDF.c(2,11): error C1083: ?ы븿 ?뚯씪???????놁뒿?덈떎. 'hdf5.h': No such file or directory [D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\CMakeTmp\cmTC_abaff.vcxproj]
+"D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\CMakeTmp\cmTC_abaff.vcxproj" ?꾨줈?앺듃瑜?鍮뚮뱶?덉뒿?덈떎(湲곕낯 ???. - ?ㅽ뙣
+
+鍮뚮뱶?섏? 紐삵뻽?듬땲??
+
+"D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\CMakeTmp\cmTC_abaff.vcxproj"(湲곕낯 ???(1)->
+(ClCompile ??? -> 
+  D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\CMakeTmp\test_HDF.c(2,11): error C1083: ?ы븿 ?뚯씪???????놁뒿?덈떎. 'hdf5.h': No such file or directory [D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\CMakeTmp\cmTC_abaff.vcxproj]
+
+    寃쎄퀬 0媛?
+    ?ㅻ쪟 1媛?
+
+寃쎄낵 ?쒓컙: 00:00:00.51
+
+
+
+Determining if the HDF5 Collective_metadata exists failed with the following output:
+Change Dir: 'D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_aefb5.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+msbuild 踰꾩쟾 17.13.19+0d9f5a35a(.NET Framework??
+鍮뚮뱶 ?쒖옉: 2025-05-28 ?ㅽ썑 4:16:50
+
+1 ?몃뱶??"D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\CMakeTmp\cmTC_aefb5.vcxproj" ?꾨줈?앺듃(湲곕낯 ????낅땲??
+PrepareForBuild:
+  "cmTC_aefb5.dir\Debug\" ?붾젆?곕━瑜?留뚮뱾怨??덉뒿?덈떎.
+  援ъ“??異쒕젰???ъ슜?????덉뒿?덈떎. 而댄뙆?쇰윭 吏꾨떒???쒖떇? ?ㅻ쪟 怨꾩링 援ъ“瑜?諛섏쁺?⑸땲?? ?먯꽭???댁슜? https://aka.ms/cpp/structured-output??李몄“?섏꽭??
+  "D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\CMakeTmp\Debug\" ?붾젆?곕━瑜?留뚮뱾怨??덉뒿?덈떎.
+  "cmTC_aefb5.dir\Debug\cmTC_aefb5.tlog\" ?붾젆?곕━瑜?留뚮뱾怨??덉뒿?덈떎.
+InitializeBuildStatus:
+  "AlwaysCreate"??媛) 吏?뺣릺?덇린 ?뚮Ц??"cmTC_aefb5.dir\Debug\cmTC_aefb5.tlog\unsuccessfulbuild"??瑜? 留뚮뱾怨??덉뒿?덈떎.
+  "cmTC_aefb5.dir\Debug\cmTC_aefb5.tlog\unsuccessfulbuild"???곌껐(touching)?섍퀬 ?덉뒿?덈떎.
+VcpkgTripletSelection:
+  Using triplet "x64-windows" from "D:\vcpkg\installed\x64-windows\"
+  Using normalized configuration "Debug"
+ClCompile:
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\bin\HostX64\x64\CL.exe /c /I"D:\vcpkg\installed\x64-windows\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_aefb5.dir\Debug\\" /Fd"cmTC_aefb5.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue  /bigobj /utf-8 "D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\CMakeTmp\test_HDF.c"
+  Microsoft (R) C/C++ 理쒖쟻??而댄뙆?쇰윭 踰꾩쟾 19.43.34810(x64)
+  Copyright (c) Microsoft Corporation. All rights reserved.
+  cl /c /I"D:\vcpkg\installed\x64-windows\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_aefb5.dir\Debug\\" /Fd"cmTC_aefb5.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue  /bigobj /utf-8 "D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\CMakeTmp\test_HDF.c"
+  test_HDF.c
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\CMakeTmp\test_HDF.c(2,11): error C1083: ?ы븿 ?뚯씪???????놁뒿?덈떎. 'hdf5.h': No such file or directory [D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\CMakeTmp\cmTC_aefb5.vcxproj]
+"D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\CMakeTmp\cmTC_aefb5.vcxproj" ?꾨줈?앺듃瑜?鍮뚮뱶?덉뒿?덈떎(湲곕낯 ???. - ?ㅽ뙣
+
+鍮뚮뱶?섏? 紐삵뻽?듬땲??
+
+"D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\CMakeTmp\cmTC_aefb5.vcxproj"(湲곕낯 ???(1)->
+(ClCompile ??? -> 
+  D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\CMakeTmp\test_HDF.c(2,11): error C1083: ?ы븿 ?뚯씪???????놁뒿?덈떎. 'hdf5.h': No such file or directory [D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\CMakeTmp\cmTC_aefb5.vcxproj]
+
+    寃쎄퀬 0媛?
+    ?ㅻ쪟 1媛?
+
+寃쎄낵 ?쒓컙: 00:00:00.34
+
+
+
+Determining if the HDF5 H5Pset_file_space_strategy exists failed with the following output:
+Change Dir: 'D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_a83c7.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+msbuild 踰꾩쟾 17.13.19+0d9f5a35a(.NET Framework??
+鍮뚮뱶 ?쒖옉: 2025-05-28 ?ㅽ썑 4:16:51
+
+1 ?몃뱶??"D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\CMakeTmp\cmTC_a83c7.vcxproj" ?꾨줈?앺듃(湲곕낯 ????낅땲??
+PrepareForBuild:
+  "cmTC_a83c7.dir\Debug\" ?붾젆?곕━瑜?留뚮뱾怨??덉뒿?덈떎.
+  援ъ“??異쒕젰???ъ슜?????덉뒿?덈떎. 而댄뙆?쇰윭 吏꾨떒???쒖떇? ?ㅻ쪟 怨꾩링 援ъ“瑜?諛섏쁺?⑸땲?? ?먯꽭???댁슜? https://aka.ms/cpp/structured-output??李몄“?섏꽭??
+  "D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\CMakeTmp\Debug\" ?붾젆?곕━瑜?留뚮뱾怨??덉뒿?덈떎.
+  "cmTC_a83c7.dir\Debug\cmTC_a83c7.tlog\" ?붾젆?곕━瑜?留뚮뱾怨??덉뒿?덈떎.
+InitializeBuildStatus:
+  "AlwaysCreate"??媛) 吏?뺣릺?덇린 ?뚮Ц??"cmTC_a83c7.dir\Debug\cmTC_a83c7.tlog\unsuccessfulbuild"??瑜? 留뚮뱾怨??덉뒿?덈떎.
+  "cmTC_a83c7.dir\Debug\cmTC_a83c7.tlog\unsuccessfulbuild"???곌껐(touching)?섍퀬 ?덉뒿?덈떎.
+VcpkgTripletSelection:
+  Using triplet "x64-windows" from "D:\vcpkg\installed\x64-windows\"
+  Using normalized configuration "Debug"
+ClCompile:
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\bin\HostX64\x64\CL.exe /c /I"D:\vcpkg\installed\x64-windows\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_a83c7.dir\Debug\\" /Fd"cmTC_a83c7.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue  /bigobj /utf-8 "D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\CMakeTmp\test_HDF.c"
+  Microsoft (R) C/C++ 理쒖쟻??而댄뙆?쇰윭 踰꾩쟾 19.43.34810(x64)
+  Copyright (c) Microsoft Corporation. All rights reserved.
+  cl /c /I"D:\vcpkg\installed\x64-windows\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_a83c7.dir\Debug\\" /Fd"cmTC_a83c7.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue  /bigobj /utf-8 "D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\CMakeTmp\test_HDF.c"
+  test_HDF.c
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\CMakeTmp\test_HDF.c(2,11): error C1083: ?ы븿 ?뚯씪???????놁뒿?덈떎. 'hdf5.h': No such file or directory [D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\CMakeTmp\cmTC_a83c7.vcxproj]
+"D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\CMakeTmp\cmTC_a83c7.vcxproj" ?꾨줈?앺듃瑜?鍮뚮뱶?덉뒿?덈떎(湲곕낯 ???. - ?ㅽ뙣
+
+鍮뚮뱶?섏? 紐삵뻽?듬땲??
+
+"D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\CMakeTmp\cmTC_a83c7.vcxproj"(湲곕낯 ???(1)->
+(ClCompile ??? -> 
+  D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\CMakeTmp\test_HDF.c(2,11): error C1083: ?ы븿 ?뚯씪???????놁뒿?덈떎. 'hdf5.h': No such file or directory [D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\CMakeTmp\cmTC_a83c7.vcxproj]
+
+    寃쎄퀬 0媛?
+    ?ㅻ쪟 1媛?
+
+寃쎄낵 ?쒓컙: 00:00:00.41
+
+
+

@@ -1,0 +1,15 @@
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\zlib\vtkzlib\adler32.c;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\zlib\vtkzlib\zlib.dir\Debug\adler32.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\zlib\vtkzlib\compress.c;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\zlib\vtkzlib\zlib.dir\Debug\compress.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\zlib\vtkzlib\crc32.c;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\zlib\vtkzlib\zlib.dir\Debug\crc32.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\zlib\vtkzlib\deflate.c;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\zlib\vtkzlib\zlib.dir\Debug\deflate.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\zlib\vtkzlib\gzclose.c;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\zlib\vtkzlib\zlib.dir\Debug\gzclose.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\zlib\vtkzlib\gzlib.c;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\zlib\vtkzlib\zlib.dir\Debug\gzlib.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\zlib\vtkzlib\gzread.c;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\zlib\vtkzlib\zlib.dir\Debug\gzread.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\zlib\vtkzlib\gzwrite.c;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\zlib\vtkzlib\zlib.dir\Debug\gzwrite.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\zlib\vtkzlib\inflate.c;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\zlib\vtkzlib\zlib.dir\Debug\inflate.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\zlib\vtkzlib\infback.c;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\zlib\vtkzlib\zlib.dir\Debug\infback.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\zlib\vtkzlib\inftrees.c;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\zlib\vtkzlib\zlib.dir\Debug\inftrees.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\zlib\vtkzlib\inffast.c;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\zlib\vtkzlib\zlib.dir\Debug\inffast.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\zlib\vtkzlib\trees.c;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\zlib\vtkzlib\zlib.dir\Debug\trees.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\zlib\vtkzlib\uncompr.c;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\zlib\vtkzlib\zlib.dir\Debug\uncompr.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\zlib\vtkzlib\zutil.c;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\zlib\vtkzlib\zlib.dir\Debug\zutil.obj

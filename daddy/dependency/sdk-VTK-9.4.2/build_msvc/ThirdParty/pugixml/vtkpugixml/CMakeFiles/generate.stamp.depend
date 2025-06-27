@@ -1,0 +1,9 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDependentOption.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CMakePackageConfigHelpers.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CTest.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CTestUseLaunchers.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/GNUInstallDirs.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/WriteBasicConfigVersionFile.cmake
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/pugixml/vtkpugixml/CMakeLists.txt
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/pugixml/vtkpugixml/src/pugiconfig.hpp.in

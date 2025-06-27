@@ -1,0 +1,7 @@
+﻿  vtkMetaImageReader.cxx
+  vtkMetaImageWriter.cxx
+  vtkNIFTIImageReader.cxx
+  vtkNIFTIImageWriter.cxx
+  vtkNrrdReader.cxx
+  코드를 생성하고 있습니다...
+  IOImage.vcxproj -> D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\bin\Debug\vtkIOImage-9.4d.dll

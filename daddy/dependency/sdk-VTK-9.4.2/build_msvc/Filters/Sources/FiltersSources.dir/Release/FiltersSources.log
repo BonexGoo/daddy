@@ -1,0 +1,53 @@
+﻿  Building Custom Rule D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Filters/Sources/CMakeLists.txt
+  vtkArcSource.cxx
+  vtkArrowSource.cxx
+  vtkButtonSource.cxx
+  vtkCapsuleSource.cxx
+  vtkCellTypeSource.cxx
+  vtkConeSource.cxx
+  vtkCubeSource.cxx
+  vtkCylinderSource.cxx
+  vtkDiagonalMatrixSource.cxx
+  vtkDiskSource.cxx
+  vtkEllipseArcSource.cxx
+  vtkEllipticalButtonSource.cxx
+  vtkFrustumSource.cxx
+  vtkGlyphSource2D.cxx
+  vtkGoldenBallSource.cxx
+  vtkGraphToPolyData.cxx
+  vtkHandleSource.cxx
+  vtkHyperTreeGridPreConfiguredSource.cxx
+  vtkHyperTreeGridSource.cxx
+  vtkLineSource.cxx
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  vtkOutlineCornerFilter.cxx
+  vtkOutlineCornerSource.cxx
+  vtkOutlineSource.cxx
+  vtkParametricFunctionSource.cxx
+  vtkPartitionedDataSetSource.cxx
+  vtkPartitionedDataSetCollectionSource.cxx
+  vtkPlaneSource.cxx
+  vtkPlatonicSolidSource.cxx
+  vtkPointHandleSource.cxx
+  vtkPointSource.cxx
+  vtkPolyLineSource.cxx
+  vtkPolyPointSource.cxx
+  vtkProgrammableDataObjectSource.cxx
+  vtkProgrammableSource.cxx
+  vtkRandomHyperTreeGridSource.cxx
+  vtkRectangularButtonSource.cxx
+  vtkRegularPolygonSource.cxx
+  vtkSelectionSource.cxx
+  vtkSpatioTemporalHarmonicsSource.cxx
+  vtkSphereSource.cxx
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  vtkSuperquadricSource.cxx
+  vtkTessellatedBoxSource.cxx
+  vtkTextSource.cxx
+  vtkTexturedSphereSource.cxx
+  vtkUniformHyperTreeGridSource.cxx
+  코드를 생성하고 있습니다...
+     D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Release/vtkFiltersSources-9.4.lib 라이브러리 및 D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Release/vtkFiltersSources-9.4.exp 개체를 생성하고 있습니다.
+  FiltersSources.vcxproj -> D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\bin\Release\vtkFiltersSources-9.4.dll

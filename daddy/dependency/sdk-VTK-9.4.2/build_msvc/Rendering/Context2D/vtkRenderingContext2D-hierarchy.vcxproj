@@ -1,0 +1,329 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D5DF7770-27E4-3798-B6A0-CD1199431C6F}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>vtkRenderingContext2D-hierarchy</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\ca9aa9fed93d79dd9d626753235b306a\vtkRenderingContext2D-hierarchy.txt.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating the wrap hierarchy for VTK::RenderingContext2D</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+..\..\bin\Debug\vtkWrapHierarchy-9.4d.exe -MF D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Rendering/Context2D/CMakeFiles/vtkRenderingContext2D-hierarchy.txt.Debug.d @D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Rendering/Context2D/CMakeFiles/vtkRenderingContext2D-hierarchy.Debug.args -o D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/vtk-9.4/hierarchy/VTK/vtkRenderingContext2D-hierarchy.txt D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Rendering/Context2D/CMakeFiles/vtkRenderingContext2D-hierarchy.data @D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Rendering/Context2D/CMakeFiles/vtkRenderingContext2D-hierarchy.depends.args
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_transform_depfile "Visual Studio 17 2022" MSBuildAdditionalInputs D:/cybermed/daddy/dependency/sdk-VTK-9.4.2 D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Rendering/Context2D D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Rendering/Context2D D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Rendering/Context2D/CMakeFiles/vtkRenderingContext2D-hierarchy.txt.Debug.d D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/CMakeFiles/d/d35f4288a04d40bcc3ef5d0ba94997fd883a17395e66f47ae02f74d069f01f82.AdditionalInputs
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkAbstractContextBufferId.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkAbstractContextItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkBlockItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkBrush.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkContext2D.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkContext3D.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkContextActor.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkContextClip.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkContextDevice2D.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkContextDevice3D.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkContextItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkContextKeyEvent.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkContextMapper2D.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkContextMouseEvent.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkContextScene.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkContextTransform.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkImageItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkLabeledContourPolyDataItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkMarkerUtilities.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkPen.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkPolyDataItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkPropItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkTooltipItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Rendering\Context2D\CMakeFiles\vtkRenderingContext2D-hierarchy.Debug.args;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Rendering\Context2D\CMakeFiles\vtkRenderingContext2D-hierarchy.data;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Rendering\Context2D\CMakeFiles\vtkRenderingContext2D-hierarchy.depends.args;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\lib\vtk-9.4\hierarchy\VTK\vtkRenderingContext2D-hierarchy.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <DepFileAdditionalInputsFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\d\d35f4288a04d40bcc3ef5d0ba94997fd883a17395e66f47ae02f74d069f01f82.AdditionalInputs</DepFileAdditionalInputsFile>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating the wrap hierarchy for VTK::RenderingContext2D</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+..\..\bin\Release\vtkWrapHierarchy-9.4.exe -MF D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Rendering/Context2D/CMakeFiles/vtkRenderingContext2D-hierarchy.txt.Release.d @D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Rendering/Context2D/CMakeFiles/vtkRenderingContext2D-hierarchy.Release.args -o D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/vtk-9.4/hierarchy/VTK/vtkRenderingContext2D-hierarchy.txt D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Rendering/Context2D/CMakeFiles/vtkRenderingContext2D-hierarchy.data @D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Rendering/Context2D/CMakeFiles/vtkRenderingContext2D-hierarchy.depends.args
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_transform_depfile "Visual Studio 17 2022" MSBuildAdditionalInputs D:/cybermed/daddy/dependency/sdk-VTK-9.4.2 D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Rendering/Context2D D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Rendering/Context2D D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Rendering/Context2D/CMakeFiles/vtkRenderingContext2D-hierarchy.txt.Release.d D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/CMakeFiles/d/cd3df39666bf78c291a3f7a0c0574e788ce85b74bc95a15637f8bf91ef8bb54d.AdditionalInputs
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkAbstractContextBufferId.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkAbstractContextItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkBlockItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkBrush.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkContext2D.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkContext3D.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkContextActor.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkContextClip.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkContextDevice2D.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkContextDevice3D.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkContextItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkContextKeyEvent.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkContextMapper2D.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkContextMouseEvent.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkContextScene.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkContextTransform.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkImageItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkLabeledContourPolyDataItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkMarkerUtilities.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkPen.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkPolyDataItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkPropItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkTooltipItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Rendering\Context2D\CMakeFiles\vtkRenderingContext2D-hierarchy.Release.args;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Rendering\Context2D\CMakeFiles\vtkRenderingContext2D-hierarchy.data;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Rendering\Context2D\CMakeFiles\vtkRenderingContext2D-hierarchy.depends.args;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\lib\vtk-9.4\hierarchy\VTK\vtkRenderingContext2D-hierarchy.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <DepFileAdditionalInputsFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\d\cd3df39666bf78c291a3f7a0c0574e788ce85b74bc95a15637f8bf91ef8bb54d.AdditionalInputs</DepFileAdditionalInputsFile>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating the wrap hierarchy for VTK::RenderingContext2D</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+..\..\bin\MinSizeRel\vtkWrapHierarchy-9.4.exe -MF D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Rendering/Context2D/CMakeFiles/vtkRenderingContext2D-hierarchy.txt.MinSizeRel.d @D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Rendering/Context2D/CMakeFiles/vtkRenderingContext2D-hierarchy.MinSizeRel.args -o D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/vtk-9.4/hierarchy/VTK/vtkRenderingContext2D-hierarchy.txt D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Rendering/Context2D/CMakeFiles/vtkRenderingContext2D-hierarchy.data @D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Rendering/Context2D/CMakeFiles/vtkRenderingContext2D-hierarchy.depends.args
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_transform_depfile "Visual Studio 17 2022" MSBuildAdditionalInputs D:/cybermed/daddy/dependency/sdk-VTK-9.4.2 D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Rendering/Context2D D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Rendering/Context2D D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Rendering/Context2D/CMakeFiles/vtkRenderingContext2D-hierarchy.txt.MinSizeRel.d D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/CMakeFiles/d/fee7f73130d0a70ab5ec4147524e15fd2806114448f19c581d9d684c7f3343e8.AdditionalInputs
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkAbstractContextBufferId.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkAbstractContextItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkBlockItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkBrush.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkContext2D.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkContext3D.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkContextActor.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkContextClip.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkContextDevice2D.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkContextDevice3D.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkContextItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkContextKeyEvent.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkContextMapper2D.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkContextMouseEvent.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkContextScene.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkContextTransform.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkImageItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkLabeledContourPolyDataItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkMarkerUtilities.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkPen.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkPolyDataItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkPropItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkTooltipItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Rendering\Context2D\CMakeFiles\vtkRenderingContext2D-hierarchy.MinSizeRel.args;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Rendering\Context2D\CMakeFiles\vtkRenderingContext2D-hierarchy.data;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Rendering\Context2D\CMakeFiles\vtkRenderingContext2D-hierarchy.depends.args;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\lib\vtk-9.4\hierarchy\VTK\vtkRenderingContext2D-hierarchy.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <DepFileAdditionalInputsFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\d\fee7f73130d0a70ab5ec4147524e15fd2806114448f19c581d9d684c7f3343e8.AdditionalInputs</DepFileAdditionalInputsFile>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating the wrap hierarchy for VTK::RenderingContext2D</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+..\..\bin\RelWithDebInfo\vtkWrapHierarchy-9.4.exe -MF D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Rendering/Context2D/CMakeFiles/vtkRenderingContext2D-hierarchy.txt.RelWithDebInfo.d @D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Rendering/Context2D/CMakeFiles/vtkRenderingContext2D-hierarchy.RelWithDebInfo.args -o D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/vtk-9.4/hierarchy/VTK/vtkRenderingContext2D-hierarchy.txt D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Rendering/Context2D/CMakeFiles/vtkRenderingContext2D-hierarchy.data @D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Rendering/Context2D/CMakeFiles/vtkRenderingContext2D-hierarchy.depends.args
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_transform_depfile "Visual Studio 17 2022" MSBuildAdditionalInputs D:/cybermed/daddy/dependency/sdk-VTK-9.4.2 D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Rendering/Context2D D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Rendering/Context2D D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Rendering/Context2D/CMakeFiles/vtkRenderingContext2D-hierarchy.txt.RelWithDebInfo.d D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/CMakeFiles/d/d47c1c9bd0b43e36fe085466125cf6ea0fb88b6c7bf43d23eb11704fe443d59d.AdditionalInputs
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkAbstractContextBufferId.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkAbstractContextItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkBlockItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkBrush.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkContext2D.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkContext3D.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkContextActor.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkContextClip.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkContextDevice2D.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkContextDevice3D.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkContextItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkContextKeyEvent.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkContextMapper2D.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkContextMouseEvent.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkContextScene.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkContextTransform.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkImageItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkLabeledContourPolyDataItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkMarkerUtilities.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkPen.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkPolyDataItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkPropItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\vtkTooltipItem.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Rendering\Context2D\CMakeFiles\vtkRenderingContext2D-hierarchy.RelWithDebInfo.args;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Rendering\Context2D\CMakeFiles\vtkRenderingContext2D-hierarchy.data;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Rendering\Context2D\CMakeFiles\vtkRenderingContext2D-hierarchy.depends.args;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\lib\vtk-9.4\hierarchy\VTK\vtkRenderingContext2D-hierarchy.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <DepFileAdditionalInputsFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\d\d47c1c9bd0b43e36fe085466125cf6ea0fb88b6c7bf43d23eb11704fe443d59d.AdditionalInputs</DepFileAdditionalInputsFile>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\91c0e142fe10f2e12898d47e1a9717c6\vtkRenderingContext2D-hierarchy.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\lib\vtk-9.4\hierarchy\VTK\vtkRenderingContext2D-hierarchy.txt;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\bin\Debug\vtkWrapHierarchy-9.4d.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Rendering\Context2D\CMakeFiles\vtkRenderingContext2D-hierarchy</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\lib\vtk-9.4\hierarchy\VTK\vtkRenderingContext2D-hierarchy.txt;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\bin\Release\vtkWrapHierarchy-9.4.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Rendering\Context2D\CMakeFiles\vtkRenderingContext2D-hierarchy</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\lib\vtk-9.4\hierarchy\VTK\vtkRenderingContext2D-hierarchy.txt;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\bin\MinSizeRel\vtkWrapHierarchy-9.4.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Rendering\Context2D\CMakeFiles\vtkRenderingContext2D-hierarchy</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\lib\vtk-9.4\hierarchy\VTK\vtkRenderingContext2D-hierarchy.txt;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\bin\RelWithDebInfo\vtkWrapHierarchy-9.4.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Rendering\Context2D\CMakeFiles\vtkRenderingContext2D-hierarchy</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\Context2D\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Rendering/Context2D/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/cybermed/daddy/dependency/sdk-VTK-9.4.2 -BD:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc --check-stamp-file D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Rendering/Context2D/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.31\Modules\exportheader.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Rendering\Context2D\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Rendering/Context2D/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/cybermed/daddy/dependency/sdk-VTK-9.4.2 -BD:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc --check-stamp-file D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Rendering/Context2D/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.31\Modules\exportheader.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Rendering\Context2D\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Rendering/Context2D/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/cybermed/daddy/dependency/sdk-VTK-9.4.2 -BD:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc --check-stamp-file D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Rendering/Context2D/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.31\Modules\exportheader.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Rendering\Context2D\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Rendering/Context2D/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/cybermed/daddy/dependency/sdk-VTK-9.4.2 -BD:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc --check-stamp-file D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Rendering/Context2D/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.31\Modules\exportheader.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Rendering\Context2D\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Rendering\Context2D\CMakeFiles\vtkRenderingContext2D-hierarchy">
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ZERO_CHECK.vcxproj">
+      <Project>{29A36E60-F9BD-3AF1-92C4-919B78672499}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Wrapping\Tools\WrapHierarchy.vcxproj">
+      <Project>{26194890-F1C3-34CF-AF00-AFA21E3C5138}</Project>
+      <Name>WrapHierarchy</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\Core\vtkCommonCore-hierarchy.vcxproj">
+      <Project>{7DB76CF9-1CC4-37BC-B10C-80DA6D1CCEDE}</Project>
+      <Name>vtkCommonCore-hierarchy</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\DataModel\vtkCommonDataModel-hierarchy.vcxproj">
+      <Project>{C7E02112-592D-3086-B351-A35375A1D3F7}</Project>
+      <Name>vtkCommonDataModel-hierarchy</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\ExecutionModel\vtkCommonExecutionModel-hierarchy.vcxproj">
+      <Project>{4FAD8D34-7951-381A-B305-BF3E548ED81D}</Project>
+      <Name>vtkCommonExecutionModel-hierarchy</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Rendering\Core\vtkRenderingCore-hierarchy.vcxproj">
+      <Project>{D6D2F269-0FBB-3267-831D-694DD255D5CC}</Project>
+      <Name>vtkRenderingCore-hierarchy</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <Import Project="C:\Program Files\CMake\share\cmake-3.31\Templates\MSBuild\CustomBuildDepFile.targets" />
+</Project>

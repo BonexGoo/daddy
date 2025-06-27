@@ -1,0 +1,4 @@
+# CMake generation dependency list for this directory.
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/CMake/vtkDetectLibraryType.cmake
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/libxml2/CMakeLists.txt
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/libxml2/vtk_libxml2.h.in

@@ -1,0 +1,5 @@
+﻿  Building Custom Rule D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/loguru/vtkloguru/CMakeLists.txt
+  loguru.cpp
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\loguru\vtkloguru\loguru.cpp(1522,1): warning C4722: 'vtkloguru::AbortLogger::~AbortLogger': 소멸자가 반환하지 않습니다. 메모리 누수가 발생할 수 있습니다.
+     D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Release/vtkloguru-9.4.lib 라이브러리 및 D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Release/vtkloguru-9.4.exp 개체를 생성하고 있습니다.
+  loguru.vcxproj -> D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\bin\Release\vtkloguru-9.4.dll

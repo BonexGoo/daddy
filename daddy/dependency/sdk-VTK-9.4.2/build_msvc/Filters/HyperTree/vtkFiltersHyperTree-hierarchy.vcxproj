@@ -1,0 +1,335 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{30719781-B32D-3F8F-B1FF-95CA2D403E2F}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>vtkFiltersHyperTree-hierarchy</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\ca9aa9fed93d79dd9d626753235b306a\vtkFiltersHyperTree-hierarchy.txt.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating the wrap hierarchy for VTK::FiltersHyperTree</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+..\..\bin\Debug\vtkWrapHierarchy-9.4d.exe -MF D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Filters/HyperTree/CMakeFiles/vtkFiltersHyperTree-hierarchy.txt.Debug.d @D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Filters/HyperTree/CMakeFiles/vtkFiltersHyperTree-hierarchy.Debug.args -o D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/vtk-9.4/hierarchy/VTK/vtkFiltersHyperTree-hierarchy.txt D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Filters/HyperTree/CMakeFiles/vtkFiltersHyperTree-hierarchy.data @D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Filters/HyperTree/CMakeFiles/vtkFiltersHyperTree-hierarchy.depends.args
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_transform_depfile "Visual Studio 17 2022" MSBuildAdditionalInputs D:/cybermed/daddy/dependency/sdk-VTK-9.4.2 D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Filters/HyperTree D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Filters/HyperTree D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Filters/HyperTree/CMakeFiles/vtkFiltersHyperTree-hierarchy.txt.Debug.d D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/CMakeFiles/d/9c64cc3774153900be74123918793a6e25784262f96f5ce68afac38326b6a4ee.AdditionalInputs
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\HyperTree\vtkHyperTreeGridAxisClip.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\HyperTree\vtkHyperTreeGridAxisCut.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\HyperTree\vtkHyperTreeGridAxisReflection.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\HyperTree\vtkHyperTreeGridCellCenters.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\HyperTree\vtkHyperTreeGridContour.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\HyperTree\vtkHyperTreeGridDepthLimiter.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\HyperTree\vtkHyperTreeGridEvaluateCoarse.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\HyperTree\vtkHyperTreeGridExtractGhostCells.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\HyperTree\vtkHyperTreeGridFeatureEdges.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\HyperTree\vtkHyperTreeGridGeometry.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\HyperTree\vtkHyperTreeGridGradient.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\HyperTree\vtkHyperTreeGridPlaneCutter.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\HyperTree\vtkHyperTreeGridRemoveGhostCells.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\HyperTree\vtkHyperTreeGridThreshold.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\HyperTree\vtkHyperTreeGridToDualGrid.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\HyperTree\vtkHyperTreeGridToUnstructuredGrid.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\HyperTree\vtkHyperTreeGridVisibleLeavesSize.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\HyperTree\vtkImageDataToHyperTreeGrid.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Filters\HyperTree\CMakeFiles\vtkFiltersHyperTree-hierarchy.Debug.args;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Filters\HyperTree\CMakeFiles\vtkFiltersHyperTree-hierarchy.data;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Filters\HyperTree\CMakeFiles\vtkFiltersHyperTree-hierarchy.depends.args;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\lib\vtk-9.4\hierarchy\VTK\vtkFiltersHyperTree-hierarchy.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <DepFileAdditionalInputsFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\d\9c64cc3774153900be74123918793a6e25784262f96f5ce68afac38326b6a4ee.AdditionalInputs</DepFileAdditionalInputsFile>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating the wrap hierarchy for VTK::FiltersHyperTree</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+..\..\bin\Release\vtkWrapHierarchy-9.4.exe -MF D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Filters/HyperTree/CMakeFiles/vtkFiltersHyperTree-hierarchy.txt.Release.d @D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Filters/HyperTree/CMakeFiles/vtkFiltersHyperTree-hierarchy.Release.args -o D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/vtk-9.4/hierarchy/VTK/vtkFiltersHyperTree-hierarchy.txt D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Filters/HyperTree/CMakeFiles/vtkFiltersHyperTree-hierarchy.data @D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Filters/HyperTree/CMakeFiles/vtkFiltersHyperTree-hierarchy.depends.args
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_transform_depfile "Visual Studio 17 2022" MSBuildAdditionalInputs D:/cybermed/daddy/dependency/sdk-VTK-9.4.2 D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Filters/HyperTree D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Filters/HyperTree D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Filters/HyperTree/CMakeFiles/vtkFiltersHyperTree-hierarchy.txt.Release.d D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/CMakeFiles/d/15bf8350e2c553940df53ad6861e630bc919f1ce4b3b0af26eb1301f9929e8ea.AdditionalInputs
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\HyperTree\vtkHyperTreeGridAxisClip.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\HyperTree\vtkHyperTreeGridAxisCut.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\HyperTree\vtkHyperTreeGridAxisReflection.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\HyperTree\vtkHyperTreeGridCellCenters.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\HyperTree\vtkHyperTreeGridContour.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\HyperTree\vtkHyperTreeGridDepthLimiter.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\HyperTree\vtkHyperTreeGridEvaluateCoarse.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\HyperTree\vtkHyperTreeGridExtractGhostCells.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\HyperTree\vtkHyperTreeGridFeatureEdges.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\HyperTree\vtkHyperTreeGridGeometry.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\HyperTree\vtkHyperTreeGridGradient.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\HyperTree\vtkHyperTreeGridPlaneCutter.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\HyperTree\vtkHyperTreeGridRemoveGhostCells.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\HyperTree\vtkHyperTreeGridThreshold.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\HyperTree\vtkHyperTreeGridToDualGrid.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\HyperTree\vtkHyperTreeGridToUnstructuredGrid.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\HyperTree\vtkHyperTreeGridVisibleLeavesSize.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\HyperTree\vtkImageDataToHyperTreeGrid.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Filters\HyperTree\CMakeFiles\vtkFiltersHyperTree-hierarchy.Release.args;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Filters\HyperTree\CMakeFiles\vtkFiltersHyperTree-hierarchy.data;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Filters\HyperTree\CMakeFiles\vtkFiltersHyperTree-hierarchy.depends.args;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\lib\vtk-9.4\hierarchy\VTK\vtkFiltersHyperTree-hierarchy.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <DepFileAdditionalInputsFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\d\15bf8350e2c553940df53ad6861e630bc919f1ce4b3b0af26eb1301f9929e8ea.AdditionalInputs</DepFileAdditionalInputsFile>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating the wrap hierarchy for VTK::FiltersHyperTree</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+..\..\bin\MinSizeRel\vtkWrapHierarchy-9.4.exe -MF D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Filters/HyperTree/CMakeFiles/vtkFiltersHyperTree-hierarchy.txt.MinSizeRel.d @D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Filters/HyperTree/CMakeFiles/vtkFiltersHyperTree-hierarchy.MinSizeRel.args -o D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/vtk-9.4/hierarchy/VTK/vtkFiltersHyperTree-hierarchy.txt D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Filters/HyperTree/CMakeFiles/vtkFiltersHyperTree-hierarchy.data @D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Filters/HyperTree/CMakeFiles/vtkFiltersHyperTree-hierarchy.depends.args
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_transform_depfile "Visual Studio 17 2022" MSBuildAdditionalInputs D:/cybermed/daddy/dependency/sdk-VTK-9.4.2 D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Filters/HyperTree D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Filters/HyperTree D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Filters/HyperTree/CMakeFiles/vtkFiltersHyperTree-hierarchy.txt.MinSizeRel.d D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/CMakeFiles/d/34d488f000c81a771ad01dfe07f85e871e0ebdafef64e682bf2b9df4020556ce.AdditionalInputs
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\HyperTree\vtkHyperTreeGridAxisClip.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\HyperTree\vtkHyperTreeGridAxisCut.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\HyperTree\vtkHyperTreeGridAxisReflection.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\HyperTree\vtkHyperTreeGridCellCenters.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\HyperTree\vtkHyperTreeGridContour.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\HyperTree\vtkHyperTreeGridDepthLimiter.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\HyperTree\vtkHyperTreeGridEvaluateCoarse.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\HyperTree\vtkHyperTreeGridExtractGhostCells.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\HyperTree\vtkHyperTreeGridFeatureEdges.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\HyperTree\vtkHyperTreeGridGeometry.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\HyperTree\vtkHyperTreeGridGradient.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\HyperTree\vtkHyperTreeGridPlaneCutter.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\HyperTree\vtkHyperTreeGridRemoveGhostCells.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\HyperTree\vtkHyperTreeGridThreshold.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\HyperTree\vtkHyperTreeGridToDualGrid.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\HyperTree\vtkHyperTreeGridToUnstructuredGrid.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\HyperTree\vtkHyperTreeGridVisibleLeavesSize.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\HyperTree\vtkImageDataToHyperTreeGrid.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Filters\HyperTree\CMakeFiles\vtkFiltersHyperTree-hierarchy.MinSizeRel.args;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Filters\HyperTree\CMakeFiles\vtkFiltersHyperTree-hierarchy.data;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Filters\HyperTree\CMakeFiles\vtkFiltersHyperTree-hierarchy.depends.args;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\lib\vtk-9.4\hierarchy\VTK\vtkFiltersHyperTree-hierarchy.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <DepFileAdditionalInputsFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\d\34d488f000c81a771ad01dfe07f85e871e0ebdafef64e682bf2b9df4020556ce.AdditionalInputs</DepFileAdditionalInputsFile>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating the wrap hierarchy for VTK::FiltersHyperTree</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+..\..\bin\RelWithDebInfo\vtkWrapHierarchy-9.4.exe -MF D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Filters/HyperTree/CMakeFiles/vtkFiltersHyperTree-hierarchy.txt.RelWithDebInfo.d @D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Filters/HyperTree/CMakeFiles/vtkFiltersHyperTree-hierarchy.RelWithDebInfo.args -o D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/vtk-9.4/hierarchy/VTK/vtkFiltersHyperTree-hierarchy.txt D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Filters/HyperTree/CMakeFiles/vtkFiltersHyperTree-hierarchy.data @D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Filters/HyperTree/CMakeFiles/vtkFiltersHyperTree-hierarchy.depends.args
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_transform_depfile "Visual Studio 17 2022" MSBuildAdditionalInputs D:/cybermed/daddy/dependency/sdk-VTK-9.4.2 D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Filters/HyperTree D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Filters/HyperTree D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Filters/HyperTree/CMakeFiles/vtkFiltersHyperTree-hierarchy.txt.RelWithDebInfo.d D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/CMakeFiles/d/cd502eeee3d8ff444cab86c8166c9d1b044ce6230dae4ef188ffedba625f5d8c.AdditionalInputs
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\HyperTree\vtkHyperTreeGridAxisClip.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\HyperTree\vtkHyperTreeGridAxisCut.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\HyperTree\vtkHyperTreeGridAxisReflection.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\HyperTree\vtkHyperTreeGridCellCenters.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\HyperTree\vtkHyperTreeGridContour.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\HyperTree\vtkHyperTreeGridDepthLimiter.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\HyperTree\vtkHyperTreeGridEvaluateCoarse.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\HyperTree\vtkHyperTreeGridExtractGhostCells.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\HyperTree\vtkHyperTreeGridFeatureEdges.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\HyperTree\vtkHyperTreeGridGeometry.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\HyperTree\vtkHyperTreeGridGradient.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\HyperTree\vtkHyperTreeGridPlaneCutter.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\HyperTree\vtkHyperTreeGridRemoveGhostCells.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\HyperTree\vtkHyperTreeGridThreshold.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\HyperTree\vtkHyperTreeGridToDualGrid.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\HyperTree\vtkHyperTreeGridToUnstructuredGrid.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\HyperTree\vtkHyperTreeGridVisibleLeavesSize.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\HyperTree\vtkImageDataToHyperTreeGrid.h;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Filters\HyperTree\CMakeFiles\vtkFiltersHyperTree-hierarchy.RelWithDebInfo.args;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Filters\HyperTree\CMakeFiles\vtkFiltersHyperTree-hierarchy.data;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Filters\HyperTree\CMakeFiles\vtkFiltersHyperTree-hierarchy.depends.args;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\lib\vtk-9.4\hierarchy\VTK\vtkFiltersHyperTree-hierarchy.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <DepFileAdditionalInputsFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\d\cd502eeee3d8ff444cab86c8166c9d1b044ce6230dae4ef188ffedba625f5d8c.AdditionalInputs</DepFileAdditionalInputsFile>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\CMakeFiles\3e0861992c95c893184246fc52e02130\vtkFiltersHyperTree-hierarchy.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\lib\vtk-9.4\hierarchy\VTK\vtkFiltersHyperTree-hierarchy.txt;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\bin\Debug\vtkWrapHierarchy-9.4d.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Filters\HyperTree\CMakeFiles\vtkFiltersHyperTree-hierarchy</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\lib\vtk-9.4\hierarchy\VTK\vtkFiltersHyperTree-hierarchy.txt;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\bin\Release\vtkWrapHierarchy-9.4.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Filters\HyperTree\CMakeFiles\vtkFiltersHyperTree-hierarchy</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\lib\vtk-9.4\hierarchy\VTK\vtkFiltersHyperTree-hierarchy.txt;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\bin\MinSizeRel\vtkWrapHierarchy-9.4.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Filters\HyperTree\CMakeFiles\vtkFiltersHyperTree-hierarchy</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\lib\vtk-9.4\hierarchy\VTK\vtkFiltersHyperTree-hierarchy.txt;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\bin\RelWithDebInfo\vtkWrapHierarchy-9.4.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Filters\HyperTree\CMakeFiles\vtkFiltersHyperTree-hierarchy</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\HyperTree\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Filters/HyperTree/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/cybermed/daddy/dependency/sdk-VTK-9.4.2 -BD:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc --check-stamp-file D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Filters/HyperTree/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.31\Modules\exportheader.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Filters\HyperTree\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Filters/HyperTree/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/cybermed/daddy/dependency/sdk-VTK-9.4.2 -BD:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc --check-stamp-file D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Filters/HyperTree/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.31\Modules\exportheader.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Filters\HyperTree\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Filters/HyperTree/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/cybermed/daddy/dependency/sdk-VTK-9.4.2 -BD:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc --check-stamp-file D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Filters/HyperTree/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.31\Modules\exportheader.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Filters\HyperTree\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Filters/HyperTree/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/cybermed/daddy/dependency/sdk-VTK-9.4.2 -BD:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc --check-stamp-file D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Filters/HyperTree/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.31\Modules\exportheader.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Filters\HyperTree\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Filters\HyperTree\CMakeFiles\vtkFiltersHyperTree-hierarchy">
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ZERO_CHECK.vcxproj">
+      <Project>{29A36E60-F9BD-3AF1-92C4-919B78672499}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Wrapping\Tools\WrapHierarchy.vcxproj">
+      <Project>{26194890-F1C3-34CF-AF00-AFA21E3C5138}</Project>
+      <Name>WrapHierarchy</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\DataModel\vtkCommonDataModel-hierarchy.vcxproj">
+      <Project>{C7E02112-592D-3086-B351-A35375A1D3F7}</Project>
+      <Name>vtkCommonDataModel-hierarchy</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\ExecutionModel\vtkCommonExecutionModel-hierarchy.vcxproj">
+      <Project>{4FAD8D34-7951-381A-B305-BF3E548ED81D}</Project>
+      <Name>vtkCommonExecutionModel-hierarchy</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Common\Misc\vtkCommonMisc-hierarchy.vcxproj">
+      <Project>{4BAC9B52-1EE7-3E7F-AD29-152384F87A3F}</Project>
+      <Name>vtkCommonMisc-hierarchy</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Filters\Core\vtkFiltersCore-hierarchy.vcxproj">
+      <Project>{49BDC160-7EB3-3D9B-BC55-F6D3E54D2321}</Project>
+      <Name>vtkFiltersCore-hierarchy</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Filters\General\vtkFiltersGeneral-hierarchy.vcxproj">
+      <Project>{E224AF98-8889-375F-862B-9C646B512B07}</Project>
+      <Name>vtkFiltersGeneral-hierarchy</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <Import Project="C:\Program Files\CMake\share\cmake-3.31\Templates\MSBuild\CustomBuildDepFile.targets" />
+</Project>

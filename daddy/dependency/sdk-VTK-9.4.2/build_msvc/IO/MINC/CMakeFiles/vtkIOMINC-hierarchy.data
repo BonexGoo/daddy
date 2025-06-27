@@ -1,0 +1,10 @@
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/IO/MINC/vtkMINC.h;vtkIOMINC
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/IO/MINC/vtkMINCImageAttributes.h;vtkIOMINC
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/IO/MINC/vtkMINCImageReader.h;vtkIOMINC
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/IO/MINC/vtkMINCImageWriter.h;vtkIOMINC
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/IO/MINC/vtkMNIObjectReader.h;vtkIOMINC
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/IO/MINC/vtkMNIObjectWriter.h;vtkIOMINC
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/IO/MINC/vtkMNITagPointReader.h;vtkIOMINC
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/IO/MINC/vtkMNITagPointWriter.h;vtkIOMINC
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/IO/MINC/vtkMNITransformReader.h;vtkIOMINC
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/IO/MINC/vtkMNITransformWriter.h;vtkIOMINC

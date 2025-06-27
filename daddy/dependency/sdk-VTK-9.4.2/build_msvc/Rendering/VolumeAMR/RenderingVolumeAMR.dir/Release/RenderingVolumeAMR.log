@@ -1,0 +1,4 @@
+﻿  Building Custom Rule D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Rendering/VolumeAMR/CMakeLists.txt
+  vtkAMRVolumeMapper.cxx
+     D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Release/vtkRenderingVolumeAMR-9.4.lib 라이브러리 및 D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Release/vtkRenderingVolumeAMR-9.4.exp 개체를 생성하고 있습니다.
+  RenderingVolumeAMR.vcxproj -> D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\bin\Release\vtkRenderingVolumeAMR-9.4.dll

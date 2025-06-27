@@ -1,0 +1,52 @@
+// Copyright 2009 Intel Corporation
+// SPDX-License-Identifier: Apache-2.0
+
+#pragma once
+
+#include "OSPConfig.h"
+#include "rkcommon/math/vec.ih"
+// c++ shared
+#include "FrameBufferShared.h"
+
+#ifndef OSPRAY_TARGET_SYCL
+extern "C" uint32 *uniform getThreadNumPixelsRendered();
+
+extern "C" int *uniform getThreadLastFrameID();
+#endif
+
+// factor = rcp(accumID + 1), i.e. 1.0, 0.5, ...
+// but rcp is not always accurate: rcp(1) can be < 1.0
+// thus to be on the safe side we avoid the lerp for the first frame (to not
+// mix-in stale data) and compare with a value in (0.5, 1.0], the magic 0.8
+#define FRAMEBUFFER_ACCUMULATE_VALUE(value, new_value, factor)                 \
+  value = (factor > 0.8f) ? new_value : lerp(factor, value, new_value)
+
+OSPRAY_BEGIN_ISPC_NAMESPACE
+
+#ifndef OSPRAY_TARGET_SYCL
+inline void FrameBuffer_updateProgress(
+    FrameBuffer *uniform self, const uniform uint32 numPixelsRendered)
+{
+  uint32 *uniform pixelsRendered = getThreadNumPixelsRendered();
+
+  // Reset the pixels rendered counter for each new frame
+  int *uniform lastFrameID = getThreadLastFrameID();
+  if (self->frameID != *lastFrameID) {
+    *pixelsRendered = 0;
+    *lastFrameID = self->frameID;
+  }
+
+  // Update the pixels rendered count and report back to the atomic if we've
+  // reached the reporting threshold
+  *pixelsRendered += numPixelsRendered;
+
+  // Report rendering results at the same frequency they would have been
+  // reported (each tile) when using the old nested parallel fors over tiles
+  // then pixels.
+  if (*pixelsRendered >= TILE_SIZE * TILE_SIZE) {
+    atomic_add_global(&self->numPixelsRendered, *pixelsRendered);
+    *pixelsRendered = 0;
+  }
+}
+#endif
+OSPRAY_END_ISPC_NAMESPACE

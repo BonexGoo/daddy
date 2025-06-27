@@ -1,0 +1,8 @@
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Fourier\vtkImageButterworthHighPass.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Imaging\Fourier\ImagingFourier.dir\Release\vtkImageButterworthHighPass.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Fourier\vtkImageButterworthLowPass.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Imaging\Fourier\ImagingFourier.dir\Release\vtkImageButterworthLowPass.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Fourier\vtkImageFFT.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Imaging\Fourier\ImagingFourier.dir\Release\vtkImageFFT.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Fourier\vtkImageFourierCenter.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Imaging\Fourier\ImagingFourier.dir\Release\vtkImageFourierCenter.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Fourier\vtkImageFourierFilter.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Imaging\Fourier\ImagingFourier.dir\Release\vtkImageFourierFilter.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Fourier\vtkImageIdealHighPass.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Imaging\Fourier\ImagingFourier.dir\Release\vtkImageIdealHighPass.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Fourier\vtkImageIdealLowPass.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Imaging\Fourier\ImagingFourier.dir\Release\vtkImageIdealLowPass.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Fourier\vtkImageRFFT.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Imaging\Fourier\ImagingFourier.dir\Release\vtkImageRFFT.obj

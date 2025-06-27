@@ -1,0 +1,55 @@
+﻿  Building Custom Rule D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Charts/Core/CMakeLists.txt
+  vtkAxis.cxx
+  vtkAxisExtended.cxx
+  vtkCategoryLegend.cxx
+  vtkChart.cxx
+  vtkChartBox.cxx
+  vtkChartHistogram2D.cxx
+  vtkChartLegend.cxx
+  vtkChartMatrix.cxx
+  vtkChartParallelCoordinates.cxx
+  vtkChartPie.cxx
+  vtkChartXY.cxx
+  vtkChartXYZ.cxx
+  vtkColorLegend.cxx
+  vtkColorTransferControlPointsItem.cxx
+  vtkColorTransferFunctionItem.cxx
+  vtkCompositeControlPointsItem.cxx
+  vtkCompositeTransferFunctionItem.cxx
+  vtkContextArea.cxx
+  vtkContextPolygon.cxx
+  vtkControlPointsItem.cxx
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  vtkInteractiveArea.cxx
+  vtkLookupTableItem.cxx
+  vtkPiecewiseControlPointsItem.cxx
+  vtkPiecewiseFunctionItem.cxx
+  vtkPiecewisePointHandleItem.cxx
+  vtkPlot.cxx
+  vtkPlot3D.cxx
+  vtkPlotArea.cxx
+  vtkPlotBag.cxx
+  vtkPlotBar.cxx
+  vtkPlotBarRangeHandlesItem.cxx
+  vtkPlotBox.cxx
+  vtkPlotFunctionalBag.cxx
+  vtkPlotGrid.cxx
+  vtkPlotHistogram2D.cxx
+  vtkPlotLine.cxx
+  vtkPlotLine3D.cxx
+  vtkPlotParallelCoordinates.cxx
+  vtkPlotPie.cxx
+  vtkPlotPoints.cxx
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  vtkPlotPoints3D.cxx
+  vtkPlotRangeHandlesItem.cxx
+  vtkPlotStacked.cxx
+  vtkPlotSurface.cxx
+  vtkRangeHandlesItem.cxx
+  vtkScalarsToColorsItem.cxx
+  vtkScatterPlotMatrix.cxx
+  코드를 생성하고 있습니다...
+     D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Release/vtkChartsCore-9.4.lib 라이브러리 및 D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Release/vtkChartsCore-9.4.exp 개체를 생성하고 있습니다.
+  ChartsCore.vcxproj -> D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\bin\Release\vtkChartsCore-9.4.dll

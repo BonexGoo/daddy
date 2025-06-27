@@ -1,0 +1,20 @@
+﻿  vtkBYUWriter.cxx
+  vtkGLTFDocumentLoader.cxx
+  vtkGLTFDocumentLoaderInternals.cxx
+  vtkGLTFReader.cxx
+  vtkGLTFTexture.cxx
+  vtkGLTFUtils.cxx
+  vtkGLTFWriter.cxx
+  vtkGLTFWriterUtils.cxx
+  vtkHoudiniPolyDataWriter.cxx
+  vtkIVWriter.cxx
+  vtkMCubesWriter.cxx
+  vtkOBJReader.cxx
+  vtkOBJWriter.cxx
+  vtkOFFReader.cxx
+  vtkOpenFOAMReader.cxx
+  vtkSTLReader.cxx
+  vtkSTLWriter.cxx
+  vtkTecplotReader.cxx
+  코드를 생성하고 있습니다...
+  IOGeometry.vcxproj -> D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\bin\Debug\vtkIOGeometry-9.4d.dll

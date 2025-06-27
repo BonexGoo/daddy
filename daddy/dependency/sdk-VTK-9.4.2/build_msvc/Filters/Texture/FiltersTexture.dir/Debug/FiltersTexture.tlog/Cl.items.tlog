@@ -1,0 +1,8 @@
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\Texture\vtkImplicitTextureCoords.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Filters\Texture\FiltersTexture.dir\Debug\vtkImplicitTextureCoords.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\Texture\vtkScalarsToTextureFilter.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Filters\Texture\FiltersTexture.dir\Debug\vtkScalarsToTextureFilter.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\Texture\vtkTextureMapToCylinder.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Filters\Texture\FiltersTexture.dir\Debug\vtkTextureMapToCylinder.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\Texture\vtkTextureMapToPlane.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Filters\Texture\FiltersTexture.dir\Debug\vtkTextureMapToPlane.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\Texture\vtkTextureMapToSphere.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Filters\Texture\FiltersTexture.dir\Debug\vtkTextureMapToSphere.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\Texture\vtkThresholdTextureCoords.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Filters\Texture\FiltersTexture.dir\Debug\vtkThresholdTextureCoords.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\Texture\vtkTransformTextureCoords.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Filters\Texture\FiltersTexture.dir\Debug\vtkTransformTextureCoords.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\Texture\vtkTriangularTCoords.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Filters\Texture\FiltersTexture.dir\Debug\vtkTriangularTCoords.obj

@@ -1,0 +1,12 @@
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Color\vtkImageHSIToRGB.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Imaging\Color\ImagingColor.dir\Debug\vtkImageHSIToRGB.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Color\vtkImageHSVToRGB.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Imaging\Color\ImagingColor.dir\Debug\vtkImageHSVToRGB.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Color\vtkImageLuminance.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Imaging\Color\ImagingColor.dir\Debug\vtkImageLuminance.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Color\vtkImageMapToRGBA.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Imaging\Color\ImagingColor.dir\Debug\vtkImageMapToRGBA.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Color\vtkImageMapToWindowLevelColors.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Imaging\Color\ImagingColor.dir\Debug\vtkImageMapToWindowLevelColors.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Color\vtkImageQuantizeRGBToIndex.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Imaging\Color\ImagingColor.dir\Debug\vtkImageQuantizeRGBToIndex.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Color\vtkImageRGBToHSI.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Imaging\Color\ImagingColor.dir\Debug\vtkImageRGBToHSI.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Color\vtkImageRGBToHSV.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Imaging\Color\ImagingColor.dir\Debug\vtkImageRGBToHSV.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Color\vtkImageRGBToXYZ.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Imaging\Color\ImagingColor.dir\Debug\vtkImageRGBToXYZ.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Color\vtkImageRGBToYIQ.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Imaging\Color\ImagingColor.dir\Debug\vtkImageRGBToYIQ.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Color\vtkImageXYZToLAB.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Imaging\Color\ImagingColor.dir\Debug\vtkImageXYZToLAB.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Imaging\Color\vtkImageYIQToRGB.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Imaging\Color\ImagingColor.dir\Debug\vtkImageYIQToRGB.obj

@@ -1,0 +1,8 @@
+﻿  Automatic MOC for target qmlvtkplugin
+  Building Custom Rule D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/GUISupport/QtQuick/qml/CMakeLists.txt
+  mocs_compilation_Debug.cpp
+  QQmlVTKPlugin.cxx
+  코드를 생성하고 있습니다...
+     D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Debug/qmlvtkplugin.lib 라이브러리 및 D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Debug/qmlvtkplugin.exp 개체를 생성하고 있습니다.
+  qmlvtkplugin.vcxproj -> D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\lib\qml\Debug\VTK.9.4\qmlvtkplugin.dll
+  Copying qmltypes file from the source tree to D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/qml/Debug/VTK.9.4/plugins.qmltypes

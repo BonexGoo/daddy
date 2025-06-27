@@ -1,0 +1,64 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.31/Modules/BasicConfigVersion-SameMajorVersion.cmake.in
+C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeCXXInformation.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeCommonLanguageInclude.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeGenericSystem.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeInitializeConfigs.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeLanguageInformation.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CMakePackageConfigHelpers.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeParseArguments.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeRCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeSystemSpecificInformation.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeSystemSpecificInitialize.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CheckCXXSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CheckCXXSymbolExists.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CheckFunctionExists.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CheckIncludeFile.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CheckIncludeFileCXX.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CheckIncludeFiles.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CheckLibraryExists.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CheckSymbolExists.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CheckTypeSize.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/Compiler/CMakeCommonCompilerMacros.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/Compiler/MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/Compiler/MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/Compiler/MSVC.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/GNUInstallDirs.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CMakeCLinkerInformation.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CMakeCXXLinkerInformation.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CMakeCommonLinkerInformation.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CheckFlagCommonConfig.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/Platform/Linker/Windows-MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/Platform/Linker/Windows-MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/Platform/Linker/Windows-MSVC.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/Platform/Windows-Initialize.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/Platform/Windows-MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/Platform/Windows-MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/Platform/Windows-MSVC.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/Platform/Windows.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/Platform/WindowsPaths.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/WriteBasicConfigVersionFile.cmake
+D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/CMake/3rdparty.cmake
+D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/CMake/CTest/dcmtkCTestRun.cmake.in
+D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/CMake/CheckCMakeCommandExists.cmake
+D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/CMake/CheckFunctionWithHeaderExists.cmake
+D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/CMake/DCMTKConfig.cmake.in
+D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/CMake/GenerateCMakeExports.cmake
+D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/CMake/GenerateDCMTKConfigure.cmake
+D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/CMake/dcmtk.pc.in
+D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/CMake/dcmtkAfterModules.cmake
+D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/CMake/dcmtkMacros.cmake
+D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/CMake/dcmtkPrepare.cmake
+D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/CMake/dcmtkTryCompile.cmake
+D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/CMake/dcmtkTryRun.cmake
+D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/CMake/osconfig.h.in
+D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/CMakeLists.txt
+D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/CMakeFiles/3.31.1/CMakeCCompiler.cmake
+D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/CMakeFiles/3.31.1/CMakeCXXCompiler.cmake
+D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/CMakeFiles/3.31.1/CMakeRCCompiler.cmake
+D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/CMakeFiles/3.31.1/CMakeSystem.cmake

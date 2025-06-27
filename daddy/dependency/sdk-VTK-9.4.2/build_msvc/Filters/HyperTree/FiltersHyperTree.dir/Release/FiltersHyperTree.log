@@ -1,0 +1,29 @@
+﻿  Building Custom Rule D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Filters/HyperTree/CMakeLists.txt
+  vtkHyperTreeGridAxisClip.cxx
+  vtkHyperTreeGridAxisCut.cxx
+  vtkHyperTreeGridAxisReflection.cxx
+  vtkHyperTreeGridCellCenters.cxx
+  vtkHyperTreeGridContour.cxx
+  vtkHyperTreeGridDepthLimiter.cxx
+  vtkHyperTreeGridEvaluateCoarse.cxx
+  vtkHyperTreeGridExtractGhostCells.cxx
+  vtkHyperTreeGridFeatureEdges.cxx
+  vtkHyperTreeGridGeometry.cxx
+  vtkHyperTreeGridGradient.cxx
+  vtkHyperTreeGridPlaneCutter.cxx
+  vtkHyperTreeGridRemoveGhostCells.cxx
+  vtkHyperTreeGridThreshold.cxx
+  vtkHyperTreeGridToDualGrid.cxx
+  vtkHyperTreeGridToUnstructuredGrid.cxx
+  vtkHyperTreeGridVisibleLeavesSize.cxx
+  vtkImageDataToHyperTreeGrid.cxx
+  vtkHyperTreeGridGeometryImpl.cxx
+  vtkHyperTreeGridGeometry1DImpl.cxx
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  vtkHyperTreeGridGeometry2DImpl.cxx
+  vtkHyperTreeGridGeometry3DImpl.cxx
+  vtkHyperTreeGridGeometrySmallDimensionsImpl.cxx
+  코드를 생성하고 있습니다...
+     D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Release/vtkFiltersHyperTree-9.4.lib 라이브러리 및 D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Release/vtkFiltersHyperTree-9.4.exp 개체를 생성하고 있습니다.
+  FiltersHyperTree.vcxproj -> D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\bin\Release\vtkFiltersHyperTree-9.4.dll

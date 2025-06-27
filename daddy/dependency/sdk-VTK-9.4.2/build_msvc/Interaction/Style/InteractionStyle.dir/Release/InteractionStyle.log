@@ -1,0 +1,23 @@
+﻿  Building Custom Rule D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Interaction/Style/CMakeLists.txt
+  vtkInteractionStyleObjectFactory.cxx
+  vtkInteractorStyleDrawPolygon.cxx
+  vtkInteractorStyleFlight.cxx
+  vtkInteractorStyleImage.cxx
+  vtkInteractorStyleJoystickActor.cxx
+  vtkInteractorStyleJoystickCamera.cxx
+  vtkInteractorStyleMultiTouchCamera.cxx
+  vtkInteractorStyleRubberBand2D.cxx
+  vtkInteractorStyleRubberBand3D.cxx
+  vtkInteractorStyleRubberBandPick.cxx
+  vtkInteractorStyleRubberBandZoom.cxx
+  vtkInteractorStyleTerrain.cxx
+  vtkInteractorStyleTrackball.cxx
+  vtkInteractorStyleTrackballActor.cxx
+  vtkInteractorStyleTrackballCamera.cxx
+  vtkInteractorStyleUnicam.cxx
+  vtkInteractorStyleUser.cxx
+  vtkInteractorStyleSwitch.cxx
+  vtkParallelCoordinatesInteractorStyle.cxx
+  코드를 생성하고 있습니다...
+     D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Release/vtkInteractionStyle-9.4.lib 라이브러리 및 D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Release/vtkInteractionStyle-9.4.exp 개체를 생성하고 있습니다.
+  InteractionStyle.vcxproj -> D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\bin\Release\vtkInteractionStyle-9.4.dll

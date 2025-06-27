@@ -1,0 +1,13 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CheckIncludeFile.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CheckIncludeFileCXX.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CheckLibraryExists.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CheckTypeSize.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/FindThreads.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/ProcessorCount.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/TestBigEndian.cmake
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/lzma/vtklzma/CMakeLists.txt
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/lzma/vtklzma/config.h.in

@@ -1,0 +1,296 @@
+# Character Sets
+
+This document describes the evolution of character set support in DICOM.
+
+## DICOM 1993
+
+SpecificCharacterSet was introduced in the original 1993 DICOM PS 3.3,
+with the following defined terms:
+
+    ISO_IR 100 -> ISO-8859-1, latin1, western europe
+    ISO_IR 101 -> ISO-8859-2, latin2, central europe
+    ISO_IR 109 -> ISO-8859-3, latin3, maltese
+    ISO_IR 110 -> ISO-8859-4, latin4, baltic
+    ISO_IR 144 -> ISO-8859-5, cyrillic
+    ISO_IR 127 -> ISO-8859-6, arabic
+    ISO_IR 126 -> ISO-8859-7, greek
+    ISO_IR 138 -> ISO-8859-8, hebrew
+    ISO_IR 148 -> ISO-8859-9, latin5, turkish
+
+In the actual text of the standard, hyphens were used instead of underscores
+('ISO-IR 100' instead of 'ISO_IR 100').  This was corrected in DICOM 1996,
+but some very old DICOM files might use the hyphen.
+
+Note the omission of ISO_IR 157 (ISO-8859-10, latin6, nordic).  It dates
+from Sept 1992, probably too late for the 1993 DICOM standard, and it was
+not added in 1996 or any subsequent revisions of DICOM.
+
+
+## DICOM 1996
+
+Support for ISO 2022 escape codes was introduced by Supp 9, Nov 18, 1995,
+with reference to the ISO/IEC 2022:1994 standard.  The purpose of this
+supplement was to support the Japanese language, where iso-2022-jp was a
+popular encoding in Japan (from 1988) and an international standard for
+Japanese (from 1994).
+
+This supplement added ESC to the default character repertoire, and the
+following SpecificCharacterSet defined terms:
+
+    ISO_IR 13 -> JIS X 0201, romaji and katakana
+    ISO 2022 IR 13 -> JIS X 0201, with escape codes
+    ISO 2022 IR 87 -> JIS X 0208, basic kanji
+    ISO 2022 IR 159 -> JIS X 0212, supplementary kanji
+
+As well, ISO 2022 defined terms were added for all of the previously
+supported character sets, including ASCII as 'ISO 2022 IR 6'.
+
+Similar to their usage in iso-2022-jp and iso-2022-jp-2, JIS X 0208/0212
+are only permitted after their ISO 2022 escape codes.  Without the escape
+codes, JIS X 0201 was the only Japanese encoding allowed in DICOM.  At the
+time, JIS X 0201 was the only universally supported encoding in Japan.
+
+Use of JIS X 0201 in DICOM must be done with care, since it replaces
+backslash with YEN SIGN, forcing DICOM to use the yen symbol as
+the value separator when SpecificCharacterSet contains either 'ISO_IR 13'
+or 'ISO 2022 IR 13'.  This causes difficulty when converting the Japanese
+encodings to or from UTF-8.
+
+Let's say than someone wants to convert all text in a DICOM file from
+JIS X 0201 to UTF-8.  Should the YEN SIGN be converted to UTF-8 YEN SIGN,
+or to backslash?  The answer is, it should be converted to UTF-8 YEN SIGN
+only for attributes with a VR of ST, LT, and UT where it wasn't being
+used as a value separator.  For every other text VR, YEN SIGN must be
+interpreted as backslash (that is, its byte value of 0x5C must remain fixed).
+
+Likewise, when UTF-8 is converted to iso-2022-jp for storage in DICOM,
+UTF-8 YEN SIGN will be stored as JIS X 0201 YEN SIGN, where it might be
+interpreted as a separator by DICOM.  This can cause problems when parsing
+the file.  To avoid this, FULLWIDTH YEN SIGN must be substituted for
+YEN SIGN when UTF-8 is converted to iso-2022-jp.
+
+A further difficulty is that, since ISO 2022 IR 87 and ISO 2022 IR 159
+replace ASCII with a double-byte code when they are active, there is a
+possibility that one half (or both halves) of a double-byte character
+will have a value of 0x5C and will therefore be misinterpreted as a
+value separator.  So when parsing DICOM text, 0x5C must never be
+interpreted as separator if either of these character sets has been
+activated by their escape codes.
+
+
+## DICOM 1998
+
+In 1997 there was a proposal, CP 107, to add UTF-8 to DICOM with the
+defined term 'ISO_IR 196'.  This proposal was not accepted, but UTF-8
+was added to DICOM in 2004 under its alternative ISO-IR registered
+name, 'ISO_IR 192'.
+
+
+## DICOM 2000
+
+Support for Korean (KS X 1001-1997) was introduced by CP 155, 1999,
+with the following defined term:
+
+    ISO 2022 IR 149 -> KS X 1001, Korean
+
+The choice to require ISO 2022 escape codes with Korean in DICOM is strange,
+since typical use of KS X 1001 outside of DICOM does not use escape codes.
+When KS X 1001 double-byte characters are used, the high bit of both bytes
+is set, which allows them to be distinguished from ASCII even when no
+escape codes are present.  Therefore, the omission of 'ISO_IR 149' as
+a defined term for SpecificCharacterSet is odd.
+
+It is not surprising that some Korean DICOM files omit the
+escape codes, regardless of the fact that DICOM states that they are
+required.  When SpecificCharacterSet is 'ISO 2022 IR 149', the best
+practise is to use an euc-kr decoder (or CP949 or IBM 970) and to
+simply filter out any escape codes that are present.
+
+Support for the Thai TIS 620 was introduced by CP 194, 1999, with the
+following defined terms:
+
+    ISO_IR 166 -> TIS 620, Thai
+    ISO 2022 IR 166 -> TIS 620 with escape codes
+
+Note that this is also an ISO 8859 character set, specifically ISO-8859-11.
+Also note that, unlike Korean, DICOM permits it both with and without
+escape codes.
+
+
+## DICOM 2004
+
+Support for Chinese was introduced by CP 252, in 2003.  For mainland
+China, GB18030 was chosen, and Unicode for Taiwan (and Hong Kong):
+
+    ISO_IR 192 -> UTF-8, Unicode 3.2
+    GB18030 -> GB18030:2000
+
+This finally broke the tradition of only using character sets that
+conform to ISO 2022.
+
+Taiwan itself actually had its own standard, CNS-11643-1992, that
+defines 7 planes for ISO 2022 (each with its own escape code) and that
+provides approximately 50000 traditional Chinese characters.  Given
+the difficulty of implementing this standard, compared to the
+relative simpilicity of supporting UTF-8 on modern systems, the
+choice of UTF-8 seems obvious.
+
+In contrast, the old Chinese national standard GB2312 can be used with
+ISO 2022, but it defines only one plane for ISO 2022 that provides
+too few Chinese characters for generalized use.  When GB2312 is used
+without escape codes, GB18030 is backwards compatible with it, which
+effectively allows GB2312 (without escape codes) to be included in
+DICOM if labeled as GB18030.
+
+Despite its limitations, GB2312 with ISO 2022 escape codes was adopted
+in DICOM 2013 (see below).
+
+
+## DICOM 2011
+
+The only notable change in DICOM 2011 was that the normative reference
+for ISO_IR 192 was updated to ISO/IEC 10646:2003 (Unicode 4.0).
+
+
+## DICOM 2013
+
+Finally, GBK was introduced by CP 1234 in 2012, along with the even
+older standard GB2312:
+
+    GBK -> Precursor to GB18030
+    ISO 2022 IR 58 -> GB2312 with escape codes
+
+Since GBK is a subset of GB18030, but much more common, it was a very
+welcome addition to DICOM.  However, the addition of GB2312 in its
+ISO 2022 form is a strange throwback to the 1990s.  Like KS X 1001
+for Korean, the standard practise (outside of DICOM) is to use GB2312
+without ISO 2022 escape codes.
+
+A tricky issue with GBK (and also with GB18030) is that, for some of
+the two-byte codes, the second byte has the ASCII code for backslash.
+So multi-value string attributes must be parsed with care, since
+only backslashes that are not part of a multibyte character are
+considered to be value delimiters.  A similar situation occurs with
+iso-2022-jp (but not UTF-8, euc-kr, or GB2312 where all parts of
+every multi-byte character have the high bit set).
+
+
+## DICOM 2021d
+
+Late in 2021, CP 2113 introduced one additional 8-bit character set
+into the DICOM standard:
+
+    ISO_IR 203 -> ISO 8895-15, Latin9
+    ISO 2022 IR 203 -> Latin9 with ISO 2022 escape codes
+
+The latin9 character set is a modernization of the venerable latin1,
+expanded to include the Euro symbol and a few extra accented letters.
+It was first standardized by ISO/IEC in 1999, and prior to its addition
+to DICOM, it was added to HL7 2.6 in 2007.
+
+DICOM 2021d also updated the normative reference for Unicode from
+version 4.0 to version 13, which represents a very large jump.  The
+normative reference for GB 18030 remains the 2000 version of that standard,
+even though a more recent revision exists.  As of yet, no character sets
+have been retired from DICOM, nor are any character sets recommended over
+others.  There has been no deprecation of any older character sets in favor
+of UTF-8.
+
+
+## DICOM 2024b
+
+CP 2354 adds this note to the DICOM standard, which is really a disclaimer:
+
+    1. The Specific Character Set value does not indicate the character
+       set version in use at the time of SOP Instance creation. Updates
+       to character sets designated by a Specific Character Set value are
+       expected to be backward compatible.
+
+This acknowledges that character sets have evolved over time, and that some
+(like Unicode and GB18030) will continue to evolve.  Backwards compatibility
+is expected, but not guaranteed.  Both Unicode and GB18030 have undergone
+corrections that break backwards compatibility, such as the change of the
+WAVE DASH shape in Unicode 8.0, and the code point swaps in GB18030-2005
+and GB18030-2022.
+
+
+## Non-standard character sets
+
+It is sometimes the case that, rather than strictly following the
+DICOM standards for character encoding, a DICOM implementation
+will just set the SpecificCharacterSet to whatever encoding best
+matches the computer's local character set.
+
+The most common character sets in use are the Windows code pages,
+which are generally extended versions of ISO code pages (that is,
+they have extra characters that are not in the ISO standards).
+
+    ISO_IR 100 -> Windows-1252 (Western Europe, 'latin1')
+    ISO_IR 126 -> Windows-1253 (Greek, partial compatibility)
+    ISO_IR 138 -> Windows-1255 (Hebrew, partial compatibility)
+    ISO_IR 148 -> Windows-1254 (Turkish)
+    ISO_IR 166 -> Windows-874 (Thai)
+    ISO_IR 13 -> Windows-932 (Shift-JIS, Japanese)
+    ISO 2022 IR 149 -> Windows-949 (EUC-KR, Korean, no escape codes)
+
+There are also Windows code pages for central Europe, Cyrillic,
+Arabic, and the Baltic Rim that more popular than (and incompatible
+with) their ISO-8859 counterparts.  And some code pages, such as
+Windows-950 (an extension of the Taiwan Big5 encoding) have no
+equivalent within the DICOM standard.
+
+Any of these Windows code pages can potentially be found in a DICOM
+file, mis-labeled as an ISO standard character set.  This results in
+non-conformant files that we might have to deal with as part of our
+workflow. Because of this, it is useful to support these code pages
+when reading DICOM files, though we must be careful to only use
+DICOM-conformant character sets when creating DICOM files.
+
+
+## Person name specifics
+
+In order to better support Japanese names (as well as Korean, Chinese)
+the Patient Name (VR=PN) values can have three components:
+
+    alphabetic=ideographic=phonetic
+
+There are specific rules for the "alphabetic" component in Part 5:
+
+1. It must not contain escape codes.
+2. It can contain any characters in Specific Character Set value 1,
+   unless this value is ISO_IR 192, GBK, or GB18030.
+
+For ISO_IR 192, GBK, and GB18030 there are these restrictions on the
+alphabetic component:
+
+1. It must be limited to U+0020 through U+1FFF, or,
+2. It must be limited to U+3001, U+3002, U+300C, U+300D,
+   U+3099 through U+309C, and U+30A0 through U+30FF.
+
+Here (1) specifies most world alphabets, and (2) specifies Japanese
+katakana (in composed or decomposed form).  For Japanese in UTF-8,
+DICOM does not allow the use of half-width katakana, only full-width
+katakana are allowed.  Hence, conversion of a Japanese data set from
+ISO_IR 13 to ISO_IR 192 requires transliteration of half-width forms
+to full-width forms for the alphabetic component.  And conversion of
+ISO_IR 192 to ISO_IR 13 requires the reverse.  The specification of
+"U+3099 through U+309C" is also interesting, since these are both the
+combining and the non-combining forms of the voiced sound marks.  This
+may be meant to allow transliteration of half-width to full-width without
+composition, which implies that conversion to Unicode does not require
+normalization to NFC.
+
+The DICOM specifics of Japanese names does not end there.  Imagine, for
+instance, that one wanted to convert DICOM datasets into a form compatible
+with iso-2022-jp, without ISO_IR 13.  Since escape codes are not allowed
+in the alphabetic component, it would be pure ASCII, and romanization of
+the katanaka would be required.  Each katakana (plus voice marks or the
+prolonged sound mark) would be romanized according to either ISO 3602 or
+Hepburn, but the lack of accented characters in ASCII means that long
+vowels would be represented by double vowels. A rule (heuristic?) would
+be needed to disambiguate long 'o' to either 'ou' or 'oo', unless 'o-'
+was used.
+
+What about Chinese and Korean?  For those languages, it seems that the
+name must be romanized to make it alphabetic.  Since Vietnamese requires
+only codes less than U+1F00, Vietnamese is covered entirely.

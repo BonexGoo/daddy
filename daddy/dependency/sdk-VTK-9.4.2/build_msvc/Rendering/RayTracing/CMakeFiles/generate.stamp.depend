@@ -1,0 +1,16 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/exportheader.cmake.in
+D:/cybermed/daddy/dependency/oidn-2.3.1.x64.windows/lib/cmake/OpenImageDenoise-2.3.1/OpenImageDenoiseConfig.cmake
+D:/cybermed/daddy/dependency/oidn-2.3.1.x64.windows/lib/cmake/OpenImageDenoise-2.3.1/OpenImageDenoiseConfigVersion.cmake
+D:/cybermed/daddy/dependency/oidn-2.3.1.x64.windows/lib/cmake/OpenImageDenoise-2.3.1/OpenImageDenoiseTargets-release.cmake
+D:/cybermed/daddy/dependency/oidn-2.3.1.x64.windows/lib/cmake/OpenImageDenoise-2.3.1/OpenImageDenoiseTargets.cmake
+D:/cybermed/daddy/dependency/ospray-3.2.0.x86_64.windows/lib/cmake/ospray-3.2.0/osprayConfig.cmake
+D:/cybermed/daddy/dependency/ospray-3.2.0.x86_64.windows/lib/cmake/ospray-3.2.0/osprayConfigVersion.cmake
+D:/cybermed/daddy/dependency/ospray-3.2.0.x86_64.windows/lib/cmake/ospray-3.2.0/ospray_Exports-release.cmake
+D:/cybermed/daddy/dependency/ospray-3.2.0.x86_64.windows/lib/cmake/ospray-3.2.0/ospray_Exports.cmake
+D:/cybermed/daddy/dependency/ospray-3.2.0.x86_64.windows/lib/cmake/ospray-3.2.0/ospray_macros.cmake
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/CMake/vtkObjectFactory.cxx.in
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/CMake/vtkObjectFactory.h.in
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Rendering/RayTracing/CMakeLists.txt

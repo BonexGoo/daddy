@@ -1,0 +1,7 @@
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Imaging/Stencil/vtkImageStencil.h;vtkImagingStencil
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Imaging/Stencil/vtkImageStencilToImage.h;vtkImagingStencil
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Imaging/Stencil/vtkImageToImageStencil.h;vtkImagingStencil
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Imaging/Stencil/vtkImplicitFunctionToImageStencil.h;vtkImagingStencil
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Imaging/Stencil/vtkLassoStencilSource.h;vtkImagingStencil
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Imaging/Stencil/vtkPolyDataToImageStencil.h;vtkImagingStencil
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Imaging/Stencil/vtkROIStencilSource.h;vtkImagingStencil

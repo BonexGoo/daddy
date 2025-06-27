@@ -1,0 +1,7 @@
+﻿  Building Custom Rule D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Wrapping/Tools/CMakeLists.txt
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets(254,5): warning MSB8065: "D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Wrapping\Tools\CMakeLists.txt" 항목에 대한 사용자 지정 빌드에 성공했지만 지정한 출력 "d:\cybermed\daddy\dependency\sdk-vtk-9.4.2\build_msvc\wrapping\tools\cmakefiles\generate.stamp"이(가) 생성되지 않았습니다. 이 오류로 인해 증분 빌드가 제대로 작동하지 않을 수 있습니다.
+  vtkWrapSerDes.c
+  vtkWrapSerDesClass.c
+  vtkWrapSerDesProperty.c
+  코드를 생성하고 있습니다...
+  WrapSerDes.vcxproj -> D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\bin\Release\vtkWrapSerDes-9.4.exe

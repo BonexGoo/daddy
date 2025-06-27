@@ -1,0 +1,32 @@
+﻿  Building Custom Rule D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/dcmimgle/libsrc/CMakeLists.txt
+  dcmimage.cc
+  dibaslut.cc
+  diciefn.cc
+  dicielut.cc
+  didislut.cc
+  didispfn.cc
+  didocu.cc
+  digsdfn.cc
+  digsdlut.cc
+  diimage.cc
+  diinpx.cc
+  diluptab.cc
+  dimo1img.cc
+  dimo2img.cc
+  dimoimg.cc
+  dimoimg3.cc
+  dimoimg4.cc
+  dimoimg5.cc
+  dimomod.cc
+  dimoopx.cc
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  dimopx.cc
+  diovdat.cc
+  diovlay.cc
+  diovlimg.cc
+  diovpln.cc
+  diutils.cc
+  코드를 생성하고 있습니다...
+     D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/lib/Debug/dcmimgle.lib 라이브러리 및 D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/lib/Debug/dcmimgle.exp 개체를 생성하고 있습니다.
+  dcmimgle.vcxproj -> D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\bin\Debug\dcmimgle.dll

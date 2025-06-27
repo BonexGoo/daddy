@@ -1,0 +1,7 @@
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\AMR\vtkAMRCutPlane.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Filters\AMR\FiltersAMR.dir\Release\vtkAMRCutPlane.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\AMR\vtkAMRGaussianPulseSource.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Filters\AMR\FiltersAMR.dir\Release\vtkAMRGaussianPulseSource.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\AMR\vtkAMRResampleFilter.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Filters\AMR\FiltersAMR.dir\Release\vtkAMRResampleFilter.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\AMR\vtkAMRSliceFilter.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Filters\AMR\FiltersAMR.dir\Release\vtkAMRSliceFilter.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\AMR\vtkAMRToMultiBlockFilter.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Filters\AMR\FiltersAMR.dir\Release\vtkAMRToMultiBlockFilter.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\AMR\vtkImageToAMR.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Filters\AMR\FiltersAMR.dir\Release\vtkImageToAMR.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Filters\AMR\vtkParallelAMRUtilities.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Filters\AMR\FiltersAMR.dir\Release\vtkParallelAMRUtilities.obj

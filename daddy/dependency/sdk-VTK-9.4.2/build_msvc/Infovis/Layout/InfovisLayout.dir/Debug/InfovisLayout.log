@@ -1,0 +1,52 @@
+﻿  Building Custom Rule D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Infovis/Layout/CMakeLists.txt
+  vtkArcParallelEdgeStrategy.cxx
+  vtkAreaLayout.cxx
+  vtkAreaLayoutStrategy.cxx
+  vtkAssignCoordinates.cxx
+  vtkAssignCoordinatesLayoutStrategy.cxx
+  vtkAttributeClustering2DLayoutStrategy.cxx
+  vtkBoxLayoutStrategy.cxx
+  vtkCirclePackFrontChainLayoutStrategy.cxx
+  vtkCirclePackLayout.cxx
+  vtkCirclePackLayoutStrategy.cxx
+  vtkCirclePackToPolyData.cxx
+  vtkCircularLayoutStrategy.cxx
+  vtkClustering2DLayoutStrategy.cxx
+  vtkCommunity2DLayoutStrategy.cxx
+  vtkConeLayoutStrategy.cxx
+  vtkConstrained2DLayoutStrategy.cxx
+  vtkCosmicTreeLayoutStrategy.cxx
+  vtkEdgeLayout.cxx
+  vtkEdgeLayoutStrategy.cxx
+  vtkFast2DLayoutStrategy.cxx
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  vtkForceDirectedLayoutStrategy.cxx
+  vtkGeoEdgeStrategy.cxx
+  vtkGeoMath.cxx
+  vtkGraphLayout.cxx
+  vtkGraphLayoutStrategy.cxx
+  vtkIncrementalForceLayout.cxx
+  vtkKCoreLayout.cxx
+  vtkPassThroughEdgeStrategy.cxx
+  vtkPassThroughLayoutStrategy.cxx
+  vtkPerturbCoincidentVertices.cxx
+  vtkRandomLayoutStrategy.cxx
+  vtkSimple2DLayoutStrategy.cxx
+  vtkSimple3DCirclesStrategy.cxx
+  vtkSliceAndDiceLayoutStrategy.cxx
+  vtkSpanTreeLayoutStrategy.cxx
+  vtkSplineGraphEdges.cxx
+  vtkSquarifyLayoutStrategy.cxx
+  vtkStackedTreeLayoutStrategy.cxx
+  vtkTreeLayoutStrategy.cxx
+  vtkTreeMapLayout.cxx
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  vtkTreeMapLayoutStrategy.cxx
+  vtkTreeMapToPolyData.cxx
+  vtkTreeOrbitLayoutStrategy.cxx
+  vtkTreeRingToPolyData.cxx
+  코드를 생성하고 있습니다...
+     D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Debug/vtkInfovisLayout-9.4d.lib 라이브러리 및 D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Debug/vtkInfovisLayout-9.4d.exp 개체를 생성하고 있습니다.
+  InfovisLayout.vcxproj -> D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\bin\Debug\vtkInfovisLayout-9.4d.dll

@@ -1,0 +1,12 @@
+﻿  Building Custom Rule D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/dcmsr/tests/CMakeLists.txt
+  tests.cc
+  tsrcmr.cc
+  tsrcodvl.cc
+  tsrdoc.cc
+  tsrdoctr.cc
+  tsrlist.cc
+  tsrnumvl.cc
+  tsrtpl.cc
+  tsrtree.cc
+  코드를 생성하고 있습니다...
+  dcmsr_tests.vcxproj -> D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\bin\Debug\dcmsr_tests.exe

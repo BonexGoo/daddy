@@ -1,0 +1,12 @@
+﻿  Building Custom Rule D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Imaging/Fourier/CMakeLists.txt
+  vtkImageButterworthHighPass.cxx
+  vtkImageButterworthLowPass.cxx
+  vtkImageFFT.cxx
+  vtkImageFourierCenter.cxx
+  vtkImageFourierFilter.cxx
+  vtkImageIdealHighPass.cxx
+  vtkImageIdealLowPass.cxx
+  vtkImageRFFT.cxx
+  코드를 생성하고 있습니다...
+     D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Debug/vtkImagingFourier-9.4d.lib 라이브러리 및 D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Debug/vtkImagingFourier-9.4d.exp 개체를 생성하고 있습니다.
+  ImagingFourier.vcxproj -> D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\bin\Debug\vtkImagingFourier-9.4d.dll

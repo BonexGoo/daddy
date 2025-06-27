@@ -1,0 +1,12 @@
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\IO\SQL\vtkDatabaseToTableReader.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\IO\SQL\IOSQL.dir\Debug\vtkDatabaseToTableReader.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\IO\SQL\vtkRowQuery.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\IO\SQL\IOSQL.dir\Debug\vtkRowQuery.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\IO\SQL\vtkRowQueryToTable.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\IO\SQL\IOSQL.dir\Debug\vtkRowQueryToTable.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\IO\SQL\vtkSQLDatabase.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\IO\SQL\IOSQL.dir\Debug\vtkSQLDatabase.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\IO\SQL\vtkSQLDatabaseSchema.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\IO\SQL\IOSQL.dir\Debug\vtkSQLDatabaseSchema.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\IO\SQL\vtkSQLDatabaseTableSource.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\IO\SQL\IOSQL.dir\Debug\vtkSQLDatabaseTableSource.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\IO\SQL\vtkSQLiteDatabase.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\IO\SQL\IOSQL.dir\Debug\vtkSQLiteDatabase.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\IO\SQL\vtkSQLiteQuery.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\IO\SQL\IOSQL.dir\Debug\vtkSQLiteQuery.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\IO\SQL\vtkSQLiteToTableReader.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\IO\SQL\IOSQL.dir\Debug\vtkSQLiteToTableReader.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\IO\SQL\vtkSQLQuery.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\IO\SQL\IOSQL.dir\Debug\vtkSQLQuery.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\IO\SQL\vtkTableToDatabaseWriter.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\IO\SQL\IOSQL.dir\Debug\vtkTableToDatabaseWriter.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\IO\SQL\vtkTableToSQLiteWriter.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\IO\SQL\IOSQL.dir\Debug\vtkTableToSQLiteWriter.obj

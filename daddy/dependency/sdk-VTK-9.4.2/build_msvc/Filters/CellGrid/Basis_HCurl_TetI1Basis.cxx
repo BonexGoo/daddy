@@ -1,0 +1,30 @@
+// SPDX-FileCopyrightText: Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
+// SPDX-License-Identifier: BSD-3-Clause
+#include "Basis_HCurl_TetI1Basis.h"
+
+const char *Basis_HCurl_TetI1Basis =
+"// Intrepid2\n"
+"basis[0 * 3 + 0] = 2.0 * (1.0 - ss - tt);\n"
+"basis[0 * 3 + 1] = 2.0 * rr;\n"
+"basis[0 * 3 + 2] = 2.0 * rr;\n"
+"\n"
+"basis[1 * 3 + 0] = -2.0 * ss;\n"
+"basis[1 * 3 + 1] = 2.0 * rr;\n"
+"basis[1 * 3 + 2] = 0.0;\n"
+"\n"
+"basis[2 * 3 + 0] = -2.0 * ss;\n"
+"basis[2 * 3 + 1] = 2.0 * (-1.0 + rr + tt);\n"
+"basis[2 * 3 + 2] = -2.0 * ss;\n"
+"\n"
+"basis[3 * 3 + 0] = 2.0 * tt;\n"
+"basis[3 * 3 + 1] = 2.0 * tt;\n"
+"basis[3 * 3 + 2] = 2.0 * (1.0 - rr - ss);\n"
+"\n"
+"basis[4 * 3 + 0] = -2.0 * tt;\n"
+"basis[4 * 3 + 1] = 0.0;\n"
+"basis[4 * 3 + 2] = 2.0 * rr;\n"
+"\n"
+"basis[5 * 3 + 0] = 0.0;\n"
+"basis[5 * 3 + 1] = -2.0 * tt;\n"
+"basis[5 * 3 + 2] = 2.0 * ss;\n"
+"";

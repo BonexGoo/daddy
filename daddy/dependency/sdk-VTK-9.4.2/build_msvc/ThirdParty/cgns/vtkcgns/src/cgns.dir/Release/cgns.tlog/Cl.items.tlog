@@ -1,0 +1,8 @@
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\cgns\vtkcgns\src\cgns_error.c;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\cgns\vtkcgns\src\cgns.dir\Release\cgns_error.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\cgns\vtkcgns\src\cgns_internals.c;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\cgns\vtkcgns\src\cgns.dir\Release\cgns_internals.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\cgns\vtkcgns\src\cgns_io.c;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\cgns\vtkcgns\src\cgns.dir\Release\cgns_io.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\cgns\vtkcgns\src\cgnslib.c;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\cgns\vtkcgns\src\cgns.dir\Release\cgnslib.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\cgns\vtkcgns\src\cg_hashmap.c;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\cgns\vtkcgns\src\cgns.dir\Release\cg_hashmap.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\cgns\vtkcgns\src\adf\ADF_interface.c;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\cgns\vtkcgns\src\cgns.dir\Release\ADF_interface.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\cgns\vtkcgns\src\adf\ADF_internals.c;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\cgns\vtkcgns\src\cgns.dir\Release\ADF_internals.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\cgns\vtkcgns\src\adfh\ADFH.c;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\cgns\vtkcgns\src\cgns.dir\Release\ADFH.obj

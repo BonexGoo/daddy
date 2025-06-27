@@ -1,0 +1,12 @@
+D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmfg\tests\tests.cc;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\dcmfg\tests\dcmfg_tests.dir\Debug\tests.obj
+D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmfg\tests\t_concatenation_creator.cc;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\dcmfg\tests\dcmfg_tests.dir\Debug\t_concatenation_creator.obj
+D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmfg\tests\t_concatenation_loader.cc;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\dcmfg\tests\dcmfg_tests.dir\Debug\t_concatenation_loader.obj
+D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmfg\tests\t_ct_acquisition_details.cc;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\dcmfg\tests\dcmfg_tests.dir\Debug\t_ct_acquisition_details.obj
+D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmfg\tests\t_ct_acquisition_type.cc;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\dcmfg\tests\dcmfg_tests.dir\Debug\t_ct_acquisition_type.obj
+D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmfg\tests\t_ct_image_frame_type.cc;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\dcmfg\tests\dcmfg_tests.dir\Debug\t_ct_image_frame_type.obj
+D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmfg\tests\t_ct_position.cc;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\dcmfg\tests\dcmfg_tests.dir\Debug\t_ct_position.obj
+D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmfg\tests\t_ct_table_dynamics.cc;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\dcmfg\tests\dcmfg_tests.dir\Debug\t_ct_table_dynamics.obj
+D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmfg\tests\t_deriv_image.cc;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\dcmfg\tests\dcmfg_tests.dir\Debug\t_deriv_image.obj
+D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmfg\tests\t_fg_base.cc;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\dcmfg\tests\dcmfg_tests.dir\Debug\t_fg_base.obj
+D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmfg\tests\t_frame_content.cc;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\dcmfg\tests\dcmfg_tests.dir\Debug\t_frame_content.obj
+D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\dcmfg\tests\t_irradiation_event_identification.cc;D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\dcmfg\tests\dcmfg_tests.dir\Debug\t_irradiation_event_identification.obj

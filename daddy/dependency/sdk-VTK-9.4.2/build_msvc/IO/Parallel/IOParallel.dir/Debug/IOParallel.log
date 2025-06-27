@@ -1,0 +1,6 @@
+﻿  vtkEnSightWriter.cxx
+  vtkNek5000Reader.cxx
+  vtkPChacoReader.cxx
+  vtkPDataSetWriter.cxx
+  코드를 생성하고 있습니다...
+  IOParallel.vcxproj -> D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\bin\Debug\vtkIOParallel-9.4d.dll

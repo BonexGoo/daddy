@@ -1,0 +1,8 @@
+﻿  Building Custom Rule D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/dcmseg/tests/CMakeLists.txt
+  tbigdim.cc
+  tests.cc
+  tutils.cc
+  troundtrip.cc
+  tconcat_binary.cc
+  코드를 생성하고 있습니다...
+  dcmseg_tests.vcxproj -> D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\bin\Release\dcmseg_tests.exe

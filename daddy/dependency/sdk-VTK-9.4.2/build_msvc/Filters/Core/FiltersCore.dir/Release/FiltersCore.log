@@ -1,0 +1,151 @@
+﻿  Building Custom Rule D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Filters/Core/CMakeLists.txt
+  vtk3DLinearGridCrinkleExtractor.cxx
+  vtk3DLinearGridPlaneCutter.cxx
+  vtkAppendArcLength.cxx
+  vtkAppendCompositeDataLeaves.cxx
+  vtkAppendDataSets.cxx
+  vtkAppendFilter.cxx
+  vtkAppendPartitionedDataSetCollection.cxx
+  vtkAppendPolyData.cxx
+  vtkAppendSelection.cxx
+  vtkArrayCalculator.cxx
+  vtkArrayRename.cxx
+  vtkAssignAttribute.cxx
+  vtkAttributeDataToFieldDataFilter.cxx
+  vtkAttributeDataToTableFilter.cxx
+  vtkBinCellDataFilter.cxx
+  vtkBinnedDecimation.cxx
+  vtkCellCenters.cxx
+  vtkCellDataToPointData.cxx
+  vtkCenterOfMass.cxx
+  vtkCleanPolyData.cxx
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  vtkClipPolyData.cxx
+  vtkCompositeCutter.cxx
+  vtkCompositeDataProbeFilter.cxx
+  vtkConnectivityFilter.cxx
+  vtkConstrainedSmoothingFilter.cxx
+  vtkContour3DLinearGrid.cxx
+  vtkContourFilter.cxx
+  vtkContourGrid.cxx
+  vtkContourHelper.cxx
+  vtkConvertToMultiBlockDataSet.cxx
+  vtkConvertToPartitionedDataSetCollection.cxx
+  vtkConvertToPolyhedra.cxx
+  vtkCutter.cxx
+  vtkDataObjectGenerator.cxx
+  vtkDataObjectToDataSetFilter.cxx
+  vtkDataSetEdgeSubdivisionCriterion.cxx
+  vtkDataSetToDataObjectFilter.cxx
+  vtkDecimatePolylineAngleStrategy.cxx
+  vtkDecimatePolylineCustomFieldStrategy.cxx
+  vtkDecimatePolylineDistanceStrategy.cxx
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  vtkDecimatePolylineFilter.cxx
+  vtkDecimatePro.cxx
+  vtkDelaunay2D.cxx
+  vtkDelaunay3D.cxx
+  vtkEdgeSubdivisionCriterion.cxx
+  vtkElevationFilter.cxx
+  vtkExecutionTimer.cxx
+  vtkExplicitStructuredGridCrop.cxx
+  vtkExplicitStructuredGridToUnstructuredGrid.cxx
+  vtkExtractCells.cxx
+  vtkExtractCellsAlongPolyLine.cxx
+  vtkExtractEdges.cxx
+  vtkFeatureEdges.cxx
+  vtkFieldDataToAttributeDataFilter.cxx
+  vtkFieldDataToDataSetAttribute.cxx
+  vtkFlyingEdges2D.cxx
+  vtkFlyingEdges3D.cxx
+  vtkFlyingEdgesPlaneCutter.cxx
+  vtkGenerateIds.cxx
+  vtkGlyph2D.cxx
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  vtkGlyph3D.cxx
+  vtkGridSynchronizedTemplates3D.cxx
+  vtkHedgeHog.cxx
+  vtkHull.cxx
+  vtkHyperTreeGridProbeFilter.cxx
+  vtkHyperTreeGridProbeFilterUtilities.cxx
+  vtkIdFilter.cxx
+  vtkImageAppend.cxx
+  vtkImageDataToExplicitStructuredGrid.cxx
+  vtkImplicitPolyDataDistance.cxx
+  vtkImplicitProjectOnPlaneDistance.cxx
+  vtkMarchingCubes.cxx
+  vtkMarchingSquares.cxx
+  vtkMaskFields.cxx
+  vtkMaskPoints.cxx
+  vtkMaskPolyData.cxx
+  vtkMassProperties.cxx
+  vtkMergeDataObjectFilter.cxx
+  vtkMergeFields.cxx
+  vtkMergeFilter.cxx
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  vtkMoleculeAppend.cxx
+  vtkMultiObjectMassProperties.cxx
+  vtkOrientPolyData.cxx
+  vtkPackLabels.cxx
+  vtkPassThrough.cxx
+  vtkPlaneCutter.cxx
+  vtkPointDataToCellData.cxx
+  vtkPolyDataConnectivityFilter.cxx
+  vtkPolyDataEdgeConnectivityFilter.cxx
+  vtkPolyDataNormals.cxx
+  vtkPolyDataPlaneClipper.cxx
+  vtkPolyDataPlaneCutter.cxx
+  vtkPolyDataTangents.cxx
+  vtkPolyDataToUnstructuredGrid.cxx
+  vtkProbeFilter.cxx
+  vtkQuadricClustering.cxx
+  vtkQuadricDecimation.cxx
+  vtkRearrangeFields.cxx
+  vtkRectilinearSynchronizedTemplates.cxx
+  vtkRemoveDuplicatePolys.cxx
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  vtkRemoveUnusedPoints.cxx
+  vtkResampleToImage.cxx
+  vtkResampleWithDataSet.cxx
+  vtkReverseSense.cxx
+  vtkSimpleElevationFilter.cxx
+  vtkSmoothPolyDataFilter.cxx
+  vtkSphereTreeFilter.cxx
+  vtkSplitSharpEdgesPolyData.cxx
+  vtkStructuredDataPlaneCutter.cxx
+  vtkStaticCleanPolyData.cxx
+  vtkStaticCleanUnstructuredGrid.cxx
+  vtkStreamerBase.cxx
+  vtkStreamingTessellator.cxx
+  vtkStripper.cxx
+  vtkStructuredGridAppend.cxx
+  vtkStructuredGridOutlineFilter.cxx
+  vtkSurfaceNets2D.cxx
+  vtkSurfaceNets3D.cxx
+  vtkSynchronizedTemplates2D.cxx
+  vtkSynchronizedTemplates3D.cxx
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  vtkSynchronizedTemplatesCutter3D.cxx
+  vtkTensorGlyph.cxx
+  vtkThreshold.cxx
+  vtkThresholdPoints.cxx
+  vtkTransposeTable.cxx
+  vtkTriangleFilter.cxx
+  vtkTriangleMeshPointNormals.cxx
+  vtkTubeBender.cxx
+  vtkTubeFilter.cxx
+  vtkUnstructuredGridQuadricDecimation.cxx
+  vtkUnstructuredGridToExplicitStructuredGrid.cxx
+  vtkVectorDot.cxx
+  vtkVectorNorm.cxx
+  vtkVoronoi2D.cxx
+  vtkWindowedSincPolyDataFilter.cxx
+  코드를 생성하고 있습니다...
+     D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Release/vtkFiltersCore-9.4.lib 라이브러리 및 D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Release/vtkFiltersCore-9.4.exp 개체를 생성하고 있습니다.
+  FiltersCore.vcxproj -> D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\bin\Release\vtkFiltersCore-9.4.dll

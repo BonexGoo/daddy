@@ -1,0 +1,90 @@
+^D:\CYBERMED\DADDY\DEPENDENCY\SDK-VTK-9.4.2\BUILD_MSVC\CMAKEFILES\AC4B64D8FF882A62E727A1E9CC3AA16B\VTKCELLGRIDSHADERBASES.H.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -Dsource_dir=D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Rendering/CellGrid -Dbinary_dir=D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Rendering/CellGrid -Dsource_file=D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Rendering/CellGrid/glsl/vtkCellGridShaderBases.glsl -Doutput_name=vtkCellGridShaderBases -Dexport_symbol=VTKRENDERINGCELLGRID_NO_EXPORT -Dexport_header=vtkRenderingCellGridModule.h -Dabi_mangle_symbol_begin= -Dabi_mangle_symbol_end= -Dabi_mangle_header= -Dbinary=FALSE -Dnul_terminate=FALSE -D_vtk_encode_string_run=ON -P D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/CMake/vtkEncodeString.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CYBERMED\DADDY\DEPENDENCY\SDK-VTK-9.4.2\BUILD_MSVC\CMAKEFILES\AC4B64D8FF882A62E727A1E9CC3AA16B\VTKCELLGRIDSHADERCOMMONDEFS.H.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -Dsource_dir=D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Rendering/CellGrid -Dbinary_dir=D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Rendering/CellGrid -Dsource_file=D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Rendering/CellGrid/glsl/vtkCellGridShaderCommonDefs.glsl -Doutput_name=vtkCellGridShaderCommonDefs -Dexport_symbol=VTKRENDERINGCELLGRID_NO_EXPORT -Dexport_header=vtkRenderingCellGridModule.h -Dabi_mangle_symbol_begin= -Dabi_mangle_symbol_end= -Dabi_mangle_header= -Dbinary=FALSE -Dnul_terminate=FALSE -D_vtk_encode_string_run=ON -P D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/CMake/vtkEncodeString.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CYBERMED\DADDY\DEPENDENCY\SDK-VTK-9.4.2\BUILD_MSVC\CMAKEFILES\AC4B64D8FF882A62E727A1E9CC3AA16B\VTKCELLGRIDSHADERFRAGMENT.H.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -Dsource_dir=D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Rendering/CellGrid -Dbinary_dir=D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Rendering/CellGrid -Dsource_file=D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Rendering/CellGrid/glsl/vtkCellGridShaderFragment.glsl -Doutput_name=vtkCellGridShaderFragment -Dexport_symbol=VTKRENDERINGCELLGRID_NO_EXPORT -Dexport_header=vtkRenderingCellGridModule.h -Dabi_mangle_symbol_begin= -Dabi_mangle_symbol_end= -Dabi_mangle_header= -Dbinary=FALSE -Dnul_terminate=FALSE -D_vtk_encode_string_run=ON -P D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/CMake/vtkEncodeString.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CYBERMED\DADDY\DEPENDENCY\SDK-VTK-9.4.2\BUILD_MSVC\CMAKEFILES\AC4B64D8FF882A62E727A1E9CC3AA16B\VTKCELLGRIDSHADERTESSELLATIONCONTROL.H.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -Dsource_dir=D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Rendering/CellGrid -Dbinary_dir=D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Rendering/CellGrid -Dsource_file=D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Rendering/CellGrid/glsl/vtkCellGridShaderTessellationControl.glsl -Doutput_name=vtkCellGridShaderTessellationControl -Dexport_symbol=VTKRENDERINGCELLGRID_NO_EXPORT -Dexport_header=vtkRenderingCellGridModule.h -Dabi_mangle_symbol_begin= -Dabi_mangle_symbol_end= -Dabi_mangle_header= -Dbinary=FALSE -Dnul_terminate=FALSE -D_vtk_encode_string_run=ON -P D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/CMake/vtkEncodeString.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CYBERMED\DADDY\DEPENDENCY\SDK-VTK-9.4.2\BUILD_MSVC\CMAKEFILES\AC4B64D8FF882A62E727A1E9CC3AA16B\VTKCELLGRIDSHADERTESSELLATIONDEBUGGEOMETRY.H.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -Dsource_dir=D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Rendering/CellGrid -Dbinary_dir=D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Rendering/CellGrid -Dsource_file=D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Rendering/CellGrid/glsl/vtkCellGridShaderTessellationDebugGeometry.glsl -Doutput_name=vtkCellGridShaderTessellationDebugGeometry -Dexport_symbol=VTKRENDERINGCELLGRID_NO_EXPORT -Dexport_header=vtkRenderingCellGridModule.h -Dabi_mangle_symbol_begin= -Dabi_mangle_symbol_end= -Dabi_mangle_header= -Dbinary=FALSE -Dnul_terminate=FALSE -D_vtk_encode_string_run=ON -P D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/CMake/vtkEncodeString.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CYBERMED\DADDY\DEPENDENCY\SDK-VTK-9.4.2\BUILD_MSVC\CMAKEFILES\AC4B64D8FF882A62E727A1E9CC3AA16B\VTKCELLGRIDSHADERTESSELLATIONEVALUATION.H.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -Dsource_dir=D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Rendering/CellGrid -Dbinary_dir=D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Rendering/CellGrid -Dsource_file=D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Rendering/CellGrid/glsl/vtkCellGridShaderTessellationEvaluation.glsl -Doutput_name=vtkCellGridShaderTessellationEvaluation -Dexport_symbol=VTKRENDERINGCELLGRID_NO_EXPORT -Dexport_header=vtkRenderingCellGridModule.h -Dabi_mangle_symbol_begin= -Dabi_mangle_symbol_end= -Dabi_mangle_header= -Dbinary=FALSE -Dnul_terminate=FALSE -D_vtk_encode_string_run=ON -P D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/CMake/vtkEncodeString.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CYBERMED\DADDY\DEPENDENCY\SDK-VTK-9.4.2\BUILD_MSVC\CMAKEFILES\AC4B64D8FF882A62E727A1E9CC3AA16B\VTKCELLGRIDSHADERUTIL.H.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -Dsource_dir=D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Rendering/CellGrid -Dbinary_dir=D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Rendering/CellGrid -Dsource_file=D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Rendering/CellGrid/glsl/vtkCellGridShaderUtil.glsl -Doutput_name=vtkCellGridShaderUtil -Dexport_symbol=VTKRENDERINGCELLGRID_NO_EXPORT -Dexport_header=vtkRenderingCellGridModule.h -Dabi_mangle_symbol_begin= -Dabi_mangle_symbol_end= -Dabi_mangle_header= -Dbinary=FALSE -Dnul_terminate=FALSE -D_vtk_encode_string_run=ON -P D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/CMake/vtkEncodeString.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CYBERMED\DADDY\DEPENDENCY\SDK-VTK-9.4.2\BUILD_MSVC\CMAKEFILES\AC4B64D8FF882A62E727A1E9CC3AA16B\VTKCELLGRIDSHADERVERTEX.H.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -Dsource_dir=D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Rendering/CellGrid -Dbinary_dir=D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Rendering/CellGrid -Dsource_file=D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Rendering/CellGrid/glsl/vtkCellGridShaderVertex.glsl -Doutput_name=vtkCellGridShaderVertex -Dexport_symbol=VTKRENDERINGCELLGRID_NO_EXPORT -Dexport_header=vtkRenderingCellGridModule.h -Dabi_mangle_symbol_begin= -Dabi_mangle_symbol_end= -Dabi_mangle_header= -Dbinary=FALSE -Dnul_terminate=FALSE -D_vtk_encode_string_run=ON -P D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/CMake/vtkEncodeString.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CYBERMED\DADDY\DEPENDENCY\SDK-VTK-9.4.2\RENDERING\CELLGRID\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/cybermed/daddy/dependency/sdk-VTK-9.4.2 -BD:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc --check-stamp-file D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Rendering/CellGrid/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

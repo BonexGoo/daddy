@@ -1,0 +1,50 @@
+^D:\CYBERMED\DADDY\DEPENDENCY\SDK-VTK-9.4.2\BUILD_MSVC\CMAKEFILES\68FC2E6480E0014230EAA0FF697428EB\RAYCASTERFS.H.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -Dsource_dir=D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Rendering/VolumeOpenGL2 -Dbinary_dir=D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Rendering/VolumeOpenGL2 -Dsource_file=D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Rendering/VolumeOpenGL2/shaders/raycasterfs.glsl -Doutput_name=raycasterfs -Dexport_symbol=VTKRENDERINGVOLUMEOPENGL2_NO_EXPORT -Dexport_header=vtkRenderingVolumeOpenGL2Module.h -Dabi_mangle_symbol_begin= -Dabi_mangle_symbol_end= -Dabi_mangle_header= -Dbinary=FALSE -Dnul_terminate=FALSE -D_vtk_encode_string_run=ON -P D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/CMake/vtkEncodeString.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CYBERMED\DADDY\DEPENDENCY\SDK-VTK-9.4.2\BUILD_MSVC\CMAKEFILES\68FC2E6480E0014230EAA0FF697428EB\RAYCASTERVS.H.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -Dsource_dir=D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Rendering/VolumeOpenGL2 -Dbinary_dir=D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Rendering/VolumeOpenGL2 -Dsource_file=D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Rendering/VolumeOpenGL2/shaders/raycastervs.glsl -Doutput_name=raycastervs -Dexport_symbol=VTKRENDERINGVOLUMEOPENGL2_NO_EXPORT -Dexport_header=vtkRenderingVolumeOpenGL2Module.h -Dabi_mangle_symbol_begin= -Dabi_mangle_symbol_end= -Dabi_mangle_header= -Dbinary=FALSE -Dnul_terminate=FALSE -D_vtk_encode_string_run=ON -P D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/CMake/vtkEncodeString.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CYBERMED\DADDY\DEPENDENCY\SDK-VTK-9.4.2\BUILD_MSVC\CMAKEFILES\68FC2E6480E0014230EAA0FF697428EB\VTKGLPROJECTEDTETRAHEDRAFS.H.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -Dsource_dir=D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Rendering/VolumeOpenGL2 -Dbinary_dir=D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Rendering/VolumeOpenGL2 -Dsource_file=D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Rendering/VolumeOpenGL2/shaders/vtkglProjectedTetrahedraFS.glsl -Doutput_name=vtkglProjectedTetrahedraFS -Dexport_symbol=VTKRENDERINGVOLUMEOPENGL2_NO_EXPORT -Dexport_header=vtkRenderingVolumeOpenGL2Module.h -Dabi_mangle_symbol_begin= -Dabi_mangle_symbol_end= -Dabi_mangle_header= -Dbinary=FALSE -Dnul_terminate=FALSE -D_vtk_encode_string_run=ON -P D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/CMake/vtkEncodeString.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CYBERMED\DADDY\DEPENDENCY\SDK-VTK-9.4.2\BUILD_MSVC\CMAKEFILES\68FC2E6480E0014230EAA0FF697428EB\VTKGLPROJECTEDTETRAHEDRAVS.H.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -Dsource_dir=D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Rendering/VolumeOpenGL2 -Dbinary_dir=D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Rendering/VolumeOpenGL2 -Dsource_file=D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Rendering/VolumeOpenGL2/shaders/vtkglProjectedTetrahedraVS.glsl -Doutput_name=vtkglProjectedTetrahedraVS -Dexport_symbol=VTKRENDERINGVOLUMEOPENGL2_NO_EXPORT -Dexport_header=vtkRenderingVolumeOpenGL2Module.h -Dabi_mangle_symbol_begin= -Dabi_mangle_symbol_end= -Dabi_mangle_header= -Dbinary=FALSE -Dnul_terminate=FALSE -D_vtk_encode_string_run=ON -P D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/CMake/vtkEncodeString.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CYBERMED\DADDY\DEPENDENCY\SDK-VTK-9.4.2\RENDERING\VOLUMEOPENGL2\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/cybermed/daddy/dependency/sdk-VTK-9.4.2 -BD:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc --check-stamp-file D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/Rendering/VolumeOpenGL2/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

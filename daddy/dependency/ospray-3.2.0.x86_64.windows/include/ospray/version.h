@@ -1,0 +1,10 @@
+// Copyright 2009 Intel Corporation
+// SPDX-License-Identifier: Apache-2.0
+
+#define OSPRAY_VERSION_MAJOR 3
+#define OSPRAY_VERSION_MINOR 2
+#define OSPRAY_VERSION_PATCH 0
+#define OSPRAY_SOVERSION 3
+#define OSPRAY_VERSION_GITHASH "85af2929937d516997451cbd52d352cf93125ed2"
+#define OSPRAY_VERSION_NOTE ""
+#define OSPRAY_VERSION "3.2.0"

@@ -1,0 +1,28 @@
+﻿  Building Custom Rule D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/dcmimage/libsrc/CMakeLists.txt
+  dcmicmph.cc
+  diargimg.cc
+  dicmyimg.cc
+  dicoimg.cc
+  dicoopx.cc
+  dicopx.cc
+  dihsvimg.cc
+  dilogger.cc
+  dipalimg.cc
+  dipipng.cc
+  dipitiff.cc
+  diqtctab.cc
+  diqtfs.cc
+  diqthash.cc
+  diqthitl.cc
+  diqtpbox.cc
+  diquant.cc
+  diregist.cc
+  dirgbimg.cc
+  diybrimg.cc
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  diyf2img.cc
+  diyp2img.cc
+  코드를 생성하고 있습니다...
+     D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/lib/Debug/dcmimage.lib 라이브러리 및 D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/lib/Debug/dcmimage.exp 개체를 생성하고 있습니다.
+  dcmimage.vcxproj -> D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\bin\Debug\dcmimage.dll

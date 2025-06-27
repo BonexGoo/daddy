@@ -1,0 +1,8 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.31/Modules/CheckIncludeFile.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CheckIncludeFileCXX.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CheckSymbolExists.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CheckTypeSize.cmake
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/jpeg/vtkjpeg/CMakeLists.txt
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/jpeg/vtkjpeg/jconfigint.h.in
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/jpeg/vtkjpeg/win/jconfig.h.in

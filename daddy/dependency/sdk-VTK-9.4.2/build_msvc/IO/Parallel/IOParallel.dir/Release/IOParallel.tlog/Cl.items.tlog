@@ -1,0 +1,10 @@
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\IO\Parallel\vtkMultiBlockPLOT3DReaderInternals.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\IO\Parallel\IOParallel.dir\Release\vtkMultiBlockPLOT3DReaderInternals.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\IO\Parallel\vtkEnSightWriter.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\IO\Parallel\IOParallel.dir\Release\vtkEnSightWriter.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\IO\Parallel\vtkMultiBlockPLOT3DReader.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\IO\Parallel\IOParallel.dir\Release\vtkMultiBlockPLOT3DReader.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\IO\Parallel\vtkNek5000Reader.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\IO\Parallel\IOParallel.dir\Release\vtkNek5000Reader.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\IO\Parallel\vtkPChacoReader.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\IO\Parallel\IOParallel.dir\Release\vtkPChacoReader.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\IO\Parallel\vtkPDataSetReader.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\IO\Parallel\IOParallel.dir\Release\vtkPDataSetReader.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\IO\Parallel\vtkPDataSetWriter.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\IO\Parallel\IOParallel.dir\Release\vtkPDataSetWriter.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\IO\Parallel\vtkPImageWriter.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\IO\Parallel\IOParallel.dir\Release\vtkPImageWriter.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\IO\Parallel\vtkPlot3DMetaReader.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\IO\Parallel\IOParallel.dir\Release\vtkPlot3DMetaReader.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\IO\Parallel\vtkPOpenFOAMReader.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\IO\Parallel\IOParallel.dir\Release\vtkPOpenFOAMReader.obj

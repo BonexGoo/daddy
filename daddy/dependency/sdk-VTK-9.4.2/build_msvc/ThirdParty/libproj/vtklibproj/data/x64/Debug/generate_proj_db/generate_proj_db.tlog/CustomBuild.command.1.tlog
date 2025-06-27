@@ -1,0 +1,36 @@
+^D:\CYBERMED\DADDY\DEPENDENCY\SDK-VTK-9.4.2\BUILD_MSVC\CMAKEFILES\F4D59FDAA7F5FC43044BADD80525752F\PROJ.DB.RULE
+setlocal
+cd D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\libproj\vtklibproj\data
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/../share/vtk-9.4/proj/proj.db
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_SYSTEM_NAME=Windows -DCMAKE_CROSSCOMPILING_EMULATOR= -DALL_SQL_IN=D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/ThirdParty/libproj/vtklibproj/data/all.sql.in -DEXE_SQLITE3=D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/bin/Debug/sqlitebin-9.4d.exe -DPROJ_DB=D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/../share/vtk-9.4/proj/proj.db -DPROJ_VERSION=8.1.0 -P D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/libproj/vtklibproj/data/generate_proj_db.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/../share/vtk-9.4/proj/proj.db D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/ThirdParty/libproj/vtklibproj/data/for_tests
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CYBERMED\DADDY\DEPENDENCY\SDK-VTK-9.4.2\BUILD_MSVC\CMAKEFILES\F19177044F79252608BAC0C3A04871D0\GENERATE_PROJ_DB.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CYBERMED\DADDY\DEPENDENCY\SDK-VTK-9.4.2\THIRDPARTY\LIBPROJ\VTKLIBPROJ\DATA\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/cybermed/daddy/dependency/sdk-VTK-9.4.2 -BD:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc --check-stamp-file D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/ThirdParty/libproj/vtklibproj/data/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

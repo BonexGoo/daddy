@@ -1,0 +1,14 @@
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Parallel/Core/vtkCommunicator.h;vtkParallelCore
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Parallel/Core/vtkDummyCommunicator.h;vtkParallelCore
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Parallel/Core/vtkDummyController.h;vtkParallelCore
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Parallel/Core/vtkFieldDataSerializer.h;vtkParallelCore
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Parallel/Core/vtkMultiProcessController.h;vtkParallelCore
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Parallel/Core/vtkMultiProcessStream.h;vtkParallelCore
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Parallel/Core/vtkPDirectory.h;vtkParallelCore
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Parallel/Core/vtkProcess.h;vtkParallelCore
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Parallel/Core/vtkProcessGroup.h;vtkParallelCore
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Parallel/Core/vtkPSystemTools.h;vtkParallelCore
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Parallel/Core/vtkSocketCommunicator.h;vtkParallelCore
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Parallel/Core/vtkSocketController.h;vtkParallelCore
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Parallel/Core/vtkSubCommunicator.h;vtkParallelCore
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Parallel/Core/vtkSubGroup.h;vtkParallelCore

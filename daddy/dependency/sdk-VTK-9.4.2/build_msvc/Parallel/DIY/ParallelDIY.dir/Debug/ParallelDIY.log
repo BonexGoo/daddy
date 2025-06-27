@@ -1,0 +1,1184 @@
+﻿  Building Custom Rule D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Parallel/DIY/CMakeLists.txt
+  vtkDIYDataExchanger.cxx
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1371,31): warning C4996: 'stdext::checked_array_iterator<T *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1371,31): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1371,31): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1371,31): warning C4996:             T=char
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1371,31): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYDataExchanger.cxx'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\iterator(1483,35):
+      'stdext::checked_array_iterator' 선언을 참조하십시오.
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1371,31):
+      템플릿 인스턴스화 컨텍스트(가장 오래된 인스턴스화 컨텍스트)가
+          D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\diy2\vtkdiy2\include\vtkdiy2\fmt\format.h(918,17):
+          컴파일되는 클래스 템플릿 인스턴스화 'fmt::v6::basic_memory_buffer<char,500,std::allocator<char>>'에 대한 참조를 확인하세요.
+          D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\diy2\vtkdiy2\include\vtkdiy2\fmt\format.h(605,70):
+          클래스 템플릿 멤버 함수 'void fmt::v6::basic_memory_buffer<char,500,std::allocator<char>>::grow(size_t)'을(를) 컴파일하는 중입니다.
+          D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\diy2\vtkdiy2\include\vtkdiy2\fmt\format.h(615,8):
+          컴파일되는 함수 템플릿 인스턴스화 '_NoThrowFwdIt std::uninitialized_copy<T*,stdext::checked_array_iterator<T *>>(const _InIt,const _InIt,_NoThrowFwdIt)'에 대한 참조를 확인하세요.
+          with
+          [
+              _NoThrowFwdIt=stdext::checked_array_iterator<char *>,
+              T=char,
+              _InIt=char *
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xmemory(1933,30):
+          컴파일되는 함수 템플릿 인스턴스화 'decltype(auto) std::_Get_unwrapped_n<_NoThrowFwdIt&,__int64>(_Iter,const _Diff)'에 대한 참조를 확인하세요.
+          with
+          [
+              _NoThrowFwdIt=stdext::checked_array_iterator<char *>,
+              _Iter=stdext::checked_array_iterator<char *> &,
+              _Diff=__int64
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1476,26):
+          컴파일되는 변수 템플릿 'const bool _Unwrappable_for_offset_v<stdext::checked_array_iterator<char *> &>'에 대한 참조를 확인하세요.
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1470,44):
+          컴파일되는 변수 템플릿 'const bool _Unwrappable_v<stdext::checked_array_iterator<char *> &,void>'에 대한 참조를 확인하세요.
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1399,5):
+          컴파일되는 변수 템플릿 'const bool _Allow_inheriting_unwrap_v<stdext::checked_array_iterator<char *>,void>'에 대한 참조를 확인하세요.
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1371,22): warning C4996: 'stdext::checked_array_iterator<T *>::_Prevent_inheriting_unwrap': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1371,22): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1371,22): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1371,22): warning C4996:             T=char
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1371,22): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYDataExchanger.cxx'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(476,40): warning C4996: 'stdext::checked_array_iterator<T *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(476,40): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(476,40): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(476,40): warning C4996:             T=char
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(476,40): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYDataExchanger.cxx'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\iterator(1483,35):
+      'stdext::checked_array_iterator' 선언을 참조하십시오.
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(476,40):
+      템플릿 인스턴스화 컨텍스트(가장 오래된 인스턴스화 컨텍스트)가
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1466,93):
+          컴파일되는 별칭 템플릿 인스턴스화 'std::_Iter_diff_t<_Iter>'에 대한 참조를 확인하세요.
+          with
+          [
+              _Iter=stdext::checked_array_iterator<char *>
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1275,55):
+          컴파일되는 클래스 템플릿 인스턴스화 'std::iterator_traits<_Iter>'에 대한 참조를 확인하세요.
+          with
+          [
+              _Iter=stdext::checked_array_iterator<char *>
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(496,26):
+          컴파일되는 클래스 템플릿 인스턴스화 'std::_Iterator_traits_base<_Iter,void>'에 대한 참조를 확인하세요.
+          with
+          [
+              _Iter=stdext::checked_array_iterator<char *>
+          ]
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(476,31): warning C4996: 'stdext::checked_array_iterator<T *>::iterator_category': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(476,31): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(476,31): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(476,31): warning C4996:             T=char
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(476,31): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYDataExchanger.cxx'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(477,40): warning C4996: 'stdext::checked_array_iterator<T *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(477,40): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(477,40): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(477,40): warning C4996:             T=char
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(477,40): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYDataExchanger.cxx'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\iterator(1483,35):
+      'stdext::checked_array_iterator' 선언을 참조하십시오.
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(477,31): warning C4996: 'stdext::checked_array_iterator<T *>::value_type': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(477,31): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(477,31): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(477,31): warning C4996:             T=char
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(477,31): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYDataExchanger.cxx'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(478,40): warning C4996: 'stdext::checked_array_iterator<T *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(478,40): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(478,40): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(478,40): warning C4996:             T=char
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(478,40): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYDataExchanger.cxx'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\iterator(1483,35):
+      'stdext::checked_array_iterator' 선언을 참조하십시오.
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(478,31): warning C4996: 'stdext::checked_array_iterator<T *>::difference_type': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(478,31): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(478,31): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(478,31): warning C4996:             T=char
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(478,31): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYDataExchanger.cxx'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(479,40): warning C4996: 'stdext::checked_array_iterator<T *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(479,40): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(479,40): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(479,40): warning C4996:             T=char
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(479,40): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYDataExchanger.cxx'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\iterator(1483,35):
+      'stdext::checked_array_iterator' 선언을 참조하십시오.
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(479,31): warning C4996: 'stdext::checked_array_iterator<T *>::pointer': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(479,31): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(479,31): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(479,31): warning C4996:             T=char
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(479,31): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYDataExchanger.cxx'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(480,40): warning C4996: 'stdext::checked_array_iterator<T *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(480,40): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(480,40): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(480,40): warning C4996:             T=char
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(480,40): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYDataExchanger.cxx'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\iterator(1483,35):
+      'stdext::checked_array_iterator' 선언을 참조하십시오.
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(480,31): warning C4996: 'stdext::checked_array_iterator<T *>::reference': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(480,31): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(480,31): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(480,31): warning C4996:             T=char
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(480,31): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYDataExchanger.cxx'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1487,13): warning C4996: 'stdext::checked_array_iterator<T *>::_Verify_offset': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1487,13): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1487,13): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1487,13): warning C4996:             T=char
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1487,13): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYDataExchanger.cxx'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1488,42): warning C4996: 'stdext::checked_array_iterator<T *>::_Unwrapped': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1488,42): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1488,42): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1488,42): warning C4996:             T=char
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1488,42): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYDataExchanger.cxx'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1371,31): warning C4996: 'stdext::checked_array_iterator<T *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1371,31): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1371,31): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1371,31): warning C4996:             T=wchar_t
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1371,31): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYDataExchanger.cxx'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\iterator(1483,35):
+      'stdext::checked_array_iterator' 선언을 참조하십시오.
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1371,31):
+      템플릿 인스턴스화 컨텍스트(가장 오래된 인스턴스화 컨텍스트)가
+          D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\diy2\vtkdiy2\include\vtkdiy2\fmt\format.h(904,18):
+          컴파일되는 클래스 템플릿 인스턴스화 'fmt::v6::basic_memory_buffer<wchar_t,500,std::allocator<wchar_t>>'에 대한 참조를 확인하세요.
+          D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\diy2\vtkdiy2\include\vtkdiy2\fmt\format.h(605,70):
+          클래스 템플릿 멤버 함수 'void fmt::v6::basic_memory_buffer<wchar_t,500,std::allocator<wchar_t>>::grow(size_t)'을(를) 컴파일하는 중입니다.
+          D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\diy2\vtkdiy2\include\vtkdiy2\fmt\format.h(615,8):
+          컴파일되는 함수 템플릿 인스턴스화 '_NoThrowFwdIt std::uninitialized_copy<T*,stdext::checked_array_iterator<T *>>(const _InIt,const _InIt,_NoThrowFwdIt)'에 대한 참조를 확인하세요.
+          with
+          [
+              _NoThrowFwdIt=stdext::checked_array_iterator<wchar_t *>,
+              T=wchar_t,
+              _InIt=wchar_t *
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xmemory(1933,30):
+          컴파일되는 함수 템플릿 인스턴스화 'decltype(auto) std::_Get_unwrapped_n<_NoThrowFwdIt&,__int64>(_Iter,const _Diff)'에 대한 참조를 확인하세요.
+          with
+          [
+              _NoThrowFwdIt=stdext::checked_array_iterator<wchar_t *>,
+              _Iter=stdext::checked_array_iterator<wchar_t *> &,
+              _Diff=__int64
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1476,26):
+          컴파일되는 변수 템플릿 'const bool _Unwrappable_for_offset_v<stdext::checked_array_iterator<wchar_t *> &>'에 대한 참조를 확인하세요.
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1470,44):
+          컴파일되는 변수 템플릿 'const bool _Unwrappable_v<stdext::checked_array_iterator<wchar_t *> &,void>'에 대한 참조를 확인하세요.
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1399,5):
+          컴파일되는 변수 템플릿 'const bool _Allow_inheriting_unwrap_v<stdext::checked_array_iterator<wchar_t *>,void>'에 대한 참조를 확인하세요.
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1371,22): warning C4996: 'stdext::checked_array_iterator<T *>::_Prevent_inheriting_unwrap': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1371,22): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1371,22): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1371,22): warning C4996:             T=wchar_t
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1371,22): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYDataExchanger.cxx'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(476,40): warning C4996: 'stdext::checked_array_iterator<T *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(476,40): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(476,40): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(476,40): warning C4996:             T=wchar_t
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(476,40): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYDataExchanger.cxx'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\iterator(1483,35):
+      'stdext::checked_array_iterator' 선언을 참조하십시오.
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(476,40):
+      템플릿 인스턴스화 컨텍스트(가장 오래된 인스턴스화 컨텍스트)가
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1466,93):
+          컴파일되는 별칭 템플릿 인스턴스화 'std::_Iter_diff_t<_Iter>'에 대한 참조를 확인하세요.
+          with
+          [
+              _Iter=stdext::checked_array_iterator<wchar_t *>
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1275,55):
+          컴파일되는 클래스 템플릿 인스턴스화 'std::iterator_traits<_Iter>'에 대한 참조를 확인하세요.
+          with
+          [
+              _Iter=stdext::checked_array_iterator<wchar_t *>
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(496,26):
+          컴파일되는 클래스 템플릿 인스턴스화 'std::_Iterator_traits_base<_Iter,void>'에 대한 참조를 확인하세요.
+          with
+          [
+              _Iter=stdext::checked_array_iterator<wchar_t *>
+          ]
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(476,31): warning C4996: 'stdext::checked_array_iterator<T *>::iterator_category': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(476,31): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(476,31): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(476,31): warning C4996:             T=wchar_t
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(476,31): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYDataExchanger.cxx'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(477,40): warning C4996: 'stdext::checked_array_iterator<T *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(477,40): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(477,40): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(477,40): warning C4996:             T=wchar_t
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(477,40): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYDataExchanger.cxx'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\iterator(1483,35):
+      'stdext::checked_array_iterator' 선언을 참조하십시오.
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(477,31): warning C4996: 'stdext::checked_array_iterator<T *>::value_type': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(477,31): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(477,31): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(477,31): warning C4996:             T=wchar_t
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(477,31): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYDataExchanger.cxx'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(478,40): warning C4996: 'stdext::checked_array_iterator<T *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(478,40): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(478,40): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(478,40): warning C4996:             T=wchar_t
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(478,40): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYDataExchanger.cxx'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\iterator(1483,35):
+      'stdext::checked_array_iterator' 선언을 참조하십시오.
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(478,31): warning C4996: 'stdext::checked_array_iterator<T *>::difference_type': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(478,31): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(478,31): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(478,31): warning C4996:             T=wchar_t
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(478,31): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYDataExchanger.cxx'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(479,40): warning C4996: 'stdext::checked_array_iterator<T *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(479,40): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(479,40): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(479,40): warning C4996:             T=wchar_t
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(479,40): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYDataExchanger.cxx'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\iterator(1483,35):
+      'stdext::checked_array_iterator' 선언을 참조하십시오.
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(479,31): warning C4996: 'stdext::checked_array_iterator<T *>::pointer': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(479,31): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(479,31): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(479,31): warning C4996:             T=wchar_t
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(479,31): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYDataExchanger.cxx'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(480,40): warning C4996: 'stdext::checked_array_iterator<T *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(480,40): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(480,40): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(480,40): warning C4996:             T=wchar_t
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(480,40): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYDataExchanger.cxx'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\iterator(1483,35):
+      'stdext::checked_array_iterator' 선언을 참조하십시오.
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(480,31): warning C4996: 'stdext::checked_array_iterator<T *>::reference': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(480,31): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(480,31): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(480,31): warning C4996:             T=wchar_t
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(480,31): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYDataExchanger.cxx'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1487,13): warning C4996: 'stdext::checked_array_iterator<T *>::_Verify_offset': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1487,13): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1487,13): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1487,13): warning C4996:             T=wchar_t
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1487,13): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYDataExchanger.cxx'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1488,42): warning C4996: 'stdext::checked_array_iterator<T *>::_Unwrapped': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1488,42): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1488,42): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1488,42): warning C4996:             T=wchar_t
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1488,42): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYDataExchanger.cxx'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1509,13): warning C4996: 'stdext::checked_array_iterator<T *>::_Seek_to': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1509,13): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1509,13): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1509,13): warning C4996:             T=char
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1509,13): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYDataExchanger.cxx'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1509,13):
+      템플릿 인스턴스화 컨텍스트(가장 오래된 인스턴스화 컨텍스트)가
+          D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\diy2\vtkdiy2\include\vtkdiy2\fmt\format.h(615,8):
+          컴파일되는 함수 템플릿 인스턴스화 '_NoThrowFwdIt std::uninitialized_copy<T*,stdext::checked_array_iterator<T *>>(const _InIt,const _InIt,_NoThrowFwdIt)'에 대한 참조를 확인하세요.
+          with
+          [
+              _NoThrowFwdIt=stdext::checked_array_iterator<char *>,
+              T=char,
+              _InIt=char *
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xmemory(1934,10):
+          컴파일되는 함수 템플릿 인스턴스화 'void std::_Seek_wrapped<_NoThrowFwdIt,char*>(_Iter &,_UIter &&)'에 대한 참조를 확인하세요.
+          with
+          [
+              _NoThrowFwdIt=stdext::checked_array_iterator<char *>,
+              _Iter=stdext::checked_array_iterator<char *>,
+              _UIter=char *
+          ]
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xmemory(732,82): warning C4996: 'vtkdiy2::Bounds<long>::Bounds': "Default Bounds constructor should not be used; old behavior is preserved for compatibility. Pass explicitly the dimension of the Bounds instead."
+  (소스 파일 '../../../Parallel/DIY/vtkDIYDataExchanger.cxx'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xmemory(732,82):
+      템플릿 인스턴스화 컨텍스트(가장 오래된 인스턴스화 컨텍스트)가
+          D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\diy2\vtkdiy2\include\vtkdiy2\link.hpp(252,41):
+          컴파일되는 클래스 템플릿 인스턴스화 'vtkdiy2::RegularLink<vtkdiy2::Bounds<long>>'에 대한 참조를 확인하세요.
+          D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\diy2\vtkdiy2\include\vtkdiy2\link.hpp(142,33):
+          컴파일되는 클래스 템플릿 인스턴스화 'std::vector<vtkdiy2::Bounds<long>,std::allocator<vtkdiy2::Bounds<long>>>'에 대한 참조를 확인하세요.
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\vector(1613,23):
+          클래스 템플릿 멤버 함수 'void std::vector<vtkdiy2::Bounds<long>,std::allocator<vtkdiy2::Bounds<long>>>::resize(const unsigned __int64)'을(를) 컴파일하는 중입니다.
+              D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\diy2\vtkdiy2\include\vtkdiy2\serialization.hpp(209,15):
+              'vtkdiy2::Serialization<T>::load'에서 'std::vector<vtkdiy2::Bounds<long>,std::allocator<vtkdiy2::Bounds<long>>>::resize'에 대한 첫 번째 참조를 확인하세요.
+          with
+          [
+              T=std::vector<vtkdiy2::Bounds<long>,std::allocator<vtkdiy2::Bounds<long>>>
+          ]
+              D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\diy2\vtkdiy2\include\vtkdiy2\serialization.hpp(111,93):
+              'vtkdiy2::load'에서 'vtkdiy2::Serialization<T>::load'에 대한 첫 번째 참조를 확인하세요.
+          with
+          [
+              T=std::vector<vtkdiy2::Bounds<long>,std::allocator<vtkdiy2::Bounds<long>>>
+          ]
+              D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\diy2\vtkdiy2\include\vtkdiy2\link.hpp(129,16):
+              'vtkdiy2::RegularLink<vtkdiy2::Bounds<long>>::load'에서 'vtkdiy2::load'에 대한 첫 번째 참조를 확인하세요.
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\vector(1615,9):
+          컴파일되는 함수 템플릿 인스턴스화 'void std::vector<vtkdiy2::Bounds<long>,std::allocator<vtkdiy2::Bounds<long>>>::_Resize<std::_Value_init_tag>(const unsigned __int64,const _Ty2 &)'에 대한 참조를 확인하세요.
+          with
+          [
+              _Ty2=std::_Value_init_tag
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\vector(1603,27):
+          컴파일되는 함수 템플릿 인스턴스화 'vtkdiy2::Bounds<long> *std::_Uninitialized_value_construct_n<std::allocator<vtkdiy2::Bounds<long>>>(vtkdiy2::Bounds<long> *,unsigned __int64,_Alloc &)'에 대한 참조를 확인하세요.
+          with
+          [
+              _Alloc=std::allocator<vtkdiy2::Bounds<long>>
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xmemory(2057,18):
+          컴파일되는 함수 템플릿 인스턴스화 'void std::_Uninitialized_backout_al<_Alloc>::_Emplace_back<>(void)'에 대한 참조를 확인하세요.
+          with
+          [
+              _Alloc=std::allocator<vtkdiy2::Bounds<long>>
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xmemory(1807,35):
+          컴파일되는 함수 템플릿 인스턴스화 'void std::_Default_allocator_traits<_Alloc>::construct<_Ty,>(_Alloc &,_Objty *const )'에 대한 참조를 확인하세요.
+          with
+          [
+              _Alloc=std::allocator<vtkdiy2::Bounds<long>>,
+              _Ty=vtkdiy2::Bounds<long>,
+              _Objty=vtkdiy2::Bounds<long>
+          ]
+  
+  vtkDIYExplicitAssigner.cxx
+  vtkDIYGhostUtilities.cxx
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1371,31): warning C4996: 'stdext::checked_array_iterator<T *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1371,31): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1371,31): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1371,31): warning C4996:             T=char
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1371,31): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYGhostUtilities.cxx'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\iterator(1483,35):
+      'stdext::checked_array_iterator' 선언을 참조하십시오.
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1371,31):
+      템플릿 인스턴스화 컨텍스트(가장 오래된 인스턴스화 컨텍스트)가
+          D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\diy2\vtkdiy2\include\vtkdiy2\fmt\format.h(918,17):
+          컴파일되는 클래스 템플릿 인스턴스화 'fmt::v6::basic_memory_buffer<char,500,std::allocator<char>>'에 대한 참조를 확인하세요.
+          D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\diy2\vtkdiy2\include\vtkdiy2\fmt\format.h(605,70):
+          클래스 템플릿 멤버 함수 'void fmt::v6::basic_memory_buffer<char,500,std::allocator<char>>::grow(size_t)'을(를) 컴파일하는 중입니다.
+          D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\diy2\vtkdiy2\include\vtkdiy2\fmt\format.h(615,8):
+          컴파일되는 함수 템플릿 인스턴스화 '_NoThrowFwdIt std::uninitialized_copy<T*,stdext::checked_array_iterator<T *>>(const _InIt,const _InIt,_NoThrowFwdIt)'에 대한 참조를 확인하세요.
+          with
+          [
+              _NoThrowFwdIt=stdext::checked_array_iterator<char *>,
+              T=char,
+              _InIt=char *
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xmemory(1933,30):
+          컴파일되는 함수 템플릿 인스턴스화 'decltype(auto) std::_Get_unwrapped_n<_NoThrowFwdIt&,__int64>(_Iter,const _Diff)'에 대한 참조를 확인하세요.
+          with
+          [
+              _NoThrowFwdIt=stdext::checked_array_iterator<char *>,
+              _Iter=stdext::checked_array_iterator<char *> &,
+              _Diff=__int64
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1476,26):
+          컴파일되는 변수 템플릿 'const bool _Unwrappable_for_offset_v<stdext::checked_array_iterator<char *> &>'에 대한 참조를 확인하세요.
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1470,44):
+          컴파일되는 변수 템플릿 'const bool _Unwrappable_v<stdext::checked_array_iterator<char *> &,void>'에 대한 참조를 확인하세요.
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1399,5):
+          컴파일되는 변수 템플릿 'const bool _Allow_inheriting_unwrap_v<stdext::checked_array_iterator<char *>,void>'에 대한 참조를 확인하세요.
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1371,22): warning C4996: 'stdext::checked_array_iterator<T *>::_Prevent_inheriting_unwrap': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1371,22): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1371,22): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1371,22): warning C4996:             T=char
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1371,22): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYGhostUtilities.cxx'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(476,40): warning C4996: 'stdext::checked_array_iterator<T *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(476,40): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(476,40): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(476,40): warning C4996:             T=char
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(476,40): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYGhostUtilities.cxx'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\iterator(1483,35):
+      'stdext::checked_array_iterator' 선언을 참조하십시오.
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(476,40):
+      템플릿 인스턴스화 컨텍스트(가장 오래된 인스턴스화 컨텍스트)가
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1466,93):
+          컴파일되는 별칭 템플릿 인스턴스화 'std::_Iter_diff_t<_Iter>'에 대한 참조를 확인하세요.
+          with
+          [
+              _Iter=stdext::checked_array_iterator<char *>
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1275,55):
+          컴파일되는 클래스 템플릿 인스턴스화 'std::iterator_traits<_Iter>'에 대한 참조를 확인하세요.
+          with
+          [
+              _Iter=stdext::checked_array_iterator<char *>
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(496,26):
+          컴파일되는 클래스 템플릿 인스턴스화 'std::_Iterator_traits_base<_Iter,void>'에 대한 참조를 확인하세요.
+          with
+          [
+              _Iter=stdext::checked_array_iterator<char *>
+          ]
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(476,31): warning C4996: 'stdext::checked_array_iterator<T *>::iterator_category': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(476,31): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(476,31): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(476,31): warning C4996:             T=char
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(476,31): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYGhostUtilities.cxx'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(477,40): warning C4996: 'stdext::checked_array_iterator<T *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(477,40): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(477,40): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(477,40): warning C4996:             T=char
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(477,40): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYGhostUtilities.cxx'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\iterator(1483,35):
+      'stdext::checked_array_iterator' 선언을 참조하십시오.
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(477,31): warning C4996: 'stdext::checked_array_iterator<T *>::value_type': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(477,31): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(477,31): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(477,31): warning C4996:             T=char
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(477,31): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYGhostUtilities.cxx'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(478,40): warning C4996: 'stdext::checked_array_iterator<T *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(478,40): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(478,40): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(478,40): warning C4996:             T=char
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(478,40): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYGhostUtilities.cxx'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\iterator(1483,35):
+      'stdext::checked_array_iterator' 선언을 참조하십시오.
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(478,31): warning C4996: 'stdext::checked_array_iterator<T *>::difference_type': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(478,31): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(478,31): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(478,31): warning C4996:             T=char
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(478,31): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYGhostUtilities.cxx'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(479,40): warning C4996: 'stdext::checked_array_iterator<T *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(479,40): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(479,40): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(479,40): warning C4996:             T=char
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(479,40): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYGhostUtilities.cxx'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\iterator(1483,35):
+      'stdext::checked_array_iterator' 선언을 참조하십시오.
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(479,31): warning C4996: 'stdext::checked_array_iterator<T *>::pointer': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(479,31): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(479,31): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(479,31): warning C4996:             T=char
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(479,31): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYGhostUtilities.cxx'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(480,40): warning C4996: 'stdext::checked_array_iterator<T *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(480,40): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(480,40): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(480,40): warning C4996:             T=char
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(480,40): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYGhostUtilities.cxx'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\iterator(1483,35):
+      'stdext::checked_array_iterator' 선언을 참조하십시오.
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(480,31): warning C4996: 'stdext::checked_array_iterator<T *>::reference': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(480,31): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(480,31): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(480,31): warning C4996:             T=char
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(480,31): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYGhostUtilities.cxx'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1487,13): warning C4996: 'stdext::checked_array_iterator<T *>::_Verify_offset': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1487,13): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1487,13): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1487,13): warning C4996:             T=char
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1487,13): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYGhostUtilities.cxx'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1488,42): warning C4996: 'stdext::checked_array_iterator<T *>::_Unwrapped': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1488,42): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1488,42): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1488,42): warning C4996:             T=char
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1488,42): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYGhostUtilities.cxx'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1371,31): warning C4996: 'stdext::checked_array_iterator<T *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1371,31): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1371,31): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1371,31): warning C4996:             T=wchar_t
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1371,31): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYGhostUtilities.cxx'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\iterator(1483,35):
+      'stdext::checked_array_iterator' 선언을 참조하십시오.
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1371,31):
+      템플릿 인스턴스화 컨텍스트(가장 오래된 인스턴스화 컨텍스트)가
+          D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\diy2\vtkdiy2\include\vtkdiy2\fmt\format.h(904,18):
+          컴파일되는 클래스 템플릿 인스턴스화 'fmt::v6::basic_memory_buffer<wchar_t,500,std::allocator<wchar_t>>'에 대한 참조를 확인하세요.
+          D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\diy2\vtkdiy2\include\vtkdiy2\fmt\format.h(605,70):
+          클래스 템플릿 멤버 함수 'void fmt::v6::basic_memory_buffer<wchar_t,500,std::allocator<wchar_t>>::grow(size_t)'을(를) 컴파일하는 중입니다.
+          D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\diy2\vtkdiy2\include\vtkdiy2\fmt\format.h(615,8):
+          컴파일되는 함수 템플릿 인스턴스화 '_NoThrowFwdIt std::uninitialized_copy<T*,stdext::checked_array_iterator<T *>>(const _InIt,const _InIt,_NoThrowFwdIt)'에 대한 참조를 확인하세요.
+          with
+          [
+              _NoThrowFwdIt=stdext::checked_array_iterator<wchar_t *>,
+              T=wchar_t,
+              _InIt=wchar_t *
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xmemory(1933,30):
+          컴파일되는 함수 템플릿 인스턴스화 'decltype(auto) std::_Get_unwrapped_n<_NoThrowFwdIt&,__int64>(_Iter,const _Diff)'에 대한 참조를 확인하세요.
+          with
+          [
+              _NoThrowFwdIt=stdext::checked_array_iterator<wchar_t *>,
+              _Iter=stdext::checked_array_iterator<wchar_t *> &,
+              _Diff=__int64
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1476,26):
+          컴파일되는 변수 템플릿 'const bool _Unwrappable_for_offset_v<stdext::checked_array_iterator<wchar_t *> &>'에 대한 참조를 확인하세요.
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1470,44):
+          컴파일되는 변수 템플릿 'const bool _Unwrappable_v<stdext::checked_array_iterator<wchar_t *> &,void>'에 대한 참조를 확인하세요.
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1399,5):
+          컴파일되는 변수 템플릿 'const bool _Allow_inheriting_unwrap_v<stdext::checked_array_iterator<wchar_t *>,void>'에 대한 참조를 확인하세요.
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1371,22): warning C4996: 'stdext::checked_array_iterator<T *>::_Prevent_inheriting_unwrap': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1371,22): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1371,22): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1371,22): warning C4996:             T=wchar_t
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1371,22): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYGhostUtilities.cxx'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(476,40): warning C4996: 'stdext::checked_array_iterator<T *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(476,40): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(476,40): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(476,40): warning C4996:             T=wchar_t
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(476,40): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYGhostUtilities.cxx'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\iterator(1483,35):
+      'stdext::checked_array_iterator' 선언을 참조하십시오.
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(476,40):
+      템플릿 인스턴스화 컨텍스트(가장 오래된 인스턴스화 컨텍스트)가
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1466,93):
+          컴파일되는 별칭 템플릿 인스턴스화 'std::_Iter_diff_t<_Iter>'에 대한 참조를 확인하세요.
+          with
+          [
+              _Iter=stdext::checked_array_iterator<wchar_t *>
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1275,55):
+          컴파일되는 클래스 템플릿 인스턴스화 'std::iterator_traits<_Iter>'에 대한 참조를 확인하세요.
+          with
+          [
+              _Iter=stdext::checked_array_iterator<wchar_t *>
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(496,26):
+          컴파일되는 클래스 템플릿 인스턴스화 'std::_Iterator_traits_base<_Iter,void>'에 대한 참조를 확인하세요.
+          with
+          [
+              _Iter=stdext::checked_array_iterator<wchar_t *>
+          ]
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(476,31): warning C4996: 'stdext::checked_array_iterator<T *>::iterator_category': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(476,31): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(476,31): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(476,31): warning C4996:             T=wchar_t
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(476,31): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYGhostUtilities.cxx'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(477,40): warning C4996: 'stdext::checked_array_iterator<T *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(477,40): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(477,40): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(477,40): warning C4996:             T=wchar_t
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(477,40): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYGhostUtilities.cxx'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\iterator(1483,35):
+      'stdext::checked_array_iterator' 선언을 참조하십시오.
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(477,31): warning C4996: 'stdext::checked_array_iterator<T *>::value_type': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(477,31): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(477,31): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(477,31): warning C4996:             T=wchar_t
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(477,31): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYGhostUtilities.cxx'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(478,40): warning C4996: 'stdext::checked_array_iterator<T *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(478,40): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(478,40): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(478,40): warning C4996:             T=wchar_t
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(478,40): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYGhostUtilities.cxx'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\iterator(1483,35):
+      'stdext::checked_array_iterator' 선언을 참조하십시오.
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(478,31): warning C4996: 'stdext::checked_array_iterator<T *>::difference_type': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(478,31): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(478,31): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(478,31): warning C4996:             T=wchar_t
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(478,31): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYGhostUtilities.cxx'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(479,40): warning C4996: 'stdext::checked_array_iterator<T *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(479,40): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(479,40): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(479,40): warning C4996:             T=wchar_t
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(479,40): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYGhostUtilities.cxx'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\iterator(1483,35):
+      'stdext::checked_array_iterator' 선언을 참조하십시오.
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(479,31): warning C4996: 'stdext::checked_array_iterator<T *>::pointer': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(479,31): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(479,31): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(479,31): warning C4996:             T=wchar_t
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(479,31): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYGhostUtilities.cxx'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(480,40): warning C4996: 'stdext::checked_array_iterator<T *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(480,40): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(480,40): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(480,40): warning C4996:             T=wchar_t
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(480,40): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYGhostUtilities.cxx'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\iterator(1483,35):
+      'stdext::checked_array_iterator' 선언을 참조하십시오.
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(480,31): warning C4996: 'stdext::checked_array_iterator<T *>::reference': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(480,31): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(480,31): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(480,31): warning C4996:             T=wchar_t
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(480,31): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYGhostUtilities.cxx'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1487,13): warning C4996: 'stdext::checked_array_iterator<T *>::_Verify_offset': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1487,13): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1487,13): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1487,13): warning C4996:             T=wchar_t
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1487,13): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYGhostUtilities.cxx'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1488,42): warning C4996: 'stdext::checked_array_iterator<T *>::_Unwrapped': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1488,42): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1488,42): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1488,42): warning C4996:             T=wchar_t
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1488,42): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYGhostUtilities.cxx'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1509,13): warning C4996: 'stdext::checked_array_iterator<T *>::_Seek_to': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1509,13): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1509,13): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1509,13): warning C4996:             T=char
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1509,13): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYGhostUtilities.cxx'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1509,13):
+      템플릿 인스턴스화 컨텍스트(가장 오래된 인스턴스화 컨텍스트)가
+          D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\diy2\vtkdiy2\include\vtkdiy2\fmt\format.h(615,8):
+          컴파일되는 함수 템플릿 인스턴스화 '_NoThrowFwdIt std::uninitialized_copy<T*,stdext::checked_array_iterator<T *>>(const _InIt,const _InIt,_NoThrowFwdIt)'에 대한 참조를 확인하세요.
+          with
+          [
+              _NoThrowFwdIt=stdext::checked_array_iterator<char *>,
+              T=char,
+              _InIt=char *
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xmemory(1934,10):
+          컴파일되는 함수 템플릿 인스턴스화 'void std::_Seek_wrapped<_NoThrowFwdIt,char*>(_Iter &,_UIter &&)'에 대한 참조를 확인하세요.
+          with
+          [
+              _NoThrowFwdIt=stdext::checked_array_iterator<char *>,
+              _Iter=stdext::checked_array_iterator<char *>,
+              _UIter=char *
+          ]
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xmemory(732,82): warning C4996: 'vtkdiy2::Bounds<long>::Bounds': "Default Bounds constructor should not be used; old behavior is preserved for compatibility. Pass explicitly the dimension of the Bounds instead."
+  (소스 파일 '../../../Parallel/DIY/vtkDIYGhostUtilities.cxx'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xmemory(732,82):
+      템플릿 인스턴스화 컨텍스트(가장 오래된 인스턴스화 컨텍스트)가
+          D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\diy2\vtkdiy2\include\vtkdiy2\link.hpp(252,41):
+          컴파일되는 클래스 템플릿 인스턴스화 'vtkdiy2::RegularLink<vtkdiy2::Bounds<long>>'에 대한 참조를 확인하세요.
+          D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\diy2\vtkdiy2\include\vtkdiy2\link.hpp(142,33):
+          컴파일되는 클래스 템플릿 인스턴스화 'std::vector<vtkdiy2::Bounds<long>,std::allocator<vtkdiy2::Bounds<long>>>'에 대한 참조를 확인하세요.
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\vector(1613,23):
+          클래스 템플릿 멤버 함수 'void std::vector<vtkdiy2::Bounds<long>,std::allocator<vtkdiy2::Bounds<long>>>::resize(const unsigned __int64)'을(를) 컴파일하는 중입니다.
+              D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\diy2\vtkdiy2\include\vtkdiy2\serialization.hpp(209,15):
+              'vtkdiy2::Serialization<T>::load'에서 'std::vector<vtkdiy2::Bounds<long>,std::allocator<vtkdiy2::Bounds<long>>>::resize'에 대한 첫 번째 참조를 확인하세요.
+          with
+          [
+              T=std::vector<vtkdiy2::Bounds<long>,std::allocator<vtkdiy2::Bounds<long>>>
+          ]
+              D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\diy2\vtkdiy2\include\vtkdiy2\serialization.hpp(111,93):
+              'vtkdiy2::load'에서 'vtkdiy2::Serialization<T>::load'에 대한 첫 번째 참조를 확인하세요.
+          with
+          [
+              T=std::vector<vtkdiy2::Bounds<long>,std::allocator<vtkdiy2::Bounds<long>>>
+          ]
+              D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\diy2\vtkdiy2\include\vtkdiy2\link.hpp(129,16):
+              'vtkdiy2::RegularLink<vtkdiy2::Bounds<long>>::load'에서 'vtkdiy2::load'에 대한 첫 번째 참조를 확인하세요.
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\vector(1615,9):
+          컴파일되는 함수 템플릿 인스턴스화 'void std::vector<vtkdiy2::Bounds<long>,std::allocator<vtkdiy2::Bounds<long>>>::_Resize<std::_Value_init_tag>(const unsigned __int64,const _Ty2 &)'에 대한 참조를 확인하세요.
+          with
+          [
+              _Ty2=std::_Value_init_tag
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\vector(1603,27):
+          컴파일되는 함수 템플릿 인스턴스화 'vtkdiy2::Bounds<long> *std::_Uninitialized_value_construct_n<std::allocator<vtkdiy2::Bounds<long>>>(vtkdiy2::Bounds<long> *,unsigned __int64,_Alloc &)'에 대한 참조를 확인하세요.
+          with
+          [
+              _Alloc=std::allocator<vtkdiy2::Bounds<long>>
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xmemory(2057,18):
+          컴파일되는 함수 템플릿 인스턴스화 'void std::_Uninitialized_backout_al<_Alloc>::_Emplace_back<>(void)'에 대한 참조를 확인하세요.
+          with
+          [
+              _Alloc=std::allocator<vtkdiy2::Bounds<long>>
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xmemory(1807,35):
+          컴파일되는 함수 템플릿 인스턴스화 'void std::_Default_allocator_traits<_Alloc>::construct<_Ty,>(_Alloc &,_Objty *const )'에 대한 참조를 확인하세요.
+          with
+          [
+              _Alloc=std::allocator<vtkdiy2::Bounds<long>>,
+              _Ty=vtkdiy2::Bounds<long>,
+              _Objty=vtkdiy2::Bounds<long>
+          ]
+  
+  vtkDIYUtilities.cxx
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1371,31): warning C4996: 'stdext::checked_array_iterator<T *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1371,31): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1371,31): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1371,31): warning C4996:             T=char
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1371,31): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYUtilities.cxx'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\iterator(1483,35):
+      'stdext::checked_array_iterator' 선언을 참조하십시오.
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1371,31):
+      템플릿 인스턴스화 컨텍스트(가장 오래된 인스턴스화 컨텍스트)가
+          D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\diy2\vtkdiy2\include\vtkdiy2\fmt\format.h(918,17):
+          컴파일되는 클래스 템플릿 인스턴스화 'fmt::v6::basic_memory_buffer<char,500,std::allocator<char>>'에 대한 참조를 확인하세요.
+          D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\diy2\vtkdiy2\include\vtkdiy2\fmt\format.h(605,70):
+          클래스 템플릿 멤버 함수 'void fmt::v6::basic_memory_buffer<char,500,std::allocator<char>>::grow(size_t)'을(를) 컴파일하는 중입니다.
+          D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\diy2\vtkdiy2\include\vtkdiy2\fmt\format.h(615,8):
+          컴파일되는 함수 템플릿 인스턴스화 '_NoThrowFwdIt std::uninitialized_copy<T*,stdext::checked_array_iterator<T *>>(const _InIt,const _InIt,_NoThrowFwdIt)'에 대한 참조를 확인하세요.
+          with
+          [
+              _NoThrowFwdIt=stdext::checked_array_iterator<char *>,
+              T=char,
+              _InIt=char *
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xmemory(1933,30):
+          컴파일되는 함수 템플릿 인스턴스화 'decltype(auto) std::_Get_unwrapped_n<_NoThrowFwdIt&,__int64>(_Iter,const _Diff)'에 대한 참조를 확인하세요.
+          with
+          [
+              _NoThrowFwdIt=stdext::checked_array_iterator<char *>,
+              _Iter=stdext::checked_array_iterator<char *> &,
+              _Diff=__int64
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1476,26):
+          컴파일되는 변수 템플릿 'const bool _Unwrappable_for_offset_v<stdext::checked_array_iterator<char *> &>'에 대한 참조를 확인하세요.
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1470,44):
+          컴파일되는 변수 템플릿 'const bool _Unwrappable_v<stdext::checked_array_iterator<char *> &,void>'에 대한 참조를 확인하세요.
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1399,5):
+          컴파일되는 변수 템플릿 'const bool _Allow_inheriting_unwrap_v<stdext::checked_array_iterator<char *>,void>'에 대한 참조를 확인하세요.
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1371,22): warning C4996: 'stdext::checked_array_iterator<T *>::_Prevent_inheriting_unwrap': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1371,22): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1371,22): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1371,22): warning C4996:             T=char
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1371,22): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYUtilities.cxx'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(476,40): warning C4996: 'stdext::checked_array_iterator<T *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(476,40): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(476,40): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(476,40): warning C4996:             T=char
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(476,40): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYUtilities.cxx'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\iterator(1483,35):
+      'stdext::checked_array_iterator' 선언을 참조하십시오.
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(476,40):
+      템플릿 인스턴스화 컨텍스트(가장 오래된 인스턴스화 컨텍스트)가
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1466,93):
+          컴파일되는 별칭 템플릿 인스턴스화 'std::_Iter_diff_t<_Iter>'에 대한 참조를 확인하세요.
+          with
+          [
+              _Iter=stdext::checked_array_iterator<char *>
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1275,55):
+          컴파일되는 클래스 템플릿 인스턴스화 'std::iterator_traits<_Iter>'에 대한 참조를 확인하세요.
+          with
+          [
+              _Iter=stdext::checked_array_iterator<char *>
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(496,26):
+          컴파일되는 클래스 템플릿 인스턴스화 'std::_Iterator_traits_base<_Iter,void>'에 대한 참조를 확인하세요.
+          with
+          [
+              _Iter=stdext::checked_array_iterator<char *>
+          ]
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(476,31): warning C4996: 'stdext::checked_array_iterator<T *>::iterator_category': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(476,31): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(476,31): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(476,31): warning C4996:             T=char
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(476,31): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYUtilities.cxx'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(477,40): warning C4996: 'stdext::checked_array_iterator<T *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(477,40): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(477,40): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(477,40): warning C4996:             T=char
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(477,40): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYUtilities.cxx'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\iterator(1483,35):
+      'stdext::checked_array_iterator' 선언을 참조하십시오.
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(477,31): warning C4996: 'stdext::checked_array_iterator<T *>::value_type': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(477,31): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(477,31): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(477,31): warning C4996:             T=char
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(477,31): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYUtilities.cxx'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(478,40): warning C4996: 'stdext::checked_array_iterator<T *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(478,40): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(478,40): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(478,40): warning C4996:             T=char
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(478,40): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYUtilities.cxx'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\iterator(1483,35):
+      'stdext::checked_array_iterator' 선언을 참조하십시오.
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(478,31): warning C4996: 'stdext::checked_array_iterator<T *>::difference_type': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(478,31): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(478,31): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(478,31): warning C4996:             T=char
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(478,31): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYUtilities.cxx'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(479,40): warning C4996: 'stdext::checked_array_iterator<T *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(479,40): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(479,40): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(479,40): warning C4996:             T=char
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(479,40): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYUtilities.cxx'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\iterator(1483,35):
+      'stdext::checked_array_iterator' 선언을 참조하십시오.
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(479,31): warning C4996: 'stdext::checked_array_iterator<T *>::pointer': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(479,31): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(479,31): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(479,31): warning C4996:             T=char
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(479,31): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYUtilities.cxx'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(480,40): warning C4996: 'stdext::checked_array_iterator<T *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(480,40): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(480,40): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(480,40): warning C4996:             T=char
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(480,40): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYUtilities.cxx'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\iterator(1483,35):
+      'stdext::checked_array_iterator' 선언을 참조하십시오.
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(480,31): warning C4996: 'stdext::checked_array_iterator<T *>::reference': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(480,31): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(480,31): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(480,31): warning C4996:             T=char
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(480,31): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYUtilities.cxx'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1487,13): warning C4996: 'stdext::checked_array_iterator<T *>::_Verify_offset': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1487,13): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1487,13): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1487,13): warning C4996:             T=char
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1487,13): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYUtilities.cxx'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1488,42): warning C4996: 'stdext::checked_array_iterator<T *>::_Unwrapped': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1488,42): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1488,42): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1488,42): warning C4996:             T=char
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1488,42): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYUtilities.cxx'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1371,31): warning C4996: 'stdext::checked_array_iterator<T *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1371,31): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1371,31): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1371,31): warning C4996:             T=wchar_t
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1371,31): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYUtilities.cxx'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\iterator(1483,35):
+      'stdext::checked_array_iterator' 선언을 참조하십시오.
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1371,31):
+      템플릿 인스턴스화 컨텍스트(가장 오래된 인스턴스화 컨텍스트)가
+          D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\diy2\vtkdiy2\include\vtkdiy2\fmt\format.h(904,18):
+          컴파일되는 클래스 템플릿 인스턴스화 'fmt::v6::basic_memory_buffer<wchar_t,500,std::allocator<wchar_t>>'에 대한 참조를 확인하세요.
+          D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\diy2\vtkdiy2\include\vtkdiy2\fmt\format.h(605,70):
+          클래스 템플릿 멤버 함수 'void fmt::v6::basic_memory_buffer<wchar_t,500,std::allocator<wchar_t>>::grow(size_t)'을(를) 컴파일하는 중입니다.
+          D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\diy2\vtkdiy2\include\vtkdiy2\fmt\format.h(615,8):
+          컴파일되는 함수 템플릿 인스턴스화 '_NoThrowFwdIt std::uninitialized_copy<T*,stdext::checked_array_iterator<T *>>(const _InIt,const _InIt,_NoThrowFwdIt)'에 대한 참조를 확인하세요.
+          with
+          [
+              _NoThrowFwdIt=stdext::checked_array_iterator<wchar_t *>,
+              T=wchar_t,
+              _InIt=wchar_t *
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xmemory(1933,30):
+          컴파일되는 함수 템플릿 인스턴스화 'decltype(auto) std::_Get_unwrapped_n<_NoThrowFwdIt&,__int64>(_Iter,const _Diff)'에 대한 참조를 확인하세요.
+          with
+          [
+              _NoThrowFwdIt=stdext::checked_array_iterator<wchar_t *>,
+              _Iter=stdext::checked_array_iterator<wchar_t *> &,
+              _Diff=__int64
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1476,26):
+          컴파일되는 변수 템플릿 'const bool _Unwrappable_for_offset_v<stdext::checked_array_iterator<wchar_t *> &>'에 대한 참조를 확인하세요.
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1470,44):
+          컴파일되는 변수 템플릿 'const bool _Unwrappable_v<stdext::checked_array_iterator<wchar_t *> &,void>'에 대한 참조를 확인하세요.
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1399,5):
+          컴파일되는 변수 템플릿 'const bool _Allow_inheriting_unwrap_v<stdext::checked_array_iterator<wchar_t *>,void>'에 대한 참조를 확인하세요.
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1371,22): warning C4996: 'stdext::checked_array_iterator<T *>::_Prevent_inheriting_unwrap': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1371,22): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1371,22): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1371,22): warning C4996:             T=wchar_t
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1371,22): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYUtilities.cxx'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(476,40): warning C4996: 'stdext::checked_array_iterator<T *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(476,40): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(476,40): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(476,40): warning C4996:             T=wchar_t
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(476,40): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYUtilities.cxx'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\iterator(1483,35):
+      'stdext::checked_array_iterator' 선언을 참조하십시오.
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(476,40):
+      템플릿 인스턴스화 컨텍스트(가장 오래된 인스턴스화 컨텍스트)가
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1466,93):
+          컴파일되는 별칭 템플릿 인스턴스화 'std::_Iter_diff_t<_Iter>'에 대한 참조를 확인하세요.
+          with
+          [
+              _Iter=stdext::checked_array_iterator<wchar_t *>
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1275,55):
+          컴파일되는 클래스 템플릿 인스턴스화 'std::iterator_traits<_Iter>'에 대한 참조를 확인하세요.
+          with
+          [
+              _Iter=stdext::checked_array_iterator<wchar_t *>
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(496,26):
+          컴파일되는 클래스 템플릿 인스턴스화 'std::_Iterator_traits_base<_Iter,void>'에 대한 참조를 확인하세요.
+          with
+          [
+              _Iter=stdext::checked_array_iterator<wchar_t *>
+          ]
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(476,31): warning C4996: 'stdext::checked_array_iterator<T *>::iterator_category': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(476,31): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(476,31): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(476,31): warning C4996:             T=wchar_t
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(476,31): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYUtilities.cxx'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(477,40): warning C4996: 'stdext::checked_array_iterator<T *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(477,40): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(477,40): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(477,40): warning C4996:             T=wchar_t
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(477,40): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYUtilities.cxx'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\iterator(1483,35):
+      'stdext::checked_array_iterator' 선언을 참조하십시오.
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(477,31): warning C4996: 'stdext::checked_array_iterator<T *>::value_type': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(477,31): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(477,31): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(477,31): warning C4996:             T=wchar_t
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(477,31): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYUtilities.cxx'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(478,40): warning C4996: 'stdext::checked_array_iterator<T *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(478,40): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(478,40): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(478,40): warning C4996:             T=wchar_t
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(478,40): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYUtilities.cxx'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\iterator(1483,35):
+      'stdext::checked_array_iterator' 선언을 참조하십시오.
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(478,31): warning C4996: 'stdext::checked_array_iterator<T *>::difference_type': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(478,31): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(478,31): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(478,31): warning C4996:             T=wchar_t
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(478,31): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYUtilities.cxx'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(479,40): warning C4996: 'stdext::checked_array_iterator<T *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(479,40): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(479,40): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(479,40): warning C4996:             T=wchar_t
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(479,40): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYUtilities.cxx'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\iterator(1483,35):
+      'stdext::checked_array_iterator' 선언을 참조하십시오.
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(479,31): warning C4996: 'stdext::checked_array_iterator<T *>::pointer': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(479,31): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(479,31): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(479,31): warning C4996:             T=wchar_t
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(479,31): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYUtilities.cxx'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(480,40): warning C4996: 'stdext::checked_array_iterator<T *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(480,40): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(480,40): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(480,40): warning C4996:             T=wchar_t
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(480,40): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYUtilities.cxx'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\iterator(1483,35):
+      'stdext::checked_array_iterator' 선언을 참조하십시오.
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(480,31): warning C4996: 'stdext::checked_array_iterator<T *>::reference': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(480,31): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(480,31): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(480,31): warning C4996:             T=wchar_t
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\__msvc_iter_core.hpp(480,31): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYUtilities.cxx'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1487,13): warning C4996: 'stdext::checked_array_iterator<T *>::_Verify_offset': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1487,13): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1487,13): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1487,13): warning C4996:             T=wchar_t
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1487,13): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYUtilities.cxx'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1488,42): warning C4996: 'stdext::checked_array_iterator<T *>::_Unwrapped': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1488,42): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1488,42): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1488,42): warning C4996:             T=wchar_t
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1488,42): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYUtilities.cxx'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1509,13): warning C4996: 'stdext::checked_array_iterator<T *>::_Seek_to': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1509,13): warning C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1509,13): warning C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1509,13): warning C4996:             T=char
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1509,13): warning C4996:         ]
+  (소스 파일 '../../../Parallel/DIY/vtkDIYUtilities.cxx'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(1509,13):
+      템플릿 인스턴스화 컨텍스트(가장 오래된 인스턴스화 컨텍스트)가
+          D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\diy2\vtkdiy2\include\vtkdiy2\fmt\format.h(615,8):
+          컴파일되는 함수 템플릿 인스턴스화 '_NoThrowFwdIt std::uninitialized_copy<T*,stdext::checked_array_iterator<T *>>(const _InIt,const _InIt,_NoThrowFwdIt)'에 대한 참조를 확인하세요.
+          with
+          [
+              _NoThrowFwdIt=stdext::checked_array_iterator<char *>,
+              T=char,
+              _InIt=char *
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xmemory(1934,10):
+          컴파일되는 함수 템플릿 인스턴스화 'void std::_Seek_wrapped<_NoThrowFwdIt,char*>(_Iter &,_UIter &&)'에 대한 참조를 확인하세요.
+          with
+          [
+              _NoThrowFwdIt=stdext::checked_array_iterator<char *>,
+              _Iter=stdext::checked_array_iterator<char *>,
+              _UIter=char *
+          ]
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xmemory(732,82): warning C4996: 'vtkdiy2::Bounds<long>::Bounds': "Default Bounds constructor should not be used; old behavior is preserved for compatibility. Pass explicitly the dimension of the Bounds instead."
+  (소스 파일 '../../../Parallel/DIY/vtkDIYUtilities.cxx'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xmemory(732,82):
+      템플릿 인스턴스화 컨텍스트(가장 오래된 인스턴스화 컨텍스트)가
+          D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\diy2\vtkdiy2\include\vtkdiy2\link.hpp(252,41):
+          컴파일되는 클래스 템플릿 인스턴스화 'vtkdiy2::RegularLink<vtkdiy2::Bounds<long>>'에 대한 참조를 확인하세요.
+          D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\diy2\vtkdiy2\include\vtkdiy2\link.hpp(142,33):
+          컴파일되는 클래스 템플릿 인스턴스화 'std::vector<vtkdiy2::Bounds<long>,std::allocator<vtkdiy2::Bounds<long>>>'에 대한 참조를 확인하세요.
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\vector(1613,23):
+          클래스 템플릿 멤버 함수 'void std::vector<vtkdiy2::Bounds<long>,std::allocator<vtkdiy2::Bounds<long>>>::resize(const unsigned __int64)'을(를) 컴파일하는 중입니다.
+              D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\diy2\vtkdiy2\include\vtkdiy2\serialization.hpp(209,15):
+              'vtkdiy2::Serialization<T>::load'에서 'std::vector<vtkdiy2::Bounds<long>,std::allocator<vtkdiy2::Bounds<long>>>::resize'에 대한 첫 번째 참조를 확인하세요.
+          with
+          [
+              T=std::vector<vtkdiy2::Bounds<long>,std::allocator<vtkdiy2::Bounds<long>>>
+          ]
+              D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\diy2\vtkdiy2\include\vtkdiy2\serialization.hpp(111,93):
+              'vtkdiy2::load'에서 'vtkdiy2::Serialization<T>::load'에 대한 첫 번째 참조를 확인하세요.
+          with
+          [
+              T=std::vector<vtkdiy2::Bounds<long>,std::allocator<vtkdiy2::Bounds<long>>>
+          ]
+              D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\diy2\vtkdiy2\include\vtkdiy2\link.hpp(129,16):
+              'vtkdiy2::RegularLink<vtkdiy2::Bounds<long>>::load'에서 'vtkdiy2::load'에 대한 첫 번째 참조를 확인하세요.
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\vector(1615,9):
+          컴파일되는 함수 템플릿 인스턴스화 'void std::vector<vtkdiy2::Bounds<long>,std::allocator<vtkdiy2::Bounds<long>>>::_Resize<std::_Value_init_tag>(const unsigned __int64,const _Ty2 &)'에 대한 참조를 확인하세요.
+          with
+          [
+              _Ty2=std::_Value_init_tag
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\vector(1603,27):
+          컴파일되는 함수 템플릿 인스턴스화 'vtkdiy2::Bounds<long> *std::_Uninitialized_value_construct_n<std::allocator<vtkdiy2::Bounds<long>>>(vtkdiy2::Bounds<long> *,unsigned __int64,_Alloc &)'에 대한 참조를 확인하세요.
+          with
+          [
+              _Alloc=std::allocator<vtkdiy2::Bounds<long>>
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xmemory(2057,18):
+          컴파일되는 함수 템플릿 인스턴스화 'void std::_Uninitialized_backout_al<_Alloc>::_Emplace_back<>(void)'에 대한 참조를 확인하세요.
+          with
+          [
+              _Alloc=std::allocator<vtkdiy2::Bounds<long>>
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xmemory(1807,35):
+          컴파일되는 함수 템플릿 인스턴스화 'void std::_Default_allocator_traits<_Alloc>::construct<_Ty,>(_Alloc &,_Objty *const )'에 대한 참조를 확인하세요.
+          with
+          [
+              _Alloc=std::allocator<vtkdiy2::Bounds<long>>,
+              _Ty=vtkdiy2::Bounds<long>,
+              _Objty=vtkdiy2::Bounds<long>
+          ]
+  
+  코드를 생성하고 있습니다...
+     D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Debug/vtkParallelDIY-9.4d.lib 라이브러리 및 D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Debug/vtkParallelDIY-9.4d.exp 개체를 생성하고 있습니다.
+  ParallelDIY.vcxproj -> D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\bin\Debug\vtkParallelDIY-9.4d.dll

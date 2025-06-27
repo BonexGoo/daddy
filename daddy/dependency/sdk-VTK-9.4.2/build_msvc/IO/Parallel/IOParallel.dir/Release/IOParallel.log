@@ -1,0 +1,7 @@
+﻿  vtkEnSightWriter.cxx
+  vtkNek5000Reader.cxx
+  vtkPChacoReader.cxx
+  vtkPDataSetWriter.cxx
+  코드를 생성하고 있습니다...
+     D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Release/vtkIOParallel-9.4.lib 라이브러리 및 D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Release/vtkIOParallel-9.4.exp 개체를 생성하고 있습니다.
+  IOParallel.vcxproj -> D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\bin\Release\vtkIOParallel-9.4.dll

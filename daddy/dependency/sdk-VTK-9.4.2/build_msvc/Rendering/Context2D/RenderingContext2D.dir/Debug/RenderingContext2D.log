@@ -1,0 +1,29 @@
+﻿  Building Custom Rule D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Rendering/Context2D/CMakeLists.txt
+  vtkAbstractContextBufferId.cxx
+  vtkAbstractContextItem.cxx
+  vtkBlockItem.cxx
+  vtkBrush.cxx
+  vtkContext2D.cxx
+  vtkContext3D.cxx
+  vtkContextActor.cxx
+  vtkContextClip.cxx
+  vtkContextDevice2D.cxx
+  vtkContextDevice3D.cxx
+  vtkContextItem.cxx
+  vtkContextKeyEvent.cxx
+  vtkContextMapper2D.cxx
+  vtkContextMouseEvent.cxx
+  vtkContextScene.cxx
+  vtkContextTransform.cxx
+  vtkImageItem.cxx
+  vtkLabeledContourPolyDataItem.cxx
+  vtkMarkerUtilities.cxx
+  vtkPen.cxx
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  vtkPolyDataItem.cxx
+  vtkPropItem.cxx
+  vtkTooltipItem.cxx
+  코드를 생성하고 있습니다...
+     D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Debug/vtkRenderingContext2D-9.4d.lib 라이브러리 및 D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Debug/vtkRenderingContext2D-9.4d.exp 개체를 생성하고 있습니다.
+  RenderingContext2D.vcxproj -> D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\bin\Debug\vtkRenderingContext2D-9.4d.dll

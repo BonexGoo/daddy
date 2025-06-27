@@ -1,0 +1,222 @@
+﻿  Building Custom Rule D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/libproj/vtklibproj/src/CMakeLists.txt
+  4D_api.cpp
+  aasincos.cpp
+  adjlon.cpp
+  auth.cpp
+  ctx.cpp
+  datum_set.cpp
+  datums.cpp
+  deriv.cpp
+  dmstor.cpp
+  ell_set.cpp
+  ellps.cpp
+  factors.cpp
+  fwd.cpp
+  gauss.cpp
+  generic_inverse.cpp
+  init.cpp
+  initcache.cpp
+  inv.cpp
+  list.cpp
+  log.cpp
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  malloc.cpp
+  mlfn.cpp
+  msfn.cpp
+  mutex.cpp
+  param.cpp
+  phi2.cpp
+  pipeline.cpp
+  pr_list.cpp
+  proj_mdist.cpp
+  qsfn.cpp
+  release.cpp
+  rtodms.cpp
+  strerrno.cpp
+  strtod.cpp
+  tsfn.cpp
+  units.cpp
+  wkt1_parser.cpp
+  wkt2_parser.cpp
+  wkt_parser.cpp
+  zpoly1.cpp
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  proj_json_streaming_writer.cpp
+  tracing.cpp
+  grids.cpp
+  filemanager.cpp
+  networkfilemanager.cpp
+  sqlite3_utils.cpp
+  axisswap.cpp
+  cart.cpp
+  geoc.cpp
+  geocent.cpp
+  noop.cpp
+  topocentric.cpp
+  set.cpp
+  unitconvert.cpp
+  aeqd.cpp
+  adams.cpp
+  gnom.cpp
+  laea.cpp
+  mod_ster.cpp
+  nsper.cpp
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  nzmg.cpp
+  ortho.cpp
+  stere.cpp
+  sterea.cpp
+  aea.cpp
+  bipc.cpp
+  bonne.cpp
+  eqdc.cpp
+  isea.cpp
+  ccon.cpp
+  imw_p.cpp
+  krovak.cpp
+  lcc.cpp
+  poly.cpp
+  rpoly.cpp
+  sconics.cpp
+  rouss.cpp
+  cass.cpp
+  cc.cpp
+  cea.cpp
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  eqc.cpp
+  gall.cpp
+  labrd.cpp
+  lsat.cpp
+  misrsom.cpp
+  merc.cpp
+  mill.cpp
+  ocea.cpp
+  omerc.cpp
+  somerc.cpp
+  tcc.cpp
+  tcea.cpp
+  times.cpp
+  tmerc.cpp
+  tobmerc.cpp
+  airy.cpp
+  aitoff.cpp
+  august.cpp
+  bacon.cpp
+  bertin1953.cpp
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  chamb.cpp
+  hammer.cpp
+  lagrng.cpp
+  larr.cpp
+  lask.cpp
+  latlong.cpp
+  nicol.cpp
+  ob_tran.cpp
+  oea.cpp
+  tpeqd.cpp
+  vandg.cpp
+  vandg2.cpp
+  vandg4.cpp
+  wag7.cpp
+  lcca.cpp
+  geos.cpp
+  boggs.cpp
+  collg.cpp
+  comill.cpp
+  crast.cpp
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  denoy.cpp
+  eck1.cpp
+  eck2.cpp
+  eck3.cpp
+  eck4.cpp
+  eck5.cpp
+  fahey.cpp
+  fouc_s.cpp
+  gins8.cpp
+  gstmerc.cpp
+  gn_sinu.cpp
+  goode.cpp
+  igh.cpp
+  igh_o.cpp
+  hatano.cpp
+  loxim.cpp
+  mbt_fps.cpp
+  mbtfpp.cpp
+  mbtfpq.cpp
+  moll.cpp
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  nell.cpp
+  nell_h.cpp
+  patterson.cpp
+  putp2.cpp
+  putp3.cpp
+  putp4p.cpp
+  putp5.cpp
+  putp6.cpp
+  qsc.cpp
+  robin.cpp
+  sch.cpp
+  sts.cpp
+  urm5.cpp
+  urmfps.cpp
+  wag2.cpp
+  wag3.cpp
+  wink1.cpp
+  wink2.cpp
+  healpix.cpp
+  natearth.cpp
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  natearth2.cpp
+  calcofi.cpp
+  eqearth.cpp
+  col_urban.cpp
+  affine.cpp
+  deformation.cpp
+  helmert.cpp
+  hgridshift.cpp
+  horner.cpp
+  molodensky.cpp
+  vgridshift.cpp
+  xyzgridshift.cpp
+  defmodel.cpp
+  tinshift.cpp
+  static.cpp
+  util.cpp
+  metadata.cpp
+  common.cpp
+  crs.cpp
+  datum.cpp
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  coordinatesystem.cpp
+  io.cpp
+  factory.cpp
+  c_api.cpp
+  concatenatedoperation.cpp
+  coordinateoperationfactory.cpp
+  conversion.cpp
+  esriparammappings.cpp
+  oputils.cpp
+  parammappings.cpp
+  projbasedoperation.cpp
+  singleoperation.cpp
+  transformation.cpp
+  vectorofvaluesparams.cpp
+  코드를 생성하고 있습니다...
+  geodesic.c
+  wkt1_generated_parser.c
+  wkt2_generated_parser.c
+  코드를 생성하고 있습니다...
+  internal.cpp
+  internal.cpp
+     D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Release/vtklibproj-9.4.lib 라이브러리 및 D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Release/vtklibproj-9.4.exp 개체를 생성하고 있습니다.
+  libproj.vcxproj -> D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\bin\Release\vtklibproj-9.4.dll

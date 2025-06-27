@@ -1,0 +1,75 @@
+﻿  vtkArrayRenderer.cxx
+  vtkDepthOfFieldPass.cxx
+  vtkDepthPeelingPass.cxx
+  vtkEDLShading.cxx
+  vtkGLSLModLight.cxx
+  vtkGaussianBlurPass.cxx
+  vtkOpenGLArrayTextureBufferAdapter.cxx
+  vtkOpenGLES30PolyDataMapper2D.cxx
+  vtkOpenGLFXAAFilter.cxx
+  vtkOpenGLFluidMapper.cxx
+  vtkOpenGLGlyph3DHelper.cxx
+  vtkOpenGLLowMemoryPolyDataMapper.cxx
+  vtkOpenGLPointGaussianMapper.cxx
+  vtkOpenGLPolyDataMapper.cxx
+  vtkOpenGLPolyDataMapper2D.cxx
+  vtkOpenGLRenderWindow.cxx
+  vtkOpenGLSphereMapper.cxx
+  vtkOpenGLStickMapper.cxx
+  vtkOrderIndependentTranslucentPass.cxx
+  vtkOutlineGlowPass.cxx
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  vtkPointFillPass.cxx
+  vtkSSAAPass.cxx
+  vtkSimpleMotionBlurPass.cxx
+  vtkSobelGradientMagnitudePass.cxx
+  vtkTextureObject.cxx
+  BlueNoiseTexture64x64.cxx
+  vtkDepthOfFieldPassFS.cxx
+  vtkDepthPeelingPassFinalFS.cxx
+  vtkDepthPeelingPassIntermediateFS.cxx
+  vtkEDLBilateralFilterFS.cxx
+  vtkEDLComposeFS.cxx
+  vtkEDLShadeFS.cxx
+  vtkFXAAFilterFS.cxx
+  vtkFluidMapperDepthFilterBiGaussFS.cxx
+  vtkFluidMapperDepthFilterNarrowRangeFS.cxx
+  vtkFluidMapperFS.cxx
+  vtkFluidMapperFinalFS.cxx
+  vtkFluidMapperGS.cxx
+  vtkFluidMapperSurfaceNormalFS.cxx
+  vtkFluidMapperThicknessAndVolumeColorFilterFS.cxx
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  vtkFluidMapperVS.cxx
+  vtkGaussianBlurPassFS.cxx
+  vtkGaussianBlurPassVS.cxx
+  vtkGlyph3DVS.cxx
+  vtkOrderIndependentTranslucentPassFinalFS.cxx
+  vtkOutlineGlowBlurPassFS.cxx
+  vtkOutlineGlowUpscalePassFS.cxx
+  vtkPBRFunctions.cxx
+  vtkPointFillPassFS.cxx
+  vtkPointGaussianGS.cxx
+  vtkPointGaussianVS.cxx
+  vtkPolyData2DFS.cxx
+  vtkPolyData2DVS.cxx
+  vtkPolyDataEdgesGS.cxx
+  vtkPolyDataFS.cxx
+  vtkPolyDataVS.cxx
+  vtkPolyDataWideLineGS.cxx
+  vtkSSAAPassFS.cxx
+  vtkSimpleMotionBlurPassFS.cxx
+  vtkSimpleSplatVS.cxx
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  vtkSobelGradientMagnitudePass1FS.cxx
+  vtkSobelGradientMagnitudePass2FS.cxx
+  vtkSphereMapperGS.cxx
+  vtkStickMapperGS.cxx
+  vtkTextureObjectFS.cxx
+  vtkTextureObjectVS.cxx
+  코드를 생성하고 있습니다...
+     D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Release/vtkRenderingOpenGL2-9.4.lib 라이브러리 및 D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Release/vtkRenderingOpenGL2-9.4.exp 개체를 생성하고 있습니다.
+  RenderingOpenGL2.vcxproj -> D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\bin\Release\vtkRenderingOpenGL2-9.4.dll

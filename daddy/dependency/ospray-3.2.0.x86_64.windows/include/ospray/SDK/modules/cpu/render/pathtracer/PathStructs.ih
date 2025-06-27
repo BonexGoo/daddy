@@ -1,0 +1,89 @@
+// Copyright 2009 Intel Corporation
+// SPDX-License-Identifier: Apache-2.0
+
+#pragma once
+
+#include "common/DifferentialGeometry.ih"
+#include "math/random.ih"
+#include "render/bsdfs/BSDF.ih"
+#include "render/materials/Medium.ih"
+#ifdef OSPRAY_ENABLE_VOLUMES
+#include "volume/VolumetricModel.ih"
+#endif
+// c++ shared
+#include "PathTracerShared.h"
+
+OSPRAY_BEGIN_ISPC_NAMESPACE
+
+struct World;
+struct Light;
+
+enum PathVertexType
+{
+  SURFACE,
+  VOLUME,
+  CAMERA,
+  LIGHT,
+  ENVIRONMENT
+};
+
+struct PathVertex
+{
+  DifferentialGeometry dg;
+  vec3f wi;
+  vec3f wo;
+
+  vec3f albedo;
+
+  // only valid if path vertex is surface vertex
+  const varying BSDF *bsdf;
+
+#ifdef OSPRAY_ENABLE_VOLUMES
+  // only valid if path vertex is volume vertex
+  const VolumetricModel *volume;
+#endif
+
+  float pdf_w; // the pdf of sampling wo in solid angle measure
+  PathVertexType type;
+  uint32 numLightSamples;
+};
+
+// constant, typically uniform
+struct PathContext
+{
+  vec2f screen; // normalized coords, center of pixel, for backplate sampling
+  const PathTracer *uniform context;
+  const World *uniform world;
+  uniform uint32 numLights;
+  uniform uint32 numGeoLights;
+  uniform uint32 numFirstBounceLightSamples;
+  uniform uint32 numIndirectBounceLightSamples;
+  Light **uniform lights;
+  float *uniform lightsCDF;
+#ifdef OSPRAY_PATHTRACER_DEBUG
+  uniform bool disableNEE; // turn off NEE contribution for debugging purposes
+  uniform bool disableFWD; // turn off FWD contribution for debugging purposes
+  bool debug;
+#endif
+};
+
+// changing, typically varying
+struct PathState
+{
+  vec3f throughput;
+  vec3f contribution;
+  float time;
+  Medium currentMedium;
+  float shadowCatcherDist;
+  bool firstBounceLight;
+  uint32 scatteringEvents; // counting diffuse and glossy bounces
+  LDSampler ldSampler;
+  RandomSampler randomSampler;
+  bool straightPath; // path from camera did not change direction, for alpha and
+                     // backplate
+  bool specularTransmissionPath; // path from camera only has specular
+                                 // transmissions, for alpha and backplate
+  uniform uint32 depth;
+};
+
+OSPRAY_END_ISPC_NAMESPACE

@@ -1,0 +1,41 @@
+﻿  Building Custom Rule D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Rendering/Volume/CMakeLists.txt
+  vtkDirectionEncoder.cxx
+  vtkEncodedGradientEstimator.cxx
+  vtkEncodedGradientShader.cxx
+  vtkFiniteDifferenceGradientEstimator.cxx
+  vtkFixedPointRayCastImage.cxx
+  vtkFixedPointVolumeRayCastCompositeGOHelper.cxx
+  vtkFixedPointVolumeRayCastCompositeGOShadeHelper.cxx
+  vtkFixedPointVolumeRayCastCompositeHelper.cxx
+  vtkFixedPointVolumeRayCastCompositeShadeHelper.cxx
+  vtkFixedPointVolumeRayCastHelper.cxx
+  vtkFixedPointVolumeRayCastMapper.cxx
+  vtkFixedPointVolumeRayCastMIPHelper.cxx
+  vtkGPUVolumeRayCastMapper.cxx
+  vtkMultiVolume.cxx
+  vtkOSPRayVolumeInterface.cxx
+  vtkAnariVolumeInterface.cxx
+  vtkProjectedTetrahedraMapper.cxx
+  vtkRayCastImageDisplayHelper.cxx
+  vtkRecursiveSphereDirectionEncoder.cxx
+  vtkSphericalDirectionEncoder.cxx
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  vtkUnstructuredGridBunykRayCastFunction.cxx
+  vtkUnstructuredGridHomogeneousRayIntegrator.cxx
+  vtkUnstructuredGridLinearRayIntegrator.cxx
+  vtkUnstructuredGridPartialPreIntegration.cxx
+  vtkUnstructuredGridPreIntegration.cxx
+  vtkUnstructuredGridVolumeMapper.cxx
+  vtkUnstructuredGridVolumeRayCastFunction.cxx
+  vtkUnstructuredGridVolumeRayCastIterator.cxx
+  vtkUnstructuredGridVolumeRayCastMapper.cxx
+  vtkUnstructuredGridVolumeRayIntegrator.cxx
+  vtkUnstructuredGridVolumeZSweepMapper.cxx
+  vtkVolumeMapper.cxx
+  vtkVolumeOutlineSource.cxx
+  vtkVolumePicker.cxx
+  vtkVolumeRayCastSpaceLeapingImageFilter.cxx
+  코드를 생성하고 있습니다...
+     D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Debug/vtkRenderingVolume-9.4d.lib 라이브러리 및 D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Debug/vtkRenderingVolume-9.4d.exp 개체를 생성하고 있습니다.
+  RenderingVolume.vcxproj -> D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\bin\Debug\vtkRenderingVolume-9.4d.dll

@@ -1,0 +1,28 @@
+﻿  Building Custom Rule D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Rendering/RayTracing/CMakeLists.txt
+  vtkRenderingRayTracingObjectFactory.cxx
+  vtkOSPRayActorNode.cxx
+  vtkOSPRayAMRVolumeMapperNode.cxx
+  vtkOSPRayCameraNode.cxx
+  vtkOSPRayCompositePolyDataMapperNode.cxx
+  vtkOSPRayCompositePolyDataMapper2Node.cxx
+  vtkOSPRayLightNode.cxx
+  vtkOSPRayMaterialHelpers.cxx
+  vtkOSPRayMaterialLibrary.cxx
+  vtkOSPRayMoleculeMapperNode.cxx
+  vtkOSPRayPass.cxx
+  vtkOSPRayPolyDataMapperNode.cxx
+  vtkOSPRayPointGaussianMapperNode.cxx
+  vtkOSPRayRendererNode.cxx
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\RayTracing\vtkOSPRayRendererNode.cxx(1273,22): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  vtkOSPRayUnstructuredVolumeMapperNode.cxx
+  vtkOSPRayViewNodeFactory.cxx
+  vtkOSPRayVolumeMapper.cxx
+  vtkOSPRayVolumeMapperNode.cxx
+  vtkOSPRayVolumeNode.cxx
+  vtkOSPRayWindowNode.cxx
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  RTWrapper.cxx
+  코드를 생성하고 있습니다...
+     D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Release/vtkRenderingRayTracing-9.4.lib 라이브러리 및 D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Release/vtkRenderingRayTracing-9.4.exp 개체를 생성하고 있습니다.
+  RenderingRayTracing.vcxproj -> D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\bin\Release\vtkRenderingRayTracing-9.4.dll

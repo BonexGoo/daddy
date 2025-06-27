@@ -1,0 +1,7 @@
+﻿  Building Custom Rule D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Remote/vtkDICOM/DicomCli/CMakeLists.txt
+  mainmacro.cxx
+  readquery.cxx
+  progress.cxx
+  vtkConsoleOutputWindow.cxx
+  코드를 생성하고 있습니다...
+  dicomcli.vcxproj -> D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\lib\Release\dicomcli.lib

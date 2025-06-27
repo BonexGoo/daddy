@@ -1,0 +1,18 @@
+﻿  vtkCompositeDataWriter.cxx
+  vtkDataObjectWriter.cxx
+  vtkDataSetWriter.cxx
+  vtkDataWriter.cxx
+  vtkGenericDataObjectWriter.cxx
+  vtkGraphWriter.cxx
+  vtkLegacyCellGridWriter.cxx
+  vtkPixelExtentIO.cxx
+  vtkPolyDataWriter.cxx
+  vtkRectilinearGridWriter.cxx
+  vtkSimplePointsWriter.cxx
+  vtkStructuredGridWriter.cxx
+  vtkStructuredPointsWriter.cxx
+  vtkTableWriter.cxx
+  vtkTreeWriter.cxx
+  vtkUnstructuredGridWriter.cxx
+  코드를 생성하고 있습니다...
+  IOLegacy.vcxproj -> D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\bin\Debug\vtkIOLegacy-9.4d.dll

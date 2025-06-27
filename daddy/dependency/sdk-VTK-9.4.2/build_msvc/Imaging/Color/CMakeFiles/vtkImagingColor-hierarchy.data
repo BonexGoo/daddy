@@ -1,0 +1,12 @@
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Imaging/Color/vtkImageHSIToRGB.h;vtkImagingColor
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Imaging/Color/vtkImageHSVToRGB.h;vtkImagingColor
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Imaging/Color/vtkImageLuminance.h;vtkImagingColor
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Imaging/Color/vtkImageMapToRGBA.h;vtkImagingColor
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Imaging/Color/vtkImageMapToWindowLevelColors.h;vtkImagingColor
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Imaging/Color/vtkImageQuantizeRGBToIndex.h;vtkImagingColor
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Imaging/Color/vtkImageRGBToHSI.h;vtkImagingColor
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Imaging/Color/vtkImageRGBToHSV.h;vtkImagingColor
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Imaging/Color/vtkImageRGBToXYZ.h;vtkImagingColor
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Imaging/Color/vtkImageRGBToYIQ.h;vtkImagingColor
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Imaging/Color/vtkImageXYZToLAB.h;vtkImagingColor
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/Imaging/Color/vtkImageYIQToRGB.h;vtkImagingColor

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\x64\Debug\ZERO_CHECK</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\bin\Debug\vtkWrappingTools-9.4d.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\bin\Debug\vtkWrapHierarchy-9.4d.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\x64\Debug\vtkCommonCore-hierarchy</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\x64\Debug\vtkCommonMath-hierarchy</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\x64\Debug\vtkCommonTransforms-hierarchy</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\x64\Debug\vtkCommonDataModel-hierarchy</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\x64\Debug\vtkCommonExecutionModel-hierarchy</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\x64\Debug\vtkIOCore-hierarchy</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles />
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>

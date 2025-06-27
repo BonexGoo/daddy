@@ -1,0 +1,11 @@
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\SceneGraph\vtkActorNode.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Rendering\SceneGraph\RenderingSceneGraph.dir\Release\vtkActorNode.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\SceneGraph\vtkCameraNode.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Rendering\SceneGraph\RenderingSceneGraph.dir\Release\vtkCameraNode.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\SceneGraph\vtkLightNode.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Rendering\SceneGraph\RenderingSceneGraph.dir\Release\vtkLightNode.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\SceneGraph\vtkMapperNode.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Rendering\SceneGraph\RenderingSceneGraph.dir\Release\vtkMapperNode.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\SceneGraph\vtkPolyDataMapperNode.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Rendering\SceneGraph\RenderingSceneGraph.dir\Release\vtkPolyDataMapperNode.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\SceneGraph\vtkRendererNode.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Rendering\SceneGraph\RenderingSceneGraph.dir\Release\vtkRendererNode.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\SceneGraph\vtkViewNode.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Rendering\SceneGraph\RenderingSceneGraph.dir\Release\vtkViewNode.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\SceneGraph\vtkViewNodeFactory.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Rendering\SceneGraph\RenderingSceneGraph.dir\Release\vtkViewNodeFactory.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\SceneGraph\vtkVolumeMapperNode.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Rendering\SceneGraph\RenderingSceneGraph.dir\Release\vtkVolumeMapperNode.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\SceneGraph\vtkVolumeNode.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Rendering\SceneGraph\RenderingSceneGraph.dir\Release\vtkVolumeNode.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\Rendering\SceneGraph\vtkWindowNode.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\Rendering\SceneGraph\RenderingSceneGraph.dir\Release\vtkWindowNode.obj

@@ -1,0 +1,15 @@
+﻿  Building Custom Rule D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/dcmfg/tests/CMakeLists.txt
+  tests.cc
+  t_concatenation_creator.cc
+  t_concatenation_loader.cc
+  t_ct_acquisition_details.cc
+  t_ct_acquisition_type.cc
+  t_ct_image_frame_type.cc
+  t_ct_position.cc
+  t_ct_table_dynamics.cc
+  t_deriv_image.cc
+  t_fg_base.cc
+  t_frame_content.cc
+  t_irradiation_event_identification.cc
+  코드를 생성하고 있습니다...
+  dcmfg_tests.vcxproj -> D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\bin\Release\dcmfg_tests.exe

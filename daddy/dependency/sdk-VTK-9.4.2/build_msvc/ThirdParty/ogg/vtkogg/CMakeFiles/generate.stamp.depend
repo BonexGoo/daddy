@@ -1,0 +1,18 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.31/Modules/CMakePackageConfigHelpers.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CTest.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CTestUseLaunchers.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CheckCCompilerFlag.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CheckCompilerFlag.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CheckIncludeFile.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CheckIncludeFileCXX.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CheckIncludeFiles.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CheckSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CheckTypeSize.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/GenerateExportHeader.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/WriteBasicConfigVersionFile.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/exportheader.cmake.in
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/ogg/vtkogg/CMakeLists.txt
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/ogg/vtkogg/cmake/CheckSizes.cmake
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/ogg/vtkogg/include/ogg/config_types.h.in

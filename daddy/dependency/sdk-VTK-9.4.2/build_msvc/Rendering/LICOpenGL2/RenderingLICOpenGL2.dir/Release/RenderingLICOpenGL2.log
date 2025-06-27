@@ -1,0 +1,21 @@
+﻿  vtkImageDataLIC2D.cxx
+  vtkLICNoiseHelper.cxx
+  vtkLineIntegralConvolution2D.cxx
+  vtkStructuredGridLIC2D.cxx
+  vtkSurfaceLICInterface.cxx
+  vtkTextureIO.cxx
+  vtkLineIntegralConvolution2D_AAH.cxx
+  vtkLineIntegralConvolution2D_AAV.cxx
+  vtkLineIntegralConvolution2D_CE.cxx
+  vtkLineIntegralConvolution2D_EE.cxx
+  vtkLineIntegralConvolution2D_LIC0.cxx
+  vtkLineIntegralConvolution2D_LICI.cxx
+  vtkLineIntegralConvolution2D_LICN.cxx
+  vtkLineIntegralConvolution2D_VT.cxx
+  vtkStructuredGridLIC2D_fs.cxx
+  vtkSurfaceLICInterface_CE.cxx
+  vtkSurfaceLICInterface_DCpy.cxx
+  vtkSurfaceLICInterface_SC.cxx
+  코드를 생성하고 있습니다...
+     D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Release/vtkRenderingLICOpenGL2-9.4.lib 라이브러리 및 D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/build_msvc/lib/Release/vtkRenderingLICOpenGL2-9.4.exp 개체를 생성하고 있습니다.
+  RenderingLICOpenGL2.vcxproj -> D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\bin\Release\vtkRenderingLICOpenGL2-9.4.dll

@@ -1,0 +1,34 @@
+﻿  Building Custom Rule D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/dcmjpeg/libsrc/CMakeLists.txt
+  ddpiimpl.cc
+  dipijpeg.cc
+  djcodecd.cc
+  djcodece.cc
+  djcparam.cc
+  djdecbas.cc
+  djdecext.cc
+  djdeclol.cc
+  djdecode.cc
+  djdecpro.cc
+  djdecsps.cc
+  djdecsv1.cc
+  djdijg12.cc
+  djdijg8.cc
+  djdijg16.cc
+  djeijg12.cc
+  djeijg8.cc
+  djeijg16.cc
+  djencbas.cc
+  djencext.cc
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  djenclol.cc
+  djencode.cc
+  djencpro.cc
+  djencsps.cc
+  djencsv1.cc
+  djrplol.cc
+  djrploss.cc
+  djutils.cc
+  코드를 생성하고 있습니다...
+     D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/lib/Debug/dcmjpeg.lib 라이브러리 및 D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/lib/Debug/dcmjpeg.exp 개체를 생성하고 있습니다.
+  dcmjpeg.vcxproj -> D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\bin\Debug\dcmjpeg.dll

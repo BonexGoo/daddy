@@ -1,0 +1,6 @@
+﻿  Building Custom Rule D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/dcmdata/apps/CMakeLists.txt
+  dcmodify.cc
+  mdfconen.cc
+  mdfdsman.cc
+  코드를 생성하고 있습니다...
+  dcmodify.vcxproj -> D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\bin\Release\dcmodify.exe

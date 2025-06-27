@@ -1,0 +1,1587 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5.c">
+      <Filter>H5</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\ThirdParty\hdf5\vtkhdf5\src\H5build_settings.c">
+      <Filter>H5</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5checksum.c">
+      <Filter>H5</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5dbg.c">
+      <Filter>H5</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5mpi.c">
+      <Filter>H5</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5system.c">
+      <Filter>H5</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5timer.c">
+      <Filter>H5</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5trace.c">
+      <Filter>H5</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5A.c">
+      <Filter>H5A</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Abtree2.c">
+      <Filter>H5A</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Adense.c">
+      <Filter>H5A</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Adeprec.c">
+      <Filter>H5A</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Aint.c">
+      <Filter>H5A</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Atest.c">
+      <Filter>H5A</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5AC.c">
+      <Filter>H5AC</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5ACdbg.c">
+      <Filter>H5AC</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5ACmpio.c">
+      <Filter>H5AC</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5ACproxy_entry.c">
+      <Filter>H5AC</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5B.c">
+      <Filter>H5B</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Bcache.c">
+      <Filter>H5B</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Bdbg.c">
+      <Filter>H5B</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5B2.c">
+      <Filter>H5B2</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5B2cache.c">
+      <Filter>H5B2</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5B2dbg.c">
+      <Filter>H5B2</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5B2hdr.c">
+      <Filter>H5B2</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5B2int.c">
+      <Filter>H5B2</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5B2internal.c">
+      <Filter>H5B2</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5B2leaf.c">
+      <Filter>H5B2</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5B2stat.c">
+      <Filter>H5B2</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5B2test.c">
+      <Filter>H5B2</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5C.c">
+      <Filter>H5C</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Cdbg.c">
+      <Filter>H5C</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Cepoch.c">
+      <Filter>H5C</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Cimage.c">
+      <Filter>H5C</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Clog.c">
+      <Filter>H5C</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Clog_json.c">
+      <Filter>H5C</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Clog_trace.c">
+      <Filter>H5C</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Cmpio.c">
+      <Filter>H5C</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Cprefetched.c">
+      <Filter>H5C</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Cquery.c">
+      <Filter>H5C</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Ctag.c">
+      <Filter>H5C</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Ctest.c">
+      <Filter>H5C</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5CS.c">
+      <Filter>H5CS</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5CX.c">
+      <Filter>H5CX</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5D.c">
+      <Filter>H5D</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Dbtree.c">
+      <Filter>H5D</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Dbtree2.c">
+      <Filter>H5D</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Dchunk.c">
+      <Filter>H5D</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Dcompact.c">
+      <Filter>H5D</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Dcontig.c">
+      <Filter>H5D</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Ddbg.c">
+      <Filter>H5D</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Ddeprec.c">
+      <Filter>H5D</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Dearray.c">
+      <Filter>H5D</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Defl.c">
+      <Filter>H5D</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Dfarray.c">
+      <Filter>H5D</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Dfill.c">
+      <Filter>H5D</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Dint.c">
+      <Filter>H5D</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Dio.c">
+      <Filter>H5D</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Dlayout.c">
+      <Filter>H5D</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Dmpio.c">
+      <Filter>H5D</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Dnone.c">
+      <Filter>H5D</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Doh.c">
+      <Filter>H5D</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Dscatgath.c">
+      <Filter>H5D</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Dselect.c">
+      <Filter>H5D</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Dsingle.c">
+      <Filter>H5D</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Dtest.c">
+      <Filter>H5D</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Dvirtual.c">
+      <Filter>H5D</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5E.c">
+      <Filter>H5E</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Edeprec.c">
+      <Filter>H5E</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Eint.c">
+      <Filter>H5E</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5EA.c">
+      <Filter>H5EA</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5EAcache.c">
+      <Filter>H5EA</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5EAdbg.c">
+      <Filter>H5EA</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5EAdblkpage.c">
+      <Filter>H5EA</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5EAdblock.c">
+      <Filter>H5EA</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5EAhdr.c">
+      <Filter>H5EA</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5EAiblock.c">
+      <Filter>H5EA</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5EAint.c">
+      <Filter>H5EA</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5EAsblock.c">
+      <Filter>H5EA</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5EAstat.c">
+      <Filter>H5EA</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5EAtest.c">
+      <Filter>H5EA</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5ES.c">
+      <Filter>H5ES</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5ESevent.c">
+      <Filter>H5ES</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5ESint.c">
+      <Filter>H5ES</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5ESlist.c">
+      <Filter>H5ES</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5F.c">
+      <Filter>H5F</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Faccum.c">
+      <Filter>H5F</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Fcwfs.c">
+      <Filter>H5F</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Fdbg.c">
+      <Filter>H5F</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Fdeprec.c">
+      <Filter>H5F</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Fefc.c">
+      <Filter>H5F</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Ffake.c">
+      <Filter>H5F</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Fint.c">
+      <Filter>H5F</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Fio.c">
+      <Filter>H5F</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Fmount.c">
+      <Filter>H5F</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Fmpi.c">
+      <Filter>H5F</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Fquery.c">
+      <Filter>H5F</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Fsfile.c">
+      <Filter>H5F</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Fspace.c">
+      <Filter>H5F</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Fsuper.c">
+      <Filter>H5F</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Fsuper_cache.c">
+      <Filter>H5F</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Ftest.c">
+      <Filter>H5F</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5FA.c">
+      <Filter>H5FA</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5FAcache.c">
+      <Filter>H5FA</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5FAdbg.c">
+      <Filter>H5FA</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5FAdblkpage.c">
+      <Filter>H5FA</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5FAdblock.c">
+      <Filter>H5FA</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5FAhdr.c">
+      <Filter>H5FA</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5FAint.c">
+      <Filter>H5FA</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5FAstat.c">
+      <Filter>H5FA</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5FAtest.c">
+      <Filter>H5FA</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5FD.c">
+      <Filter>H5FD</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5FDcore.c">
+      <Filter>H5FD</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5FDdirect.c">
+      <Filter>H5FD</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5FDfamily.c">
+      <Filter>H5FD</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5FDhdfs.c">
+      <Filter>H5FD</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5FDint.c">
+      <Filter>H5FD</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5FDlog.c">
+      <Filter>H5FD</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5FDmirror.c">
+      <Filter>H5FD</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5FDmpi.c">
+      <Filter>H5FD</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5FDmpio.c">
+      <Filter>H5FD</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5FDmulti.c">
+      <Filter>H5FD</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5FDperform.c">
+      <Filter>H5FD</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5FDros3.c">
+      <Filter>H5FD</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5FDs3comms.c">
+      <Filter>H5FD</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5FDsec2.c">
+      <Filter>H5FD</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5FDspace.c">
+      <Filter>H5FD</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5FDsplitter.c">
+      <Filter>H5FD</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5FDstdio.c">
+      <Filter>H5FD</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5FDtest.c">
+      <Filter>H5FD</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5FDwindows.c">
+      <Filter>H5FD</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5FL.c">
+      <Filter>H5FL</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5FO.c">
+      <Filter>H5FO</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5FS.c">
+      <Filter>H5FS</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5FScache.c">
+      <Filter>H5FS</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5FSdbg.c">
+      <Filter>H5FS</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5FSint.c">
+      <Filter>H5FS</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5FSsection.c">
+      <Filter>H5FS</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5FSstat.c">
+      <Filter>H5FS</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5FStest.c">
+      <Filter>H5FS</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5G.c">
+      <Filter>H5G</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Gbtree2.c">
+      <Filter>H5G</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Gcache.c">
+      <Filter>H5G</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Gcompact.c">
+      <Filter>H5G</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Gdense.c">
+      <Filter>H5G</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Gdeprec.c">
+      <Filter>H5G</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Gent.c">
+      <Filter>H5G</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Gint.c">
+      <Filter>H5G</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Glink.c">
+      <Filter>H5G</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Gloc.c">
+      <Filter>H5G</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Gname.c">
+      <Filter>H5G</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Gnode.c">
+      <Filter>H5G</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Gobj.c">
+      <Filter>H5G</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Goh.c">
+      <Filter>H5G</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Groot.c">
+      <Filter>H5G</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Gstab.c">
+      <Filter>H5G</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Gtest.c">
+      <Filter>H5G</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Gtraverse.c">
+      <Filter>H5G</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5HF.c">
+      <Filter>H5HF</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5HFbtree2.c">
+      <Filter>H5HF</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5HFcache.c">
+      <Filter>H5HF</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5HFdbg.c">
+      <Filter>H5HF</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5HFdblock.c">
+      <Filter>H5HF</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5HFdtable.c">
+      <Filter>H5HF</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5HFhdr.c">
+      <Filter>H5HF</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5HFhuge.c">
+      <Filter>H5HF</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5HFiblock.c">
+      <Filter>H5HF</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5HFiter.c">
+      <Filter>H5HF</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5HFman.c">
+      <Filter>H5HF</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5HFsection.c">
+      <Filter>H5HF</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5HFspace.c">
+      <Filter>H5HF</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5HFstat.c">
+      <Filter>H5HF</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5HFtest.c">
+      <Filter>H5HF</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5HFtiny.c">
+      <Filter>H5HF</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5HG.c">
+      <Filter>H5HG</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5HGcache.c">
+      <Filter>H5HG</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5HGdbg.c">
+      <Filter>H5HG</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5HGquery.c">
+      <Filter>H5HG</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5HL.c">
+      <Filter>H5HL</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5HLcache.c">
+      <Filter>H5HL</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5HLdbg.c">
+      <Filter>H5HL</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5HLdblk.c">
+      <Filter>H5HL</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5HLint.c">
+      <Filter>H5HL</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5HLprfx.c">
+      <Filter>H5HL</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5HP.c">
+      <Filter>H5HP</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5I.c">
+      <Filter>H5I</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Idbg.c">
+      <Filter>H5I</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Iint.c">
+      <Filter>H5I</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Itest.c">
+      <Filter>H5I</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5L.c">
+      <Filter>H5L</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Ldeprec.c">
+      <Filter>H5L</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Lexternal.c">
+      <Filter>H5L</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Lint.c">
+      <Filter>H5L</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5M.c">
+      <Filter>H5M</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5MF.c">
+      <Filter>H5MF</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5MFaggr.c">
+      <Filter>H5MF</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5MFdbg.c">
+      <Filter>H5MF</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5MFsection.c">
+      <Filter>H5MF</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5MM.c">
+      <Filter>H5MM</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5MP.c">
+      <Filter>H5MP</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5MPtest.c">
+      <Filter>H5MP</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5O.c">
+      <Filter>H5O</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Oainfo.c">
+      <Filter>H5O</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Oalloc.c">
+      <Filter>H5O</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Oattr.c">
+      <Filter>H5O</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Oattribute.c">
+      <Filter>H5O</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Obogus.c">
+      <Filter>H5O</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Obtreek.c">
+      <Filter>H5O</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Ocache.c">
+      <Filter>H5O</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Ocache_image.c">
+      <Filter>H5O</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Ochunk.c">
+      <Filter>H5O</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Ocont.c">
+      <Filter>H5O</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Ocopy.c">
+      <Filter>H5O</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Ocopy_ref.c">
+      <Filter>H5O</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Odbg.c">
+      <Filter>H5O</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Odeprec.c">
+      <Filter>H5O</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Odrvinfo.c">
+      <Filter>H5O</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Odtype.c">
+      <Filter>H5O</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Oefl.c">
+      <Filter>H5O</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Ofill.c">
+      <Filter>H5O</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Oflush.c">
+      <Filter>H5O</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Ofsinfo.c">
+      <Filter>H5O</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Oginfo.c">
+      <Filter>H5O</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Oint.c">
+      <Filter>H5O</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Olayout.c">
+      <Filter>H5O</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Olinfo.c">
+      <Filter>H5O</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Olink.c">
+      <Filter>H5O</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Omessage.c">
+      <Filter>H5O</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Omtime.c">
+      <Filter>H5O</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Oname.c">
+      <Filter>H5O</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Onull.c">
+      <Filter>H5O</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Opline.c">
+      <Filter>H5O</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Orefcount.c">
+      <Filter>H5O</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Osdspace.c">
+      <Filter>H5O</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Oshared.c">
+      <Filter>H5O</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Oshmesg.c">
+      <Filter>H5O</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Ostab.c">
+      <Filter>H5O</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Otest.c">
+      <Filter>H5O</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Ounknown.c">
+      <Filter>H5O</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5P.c">
+      <Filter>H5P</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Pacpl.c">
+      <Filter>H5P</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Pdapl.c">
+      <Filter>H5P</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Pdcpl.c">
+      <Filter>H5P</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Pdeprec.c">
+      <Filter>H5P</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Pdxpl.c">
+      <Filter>H5P</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Pencdec.c">
+      <Filter>H5P</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Pfapl.c">
+      <Filter>H5P</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Pfcpl.c">
+      <Filter>H5P</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Pfmpl.c">
+      <Filter>H5P</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Pgcpl.c">
+      <Filter>H5P</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Pint.c">
+      <Filter>H5P</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Plapl.c">
+      <Filter>H5P</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Plcpl.c">
+      <Filter>H5P</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Pmapl.c">
+      <Filter>H5P</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Pmcpl.c">
+      <Filter>H5P</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Pocpl.c">
+      <Filter>H5P</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Pocpypl.c">
+      <Filter>H5P</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Pstrcpl.c">
+      <Filter>H5P</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Ptest.c">
+      <Filter>H5P</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5PB.c">
+      <Filter>H5PB</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5PL.c">
+      <Filter>H5PL</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5PLint.c">
+      <Filter>H5PL</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5PLpath.c">
+      <Filter>H5PL</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5PLplugin_cache.c">
+      <Filter>H5PL</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5R.c">
+      <Filter>H5R</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Rdeprec.c">
+      <Filter>H5R</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Rint.c">
+      <Filter>H5R</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5UC.c">
+      <Filter>H5UC</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5RS.c">
+      <Filter>H5RS</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5S.c">
+      <Filter>H5S</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Sall.c">
+      <Filter>H5S</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Sdbg.c">
+      <Filter>H5S</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Sdeprec.c">
+      <Filter>H5S</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Shyper.c">
+      <Filter>H5S</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Smpio.c">
+      <Filter>H5S</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Snone.c">
+      <Filter>H5S</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Spoint.c">
+      <Filter>H5S</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Sselect.c">
+      <Filter>H5S</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Stest.c">
+      <Filter>H5S</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5SL.c">
+      <Filter>H5SL</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5SM.c">
+      <Filter>H5SM</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5SMbtree2.c">
+      <Filter>H5SM</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5SMcache.c">
+      <Filter>H5SM</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5SMmessage.c">
+      <Filter>H5SM</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5SMtest.c">
+      <Filter>H5SM</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5T.c">
+      <Filter>H5T</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Tarray.c">
+      <Filter>H5T</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Tbit.c">
+      <Filter>H5T</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Tcommit.c">
+      <Filter>H5T</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Tcompound.c">
+      <Filter>H5T</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Tconv.c">
+      <Filter>H5T</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Tcset.c">
+      <Filter>H5T</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Tdbg.c">
+      <Filter>H5T</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Tdeprec.c">
+      <Filter>H5T</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Tenum.c">
+      <Filter>H5T</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Tfields.c">
+      <Filter>H5T</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Tfixed.c">
+      <Filter>H5T</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Tfloat.c">
+      <Filter>H5T</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Tinit_float.c">
+      <Filter>H5T</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Tnative.c">
+      <Filter>H5T</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Toffset.c">
+      <Filter>H5T</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Toh.c">
+      <Filter>H5T</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Topaque.c">
+      <Filter>H5T</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Torder.c">
+      <Filter>H5T</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Tpad.c">
+      <Filter>H5T</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Tprecis.c">
+      <Filter>H5T</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Tref.c">
+      <Filter>H5T</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Tstrpad.c">
+      <Filter>H5T</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Tvisit.c">
+      <Filter>H5T</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Tvlen.c">
+      <Filter>H5T</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5TS.c">
+      <Filter>H5TS</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5VL.c">
+      <Filter>H5VL</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5VLcallback.c">
+      <Filter>H5VL</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5VLdyn_ops.c">
+      <Filter>H5VL</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5VLint.c">
+      <Filter>H5VL</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5VLnative.c">
+      <Filter>H5VL</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5VLnative_attr.c">
+      <Filter>H5VL</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5VLnative_blob.c">
+      <Filter>H5VL</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5VLnative_dataset.c">
+      <Filter>H5VL</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5VLnative_datatype.c">
+      <Filter>H5VL</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5VLnative_file.c">
+      <Filter>H5VL</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5VLnative_group.c">
+      <Filter>H5VL</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5VLnative_link.c">
+      <Filter>H5VL</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5VLnative_introspect.c">
+      <Filter>H5VL</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5VLnative_object.c">
+      <Filter>H5VL</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5VLnative_token.c">
+      <Filter>H5VL</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5VLpassthru.c">
+      <Filter>H5VL</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5VLtest.c">
+      <Filter>H5VL</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5VM.c">
+      <Filter>H5VM</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5WB.c">
+      <Filter>H5WB</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Z.c">
+      <Filter>H5Z</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Zdeflate.c">
+      <Filter>H5Z</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Zfletcher32.c">
+      <Filter>H5Z</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Znbit.c">
+      <Filter>H5Z</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Zscaleoffset.c">
+      <Filter>H5Z</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Zshuffle.c">
+      <Filter>H5Z</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Zszip.c">
+      <Filter>H5Z</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Ztrans.c">
+      <Filter>H5Z</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\hdf5.h">
+      <Filter>H5</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5api_adpt.h">
+      <Filter>H5</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5public.h">
+      <Filter>H5</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\vtk_hdf5_mangle.h">
+      <Filter>H5</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Apublic.h">
+      <Filter>H5A</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5ACpublic.h">
+      <Filter>H5AC</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Cpublic.h">
+      <Filter>H5C</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Dpublic.h">
+      <Filter>H5D</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Epublic.h">
+      <Filter>H5E</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5ESdevelop.h">
+      <Filter>H5ES</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5ESpublic.h">
+      <Filter>H5ES</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Fpublic.h">
+      <Filter>H5F</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5FDcore.h">
+      <Filter>H5FD</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5FDdevelop.h">
+      <Filter>H5FD</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5FDdirect.h">
+      <Filter>H5FD</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5FDfamily.h">
+      <Filter>H5FD</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5FDhdfs.h">
+      <Filter>H5FD</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5FDlog.h">
+      <Filter>H5FD</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5FDmirror.h">
+      <Filter>H5FD</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5FDmpi.h">
+      <Filter>H5FD</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5FDmpio.h">
+      <Filter>H5FD</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5FDmulti.h">
+      <Filter>H5FD</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5FDpublic.h">
+      <Filter>H5FD</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5FDros3.h">
+      <Filter>H5FD</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5FDs3comms.h">
+      <Filter>H5FD</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5FDsec2.h">
+      <Filter>H5FD</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5FDsplitter.h">
+      <Filter>H5FD</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5FDstdio.h">
+      <Filter>H5FD</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5FDwindows.h">
+      <Filter>H5FD</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Gpublic.h">
+      <Filter>H5G</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Idevelop.h">
+      <Filter>H5I</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Ipublic.h">
+      <Filter>H5I</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Ldevelop.h">
+      <Filter>H5L</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Lpublic.h">
+      <Filter>H5L</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Mpublic.h">
+      <Filter>H5M</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5MMpublic.h">
+      <Filter>H5MM</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Opublic.h">
+      <Filter>H5O</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Ppublic.h">
+      <Filter>H5P</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5PLextern.h">
+      <Filter>H5PL</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5PLpublic.h">
+      <Filter>H5PL</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Rpublic.h">
+      <Filter>H5R</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Spublic.h">
+      <Filter>H5S</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Tdevelop.h">
+      <Filter>H5T</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Tpublic.h">
+      <Filter>H5T</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5TSdevelop.h">
+      <Filter>H5TS</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5VLconnector.h">
+      <Filter>H5VL</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5VLconnector_passthru.h">
+      <Filter>H5VL</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5VLnative.h">
+      <Filter>H5VL</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5VLpassthru.h">
+      <Filter>H5VL</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5VLpublic.h">
+      <Filter>H5VL</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Zdevelop.h">
+      <Filter>H5Z</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Zpublic.h">
+      <Filter>H5Z</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5private.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Apkg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Aprivate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5ACpkg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5ACprivate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Bpkg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Bprivate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5B2pkg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5B2private.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Clog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Cpkg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Cprivate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5CSprivate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5CXprivate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Dpkg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Dprivate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Edefin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Einit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Epkg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Eprivate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Eterm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5EApkg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5EAprivate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5ESpkg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5ESprivate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Fpkg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Fprivate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5FApkg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5FAprivate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5FDmirror_priv.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5FDpkg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5FDprivate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5FLprivate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5FOprivate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5FSpkg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5FSprivate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Gpkg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Gprivate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5HFpkg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5HFprivate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5HGpkg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5HGprivate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5HLpkg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5HLprivate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5HPprivate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Ipkg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Iprivate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Lpkg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Lprivate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Mpkg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Mprivate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5MFpkg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5MFprivate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5MMprivate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5MPpkg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5MPprivate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Opkg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Oprivate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Oshared.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Ppkg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Pprivate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5PBprivate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5PBpkg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5PLpkg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5PLprivate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Rpkg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Rprivate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5RSprivate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Spkg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Sprivate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5SLprivate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5SMpkg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5SMprivate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Tpkg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Tprivate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5TSprivate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5UCprivate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5VLnative_private.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5VLpkg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5VLprivate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5VMprivate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5WBprivate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Zpkg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Zprivate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5win32defs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\uthash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5Epubgen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5version.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\H5overflow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\ThirdParty\hdf5\vtkhdf5\src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="H5">
+      <UniqueIdentifier>{1BAB2F13-4FCD-3356-90BB-51BEF459F4D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="H5A">
+      <UniqueIdentifier>{75DE8BCD-2BB3-3A20-B0AC-BCE494B8FCB7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="H5AC">
+      <UniqueIdentifier>{8C42A39F-DC9B-3C99-ADAD-52011FB5BC24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="H5B">
+      <UniqueIdentifier>{55602946-E7AB-3B72-B4D3-2D35A252DCAE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="H5B2">
+      <UniqueIdentifier>{82D8D990-11D2-3462-9AA9-FA47E8C7D835}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="H5C">
+      <UniqueIdentifier>{A2B3A40C-436C-3B6C-B292-47D9F4AC4D7B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="H5CS">
+      <UniqueIdentifier>{428A08CA-3D20-34EE-9F7E-781A3998E710}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="H5CX">
+      <UniqueIdentifier>{DC44EED3-03C2-3963-B62E-58CB2FF239DA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="H5D">
+      <UniqueIdentifier>{BFB607A2-699D-350E-83BD-4AC7F6E4CD49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="H5E">
+      <UniqueIdentifier>{BED6554A-6BC5-34A7-B31C-A50BB6F7010F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="H5EA">
+      <UniqueIdentifier>{6AED1256-4BB1-3C70-B708-9CE1ADCCBCCF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="H5ES">
+      <UniqueIdentifier>{314318F2-4F68-34F3-B30D-58CA55100191}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="H5F">
+      <UniqueIdentifier>{6BF45F07-C06C-37D1-B80A-5A6E1A4DDE2A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="H5FA">
+      <UniqueIdentifier>{5FC6B5B4-70D8-3D0F-9233-BAD5BB77B0B9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="H5FD">
+      <UniqueIdentifier>{7CBF3F3E-8C77-3436-85FE-0ACA88EBBA42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="H5FL">
+      <UniqueIdentifier>{8A1B4CAB-891C-3145-86A4-A1DFB192A047}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="H5FO">
+      <UniqueIdentifier>{BA6519FF-CE77-3A45-82CA-D00DD30FED88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="H5FS">
+      <UniqueIdentifier>{5E0FA8F4-0944-3125-B366-AD6B5CBA30BB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="H5G">
+      <UniqueIdentifier>{9C640FC9-E736-3ECE-9AEC-1D48E258DC61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="H5HF">
+      <UniqueIdentifier>{045FA2FD-AF54-32E0-8575-FFFD5D80F062}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="H5HG">
+      <UniqueIdentifier>{4CD06172-FD96-3CEC-AFAE-B47527DA578D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="H5HL">
+      <UniqueIdentifier>{D4BC4DBD-F0C3-39C1-AF79-C1F58AEE1A47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="H5HP">
+      <UniqueIdentifier>{E3C90C76-4EBD-3E30-9C23-E9433AC6BB92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="H5I">
+      <UniqueIdentifier>{6A0B2DBD-152F-37ED-BDFB-3BED27BD7725}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="H5L">
+      <UniqueIdentifier>{91B3ADC7-FFB5-3971-B519-B6A7EDC982E4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="H5M">
+      <UniqueIdentifier>{964AE28A-CC72-36EF-B103-4A0E9C182D4C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="H5MF">
+      <UniqueIdentifier>{9E2C39E0-16A7-3B35-9BC1-E0A5468CE005}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="H5MM">
+      <UniqueIdentifier>{34D59814-6236-3C09-B863-AE230B1E4506}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="H5MP">
+      <UniqueIdentifier>{23AF9F04-457D-3B18-B4EF-4E95C2E7906C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="H5O">
+      <UniqueIdentifier>{C5C5091D-A7E7-3E38-87E3-5901A1AECD84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="H5P">
+      <UniqueIdentifier>{C9E51D4E-73C7-3025-9C5E-15628D0D43D9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="H5PB">
+      <UniqueIdentifier>{DC1D84FB-BF0C-3E62-A552-D348DF15E51F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="H5PL">
+      <UniqueIdentifier>{CAABF2EF-5FED-3E2C-BE33-D431FCCC657B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="H5R">
+      <UniqueIdentifier>{651A6CBB-6C69-3D6F-801C-2BEAD2768D8D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="H5RS">
+      <UniqueIdentifier>{26197B19-27D8-35D2-A517-22F83C2DC607}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="H5S">
+      <UniqueIdentifier>{3903C090-1923-3D52-9A51-852950DFE3BB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="H5SL">
+      <UniqueIdentifier>{E22BA1F2-A1C8-3F69-AB64-2D4C8502DC28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="H5SM">
+      <UniqueIdentifier>{168CB640-B8DD-3510-98A7-31DBF82F5AA0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="H5T">
+      <UniqueIdentifier>{2FE52B61-2E55-3F8D-BE9A-E7253C95E893}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="H5TS">
+      <UniqueIdentifier>{8E26FD21-8601-31F4-AB71-0168058C4521}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="H5UC">
+      <UniqueIdentifier>{BD0961A3-AFB3-35C4-8982-399A1FD1A3C2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="H5VL">
+      <UniqueIdentifier>{3E989B7E-2AC1-34AE-83A6-7FA2214131F5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="H5VM">
+      <UniqueIdentifier>{13A9AA56-D196-3D97-BD5F-9C8A2D96149D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="H5WB">
+      <UniqueIdentifier>{54B28969-F5F7-3539-A2E1-DB8203BF2F9F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="H5Z">
+      <UniqueIdentifier>{C76ABF39-E8B2-3045-BFEC-0C5DF789B64E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{162D4FFA-EABE-37C8-B497-EF7F0B57E0E3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

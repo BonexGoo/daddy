@@ -1,0 +1,34 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.31/Modules/CheckCCompilerFlag.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CheckIncludeFile.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CheckIncludeFileCXX.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CheckLibraryExists.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CheckSymbolExists.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CheckTypeSize.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/GNUInstallDirs.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/TestBigEndian.cmake
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/tiff/vtktiff/CMakeLists.txt
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/tiff/vtktiff/cmake/AutotoolsCompat.cmake
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/tiff/vtktiff/cmake/CXXLibrary.cmake
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/tiff/vtktiff/cmake/CompilerChecks.cmake
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/tiff/vtktiff/cmake/DeflateCodec.cmake
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/tiff/vtktiff/cmake/FindCMath.cmake
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/tiff/vtktiff/cmake/IncludeChecks.cmake
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/tiff/vtktiff/cmake/InternalCodecs.cmake
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/tiff/vtktiff/cmake/JBIGCodec.cmake
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/tiff/vtktiff/cmake/JPEGCodec.cmake
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/tiff/vtktiff/cmake/LERCCodec.cmake
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/tiff/vtktiff/cmake/LZMACodec.cmake
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/tiff/vtktiff/cmake/LargeFileSupport.cmake
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/tiff/vtktiff/cmake/LibraryFeatures.cmake
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/tiff/vtktiff/cmake/LinkerChecks.cmake
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/tiff/vtktiff/cmake/PixarLogCodec.cmake
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/tiff/vtktiff/cmake/ProcessorChecks.cmake
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/tiff/vtktiff/cmake/SymbolChecks.cmake
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/tiff/vtktiff/cmake/TypeSizeChecks.cmake
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/tiff/vtktiff/cmake/WebPCodec.cmake
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/tiff/vtktiff/cmake/WindowsSupport.cmake
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/tiff/vtktiff/cmake/ZSTDCodec.cmake

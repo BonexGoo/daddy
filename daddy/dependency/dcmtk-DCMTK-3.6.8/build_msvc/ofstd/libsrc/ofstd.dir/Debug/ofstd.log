@@ -1,0 +1,48 @@
+﻿  Building Custom Rule D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/ofstd/libsrc/CMakeLists.txt
+  ofchrenc.cc
+  ofcmdln.cc
+  ofconapp.cc
+  ofcond.cc
+  ofconfig.cc
+  ofconsol.cc
+  ofcrc32.cc
+  ofdate.cc
+  ofdatime.cc
+  oferror.cc
+  offile.cc
+  offilsys.cc
+  offname.cc
+  ofipc.cc
+  oflist.cc
+  ofstd.cc
+D:\vcpkg\installed\x64-windows\include\dirent.h(459,1): warning C4505: '_wreaddir': 내부 링크가 있는 참조되지 않은 함수가 제거되었습니다
+  (소스 파일 '../../../ofstd/libsrc/ofstd.cc'을(를) 컴파일하는 중)
+  
+D:\vcpkg\installed\x64-windows\include\dirent.h(727,1): warning C4505: 'readdir': 내부 링크가 있는 참조되지 않은 함수가 제거되었습니다
+  (소스 파일 '../../../ofstd/libsrc/ofstd.cc'을(를) 컴파일하는 중)
+  
+D:\vcpkg\installed\x64-windows\include\dirent.h(865,1): warning C4505: 'rewinddir': 내부 링크가 있는 참조되지 않은 함수가 제거되었습니다
+  (소스 파일 '../../../ofstd/libsrc/ofstd.cc'을(를) 컴파일하는 중)
+  
+D:\vcpkg\installed\x64-windows\include\dirent.h(876,1): warning C4505: 'scandir': 내부 링크가 있는 참조되지 않은 함수가 제거되었습니다
+  (소스 파일 '../../../ofstd/libsrc/ofstd.cc'을(를) 컴파일하는 중)
+  
+D:\vcpkg\installed\x64-windows\include\dirent.h(1023,1): warning C4505: 'versionsort': 내부 링크가 있는 참조되지 않은 함수가 제거되었습니다
+  (소스 파일 '../../../ofstd/libsrc/ofstd.cc'을(를) 컴파일하는 중)
+  
+  ofstring.cc
+  ofstrutl.cc
+  ofthread.cc
+  oftime.cc
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  oftimer.cc
+  oftempf.cc
+  ofxml.cc
+  ofuuid.cc
+  ofmath.cc
+  ofsockad.cc
+  ofrand.cc
+  코드를 생성하고 있습니다...
+     D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/lib/Debug/ofstd.lib 라이브러리 및 D:/cybermed/daddy/dependency/dcmtk-DCMTK-3.6.8/build_msvc/lib/Debug/ofstd.exp 개체를 생성하고 있습니다.
+  ofstd.vcxproj -> D:\cybermed\daddy\dependency\dcmtk-DCMTK-3.6.8\build_msvc\bin\Debug\ofstd.dll

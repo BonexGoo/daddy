@@ -1,0 +1,9 @@
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\IO\MINC\vtkMINCImageAttributes.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\IO\MINC\IOMINC.dir\Debug\vtkMINCImageAttributes.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\IO\MINC\vtkMINCImageReader.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\IO\MINC\IOMINC.dir\Debug\vtkMINCImageReader.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\IO\MINC\vtkMINCImageWriter.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\IO\MINC\IOMINC.dir\Debug\vtkMINCImageWriter.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\IO\MINC\vtkMNIObjectReader.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\IO\MINC\IOMINC.dir\Debug\vtkMNIObjectReader.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\IO\MINC\vtkMNIObjectWriter.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\IO\MINC\IOMINC.dir\Debug\vtkMNIObjectWriter.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\IO\MINC\vtkMNITagPointReader.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\IO\MINC\IOMINC.dir\Debug\vtkMNITagPointReader.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\IO\MINC\vtkMNITagPointWriter.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\IO\MINC\IOMINC.dir\Debug\vtkMNITagPointWriter.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\IO\MINC\vtkMNITransformReader.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\IO\MINC\IOMINC.dir\Debug\vtkMNITransformReader.obj
+D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\IO\MINC\vtkMNITransformWriter.cxx;D:\cybermed\daddy\dependency\sdk-VTK-9.4.2\build_msvc\IO\MINC\IOMINC.dir\Debug\vtkMNITransformWriter.obj

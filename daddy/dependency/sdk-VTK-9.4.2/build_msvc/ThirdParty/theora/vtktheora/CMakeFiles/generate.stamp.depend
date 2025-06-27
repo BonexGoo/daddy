@@ -1,0 +1,8 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.31/Modules/CheckCCompilerFlag.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CheckCompilerFlag.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CheckSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/GenerateExportHeader.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/exportheader.cmake.in
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/theora/vtktheora/CMakeLists.txt

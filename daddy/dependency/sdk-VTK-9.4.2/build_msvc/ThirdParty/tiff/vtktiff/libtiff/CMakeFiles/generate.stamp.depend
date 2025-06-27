@@ -1,0 +1,5 @@
+# CMake generation dependency list for this directory.
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/tiff/vtktiff/libtiff/CMakeLists.txt
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/tiff/vtktiff/libtiff/tif_config.h.cmake.in
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/tiff/vtktiff/libtiff/tiffconf.h.cmake.in
+D:/cybermed/daddy/dependency/sdk-VTK-9.4.2/ThirdParty/tiff/vtktiff/libtiff/tiffvers.h.cmake.in
