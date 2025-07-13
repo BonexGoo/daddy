@@ -37,7 +37,7 @@ void VtkWidgetP::updateVisible(bool show)
 {
     if(0 < mDomHeader.length() && (mVisibled != 0) != show)
     {
-        mVisibled = show;
+        mVisibled = (show)? 1 : 0;
         setVisible(show);
         dExternalDom::set(mDomHeader + "visible", (mVisibled)? "1" : "0");
     }
@@ -45,7 +45,7 @@ void VtkWidgetP::updateVisible(bool show)
 
 bool VtkWidgetP::wasVisible() const
 {
-    return (mVisibled == true);
+    return (mVisibled != 0);
 }
 
 void VtkWidgetP::repaint()
